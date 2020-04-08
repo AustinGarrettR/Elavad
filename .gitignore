@@ -338,3 +338,24 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/VS
+/UserSettings
+/Unity.UI.Runtime.Editor.csproj
+/Unity.UI.Runtime.csproj
+/Unity.InternalAPIEngineBridge.006.csproj
+/Unity.InternalAPIEditorBridge.006.csproj
+/UIElementsSchema
+/Temp
+/Engine.Runtime.csproj
+/Engine.csproj
+/Engine-Def.csproj
+/Editor.csproj
+/collabignore.txt
+/Assembly-CSharp.csproj
+/Assembly-CSharp-Editor.csproj
+/2019 Project 3.sln
+/.collabignore
+/.collab
+/Library
+/Builds
+/ProjectSettings
