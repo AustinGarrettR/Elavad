@@ -393,8 +393,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1485835852}
-  - component: {fileID: 1485835854}
-  - component: {fileID: 1485835853}
   m_Layer: 0
   m_Name: UI_Login
   m_TagString: Untagged
@@ -416,47 +414,6 @@ Transform:
   m_Father: {fileID: 879120176}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1485835853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485835851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8302b9857102e44c8c26813e6008537, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uxml: {fileID: 9197481963319205126, guid: e5bbd4c315c428443a5a611706ea67f2, type: 3}
-  unityStyleSheet: {fileID: 7433441132597879392, guid: 62626e0dcbf366944a2bf0ef7baf9149,
-    type: 3}
-  stylesheets: []
-  targetTexture: {fileID: 0}
-  panelTransform: {fileID: 0}
-  m_EnableLiveUpdate: 0
---- !u!114 &1485835854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1485835851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3edfc36141f0f64f9e3444d411ce064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  constantPixelSizeScaler:
-    scaleFactor: 1
-  constantPhysicalSizeScaler:
-    referenceDpi: 96
-    fallbackDpi: 96
-  scaleWithScreenSizeScaler:
-    referenceResolution: {x: 1200, y: 800}
-    screenMatchMode: 0
-    match: 0
-  scaleMode: 0
 --- !u!1 &2089726763
 GameObject:
   m_ObjectHideFlags: 0

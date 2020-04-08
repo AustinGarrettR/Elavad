@@ -358,4 +358,4 @@ healthchecksdb
 /.collab
 /Library
 /Builds
-/ProjectSettings
+!/Packages/manifest.json
