@@ -359,3 +359,5 @@ healthchecksdb
 /Library
 /Builds
 !/Packages/manifest.json
+
+*.sln
