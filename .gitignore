@@ -361,3 +361,4 @@ healthchecksdb
 !/Packages/manifest.json
 
 *.sln
+*.csproj

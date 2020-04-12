@@ -2,7 +2,9 @@
     "name": "Engine",
     "references": [
         "GUID:f2d49d9fa7e7eb3418e39723a7d3b92f",
-        "GUID:e0cd26848372d4e5c891c569017e11f1"
+        "GUID:e0cd26848372d4e5c891c569017e11f1",
+        "GUID:fd7f2ed1f052e3d45afdb78e9c72d55e",
+        "GUID:75469ad4d38634e559750d17036d5f7c"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

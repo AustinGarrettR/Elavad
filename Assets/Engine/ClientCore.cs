@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System.Threading;
 using Engine.Networking;
 using Engine.Account;
+using Engine.Input;
+using Engine.UI;
 
 namespace Engine
 {
@@ -18,9 +17,16 @@ namespace Engine
 
         internal override void init()
         {
+            if(dataPack == null)
+            {
+                throw new Exception("Missing client data pack.");
+            }
+
 
             addManager(connectionManager, ConnectionManager.ListenerType.CLIENT);
             addManager(clientLoginManager, this, connectionManager);
+            addManager(clientUIManager, dataPack);
+            addManager(clientInputManager);
 
         }
 
@@ -35,12 +41,19 @@ namespace Engine
         }
 
         /*
+         * Public Variables
+         */
+
+        public ClientDataPack dataPack;
+
+        /*
          * Internal Variables
          */
 
         public readonly ConnectionManager connectionManager = new ConnectionManager();
         public readonly ClientLoginManager clientLoginManager = new ClientLoginManager();
-
+        public readonly ClientUIManager clientUIManager = new ClientUIManager();
+        public readonly ClientInputManager clientInputManager = new ClientInputManager();
 
         /*
          * Internal Functions

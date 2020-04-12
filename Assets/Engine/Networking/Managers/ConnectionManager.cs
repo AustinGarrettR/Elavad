@@ -296,11 +296,14 @@ namespace Engine.Networking
 
             Debug.Log("Closed connection.");
 
-            connections.Dispose();
-            escapedConnections.Dispose();
+            if(connections.IsCreated)
+                connections.Dispose();
 
-            networkDriver.Dispose();
-            networkDriver = default;
+            if (escapedConnections.IsCreated)
+                escapedConnections.Dispose();
+
+            if (networkDriver.IsCreated)
+                networkDriver.Dispose();
 
             //Clear variables
             connected = false;

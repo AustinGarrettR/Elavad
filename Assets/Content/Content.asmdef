@@ -1,0 +1,15 @@
+{
+    "name": "Content",
+    "references": [
+        "GUID:72d655c8b2dc9554188af2961753b024"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

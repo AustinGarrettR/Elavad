@@ -8,4 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/New-UI-Test.unity
     guid: 80a8f89509bfffe489c5b48232fd8ec4
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 39ede7019ab540548b10da261dbf3787,
+      type: 2}
