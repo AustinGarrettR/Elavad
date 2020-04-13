@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Engine.Asset;
 
 namespace Engine.UI
 {
@@ -14,12 +15,11 @@ namespace Engine.UI
         //Initialize method
         internal override void init(params object[] parameters)
         {
-            //Load ui panels from data pack
-            ClientDataPack dataPack = (ClientDataPack) parameters[0];
-            UI_Panels = dataPack.UI_Panels;
+            //Assign asset manager
+            clientAssetManager = (ClientAssetManager) parameters[0];
 
             //Remove later, test only!
-            GameObject.Instantiate(UI_Panels[0]);
+            GameObject.Instantiate(clientAssetManager.GetUIPanel("LoginScreen"));
         }
 
         //Called on program shutdown
@@ -35,7 +35,14 @@ namespace Engine.UI
         }
 
         /*
-         * Public Functions
+         * Internal Variables
+         */
+
+        private ClientAssetManager clientAssetManager;
+        private List<UIController> registeredControllers = new List<UIController>();
+
+        /*
+         * Internal Functions
          */
 
         private void RegisterUIController(UIController controller)
@@ -50,20 +57,5 @@ namespace Engine.UI
                 registeredControllers.Remove(controller);
         }
 
-        /*
-         * Internal Variables
-         */
-
-        private GameObject[] UI_Panels;
-        private List<UIController> registeredControllers = new List<UIController>();
-
-        /*
-         * Internal Functions
-         */
-
-        private void CreateGameObjects()
-        {
-
-        }
     }
 }

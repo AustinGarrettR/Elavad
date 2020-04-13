@@ -1,0 +1,77 @@
+﻿using UnityEngine;
+
+namespace Engine.Logging
+{
+    public class LogManager : Manager
+    {
+
+        /*
+         * Override Functions
+         */
+
+        internal override void init(params object[] parameters)
+        {
+            Log.setLogManager(this);
+        }
+
+        internal override void update()
+        {
+           
+        }
+
+        internal override void shutdown()
+        {
+            
+        }
+
+        /*
+         * Internal Variables
+         */
+
+        private LogLevel logLevel = LogLevel.ALL;
+
+        /*
+         * Public Functions
+         */
+
+        internal LogLevel getLogLevel()
+        {
+            return logLevel;
+        } 
+
+        internal void SetLogLevel(LogLevel level)
+        {
+            logLevel = level;
+        }
+
+        //Logs a message
+        internal void LogMsg(string message)
+        {
+            Debug.Log(message);
+
+            if(getLogLevel() == LogLevel.ALL)
+            {
+                //TODO
+            }
+        }
+
+        //Logs an error
+        internal void LogError(string error)
+        {
+            Debug.LogError(error);
+
+            if (getLogLevel() == LogLevel.ERRORS || getLogLevel() == LogLevel.ALL)
+            {
+                //TODO
+            }
+        }
+
+
+    }
+    public enum LogLevel
+    {
+        NONE,
+        ERRORS,
+        ALL
+    }
+}

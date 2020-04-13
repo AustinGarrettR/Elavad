@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Engine.Logging;
+using System;
 using System.Collections.Generic;
 using Unity.UIElements.Runtime;
 using UnityEngine;
@@ -36,7 +37,7 @@ namespace Engine.UI
         {
             U element = panelRenderer.visualTree.Query<U>(name);
             if (element == null)
-                Debug.LogError("UI Controller called for element '" + name + "' which does not exist in '"+panelRenderer.uxml.name+"' UXML.");
+                Log.LogError("UI Controller called for element '" + name + "' which does not exist in '"+panelRenderer.uxml.name+"' UXML.");
 
             return element;
         }

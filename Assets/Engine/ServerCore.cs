@@ -1,8 +1,6 @@
 ﻿using Engine.Account;
 using Engine.Networking;
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using Engine.Logging;
 
 namespace Engine
 {
@@ -16,7 +14,7 @@ namespace Engine
 
         internal override void init()
         {
-
+            addManager(logManager);
             addManager(connectionManager, ConnectionManager.ListenerType.SERVER);
             addManager(serverLoginManager, connectionManager);
         }
@@ -35,6 +33,7 @@ namespace Engine
          * Internal Variables
          */
 
+        public readonly LogManager logManager = new LogManager();
         public readonly ConnectionManager connectionManager = new ConnectionManager();
         public readonly ServerLoginManager serverLoginManager = new ServerLoginManager();
 

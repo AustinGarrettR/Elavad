@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using Engine.Logging;
 
 namespace Engine.Networking.Utility
 {
@@ -38,7 +39,7 @@ namespace Engine.Networking.Utility
             }
             else
             {
-                throw new Exception("Object type is unsupported and can not be serialized. Type:" + typeof(T).Name);
+                Log.LogError("Object type is unsupported and can not be serialized. Type:" + typeof(T).Name);
             }
 
         }

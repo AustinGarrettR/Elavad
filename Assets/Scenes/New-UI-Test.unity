@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e932a4d998c40f74eb9c6aafb2c11d92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dataPack: {fileID: 11400000, guid: a16bc96f562ffad4c8e6f2e40797dc38, type: 2}
+  clientDataPack: {fileID: 11400000, guid: a16bc96f562ffad4c8e6f2e40797dc38, type: 2}
 --- !u!4 &1041452721
 Transform:
   m_ObjectHideFlags: 0

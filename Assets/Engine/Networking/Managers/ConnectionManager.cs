@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using UnityEngine.Assertions;
 using Engine.Networking.Utility;
 using Engine.Configuration;
+using Engine.Logging;
 
 namespace Engine.Networking
 {
@@ -110,11 +111,11 @@ namespace Engine.Networking
             if (isServer)
             {
                 if (networkDriver.Bind(endpoint) != 0)
-                    Debug.Log("Server failed to bind to port " + SharedConfig.PORT);
+                    Log.LogError("Server failed to bind to port " + SharedConfig.PORT);
                 else
                 {
                     networkDriver.Listen();
-                    Debug.Log("Server listening on port " + SharedConfig.PORT);
+                    Log.LogMsg("Server listening on port " + SharedConfig.PORT);
                 }
             }
             else
@@ -282,7 +283,7 @@ namespace Engine.Networking
                 }
                 else if (cmd == NetworkEvent.Type.Disconnect)
                 {
-                    Debug.Log("Client got disconnected from server");
+                    Log.LogMsg("Client got disconnected from server");
                     close();
                 }
 
@@ -294,7 +295,7 @@ namespace Engine.Networking
         private void close()
         {
 
-            Debug.Log("Closed connection.");
+            Log.LogMsg("Closed connection.");
 
             if(connections.IsCreated)
                 connections.Dispose();
@@ -315,7 +316,8 @@ namespace Engine.Networking
         {
             if (connections.Length != 1)
             {
-                throw new Exception("Attempted sending packet to server when there is either 0 or more than 1 connection active, indicating this is the server.");
+                Log.LogError("Attempted sending packet to server when there is either 0 or more than 1 connection active, indicating this is the server.");
+                return;
             }
 
             sendPacket(connections[0], packet);
@@ -386,7 +388,8 @@ namespace Engine.Networking
         {
             if (isServer)
             {
-                throw new Exception("Server is attempting to disconnect as a client.");
+                Log.LogError("Server is attempting to disconnect as a client.");
+                return;
             }
 
             if (connected == true)
@@ -412,7 +415,7 @@ namespace Engine.Networking
         {
             NotifyClientConnected?.Invoke(client);
 
-            Debug.Log("New connection! Server: " + isServer + ".");
+            Log.LogMsg("New connection! Server: " + isServer + ".");
         }
 
         //Triggers event for a client disconnecting

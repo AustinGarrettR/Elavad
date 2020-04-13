@@ -4,6 +4,8 @@ using Engine.Networking;
 using Engine.Account;
 using Engine.Input;
 using Engine.UI;
+using Engine.Asset;
+using Engine.Logging;
 
 namespace Engine
 {
@@ -17,15 +19,16 @@ namespace Engine
 
         internal override void init()
         {
-            if(dataPack == null)
+            if(clientDataPack == null)
             {
                 throw new Exception("Missing client data pack.");
             }
 
-
+            addManager(logManager);
+            addManager(clientAssetManager, clientDataPack);
             addManager(connectionManager, ConnectionManager.ListenerType.CLIENT);
             addManager(clientLoginManager, this, connectionManager);
-            addManager(clientUIManager, dataPack);
+            addManager(clientUIManager, clientAssetManager);
             addManager(clientInputManager);
 
         }
@@ -44,12 +47,14 @@ namespace Engine
          * Public Variables
          */
 
-        public ClientDataPack dataPack;
+        public ClientDataPack clientDataPack;
 
         /*
          * Internal Variables
          */
 
+        public readonly LogManager logManager = new LogManager();
+        public readonly ClientAssetManager clientAssetManager = new ClientAssetManager();
         public readonly ConnectionManager connectionManager = new ConnectionManager();
         public readonly ClientLoginManager clientLoginManager = new ClientLoginManager();
         public readonly ClientUIManager clientUIManager = new ClientUIManager();
