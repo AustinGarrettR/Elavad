@@ -24,6 +24,11 @@ namespace Engine.UI
             return null;
         }
 
+        public PanelRenderer GetPanelRenderer()
+        {
+            return panelRenderer;
+        }
+
         public abstract void onPanelLoaded();
 
         //Show/Hide panel

@@ -1,10 +1,12 @@
 {
     "name": "Editor",
     "references": [
-        "Engine",
-        "Content"
+        "GUID:72d655c8b2dc9554188af2961753b024",
+        "GUID:94117f7597c5c9a458d1396c5962197e"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

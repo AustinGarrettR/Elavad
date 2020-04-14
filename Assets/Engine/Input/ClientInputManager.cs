@@ -24,7 +24,8 @@ namespace Engine.Input
 
         //Called every frame
         internal override void update()
-        {
+        {           
+
             Mouse mouse = Mouse.current;
             Keyboard keyboard = Keyboard.current;
 

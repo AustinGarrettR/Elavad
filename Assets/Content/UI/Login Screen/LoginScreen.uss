@@ -1,0 +1,193 @@
+TextField.basic TextInput {
+    background-color: rgba(1, 1, 1, 0);
+    border-width: 0;
+    border-radius: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.6);
+    -unity-font-style: italic;
+    --unity-selection-color: rgba(0, 0, 0, 0.15);
+}
+
+TextField.basic:focus TextInput {
+    color: rgb(0, 0, 0);
+    -unity-font-style: normal;
+}
+
+TextField.basic {
+    background-image: url('/Assets/Content/Assets/UI/Shared/Input_BG.png');
+    -unity-slice-left: 8;
+    -unity-slice-top: 8;
+    -unity-slice-right: 8;
+    -unity-slice-bottom: 8;
+    -unity-background-scale-mode: stretch-to-fill;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: row;
+    overflow: hidden;
+    white-space: nowrap;
+    flex-shrink: 0;
+    border-width: 0;
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+    font-size: 17px;
+    margin: 1px;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.9);
+}
+
+TextField.basic:hover {
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+}
+
+Toggle.basic {
+    width: auto;
+    height: auto;
+    margin: 1px;
+    margin-right: auto;
+}
+
+Toggle.basic VisualElement:hover {
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+}
+
+Toggle.basic VisualElement {
+    width: 26px;
+    height: 26px;
+    -unity-slice-left: 8;
+    -unity-slice-top: 8;
+    -unity-slice-right: 8;
+    -unity-slice-bottom: 8;
+    background-image: url('/Assets/Content/Assets/UI/Shared/Input_BG.png');
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.9);
+}
+
+Toggle.basic VisualElement VisualElement {
+    background-color: rgba(255, 255, 255, 0);
+    border-width: 0;
+    border-radius: 0;
+    -unity-slice-left: 0;
+    -unity-slice-top: 0;
+    -unity-slice-right: 0;
+    -unity-slice-bottom: 0;
+    background-image: none;
+    -unity-background-scale-mode: stretch-to-fill;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+
+Toggle.basic:checked VisualElement VisualElement {
+    background-image: url('/Assets/Content/Assets/UI/Shared/Checkbox.png');
+}
+
+Toggle.basic Label {
+    color: rgb(202, 202, 202);
+    font-size: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+Button.basic {
+    background-image: url('/Assets/Content/Assets/UI/Shared/Input_BG.png');
+    -unity-slice-left: 8;
+    -unity-slice-top: 8;
+    -unity-slice-right: 8;
+    -unity-slice-bottom: 8;
+    -unity-background-scale-mode: stretch-to-fill;
+    background-color: rgba(255, 255, 255, 0);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+    flex-direction: row;
+    overflow: hidden;
+    white-space: nowrap;
+    flex-shrink: 0;
+    border-width: 0;
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    -unity-text-align: middle-center;
+    font-size: 17px;
+    margin: 1px;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 0.9);
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 17px;
+}
+
+Button.basic:hover {
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+Button.basic-text-only {
+    padding: 1px;
+    margin: 1px;
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+}
+
+Button.basic-text-only:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.background-full {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    background-image: url('/Assets/Content/Assets/UI/Login Screen/LoginBG.png');
+    -unity-background-scale-mode: stretch-to-fill;
+    justify-content: center;
+}
+
+.basic-panel {
+    background-image: url('/Assets/Content/Assets/UI/Shared/Panel_BG.png');
+    -unity-slice-left: 8;
+    -unity-slice-top: 8;
+    -unity-slice-right: 8;
+    -unity-slice-bottom: 8;
+    width: 200px;
+    height: 200px;
+    -unity-background-scale-mode: stretch-to-fill;
+    background-color: rgba(255, 255, 255, 0);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    align-items: center;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin: 6px;
+    padding: 5px;
+    color: rgb(241, 241, 241);
+    font-size: 17px;
+    -unity-text-align: middle-left;
+    flex-basis: auto;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.logo {
+    background-image: url('/Assets/Content/Assets/UI/Login Screen/placeholder.com-logo3.png');
+    -unity-background-scale-mode: stretch-to-fill;
+    height: 120px;
+    width: 541px;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-start;
+    margin: 35px;
+    flex-basis: auto;
+    flex-shrink: 0;
+}

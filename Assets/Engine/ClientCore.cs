@@ -25,11 +25,11 @@ namespace Engine
             }
 
             addManager(logManager);
-            addManager(clientAssetManager, clientDataPack);
+            addManager(clientAssetManager, clientDataPack.uiPack);
             addManager(connectionManager, ConnectionManager.ListenerType.CLIENT);
             addManager(clientLoginManager, this, connectionManager);
-            addManager(clientUIManager, clientAssetManager);
             addManager(clientInputManager);
+            addManager(clientUIManager, clientAssetManager, clientInputManager);
 
         }
 

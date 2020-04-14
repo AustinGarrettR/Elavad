@@ -16,7 +16,7 @@ namespace Engine.Asset
         internal override void init(params object[] parameters)
         {
             //Load ui panels from data pack
-            clientDataPack = (ClientDataPack)parameters[0];
+            uiPack = (UIPack)parameters[0];
         }
 
         //Called on program shutdown
@@ -37,7 +37,7 @@ namespace Engine.Asset
 
         internal GameObject GetUIPanel(string name)
         {
-            GameObject[] panelObjects = clientDataPack.uiPack.UI_Panels;
+            GameObject[] panelObjects = uiPack.UI_Panels;
             foreach(GameObject obj in panelObjects)
             {
                 if(obj.name.Equals(name, StringComparison.InvariantCultureIgnoreCase))
@@ -56,7 +56,7 @@ namespace Engine.Asset
          * Internal Variables
          */
 
-        private ClientDataPack clientDataPack;
+        private UIPack uiPack;
 
         /*
          * Internal Functions

@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using Engine.Asset;
+using Engine.Input;
+using UnityEngine.InputSystem.LowLevel;
+using Unity.UIElements.Runtime;
+using UnityEngine.UIElements;
 
 namespace Engine.UI
 {
@@ -18,8 +22,14 @@ namespace Engine.UI
             //Assign asset manager
             clientAssetManager = (ClientAssetManager) parameters[0];
 
+            //Assign Input Manager
+            clientInputManager = (ClientInputManager) parameters[1];
+
             //Remove later, test only!
-            GameObject.Instantiate(clientAssetManager.GetUIPanel("LoginScreen"));
+            GameObject login = GameObject.Instantiate(clientAssetManager.GetUIPanel("LoginScreen"));
+            RegisterUIController(login.GetComponent<UIController>());
+
+
         }
 
         //Called on program shutdown
@@ -39,6 +49,7 @@ namespace Engine.UI
          */
 
         private ClientAssetManager clientAssetManager;
+        private ClientInputManager clientInputManager;
         private List<UIController> registeredControllers = new List<UIController>();
 
         /*
