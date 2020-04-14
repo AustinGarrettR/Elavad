@@ -22,9 +22,6 @@ namespace Engine.UI
             //Assign asset manager
             clientAssetManager = (ClientAssetManager) parameters[0];
 
-            //Assign Input Manager
-            clientInputManager = (ClientInputManager) parameters[1];
-
             //Remove later, test only!
             GameObject login = GameObject.Instantiate(clientAssetManager.GetUIPanel("LoginScreen"));
             RegisterUIController(login.GetComponent<UIController>());
@@ -49,7 +46,6 @@ namespace Engine.UI
          */
 
         private ClientAssetManager clientAssetManager;
-        private ClientInputManager clientInputManager;
         private List<UIController> registeredControllers = new List<UIController>();
 
         /*

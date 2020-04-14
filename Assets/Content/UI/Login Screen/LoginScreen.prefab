@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4368276629270144949}
-  - component: {fileID: 931394215674577500}
-  - component: {fileID: 9086801628637669782}
-  - component: {fileID: 1744196845655449970}
-  - component: {fileID: 7386709089010953373}
+  - component: {fileID: 7193301433434679400}
+  - component: {fileID: 2445173236703437484}
+  - component: {fileID: 4494193943541117814}
+  - component: {fileID: 7966041456573607374}
   m_Layer: 0
   m_Name: LoginScreen
   m_TagString: Untagged
@@ -34,7 +34,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &931394215674577500
+--- !u!114 &7193301433434679400
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   constantPixelSizeScaler:
-    scaleFactor: 1.25
+    scaleFactor: 1
   constantPhysicalSizeScaler:
     referenceDpi: 96
     fallbackDpi: 96
@@ -56,7 +56,7 @@ MonoBehaviour:
     screenMatchMode: 0
     match: 0
   scaleMode: 0
---- !u!114 &9086801628637669782
+--- !u!114 &2445173236703437484
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,7 +74,7 @@ MonoBehaviour:
   targetTexture: {fileID: 0}
   panelTransform: {fileID: 0}
   m_EnableLiveUpdate: 0
---- !u!114 &1744196845655449970
+--- !u!114 &4494193943541117814
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -86,7 +86,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0a64ada65958cb4d876703edfd71782, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7386709089010953373
+--- !u!114 &7966041456573607374
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -19,17 +19,18 @@ namespace Engine
 
         internal override void init()
         {
-            if(clientDataPack == null)
+          /*  if(clientDataPack == null)
             {
-                throw new Exception("Missing client data pack.");
-            }
+                Log.LogError("Missing client data pack.");
+                return;
+            }*/
 
             addManager(logManager);
-            addManager(clientAssetManager, clientDataPack.uiPack);
+            addManager(clientAssetManager);
             addManager(connectionManager, ConnectionManager.ListenerType.CLIENT);
             addManager(clientLoginManager, this, connectionManager);
             addManager(clientInputManager);
-            addManager(clientUIManager, clientAssetManager, clientInputManager);
+            addManager(clientUIManager, clientAssetManager);
 
         }
 
@@ -42,12 +43,6 @@ namespace Engine
         {
             shutdownManagers();
         }
-
-        /*
-         * Public Variables
-         */
-
-        public ClientDataPack clientDataPack;
 
         /*
          * Internal Variables

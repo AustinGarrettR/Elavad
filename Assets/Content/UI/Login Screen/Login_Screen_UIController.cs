@@ -10,8 +10,7 @@ namespace Content.UI
 
         public override void onPanelLoaded()
         {
-            Label username_label = getElement<Label>("Username_Input_Label");
-            username_label.text = "UwU";
+
         }
 
         /*  //Public UI element references

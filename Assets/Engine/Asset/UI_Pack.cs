@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace Engine.Asset
 {
-    [CreateAssetMenu(fileName = "UIPack", menuName = "Data Packs/UIPack", order = 1)]
-    public class UIPack : ScriptableObject
-    {
+    [CreateAssetMenu(fileName = "UI_Pack", menuName = "Data Packs/UI_Pack", order = 1)]
+    public class UI_Pack : ScriptableObject
+    { 
         public GameObject[] UI_Panels;
     }
 }

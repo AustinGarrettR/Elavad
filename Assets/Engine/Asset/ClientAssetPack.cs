@@ -3,8 +3,8 @@
 namespace Engine.Asset
 {
     [CreateAssetMenu(fileName = "ClientDataPack", menuName = "Data Packs/ClientDataPack", order = 1)]
-    public class ClientDataPack : ScriptableObject
+    public class ClientAssetPack : ScriptableObject
     {
-        public UIPack uiPack;
+        public UI_Pack uiPack;
     }
 }

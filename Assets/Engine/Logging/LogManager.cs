@@ -58,12 +58,12 @@ namespace Engine.Logging
         //Logs an error
         internal void LogError(string error)
         {
-            Debug.LogError(error);
-
             if (getLogLevel() == LogLevel.ERRORS || getLogLevel() == LogLevel.ALL)
             {
                 //TODO
             }
+
+            throw new System.Exception(error);
         }
 
 

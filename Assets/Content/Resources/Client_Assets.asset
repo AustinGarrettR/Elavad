@@ -10,7 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49e037e7f3e3c664d9fd2251c0592ca7, type: 3}
-  m_Name: Client Release
+  m_Name: Client_Assets
   m_EditorClassIdentifier: 
-  debug: 0
-  uiPack: {fileID: 11400000, guid: 4f235ae46f28c38428cf7f68c7355d4e, type: 2}
+  uiPack: {fileID: 11400000, guid: 7566ab7fc482da84e86bb04001893ebf, type: 2}
