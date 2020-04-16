@@ -73,6 +73,14 @@ namespace Engine.UI
             field.RegisterCallback<FocusOutEvent>(placeholderLostFocusEvent);
         }
 
+        public string getPlaceholderTextFieldRealValue(TextField field)
+        {
+            if ((bool)field.userData)
+                return "";
+            else
+                return field.value;
+        }
+
         private void placeholderGainedFocusEvent(FocusInEvent focusEvent)
         {
             TextField field = (TextField)focusEvent.target;

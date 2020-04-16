@@ -1,9 +1,9 @@
 {
-    "name": "Content.UI",
+    "name": "Engine.API",
     "references": [
-        "GUID:623c245d00821c3478a8b186d812121d",
+        "GUID:ab0bf26c474862745b86bd0d94851aea",
         "GUID:c5a46be53e364594ebc8f1e55c3d9dbf",
-        "GUID:f1e9f9493065e914580d776480fd00e5"
+        "GUID:7029235393baeb24397b48842d3c66f2"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

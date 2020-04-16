@@ -1,8 +1,8 @@
 ﻿using Engine.UI;
-using System.Collections;
-using UnityEngine;
+using Engine.API;
 using UnityEngine.UIElements;
 using Engine.Logging;
+using UnityEngine;
 
 namespace Content.UI
 {
@@ -11,15 +11,21 @@ namespace Content.UI
         private TextField username;
         private TextField password;
         private Button loginButton, forgotButton, newUserButton;
+        private Toggle rememberMe;
+        private Label statusMessage;
+        private VisualElement statusPanel;
 
         /// <summary>Called when the panel finished loading the UXML</summary>
         public override void onPanelLoaded()
         {
             username = getElement<TextField>("Username");            
             password = getElement<TextField>("Password");
+            rememberMe = getElement<Toggle>("Remember_Me");
             loginButton = getElement<Button>("Login_Button");
             forgotButton = getElement<Button>("Forgot_Button");
             newUserButton = getElement<Button>("New_User_Button");
+            statusMessage = getElement<Label>("Status_Message");
+            statusPanel = getElement<VisualElement>("Status_Panel");
 
             RegisterPlaceholderTextField(username);
             RegisterPlaceholderTextField(password);
@@ -38,8 +44,7 @@ namespace Content.UI
         /// <param name="mouseUpEvent">The mouse up event.</param>
         private void loginButtonPressed(MouseUpEvent mouseUpEvent)
         {
-            //TODO, LOGIN
-            Log.LogMsg("TODO: Log in button has been pressed.");
+            API.Client.AttemptLogin(this.getPlaceholderTextFieldRealValue(username), this.getPlaceholderTextFieldRealValue(password), rememberMe.value, updateStatusMessage);
         }
 
         /// <summary>
@@ -60,6 +65,17 @@ namespace Content.UI
         {
             //TODO, LOGIN
             Log.LogMsg("TODO: New User button has been pressed.");
+        }
+
+        /// <summary>
+        /// Updates the status message of the login screen
+        /// </summary>
+        /// <param name="message">The status message.</param>
+        private void updateStatusMessage(Color color, string message)
+        {
+            statusPanel.visible = true;
+            statusMessage.text = message;
+            statusMessage.style.color = new StyleColor(color);
         }
     }
 

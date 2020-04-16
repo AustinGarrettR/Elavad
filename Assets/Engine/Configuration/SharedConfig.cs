@@ -12,8 +12,8 @@ namespace Engine.Configuration
         public static readonly int MAX_BUFFER_SIZE = 1024;
 
         //Account creation
-        public static readonly int MAX_USERNAME_LENGTH = 21;
-        public static readonly int MAX_PASSWORD_LENGTH = 30;
+        public static readonly int MAX_USERNAME_LENGTH = 35;
+        public static readonly int MAX_PASSWORD_LENGTH = 35;
 
         //Accounts
 

@@ -3,8 +3,8 @@
         <Style src="LoginScreen.uss" />
         <ui:VisualElement name="Logo" class="logo" />
         <ui:VisualElement name="Main Panel" class="basic-panel" style="width: 375px;&#10;height: 300px;&#10;padding-left: 16px;&#10;padding-right: 16px;&#10;padding-top: 12px;&#10;padding-bottom: 12px;&#10;">
-            <ui:TextField name="Username" max-length="21" tooltip="Username" class="basic" style="margin-top: 23px;&#10;margin-bottom: 7px;&#10;" />
-            <ui:TextField name="Password" max-length="21" tooltip="Password" class="basic" style="margin-top: 7px;&#10;margin-bottom: 10px;&#10;" />
+            <ui:TextField name="Username" max-length="35" tooltip="Username" class="basic" style="margin-top: 23px;&#10;margin-bottom: 7px;&#10;" />
+            <ui:TextField name="Password" max-length="35" tooltip="Password" class="basic" style="margin-top: 7px;&#10;margin-bottom: 10px;&#10;" />
             <ui:Toggle name="Remember_Me" class="basic">
                 <ui:Label text="Remember Me" name="Label" />
             </ui:Toggle>
@@ -12,8 +12,8 @@
             <ui:Button name="Forgot_Button" focusable="true" text="Trouble logging in?" class="basic basic-text-only" style="margin-top: 8px;&#10;margin-bottom: 4px;&#10;" />
             <ui:Button name="New_User_Button" focusable="true" text="New user? Sign up!" class="basic basic-text-only" style="margin-top: 4px;&#10;margin-bottom: 4px;&#10;" />
         </ui:VisualElement>
-        <ui:VisualElement name="Status_Panel" class="basic-panel" style="width: 375px;&#10;height: 32px;&#10;align-items: center;&#10;justify-content: flex-start;&#10;">
-            <ui:Label text="..." name="Status_Message" style="color: rgb(209, 209, 209);&#10;" />
+        <ui:VisualElement name="Status_Panel" class="basic-panel" style="width: 375px;&#10;height: 32px;&#10;align-items: center;&#10;justify-content: flex-start;&#10;display: flex;&#10;visibility: visible;&#10;">
+            <ui:Label text="..." name="Status_Message" style="color: rgb(209, 209, 209);&#10;font-size: 13px;&#10;margin-top: auto;&#10;margin-bottom: auto;&#10;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

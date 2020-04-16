@@ -49,7 +49,7 @@ namespace Engine.Account
         /// <param name="email">The email.</param>
         /// <param name="password">The password.</param>
         /// <param name="rememberMe">if set to <c>true</c> [remember me].</param>
-        public void onLoginButtonPressed(string email, string password, bool rememberMe)
+        public void AttemptLogin(string email, string password, bool rememberMe, Action<Color, string> statusMessageAction)
         {
             this.email = email;
             this.password = password;
@@ -58,19 +58,18 @@ namespace Engine.Account
             //Check input
             if (email.Length == 0 || password.Length == 0)
             {
-                //LoginScreenUI.getSingleton().setStatusMessage("<color=#d66f6f>Please enter your email and password.</color>");
+                statusMessageAction(new Color(214f/255f, 111f/255f, 111/255f), "Please enter your email and password.");
                 return;
             }
             if (IsValidEmail(email) == false)
             {
-                // LoginScreenUI.getSingleton().setStatusMessage("<color=#d66f6f>Invalid email address.</color>");
+                statusMessageAction(new Color(214f / 255f, 111f / 255f, 111f / 255f), "Invalid email address.");
                 return;
             }
 
             //Start connection
             connectionManager.start();
-            //  LoginScreenUI.getSingleton().setStatusMessage("Connecting to server...");
-
+            statusMessageAction(Color.white, "Connecting to server...");
         }
 
         /*

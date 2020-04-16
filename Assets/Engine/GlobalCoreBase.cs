@@ -21,11 +21,6 @@ namespace Engine
 
         private void Start()
         {
-            //Assign static variable
-            if (this is ClientCore)
-                clientManagerObject = (ClientCore)this;
-            else
-                serverManagerObject = (ServerCore)this;
             //Call abstract start method
             init();
         }
@@ -80,26 +75,6 @@ namespace Engine
                 m.shutdown();
             }
         }
-
-        /*
-         * Static Access
-         */
-
-        private static ClientCore clientManagerObject;
-        private static ServerCore serverManagerObject;
-
-        //Get manager in client form
-        public static ClientCore GetClientManager()
-        {
-            return (ClientCore)clientManagerObject;
-        }
-
-        //Get manager in server form
-        public static ServerCore GetServerManager()
-        {
-            return (ServerCore)serverManagerObject;
-        }
-
 
     }
 }

@@ -6,6 +6,7 @@ using Engine.Input;
 using Engine.UI;
 using Engine.Asset;
 using Engine.Logging;
+using Engine.API;
 
 namespace Engine
 {
@@ -31,6 +32,7 @@ namespace Engine
             addManager(clientLoginManager, this, connectionManager);
             addManager(clientInputManager);
             addManager(clientUIManager, clientAssetManager);
+            addManager(apiManager, managers);
 
         }
 
@@ -54,6 +56,7 @@ namespace Engine
         public readonly ClientLoginManager clientLoginManager = new ClientLoginManager();
         public readonly ClientUIManager clientUIManager = new ClientUIManager();
         public readonly ClientInputManager clientInputManager = new ClientInputManager();
+        public readonly APIManager apiManager = new APIManager();
 
         /*
          * Internal Functions
