@@ -3,8 +3,8 @@
         <Style src="LoginScreen.uss" />
         <ui:VisualElement name="Logo" class="logo" />
         <ui:VisualElement name="Main Panel" class="basic-panel" style="width: 375px;&#10;height: 300px;&#10;padding-left: 16px;&#10;padding-right: 16px;&#10;padding-top: 12px;&#10;padding-bottom: 12px;&#10;">
-            <ui:TextField text="Username" name="Username" class="basic" style="margin-top: 23px;&#10;margin-bottom: 7px;&#10;" />
-            <ui:TextField text="Password" name="Password" class="basic" style="margin-top: 7px;&#10;margin-bottom: 10px;&#10;" />
+            <ui:TextField name="Username" max-length="21" tooltip="Username" class="basic" style="margin-top: 23px;&#10;margin-bottom: 7px;&#10;" />
+            <ui:TextField name="Password" max-length="21" tooltip="Password" class="basic" style="margin-top: 7px;&#10;margin-bottom: 10px;&#10;" />
             <ui:Toggle name="Remember_Me" class="basic">
                 <ui:Label text="Remember Me" name="Label" />
             </ui:Toggle>

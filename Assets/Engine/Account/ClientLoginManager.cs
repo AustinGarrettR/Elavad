@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Net.Sockets;
 using Unity.Networking.Transport;
 using UnityEngine;
+using Engine.Factory;
 
 namespace Engine.Account
 {
@@ -15,9 +16,8 @@ namespace Engine.Account
          */
 
         //Initialize method
-        internal override void init(params object[] parameters)
+        public override void init(params object[] parameters)
         {
-            this.clientCore = (ClientCore)parameters[0];
             this.connectionManager = (ConnectionManager)parameters[1];
 
             //Subscribe to events
@@ -28,13 +28,13 @@ namespace Engine.Account
         }
 
         //Called on program shutdown
-        internal override void shutdown()
+        public override void shutdown()
         {
 
         }
 
         //Called every frame
-        internal override void update()
+        public override void update()
         {
 
         }
@@ -78,7 +78,6 @@ namespace Engine.Account
          */
 
         private ConnectionManager connectionManager;
-        private ClientCore clientCore;
 
         private string email;
         private string password;
@@ -177,7 +176,6 @@ namespace Engine.Account
             // LoginScreenUI.getSingleton().setContainerVisibility(false);
 
             //Load game
-            clientCore.StartCoroutine(clientCore.loadGameOnLogin(endGameLoad));
 
         }
 

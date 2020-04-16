@@ -1,12 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using System;
 using Engine.Asset;
-using Engine.Input;
-using UnityEngine.InputSystem.LowLevel;
-using Unity.UIElements.Runtime;
-using UnityEngine.UIElements;
+using Engine.Factory;
 
 namespace Engine.UI
 {
@@ -17,7 +12,7 @@ namespace Engine.UI
          */
 
         //Initialize method
-        internal override void init(params object[] parameters)
+        public override void init(params object[] parameters)
         {
             //Assign asset manager
             clientAssetManager = (ClientAssetManager) parameters[0];
@@ -30,13 +25,13 @@ namespace Engine.UI
         }
 
         //Called on program shutdown
-        internal override void shutdown()
+        public override void shutdown()
         {
 
         }
 
         //Called every frame
-        internal override void update()
+        public override void update()
         {
 
         }

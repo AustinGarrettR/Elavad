@@ -7,6 +7,7 @@ using UnityEngine.Assertions;
 using Engine.Networking.Utility;
 using Engine.Configuration;
 using Engine.Logging;
+using Engine.Factory;
 
 namespace Engine.Networking
 {
@@ -18,7 +19,7 @@ namespace Engine.Networking
          */
 
         //Called on start
-        internal override void init(params System.Object[] parameters)
+        public override void init(params System.Object[] parameters)
         {
             ListenerType listenerType = (ListenerType)parameters[0];
             this._isServer = listenerType == ListenerType.SERVER;
@@ -28,7 +29,7 @@ namespace Engine.Networking
         }
 
         //Called every frame on main thread
-        internal override void update()
+        public override void update()
         {
 
             if (isServer)
@@ -38,7 +39,7 @@ namespace Engine.Networking
         }
 
         //Called on program shutdown
-        internal override void shutdown()
+        public override void shutdown()
         {
             close();
         }
@@ -64,25 +65,25 @@ namespace Engine.Networking
         private NativeList<int> escapedConnections;
 
         //Event Delegates
-        internal delegate void NotifyClientDisconnectedDelegate(NetworkConnection connection);
-        internal delegate void NotifyClientConnectedDelegate(NetworkConnection connection);
-        internal delegate void NotifyPacketReceivedDelegate(NetworkConnection connection, int packetId, byte[] rawPacket);
-        internal delegate void NotifyFailedConnectDelegate();
-        internal delegate void NotifyOnDisconnectedFromServerDelegate();
-        internal delegate void NotifyOnConnectedToServerDelegate();
+        public delegate void NotifyClientDisconnectedDelegate(NetworkConnection connection);
+        public delegate void NotifyClientConnectedDelegate(NetworkConnection connection);
+        public delegate void NotifyPacketReceivedDelegate(NetworkConnection connection, int packetId, byte[] rawPacket);
+        public delegate void NotifyFailedConnectDelegate();
+        public delegate void NotifyOnDisconnectedFromServerDelegate();
+        public delegate void NotifyOnConnectedToServerDelegate();
 
         //Events
-        internal event NotifyClientDisconnectedDelegate NotifyClientDisconnected;
-        internal event NotifyClientConnectedDelegate NotifyClientConnected;
-        internal event NotifyPacketReceivedDelegate NotifyPacketReceived;
-        internal event NotifyFailedConnectDelegate NotifyFailedConnect;
-        internal event NotifyOnDisconnectedFromServerDelegate NotifyOnDisconnectedFromServer;
-        internal event NotifyOnConnectedToServerDelegate NotifyOnConnectedToServer;
+        public event NotifyClientDisconnectedDelegate NotifyClientDisconnected;
+        public event NotifyClientConnectedDelegate NotifyClientConnected;
+        public event NotifyPacketReceivedDelegate NotifyPacketReceived;
+        public event NotifyFailedConnectDelegate NotifyFailedConnect;
+        public event NotifyOnDisconnectedFromServerDelegate NotifyOnDisconnectedFromServer;
+        public event NotifyOnConnectedToServerDelegate NotifyOnConnectedToServer;
 
         //Client connected boolean
         private bool connected;
 
-        internal enum ListenerType
+        public enum ListenerType
         {
             SERVER,
             CLIENT
@@ -93,7 +94,7 @@ namespace Engine.Networking
          */
 
         //Start method
-        internal void start()
+        public void start()
         {
 
             connections = new NativeList<NetworkConnection>(16, Allocator.Persistent);
@@ -312,7 +313,7 @@ namespace Engine.Networking
         }
 
         //Public Gateway method for sending packet to server. 
-        internal void sendPacketToServer(Packet packet)
+        public void sendPacketToServer(Packet packet)
         {
             if (connections.Length != 1)
             {
@@ -324,13 +325,13 @@ namespace Engine.Networking
         }
 
         //Public Gateway method for sending packet to client
-        internal void sendPacketToClient(NetworkConnection client, Packet packet)
+        public void sendPacketToClient(NetworkConnection client, Packet packet)
         {
             sendPacket(client, packet);
         }
 
         //Internal Method for sending packets
-        private void sendPacket(NetworkConnection c, Packet packet)
+        public void sendPacket(NetworkConnection c, Packet packet)
         {
             //Ensure connection is valid
             if (c.IsCreated == false) return;
@@ -384,7 +385,7 @@ namespace Engine.Networking
 
 
         //Client disconnect
-        internal void Disconnect()
+        public void Disconnect()
         {
             if (isServer)
             {

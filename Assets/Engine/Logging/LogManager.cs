@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using Engine.Factory;
 
 namespace Engine.Logging
 {
@@ -9,17 +10,17 @@ namespace Engine.Logging
          * Override Functions
          */
 
-        internal override void init(params object[] parameters)
+        public override void init(params object[] parameters)
         {
             Log.setLogManager(this);
         }
 
-        internal override void update()
+        public override void update()
         {
            
         }
 
-        internal override void shutdown()
+        public override void shutdown()
         {
             
         }
@@ -65,7 +66,6 @@ namespace Engine.Logging
 
             throw new System.Exception(error);
         }
-
 
     }
     public enum LogLevel

@@ -1,7 +1,8 @@
 {
-    "name": "Content",
+    "name": "Engine.Input",
     "references": [
-        "GUID:72d655c8b2dc9554188af2961753b024"
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:ab0bf26c474862745b86bd0d94851aea"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

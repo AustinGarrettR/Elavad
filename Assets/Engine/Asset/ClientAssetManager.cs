@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using Engine.Logging;
+using Engine.Factory;
 
 namespace Engine.Asset
 {
@@ -13,7 +14,7 @@ namespace Engine.Asset
          */
 
         //Initialize method
-        internal override void init(params object[] parameters)
+        public override void init(params object[] parameters)
         {
             //Load data pack from resources
             clientDataPack = Resources.Load<ClientAssetPack>("Client_Assets");
@@ -25,13 +26,13 @@ namespace Engine.Asset
         }
 
         //Called on program shutdown
-        internal override void shutdown()
+        public override void shutdown()
         {
 
         }
 
         //Called every frame
-        internal override void update()
+        public override void update()
         {
 
         }
@@ -40,7 +41,7 @@ namespace Engine.Asset
          * Public Functions
          */
 
-        internal GameObject GetUIPanel(string name)
+        public GameObject GetUIPanel(string name)
         {
             GameObject[] panelObjects = clientDataPack.uiPack.UI_Panels;
             foreach(GameObject obj in panelObjects)

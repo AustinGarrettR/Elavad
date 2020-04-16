@@ -5,7 +5,7 @@ namespace Engine.Networking
 {
     [Serializable]
     [Packet(2, "Login Response", "Client", ReliabilityScheme.RELIABLE, "Responds to login request.")]
-    internal class LoginResponse_2 : Packet
+    public class LoginResponse_2 : Packet
     {
         //Data
         public bool accept;

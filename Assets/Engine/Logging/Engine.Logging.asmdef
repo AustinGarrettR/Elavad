@@ -1,11 +1,9 @@
 {
-    "name": "Editor",
+    "name": "Engine.Logging",
     "references": [
-        "GUID:40ba67163def5bd4491016fdda1e97e0"
+        "GUID:ab0bf26c474862745b86bd0d94851aea"
     ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

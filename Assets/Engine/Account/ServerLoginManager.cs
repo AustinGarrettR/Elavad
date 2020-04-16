@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Net.Sockets;
 using Unity.Networking.Transport;
 using UnityEngine;
+using Engine.Factory;
 
 namespace Engine.Account
 {
@@ -13,7 +14,7 @@ namespace Engine.Account
          * Override Methods
          */
 
-        internal override void init(params object[] parameters)
+        public override void init(params object[] parameters)
         {
             connectionManager = (ConnectionManager)parameters[0];
 
@@ -21,12 +22,12 @@ namespace Engine.Account
             connectionManager.NotifyPacketReceived += OnPacketReceived;
         }
 
-        internal override void shutdown()
+        public override void shutdown()
         {
 
         }
 
-        internal override void update()
+        public override void update()
         {
 
         }

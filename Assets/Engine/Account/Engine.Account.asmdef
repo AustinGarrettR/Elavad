@@ -1,11 +1,13 @@
 {
-    "name": "Editor",
+    "name": "Engine.Account",
     "references": [
-        "GUID:40ba67163def5bd4491016fdda1e97e0"
+        "Engine.Networking",
+        "Unity.Burst",
+        "Engine.Logging",
+        "Engine.Factory",
+        "Unity.Networking.Transport"
     ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

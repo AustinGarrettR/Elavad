@@ -5,7 +5,7 @@ namespace Engine.Networking
 {
     [Serializable]
     [Packet(1, "Login Request", "Server", ReliabilityScheme.RELIABLE, "Login request to the server.")]
-    internal class LoginRequest_1 : Packet
+    public class LoginRequest_1 : Packet
     {
         //Data
         public string email;

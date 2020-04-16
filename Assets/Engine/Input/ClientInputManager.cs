@@ -1,6 +1,7 @@
 ﻿using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 using UnityEngine.InputSystem.LowLevel;
+using Engine.Factory;
 
 namespace Engine.Input
 {
@@ -11,19 +12,19 @@ namespace Engine.Input
          */
 
         //Initialize method
-        internal override void init(params object[] parameters)
+        public override void init(params object[] parameters)
         {
 
         }
 
         //Called on program shutdown
-        internal override void shutdown()
+        public override void shutdown()
         {
 
         }
 
         //Called every frame
-        internal override void update()
+        public override void update()
         {           
 
             Mouse mouse = Mouse.current;
