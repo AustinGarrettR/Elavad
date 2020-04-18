@@ -5,6 +5,3 @@ description: > # this means to ignore newlines until "baseurl:"
     The documentation for the elavad project.
 baseurl: "_site" # the subpath of your site, e.g. /blog/
 github_username:  AustinGarrettRichards
-
-include:
-  - "docs/_site"
