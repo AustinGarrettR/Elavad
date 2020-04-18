@@ -29,6 +29,7 @@ items:
     content: 'public abstract class GlobalCoreBase : MonoBehaviour'
     content.vb: >-
       Public MustInherit Class GlobalCoreBase
+
           Inherits MonoBehaviour
   inheritance:
   - System.Object

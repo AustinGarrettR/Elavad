@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "B:/Games/Elavad/Documentation",
+  "source_base_path": "B:/Games/Elavad/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -681,7 +681,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.UI.UIController.html",
-          "hash": "sI9JMYNLFjp26EzpbRJUAA=="
+          "hash": "VxdZrkdt4dJeXfCIO/2s6w=="
         }
       },
       "is_incremental": false,
@@ -756,7 +756,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "uGukRc8mmxajvsMa5HObvQ=="
+          "hash": "/IHlZRao+3LQkUg9Ec+YJA=="
         }
       },
       "is_incremental": false,
@@ -780,7 +780,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "Tx2pHKKg2DicT9NumbhIgA=="
+          "hash": "+3YbwFtg81P+s/wxno0uMA=="
         }
       },
       "is_incremental": false,
@@ -799,12 +799,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "qO6euNBq7jN7BH0VQxlvvQ=="
+          "hash": "gOCcB+pJto1uNzUNkKmlqw=="
         }
       },
       "is_incremental": false,
@@ -826,23 +829,25 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 2
+          "skipped_file_count": 0
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 62,
-          "skipped_file_count": 62
+          "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -855,8 +860,8 @@
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

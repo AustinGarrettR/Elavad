@@ -37,6 +37,7 @@ items:
     content: 'public class ClientCore : GlobalCoreBase'
     content.vb: >-
       Public Class ClientCore
+
           Inherits GlobalCoreBase
   inheritance:
   - System.Object
