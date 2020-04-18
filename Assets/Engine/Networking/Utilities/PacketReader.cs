@@ -9,6 +9,11 @@ namespace Engine.Networking.Utility
     public class PacketReader
     {
 
+        /// <summary>
+        /// Reads the next integer in a byte stream
+        /// </summary>
+        /// <param name="packetBytes">The byte array</param>
+        /// <returns></returns>
         public static int ReadInt(ref byte[] packetBytes)
         {
             byte[] array = packetBytes;
@@ -22,6 +27,11 @@ namespace Engine.Networking.Utility
             return @int;
         }
 
+        /// <summary>
+        /// Reads the next short in a byte stream
+        /// </summary>
+        /// <param name="packetBytes">The byte array</param>
+        /// <returns></returns>
         public static short ReadShort(ref byte[] packetBytes)
         {
             byte[] array = packetBytes;
@@ -35,6 +45,11 @@ namespace Engine.Networking.Utility
             return @short;
         }
 
+        /// <summary>
+        /// Reads the next bool in a byte stream
+        /// </summary>
+        /// <param name="packetBytes">The byte array</param>
+        /// <returns></returns>
         public static bool ReadBool(ref byte[] packetBytes)
         {
             byte[] array = packetBytes;
@@ -48,6 +63,11 @@ namespace Engine.Networking.Utility
             return @bool;
         }
 
+        /// <summary>
+        /// Reads the next long in a byte stream
+        /// </summary>
+        /// <param name="packetBytes">The byte array</param>
+        /// <returns></returns>
         public static long ReadLong(ref byte[] packetBytes)
         {
             byte[] array = packetBytes;
@@ -61,6 +81,11 @@ namespace Engine.Networking.Utility
             return @long;
         }
 
+        /// <summary>
+        /// Reads the next float in a byte stream
+        /// </summary>
+        /// <param name="packetBytes">The byte array</param>
+        /// <returns></returns>
         public static float ReadFloat(ref byte[] packetBytes)
         {
             byte[] array = packetBytes;
@@ -73,6 +98,12 @@ namespace Engine.Networking.Utility
             packetBytes = destinationArray;
             return @float;
         }
+
+        /// <summary>
+        /// Reads the next string in a byte stream
+        /// </summary>
+        /// <param name="packetBytes">The byte array</param>
+        /// <returns></returns>
         public static string ReadString(ref byte[] packetBytes)
         {
             int num = PacketReader.ReadInt(ref packetBytes);
@@ -86,6 +117,12 @@ namespace Engine.Networking.Utility
             packetBytes = destinationArray;
             return @string;
         }
+
+        /// <summary>
+        /// Reads an embedded byte array in a byte stream
+        /// </summary>
+        /// <param name="packetBytes">The byte array</param>
+        /// <returns></returns>
         public static byte[] ReadByteArray(ref byte[] packetBytes)
         {
             int num = PacketReader.ReadInt(ref packetBytes);

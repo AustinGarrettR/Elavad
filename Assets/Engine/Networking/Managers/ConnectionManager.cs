@@ -94,20 +94,69 @@ namespace Engine.Networking
         /// </summary>
         private NativeList<int> escapedConnections;
 
-        //Delegates
+        /// <summary>
+        /// Event delegate called when client is disconnected
+        /// </summary>
+        /// <param name="connection">The client that disconnected</param>
         public delegate void NotifyClientDisconnectedDelegate(NetworkConnection connection);
+
+        /// <summary>
+        /// Event delegate when a client connects
+        /// </summary>
+        /// <param name="connection">The connected client</param>
         public delegate void NotifyClientConnectedDelegate(NetworkConnection connection);
+
+        /// <summary>
+        /// Event delegate for a packet receive
+        /// </summary>
+        /// <param name="connection">The source of the packet</param>
+        /// <param name="packetId">The packet id</param>
+        /// <param name="rawPacket">The packet data in byte array format</param>
         public delegate void NotifyPacketReceivedDelegate(NetworkConnection connection, int packetId, byte[] rawPacket);
+
+        /// <summary>
+        /// Event delegate for failing to connect
+        /// </summary>
         public delegate void NotifyFailedConnectDelegate();
+
+        /// <summary>
+        /// Event delegate for disconnecting from the server
+        /// </summary>
         public delegate void NotifyOnDisconnectedFromServerDelegate();
+
+        /// <summary>
+        /// Event delegate for the client connecting to the server
+        /// </summary>
         public delegate void NotifyOnConnectedToServerDelegate();
 
-        //Events
+        /// <summary>
+        /// Event for client disconnection
+        /// </summary>
         public event NotifyClientDisconnectedDelegate NotifyClientDisconnected;
+
+        /// <summary>
+        /// Event for a client connection
+        /// </summary>
         public event NotifyClientConnectedDelegate NotifyClientConnected;
+
+        /// <summary>
+        /// Event for a packet being received
+        /// </summary>
         public event NotifyPacketReceivedDelegate NotifyPacketReceived;
+
+        /// <summary>
+        /// Event for failing to connect to server
+        /// </summary>
         public event NotifyFailedConnectDelegate NotifyFailedConnect;
+
+        /// <summary>
+        /// Event for being disconnected from server
+        /// </summary>
         public event NotifyOnDisconnectedFromServerDelegate NotifyOnDisconnectedFromServer;
+
+        /// <summary>
+        /// Event for connecting to the server
+        /// </summary>
         public event NotifyOnConnectedToServerDelegate NotifyOnConnectedToServer;
 
         /// <summary>
@@ -120,7 +169,14 @@ namespace Engine.Networking
         /// </summary>
         public enum ListenerType
         {
+            /// <summary>
+            /// If the connection manager is the server instance
+            /// </summary>
             SERVER,
+
+            /// <summary>
+            /// If the connection manager is a client instance
+            /// </summary>
             CLIENT
         }
 

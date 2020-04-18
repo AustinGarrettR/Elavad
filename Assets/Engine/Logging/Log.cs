@@ -44,7 +44,7 @@ namespace Engine.Logging
         }
 
         /// <summary>Logs an error to console</summary>
-        /// <param name="message">The error message.</param>
+        /// <param name="error">The error message.</param>
         public static void LogError(string error)
         {
             logManager.LogError(error);

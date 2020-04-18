@@ -5,6 +5,9 @@ using Engine.Factory;
 
 namespace Engine
 {
+    /// <summary>
+    /// The base monobehavior for the client and server cores
+    /// </summary>
     public abstract class GlobalCoreBase : MonoBehaviour
     {
 
