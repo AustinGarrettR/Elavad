@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d01b11249c7185f4da023387c38f41d0, type: 3}
   m_Name: UI_Pack
   m_EditorClassIdentifier: 
-  UI_Panels:
-  - {fileID: 543084089636442458, guid: 8197ee09b4b776242ac243afcc431c9d, type: 3}
+  UI_Panels: []

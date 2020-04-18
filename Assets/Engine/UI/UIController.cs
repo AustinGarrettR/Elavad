@@ -15,7 +15,6 @@ namespace Engine.UI
 
         private void Awake()
         {
-
             panelRenderer = gameObject.GetComponent<PanelRenderer>();
             panelRenderer.postUxmlReload = panelLoaded;
             panelRenderer.RecreateUIFromUxml();
@@ -83,7 +82,7 @@ namespace Engine.UI
 
         private void placeholderGainedFocusEvent(FocusInEvent focusEvent)
         {
-            TextField field = (TextField)focusEvent.target;
+            TextField field = (TextField)focusEvent.target;            
             if ((bool)field.userData)
             {
                 field.userData = false;

@@ -12,7 +12,7 @@
             <ui:Button name="Forgot_Button" focusable="true" text="Trouble logging in?" class="basic basic-text-only" style="margin-top: 8px;&#10;margin-bottom: 4px;&#10;" />
             <ui:Button name="New_User_Button" focusable="true" text="New user? Sign up!" class="basic basic-text-only" style="margin-top: 4px;&#10;margin-bottom: 4px;&#10;" />
         </ui:VisualElement>
-        <ui:VisualElement name="Status_Panel" class="basic-panel" style="width: 375px;&#10;height: 32px;&#10;align-items: center;&#10;justify-content: flex-start;&#10;display: flex;&#10;visibility: visible;&#10;">
+        <ui:VisualElement name="Status_Panel" class="basic-panel" style="width: 375px;&#10;height: 32px;&#10;align-items: center;&#10;justify-content: flex-start;&#10;display: flex;&#10;visibility: hidden;&#10;">
             <ui:Label text="..." name="Status_Message" style="color: rgb(209, 209, 209);&#10;font-size: 13px;&#10;margin-top: auto;&#10;margin-bottom: auto;&#10;" />
         </ui:VisualElement>
     </ui:VisualElement>

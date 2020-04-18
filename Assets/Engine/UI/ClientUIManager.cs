@@ -17,11 +17,6 @@ namespace Engine.UI
             //Assign asset manager
             clientAssetManager = (ClientAssetManager) parameters[0];
 
-            //Remove later, test only!
-            GameObject login = GameObject.Instantiate(clientAssetManager.GetUIPanel("LoginScreen"));
-            RegisterUIController(login.GetComponent<UIController>());
-
-
         }
 
         //Called on program shutdown

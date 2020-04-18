@@ -3,10 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using Engine.Factory;
 using Engine.Logging;
-using Engine.Account;
 
 namespace Engine.API
 {
+    /// <summary>
+    /// API to interface with the engine
+    /// </summary>
     public static partial class API
     {
 
@@ -34,7 +36,14 @@ namespace Engine.API
             }
         }
 
+        /// <summary>
+        /// The client section of the API
+        /// </summary>
         public static partial class Client { }
+
+        /// <summary>
+        /// The server section of the API
+        /// </summary>
         public static partial class Server { }
 
     }

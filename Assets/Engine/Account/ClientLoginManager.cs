@@ -1,11 +1,12 @@
 ﻿using Engine.Networking;
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Net.Sockets;
+using System.Threading.Tasks;
 using Unity.Networking.Transport;
 using UnityEngine;
 using Engine.Factory;
+using UnityEngine.SceneManagement;
+using Engine.Logging;
+using Engine.Dispatch;
 
 namespace Engine.Account
 {
@@ -21,10 +22,13 @@ namespace Engine.Account
             this.connectionManager = (ConnectionManager)parameters[1];
 
             //Subscribe to events
-            connectionManager.NotifyFailedConnect += onFailedToConnect;
-            connectionManager.NotifyOnConnectedToServer += onConnectedToServer;
+            connectionManager.NotifyFailedConnect += OnFailedToConnect;
+            connectionManager.NotifyOnConnectedToServer += OnConnectedToServer;
             connectionManager.NotifyPacketReceived += OnPacketReceived;
-            connectionManager.NotifyOnDisconnectedFromServer += onDisconnectedFromServer;
+            connectionManager.NotifyOnDisconnectedFromServer += OnDisconnectedFromServer;
+
+            //Load login screen
+            SceneManager.LoadScene(1, LoadSceneMode.Additive);
         }
 
         //Called on program shutdown
@@ -49,27 +53,31 @@ namespace Engine.Account
         /// <param name="email">The email.</param>
         /// <param name="password">The password.</param>
         /// <param name="rememberMe">if set to <c>true</c> [remember me].</param>
-        public void AttemptLogin(string email, string password, bool rememberMe, Action<Color, string> statusMessageAction)
+        /// <param name="statusMessageAction">The action called to update the status message.</param>
+        /// <param name="opacityAction">The action called to update the panel opacity.</param>
+        public void AttemptLogin(string email, string password, bool rememberMe, Action<bool, Color, string> statusMessageAction, Action<float> opacityAction)
         {
             this.email = email;
             this.password = password;
             this.rememberMe = rememberMe;
+            this.statusMessageAction = statusMessageAction;
+            this.opacityAction = opacityAction;
 
             //Check input
             if (email.Length == 0 || password.Length == 0)
             {
-                statusMessageAction(new Color(214f/255f, 111f/255f, 111/255f), "Please enter your email and password.");
+                this.statusMessageAction(false, new Color(214f/255f, 111f/255f, 111/255f), "Please enter your email and password.");
                 return;
             }
             if (IsValidEmail(email) == false)
             {
-                statusMessageAction(new Color(214f / 255f, 111f / 255f, 111f / 255f), "Invalid email address.");
+                this.statusMessageAction(false, new Color(214f / 255f, 111f / 255f, 111f / 255f), "Invalid email address.");
                 return;
             }
 
             //Start connection
             connectionManager.start();
-            statusMessageAction(Color.white, "Connecting to server...");
+            this.statusMessageAction(true, Color.white, "Connecting to server...");
         }
 
         /*
@@ -81,9 +89,10 @@ namespace Engine.Account
         private string email;
         private string password;
         private bool rememberMe;
-
         private bool loggedIn;
 
+        private Action<bool, Color, string> statusMessageAction;
+        private Action<float> opacityAction;
 
         /*
          * Event Functions
@@ -103,27 +112,32 @@ namespace Engine.Account
         }
 
         //Disconnected from server
-        private void onDisconnectedFromServer()
+        private void OnDisconnectedFromServer()
         {
             if (loggedIn)
             {
-                // LoginScreenUI.getSingleton().setStatusVisibility(false);
                 loggedIn = false;
+                Log.LogMsg("Disconnected from server.");
+
+                SceneManager.LoadScene(0);
             }
-            //LoginScreenUI.getSingleton().setContainerVisibility(true);
         }
 
         //Unable to connect to server
-        private void onFailedToConnect()
+        private void OnFailedToConnect()
         {
-            // LoginScreenUI.getSingleton().setStatusMessage("<color=#d66f6f>Unable to connect to server.</color>");
+            Log.LogMsg("Failed to connect.");
+            this.statusMessageAction(false, new Color(214f / 255f, 111f / 255f, 111f / 255f), "Unable to connect to server.");
         }
 
         //Connected to server (Pre-Authentication)
-        private void onConnectedToServer()
+        private void OnConnectedToServer()
         {
+
+            Log.LogMsg("Connected to server. Sending login details...");
+
             //Send login details
-            //LoginScreenUI.getSingleton().setStatusMessage("Sending login details...");
+            this.statusMessageAction(true, Color.white, "Sending login details...");
 
             //Form packet
             LoginRequest_1 packet = new LoginRequest_1();
@@ -143,49 +157,80 @@ namespace Engine.Account
         {
             if (accepted)
             {
-                //LoginScreenUI.getSingleton().setStatusMessage("Loading...");
 
-                beginGameLoad();
-                /*Action completeMethod = delegate
-                {
-                    beginGameLoad();
-                };
+                Log.LogMsg("Login details accepted.");
 
-                LoginScreenUI.getSingleton().FadeAlpha(false, completeMethod);*/
+                this.statusMessageAction(true, Color.white, "Loading...");
+
+                //Run game load asynchronously
+                Task.Run(BeginGameLoad);
+                
                 loggedIn = true;
 
             }
             else
             {
                 connectionManager.Disconnect();
-                // LoginScreenUI.getSingleton().setStatusMessage("<color=#d66f6f>" + errorResponse + "</color>");
+                this.statusMessageAction(false, new Color(214f / 255f, 111f / 255f, 111f / 255f), errorResponse);
             }
         }
 
         //Begin game load on login
-        private void beginGameLoad()
+        private async Task BeginGameLoad()
         {
-            // clientLoadingScreenManager.createLoadingScreen(endGameLoad, loadGame, 1000, "Logging In...", 2000, false);
+            Log.LogMsg("Loading game...");
+            Task loadGameTask = LoadGame();
+            await loadGameTask;
+
+            Log.LogMsg("Game has been loaded. Fading out login screen...");
+            Task fadeLoginTask = FadeLoginScreen();
+            await fadeLoginTask;
+
+            Log.LogMsg("Login screen has been faded. Ending game load.");
+            Task endLoadTask = EndGameLoad();
+            await endLoadTask;
+
+            Log.LogMsg("Completed the end phase of game loading.");
+            await Task.CompletedTask;
         }
 
         //Load game call upon successful login
-        private void loadGame()
+        private async Task LoadGame()
         {
-            //Hide login screen here
-            // LoginScreenUI.getSingleton().setContainerVisibility(false);
-
-            //Load game
-
+            await Task.CompletedTask;
         }
 
-        //Game is done loading
-        private void endGameLoad()
+        //Fade login screen out
+        private async Task FadeLoginScreen()
         {
-            Debug.Log("Done loading.");
+            int iterations = 500;
+            int delayInMillisecondsPerIteration = 3;
+            for (int i = iterations; i > 0; i--)
+            {
+                float opacity = ((float)i) / (float) iterations;
+
+                Dispatcher.Invoke(() => {
+                     opacityAction(opacity);
+                });
+                await Task.Delay(delayInMillisecondsPerIteration);
+            }
+
+            Dispatcher.Invoke(() => {
+                opacityAction(0);
+            });
+        }
+
+        //Game is done loading, cleanup login screen
+        private async Task EndGameLoad()
+        {
+            Dispatcher.Invoke(() => {
+                SceneManager.UnloadSceneAsync(1, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
+            });
+            await Task.CompletedTask;
         }
 
         //Returns if player is logged in
-        public bool isPlayerLoggedIn()
+        public bool IsPlayerLoggedIn()
         {
             return this.loggedIn;
         }

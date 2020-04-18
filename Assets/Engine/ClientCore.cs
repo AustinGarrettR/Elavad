@@ -7,10 +7,13 @@ using Engine.UI;
 using Engine.Asset;
 using Engine.Logging;
 using Engine.API;
+using Engine.Dispatch;
 
 namespace Engine
 {
-    //Attach to game object in scene. 
+    /// <summary>
+    /// Core monobehavior for client
+    /// </summary>
     public class ClientCore : GlobalCoreBase
     {
 
@@ -20,11 +23,6 @@ namespace Engine
 
         internal override void init()
         {
-          /*  if(clientDataPack == null)
-            {
-                Log.LogError("Missing client data pack.");
-                return;
-            }*/
 
             addManager(logManager);
             addManager(clientAssetManager);
@@ -33,6 +31,7 @@ namespace Engine
             addManager(clientInputManager);
             addManager(clientUIManager, clientAssetManager);
             addManager(apiManager, managers);
+            addManager(dispatchManager);
 
         }
 
@@ -57,17 +56,11 @@ namespace Engine
         public readonly ClientUIManager clientUIManager = new ClientUIManager();
         public readonly ClientInputManager clientInputManager = new ClientInputManager();
         public readonly APIManager apiManager = new APIManager();
+        public readonly DispatchManager dispatchManager = new DispatchManager();
 
         /*
          * Internal Functions
          */
 
-        //Async load method on login. Start main game managers here
-        internal IEnumerator loadGameOnLogin(Action onComplete)
-        {
-
-            //Done loading        
-            return null;
-        }
     }
 }

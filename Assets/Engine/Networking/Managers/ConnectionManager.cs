@@ -187,7 +187,7 @@ namespace Engine.Networking
                             {
                                 if (stream.GetBytesRead() < streamMaxLength)
                                 {
-                                    escapedConnections.RemoveAtSwapBack(connections[index].InternalId);
+                                    escapedConnections[index] = default;
 
                                     nextByte = stream.ReadByte();
                                     if (nextByte == SharedConfig.DELIMITER)
@@ -209,8 +209,9 @@ namespace Engine.Networking
                     }
                     else if (cmd == NetworkEvent.Type.Disconnect)
                     {
-                        connections[index] = default;
+                        connections[index] = default;                       
                         OnClientDisconnected(connections[index]);
+                        break;
                     }
                 }
             }

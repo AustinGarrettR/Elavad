@@ -1,12 +1,7 @@
 {
-    "name": "Engine.Account",
+    "name": "Engine.Dispatch",
     "references": [
-        "Engine.Networking",
-        "Unity.Burst",
-        "Engine.Logging",
-        "Engine.Factory",
-        "Unity.Networking.Transport",
-        "Engine.Dispatch"
+        "GUID:ab0bf26c474862745b86bd0d94851aea"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

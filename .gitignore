@@ -358,6 +358,8 @@ healthchecksdb
 /.collab
 /Library
 /Builds
+/Help
+!/Help/Documentation.chm
 !/Packages/manifest.json
 
 *.sln
