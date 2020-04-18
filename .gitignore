@@ -358,7 +358,7 @@ healthchecksdb
 /.collab
 /Library
 /Builds
-/Help
+/Help/*
 !/Help/Documentation.chm
 !/Packages/manifest.json
 
