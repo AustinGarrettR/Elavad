@@ -8,11 +8,16 @@ using UnityEngine;
 
 namespace Editor
 {
+    /// <summary>
+    /// Editor window displaying packets and their properties
+    /// </summary>
     public class PacketInfoEditor : EditorWindow
     {
         private static List<Packet> packets = new List<Packet>();
 
-        //Called when window open
+        /// <summary>
+        /// Called when the window is open
+        /// </summary>
         [MenuItem("Elavad/Networking/Packet Info")]
         public static void ShowWindow()
         {
@@ -20,7 +25,9 @@ namespace Editor
             EditorWindow window = GetWindow<PacketInfoEditor>("Packet Info");
         }
 
-        //Called for when window opens and when scripts are reloaded
+        /// <summary>
+        /// Called for when window opens and when scripts are reloaded
+        /// </summary>
         [UnityEditor.Callbacks.DidReloadScripts]
         private static void init()
         {
@@ -28,13 +35,17 @@ namespace Editor
             GetPackets();
         }
 
-        //Called for repaint
+        /// <summary>
+        /// Called for repaint
+        /// </summary>
         private void OnGUI()
         {
             DrawPacketInfo<Packet>();
         }
 
-        //Find packets in assembly
+        /// <summary>
+        /// Find packets in assembly
+        /// </summary>
         private static void GetPackets()
         {
             Type parentType = typeof(Packet);
@@ -56,7 +67,10 @@ namespace Editor
                 x.packetId.CompareTo(y.packetId));
         }
 
-        //Draw the table onto the UI
+        /// <summary>
+        /// Draw the table onto the UI
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
         private void DrawPacketInfo<T>()
         {
 
@@ -127,7 +141,11 @@ namespace Editor
 
         }
 
-        //Get packets in assembly
+        /// <summary>
+        /// Get packets in assembly
+        /// </summary>
+        /// <param name="assembly">The assembly</param>
+        /// <returns></returns>
         static IEnumerable<Type> GetTypesWithPacketAttribute(Assembly assembly)
         {
             foreach (Type type in assembly.GetTypes())

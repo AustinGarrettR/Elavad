@@ -10,13 +10,19 @@ using Engine.Dispatch;
 
 namespace Engine.Account
 {
+    /// <summary>
+    /// Manager for handling client logins to the server
+    /// </summary>
     public class ClientLoginManager : Manager
     {
         /*
          * Override Methods
          */
 
-        //Initialize method
+        /// <summary>
+        /// Initialize method
+        /// </summary>
+        /// <param name="parameters"></param>
         public override void init(params object[] parameters)
         {
             this.connectionManager = (ConnectionManager)parameters[1];
@@ -31,13 +37,17 @@ namespace Engine.Account
             SceneManager.LoadScene(1, LoadSceneMode.Additive);
         }
 
-        //Called on program shutdown
+        /// <summary>
+        /// Called on program shutdown
+        /// </summary>
         public override void shutdown()
         {
 
         }
 
-        //Called every frame
+        /// <summary>
+        /// Called every frame
+        /// </summary>
         public override void update()
         {
 
@@ -76,7 +86,7 @@ namespace Engine.Account
             }
 
             //Start connection
-            connectionManager.start();
+            connectionManager.Start();
             this.statusMessageAction(true, Color.white, "Connecting to server...");
         }
 
@@ -98,7 +108,12 @@ namespace Engine.Account
          * Event Functions
          */
 
-        //Packet received
+        /// <summary>
+        /// Packet received
+        /// </summary>
+        /// <param name="c">The network connection</param>
+        /// <param name="packetId">The packet ID</param>
+        /// <param name="packetBytes">The bytes to process</param>
         private void OnPacketReceived(NetworkConnection c, int packetId, byte[] packetBytes)
         {
             if (packetId == 2)
@@ -111,7 +126,9 @@ namespace Engine.Account
             }
         }
 
-        //Disconnected from server
+        /// <summary>
+        /// Disconnected from server
+        /// </summary>
         private void OnDisconnectedFromServer()
         {
             if (loggedIn)
@@ -123,14 +140,18 @@ namespace Engine.Account
             }
         }
 
-        //Unable to connect to server
+        /// <summary>
+        /// Unable to connect to server
+        /// </summary>
         private void OnFailedToConnect()
         {
             Log.LogMsg("Failed to connect.");
             this.statusMessageAction(false, new Color(214f / 255f, 111f / 255f, 111f / 255f), "Unable to connect to server.");
         }
 
-        //Connected to server (Pre-Authentication)
+        /// <summary>
+        /// Connected to server (Pre-Authentication)
+        /// </summary>
         private void OnConnectedToServer()
         {
 
@@ -152,7 +173,11 @@ namespace Engine.Account
          * Internal Functions
          */
 
-        //Login authentication response
+        /// <summary>
+        /// Login authentication response
+        /// </summary>
+        /// <param name="accepted">If it was accepted</param>
+        /// <param name="errorResponse">If not accepted, the reason why</param>
         private void LoginResponse(bool accepted, string errorResponse)
         {
             if (accepted)
@@ -175,7 +200,10 @@ namespace Engine.Account
             }
         }
 
-        //Begin game load on login
+        /// <summary>
+        /// Begin game load on login
+        /// </summary>
+        /// <returns></returns>
         private async Task BeginGameLoad()
         {
             Log.LogMsg("Loading game...");
@@ -194,13 +222,19 @@ namespace Engine.Account
             await Task.CompletedTask;
         }
 
-        //Load game call upon successful login
+        /// <summary>
+        /// Load game call upon successful login
+        /// </summary>
+        /// <returns></returns>
         private async Task LoadGame()
         {
             await Task.CompletedTask;
         }
 
-        //Fade login screen out
+        /// <summary>
+        /// Fade login screen out
+        /// </summary>
+        /// <returns></returns>
         private async Task FadeLoginScreen()
         {
             int iterations = 500;
@@ -220,7 +254,10 @@ namespace Engine.Account
             });
         }
 
-        //Game is done loading, cleanup login screen
+        /// <summary>
+        /// Game is done loading, cleanup login screen
+        /// </summary>
+        /// <returns></returns>
         private async Task EndGameLoad()
         {
             Dispatcher.Invoke(() => {
@@ -229,7 +266,10 @@ namespace Engine.Account
             await Task.CompletedTask;
         }
 
-        //Returns if player is logged in
+        /// <summary>
+        /// Returns if player is logged in
+        /// </summary>
+        /// <returns></returns>
         public bool IsPlayerLoggedIn()
         {
             return this.loggedIn;
@@ -239,7 +279,11 @@ namespace Engine.Account
          * Utility Methods
          */
 
-        //Checks if email is of valid format
+        /// <summary>
+        /// Checks if string input is of valid email format
+        /// </summary>
+        /// <param name="email">The email</param>
+        /// <returns></returns>
         bool IsValidEmail(string email)
         {
             try

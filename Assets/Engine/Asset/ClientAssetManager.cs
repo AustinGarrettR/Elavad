@@ -7,13 +7,19 @@ using Engine.Factory;
 
 namespace Engine.Asset
 {
+    /// <summary>
+    /// The manager that handles asset loading
+    /// </summary>
     public class ClientAssetManager : Manager
     {
         /*
          * Override Methods
          */
 
-        //Initialize method
+        /// <summary>
+        /// Initialize method
+        /// </summary>
+        /// <param name="parameters"></param>
         public override void init(params object[] parameters)
         {
             //Load data pack from resources
@@ -25,13 +31,17 @@ namespace Engine.Asset
             }
         }
 
-        //Called on program shutdown
+        /// <summary>
+        /// Called on program shutdown
+        /// </summary>
         public override void shutdown()
         {
 
         }
 
-        //Called every frame
+        /// <summary>
+        /// Called every frame
+        /// </summary>
         public override void update()
         {
 
@@ -41,6 +51,11 @@ namespace Engine.Asset
          * Public Functions
          */
 
+        /// <summary>
+        /// Return a UI panel from the asset pack
+        /// </summary>
+        /// <param name="name">The name of the panel</param>
+        /// <returns></returns>
         public GameObject GetUIPanel(string name)
         {
             GameObject[] panelObjects = clientDataPack.uiPack.UI_Panels;

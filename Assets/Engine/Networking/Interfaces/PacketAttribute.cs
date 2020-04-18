@@ -2,6 +2,9 @@
 
 namespace Engine.Networking
 {
+    /// <summary>
+    /// Used to assign properties to a packet
+    /// </summary>
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Interface, AllowMultiple = false, Inherited = true)]
     public class PacketAttribute : Attribute
     {

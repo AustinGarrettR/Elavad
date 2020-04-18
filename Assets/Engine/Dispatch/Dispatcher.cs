@@ -35,6 +35,9 @@ namespace Engine.Dispatch
          * Internal Functions
          */
 
+        /// <summary>
+        /// Invoke any actions queue'd up
+        /// </summary>
         private static void InvokePending()
         {
             lock (pending)
@@ -48,6 +51,9 @@ namespace Engine.Dispatch
             }
         }
 
+        /// <summary>
+        /// Called every frame by a manager
+        /// </summary>
         internal static void Update()
         {
             InvokePending();

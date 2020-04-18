@@ -3,6 +3,9 @@ using Engine.Factory;
 
 namespace Engine.Logging
 {
+    /// <summary>
+    /// Manages log messages and errors
+    /// </summary>
     public class LogManager : Manager
     {
 
@@ -10,16 +13,26 @@ namespace Engine.Logging
          * Override Functions
          */
 
+        /// <summary>
+        /// Called on initialization
+        /// </summary>
+        /// <param name="parameters">No parameters used</param>
         public override void init(params object[] parameters)
         {
             Log.setLogManager(this);
         }
 
+        /// <summary>
+        /// Called every frame
+        /// </summary>
         public override void update()
         {
            
         }
 
+        /// <summary>
+        /// Called on shutdown
+        /// </summary>
         public override void shutdown()
         {
             
@@ -29,23 +42,37 @@ namespace Engine.Logging
          * Internal Variables
          */
 
+        /// <summary>
+        /// What level of messages to show
+        /// </summary>
         private LogLevel logLevel = LogLevel.ALL;
 
         /*
          * Public Functions
          */
 
-        internal LogLevel getLogLevel()
+        /// <summary>
+        /// Returns the log level
+        /// </summary>
+        /// <returns>LogLevel enum</returns>
+        public LogLevel getLogLevel()
         {
             return logLevel;
         } 
 
-        internal void SetLogLevel(LogLevel level)
+        /// <summary>
+        /// Set the log level
+        /// </summary>
+        /// <param name="level">the LogLevel enum value</param>
+        public void SetLogLevel(LogLevel level)
         {
             logLevel = level;
         }
 
-        //Logs a message
+        /// <summary>
+        /// Logs a message from the API
+        /// </summary>
+        /// <param name="message">The message to log</param>
         internal void LogMsg(string message)
         {
             Debug.Log(message);
@@ -56,7 +83,10 @@ namespace Engine.Logging
             }
         }
 
-        //Logs an error
+        /// <summary>
+        /// Logs an error from the API
+        /// </summary>
+        /// <param name="error">The error message</param>
         internal void LogError(string error)
         {
             if (getLogLevel() == LogLevel.ERRORS || getLogLevel() == LogLevel.ALL)
@@ -68,10 +98,25 @@ namespace Engine.Logging
         }
 
     }
+
+    /// <summary>
+    /// The level of messages to show
+    /// </summary>
     public enum LogLevel
     {
+        /// <summary>
+        /// Show no messages
+        /// </summary>
         NONE,
+
+        /// <summary>
+        /// Show only errors
+        /// </summary>
         ERRORS,
+
+        /// <summary>
+        /// Show all messages and errors
+        /// </summary>
         ALL
     }
 }

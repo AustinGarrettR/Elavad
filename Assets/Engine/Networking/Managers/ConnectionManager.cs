@@ -11,6 +11,9 @@ using Engine.Factory;
 
 namespace Engine.Networking
 {
+    /// <summary>
+    /// Manages connections for server and client
+    /// </summary>
     public class ConnectionManager : Manager
     {
 
@@ -18,17 +21,22 @@ namespace Engine.Networking
          * Override Functions
          */
 
-        //Called on start
+        /// <summary>
+        /// Called on start
+        /// </summary>
+        /// <param name="parameters"></param>
         public override void init(params System.Object[] parameters)
         {
             ListenerType listenerType = (ListenerType)parameters[0];
             this._isServer = listenerType == ListenerType.SERVER;
 
             if (isServer)
-                start();
+                Start();
         }
 
-        //Called every frame on main thread
+        /// <summary>
+        /// Called every frame on main thread
+        /// </summary>
         public override void update()
         {
 
@@ -38,7 +46,9 @@ namespace Engine.Networking
                 clientUpdateLoop();
         }
 
-        //Called on program shutdown
+        /// <summary>
+        /// Called on program shutdown
+        /// </summary>
         public override void shutdown()
         {
             close();
@@ -48,23 +58,43 @@ namespace Engine.Networking
          * Internal Variables
          */
 
-        //Is instance running as server or client
+        /// <summary>
+        /// Instance running as server or client
+        /// </summary>
         private bool _isServer;
+
+        /// <summary>
+        /// Readonly if instance is running server or client
+        /// </summary>
         public virtual bool isServer { get => _isServer; }
 
-        //Driver
+        /// <summary>
+        /// Networking driver
+        /// </summary>
         internal NetworkDriver networkDriver;
 
 
-        //Pipelines
+        /// <summary>
+        /// Sends UDP data unreliably
+        /// </summary>
         private NetworkPipeline unreliablePipeline;
+
+        /// <summary>
+        /// Sends UDP data reliably (similar to TCP)
+        /// </summary>
         private NetworkPipeline reliablePipeline;
 
-        //Connections List
+        /// <summary>
+        /// List of connections
+        /// </summary>
         private NativeList<NetworkConnection> connections;
+
+        /// <summary>
+        /// List of connections which last read an escaped byte
+        /// </summary>
         private NativeList<int> escapedConnections;
 
-        //Event Delegates
+        //Delegates
         public delegate void NotifyClientDisconnectedDelegate(NetworkConnection connection);
         public delegate void NotifyClientConnectedDelegate(NetworkConnection connection);
         public delegate void NotifyPacketReceivedDelegate(NetworkConnection connection, int packetId, byte[] rawPacket);
@@ -80,9 +110,14 @@ namespace Engine.Networking
         public event NotifyOnDisconnectedFromServerDelegate NotifyOnDisconnectedFromServer;
         public event NotifyOnConnectedToServerDelegate NotifyOnConnectedToServer;
 
-        //Client connected boolean
+        /// <summary>
+        /// Is the client connected
+        /// </summary>
         private bool connected;
 
+        /// <summary>
+        /// Server or Client
+        /// </summary>
         public enum ListenerType
         {
             SERVER,
@@ -93,8 +128,10 @@ namespace Engine.Networking
          * Internal Functions
          */
 
-        //Start method
-        public void start()
+        /// <summary>
+        /// Start method
+        /// </summary>
+        public void Start()
         {
 
             connections = new NativeList<NetworkConnection>(16, Allocator.Persistent);
@@ -128,7 +165,9 @@ namespace Engine.Networking
 
         }
 
-        //Update Loops
+        /// <summary>
+        /// Server update loop
+        /// </summary>
         private void serverUpdateLoop()
         {
             networkDriver.ScheduleUpdate().Complete();
@@ -218,6 +257,9 @@ namespace Engine.Networking
 
         }
 
+        /// <summary>
+        /// Client update loop
+        /// </summary>
         private void clientUpdateLoop()
         {
             networkDriver.ScheduleUpdate().Complete();
@@ -293,7 +335,9 @@ namespace Engine.Networking
 
         }
 
-        //Close and reset
+        /// <summary>
+        /// Close and reset
+        /// </summary>
         private void close()
         {
 
@@ -313,7 +357,10 @@ namespace Engine.Networking
 
         }
 
-        //Public Gateway method for sending packet to server. 
+        /// <summary>
+        /// Method for sending packet to server. 
+        /// </summary>
+        /// <param name="packet">The packet</param>
         public void sendPacketToServer(Packet packet)
         {
             if (connections.Length != 1)
@@ -325,14 +372,22 @@ namespace Engine.Networking
             sendPacket(connections[0], packet);
         }
 
-        //Public Gateway method for sending packet to client
+        /// <summary>
+        /// Method for sending packet to client
+        /// </summary>
+        /// <param name="client">Client connection to receive the packet</param>
+        /// <param name="packet">The packet</param>
         public void sendPacketToClient(NetworkConnection client, Packet packet)
         {
             sendPacket(client, packet);
         }
 
-        //Internal Method for sending packets
-        public void sendPacket(NetworkConnection c, Packet packet)
+        /// <summary>
+        /// Private method for sending packets to a connection
+        /// </summary>
+        /// <param name="c">The connection</param>
+        /// <param name="packet">The Packet</param>
+        private void sendPacket(NetworkConnection c, Packet packet)
         {
             //Ensure connection is valid
             if (c.IsCreated == false) return;
@@ -369,7 +424,11 @@ namespace Engine.Networking
 
         }
 
-        //Escape our bytes and send over network
+        /// <summary>
+        /// Escape our bytes and send over network
+        /// </summary>
+        /// <param name="writer">Data stream writer</param>
+        /// <param name="bytes">Bytes to write</param>
         private void writeEscapedBytes(ref DataStreamWriter writer, byte[] bytes)
         {
             foreach (byte b in bytes)
@@ -385,7 +444,9 @@ namespace Engine.Networking
         }
 
 
-        //Client disconnect
+        /// <summary>
+        /// Client disconnect function
+        /// </summary>
         public void Disconnect()
         {
             if (isServer)
@@ -403,7 +464,11 @@ namespace Engine.Networking
             close();
         }
 
-        //Triggers event for packet receiving
+        /// <summary>
+        /// Triggers event for packet receiving
+        /// </summary>
+        /// <param name="c">The connection</param>
+        /// <param name="bytes">The packet data</param>
         private void OnPacketReceived(NetworkConnection c, byte[] bytes)
         {
 
@@ -412,7 +477,10 @@ namespace Engine.Networking
 
         }
 
-        //Triggers event for a client connecting
+        /// <summary>
+        /// Triggers event for a client connecting
+        /// </summary>
+        /// <param name="client">The client connection</param>
         private void OnClientConnected(NetworkConnection client)
         {
             NotifyClientConnected?.Invoke(client);
@@ -420,25 +488,34 @@ namespace Engine.Networking
             Log.LogMsg("New connection! Server: " + isServer + ".");
         }
 
-        //Triggers event for a client disconnecting
+        /// <summary>
+        /// Triggers event for a client disconnecting
+        /// </summary>
+        /// <param name="client">The client connection</param>
         private void OnClientDisconnected(NetworkConnection client)
         {
             NotifyClientDisconnected?.Invoke(client);
         }
 
-        //Triggers event for a client failing to connect
+        /// <summary>
+        /// Triggers event for a client failing to connect
+        /// </summary>
         internal void OnFailedConnect()
         {
             NotifyFailedConnect?.Invoke();
         }
 
-        //Triggers event when disconnected from server
+        /// <summary>
+        /// Triggers event when disconnected from server
+        /// </summary>
         private void OnDisconnectedFromServer()
         {
             NotifyOnDisconnectedFromServer?.Invoke();
         }
 
-        //Triggers event when connected to server
+        /// <summary>
+        /// Triggers event when disconnected from server
+        /// </summary>
         private void OnConnectedToServer()
         {
             NotifyOnConnectedToServer?.Invoke();

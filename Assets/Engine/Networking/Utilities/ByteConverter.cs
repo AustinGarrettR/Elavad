@@ -3,6 +3,9 @@ using System.Text;
 
 namespace Engine.Networking.Utility
 {
+    /// <summary>
+    /// Handles converting value types to bytes
+    /// </summary>
     public class ByteConverter
     {
         public static byte[] getBytes<T>(Object o)

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace Engine.Networking.Utility
 {
+    /// <summary>
+    /// Utility method to turn a stream of bytes into a value type
+    /// </summary>
     public class PacketReader
     {
 

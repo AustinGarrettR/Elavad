@@ -8,11 +8,20 @@ using Engine.Utility;
 
 namespace Engine.UI
 {
+    /// <summary>
+    /// UI Panel base class
+    /// </summary>
     [RequireComponent(typeof(PanelRenderer))]
     public abstract class UIController : MonoBehaviour
     {
+        /// <summary>
+        /// Internal panel renderer
+        /// </summary>
         internal PanelRenderer panelRenderer;
 
+        /// <summary>
+        /// Called on awake
+        /// </summary>
         private void Awake()
         {
             panelRenderer = gameObject.GetComponent<PanelRenderer>();
@@ -20,26 +29,45 @@ namespace Engine.UI
             panelRenderer.RecreateUIFromUxml();
         }
 
+        /// <summary>
+        /// Intermediate method on panel loaded
+        /// </summary>
+        /// <returns></returns>
         private IEnumerable<UnityEngine.Object> panelLoaded()
         {
             onPanelLoaded();
             return null;
         }
 
+        /// <summary>
+        /// Returns the panel renderer
+        /// </summary>
+        /// <returns></returns>
         public PanelRenderer GetPanelRenderer()
         {
             return panelRenderer;
         }
 
+        /// <summary>
+        /// Called when the panel is done loading
+        /// </summary>
         public abstract void onPanelLoaded();
 
-        //Show/Hide panel
+        /// <summary>
+        /// Show/Hide panel
+        /// </summary>
+        /// <param name="visible">If the panel should be made visible</param>
         public void setPanelVisibility(bool visible)
         {
             panelRenderer.visualTree.visible = visible;
         }
 
-        //Select an element from the tree
+        /// <summary>
+        /// Select an element from the tree
+        /// </summary>
+        /// <typeparam name="U">Visual Element Type</typeparam>
+        /// <param name="name">Name of the element</param>
+        /// <returns></returns>
         public U getElement<U>(String name) where U : VisualElement
         {
             U element = panelRenderer.visualTree.Query<U>(name);
@@ -49,19 +77,28 @@ namespace Engine.UI
             return element;
         }
 
-        //Register text field to always have an uppercase letter for string
+        /// <summary>
+        /// Register text field to always have an uppercase letter for string
+        /// </summary>
+        /// <param name="field">The text field</param>
         public void RegisterFirstLetterUpperCaseFormat(TextField field)
         {
             field.RegisterValueChangedCallback(TextChangedForceFormatUsername);
         }
 
-        //Register text field as a password (with support of placeholders)
+        /// <summary>
+        /// Register text field as a password (with support of placeholders)
+        /// </summary>
+        /// <param name="field">The text field</param>
         public void RegisterPlaceholderWithPasswordFormat(TextField field)
         {
             field.RegisterValueChangedCallback(TextChangedForceFormatPassword);
         }
 
-        //Register text field to use placeholders (Requires tooltip field to be set to the placeholder text)
+        /// <summary>
+        /// Register text field to use placeholders (Requires tooltip field to be set to the placeholder text)
+        /// </summary>
+        /// <param name="field">The text field</param>
         public void RegisterPlaceholderTextField(TextField field)
         {
             field.SetValueWithoutNotify(field.tooltip);
@@ -72,6 +109,11 @@ namespace Engine.UI
             field.RegisterCallback<FocusOutEvent>(placeholderLostFocusEvent);
         }
 
+        /// <summary>
+        /// Returns the input value after placeholder processing
+        /// </summary>
+        /// <param name="field">The text field</param>
+        /// <returns></returns>
         public string getPlaceholderTextFieldRealValue(TextField field)
         {
             if ((bool)field.userData)
@@ -80,6 +122,10 @@ namespace Engine.UI
                 return field.value;
         }
 
+        /// <summary>
+        /// Called when the placeholder field gains focus
+        /// </summary>
+        /// <param name="focusEvent">The focus event</param>
         private void placeholderGainedFocusEvent(FocusInEvent focusEvent)
         {
             TextField field = (TextField)focusEvent.target;            
@@ -91,6 +137,11 @@ namespace Engine.UI
                 field.SetValueWithoutNotify("");
             }
         }
+
+        /// <summary>
+        /// Called when the placeholder loses focus
+        /// </summary>
+        /// <param name="focusEvent">The focus event</param>
         private void placeholderLostFocusEvent(FocusOutEvent focusEvent)
         {
 
@@ -104,12 +155,20 @@ namespace Engine.UI
             }
         }
 
+        /// <summary>
+        /// Formats username text field
+        /// </summary>
+        /// <param name="changeEvent">The change event</param>
         private void TextChangedForceFormatUsername(ChangeEvent<string> changeEvent)
         {
             string textValue = changeEvent.newValue;
             ((TextField)changeEvent.target).SetValueWithoutNotify(StringFormatter.FirstCharToUpper(textValue));
         }
 
+        /// <summary>
+        /// Formats password text field with masking support
+        /// </summary>
+        /// <param name="changeEvent">The change event</param>
         private void TextChangedForceFormatPassword(ChangeEvent<string> changeEvent)
         {
             string textValue = changeEvent.newValue;

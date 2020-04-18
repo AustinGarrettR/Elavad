@@ -5,25 +5,35 @@ using Engine.Factory;
 
 namespace Engine.Input
 {
+    /// <summary>
+    /// Handles input
+    /// </summary>
     public class ClientInputManager : Manager
     {
         /*
          * Override Methods
          */
 
-        //Initialize method
+        /// <summary>
+        /// Initialize method
+        /// </summary>
+        /// <param name="parameters"></param>
         public override void init(params object[] parameters)
         {
 
         }
 
-        //Called on program shutdown
+        /// <summary>
+        /// Called on program shutdown
+        /// </summary>
         public override void shutdown()
         {
 
         }
 
-        //Called every frame
+        /// <summary>
+        /// Called every frame
+        /// </summary>
         public override void update()
         {           
 
@@ -58,12 +68,26 @@ namespace Engine.Input
          * Internal Variables
          */
 
-        //Delegates
+        /// <summary>
+        /// Delegate for mouse click events
+        /// </summary>
+        /// <param name="mouseButton">The button clicked on the mouse</param>
         internal delegate void NotifyOnClickDelegate(MouseButton mouseButton);
+        
+        /// <summary>
+        /// Delegate for a key press
+        /// </summary>
+        /// <param name="key">The key that was pressed</param>
         internal delegate void NotifyOnKeypressDelegate(Key key);
 
-        //Events
+        /// <summary>
+        /// Event for the mouse click delegate
+        /// </summary>
         internal event NotifyOnClickDelegate NotifyOnMouseClickEvent;
+
+        /// <summary>
+        /// Event for the key press delegate
+        /// </summary>
         internal event NotifyOnKeypressDelegate NotifyOnKeypressEvent;
 
     }

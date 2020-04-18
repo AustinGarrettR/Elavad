@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace Engine.Logging
 {
+    /// <summary>
+    /// Static class to log messages and errors
+    /// </summary>
     public static class Log
     {
 
@@ -11,13 +14,19 @@ namespace Engine.Logging
          * Internal Variables
          */
 
+        /// <summary>
+        /// The manager that we forward messages and errors
+        /// </summary>
         private static LogManager logManager;
 
         /*
          * Public Functions
          */
 
-        //Sets the log manager by the engine to be used
+        /// <summary>
+        /// Sets the log manager by the engine to be used
+        /// </summary>
+        /// <param name="manager">The log manager</param>
         internal static void setLogManager(LogManager manager)
         {
             logManager = manager;

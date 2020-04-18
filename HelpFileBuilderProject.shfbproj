@@ -20,8 +20,8 @@
     <OutputPath>.\Help\</OutputPath>
     <HtmlHelpName>Documentation</HtmlHelpName>
     <Language>en-US</Language>
-    <HelpFileFormat>HtmlHelp1, Website</HelpFileFormat>
-    <SyntaxFilters>Standard</SyntaxFilters>
+    <HelpFileFormat>HtmlHelp1</HelpFileFormat>
+    <SyntaxFilters>C#</SyntaxFilters>
     <PresentationStyle>VS2013</PresentationStyle>
     <CleanIntermediates>True</CleanIntermediates>
     <KeepLogFile>False</KeepLogFile>
@@ -29,7 +29,7 @@
     <IndentHtml>False</IndentHtml>
     <BuildAssemblerVerbosity>OnlyErrors</BuildAssemblerVerbosity>
     <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
-    <HelpTitle>Elevad Documentation</HelpTitle>
+    <HelpTitle>Documentation</HelpTitle>
     <HelpFileVersion>1.0.0.0</HelpFileVersion>
     <NamingMethod>MemberName</NamingMethod>
     <ContentPlacement>AboveNamespaces</ContentPlacement>
@@ -41,32 +41,33 @@
     <DocumentationSources>
       <DocumentationSource sourceFile="Elavad.sln" />
     </DocumentationSources>
-    <VisibleItems>Attributes, InheritedMembers, Protected, ProtectedInternalAsProtected, NonBrowsable</VisibleItems>
-    <MissingTags>Summary, Parameter, Returns, AutoDocumentCtors, TypeParameter, AutoDocumentDispose</MissingTags>
+    <VisibleItems>Attributes, InheritedMembers, Privates, PrivateFields, Protected, ProtectedInternalAsProtected, NonBrowsable</VisibleItems>
+    <MissingTags>Parameter, Returns, AutoDocumentCtors, TypeParameter, AutoDocumentDispose</MissingTags>
     <PlugInConfigurations>
     </PlugInConfigurations>
     <NamespaceSummaries>
       <NamespaceSummaryItem name="(global)" isDocumented="True" xmlns="" />
-<NamespaceSummaryItem name="Content" isDocumented="True" xmlns="" />
-<NamespaceSummaryItem name="Content.UI" isDocumented="True" xmlns="" />
-<NamespaceSummaryItem name="Editor" isDocumented="True" xmlns="" />
-<NamespaceSummaryItem name="Engine" isDocumented="True" xmlns="" />
-<NamespaceSummaryItem name="Engine.Account" isDocumented="True" xmlns="" />
-<NamespaceSummaryItem name="Engine.API" isDocumented="True" xmlns="" />
-<NamespaceSummaryItem name="Engine.Asset" isDocumented="True" xmlns="" />
-<NamespaceSummaryItem name="Engine.Configuration" isDocumented="True" xmlns="" />
-<NamespaceSummaryItem name="Engine.Dispatch" isDocumented="True" xmlns="" />
-<NamespaceSummaryItem name="Engine.Factory" isDocumented="True" xmlns="" />
-<NamespaceSummaryItem name="Engine.Input" isDocumented="True" xmlns="" />
-<NamespaceSummaryItem name="Engine.Logging" isDocumented="True" xmlns="" />
-<NamespaceSummaryItem name="Engine.Networking" isDocumented="True" xmlns="" />
-<NamespaceSummaryItem name="Engine.Networking.Utility" isDocumented="True" xmlns="" />
-<NamespaceSummaryItem name="Engine.UI" isDocumented="True" xmlns="" />
-<NamespaceSummaryItem name="Engine.Utility" isDocumented="True" xmlns="" /></NamespaceSummaries>
-    <HtmlSdkLinkType>None</HtmlSdkLinkType>
+      <NamespaceSummaryItem name="Content" isDocumented="True" xmlns="" />
+      <NamespaceSummaryItem name="Content.UI" isDocumented="True" xmlns="" />
+      <NamespaceSummaryItem name="Editor" isDocumented="True" xmlns="" />
+      <NamespaceSummaryItem name="Engine" isDocumented="True" xmlns="" />
+      <NamespaceSummaryItem name="Engine.Account" isDocumented="True" xmlns="" />
+      <NamespaceSummaryItem name="Engine.API" isDocumented="True" xmlns="" />
+      <NamespaceSummaryItem name="Engine.Asset" isDocumented="True" xmlns="" />
+      <NamespaceSummaryItem name="Engine.Configuration" isDocumented="True" xmlns="" />
+      <NamespaceSummaryItem name="Engine.Dispatch" isDocumented="True" xmlns="" />
+      <NamespaceSummaryItem name="Engine.Factory" isDocumented="True" xmlns="" />
+      <NamespaceSummaryItem name="Engine.Input" isDocumented="True" xmlns="" />
+      <NamespaceSummaryItem name="Engine.Logging" isDocumented="True" xmlns="" />
+      <NamespaceSummaryItem name="Engine.Networking" isDocumented="True" xmlns="" />
+      <NamespaceSummaryItem name="Engine.Networking.Utility" isDocumented="True" xmlns="" />
+      <NamespaceSummaryItem name="Engine.UI" isDocumented="True" xmlns="" />
+      <NamespaceSummaryItem name="Engine.Utility" isDocumented="True" xmlns="" />
+    </NamespaceSummaries>
+    <HtmlSdkLinkType>Msdn</HtmlSdkLinkType>
     <BinaryTOC>True</BinaryTOC>
     <IncludeFavorites>False</IncludeFavorites>
-    <WebsiteSdkLinkType>None</WebsiteSdkLinkType>
+    <WebsiteSdkLinkType>Msdn</WebsiteSdkLinkType>
     <AppendMarkdownFileExtensionsToUrls>False</AppendMarkdownFileExtensionsToUrls>
     <ApiFilter>
     </ApiFilter>

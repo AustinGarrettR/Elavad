@@ -1,5 +1,8 @@
 ﻿namespace Content
 {
+    /// <summary>
+    /// Core class for server content functionality
+    /// </summary>
     public class ServerContentHandler
     {
         /// <summary>

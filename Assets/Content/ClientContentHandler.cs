@@ -1,5 +1,8 @@
 ﻿namespace Content
 {
+    /// <summary>
+    /// Core class for client content functionality
+    /// </summary>
     public class ClientContentHandler
     {
         /// <summary>

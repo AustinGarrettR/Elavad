@@ -4,8 +4,16 @@ using UnityEngine;
 
 namespace Engine.Utility
 {
+    /// <summary>
+    /// Format class for strings
+    /// </summary>
     public static class StringFormatter
     {
+        /// <summary>
+        /// Capitalizes the first letter of a string
+        /// </summary>
+        /// <param name="s">The string</param>
+        /// <returns></returns>
         public static string FirstCharToUpper(string s)
         {
             // Check for empty string.  

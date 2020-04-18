@@ -5,9 +5,15 @@ using UnityEngine;
 
 namespace Engine.Networking
 {
+    /// <summary>
+    /// Base class for packets
+    /// </summary>
     [Packet(-1, "Undefined Packet", "Undefined", ReliabilityScheme.RELIABLE, "Undefined")]
     public abstract class Packet
     {
+        /// <summary>
+        /// The unique ID for the packet
+        /// </summary>
         public int packetId
         {
             get
@@ -21,6 +27,9 @@ namespace Engine.Networking
             }
         }
 
+        /// <summary>
+        /// The name of the packet
+        /// </summary>
         public string packetName
         {
             get
@@ -34,6 +43,9 @@ namespace Engine.Networking
             }
         }
 
+        /// <summary>
+        /// The target of the packet
+        /// </summary>
         public string packetTarget
         {
             get
@@ -47,6 +59,9 @@ namespace Engine.Networking
             }
         }
 
+        /// <summary>
+        /// The reliability scheme of the packet
+        /// </summary>
         public ReliabilityScheme packetReliabilityScheme
         {
             get
@@ -60,6 +75,9 @@ namespace Engine.Networking
             }
         }
 
+        /// <summary>
+        /// The packet description
+        /// </summary>
         public string packetDescription
         {
             get
@@ -73,7 +91,16 @@ namespace Engine.Networking
             }
         }
 
+        /// <summary>
+        /// Return the bytes of the packet
+        /// </summary>
+        /// <returns></returns>
         public abstract byte[] getBytes();
+
+        /// <summary>
+        /// Read the packet from the bytes
+        /// </summary>
+        /// <param name="bytes">The packet bytes</param>
         public abstract void readPacket(byte[] bytes);
 
     }
