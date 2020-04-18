@@ -1,0 +1,118 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Networking.ConnectionManager.ListenerType
+  commentId: T:Engine.Networking.ConnectionManager.ListenerType
+  id: ConnectionManager.ListenerType
+  parent: Engine.Networking
+  children:
+  - Engine.Networking.ConnectionManager.ListenerType.CLIENT
+  - Engine.Networking.ConnectionManager.ListenerType.SERVER
+  langs:
+  - csharp
+  - vb
+  name: ConnectionManager.ListenerType
+  nameWithType: ConnectionManager.ListenerType
+  fullName: Engine.Networking.ConnectionManager.ListenerType
+  type: Enum
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: ListenerType
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 169
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nServer or Client\n"
+  example: []
+  syntax:
+    content: public enum ListenerType
+    content.vb: Public Enum ListenerType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Engine.Networking.ConnectionManager.ListenerType.SERVER
+  commentId: F:Engine.Networking.ConnectionManager.ListenerType.SERVER
+  id: SERVER
+  parent: Engine.Networking.ConnectionManager.ListenerType
+  langs:
+  - csharp
+  - vb
+  name: SERVER
+  nameWithType: ConnectionManager.ListenerType.SERVER
+  fullName: Engine.Networking.ConnectionManager.ListenerType.SERVER
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: SERVER
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 174
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nIf the connection manager is the server instance\n"
+  example: []
+  syntax:
+    content: SERVER = 0
+    return:
+      type: Engine.Networking.ConnectionManager.ListenerType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Engine.Networking.ConnectionManager.ListenerType.CLIENT
+  commentId: F:Engine.Networking.ConnectionManager.ListenerType.CLIENT
+  id: CLIENT
+  parent: Engine.Networking.ConnectionManager.ListenerType
+  langs:
+  - csharp
+  - vb
+  name: CLIENT
+  nameWithType: ConnectionManager.ListenerType.CLIENT
+  fullName: Engine.Networking.ConnectionManager.ListenerType.CLIENT
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: CLIENT
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 179
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nIf the connection manager is a client instance\n"
+  example: []
+  syntax:
+    content: CLIENT = 1
+    return:
+      type: Engine.Networking.ConnectionManager.ListenerType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Engine.Networking
+  commentId: N:Engine.Networking
+  name: Engine.Networking
+  nameWithType: Engine.Networking
+  fullName: Engine.Networking
+- uid: Engine.Networking.ConnectionManager.ListenerType
+  commentId: T:Engine.Networking.ConnectionManager.ListenerType
+  parent: Engine.Networking
+  name: ConnectionManager.ListenerType
+  nameWithType: ConnectionManager.ListenerType
+  fullName: Engine.Networking.ConnectionManager.ListenerType

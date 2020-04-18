@@ -1,0 +1,720 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Networking.Packet
+  commentId: T:Engine.Networking.Packet
+  id: Packet
+  parent: Engine.Networking
+  children:
+  - Engine.Networking.Packet.getBytes
+  - Engine.Networking.Packet.packetDescription
+  - Engine.Networking.Packet.packetId
+  - Engine.Networking.Packet.packetName
+  - Engine.Networking.Packet.packetReliabilityScheme
+  - Engine.Networking.Packet.packetTarget
+  - Engine.Networking.Packet.readPacket(System.Byte[])
+  langs:
+  - csharp
+  - vb
+  name: Packet
+  nameWithType: Packet
+  fullName: Engine.Networking.Packet
+  type: Class
+  source:
+    remote:
+      path: Assets/Engine/Networking/Interfaces/Packet.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: Packet
+    path: ../Assets/Engine/Networking/Interfaces/Packet.cs
+    startLine: 10
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nBase class for packets\n"
+  example: []
+  syntax:
+    content: >-
+      [Packet(-1, "Undefined Packet", "Undefined", ReliabilityScheme.RELIABLE, "Undefined")]
+
+      public abstract class Packet
+    content.vb: >-
+      <Packet(-1, "Undefined Packet", "Undefined", ReliabilityScheme.RELIABLE, "Undefined")>
+
+      Public MustInherit Class Packet
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Engine.Networking.LoginRequest_1
+  - Engine.Networking.LoginResponse_2
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Engine.Networking.PacketAttribute
+    ctor: Engine.Networking.PacketAttribute.#ctor(System.Int32,System.String,System.String,Engine.Networking.ReliabilityScheme,System.String)
+    arguments:
+    - type: System.Int32
+      value: -1
+    - type: System.String
+      value: Undefined Packet
+    - type: System.String
+      value: Undefined
+    - type: Engine.Networking.ReliabilityScheme
+      value: 1
+    - type: System.String
+      value: Undefined
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: Engine.Networking.Packet.packetId
+  commentId: P:Engine.Networking.Packet.packetId
+  id: packetId
+  parent: Engine.Networking.Packet
+  langs:
+  - csharp
+  - vb
+  name: packetId
+  nameWithType: Packet.packetId
+  fullName: Engine.Networking.Packet.packetId
+  type: Property
+  source:
+    remote:
+      path: Assets/Engine/Networking/Interfaces/Packet.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: packetId
+    path: ../Assets/Engine/Networking/Interfaces/Packet.cs
+    startLine: 16
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe unique ID for the packet\n"
+  example: []
+  syntax:
+    content: public int packetId { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property packetId As Integer
+  overload: Engine.Networking.Packet.packetId*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Engine.Networking.Packet.packetName
+  commentId: P:Engine.Networking.Packet.packetName
+  id: packetName
+  parent: Engine.Networking.Packet
+  langs:
+  - csharp
+  - vb
+  name: packetName
+  nameWithType: Packet.packetName
+  fullName: Engine.Networking.Packet.packetName
+  type: Property
+  source:
+    remote:
+      path: Assets/Engine/Networking/Interfaces/Packet.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: packetName
+    path: ../Assets/Engine/Networking/Interfaces/Packet.cs
+    startLine: 32
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe name of the packet\n"
+  example: []
+  syntax:
+    content: public string packetName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property packetName As String
+  overload: Engine.Networking.Packet.packetName*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Engine.Networking.Packet.packetTarget
+  commentId: P:Engine.Networking.Packet.packetTarget
+  id: packetTarget
+  parent: Engine.Networking.Packet
+  langs:
+  - csharp
+  - vb
+  name: packetTarget
+  nameWithType: Packet.packetTarget
+  fullName: Engine.Networking.Packet.packetTarget
+  type: Property
+  source:
+    remote:
+      path: Assets/Engine/Networking/Interfaces/Packet.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: packetTarget
+    path: ../Assets/Engine/Networking/Interfaces/Packet.cs
+    startLine: 48
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe target of the packet\n"
+  example: []
+  syntax:
+    content: public string packetTarget { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property packetTarget As String
+  overload: Engine.Networking.Packet.packetTarget*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Engine.Networking.Packet.packetReliabilityScheme
+  commentId: P:Engine.Networking.Packet.packetReliabilityScheme
+  id: packetReliabilityScheme
+  parent: Engine.Networking.Packet
+  langs:
+  - csharp
+  - vb
+  name: packetReliabilityScheme
+  nameWithType: Packet.packetReliabilityScheme
+  fullName: Engine.Networking.Packet.packetReliabilityScheme
+  type: Property
+  source:
+    remote:
+      path: Assets/Engine/Networking/Interfaces/Packet.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: packetReliabilityScheme
+    path: ../Assets/Engine/Networking/Interfaces/Packet.cs
+    startLine: 64
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe reliability scheme of the packet\n"
+  example: []
+  syntax:
+    content: public ReliabilityScheme packetReliabilityScheme { get; }
+    parameters: []
+    return:
+      type: Engine.Networking.ReliabilityScheme
+    content.vb: Public ReadOnly Property packetReliabilityScheme As ReliabilityScheme
+  overload: Engine.Networking.Packet.packetReliabilityScheme*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Engine.Networking.Packet.packetDescription
+  commentId: P:Engine.Networking.Packet.packetDescription
+  id: packetDescription
+  parent: Engine.Networking.Packet
+  langs:
+  - csharp
+  - vb
+  name: packetDescription
+  nameWithType: Packet.packetDescription
+  fullName: Engine.Networking.Packet.packetDescription
+  type: Property
+  source:
+    remote:
+      path: Assets/Engine/Networking/Interfaces/Packet.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: packetDescription
+    path: ../Assets/Engine/Networking/Interfaces/Packet.cs
+    startLine: 80
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe packet description\n"
+  example: []
+  syntax:
+    content: public string packetDescription { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property packetDescription As String
+  overload: Engine.Networking.Packet.packetDescription*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Engine.Networking.Packet.getBytes
+  commentId: M:Engine.Networking.Packet.getBytes
+  id: getBytes
+  parent: Engine.Networking.Packet
+  langs:
+  - csharp
+  - vb
+  name: getBytes()
+  nameWithType: Packet.getBytes()
+  fullName: Engine.Networking.Packet.getBytes()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Networking/Interfaces/Packet.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: getBytes
+    path: ../Assets/Engine/Networking/Interfaces/Packet.cs
+    startLine: 97
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nReturn the bytes of the packet\n"
+  example: []
+  syntax:
+    content: public abstract byte[] getBytes()
+    return:
+      type: System.Byte[]
+      description: ''
+    content.vb: Public MustOverride Function getBytes As Byte()
+  overload: Engine.Networking.Packet.getBytes*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: Engine.Networking.Packet.readPacket(System.Byte[])
+  commentId: M:Engine.Networking.Packet.readPacket(System.Byte[])
+  id: readPacket(System.Byte[])
+  parent: Engine.Networking.Packet
+  langs:
+  - csharp
+  - vb
+  name: readPacket(Byte[])
+  nameWithType: Packet.readPacket(Byte[])
+  fullName: Engine.Networking.Packet.readPacket(System.Byte[])
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Networking/Interfaces/Packet.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: readPacket
+    path: ../Assets/Engine/Networking/Interfaces/Packet.cs
+    startLine: 103
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nRead the packet from the bytes\n"
+  example: []
+  syntax:
+    content: public abstract void readPacket(byte[] bytes)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+      description: The packet bytes
+    content.vb: Public MustOverride Sub readPacket(bytes As Byte())
+  overload: Engine.Networking.Packet.readPacket*
+  nameWithType.vb: Packet.readPacket(Byte())
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: Engine.Networking.Packet.readPacket(System.Byte())
+  name.vb: readPacket(Byte())
+references:
+- uid: Engine.Networking
+  commentId: N:Engine.Networking
+  name: Engine.Networking
+  nameWithType: Engine.Networking
+  fullName: Engine.Networking
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Engine.Networking.Packet.packetId*
+  commentId: Overload:Engine.Networking.Packet.packetId
+  name: packetId
+  nameWithType: Packet.packetId
+  fullName: Engine.Networking.Packet.packetId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Engine.Networking.Packet.packetName*
+  commentId: Overload:Engine.Networking.Packet.packetName
+  name: packetName
+  nameWithType: Packet.packetName
+  fullName: Engine.Networking.Packet.packetName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: Engine.Networking.Packet.packetTarget*
+  commentId: Overload:Engine.Networking.Packet.packetTarget
+  name: packetTarget
+  nameWithType: Packet.packetTarget
+  fullName: Engine.Networking.Packet.packetTarget
+- uid: Engine.Networking.Packet.packetReliabilityScheme*
+  commentId: Overload:Engine.Networking.Packet.packetReliabilityScheme
+  name: packetReliabilityScheme
+  nameWithType: Packet.packetReliabilityScheme
+  fullName: Engine.Networking.Packet.packetReliabilityScheme
+- uid: Engine.Networking.ReliabilityScheme
+  commentId: T:Engine.Networking.ReliabilityScheme
+  parent: Engine.Networking
+  name: ReliabilityScheme
+  nameWithType: ReliabilityScheme
+  fullName: Engine.Networking.ReliabilityScheme
+- uid: Engine.Networking.Packet.packetDescription*
+  commentId: Overload:Engine.Networking.Packet.packetDescription
+  name: packetDescription
+  nameWithType: Packet.packetDescription
+  fullName: Engine.Networking.Packet.packetDescription
+- uid: Engine.Networking.Packet.getBytes*
+  commentId: Overload:Engine.Networking.Packet.getBytes
+  name: getBytes
+  nameWithType: Packet.getBytes
+  fullName: Engine.Networking.Packet.getBytes
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Engine.Networking.Packet.readPacket*
+  commentId: Overload:Engine.Networking.Packet.readPacket
+  name: readPacket
+  nameWithType: Packet.readPacket
+  fullName: Engine.Networking.Packet.readPacket

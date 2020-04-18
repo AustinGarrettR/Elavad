@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Logging
+  commentId: N:Engine.Logging
+  id: Engine.Logging
+  children:
+  - Engine.Logging.Log
+  - Engine.Logging.LogLevel
+  - Engine.Logging.LogManager
+  langs:
+  - csharp
+  - vb
+  name: Engine.Logging
+  nameWithType: Engine.Logging
+  fullName: Engine.Logging
+  type: Namespace
+  assemblies:
+  - Engine.Logging
+references:
+- uid: Engine.Logging.Log
+  commentId: T:Engine.Logging.Log
+  name: Log
+  nameWithType: Log
+  fullName: Engine.Logging.Log
+- uid: Engine.Logging.LogManager
+  commentId: T:Engine.Logging.LogManager
+  parent: Engine.Logging
+  name: LogManager
+  nameWithType: LogManager
+  fullName: Engine.Logging.LogManager
+- uid: Engine.Logging.LogLevel
+  commentId: T:Engine.Logging.LogLevel
+  parent: Engine.Logging
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Engine.Logging.LogLevel
+- uid: Engine.Logging
+  commentId: N:Engine.Logging
+  name: Engine.Logging
+  nameWithType: Engine.Logging
+  fullName: Engine.Logging

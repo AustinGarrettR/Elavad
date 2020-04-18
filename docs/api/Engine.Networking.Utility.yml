@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Networking.Utility
+  commentId: N:Engine.Networking.Utility
+  id: Engine.Networking.Utility
+  children:
+  - Engine.Networking.Utility.ByteConverter
+  - Engine.Networking.Utility.PacketReader
+  - Engine.Networking.Utility.PacketWriter
+  langs:
+  - csharp
+  - vb
+  name: Engine.Networking.Utility
+  nameWithType: Engine.Networking.Utility
+  fullName: Engine.Networking.Utility
+  type: Namespace
+  assemblies:
+  - Engine.Networking
+references:
+- uid: Engine.Networking.Utility.ByteConverter
+  commentId: T:Engine.Networking.Utility.ByteConverter
+  name: ByteConverter
+  nameWithType: ByteConverter
+  fullName: Engine.Networking.Utility.ByteConverter
+- uid: Engine.Networking.Utility.PacketReader
+  commentId: T:Engine.Networking.Utility.PacketReader
+  name: PacketReader
+  nameWithType: PacketReader
+  fullName: Engine.Networking.Utility.PacketReader
+- uid: Engine.Networking.Utility.PacketWriter
+  commentId: T:Engine.Networking.Utility.PacketWriter
+  name: PacketWriter
+  nameWithType: PacketWriter
+  fullName: Engine.Networking.Utility.PacketWriter

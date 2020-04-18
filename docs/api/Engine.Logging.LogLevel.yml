@@ -1,0 +1,153 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Logging.LogLevel
+  commentId: T:Engine.Logging.LogLevel
+  id: LogLevel
+  parent: Engine.Logging
+  children:
+  - Engine.Logging.LogLevel.ALL
+  - Engine.Logging.LogLevel.ERRORS
+  - Engine.Logging.LogLevel.NONE
+  langs:
+  - csharp
+  - vb
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Engine.Logging.LogLevel
+  type: Enum
+  source:
+    remote:
+      path: Assets/Engine/Logging/LogManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: LogLevel
+    path: ../Assets/Engine/Logging/LogManager.cs
+    startLine: 104
+  assemblies:
+  - Engine.Logging
+  namespace: Engine.Logging
+  summary: "\nThe level of messages to show\n"
+  example: []
+  syntax:
+    content: public enum LogLevel
+    content.vb: Public Enum LogLevel
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Engine.Logging.LogLevel.NONE
+  commentId: F:Engine.Logging.LogLevel.NONE
+  id: NONE
+  parent: Engine.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: NONE
+  nameWithType: LogLevel.NONE
+  fullName: Engine.Logging.LogLevel.NONE
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Logging/LogManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: NONE
+    path: ../Assets/Engine/Logging/LogManager.cs
+    startLine: 109
+  assemblies:
+  - Engine.Logging
+  namespace: Engine.Logging
+  summary: "\nShow no messages\n"
+  example: []
+  syntax:
+    content: NONE = 0
+    return:
+      type: Engine.Logging.LogLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Engine.Logging.LogLevel.ERRORS
+  commentId: F:Engine.Logging.LogLevel.ERRORS
+  id: ERRORS
+  parent: Engine.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: ERRORS
+  nameWithType: LogLevel.ERRORS
+  fullName: Engine.Logging.LogLevel.ERRORS
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Logging/LogManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: ERRORS
+    path: ../Assets/Engine/Logging/LogManager.cs
+    startLine: 114
+  assemblies:
+  - Engine.Logging
+  namespace: Engine.Logging
+  summary: "\nShow only errors\n"
+  example: []
+  syntax:
+    content: ERRORS = 1
+    return:
+      type: Engine.Logging.LogLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Engine.Logging.LogLevel.ALL
+  commentId: F:Engine.Logging.LogLevel.ALL
+  id: ALL
+  parent: Engine.Logging.LogLevel
+  langs:
+  - csharp
+  - vb
+  name: ALL
+  nameWithType: LogLevel.ALL
+  fullName: Engine.Logging.LogLevel.ALL
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Logging/LogManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: ALL
+    path: ../Assets/Engine/Logging/LogManager.cs
+    startLine: 119
+  assemblies:
+  - Engine.Logging
+  namespace: Engine.Logging
+  summary: "\nShow all messages and errors\n"
+  example: []
+  syntax:
+    content: ALL = 2
+    return:
+      type: Engine.Logging.LogLevel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Engine.Logging
+  commentId: N:Engine.Logging
+  name: Engine.Logging
+  nameWithType: Engine.Logging
+  fullName: Engine.Logging
+- uid: Engine.Logging.LogLevel
+  commentId: T:Engine.Logging.LogLevel
+  parent: Engine.Logging
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Engine.Logging.LogLevel

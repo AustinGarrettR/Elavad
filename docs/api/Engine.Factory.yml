@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Factory
+  commentId: N:Engine.Factory
+  id: Engine.Factory
+  children:
+  - Engine.Factory.Manager
+  langs:
+  - csharp
+  - vb
+  name: Engine.Factory
+  nameWithType: Engine.Factory
+  fullName: Engine.Factory
+  type: Namespace
+  assemblies:
+  - Engine.Factory
+references:
+- uid: Engine.Factory.Manager
+  commentId: T:Engine.Factory.Manager
+  parent: Engine.Factory
+  name: Manager
+  nameWithType: Manager
+  fullName: Engine.Factory.Manager
+- uid: Engine.Factory
+  commentId: N:Engine.Factory
+  name: Engine.Factory
+  nameWithType: Engine.Factory
+  fullName: Engine.Factory

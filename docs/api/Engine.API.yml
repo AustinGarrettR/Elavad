@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.API
+  commentId: N:Engine.API
+  id: Engine.API
+  children:
+  - Engine.API.API
+  - Engine.API.API.Client
+  - Engine.API.API.Server
+  - Engine.API.APIManager
+  langs:
+  - csharp
+  - vb
+  name: Engine.API
+  nameWithType: Engine.API
+  fullName: Engine.API
+  type: Namespace
+  assemblies:
+  - Engine.API
+references:
+- uid: Engine.API.API
+  commentId: T:Engine.API.API
+  name: API
+  nameWithType: API
+  fullName: Engine.API.API
+- uid: Engine.API.API.Client
+  commentId: T:Engine.API.API.Client
+  name: API.Client
+  nameWithType: API.Client
+  fullName: Engine.API.API.Client
+- uid: Engine.API.API.Server
+  commentId: T:Engine.API.API.Server
+  name: API.Server
+  nameWithType: API.Server
+  fullName: Engine.API.API.Server
+- uid: Engine.API.APIManager
+  commentId: T:Engine.API.APIManager
+  parent: Engine.API
+  name: APIManager
+  nameWithType: APIManager
+  fullName: Engine.API.APIManager
+- uid: Engine.API
+  commentId: N:Engine.API
+  name: Engine.API
+  nameWithType: Engine.API
+  fullName: Engine.API

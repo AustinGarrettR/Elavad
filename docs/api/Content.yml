@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Content
+  commentId: N:Content
+  id: Content
+  children:
+  - Content.ClientContentHandler
+  - Content.ServerContentHandler
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: Content
+  fullName: Content
+  type: Namespace
+  assemblies:
+  - Content
+references:
+- uid: Content.ClientContentHandler
+  commentId: T:Content.ClientContentHandler
+  name: ClientContentHandler
+  nameWithType: ClientContentHandler
+  fullName: Content.ClientContentHandler
+- uid: Content.ServerContentHandler
+  commentId: T:Content.ServerContentHandler
+  name: ServerContentHandler
+  nameWithType: ServerContentHandler
+  fullName: Content.ServerContentHandler

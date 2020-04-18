@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Editor
+  commentId: N:Editor
+  id: Editor
+  children:
+  - Editor.PacketInfoEditor
+  langs:
+  - csharp
+  - vb
+  name: Editor
+  nameWithType: Editor
+  fullName: Editor
+  type: Namespace
+  assemblies:
+  - Editor
+references:
+- uid: Editor.PacketInfoEditor
+  commentId: T:Editor.PacketInfoEditor
+  name: PacketInfoEditor
+  nameWithType: PacketInfoEditor
+  fullName: Editor.PacketInfoEditor

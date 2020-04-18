@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Asset
+  commentId: N:Engine.Asset
+  id: Engine.Asset
+  children:
+  - Engine.Asset.ClientAssetManager
+  - Engine.Asset.ClientAssetPack
+  - Engine.Asset.UI_Pack
+  langs:
+  - csharp
+  - vb
+  name: Engine.Asset
+  nameWithType: Engine.Asset
+  fullName: Engine.Asset
+  type: Namespace
+  assemblies:
+  - Engine.Asset
+references:
+- uid: Engine.Asset.ClientAssetManager
+  commentId: T:Engine.Asset.ClientAssetManager
+  parent: Engine.Asset
+  name: ClientAssetManager
+  nameWithType: ClientAssetManager
+  fullName: Engine.Asset.ClientAssetManager
+- uid: Engine.Asset.ClientAssetPack
+  commentId: T:Engine.Asset.ClientAssetPack
+  name: ClientAssetPack
+  nameWithType: ClientAssetPack
+  fullName: Engine.Asset.ClientAssetPack
+- uid: Engine.Asset.UI_Pack
+  commentId: T:Engine.Asset.UI_Pack
+  parent: Engine.Asset
+  name: UI_Pack
+  nameWithType: UI_Pack
+  fullName: Engine.Asset.UI_Pack
+- uid: Engine.Asset
+  commentId: N:Engine.Asset
+  name: Engine.Asset
+  nameWithType: Engine.Asset
+  fullName: Engine.Asset

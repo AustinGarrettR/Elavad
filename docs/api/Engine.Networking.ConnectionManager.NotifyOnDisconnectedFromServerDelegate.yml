@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Networking.ConnectionManager.NotifyOnDisconnectedFromServerDelegate
+  commentId: T:Engine.Networking.ConnectionManager.NotifyOnDisconnectedFromServerDelegate
+  id: ConnectionManager.NotifyOnDisconnectedFromServerDelegate
+  parent: Engine.Networking
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ConnectionManager.NotifyOnDisconnectedFromServerDelegate
+  nameWithType: ConnectionManager.NotifyOnDisconnectedFromServerDelegate
+  fullName: Engine.Networking.ConnectionManager.NotifyOnDisconnectedFromServerDelegate
+  type: Delegate
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: NotifyOnDisconnectedFromServerDelegate
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 124
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nEvent delegate for disconnecting from the server\n"
+  example: []
+  syntax:
+    content: public delegate void NotifyOnDisconnectedFromServerDelegate();
+    content.vb: Public Delegate Sub NotifyOnDisconnectedFromServerDelegate
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Engine.Networking
+  commentId: N:Engine.Networking
+  name: Engine.Networking
+  nameWithType: Engine.Networking
+  fullName: Engine.Networking

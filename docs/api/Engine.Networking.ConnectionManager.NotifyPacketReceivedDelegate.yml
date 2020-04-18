@@ -1,0 +1,104 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Networking.ConnectionManager.NotifyPacketReceivedDelegate
+  commentId: T:Engine.Networking.ConnectionManager.NotifyPacketReceivedDelegate
+  id: ConnectionManager.NotifyPacketReceivedDelegate
+  parent: Engine.Networking
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ConnectionManager.NotifyPacketReceivedDelegate
+  nameWithType: ConnectionManager.NotifyPacketReceivedDelegate
+  fullName: Engine.Networking.ConnectionManager.NotifyPacketReceivedDelegate
+  type: Delegate
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: NotifyPacketReceivedDelegate
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 114
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nEvent delegate for a packet receive\n"
+  example: []
+  syntax:
+    content: public delegate void NotifyPacketReceivedDelegate(NetworkConnection connection, int packetId, byte[] rawPacket);
+    parameters:
+    - id: connection
+      type: Unity.Networking.Transport.NetworkConnection
+      description: The source of the packet
+    - id: packetId
+      type: System.Int32
+      description: The packet id
+    - id: rawPacket
+      type: System.Byte[]
+      description: The packet data in byte array format
+    content.vb: Public Delegate Sub NotifyPacketReceivedDelegate(connection As NetworkConnection, packetId As Integer, rawPacket As Byte())
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Engine.Networking
+  commentId: N:Engine.Networking
+  name: Engine.Networking
+  nameWithType: Engine.Networking
+  fullName: Engine.Networking
+- uid: Unity.Networking.Transport.NetworkConnection
+  commentId: T:Unity.Networking.Transport.NetworkConnection
+  parent: Unity.Networking.Transport
+  isExternal: true
+  name: NetworkConnection
+  nameWithType: NetworkConnection
+  fullName: Unity.Networking.Transport.NetworkConnection
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Unity.Networking.Transport
+  commentId: N:Unity.Networking.Transport
+  isExternal: true
+  name: Unity.Networking.Transport
+  nameWithType: Unity.Networking.Transport
+  fullName: Unity.Networking.Transport
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

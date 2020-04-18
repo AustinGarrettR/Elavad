@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Dispatch
+  commentId: N:Engine.Dispatch
+  id: Engine.Dispatch
+  children:
+  - Engine.Dispatch.Dispatcher
+  - Engine.Dispatch.DispatchManager
+  langs:
+  - csharp
+  - vb
+  name: Engine.Dispatch
+  nameWithType: Engine.Dispatch
+  fullName: Engine.Dispatch
+  type: Namespace
+  assemblies:
+  - Engine.Dispatch
+references:
+- uid: Engine.Dispatch.DispatchManager
+  commentId: T:Engine.Dispatch.DispatchManager
+  parent: Engine.Dispatch
+  name: DispatchManager
+  nameWithType: DispatchManager
+  fullName: Engine.Dispatch.DispatchManager
+- uid: Engine.Dispatch.Dispatcher
+  commentId: T:Engine.Dispatch.Dispatcher
+  name: Dispatcher
+  nameWithType: Dispatcher
+  fullName: Engine.Dispatch.Dispatcher
+- uid: Engine.Dispatch
+  commentId: N:Engine.Dispatch
+  name: Engine.Dispatch
+  nameWithType: Engine.Dispatch
+  fullName: Engine.Dispatch

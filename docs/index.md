@@ -1,2 +1,2 @@
 # **Elavad Project**
-View the **[API](/api/)** for full documentation.
+View the **[API](api/)** for full documentation.

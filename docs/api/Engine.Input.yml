@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Input
+  commentId: N:Engine.Input
+  id: Engine.Input
+  children:
+  - Engine.Input.ClientInputManager
+  langs:
+  - csharp
+  - vb
+  name: Engine.Input
+  nameWithType: Engine.Input
+  fullName: Engine.Input
+  type: Namespace
+  assemblies:
+  - Engine.Input
+references:
+- uid: Engine.Input.ClientInputManager
+  commentId: T:Engine.Input.ClientInputManager
+  parent: Engine.Input
+  name: ClientInputManager
+  nameWithType: ClientInputManager
+  fullName: Engine.Input.ClientInputManager
+- uid: Engine.Input
+  commentId: N:Engine.Input
+  name: Engine.Input
+  nameWithType: Engine.Input
+  fullName: Engine.Input

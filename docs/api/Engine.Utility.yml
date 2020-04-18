@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Utility
+  commentId: N:Engine.Utility
+  id: Engine.Utility
+  children:
+  - Engine.Utility.StringFormatter
+  - Engine.Utility.TimeHandler
+  langs:
+  - csharp
+  - vb
+  name: Engine.Utility
+  nameWithType: Engine.Utility
+  fullName: Engine.Utility
+  type: Namespace
+  assemblies:
+  - Engine.Utility
+references:
+- uid: Engine.Utility.StringFormatter
+  commentId: T:Engine.Utility.StringFormatter
+  name: StringFormatter
+  nameWithType: StringFormatter
+  fullName: Engine.Utility.StringFormatter
+- uid: Engine.Utility.TimeHandler
+  commentId: T:Engine.Utility.TimeHandler
+  name: TimeHandler
+  nameWithType: TimeHandler
+  fullName: Engine.Utility.TimeHandler

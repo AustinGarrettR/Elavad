@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Configuration
+  commentId: N:Engine.Configuration
+  id: Engine.Configuration
+  children:
+  - Engine.Configuration.ClientConfig
+  - Engine.Configuration.ServerConfig
+  - Engine.Configuration.SharedConfig
+  langs:
+  - csharp
+  - vb
+  name: Engine.Configuration
+  nameWithType: Engine.Configuration
+  fullName: Engine.Configuration
+  type: Namespace
+  assemblies:
+  - Engine.Configuration
+references:
+- uid: Engine.Configuration.ClientConfig
+  commentId: T:Engine.Configuration.ClientConfig
+  name: ClientConfig
+  nameWithType: ClientConfig
+  fullName: Engine.Configuration.ClientConfig
+- uid: Engine.Configuration.ServerConfig
+  commentId: T:Engine.Configuration.ServerConfig
+  name: ServerConfig
+  nameWithType: ServerConfig
+  fullName: Engine.Configuration.ServerConfig
+- uid: Engine.Configuration.SharedConfig
+  commentId: T:Engine.Configuration.SharedConfig
+  name: SharedConfig
+  nameWithType: SharedConfig
+  fullName: Engine.Configuration.SharedConfig

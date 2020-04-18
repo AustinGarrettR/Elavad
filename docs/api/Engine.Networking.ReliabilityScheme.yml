@@ -1,0 +1,118 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Networking.ReliabilityScheme
+  commentId: T:Engine.Networking.ReliabilityScheme
+  id: ReliabilityScheme
+  parent: Engine.Networking
+  children:
+  - Engine.Networking.ReliabilityScheme.RELIABLE
+  - Engine.Networking.ReliabilityScheme.UNRELIABLE
+  langs:
+  - csharp
+  - vb
+  name: ReliabilityScheme
+  nameWithType: ReliabilityScheme
+  fullName: Engine.Networking.ReliabilityScheme
+  type: Enum
+  source:
+    remote:
+      path: Assets/Engine/Networking/Interfaces/ReliabilityScheme.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: ReliabilityScheme
+    path: ../Assets/Engine/Networking/Interfaces/ReliabilityScheme.cs
+    startLine: 5
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe reliability scheme enum\n"
+  example: []
+  syntax:
+    content: public enum ReliabilityScheme
+    content.vb: Public Enum ReliabilityScheme
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Engine.Networking.ReliabilityScheme.UNRELIABLE
+  commentId: F:Engine.Networking.ReliabilityScheme.UNRELIABLE
+  id: UNRELIABLE
+  parent: Engine.Networking.ReliabilityScheme
+  langs:
+  - csharp
+  - vb
+  name: UNRELIABLE
+  nameWithType: ReliabilityScheme.UNRELIABLE
+  fullName: Engine.Networking.ReliabilityScheme.UNRELIABLE
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Networking/Interfaces/ReliabilityScheme.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: UNRELIABLE
+    path: ../Assets/Engine/Networking/Interfaces/ReliabilityScheme.cs
+    startLine: 10
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nUDP data sent unreliably\n"
+  example: []
+  syntax:
+    content: UNRELIABLE = 0
+    return:
+      type: Engine.Networking.ReliabilityScheme
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Engine.Networking.ReliabilityScheme.RELIABLE
+  commentId: F:Engine.Networking.ReliabilityScheme.RELIABLE
+  id: RELIABLE
+  parent: Engine.Networking.ReliabilityScheme
+  langs:
+  - csharp
+  - vb
+  name: RELIABLE
+  nameWithType: ReliabilityScheme.RELIABLE
+  fullName: Engine.Networking.ReliabilityScheme.RELIABLE
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Networking/Interfaces/ReliabilityScheme.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: RELIABLE
+    path: ../Assets/Engine/Networking/Interfaces/ReliabilityScheme.cs
+    startLine: 15
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nUDP data send reliably (like TCP)\n"
+  example: []
+  syntax:
+    content: RELIABLE = 1
+    return:
+      type: Engine.Networking.ReliabilityScheme
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Engine.Networking
+  commentId: N:Engine.Networking
+  name: Engine.Networking
+  nameWithType: Engine.Networking
+  fullName: Engine.Networking
+- uid: Engine.Networking.ReliabilityScheme
+  commentId: T:Engine.Networking.ReliabilityScheme
+  parent: Engine.Networking
+  name: ReliabilityScheme
+  nameWithType: ReliabilityScheme
+  fullName: Engine.Networking.ReliabilityScheme

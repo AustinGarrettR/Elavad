@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Networking.ConnectionManager.NotifyOnConnectedToServerDelegate
+  commentId: T:Engine.Networking.ConnectionManager.NotifyOnConnectedToServerDelegate
+  id: ConnectionManager.NotifyOnConnectedToServerDelegate
+  parent: Engine.Networking
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ConnectionManager.NotifyOnConnectedToServerDelegate
+  nameWithType: ConnectionManager.NotifyOnConnectedToServerDelegate
+  fullName: Engine.Networking.ConnectionManager.NotifyOnConnectedToServerDelegate
+  type: Delegate
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: NotifyOnConnectedToServerDelegate
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 129
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nEvent delegate for the client connecting to the server\n"
+  example: []
+  syntax:
+    content: public delegate void NotifyOnConnectedToServerDelegate();
+    content.vb: Public Delegate Sub NotifyOnConnectedToServerDelegate
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Engine.Networking
+  commentId: N:Engine.Networking
+  name: Engine.Networking
+  nameWithType: Engine.Networking
+  fullName: Engine.Networking

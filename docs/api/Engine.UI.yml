@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.UI
+  commentId: N:Engine.UI
+  id: Engine.UI
+  children:
+  - Engine.UI.ClientUIManager
+  - Engine.UI.UIController
+  langs:
+  - csharp
+  - vb
+  name: Engine.UI
+  nameWithType: Engine.UI
+  fullName: Engine.UI
+  type: Namespace
+  assemblies:
+  - Engine.UI
+references:
+- uid: Engine.UI.ClientUIManager
+  commentId: T:Engine.UI.ClientUIManager
+  parent: Engine.UI
+  name: ClientUIManager
+  nameWithType: ClientUIManager
+  fullName: Engine.UI.ClientUIManager
+- uid: Engine.UI.UIController
+  commentId: T:Engine.UI.UIController
+  parent: Engine.UI
+  name: UIController
+  nameWithType: UIController
+  fullName: Engine.UI.UIController
+- uid: Engine.UI
+  commentId: N:Engine.UI
+  name: Engine.UI
+  nameWithType: Engine.UI
+  fullName: Engine.UI

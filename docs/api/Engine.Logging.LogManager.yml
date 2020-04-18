@@ -1,0 +1,707 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Logging.LogManager
+  commentId: T:Engine.Logging.LogManager
+  id: LogManager
+  parent: Engine.Logging
+  children:
+  - Engine.Logging.LogManager.getLogLevel
+  - Engine.Logging.LogManager.init(System.Object[])
+  - Engine.Logging.LogManager.SetLogLevel(Engine.Logging.LogLevel)
+  - Engine.Logging.LogManager.shutdown
+  - Engine.Logging.LogManager.update
+  langs:
+  - csharp
+  - vb
+  name: LogManager
+  nameWithType: LogManager
+  fullName: Engine.Logging.LogManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Engine/Logging/LogManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: LogManager
+    path: ../Assets/Engine/Logging/LogManager.cs
+    startLine: 8
+  assemblies:
+  - Engine.Logging
+  namespace: Engine.Logging
+  summary: "\nManages log messages and errors\n"
+  example: []
+  syntax:
+    content: 'public class LogManager : Manager'
+    content.vb: >-
+      Public Class LogManager
+          Inherits Manager
+  inheritance:
+  - System.Object
+  - Engine.Factory.Manager
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Engine.Logging.LogManager.init(System.Object[])
+  commentId: M:Engine.Logging.LogManager.init(System.Object[])
+  id: init(System.Object[])
+  parent: Engine.Logging.LogManager
+  langs:
+  - csharp
+  - vb
+  name: init(Object[])
+  nameWithType: LogManager.init(Object[])
+  fullName: Engine.Logging.LogManager.init(System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Logging/LogManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: init
+    path: ../Assets/Engine/Logging/LogManager.cs
+    startLine: 19
+  assemblies:
+  - Engine.Logging
+  namespace: Engine.Logging
+  summary: "\nCalled on initialization\n"
+  example: []
+  syntax:
+    content: public override void init(params object[] parameters)
+    parameters:
+    - id: parameters
+      type: System.Object[]
+      description: No parameters used
+    content.vb: Public Overrides Sub init(ParamArray parameters As Object())
+  overridden: Engine.Factory.Manager.init(System.Object[])
+  overload: Engine.Logging.LogManager.init*
+  nameWithType.vb: LogManager.init(Object())
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Engine.Logging.LogManager.init(System.Object())
+  name.vb: init(Object())
+- uid: Engine.Logging.LogManager.update
+  commentId: M:Engine.Logging.LogManager.update
+  id: update
+  parent: Engine.Logging.LogManager
+  langs:
+  - csharp
+  - vb
+  name: update()
+  nameWithType: LogManager.update()
+  fullName: Engine.Logging.LogManager.update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Logging/LogManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: update
+    path: ../Assets/Engine/Logging/LogManager.cs
+    startLine: 27
+  assemblies:
+  - Engine.Logging
+  namespace: Engine.Logging
+  summary: "\nCalled every frame\n"
+  example: []
+  syntax:
+    content: public override void update()
+    content.vb: Public Overrides Sub update
+  overridden: Engine.Factory.Manager.update
+  overload: Engine.Logging.LogManager.update*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Engine.Logging.LogManager.shutdown
+  commentId: M:Engine.Logging.LogManager.shutdown
+  id: shutdown
+  parent: Engine.Logging.LogManager
+  langs:
+  - csharp
+  - vb
+  name: shutdown()
+  nameWithType: LogManager.shutdown()
+  fullName: Engine.Logging.LogManager.shutdown()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Logging/LogManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: shutdown
+    path: ../Assets/Engine/Logging/LogManager.cs
+    startLine: 35
+  assemblies:
+  - Engine.Logging
+  namespace: Engine.Logging
+  summary: "\nCalled on shutdown\n"
+  example: []
+  syntax:
+    content: public override void shutdown()
+    content.vb: Public Overrides Sub shutdown
+  overridden: Engine.Factory.Manager.shutdown
+  overload: Engine.Logging.LogManager.shutdown*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Engine.Logging.LogManager.getLogLevel
+  commentId: M:Engine.Logging.LogManager.getLogLevel
+  id: getLogLevel
+  parent: Engine.Logging.LogManager
+  langs:
+  - csharp
+  - vb
+  name: getLogLevel()
+  nameWithType: LogManager.getLogLevel()
+  fullName: Engine.Logging.LogManager.getLogLevel()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Logging/LogManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: getLogLevel
+    path: ../Assets/Engine/Logging/LogManager.cs
+    startLine: 57
+  assemblies:
+  - Engine.Logging
+  namespace: Engine.Logging
+  summary: "\nReturns the log level\n"
+  example: []
+  syntax:
+    content: public LogLevel getLogLevel()
+    return:
+      type: Engine.Logging.LogLevel
+      description: LogLevel enum
+    content.vb: Public Function getLogLevel As LogLevel
+  overload: Engine.Logging.LogManager.getLogLevel*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Logging.LogManager.SetLogLevel(Engine.Logging.LogLevel)
+  commentId: M:Engine.Logging.LogManager.SetLogLevel(Engine.Logging.LogLevel)
+  id: SetLogLevel(Engine.Logging.LogLevel)
+  parent: Engine.Logging.LogManager
+  langs:
+  - csharp
+  - vb
+  name: SetLogLevel(LogLevel)
+  nameWithType: LogManager.SetLogLevel(LogLevel)
+  fullName: Engine.Logging.LogManager.SetLogLevel(Engine.Logging.LogLevel)
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Logging/LogManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: SetLogLevel
+    path: ../Assets/Engine/Logging/LogManager.cs
+    startLine: 66
+  assemblies:
+  - Engine.Logging
+  namespace: Engine.Logging
+  summary: "\nSet the log level\n"
+  example: []
+  syntax:
+    content: public void SetLogLevel(LogLevel level)
+    parameters:
+    - id: level
+      type: Engine.Logging.LogLevel
+      description: the LogLevel enum value
+    content.vb: Public Sub SetLogLevel(level As LogLevel)
+  overload: Engine.Logging.LogManager.SetLogLevel*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Engine.Logging
+  commentId: N:Engine.Logging
+  name: Engine.Logging
+  nameWithType: Engine.Logging
+  fullName: Engine.Logging
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Engine.Factory.Manager
+  commentId: T:Engine.Factory.Manager
+  parent: Engine.Factory
+  name: Manager
+  nameWithType: Manager
+  fullName: Engine.Factory.Manager
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Engine.Factory
+  commentId: N:Engine.Factory
+  name: Engine.Factory
+  nameWithType: Engine.Factory
+  fullName: Engine.Factory
+- uid: Engine.Factory.Manager.init(System.Object[])
+  commentId: M:Engine.Factory.Manager.init(System.Object[])
+  parent: Engine.Factory.Manager
+  isExternal: true
+  name: init(Object[])
+  nameWithType: Manager.init(Object[])
+  fullName: Engine.Factory.Manager.init(System.Object[])
+  nameWithType.vb: Manager.init(Object())
+  fullName.vb: Engine.Factory.Manager.init(System.Object())
+  name.vb: init(Object())
+  spec.csharp:
+  - uid: Engine.Factory.Manager.init(System.Object[])
+    name: init
+    nameWithType: Manager.init
+    fullName: Engine.Factory.Manager.init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.init(System.Object[])
+    name: init
+    nameWithType: Manager.init
+    fullName: Engine.Factory.Manager.init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Engine.Logging.LogManager.init*
+  commentId: Overload:Engine.Logging.LogManager.init
+  name: init
+  nameWithType: LogManager.init
+  fullName: Engine.Logging.LogManager.init
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Engine.Factory.Manager.update
+  commentId: M:Engine.Factory.Manager.update
+  parent: Engine.Factory.Manager
+  name: update()
+  nameWithType: Manager.update()
+  fullName: Engine.Factory.Manager.update()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.update
+    name: update
+    nameWithType: Manager.update
+    fullName: Engine.Factory.Manager.update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.update
+    name: update
+    nameWithType: Manager.update
+    fullName: Engine.Factory.Manager.update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Engine.Logging.LogManager.update*
+  commentId: Overload:Engine.Logging.LogManager.update
+  name: update
+  nameWithType: LogManager.update
+  fullName: Engine.Logging.LogManager.update
+- uid: Engine.Factory.Manager.shutdown
+  commentId: M:Engine.Factory.Manager.shutdown
+  parent: Engine.Factory.Manager
+  name: shutdown()
+  nameWithType: Manager.shutdown()
+  fullName: Engine.Factory.Manager.shutdown()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.shutdown
+    name: shutdown
+    nameWithType: Manager.shutdown
+    fullName: Engine.Factory.Manager.shutdown
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.shutdown
+    name: shutdown
+    nameWithType: Manager.shutdown
+    fullName: Engine.Factory.Manager.shutdown
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Engine.Logging.LogManager.shutdown*
+  commentId: Overload:Engine.Logging.LogManager.shutdown
+  name: shutdown
+  nameWithType: LogManager.shutdown
+  fullName: Engine.Logging.LogManager.shutdown
+- uid: Engine.Logging.LogManager.getLogLevel*
+  commentId: Overload:Engine.Logging.LogManager.getLogLevel
+  name: getLogLevel
+  nameWithType: LogManager.getLogLevel
+  fullName: Engine.Logging.LogManager.getLogLevel
+- uid: Engine.Logging.LogLevel
+  commentId: T:Engine.Logging.LogLevel
+  parent: Engine.Logging
+  name: LogLevel
+  nameWithType: LogLevel
+  fullName: Engine.Logging.LogLevel
+- uid: Engine.Logging.LogManager.SetLogLevel*
+  commentId: Overload:Engine.Logging.LogManager.SetLogLevel
+  name: SetLogLevel
+  nameWithType: LogManager.SetLogLevel
+  fullName: Engine.Logging.LogManager.SetLogLevel

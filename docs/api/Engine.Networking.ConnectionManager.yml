@@ -1,0 +1,1092 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Networking.ConnectionManager
+  commentId: T:Engine.Networking.ConnectionManager
+  id: ConnectionManager
+  parent: Engine.Networking
+  children:
+  - Engine.Networking.ConnectionManager.Disconnect
+  - Engine.Networking.ConnectionManager.init(System.Object[])
+  - Engine.Networking.ConnectionManager.isServer
+  - Engine.Networking.ConnectionManager.NotifyClientConnected
+  - Engine.Networking.ConnectionManager.NotifyClientDisconnected
+  - Engine.Networking.ConnectionManager.NotifyFailedConnect
+  - Engine.Networking.ConnectionManager.NotifyOnConnectedToServer
+  - Engine.Networking.ConnectionManager.NotifyOnDisconnectedFromServer
+  - Engine.Networking.ConnectionManager.NotifyPacketReceived
+  - Engine.Networking.ConnectionManager.sendPacketToClient(Unity.Networking.Transport.NetworkConnection,Engine.Networking.Packet)
+  - Engine.Networking.ConnectionManager.sendPacketToServer(Engine.Networking.Packet)
+  - Engine.Networking.ConnectionManager.shutdown
+  - Engine.Networking.ConnectionManager.Start
+  - Engine.Networking.ConnectionManager.update
+  langs:
+  - csharp
+  - vb
+  name: ConnectionManager
+  nameWithType: ConnectionManager
+  fullName: Engine.Networking.ConnectionManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: ConnectionManager
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 16
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nManages connections for server and client\n"
+  example: []
+  syntax:
+    content: 'public class ConnectionManager : Manager'
+    content.vb: >-
+      Public Class ConnectionManager
+          Inherits Manager
+  inheritance:
+  - System.Object
+  - Engine.Factory.Manager
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Engine.Networking.ConnectionManager.init(System.Object[])
+  commentId: M:Engine.Networking.ConnectionManager.init(System.Object[])
+  id: init(System.Object[])
+  parent: Engine.Networking.ConnectionManager
+  langs:
+  - csharp
+  - vb
+  name: init(Object[])
+  nameWithType: ConnectionManager.init(Object[])
+  fullName: Engine.Networking.ConnectionManager.init(System.Object[])
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: init
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 27
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nCalled on start\n"
+  example: []
+  syntax:
+    content: public override void init(params object[] parameters)
+    parameters:
+    - id: parameters
+      type: System.Object[]
+      description: ''
+    content.vb: Public Overrides Sub init(ParamArray parameters As Object())
+  overridden: Engine.Factory.Manager.init(System.Object[])
+  overload: Engine.Networking.ConnectionManager.init*
+  nameWithType.vb: ConnectionManager.init(Object())
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+  fullName.vb: Engine.Networking.ConnectionManager.init(System.Object())
+  name.vb: init(Object())
+- uid: Engine.Networking.ConnectionManager.update
+  commentId: M:Engine.Networking.ConnectionManager.update
+  id: update
+  parent: Engine.Networking.ConnectionManager
+  langs:
+  - csharp
+  - vb
+  name: update()
+  nameWithType: ConnectionManager.update()
+  fullName: Engine.Networking.ConnectionManager.update()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: update
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 39
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nCalled every frame on main thread\n"
+  example: []
+  syntax:
+    content: public override void update()
+    content.vb: Public Overrides Sub update
+  overridden: Engine.Factory.Manager.update
+  overload: Engine.Networking.ConnectionManager.update*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Engine.Networking.ConnectionManager.shutdown
+  commentId: M:Engine.Networking.ConnectionManager.shutdown
+  id: shutdown
+  parent: Engine.Networking.ConnectionManager
+  langs:
+  - csharp
+  - vb
+  name: shutdown()
+  nameWithType: ConnectionManager.shutdown()
+  fullName: Engine.Networking.ConnectionManager.shutdown()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: shutdown
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 51
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nCalled on program shutdown\n"
+  example: []
+  syntax:
+    content: public override void shutdown()
+    content.vb: Public Overrides Sub shutdown
+  overridden: Engine.Factory.Manager.shutdown
+  overload: Engine.Networking.ConnectionManager.shutdown*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Engine.Networking.ConnectionManager.isServer
+  commentId: P:Engine.Networking.ConnectionManager.isServer
+  id: isServer
+  parent: Engine.Networking.ConnectionManager
+  langs:
+  - csharp
+  - vb
+  name: isServer
+  nameWithType: ConnectionManager.isServer
+  fullName: Engine.Networking.ConnectionManager.isServer
+  type: Property
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: isServer
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 68
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nReadonly if instance is running server or client\n"
+  example: []
+  syntax:
+    content: public virtual bool isServer { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property isServer As Boolean
+  overload: Engine.Networking.ConnectionManager.isServer*
+  modifiers.csharp:
+  - public
+  - virtual
+  - get
+  modifiers.vb:
+  - Public
+  - Overridable
+  - ReadOnly
+- uid: Engine.Networking.ConnectionManager.NotifyClientDisconnected
+  commentId: E:Engine.Networking.ConnectionManager.NotifyClientDisconnected
+  id: NotifyClientDisconnected
+  parent: Engine.Networking.ConnectionManager
+  langs:
+  - csharp
+  - vb
+  name: NotifyClientDisconnected
+  nameWithType: ConnectionManager.NotifyClientDisconnected
+  fullName: Engine.Networking.ConnectionManager.NotifyClientDisconnected
+  type: Event
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: NotifyClientDisconnected
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 134
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nEvent for client disconnection\n"
+  example: []
+  syntax:
+    content: public event ConnectionManager.NotifyClientDisconnectedDelegate NotifyClientDisconnected
+    return:
+      type: Engine.Networking.ConnectionManager.NotifyClientDisconnectedDelegate
+    content.vb: Public Event NotifyClientDisconnected As ConnectionManager.NotifyClientDisconnectedDelegate
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.ConnectionManager.NotifyClientConnected
+  commentId: E:Engine.Networking.ConnectionManager.NotifyClientConnected
+  id: NotifyClientConnected
+  parent: Engine.Networking.ConnectionManager
+  langs:
+  - csharp
+  - vb
+  name: NotifyClientConnected
+  nameWithType: ConnectionManager.NotifyClientConnected
+  fullName: Engine.Networking.ConnectionManager.NotifyClientConnected
+  type: Event
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: NotifyClientConnected
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 139
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nEvent for a client connection\n"
+  example: []
+  syntax:
+    content: public event ConnectionManager.NotifyClientConnectedDelegate NotifyClientConnected
+    return:
+      type: Engine.Networking.ConnectionManager.NotifyClientConnectedDelegate
+    content.vb: Public Event NotifyClientConnected As ConnectionManager.NotifyClientConnectedDelegate
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.ConnectionManager.NotifyPacketReceived
+  commentId: E:Engine.Networking.ConnectionManager.NotifyPacketReceived
+  id: NotifyPacketReceived
+  parent: Engine.Networking.ConnectionManager
+  langs:
+  - csharp
+  - vb
+  name: NotifyPacketReceived
+  nameWithType: ConnectionManager.NotifyPacketReceived
+  fullName: Engine.Networking.ConnectionManager.NotifyPacketReceived
+  type: Event
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: NotifyPacketReceived
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 144
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nEvent for a packet being received\n"
+  example: []
+  syntax:
+    content: public event ConnectionManager.NotifyPacketReceivedDelegate NotifyPacketReceived
+    return:
+      type: Engine.Networking.ConnectionManager.NotifyPacketReceivedDelegate
+    content.vb: Public Event NotifyPacketReceived As ConnectionManager.NotifyPacketReceivedDelegate
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.ConnectionManager.NotifyFailedConnect
+  commentId: E:Engine.Networking.ConnectionManager.NotifyFailedConnect
+  id: NotifyFailedConnect
+  parent: Engine.Networking.ConnectionManager
+  langs:
+  - csharp
+  - vb
+  name: NotifyFailedConnect
+  nameWithType: ConnectionManager.NotifyFailedConnect
+  fullName: Engine.Networking.ConnectionManager.NotifyFailedConnect
+  type: Event
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: NotifyFailedConnect
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 149
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nEvent for failing to connect to server\n"
+  example: []
+  syntax:
+    content: public event ConnectionManager.NotifyFailedConnectDelegate NotifyFailedConnect
+    return:
+      type: Engine.Networking.ConnectionManager.NotifyFailedConnectDelegate
+    content.vb: Public Event NotifyFailedConnect As ConnectionManager.NotifyFailedConnectDelegate
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.ConnectionManager.NotifyOnDisconnectedFromServer
+  commentId: E:Engine.Networking.ConnectionManager.NotifyOnDisconnectedFromServer
+  id: NotifyOnDisconnectedFromServer
+  parent: Engine.Networking.ConnectionManager
+  langs:
+  - csharp
+  - vb
+  name: NotifyOnDisconnectedFromServer
+  nameWithType: ConnectionManager.NotifyOnDisconnectedFromServer
+  fullName: Engine.Networking.ConnectionManager.NotifyOnDisconnectedFromServer
+  type: Event
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: NotifyOnDisconnectedFromServer
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 154
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nEvent for being disconnected from server\n"
+  example: []
+  syntax:
+    content: public event ConnectionManager.NotifyOnDisconnectedFromServerDelegate NotifyOnDisconnectedFromServer
+    return:
+      type: Engine.Networking.ConnectionManager.NotifyOnDisconnectedFromServerDelegate
+    content.vb: Public Event NotifyOnDisconnectedFromServer As ConnectionManager.NotifyOnDisconnectedFromServerDelegate
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.ConnectionManager.NotifyOnConnectedToServer
+  commentId: E:Engine.Networking.ConnectionManager.NotifyOnConnectedToServer
+  id: NotifyOnConnectedToServer
+  parent: Engine.Networking.ConnectionManager
+  langs:
+  - csharp
+  - vb
+  name: NotifyOnConnectedToServer
+  nameWithType: ConnectionManager.NotifyOnConnectedToServer
+  fullName: Engine.Networking.ConnectionManager.NotifyOnConnectedToServer
+  type: Event
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: NotifyOnConnectedToServer
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 159
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nEvent for connecting to the server\n"
+  example: []
+  syntax:
+    content: public event ConnectionManager.NotifyOnConnectedToServerDelegate NotifyOnConnectedToServer
+    return:
+      type: Engine.Networking.ConnectionManager.NotifyOnConnectedToServerDelegate
+    content.vb: Public Event NotifyOnConnectedToServer As ConnectionManager.NotifyOnConnectedToServerDelegate
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.ConnectionManager.Start
+  commentId: M:Engine.Networking.ConnectionManager.Start
+  id: Start
+  parent: Engine.Networking.ConnectionManager
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: ConnectionManager.Start()
+  fullName: Engine.Networking.ConnectionManager.Start()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: Start
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 189
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nStart method\n"
+  example: []
+  syntax:
+    content: public void Start()
+    content.vb: Public Sub Start
+  overload: Engine.Networking.ConnectionManager.Start*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.ConnectionManager.sendPacketToServer(Engine.Networking.Packet)
+  commentId: M:Engine.Networking.ConnectionManager.sendPacketToServer(Engine.Networking.Packet)
+  id: sendPacketToServer(Engine.Networking.Packet)
+  parent: Engine.Networking.ConnectionManager
+  langs:
+  - csharp
+  - vb
+  name: sendPacketToServer(Packet)
+  nameWithType: ConnectionManager.sendPacketToServer(Packet)
+  fullName: Engine.Networking.ConnectionManager.sendPacketToServer(Engine.Networking.Packet)
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: sendPacketToServer
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 419
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nMethod for sending packet to server. \n"
+  example: []
+  syntax:
+    content: public void sendPacketToServer(Packet packet)
+    parameters:
+    - id: packet
+      type: Engine.Networking.Packet
+      description: The packet
+    content.vb: Public Sub sendPacketToServer(packet As Packet)
+  overload: Engine.Networking.ConnectionManager.sendPacketToServer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.ConnectionManager.sendPacketToClient(Unity.Networking.Transport.NetworkConnection,Engine.Networking.Packet)
+  commentId: M:Engine.Networking.ConnectionManager.sendPacketToClient(Unity.Networking.Transport.NetworkConnection,Engine.Networking.Packet)
+  id: sendPacketToClient(Unity.Networking.Transport.NetworkConnection,Engine.Networking.Packet)
+  parent: Engine.Networking.ConnectionManager
+  langs:
+  - csharp
+  - vb
+  name: sendPacketToClient(NetworkConnection, Packet)
+  nameWithType: ConnectionManager.sendPacketToClient(NetworkConnection, Packet)
+  fullName: Engine.Networking.ConnectionManager.sendPacketToClient(Unity.Networking.Transport.NetworkConnection, Engine.Networking.Packet)
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: sendPacketToClient
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 435
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nMethod for sending packet to client\n"
+  example: []
+  syntax:
+    content: public void sendPacketToClient(NetworkConnection client, Packet packet)
+    parameters:
+    - id: client
+      type: Unity.Networking.Transport.NetworkConnection
+      description: Client connection to receive the packet
+    - id: packet
+      type: Engine.Networking.Packet
+      description: The packet
+    content.vb: Public Sub sendPacketToClient(client As NetworkConnection, packet As Packet)
+  overload: Engine.Networking.ConnectionManager.sendPacketToClient*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.ConnectionManager.Disconnect
+  commentId: M:Engine.Networking.ConnectionManager.Disconnect
+  id: Disconnect
+  parent: Engine.Networking.ConnectionManager
+  langs:
+  - csharp
+  - vb
+  name: Disconnect()
+  nameWithType: ConnectionManager.Disconnect()
+  fullName: Engine.Networking.ConnectionManager.Disconnect()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: Disconnect
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 505
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nClient disconnect function\n"
+  example: []
+  syntax:
+    content: public void Disconnect()
+    content.vb: Public Sub Disconnect
+  overload: Engine.Networking.ConnectionManager.Disconnect*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Engine.Networking
+  commentId: N:Engine.Networking
+  name: Engine.Networking
+  nameWithType: Engine.Networking
+  fullName: Engine.Networking
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Engine.Factory.Manager
+  commentId: T:Engine.Factory.Manager
+  parent: Engine.Factory
+  name: Manager
+  nameWithType: Manager
+  fullName: Engine.Factory.Manager
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Engine.Factory
+  commentId: N:Engine.Factory
+  name: Engine.Factory
+  nameWithType: Engine.Factory
+  fullName: Engine.Factory
+- uid: Engine.Factory.Manager.init(System.Object[])
+  commentId: M:Engine.Factory.Manager.init(System.Object[])
+  parent: Engine.Factory.Manager
+  isExternal: true
+  name: init(Object[])
+  nameWithType: Manager.init(Object[])
+  fullName: Engine.Factory.Manager.init(System.Object[])
+  nameWithType.vb: Manager.init(Object())
+  fullName.vb: Engine.Factory.Manager.init(System.Object())
+  name.vb: init(Object())
+  spec.csharp:
+  - uid: Engine.Factory.Manager.init(System.Object[])
+    name: init
+    nameWithType: Manager.init
+    fullName: Engine.Factory.Manager.init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.init(System.Object[])
+    name: init
+    nameWithType: Manager.init
+    fullName: Engine.Factory.Manager.init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Engine.Networking.ConnectionManager.init*
+  commentId: Overload:Engine.Networking.ConnectionManager.init
+  name: init
+  nameWithType: ConnectionManager.init
+  fullName: Engine.Networking.ConnectionManager.init
+- uid: System.Object[]
+  isExternal: true
+  name: Object[]
+  nameWithType: Object[]
+  fullName: System.Object[]
+  nameWithType.vb: Object()
+  fullName.vb: System.Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: Engine.Factory.Manager.update
+  commentId: M:Engine.Factory.Manager.update
+  parent: Engine.Factory.Manager
+  name: update()
+  nameWithType: Manager.update()
+  fullName: Engine.Factory.Manager.update()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.update
+    name: update
+    nameWithType: Manager.update
+    fullName: Engine.Factory.Manager.update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.update
+    name: update
+    nameWithType: Manager.update
+    fullName: Engine.Factory.Manager.update
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Engine.Networking.ConnectionManager.update*
+  commentId: Overload:Engine.Networking.ConnectionManager.update
+  name: update
+  nameWithType: ConnectionManager.update
+  fullName: Engine.Networking.ConnectionManager.update
+- uid: Engine.Factory.Manager.shutdown
+  commentId: M:Engine.Factory.Manager.shutdown
+  parent: Engine.Factory.Manager
+  name: shutdown()
+  nameWithType: Manager.shutdown()
+  fullName: Engine.Factory.Manager.shutdown()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.shutdown
+    name: shutdown
+    nameWithType: Manager.shutdown
+    fullName: Engine.Factory.Manager.shutdown
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.shutdown
+    name: shutdown
+    nameWithType: Manager.shutdown
+    fullName: Engine.Factory.Manager.shutdown
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Engine.Networking.ConnectionManager.shutdown*
+  commentId: Overload:Engine.Networking.ConnectionManager.shutdown
+  name: shutdown
+  nameWithType: ConnectionManager.shutdown
+  fullName: Engine.Networking.ConnectionManager.shutdown
+- uid: Engine.Networking.ConnectionManager.isServer*
+  commentId: Overload:Engine.Networking.ConnectionManager.isServer
+  name: isServer
+  nameWithType: ConnectionManager.isServer
+  fullName: Engine.Networking.ConnectionManager.isServer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Engine.Networking.ConnectionManager.NotifyClientDisconnectedDelegate
+  commentId: T:Engine.Networking.ConnectionManager.NotifyClientDisconnectedDelegate
+  parent: Engine.Networking
+  name: ConnectionManager.NotifyClientDisconnectedDelegate
+  nameWithType: ConnectionManager.NotifyClientDisconnectedDelegate
+  fullName: Engine.Networking.ConnectionManager.NotifyClientDisconnectedDelegate
+- uid: Engine.Networking.ConnectionManager.NotifyClientConnectedDelegate
+  commentId: T:Engine.Networking.ConnectionManager.NotifyClientConnectedDelegate
+  parent: Engine.Networking
+  name: ConnectionManager.NotifyClientConnectedDelegate
+  nameWithType: ConnectionManager.NotifyClientConnectedDelegate
+  fullName: Engine.Networking.ConnectionManager.NotifyClientConnectedDelegate
+- uid: Engine.Networking.ConnectionManager.NotifyPacketReceivedDelegate
+  commentId: T:Engine.Networking.ConnectionManager.NotifyPacketReceivedDelegate
+  parent: Engine.Networking
+  name: ConnectionManager.NotifyPacketReceivedDelegate
+  nameWithType: ConnectionManager.NotifyPacketReceivedDelegate
+  fullName: Engine.Networking.ConnectionManager.NotifyPacketReceivedDelegate
+- uid: Engine.Networking.ConnectionManager.NotifyFailedConnectDelegate
+  commentId: T:Engine.Networking.ConnectionManager.NotifyFailedConnectDelegate
+  parent: Engine.Networking
+  name: ConnectionManager.NotifyFailedConnectDelegate
+  nameWithType: ConnectionManager.NotifyFailedConnectDelegate
+  fullName: Engine.Networking.ConnectionManager.NotifyFailedConnectDelegate
+- uid: Engine.Networking.ConnectionManager.NotifyOnDisconnectedFromServerDelegate
+  commentId: T:Engine.Networking.ConnectionManager.NotifyOnDisconnectedFromServerDelegate
+  parent: Engine.Networking
+  name: ConnectionManager.NotifyOnDisconnectedFromServerDelegate
+  nameWithType: ConnectionManager.NotifyOnDisconnectedFromServerDelegate
+  fullName: Engine.Networking.ConnectionManager.NotifyOnDisconnectedFromServerDelegate
+- uid: Engine.Networking.ConnectionManager.NotifyOnConnectedToServerDelegate
+  commentId: T:Engine.Networking.ConnectionManager.NotifyOnConnectedToServerDelegate
+  parent: Engine.Networking
+  name: ConnectionManager.NotifyOnConnectedToServerDelegate
+  nameWithType: ConnectionManager.NotifyOnConnectedToServerDelegate
+  fullName: Engine.Networking.ConnectionManager.NotifyOnConnectedToServerDelegate
+- uid: Engine.Networking.ConnectionManager.Start*
+  commentId: Overload:Engine.Networking.ConnectionManager.Start
+  name: Start
+  nameWithType: ConnectionManager.Start
+  fullName: Engine.Networking.ConnectionManager.Start
+- uid: Engine.Networking.ConnectionManager.sendPacketToServer*
+  commentId: Overload:Engine.Networking.ConnectionManager.sendPacketToServer
+  name: sendPacketToServer
+  nameWithType: ConnectionManager.sendPacketToServer
+  fullName: Engine.Networking.ConnectionManager.sendPacketToServer
+- uid: Engine.Networking.Packet
+  commentId: T:Engine.Networking.Packet
+  parent: Engine.Networking
+  name: Packet
+  nameWithType: Packet
+  fullName: Engine.Networking.Packet
+- uid: Engine.Networking.ConnectionManager.sendPacketToClient*
+  commentId: Overload:Engine.Networking.ConnectionManager.sendPacketToClient
+  name: sendPacketToClient
+  nameWithType: ConnectionManager.sendPacketToClient
+  fullName: Engine.Networking.ConnectionManager.sendPacketToClient
+- uid: Unity.Networking.Transport.NetworkConnection
+  commentId: T:Unity.Networking.Transport.NetworkConnection
+  parent: Unity.Networking.Transport
+  isExternal: true
+  name: NetworkConnection
+  nameWithType: NetworkConnection
+  fullName: Unity.Networking.Transport.NetworkConnection
+- uid: Unity.Networking.Transport
+  commentId: N:Unity.Networking.Transport
+  isExternal: true
+  name: Unity.Networking.Transport
+  nameWithType: Unity.Networking.Transport
+  fullName: Unity.Networking.Transport
+- uid: Engine.Networking.ConnectionManager.Disconnect*
+  commentId: Overload:Engine.Networking.ConnectionManager.Disconnect
+  name: Disconnect
+  nameWithType: ConnectionManager.Disconnect
+  fullName: Engine.Networking.ConnectionManager.Disconnect

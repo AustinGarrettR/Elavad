@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Content.UI
+  commentId: N:Content.UI
+  id: Content.UI
+  children:
+  - Content.UI.Login_Screen_UIController
+  langs:
+  - csharp
+  - vb
+  name: Content.UI
+  nameWithType: Content.UI
+  fullName: Content.UI
+  type: Namespace
+  assemblies:
+  - Content.UI
+references:
+- uid: Content.UI.Login_Screen_UIController
+  commentId: T:Content.UI.Login_Screen_UIController
+  name: Login_Screen_UIController
+  nameWithType: Login_Screen_UIController
+  fullName: Content.UI.Login_Screen_UIController
