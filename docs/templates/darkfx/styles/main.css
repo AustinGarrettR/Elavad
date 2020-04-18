@@ -31,6 +31,12 @@ h5 {
     padding: 10px 0px;
 }
 
+article {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
 article h1,
 article h2,
 article h3,
