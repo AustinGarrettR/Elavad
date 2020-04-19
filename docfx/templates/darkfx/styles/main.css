@@ -50,8 +50,21 @@ article h4 {
     border-bottom: 2px solid #ddd;
 }
 
+.navbar-brand {
+  display: flex;
+  align-items: center; /* horizontal */
+  justify-content: center; /* vertical */
+}
+
 .navbar-brand>img {
     color: #2d2d30;
+    height: 40px;  
+    width: 40px;
+    filter: brightness(85%);
+}
+
+.navbar-brand>img:hover {
+    filter: brightness(100%);
 }
 
 .navbar {

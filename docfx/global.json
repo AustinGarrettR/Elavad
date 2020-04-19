@@ -1,0 +1,10 @@
+{
+    "_appTitle": "Elavad Documentation",
+    "_enableSearch": "true",
+    "_appFaviconPath": "images/favicon.cio",
+    "_appFooter": "Elavad Documentation",
+    "_gitContribute": {
+      "branch": "master",
+    },
+    "_gitUrlPattern": "github"
+}

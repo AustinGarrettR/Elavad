@@ -35,7 +35,10 @@
       {
         "files": [
           "images/**"
-        ]
+        ],
+        "exclude": [
+          "images/PSDs/**"
+	]
       }
     ],
     "overwrite": [
@@ -50,9 +53,10 @@
       }
     ],
     "dest": "../docs",
-    "globalMetadataFiles": [],
+    "globalMetadataFiles": ["global.json"],
     "fileMetadataFiles": [],
     "template": [
+      "default",
       "templates/darkfx"
     ],
     "postProcessors": [],
