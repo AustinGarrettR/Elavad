@@ -1,26 +1,23 @@
-﻿using Engine.Factory;
+﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
+using Engine.Factory;
+using UnityEngine.SceneManagement;
 
-namespace Engine.API
+namespace Engine.World
 {
     /// <summary>
-    /// Used to supply references to the API class.
+    /// Handles loading and managing the game world for the client
     /// </summary>
-    public class APIManager : Manager
+    public class ClientWorldManager : Manager
     {
-
-        /*
-         * Override Functions
-         */
-
         /// <summary>
-        /// Manager startup function
+        /// Called on manager initialization
         /// </summary>
-        /// <param name="parameters">List of managers needs to be supplied</param>
+        /// <param name="parameters">Variable manager parameters</param>
         public override void Init(params object[] parameters)
         {
-            List<Manager> managers = (List<Manager>) parameters[0];
-            API.SetManagers(managers);
+            
         }
 
         /// <summary>
@@ -28,7 +25,7 @@ namespace Engine.API
         /// </summary>
         public override void Shutdown()
         {
-           
+
         }
 
         /// <summary>
@@ -36,8 +33,7 @@ namespace Engine.API
         /// </summary>
         public override void Process()
         {
-            
+
         }
     }
-
 }

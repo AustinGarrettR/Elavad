@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Engine.Utility
+﻿namespace Engine.Utility
 {
     /// <summary>
     /// Format class for strings

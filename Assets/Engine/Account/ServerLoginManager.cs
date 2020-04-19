@@ -21,7 +21,7 @@ namespace Engine.Account
         /// Called on initialization
         /// </summary>
         /// <param name="parameters">Connection manager parameter</param>
-        public override void init(params object[] parameters)
+        public override void Init(params object[] parameters)
         {
             connectionManager = (ConnectionManager)parameters[0];
 
@@ -32,7 +32,7 @@ namespace Engine.Account
         /// <summary>
         /// Called on program shutdown
         /// </summary>
-        public override void shutdown()
+        public override void Shutdown()
         {
 
         }
@@ -40,7 +40,7 @@ namespace Engine.Account
         /// <summary>
         /// Called every frame
         /// </summary>
-        public override void update()
+        public override void Process()
         {
 
         }

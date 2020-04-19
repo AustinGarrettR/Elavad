@@ -16,7 +16,7 @@ namespace Engine.Dispatch
         /// Called upon initialization
         /// </summary>
         /// <param name="parameters"></param>
-        public override void init(params object[] parameters)
+        public override void Init(params object[] parameters)
         {
             
         }
@@ -24,7 +24,7 @@ namespace Engine.Dispatch
         /// <summary>
         /// Called on shutdown
         /// </summary>
-        public override void shutdown()
+        public override void Shutdown()
         {
 
         }
@@ -32,7 +32,7 @@ namespace Engine.Dispatch
         /// <summary>
         /// Called every frame
         /// </summary>
-        public override void update()
+        public override void Process()
         {
             Dispatcher.Update();
         }

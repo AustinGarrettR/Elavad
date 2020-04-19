@@ -18,7 +18,7 @@ namespace Engine.UI
         /// Initialize method
         /// </summary>
         /// <param name="parameters">ClientAsetManager input</param>
-        public override void init(params object[] parameters)
+        public override void Init(params object[] parameters)
         {
             //Assign asset manager
             clientAssetManager = (ClientAssetManager) parameters[0];
@@ -28,7 +28,7 @@ namespace Engine.UI
         /// <summary>
         /// Called on program shutdown
         /// </summary>
-        public override void shutdown()
+        public override void Shutdown()
         {
 
         }
@@ -36,7 +36,7 @@ namespace Engine.UI
         /// <summary>
         /// Called every frame
         /// </summary>
-        public override void update()
+        public override void Process()
         {
 
         }

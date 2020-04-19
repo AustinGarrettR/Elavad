@@ -15,22 +15,31 @@ namespace Engine
          * Override Methods
          */
 
-        internal override void init()
+        /// <summary>
+        /// Called on initialization
+        /// </summary>
+        internal override void Init()
         {
-            addManager(logManager);
-            addManager(connectionManager, ConnectionManager.ListenerType.SERVER);
-            addManager(serverLoginManager, connectionManager);
-            addManager(dispatchManager);
+            AddManager(logManager);
+            AddManager(connectionManager, ConnectionManager.ListenerType.SERVER);
+            AddManager(serverLoginManager, connectionManager);
+            AddManager(dispatchManager);
         }
 
-        internal override void update()
+        /// <summary>
+        /// Called every frame
+        /// </summary>
+        internal override void Process()
         {
-            updateManagers();
+            UpdateManagers();
         }
 
-        internal override void shutdown()
+        /// <summary>
+        /// Called on program shutdown
+        /// </summary>
+        internal override void Shutdown()
         {
-            shutdownManagers();
+            ShutdownManagers();
         }
 
         /*

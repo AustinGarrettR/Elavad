@@ -1,7 +1,8 @@
 {
-    "name": "Engine.Dispatch",
+    "name": "Engine.World",
     "references": [
-        "GUID:ab0bf26c474862745b86bd0d94851aea"
+        "GUID:ab0bf26c474862745b86bd0d94851aea",
+        "GUID:c5a46be53e364594ebc8f1e55c3d9dbf"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -11,5 +12,5 @@
     "autoReferenced": true,
     "defineConstraints": [],
     "versionDefines": [],
-    "noEngineReferences": true
+    "noEngineReferences": false
 }

@@ -25,7 +25,7 @@ namespace Engine.Networking
         /// Called on start
         /// </summary>
         /// <param name="parameters"></param>
-        public override void init(params System.Object[] parameters)
+        public override void Init(params System.Object[] parameters)
         {
             ListenerType listenerType = (ListenerType)parameters[0];
             this._isServer = listenerType == ListenerType.SERVER;
@@ -37,7 +37,7 @@ namespace Engine.Networking
         /// <summary>
         /// Called every frame on main thread
         /// </summary>
-        public override void update()
+        public override void Process()
         {
 
             if (isServer)
@@ -49,7 +49,7 @@ namespace Engine.Networking
         /// <summary>
         /// Called on program shutdown
         /// </summary>
-        public override void shutdown()
+        public override void Shutdown()
         {
             close();
         }

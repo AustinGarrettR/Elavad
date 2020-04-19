@@ -5,7 +5,7 @@ namespace Engine.Asset
     /// <summary>
     /// An pack that contains references to assets
     /// </summary>
-    [CreateAssetMenu(fileName = "ClientDataPack", menuName = "Data Packs/ClientDataPack", order = 1)]
+    [CreateAssetMenu(fileName = "ClientAssetPack", menuName = "Data Packs/ClientAssetPack", order = 1)]
     public class ClientAssetPack : ScriptableObject
     {
         /// <summary>

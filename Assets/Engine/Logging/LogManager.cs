@@ -17,7 +17,7 @@ namespace Engine.Logging
         /// Called on initialization
         /// </summary>
         /// <param name="parameters">No parameters used</param>
-        public override void init(params object[] parameters)
+        public override void Init(params object[] parameters)
         {
             Log.setLogManager(this);
         }
@@ -25,7 +25,7 @@ namespace Engine.Logging
         /// <summary>
         /// Called every frame
         /// </summary>
-        public override void update()
+        public override void Process()
         {
            
         }
@@ -33,7 +33,7 @@ namespace Engine.Logging
         /// <summary>
         /// Called on shutdown
         /// </summary>
-        public override void shutdown()
+        public override void Shutdown()
         {
             
         }

@@ -28,7 +28,9 @@ namespace Content.UI
          * Functions
          */
 
-        /// <summary>Called when the panel finished loading the UXML</summary>
+        /// <summary>
+        /// Called when the panel finished loading the UXML
+        /// </summary>
         public override void onPanelLoaded()
         {
             //Load elements

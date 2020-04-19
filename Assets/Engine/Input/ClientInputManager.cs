@@ -18,7 +18,7 @@ namespace Engine.Input
         /// Initialize method
         /// </summary>
         /// <param name="parameters"></param>
-        public override void init(params object[] parameters)
+        public override void Init(params object[] parameters)
         {
 
         }
@@ -26,7 +26,7 @@ namespace Engine.Input
         /// <summary>
         /// Called on program shutdown
         /// </summary>
-        public override void shutdown()
+        public override void Shutdown()
         {
 
         }
@@ -34,7 +34,7 @@ namespace Engine.Input
         /// <summary>
         /// Called every frame
         /// </summary>
-        public override void update()
+        public override void Process()
         {           
 
             Mouse mouse = Mouse.current;

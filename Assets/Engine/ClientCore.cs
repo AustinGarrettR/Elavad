@@ -8,6 +8,7 @@ using Engine.Asset;
 using Engine.Logging;
 using Engine.API;
 using Engine.Dispatch;
+using Engine.World;
 
 namespace Engine
 {
@@ -21,28 +22,38 @@ namespace Engine
          * Override Methods
          */
 
-        internal override void init()
+        /// <summary>
+        /// Called on initialization
+        /// </summary>
+        internal override void Init()
         {
 
-            addManager(logManager);
-            addManager(clientAssetManager);
-            addManager(connectionManager, ConnectionManager.ListenerType.CLIENT);
-            addManager(clientLoginManager, this, connectionManager);
-            addManager(clientInputManager);
-            addManager(clientUIManager, clientAssetManager);
-            addManager(apiManager, managers);
-            addManager(dispatchManager);
+            AddManager(logManager);
+            AddManager(clientAssetManager);
+            AddManager(connectionManager, ConnectionManager.ListenerType.CLIENT);
+            AddManager(clientWorldManager);
+            AddManager(clientLoginManager, this, connectionManager);
+            AddManager(clientInputManager);
+            AddManager(clientUIManager, clientAssetManager);
+            AddManager(apiManager, managers);
+            AddManager(dispatchManager);
 
         }
 
-        internal override void update()
+        /// <summary>
+        /// Called every frame
+        /// </summary>
+        internal override void Process()
         {
-            updateManagers();
+            UpdateManagers();
         }
 
-        internal override void shutdown()
+        /// <summary>
+        /// Called on shutdown
+        /// </summary>
+        internal override void Shutdown()
         {
-            shutdownManagers();
+            ShutdownManagers();
         }
 
         /*
@@ -63,6 +74,11 @@ namespace Engine
         /// The connection manager which handles connections to the server
         /// </summary>
         public readonly ConnectionManager connectionManager = new ConnectionManager();
+
+        /// <summary>
+        /// The client world manager which handles loading and running the game world
+        /// </summary>
+        public readonly ClientWorldManager clientWorldManager = new ClientWorldManager();
 
         /// <summary>
         /// The client login manager for handling logins to the server

@@ -9,16 +9,16 @@
         /// Called on initialization
         /// </summary>
         /// <param name="parameters">Variable parameters</param>
-        public abstract void init(params System.Object[] parameters);
+        public abstract void Init(params System.Object[] parameters);
 
         /// <summary>
         /// Called every frame
         /// </summary>
-        public abstract void update();
+        public abstract void Process();
 
         /// <summary>
         /// Called on shutdown
         /// </summary>
-        public abstract void shutdown();
+        public abstract void Shutdown();
     }
 }

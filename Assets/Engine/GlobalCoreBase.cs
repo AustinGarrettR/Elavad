@@ -14,68 +14,100 @@ namespace Engine
         /*
          * Overrides
          */
-        internal abstract void init();
-        internal abstract void update();
-        internal abstract void shutdown();
+
+        /// <summary>
+        /// Abstract initialization method for inheriting class
+        /// </summary>
+        internal abstract void Init();
+
+        /// <summary>
+        /// Abstract update method for inhereting class
+        /// </summary>
+        internal abstract void Process();
+
+        /// <summary>
+        /// Abstract shutdown method for inherting class
+        /// </summary>
+        internal abstract void Shutdown();
 
         /*
          * Mono Behavior Inherits
          */
 
-        private void Start()
+        /// <summary>
+        /// Called by mono behavior on start
+        /// </summary>
+        internal void Start()
         {
             //Call abstract start method
-            init();
+            Init();
         }
 
-        private void Update()
+        /// <summary>
+        /// Called by mono behavior to update every frame
+        /// </summary>
+        internal void Update()
         {
             //Call abstract method for derived class
-            update();
+            Process();
         }
 
-        private void OnApplicationQuit()
+        /// <summary>
+        /// Called by mono behavior on application quit
+        /// </summary>
+        internal void OnApplicationQuit()
         {
             //Call abstract method for derived class
-            shutdown();
+            Shutdown();
         }
 
         /*
         * Internal Variables
         */
 
+        /// <summary>
+        /// List of Managers for processing
+        /// </summary>
         internal List<Manager> managers = new List<Manager>();
 
         /*
          * Internal Functions
          */
 
-        //Instantiate manager of type
-        internal void addManager(Manager m, params System.Object[] parameters)
+        /// <summary>
+        /// Instantiate manager of type
+        /// </summary>
+        /// <param name="m"></param>
+        /// <param name="parameters"></param>
+        internal void AddManager(Manager m, params System.Object[] parameters)
         {
             //Init manager
-            m.init(parameters);
+            m.Init(parameters);
 
             //Add to list for updating
             managers.Add(m);
 
         }
 
-        //Iterate managers and update them
-        internal void updateManagers()
+        /// <summary>
+        /// Iterate managers and update them
+        /// </summary>
+        internal void UpdateManagers()
         {
             foreach (Manager m in managers)
             {
-                m.update();
+                m.Process();
             }
         }
 
-        //Iterate managers and inform of shutdown
-        internal void shutdownManagers()
+        /// <summary>
+        /// Iterate managers and inform of shutdown
+        /// </summary>
+        internal void ShutdownManagers()
         {
             foreach (Manager m in managers)
             {
-                m.shutdown();
+                m.Shutdown();
             }
         }
 

@@ -347,18 +347,16 @@ healthchecksdb
 /UIElementsSchema
 /Temp
 /Engine.Runtime.csproj
-/Engine.csproj
 /Engine-Def.csproj
 /Editor.csproj
 /collabignore.txt
 /Assembly-CSharp.csproj
 /Assembly-CSharp-Editor.csproj
-/2019 Project 3.sln
 /.collabignore
 /.collab
 /Library
 /Builds
 !/Packages/manifest.json
 
-*.sln
 *.csproj
+*.sln

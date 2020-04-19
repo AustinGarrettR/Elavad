@@ -20,12 +20,12 @@ namespace Engine.Asset
         /// Initialize method
         /// </summary>
         /// <param name="parameters"></param>
-        public override void init(params object[] parameters)
+        public override void Init(params object[] parameters)
         {
             //Load data pack from resources
-            clientDataPack = Resources.Load<ClientAssetPack>("Client_Assets");
+            clientAssetPack = Resources.Load<ClientAssetPack>("Client_Assets");
 
-            if(clientDataPack == null)
+            if(clientAssetPack == null)
             {
                 Log.LogError("Error loading client asset pack! Pack loaded is null.");
             }
@@ -34,7 +34,7 @@ namespace Engine.Asset
         /// <summary>
         /// Called on program shutdown
         /// </summary>
-        public override void shutdown()
+        public override void Shutdown()
         {
 
         }
@@ -42,7 +42,7 @@ namespace Engine.Asset
         /// <summary>
         /// Called every frame
         /// </summary>
-        public override void update()
+        public override void Process()
         {
 
         }
@@ -58,7 +58,7 @@ namespace Engine.Asset
         /// <returns></returns>
         public GameObject GetUIPanel(string name)
         {
-            GameObject[] panelObjects = clientDataPack.uiPack.UI_Panels;
+            GameObject[] panelObjects = clientAssetPack.uiPack.UI_Panels;
             foreach(GameObject obj in panelObjects)
             {
                 if(obj.name.Equals(name, StringComparison.InvariantCultureIgnoreCase))
@@ -77,7 +77,7 @@ namespace Engine.Asset
          * Internal Variables
          */
 
-        private ClientAssetPack clientDataPack;
+        private ClientAssetPack clientAssetPack;
 
         /*
          * Internal Functions
