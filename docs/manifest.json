@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Content.UI.Login_Screen_UIController.html",
-          "hash": "PYFRFolVMZq4z+1jcvVweg=="
+          "hash": "mDfmaeN0CadR/Uuhd4iHIg=="
         }
       },
       "is_incremental": false,
@@ -150,7 +150,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.API.APIManager.html",
-          "hash": "MovvTsk3PjqXPrq+WN/d+g=="
+          "hash": "21zQ6t/PPEFJ0XjEDgP0Jg=="
         }
       },
       "is_incremental": false,
@@ -174,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Account.ClientLoginManager.html",
-          "hash": "GuOBEnGBkWVGAZtxUIbIYA=="
+          "hash": "Eby8ATkA6a/zdYSaI0TV/Q=="
         }
       },
       "is_incremental": false,
@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Account.ServerLoginManager.html",
-          "hash": "6P3Lx7XQtsjusbN2/c+hSA=="
+          "hash": "5XjHPS7d0I/f3csFxs1ycA=="
         }
       },
       "is_incremental": false,
@@ -210,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Asset.ClientAssetManager.html",
-          "hash": "4d/mGe4uyfGGSp1DS+Dvvg=="
+          "hash": "B3RMmEaPV/ae9ysEmkBSEQ=="
         }
       },
       "is_incremental": false,
@@ -222,7 +222,31 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Asset.ClientAssetPack.html",
-          "hash": "12EaPHsPXwHX9jBsyXY/1g=="
+          "hash": "JXDJAor93Xu0oXGoyjj74g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Engine.Asset.SharedAssetManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Engine.Asset.SharedAssetManager.html",
+          "hash": "Rba2BvpBw8wkSVJJZrHaag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Engine.Asset.SharedAssetPack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Engine.Asset.SharedAssetPack.html",
+          "hash": "Pn9J0CPuDejOhfBVTpw/cA=="
         }
       },
       "is_incremental": false,
@@ -246,7 +270,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Asset.html",
-          "hash": "+4EsWxkrUqOok/Nwg0oQyw=="
+          "hash": "lQ2DHTE2A2P/Ds6A+eE7Ow=="
         }
       },
       "is_incremental": false,
@@ -258,7 +282,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.ClientCore.html",
-          "hash": "wsgJjkexcly4P/EGsudQeQ=="
+          "hash": "W46vOltqs6SnZCj1W8PzDg=="
         }
       },
       "is_incremental": false,
@@ -270,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Configuration.ClientConfig.html",
-          "hash": "dyAIiQ1ATjfk4hkt9sQN6g=="
+          "hash": "10mPeQtQqLX3foRa47zfbQ=="
         }
       },
       "is_incremental": false,
@@ -282,7 +306,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Configuration.ServerConfig.html",
-          "hash": "8PGjs6+8EAz5P4FQPoe4hg=="
+          "hash": "UBRvQCznTWMmuKucAGua7w=="
         }
       },
       "is_incremental": false,
@@ -294,7 +318,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Configuration.SharedConfig.html",
-          "hash": "E2lkL413RbnACQul66/ffA=="
+          "hash": "7S4HuWXU5JY8fslsMhPhMg=="
         }
       },
       "is_incremental": false,
@@ -318,7 +342,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Dispatch.DispatchManager.html",
-          "hash": "dG4bDE1k5FKwp8e3B3xTMw=="
+          "hash": "DNasRK/cbNL3wTz/Le1/jw=="
         }
       },
       "is_incremental": false,
@@ -354,7 +378,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Factory.Manager.html",
-          "hash": "cOnWpJ5XZUgoabXWl2dYbw=="
+          "hash": "VPR90VbnU6/sjDYsuz30hw=="
         }
       },
       "is_incremental": false,
@@ -390,7 +414,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Input.ClientInputManager.html",
-          "hash": "J7UsZF5uIUhHlCC3iMkPmA=="
+          "hash": "yGtLPYxtiYk6RiPeqtYckQ=="
         }
       },
       "is_incremental": false,
@@ -438,7 +462,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Logging.LogManager.html",
-          "hash": "Cr2IFwWSlUZjUqRE/sQSJw=="
+          "hash": "mJPrFvWAKJM3tMDFef6Ovg=="
         }
       },
       "is_incremental": false,
@@ -546,7 +570,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Networking.ConnectionManager.html",
-          "hash": "ergO8YymqRB9suqLcvwhyw=="
+          "hash": "xS/6+jOwiC4KPcr+JnffvA=="
         }
       },
       "is_incremental": false,
@@ -678,7 +702,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.ServerCore.html",
-          "hash": "AkxePzenA2+516APKohvZA=="
+          "hash": "cVoiK1uk2kNxidIahHyNeQ=="
         }
       },
       "is_incremental": false,
@@ -690,7 +714,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.UI.ClientUIManager.html",
-          "hash": "62BxM0Sdl64LS3L9lPzgbg=="
+          "hash": "VS+hoEXzxOnntYT59mJjeA=="
         }
       },
       "is_incremental": false,
@@ -726,7 +750,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Utility.StringFormatter.html",
-          "hash": "PJRsq5KfR8O92wPKluRowQ=="
+          "hash": "B8GzP3FZKkOBDGoxYRQoDA=="
         }
       },
       "is_incremental": false,
@@ -751,6 +775,30 @@
         ".html": {
           "relative_path": "api/Engine.Utility.html",
           "hash": "0up+tWtmkKlhHH5Oe4olwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Engine.World.ClientWorldManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Engine.World.ClientWorldManager.html",
+          "hash": "ur9XjNP8Daj2LiC8JFHhJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Engine.World.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Engine.World.html",
+          "hash": "7+5XD1gcL+7pKRh0kH2Kcg=="
         }
       },
       "is_incremental": false,
@@ -786,7 +834,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "N+Qq9UNQ2VGPx12tvYPqTA=="
+          "hash": "2IXawhT4EJF3Rfhjs2o7/A=="
         }
       },
       "is_incremental": false,
@@ -881,8 +929,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 62,
-          "skipped_file_count": 62
+          "total_file_count": 66,
+          "skipped_file_count": 47
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

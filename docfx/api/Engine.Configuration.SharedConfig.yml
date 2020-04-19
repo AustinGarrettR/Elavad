@@ -25,7 +25,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: SharedConfig
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 8
+    startLine: 7
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -68,7 +68,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ESCAPE
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -105,7 +105,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: DELIMITER
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 18
+    startLine: 17
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -142,7 +142,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: PORT
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 23
+    startLine: 22
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -179,7 +179,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: MAX_BUFFER_SIZE
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 28
+    startLine: 27
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -216,7 +216,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: MAX_USERNAME_LENGTH
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 33
+    startLine: 32
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -253,7 +253,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: MAX_PASSWORD_LENGTH
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 38
+    startLine: 37
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration

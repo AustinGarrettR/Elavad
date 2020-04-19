@@ -5,9 +5,9 @@ items:
   id: ClientInputManager
   parent: Engine.Input
   children:
-  - Engine.Input.ClientInputManager.init(System.Object[])
-  - Engine.Input.ClientInputManager.shutdown
-  - Engine.Input.ClientInputManager.update
+  - Engine.Input.ClientInputManager.Init(System.Object[])
+  - Engine.Input.ClientInputManager.Process
+  - Engine.Input.ClientInputManager.Shutdown
   langs:
   - csharp
   - vb
@@ -51,23 +51,23 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.Input.ClientInputManager.init(System.Object[])
-  commentId: M:Engine.Input.ClientInputManager.init(System.Object[])
-  id: init(System.Object[])
+- uid: Engine.Input.ClientInputManager.Init(System.Object[])
+  commentId: M:Engine.Input.ClientInputManager.Init(System.Object[])
+  id: Init(System.Object[])
   parent: Engine.Input.ClientInputManager
   langs:
   - csharp
   - vb
-  name: init(Object[])
-  nameWithType: ClientInputManager.init(Object[])
-  fullName: Engine.Input.ClientInputManager.init(System.Object[])
+  name: Init(Object[])
+  nameWithType: ClientInputManager.Init(Object[])
+  fullName: Engine.Input.ClientInputManager.Init(System.Object[])
   type: Method
   source:
     remote:
       path: Assets/Engine/Input/ClientInputManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: init
+    id: Init
     path: ../Assets/Engine/Input/ClientInputManager.cs
     startLine: 20
   assemblies:
@@ -76,40 +76,40 @@ items:
   summary: "\nInitialize method\n"
   example: []
   syntax:
-    content: public override void init(params object[] parameters)
+    content: public override void Init(params object[] parameters)
     parameters:
     - id: parameters
       type: System.Object[]
       description: ''
-    content.vb: Public Overrides Sub init(ParamArray parameters As Object())
-  overridden: Engine.Factory.Manager.init(System.Object[])
-  overload: Engine.Input.ClientInputManager.init*
-  nameWithType.vb: ClientInputManager.init(Object())
+    content.vb: Public Overrides Sub Init(ParamArray parameters As Object())
+  overridden: Engine.Factory.Manager.Init(System.Object[])
+  overload: Engine.Input.ClientInputManager.Init*
+  nameWithType.vb: ClientInputManager.Init(Object())
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-  fullName.vb: Engine.Input.ClientInputManager.init(System.Object())
-  name.vb: init(Object())
-- uid: Engine.Input.ClientInputManager.shutdown
-  commentId: M:Engine.Input.ClientInputManager.shutdown
-  id: shutdown
+  fullName.vb: Engine.Input.ClientInputManager.Init(System.Object())
+  name.vb: Init(Object())
+- uid: Engine.Input.ClientInputManager.Shutdown
+  commentId: M:Engine.Input.ClientInputManager.Shutdown
+  id: Shutdown
   parent: Engine.Input.ClientInputManager
   langs:
   - csharp
   - vb
-  name: shutdown()
-  nameWithType: ClientInputManager.shutdown()
-  fullName: Engine.Input.ClientInputManager.shutdown()
+  name: Shutdown()
+  nameWithType: ClientInputManager.Shutdown()
+  fullName: Engine.Input.ClientInputManager.Shutdown()
   type: Method
   source:
     remote:
       path: Assets/Engine/Input/ClientInputManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: shutdown
+    id: Shutdown
     path: ../Assets/Engine/Input/ClientInputManager.cs
     startLine: 28
   assemblies:
@@ -118,33 +118,33 @@ items:
   summary: "\nCalled on program shutdown\n"
   example: []
   syntax:
-    content: public override void shutdown()
-    content.vb: Public Overrides Sub shutdown
-  overridden: Engine.Factory.Manager.shutdown
-  overload: Engine.Input.ClientInputManager.shutdown*
+    content: public override void Shutdown()
+    content.vb: Public Overrides Sub Shutdown
+  overridden: Engine.Factory.Manager.Shutdown
+  overload: Engine.Input.ClientInputManager.Shutdown*
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-- uid: Engine.Input.ClientInputManager.update
-  commentId: M:Engine.Input.ClientInputManager.update
-  id: update
+- uid: Engine.Input.ClientInputManager.Process
+  commentId: M:Engine.Input.ClientInputManager.Process
+  id: Process
   parent: Engine.Input.ClientInputManager
   langs:
   - csharp
   - vb
-  name: update()
-  nameWithType: ClientInputManager.update()
-  fullName: Engine.Input.ClientInputManager.update()
+  name: Process()
+  nameWithType: ClientInputManager.Process()
+  fullName: Engine.Input.ClientInputManager.Process()
   type: Method
   source:
     remote:
       path: Assets/Engine/Input/ClientInputManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: update
+    id: Process
     path: ../Assets/Engine/Input/ClientInputManager.cs
     startLine: 36
   assemblies:
@@ -153,10 +153,10 @@ items:
   summary: "\nCalled every frame\n"
   example: []
   syntax:
-    content: public override void update()
-    content.vb: Public Overrides Sub update
-  overridden: Engine.Factory.Manager.update
-  overload: Engine.Input.ClientInputManager.update*
+    content: public override void Process()
+    content.vb: Public Overrides Sub Process
+  overridden: Engine.Factory.Manager.Process
+  overload: Engine.Input.ClientInputManager.Process*
   modifiers.csharp:
   - public
   - override
@@ -472,21 +472,21 @@ references:
   name: Engine.Factory
   nameWithType: Engine.Factory
   fullName: Engine.Factory
-- uid: Engine.Factory.Manager.init(System.Object[])
-  commentId: M:Engine.Factory.Manager.init(System.Object[])
+- uid: Engine.Factory.Manager.Init(System.Object[])
+  commentId: M:Engine.Factory.Manager.Init(System.Object[])
   parent: Engine.Factory.Manager
   isExternal: true
-  name: init(Object[])
-  nameWithType: Manager.init(Object[])
-  fullName: Engine.Factory.Manager.init(System.Object[])
-  nameWithType.vb: Manager.init(Object())
-  fullName.vb: Engine.Factory.Manager.init(System.Object())
-  name.vb: init(Object())
+  name: Init(Object[])
+  nameWithType: Manager.Init(Object[])
+  fullName: Engine.Factory.Manager.Init(System.Object[])
+  nameWithType.vb: Manager.Init(Object())
+  fullName.vb: Engine.Factory.Manager.Init(System.Object())
+  name.vb: Init(Object())
   spec.csharp:
-  - uid: Engine.Factory.Manager.init(System.Object[])
-    name: init
-    nameWithType: Manager.init
-    fullName: Engine.Factory.Manager.init
+  - uid: Engine.Factory.Manager.Init(System.Object[])
+    name: Init
+    nameWithType: Manager.Init
+    fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
@@ -502,10 +502,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.init(System.Object[])
-    name: init
-    nameWithType: Manager.init
-    fullName: Engine.Factory.Manager.init
+  - uid: Engine.Factory.Manager.Init(System.Object[])
+    name: Init
+    nameWithType: Manager.Init
+    fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
@@ -520,11 +520,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Input.ClientInputManager.init*
-  commentId: Overload:Engine.Input.ClientInputManager.init
-  name: init
-  nameWithType: ClientInputManager.init
-  fullName: Engine.Input.ClientInputManager.init
+- uid: Engine.Input.ClientInputManager.Init*
+  commentId: Overload:Engine.Input.ClientInputManager.Init
+  name: Init
+  nameWithType: ClientInputManager.Init
+  fullName: Engine.Input.ClientInputManager.Init
 - uid: System.Object[]
   isExternal: true
   name: Object[]
@@ -551,17 +551,17 @@ references:
   - name: ()
     nameWithType: ()
     fullName: ()
-- uid: Engine.Factory.Manager.shutdown
-  commentId: M:Engine.Factory.Manager.shutdown
+- uid: Engine.Factory.Manager.Shutdown
+  commentId: M:Engine.Factory.Manager.Shutdown
   parent: Engine.Factory.Manager
-  name: shutdown()
-  nameWithType: Manager.shutdown()
-  fullName: Engine.Factory.Manager.shutdown()
+  name: Shutdown()
+  nameWithType: Manager.Shutdown()
+  fullName: Engine.Factory.Manager.Shutdown()
   spec.csharp:
-  - uid: Engine.Factory.Manager.shutdown
-    name: shutdown
-    nameWithType: Manager.shutdown
-    fullName: Engine.Factory.Manager.shutdown
+  - uid: Engine.Factory.Manager.Shutdown
+    name: Shutdown
+    nameWithType: Manager.Shutdown
+    fullName: Engine.Factory.Manager.Shutdown
   - name: (
     nameWithType: (
     fullName: (
@@ -569,32 +569,32 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.shutdown
-    name: shutdown
-    nameWithType: Manager.shutdown
-    fullName: Engine.Factory.Manager.shutdown
+  - uid: Engine.Factory.Manager.Shutdown
+    name: Shutdown
+    nameWithType: Manager.Shutdown
+    fullName: Engine.Factory.Manager.Shutdown
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Input.ClientInputManager.shutdown*
-  commentId: Overload:Engine.Input.ClientInputManager.shutdown
-  name: shutdown
-  nameWithType: ClientInputManager.shutdown
-  fullName: Engine.Input.ClientInputManager.shutdown
-- uid: Engine.Factory.Manager.update
-  commentId: M:Engine.Factory.Manager.update
+- uid: Engine.Input.ClientInputManager.Shutdown*
+  commentId: Overload:Engine.Input.ClientInputManager.Shutdown
+  name: Shutdown
+  nameWithType: ClientInputManager.Shutdown
+  fullName: Engine.Input.ClientInputManager.Shutdown
+- uid: Engine.Factory.Manager.Process
+  commentId: M:Engine.Factory.Manager.Process
   parent: Engine.Factory.Manager
-  name: update()
-  nameWithType: Manager.update()
-  fullName: Engine.Factory.Manager.update()
+  name: Process()
+  nameWithType: Manager.Process()
+  fullName: Engine.Factory.Manager.Process()
   spec.csharp:
-  - uid: Engine.Factory.Manager.update
-    name: update
-    nameWithType: Manager.update
-    fullName: Engine.Factory.Manager.update
+  - uid: Engine.Factory.Manager.Process
+    name: Process
+    nameWithType: Manager.Process
+    fullName: Engine.Factory.Manager.Process
   - name: (
     nameWithType: (
     fullName: (
@@ -602,18 +602,18 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.update
-    name: update
-    nameWithType: Manager.update
-    fullName: Engine.Factory.Manager.update
+  - uid: Engine.Factory.Manager.Process
+    name: Process
+    nameWithType: Manager.Process
+    fullName: Engine.Factory.Manager.Process
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Input.ClientInputManager.update*
-  commentId: Overload:Engine.Input.ClientInputManager.update
-  name: update
-  nameWithType: ClientInputManager.update
-  fullName: Engine.Input.ClientInputManager.update
+- uid: Engine.Input.ClientInputManager.Process*
+  commentId: Overload:Engine.Input.ClientInputManager.Process
+  name: Process
+  nameWithType: ClientInputManager.Process
+  fullName: Engine.Input.ClientInputManager.Process

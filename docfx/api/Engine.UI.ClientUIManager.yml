@@ -5,9 +5,9 @@ items:
   id: ClientUIManager
   parent: Engine.UI
   children:
-  - Engine.UI.ClientUIManager.init(System.Object[])
-  - Engine.UI.ClientUIManager.shutdown
-  - Engine.UI.ClientUIManager.update
+  - Engine.UI.ClientUIManager.Init(System.Object[])
+  - Engine.UI.ClientUIManager.Process
+  - Engine.UI.ClientUIManager.Shutdown
   langs:
   - csharp
   - vb
@@ -51,23 +51,23 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.UI.ClientUIManager.init(System.Object[])
-  commentId: M:Engine.UI.ClientUIManager.init(System.Object[])
-  id: init(System.Object[])
+- uid: Engine.UI.ClientUIManager.Init(System.Object[])
+  commentId: M:Engine.UI.ClientUIManager.Init(System.Object[])
+  id: Init(System.Object[])
   parent: Engine.UI.ClientUIManager
   langs:
   - csharp
   - vb
-  name: init(Object[])
-  nameWithType: ClientUIManager.init(Object[])
-  fullName: Engine.UI.ClientUIManager.init(System.Object[])
+  name: Init(Object[])
+  nameWithType: ClientUIManager.Init(Object[])
+  fullName: Engine.UI.ClientUIManager.Init(System.Object[])
   type: Method
   source:
     remote:
       path: Assets/Engine/UI/ClientUIManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: init
+    id: Init
     path: ../Assets/Engine/UI/ClientUIManager.cs
     startLine: 20
   assemblies:
@@ -76,40 +76,40 @@ items:
   summary: "\nInitialize method\n"
   example: []
   syntax:
-    content: public override void init(params object[] parameters)
+    content: public override void Init(params object[] parameters)
     parameters:
     - id: parameters
       type: System.Object[]
       description: ClientAsetManager input
-    content.vb: Public Overrides Sub init(ParamArray parameters As Object())
-  overridden: Engine.Factory.Manager.init(System.Object[])
-  overload: Engine.UI.ClientUIManager.init*
-  nameWithType.vb: ClientUIManager.init(Object())
+    content.vb: Public Overrides Sub Init(ParamArray parameters As Object())
+  overridden: Engine.Factory.Manager.Init(System.Object[])
+  overload: Engine.UI.ClientUIManager.Init*
+  nameWithType.vb: ClientUIManager.Init(Object())
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-  fullName.vb: Engine.UI.ClientUIManager.init(System.Object())
-  name.vb: init(Object())
-- uid: Engine.UI.ClientUIManager.shutdown
-  commentId: M:Engine.UI.ClientUIManager.shutdown
-  id: shutdown
+  fullName.vb: Engine.UI.ClientUIManager.Init(System.Object())
+  name.vb: Init(Object())
+- uid: Engine.UI.ClientUIManager.Shutdown
+  commentId: M:Engine.UI.ClientUIManager.Shutdown
+  id: Shutdown
   parent: Engine.UI.ClientUIManager
   langs:
   - csharp
   - vb
-  name: shutdown()
-  nameWithType: ClientUIManager.shutdown()
-  fullName: Engine.UI.ClientUIManager.shutdown()
+  name: Shutdown()
+  nameWithType: ClientUIManager.Shutdown()
+  fullName: Engine.UI.ClientUIManager.Shutdown()
   type: Method
   source:
     remote:
       path: Assets/Engine/UI/ClientUIManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: shutdown
+    id: Shutdown
     path: ../Assets/Engine/UI/ClientUIManager.cs
     startLine: 30
   assemblies:
@@ -118,33 +118,33 @@ items:
   summary: "\nCalled on program shutdown\n"
   example: []
   syntax:
-    content: public override void shutdown()
-    content.vb: Public Overrides Sub shutdown
-  overridden: Engine.Factory.Manager.shutdown
-  overload: Engine.UI.ClientUIManager.shutdown*
+    content: public override void Shutdown()
+    content.vb: Public Overrides Sub Shutdown
+  overridden: Engine.Factory.Manager.Shutdown
+  overload: Engine.UI.ClientUIManager.Shutdown*
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-- uid: Engine.UI.ClientUIManager.update
-  commentId: M:Engine.UI.ClientUIManager.update
-  id: update
+- uid: Engine.UI.ClientUIManager.Process
+  commentId: M:Engine.UI.ClientUIManager.Process
+  id: Process
   parent: Engine.UI.ClientUIManager
   langs:
   - csharp
   - vb
-  name: update()
-  nameWithType: ClientUIManager.update()
-  fullName: Engine.UI.ClientUIManager.update()
+  name: Process()
+  nameWithType: ClientUIManager.Process()
+  fullName: Engine.UI.ClientUIManager.Process()
   type: Method
   source:
     remote:
       path: Assets/Engine/UI/ClientUIManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: update
+    id: Process
     path: ../Assets/Engine/UI/ClientUIManager.cs
     startLine: 38
   assemblies:
@@ -153,10 +153,10 @@ items:
   summary: "\nCalled every frame\n"
   example: []
   syntax:
-    content: public override void update()
-    content.vb: Public Overrides Sub update
-  overridden: Engine.Factory.Manager.update
-  overload: Engine.UI.ClientUIManager.update*
+    content: public override void Process()
+    content.vb: Public Overrides Sub Process
+  overridden: Engine.Factory.Manager.Process
+  overload: Engine.UI.ClientUIManager.Process*
   modifiers.csharp:
   - public
   - override
@@ -472,21 +472,21 @@ references:
   name: Engine.Factory
   nameWithType: Engine.Factory
   fullName: Engine.Factory
-- uid: Engine.Factory.Manager.init(System.Object[])
-  commentId: M:Engine.Factory.Manager.init(System.Object[])
+- uid: Engine.Factory.Manager.Init(System.Object[])
+  commentId: M:Engine.Factory.Manager.Init(System.Object[])
   parent: Engine.Factory.Manager
   isExternal: true
-  name: init(Object[])
-  nameWithType: Manager.init(Object[])
-  fullName: Engine.Factory.Manager.init(System.Object[])
-  nameWithType.vb: Manager.init(Object())
-  fullName.vb: Engine.Factory.Manager.init(System.Object())
-  name.vb: init(Object())
+  name: Init(Object[])
+  nameWithType: Manager.Init(Object[])
+  fullName: Engine.Factory.Manager.Init(System.Object[])
+  nameWithType.vb: Manager.Init(Object())
+  fullName.vb: Engine.Factory.Manager.Init(System.Object())
+  name.vb: Init(Object())
   spec.csharp:
-  - uid: Engine.Factory.Manager.init(System.Object[])
-    name: init
-    nameWithType: Manager.init
-    fullName: Engine.Factory.Manager.init
+  - uid: Engine.Factory.Manager.Init(System.Object[])
+    name: Init
+    nameWithType: Manager.Init
+    fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
@@ -502,10 +502,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.init(System.Object[])
-    name: init
-    nameWithType: Manager.init
-    fullName: Engine.Factory.Manager.init
+  - uid: Engine.Factory.Manager.Init(System.Object[])
+    name: Init
+    nameWithType: Manager.Init
+    fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
@@ -520,11 +520,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.UI.ClientUIManager.init*
-  commentId: Overload:Engine.UI.ClientUIManager.init
-  name: init
-  nameWithType: ClientUIManager.init
-  fullName: Engine.UI.ClientUIManager.init
+- uid: Engine.UI.ClientUIManager.Init*
+  commentId: Overload:Engine.UI.ClientUIManager.Init
+  name: Init
+  nameWithType: ClientUIManager.Init
+  fullName: Engine.UI.ClientUIManager.Init
 - uid: System.Object[]
   isExternal: true
   name: Object[]
@@ -551,17 +551,17 @@ references:
   - name: ()
     nameWithType: ()
     fullName: ()
-- uid: Engine.Factory.Manager.shutdown
-  commentId: M:Engine.Factory.Manager.shutdown
+- uid: Engine.Factory.Manager.Shutdown
+  commentId: M:Engine.Factory.Manager.Shutdown
   parent: Engine.Factory.Manager
-  name: shutdown()
-  nameWithType: Manager.shutdown()
-  fullName: Engine.Factory.Manager.shutdown()
+  name: Shutdown()
+  nameWithType: Manager.Shutdown()
+  fullName: Engine.Factory.Manager.Shutdown()
   spec.csharp:
-  - uid: Engine.Factory.Manager.shutdown
-    name: shutdown
-    nameWithType: Manager.shutdown
-    fullName: Engine.Factory.Manager.shutdown
+  - uid: Engine.Factory.Manager.Shutdown
+    name: Shutdown
+    nameWithType: Manager.Shutdown
+    fullName: Engine.Factory.Manager.Shutdown
   - name: (
     nameWithType: (
     fullName: (
@@ -569,32 +569,32 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.shutdown
-    name: shutdown
-    nameWithType: Manager.shutdown
-    fullName: Engine.Factory.Manager.shutdown
+  - uid: Engine.Factory.Manager.Shutdown
+    name: Shutdown
+    nameWithType: Manager.Shutdown
+    fullName: Engine.Factory.Manager.Shutdown
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.UI.ClientUIManager.shutdown*
-  commentId: Overload:Engine.UI.ClientUIManager.shutdown
-  name: shutdown
-  nameWithType: ClientUIManager.shutdown
-  fullName: Engine.UI.ClientUIManager.shutdown
-- uid: Engine.Factory.Manager.update
-  commentId: M:Engine.Factory.Manager.update
+- uid: Engine.UI.ClientUIManager.Shutdown*
+  commentId: Overload:Engine.UI.ClientUIManager.Shutdown
+  name: Shutdown
+  nameWithType: ClientUIManager.Shutdown
+  fullName: Engine.UI.ClientUIManager.Shutdown
+- uid: Engine.Factory.Manager.Process
+  commentId: M:Engine.Factory.Manager.Process
   parent: Engine.Factory.Manager
-  name: update()
-  nameWithType: Manager.update()
-  fullName: Engine.Factory.Manager.update()
+  name: Process()
+  nameWithType: Manager.Process()
+  fullName: Engine.Factory.Manager.Process()
   spec.csharp:
-  - uid: Engine.Factory.Manager.update
-    name: update
-    nameWithType: Manager.update
-    fullName: Engine.Factory.Manager.update
+  - uid: Engine.Factory.Manager.Process
+    name: Process
+    nameWithType: Manager.Process
+    fullName: Engine.Factory.Manager.Process
   - name: (
     nameWithType: (
     fullName: (
@@ -602,18 +602,18 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.update
-    name: update
-    nameWithType: Manager.update
-    fullName: Engine.Factory.Manager.update
+  - uid: Engine.Factory.Manager.Process
+    name: Process
+    nameWithType: Manager.Process
+    fullName: Engine.Factory.Manager.Process
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.UI.ClientUIManager.update*
-  commentId: Overload:Engine.UI.ClientUIManager.update
-  name: update
-  nameWithType: ClientUIManager.update
-  fullName: Engine.UI.ClientUIManager.update
+- uid: Engine.UI.ClientUIManager.Process*
+  commentId: Overload:Engine.UI.ClientUIManager.Process
+  name: Process
+  nameWithType: ClientUIManager.Process
+  fullName: Engine.UI.ClientUIManager.Process

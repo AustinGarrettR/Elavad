@@ -5,9 +5,9 @@ items:
   id: Manager
   parent: Engine.Factory
   children:
-  - Engine.Factory.Manager.init(System.Object[])
-  - Engine.Factory.Manager.shutdown
-  - Engine.Factory.Manager.update
+  - Engine.Factory.Manager.Init(System.Object[])
+  - Engine.Factory.Manager.Process
+  - Engine.Factory.Manager.Shutdown
   langs:
   - csharp
   - vb
@@ -38,11 +38,13 @@ items:
   - Engine.Account.ServerLoginManager
   - Engine.API.APIManager
   - Engine.Asset.ClientAssetManager
+  - Engine.Asset.SharedAssetManager
   - Engine.Dispatch.DispatchManager
   - Engine.Input.ClientInputManager
   - Engine.Logging.LogManager
   - Engine.Networking.ConnectionManager
   - Engine.UI.ClientUIManager
+  - Engine.World.ClientWorldManager
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -59,23 +61,23 @@ items:
   - Public
   - MustInherit
   - Class
-- uid: Engine.Factory.Manager.init(System.Object[])
-  commentId: M:Engine.Factory.Manager.init(System.Object[])
-  id: init(System.Object[])
+- uid: Engine.Factory.Manager.Init(System.Object[])
+  commentId: M:Engine.Factory.Manager.Init(System.Object[])
+  id: Init(System.Object[])
   parent: Engine.Factory.Manager
   langs:
   - csharp
   - vb
-  name: init(Object[])
-  nameWithType: Manager.init(Object[])
-  fullName: Engine.Factory.Manager.init(System.Object[])
+  name: Init(Object[])
+  nameWithType: Manager.Init(Object[])
+  fullName: Engine.Factory.Manager.Init(System.Object[])
   type: Method
   source:
     remote:
       path: Assets/Engine/Factory/Manager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: init
+    id: Init
     path: ../Assets/Engine/Factory/Manager.cs
     startLine: 11
   assemblies:
@@ -84,39 +86,39 @@ items:
   summary: "\nCalled on initialization\n"
   example: []
   syntax:
-    content: public abstract void init(params object[] parameters)
+    content: public abstract void Init(params object[] parameters)
     parameters:
     - id: parameters
       type: System.Object[]
       description: Variable parameters
-    content.vb: Public MustOverride Sub init(ParamArray parameters As Object())
-  overload: Engine.Factory.Manager.init*
-  nameWithType.vb: Manager.init(Object())
+    content.vb: Public MustOverride Sub Init(ParamArray parameters As Object())
+  overload: Engine.Factory.Manager.Init*
+  nameWithType.vb: Manager.Init(Object())
   modifiers.csharp:
   - public
   - abstract
   modifiers.vb:
   - Public
   - MustOverride
-  fullName.vb: Engine.Factory.Manager.init(System.Object())
-  name.vb: init(Object())
-- uid: Engine.Factory.Manager.update
-  commentId: M:Engine.Factory.Manager.update
-  id: update
+  fullName.vb: Engine.Factory.Manager.Init(System.Object())
+  name.vb: Init(Object())
+- uid: Engine.Factory.Manager.Process
+  commentId: M:Engine.Factory.Manager.Process
+  id: Process
   parent: Engine.Factory.Manager
   langs:
   - csharp
   - vb
-  name: update()
-  nameWithType: Manager.update()
-  fullName: Engine.Factory.Manager.update()
+  name: Process()
+  nameWithType: Manager.Process()
+  fullName: Engine.Factory.Manager.Process()
   type: Method
   source:
     remote:
       path: Assets/Engine/Factory/Manager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: update
+    id: Process
     path: ../Assets/Engine/Factory/Manager.cs
     startLine: 16
   assemblies:
@@ -125,32 +127,32 @@ items:
   summary: "\nCalled every frame\n"
   example: []
   syntax:
-    content: public abstract void update()
-    content.vb: Public MustOverride Sub update
-  overload: Engine.Factory.Manager.update*
+    content: public abstract void Process()
+    content.vb: Public MustOverride Sub Process
+  overload: Engine.Factory.Manager.Process*
   modifiers.csharp:
   - public
   - abstract
   modifiers.vb:
   - Public
   - MustOverride
-- uid: Engine.Factory.Manager.shutdown
-  commentId: M:Engine.Factory.Manager.shutdown
-  id: shutdown
+- uid: Engine.Factory.Manager.Shutdown
+  commentId: M:Engine.Factory.Manager.Shutdown
+  id: Shutdown
   parent: Engine.Factory.Manager
   langs:
   - csharp
   - vb
-  name: shutdown()
-  nameWithType: Manager.shutdown()
-  fullName: Engine.Factory.Manager.shutdown()
+  name: Shutdown()
+  nameWithType: Manager.Shutdown()
+  fullName: Engine.Factory.Manager.Shutdown()
   type: Method
   source:
     remote:
       path: Assets/Engine/Factory/Manager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: shutdown
+    id: Shutdown
     path: ../Assets/Engine/Factory/Manager.cs
     startLine: 21
   assemblies:
@@ -159,9 +161,9 @@ items:
   summary: "\nCalled on shutdown\n"
   example: []
   syntax:
-    content: public abstract void shutdown()
-    content.vb: Public MustOverride Sub shutdown
-  overload: Engine.Factory.Manager.shutdown*
+    content: public abstract void Shutdown()
+    content.vb: Public MustOverride Sub Shutdown
+  overload: Engine.Factory.Manager.Shutdown*
   modifiers.csharp:
   - public
   - abstract
@@ -466,11 +468,11 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Engine.Factory.Manager.init*
-  commentId: Overload:Engine.Factory.Manager.init
-  name: init
-  nameWithType: Manager.init
-  fullName: Engine.Factory.Manager.init
+- uid: Engine.Factory.Manager.Init*
+  commentId: Overload:Engine.Factory.Manager.Init
+  name: Init
+  nameWithType: Manager.Init
+  fullName: Engine.Factory.Manager.Init
 - uid: System.Object[]
   isExternal: true
   name: Object[]
@@ -497,13 +499,13 @@ references:
   - name: ()
     nameWithType: ()
     fullName: ()
-- uid: Engine.Factory.Manager.update*
-  commentId: Overload:Engine.Factory.Manager.update
-  name: update
-  nameWithType: Manager.update
-  fullName: Engine.Factory.Manager.update
-- uid: Engine.Factory.Manager.shutdown*
-  commentId: Overload:Engine.Factory.Manager.shutdown
-  name: shutdown
-  nameWithType: Manager.shutdown
-  fullName: Engine.Factory.Manager.shutdown
+- uid: Engine.Factory.Manager.Process*
+  commentId: Overload:Engine.Factory.Manager.Process
+  name: Process
+  nameWithType: Manager.Process
+  fullName: Engine.Factory.Manager.Process
+- uid: Engine.Factory.Manager.Shutdown*
+  commentId: Overload:Engine.Factory.Manager.Shutdown
+  name: Shutdown
+  nameWithType: Manager.Shutdown
+  fullName: Engine.Factory.Manager.Shutdown

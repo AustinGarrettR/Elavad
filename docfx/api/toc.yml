@@ -50,6 +50,10 @@
     name: ClientAssetManager
   - uid: Engine.Asset.ClientAssetPack
     name: ClientAssetPack
+  - uid: Engine.Asset.SharedAssetManager
+    name: SharedAssetManager
+  - uid: Engine.Asset.SharedAssetPack
+    name: SharedAssetPack
   - uid: Engine.Asset.UI_Pack
     name: UI_Pack
 - uid: Engine.Configuration
@@ -139,3 +143,8 @@
     name: StringFormatter
   - uid: Engine.Utility.TimeHandler
     name: TimeHandler
+- uid: Engine.World
+  name: Engine.World
+  items:
+  - uid: Engine.World.ClientWorldManager
+    name: ClientWorldManager

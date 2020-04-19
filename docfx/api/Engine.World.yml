@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.World
+  commentId: N:Engine.World
+  id: Engine.World
+  children:
+  - Engine.World.ClientWorldManager
+  langs:
+  - csharp
+  - vb
+  name: Engine.World
+  nameWithType: Engine.World
+  fullName: Engine.World
+  type: Namespace
+  assemblies:
+  - Engine.World
+references:
+- uid: Engine.World.ClientWorldManager
+  commentId: T:Engine.World.ClientWorldManager
+  parent: Engine.World
+  name: ClientWorldManager
+  nameWithType: ClientWorldManager
+  fullName: Engine.World.ClientWorldManager
+- uid: Engine.World
+  commentId: N:Engine.World
+  name: Engine.World
+  nameWithType: Engine.World
+  fullName: Engine.World

@@ -20,7 +20,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: StringFormatter
     path: ../Assets/Engine/Utility/StringFormatter.cs
-    startLine: 9
+    startLine: 5
   assemblies:
   - Engine.Utility
   namespace: Engine.Utility
@@ -64,7 +64,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: FirstCharToUpper
     path: ../Assets/Engine/Utility/StringFormatter.cs
-    startLine: 16
+    startLine: 12
   assemblies:
   - Engine.Utility
   namespace: Engine.Utility

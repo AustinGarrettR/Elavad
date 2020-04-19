@@ -10,6 +10,7 @@ items:
   - Engine.ClientCore.clientInputManager
   - Engine.ClientCore.clientLoginManager
   - Engine.ClientCore.clientUIManager
+  - Engine.ClientCore.clientWorldManager
   - Engine.ClientCore.connectionManager
   - Engine.ClientCore.dispatchManager
   - Engine.ClientCore.logManager
@@ -27,7 +28,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ClientCore
     path: ../Assets/Engine/ClientCore.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - Engine
   namespace: Engine
@@ -169,7 +170,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: logManager
     path: ../Assets/Engine/ClientCore.cs
-    startLine: 54
+    startLine: 65
   assemblies:
   - Engine
   namespace: Engine
@@ -204,7 +205,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: clientAssetManager
     path: ../Assets/Engine/ClientCore.cs
-    startLine: 59
+    startLine: 70
   assemblies:
   - Engine
   namespace: Engine
@@ -239,7 +240,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: connectionManager
     path: ../Assets/Engine/ClientCore.cs
-    startLine: 64
+    startLine: 75
   assemblies:
   - Engine
   namespace: Engine
@@ -250,6 +251,41 @@ items:
     return:
       type: Engine.Networking.ConnectionManager
     content.vb: Public ReadOnly connectionManager As ConnectionManager
+  modifiers.csharp:
+  - public
+  - readonly
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: Engine.ClientCore.clientWorldManager
+  commentId: F:Engine.ClientCore.clientWorldManager
+  id: clientWorldManager
+  parent: Engine.ClientCore
+  langs:
+  - csharp
+  - vb
+  name: clientWorldManager
+  nameWithType: ClientCore.clientWorldManager
+  fullName: Engine.ClientCore.clientWorldManager
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/ClientCore.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: clientWorldManager
+    path: ../Assets/Engine/ClientCore.cs
+    startLine: 80
+  assemblies:
+  - Engine
+  namespace: Engine
+  summary: "\nThe client world manager which handles loading and running the game world\n"
+  example: []
+  syntax:
+    content: public readonly ClientWorldManager clientWorldManager
+    return:
+      type: Engine.World.ClientWorldManager
+    content.vb: Public ReadOnly clientWorldManager As ClientWorldManager
   modifiers.csharp:
   - public
   - readonly
@@ -274,7 +310,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: clientLoginManager
     path: ../Assets/Engine/ClientCore.cs
-    startLine: 69
+    startLine: 85
   assemblies:
   - Engine
   namespace: Engine
@@ -309,7 +345,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: clientUIManager
     path: ../Assets/Engine/ClientCore.cs
-    startLine: 74
+    startLine: 90
   assemblies:
   - Engine
   namespace: Engine
@@ -344,7 +380,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: clientInputManager
     path: ../Assets/Engine/ClientCore.cs
-    startLine: 79
+    startLine: 95
   assemblies:
   - Engine
   namespace: Engine
@@ -379,7 +415,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: apiManager
     path: ../Assets/Engine/ClientCore.cs
-    startLine: 84
+    startLine: 100
   assemblies:
   - Engine
   namespace: Engine
@@ -414,7 +450,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: dispatchManager
     path: ../Assets/Engine/ClientCore.cs
-    startLine: 89
+    startLine: 105
   assemblies:
   - Engine
   namespace: Engine
@@ -5632,6 +5668,17 @@ references:
   name: Engine.Networking
   nameWithType: Engine.Networking
   fullName: Engine.Networking
+- uid: Engine.World.ClientWorldManager
+  commentId: T:Engine.World.ClientWorldManager
+  parent: Engine.World
+  name: ClientWorldManager
+  nameWithType: ClientWorldManager
+  fullName: Engine.World.ClientWorldManager
+- uid: Engine.World
+  commentId: N:Engine.World
+  name: Engine.World
+  nameWithType: Engine.World
+  fullName: Engine.World
 - uid: Engine.Account.ClientLoginManager
   commentId: T:Engine.Account.ClientLoginManager
   parent: Engine.Account

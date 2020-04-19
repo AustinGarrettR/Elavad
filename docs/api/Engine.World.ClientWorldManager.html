@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ClientAssetManager
+    <title>Class ClientWorldManager
    | Elavad Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ClientAssetManager
+    <meta name="title" content="Class ClientWorldManager
    | Elavad Documentation ">
     <meta name="generator" content="docfx 2.52.0.0">
     
@@ -77,19 +77,19 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Engine.Asset.ClientAssetManager">
+            <article class="content wrap" id="_content" data-uid="Engine.World.ClientWorldManager">
   
   
-  <h1 id="Engine_Asset_ClientAssetManager" data-uid="Engine.Asset.ClientAssetManager" class="text-break">Class ClientAssetManager
+  <h1 id="Engine_World_ClientWorldManager" data-uid="Engine.World.ClientWorldManager" class="text-break">Class ClientWorldManager
   </h1>
-  <div class="markdown level0 summary"><p>The manager that handles asset loading</p>
+  <div class="markdown level0 summary"><p>Handles loading and managing the game world for the client</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="Engine.Factory.Manager.html">Manager</a></div>
-    <div class="level2"><span class="xref">ClientAssetManager</span></div>
+    <div class="level2"><span class="xref">ClientWorldManager</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -115,73 +115,24 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Engine.Asset.html">Engine.Asset</a></h6>
-  <h6><strong>Assembly</strong>: Engine.Asset.dll</h6>
-  <h5 id="Engine_Asset_ClientAssetManager_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Engine.World.html">Engine.World</a></h6>
+  <h6><strong>Assembly</strong>: Engine.World.dll</h6>
+  <h5 id="Engine_World_ClientWorldManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ClientAssetManager : Manager</code></pre>
+    <pre><code class="lang-csharp hljs">public class ClientWorldManager : Manager</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_Asset_ClientAssetManager_GetUIPanel_System_String_.md&amp;value=---%0Auid%3A%20Engine.Asset.ClientAssetManager.GetUIPanel(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_World_ClientWorldManager_Init_System_Object___.md&amp;value=---%0Auid%3A%20Engine.World.ClientWorldManager.Init(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/Asset/ClientAssetManager.cs/#L59">View Source</a>
+    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/World/ClientWorldManager.cs/#L18">View Source</a>
   </span>
-  <a id="Engine_Asset_ClientAssetManager_GetUIPanel_" data-uid="Engine.Asset.ClientAssetManager.GetUIPanel*"></a>
-  <h4 id="Engine_Asset_ClientAssetManager_GetUIPanel_System_String_" data-uid="Engine.Asset.ClientAssetManager.GetUIPanel(System.String)">GetUIPanel(String)</h4>
-  <div class="markdown level1 summary"><p>Return a UI panel from the asset pack</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GameObject GetUIPanel(string name)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>The name of the panel</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UnityEngine.GameObject</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_Asset_ClientAssetManager_Init_System_Object___.md&amp;value=---%0Auid%3A%20Engine.Asset.ClientAssetManager.Init(System.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/Asset/ClientAssetManager.cs/#L23">View Source</a>
-  </span>
-  <a id="Engine_Asset_ClientAssetManager_Init_" data-uid="Engine.Asset.ClientAssetManager.Init*"></a>
-  <h4 id="Engine_Asset_ClientAssetManager_Init_System_Object___" data-uid="Engine.Asset.ClientAssetManager.Init(System.Object[])">Init(Object[])</h4>
-  <div class="markdown level1 summary"><p>Initialize method</p>
+  <a id="Engine_World_ClientWorldManager_Init_" data-uid="Engine.World.ClientWorldManager.Init*"></a>
+  <h4 id="Engine_World_ClientWorldManager_Init_System_Object___" data-uid="Engine.World.ClientWorldManager.Init(System.Object[])">Init(Object[])</h4>
+  <div class="markdown level1 summary"><p>Called on manager initialization</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -201,7 +152,8 @@
       <tr>
         <td><span class="xref">System.Object</span>[]</td>
         <td><span class="parametername">parameters</span></td>
-        <td></td>
+        <td><p>Variable manager parameters</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -209,13 +161,13 @@
   <div><a class="xref" href="Engine.Factory.Manager.html#Engine_Factory_Manager_Init_System_Object___">Manager.Init(Object[])</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_Asset_ClientAssetManager_Process.md&amp;value=---%0Auid%3A%20Engine.Asset.ClientAssetManager.Process%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_World_ClientWorldManager_Process.md&amp;value=---%0Auid%3A%20Engine.World.ClientWorldManager.Process%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/Asset/ClientAssetManager.cs/#L45">View Source</a>
+    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/World/ClientWorldManager.cs/#L34">View Source</a>
   </span>
-  <a id="Engine_Asset_ClientAssetManager_Process_" data-uid="Engine.Asset.ClientAssetManager.Process*"></a>
-  <h4 id="Engine_Asset_ClientAssetManager_Process" data-uid="Engine.Asset.ClientAssetManager.Process">Process()</h4>
+  <a id="Engine_World_ClientWorldManager_Process_" data-uid="Engine.World.ClientWorldManager.Process*"></a>
+  <h4 id="Engine_World_ClientWorldManager_Process" data-uid="Engine.World.ClientWorldManager.Process">Process()</h4>
   <div class="markdown level1 summary"><p>Called every frame</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -227,14 +179,14 @@
   <div><a class="xref" href="Engine.Factory.Manager.html#Engine_Factory_Manager_Process">Manager.Process()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_Asset_ClientAssetManager_Shutdown.md&amp;value=---%0Auid%3A%20Engine.Asset.ClientAssetManager.Shutdown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_World_ClientWorldManager_Shutdown.md&amp;value=---%0Auid%3A%20Engine.World.ClientWorldManager.Shutdown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/Asset/ClientAssetManager.cs/#L37">View Source</a>
+    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/World/ClientWorldManager.cs/#L26">View Source</a>
   </span>
-  <a id="Engine_Asset_ClientAssetManager_Shutdown_" data-uid="Engine.Asset.ClientAssetManager.Shutdown*"></a>
-  <h4 id="Engine_Asset_ClientAssetManager_Shutdown" data-uid="Engine.Asset.ClientAssetManager.Shutdown">Shutdown()</h4>
-  <div class="markdown level1 summary"><p>Called on program shutdown</p>
+  <a id="Engine_World_ClientWorldManager_Shutdown_" data-uid="Engine.World.ClientWorldManager.Shutdown*"></a>
+  <h4 id="Engine_World_ClientWorldManager_Shutdown" data-uid="Engine.World.ClientWorldManager.Shutdown">Shutdown()</h4>
+  <div class="markdown level1 summary"><p>Called on shutdown</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -251,10 +203,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_Asset_ClientAssetManager.md&amp;value=---%0Auid%3A%20Engine.Asset.ClientAssetManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_World_ClientWorldManager.md&amp;value=---%0Auid%3A%20Engine.World.ClientWorldManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/Asset/ClientAssetManager.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/World/ClientWorldManager.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

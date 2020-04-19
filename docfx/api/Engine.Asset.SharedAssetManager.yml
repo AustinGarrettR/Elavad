@@ -1,39 +1,37 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Engine.Logging.LogManager
-  commentId: T:Engine.Logging.LogManager
-  id: LogManager
-  parent: Engine.Logging
+- uid: Engine.Asset.SharedAssetManager
+  commentId: T:Engine.Asset.SharedAssetManager
+  id: SharedAssetManager
+  parent: Engine.Asset
   children:
-  - Engine.Logging.LogManager.getLogLevel
-  - Engine.Logging.LogManager.Init(System.Object[])
-  - Engine.Logging.LogManager.Process
-  - Engine.Logging.LogManager.SetLogLevel(Engine.Logging.LogLevel)
-  - Engine.Logging.LogManager.Shutdown
+  - Engine.Asset.SharedAssetManager.Init(System.Object[])
+  - Engine.Asset.SharedAssetManager.Process
+  - Engine.Asset.SharedAssetManager.Shutdown
   langs:
   - csharp
   - vb
-  name: LogManager
-  nameWithType: LogManager
-  fullName: Engine.Logging.LogManager
+  name: SharedAssetManager
+  nameWithType: SharedAssetManager
+  fullName: Engine.Asset.SharedAssetManager
   type: Class
   source:
     remote:
-      path: Assets/Engine/Logging/LogManager.cs
+      path: Assets/Engine/Asset/SharedAssetManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: LogManager
-    path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 8
+    id: SharedAssetManager
+    path: ../Assets/Engine/Asset/SharedAssetManager.cs
+    startLine: 10
   assemblies:
-  - Engine.Logging
-  namespace: Engine.Logging
-  summary: "\nManages log messages and errors\n"
+  - Engine.Asset
+  namespace: Engine.Asset
+  summary: "\nHandles shared asset loading\n"
   example: []
   syntax:
-    content: 'public class LogManager : Manager'
+    content: 'public class SharedAssetManager : Manager'
     content.vb: >-
-      Public Class LogManager
+      Public Class SharedAssetManager
 
           Inherits Manager
   inheritance:
@@ -53,195 +51,124 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.Logging.LogManager.Init(System.Object[])
-  commentId: M:Engine.Logging.LogManager.Init(System.Object[])
+- uid: Engine.Asset.SharedAssetManager.Init(System.Object[])
+  commentId: M:Engine.Asset.SharedAssetManager.Init(System.Object[])
   id: Init(System.Object[])
-  parent: Engine.Logging.LogManager
+  parent: Engine.Asset.SharedAssetManager
   langs:
   - csharp
   - vb
   name: Init(Object[])
-  nameWithType: LogManager.Init(Object[])
-  fullName: Engine.Logging.LogManager.Init(System.Object[])
+  nameWithType: SharedAssetManager.Init(Object[])
+  fullName: Engine.Asset.SharedAssetManager.Init(System.Object[])
   type: Method
   source:
     remote:
-      path: Assets/Engine/Logging/LogManager.cs
+      path: Assets/Engine/Asset/SharedAssetManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
-    path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 19
+    path: ../Assets/Engine/Asset/SharedAssetManager.cs
+    startLine: 21
   assemblies:
-  - Engine.Logging
-  namespace: Engine.Logging
-  summary: "\nCalled on initialization\n"
+  - Engine.Asset
+  namespace: Engine.Asset
+  summary: "\nCalled on initialize\n"
   example: []
   syntax:
     content: public override void Init(params object[] parameters)
     parameters:
     - id: parameters
       type: System.Object[]
-      description: No parameters used
+      description: Variable parameters
     content.vb: Public Overrides Sub Init(ParamArray parameters As Object())
   overridden: Engine.Factory.Manager.Init(System.Object[])
-  overload: Engine.Logging.LogManager.Init*
-  nameWithType.vb: LogManager.Init(Object())
+  overload: Engine.Asset.SharedAssetManager.Init*
+  nameWithType.vb: SharedAssetManager.Init(Object())
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-  fullName.vb: Engine.Logging.LogManager.Init(System.Object())
+  fullName.vb: Engine.Asset.SharedAssetManager.Init(System.Object())
   name.vb: Init(Object())
-- uid: Engine.Logging.LogManager.Process
-  commentId: M:Engine.Logging.LogManager.Process
-  id: Process
-  parent: Engine.Logging.LogManager
-  langs:
-  - csharp
-  - vb
-  name: Process()
-  nameWithType: LogManager.Process()
-  fullName: Engine.Logging.LogManager.Process()
-  type: Method
-  source:
-    remote:
-      path: Assets/Engine/Logging/LogManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
-    id: Process
-    path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 27
-  assemblies:
-  - Engine.Logging
-  namespace: Engine.Logging
-  summary: "\nCalled every frame\n"
-  example: []
-  syntax:
-    content: public override void Process()
-    content.vb: Public Overrides Sub Process
-  overridden: Engine.Factory.Manager.Process
-  overload: Engine.Logging.LogManager.Process*
-  modifiers.csharp:
-  - public
-  - override
-  modifiers.vb:
-  - Public
-  - Overrides
-- uid: Engine.Logging.LogManager.Shutdown
-  commentId: M:Engine.Logging.LogManager.Shutdown
+- uid: Engine.Asset.SharedAssetManager.Shutdown
+  commentId: M:Engine.Asset.SharedAssetManager.Shutdown
   id: Shutdown
-  parent: Engine.Logging.LogManager
+  parent: Engine.Asset.SharedAssetManager
   langs:
   - csharp
   - vb
   name: Shutdown()
-  nameWithType: LogManager.Shutdown()
-  fullName: Engine.Logging.LogManager.Shutdown()
+  nameWithType: SharedAssetManager.Shutdown()
+  fullName: Engine.Asset.SharedAssetManager.Shutdown()
   type: Method
   source:
     remote:
-      path: Assets/Engine/Logging/LogManager.cs
+      path: Assets/Engine/Asset/SharedAssetManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
-    path: ../Assets/Engine/Logging/LogManager.cs
+    path: ../Assets/Engine/Asset/SharedAssetManager.cs
     startLine: 35
   assemblies:
-  - Engine.Logging
-  namespace: Engine.Logging
+  - Engine.Asset
+  namespace: Engine.Asset
   summary: "\nCalled on shutdown\n"
   example: []
   syntax:
     content: public override void Shutdown()
     content.vb: Public Overrides Sub Shutdown
   overridden: Engine.Factory.Manager.Shutdown
-  overload: Engine.Logging.LogManager.Shutdown*
+  overload: Engine.Asset.SharedAssetManager.Shutdown*
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-- uid: Engine.Logging.LogManager.getLogLevel
-  commentId: M:Engine.Logging.LogManager.getLogLevel
-  id: getLogLevel
-  parent: Engine.Logging.LogManager
+- uid: Engine.Asset.SharedAssetManager.Process
+  commentId: M:Engine.Asset.SharedAssetManager.Process
+  id: Process
+  parent: Engine.Asset.SharedAssetManager
   langs:
   - csharp
   - vb
-  name: getLogLevel()
-  nameWithType: LogManager.getLogLevel()
-  fullName: Engine.Logging.LogManager.getLogLevel()
+  name: Process()
+  nameWithType: SharedAssetManager.Process()
+  fullName: Engine.Asset.SharedAssetManager.Process()
   type: Method
   source:
     remote:
-      path: Assets/Engine/Logging/LogManager.cs
+      path: Assets/Engine/Asset/SharedAssetManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: getLogLevel
-    path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 57
+    id: Process
+    path: ../Assets/Engine/Asset/SharedAssetManager.cs
+    startLine: 43
   assemblies:
-  - Engine.Logging
-  namespace: Engine.Logging
-  summary: "\nReturns the log level\n"
+  - Engine.Asset
+  namespace: Engine.Asset
+  summary: "\nCalled every frame\n"
   example: []
   syntax:
-    content: public LogLevel getLogLevel()
-    return:
-      type: Engine.Logging.LogLevel
-      description: LogLevel enum
-    content.vb: Public Function getLogLevel As LogLevel
-  overload: Engine.Logging.LogManager.getLogLevel*
+    content: public override void Process()
+    content.vb: Public Overrides Sub Process
+  overridden: Engine.Factory.Manager.Process
+  overload: Engine.Asset.SharedAssetManager.Process*
   modifiers.csharp:
   - public
+  - override
   modifiers.vb:
   - Public
-- uid: Engine.Logging.LogManager.SetLogLevel(Engine.Logging.LogLevel)
-  commentId: M:Engine.Logging.LogManager.SetLogLevel(Engine.Logging.LogLevel)
-  id: SetLogLevel(Engine.Logging.LogLevel)
-  parent: Engine.Logging.LogManager
-  langs:
-  - csharp
-  - vb
-  name: SetLogLevel(LogLevel)
-  nameWithType: LogManager.SetLogLevel(LogLevel)
-  fullName: Engine.Logging.LogManager.SetLogLevel(Engine.Logging.LogLevel)
-  type: Method
-  source:
-    remote:
-      path: Assets/Engine/Logging/LogManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
-    id: SetLogLevel
-    path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 66
-  assemblies:
-  - Engine.Logging
-  namespace: Engine.Logging
-  summary: "\nSet the log level\n"
-  example: []
-  syntax:
-    content: public void SetLogLevel(LogLevel level)
-    parameters:
-    - id: level
-      type: Engine.Logging.LogLevel
-      description: the LogLevel enum value
-    content.vb: Public Sub SetLogLevel(level As LogLevel)
-  overload: Engine.Logging.LogManager.SetLogLevel*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
+  - Overrides
 references:
-- uid: Engine.Logging
-  commentId: N:Engine.Logging
-  name: Engine.Logging
-  nameWithType: Engine.Logging
-  fullName: Engine.Logging
+- uid: Engine.Asset
+  commentId: N:Engine.Asset
+  name: Engine.Asset
+  nameWithType: Engine.Asset
+  fullName: Engine.Asset
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -593,11 +520,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Logging.LogManager.Init*
-  commentId: Overload:Engine.Logging.LogManager.Init
+- uid: Engine.Asset.SharedAssetManager.Init*
+  commentId: Overload:Engine.Asset.SharedAssetManager.Init
   name: Init
-  nameWithType: LogManager.Init
-  fullName: Engine.Logging.LogManager.Init
+  nameWithType: SharedAssetManager.Init
+  fullName: Engine.Asset.SharedAssetManager.Init
 - uid: System.Object[]
   isExternal: true
   name: Object[]
@@ -624,39 +551,6 @@ references:
   - name: ()
     nameWithType: ()
     fullName: ()
-- uid: Engine.Factory.Manager.Process
-  commentId: M:Engine.Factory.Manager.Process
-  parent: Engine.Factory.Manager
-  name: Process()
-  nameWithType: Manager.Process()
-  fullName: Engine.Factory.Manager.Process()
-  spec.csharp:
-  - uid: Engine.Factory.Manager.Process
-    name: Process
-    nameWithType: Manager.Process
-    fullName: Engine.Factory.Manager.Process
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Engine.Factory.Manager.Process
-    name: Process
-    nameWithType: Manager.Process
-    fullName: Engine.Factory.Manager.Process
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Engine.Logging.LogManager.Process*
-  commentId: Overload:Engine.Logging.LogManager.Process
-  name: Process
-  nameWithType: LogManager.Process
-  fullName: Engine.Logging.LogManager.Process
 - uid: Engine.Factory.Manager.Shutdown
   commentId: M:Engine.Factory.Manager.Shutdown
   parent: Engine.Factory.Manager
@@ -685,24 +579,41 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Logging.LogManager.Shutdown*
-  commentId: Overload:Engine.Logging.LogManager.Shutdown
+- uid: Engine.Asset.SharedAssetManager.Shutdown*
+  commentId: Overload:Engine.Asset.SharedAssetManager.Shutdown
   name: Shutdown
-  nameWithType: LogManager.Shutdown
-  fullName: Engine.Logging.LogManager.Shutdown
-- uid: Engine.Logging.LogManager.getLogLevel*
-  commentId: Overload:Engine.Logging.LogManager.getLogLevel
-  name: getLogLevel
-  nameWithType: LogManager.getLogLevel
-  fullName: Engine.Logging.LogManager.getLogLevel
-- uid: Engine.Logging.LogLevel
-  commentId: T:Engine.Logging.LogLevel
-  parent: Engine.Logging
-  name: LogLevel
-  nameWithType: LogLevel
-  fullName: Engine.Logging.LogLevel
-- uid: Engine.Logging.LogManager.SetLogLevel*
-  commentId: Overload:Engine.Logging.LogManager.SetLogLevel
-  name: SetLogLevel
-  nameWithType: LogManager.SetLogLevel
-  fullName: Engine.Logging.LogManager.SetLogLevel
+  nameWithType: SharedAssetManager.Shutdown
+  fullName: Engine.Asset.SharedAssetManager.Shutdown
+- uid: Engine.Factory.Manager.Process
+  commentId: M:Engine.Factory.Manager.Process
+  parent: Engine.Factory.Manager
+  name: Process()
+  nameWithType: Manager.Process()
+  fullName: Engine.Factory.Manager.Process()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.Process
+    name: Process
+    nameWithType: Manager.Process
+    fullName: Engine.Factory.Manager.Process
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.Process
+    name: Process
+    nameWithType: Manager.Process
+    fullName: Engine.Factory.Manager.Process
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Engine.Asset.SharedAssetManager.Process*
+  commentId: Overload:Engine.Asset.SharedAssetManager.Process
+  name: Process
+  nameWithType: SharedAssetManager.Process
+  fullName: Engine.Asset.SharedAssetManager.Process

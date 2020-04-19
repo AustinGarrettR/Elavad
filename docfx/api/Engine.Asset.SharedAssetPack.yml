@@ -1,25 +1,24 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Engine.Asset.ClientAssetPack
-  commentId: T:Engine.Asset.ClientAssetPack
-  id: ClientAssetPack
+- uid: Engine.Asset.SharedAssetPack
+  commentId: T:Engine.Asset.SharedAssetPack
+  id: SharedAssetPack
   parent: Engine.Asset
-  children:
-  - Engine.Asset.ClientAssetPack.uiPack
+  children: []
   langs:
   - csharp
   - vb
-  name: ClientAssetPack
-  nameWithType: ClientAssetPack
-  fullName: Engine.Asset.ClientAssetPack
+  name: SharedAssetPack
+  nameWithType: SharedAssetPack
+  fullName: Engine.Asset.SharedAssetPack
   type: Class
   source:
     remote:
-      path: Assets/Engine/Asset/ClientAssetPack.cs
+      path: Assets/Engine/Asset/SharedAssetPack.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: ClientAssetPack
-    path: ../Assets/Engine/Asset/ClientAssetPack.cs
+    id: SharedAssetPack
+    path: ../Assets/Engine/Asset/SharedAssetPack.cs
     startLine: 7
   assemblies:
   - Engine.Asset
@@ -28,13 +27,13 @@ items:
   example: []
   syntax:
     content: >-
-      [CreateAssetMenu(fileName = "ClientAssetPack", menuName = "Data Packs/ClientAssetPack", order = 1)]
+      [CreateAssetMenu(fileName = "SharedAssetPack", menuName = "Data Packs/SharedAssetPack", order = 1)]
 
-      public class ClientAssetPack : ScriptableObject
+      public class SharedAssetPack : ScriptableObject
     content.vb: >-
-      <CreateAssetMenu(fileName:="ClientAssetPack", menuName:="Data Packs/ClientAssetPack", order:=1)>
+      <CreateAssetMenu(fileName:="SharedAssetPack", menuName:="Data Packs/SharedAssetPack", order:=1)>
 
-      Public Class ClientAssetPack
+      Public Class SharedAssetPack
 
           Inherits ScriptableObject
   inheritance:
@@ -91,10 +90,10 @@ items:
     namedArguments:
     - name: fileName
       type: System.String
-      value: ClientAssetPack
+      value: SharedAssetPack
     - name: menuName
       type: System.String
-      value: Data Packs/ClientAssetPack
+      value: Data Packs/SharedAssetPack
     - name: order
       type: System.Int32
       value: 1
@@ -104,39 +103,6 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.Asset.ClientAssetPack.uiPack
-  commentId: F:Engine.Asset.ClientAssetPack.uiPack
-  id: uiPack
-  parent: Engine.Asset.ClientAssetPack
-  langs:
-  - csharp
-  - vb
-  name: uiPack
-  nameWithType: ClientAssetPack.uiPack
-  fullName: Engine.Asset.ClientAssetPack.uiPack
-  type: Field
-  source:
-    remote:
-      path: Assets/Engine/Asset/ClientAssetPack.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
-    id: uiPack
-    path: ../Assets/Engine/Asset/ClientAssetPack.cs
-    startLine: 13
-  assemblies:
-  - Engine.Asset
-  namespace: Engine.Asset
-  summary: "\nA reference to a UI Pack\n"
-  example: []
-  syntax:
-    content: public UI_Pack uiPack
-    return:
-      type: Engine.Asset.UI_Pack
-    content.vb: Public uiPack As UI_Pack
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
 references:
 - uid: Engine.Asset
   commentId: N:Engine.Asset
@@ -2441,9 +2407,3 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Asset.UI_Pack
-  commentId: T:Engine.Asset.UI_Pack
-  parent: Engine.Asset
-  name: UI_Pack
-  nameWithType: UI_Pack
-  fullName: Engine.Asset.UI_Pack

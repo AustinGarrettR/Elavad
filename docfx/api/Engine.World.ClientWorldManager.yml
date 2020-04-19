@@ -1,40 +1,37 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Engine.Logging.LogManager
-  commentId: T:Engine.Logging.LogManager
-  id: LogManager
-  parent: Engine.Logging
+- uid: Engine.World.ClientWorldManager
+  commentId: T:Engine.World.ClientWorldManager
+  id: ClientWorldManager
+  parent: Engine.World
   children:
-  - Engine.Logging.LogManager.getLogLevel
-  - Engine.Logging.LogManager.Init(System.Object[])
-  - Engine.Logging.LogManager.Process
-  - Engine.Logging.LogManager.SetLogLevel(Engine.Logging.LogLevel)
-  - Engine.Logging.LogManager.Shutdown
+  - Engine.World.ClientWorldManager.Init(System.Object[])
+  - Engine.World.ClientWorldManager.Process
+  - Engine.World.ClientWorldManager.Shutdown
   langs:
   - csharp
   - vb
-  name: LogManager
-  nameWithType: LogManager
-  fullName: Engine.Logging.LogManager
+  name: ClientWorldManager
+  nameWithType: ClientWorldManager
+  fullName: Engine.World.ClientWorldManager
   type: Class
   source:
     remote:
-      path: Assets/Engine/Logging/LogManager.cs
+      path: Assets/Engine/World/ClientWorldManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: LogManager
-    path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 8
+    id: ClientWorldManager
+    path: ../Assets/Engine/World/ClientWorldManager.cs
+    startLine: 11
   assemblies:
-  - Engine.Logging
-  namespace: Engine.Logging
-  summary: "\nManages log messages and errors\n"
+  - Engine.World
+  namespace: Engine.World
+  summary: "\nHandles loading and managing the game world for the client\n"
   example: []
   syntax:
-    content: 'public class LogManager : Manager'
+    content: 'public class ClientWorldManager : Manager'
     content.vb: >-
-      Public Class LogManager
-
+      Public Class ClientWorldManager
           Inherits Manager
   inheritance:
   - System.Object
@@ -53,195 +50,124 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.Logging.LogManager.Init(System.Object[])
-  commentId: M:Engine.Logging.LogManager.Init(System.Object[])
+- uid: Engine.World.ClientWorldManager.Init(System.Object[])
+  commentId: M:Engine.World.ClientWorldManager.Init(System.Object[])
   id: Init(System.Object[])
-  parent: Engine.Logging.LogManager
+  parent: Engine.World.ClientWorldManager
   langs:
   - csharp
   - vb
   name: Init(Object[])
-  nameWithType: LogManager.Init(Object[])
-  fullName: Engine.Logging.LogManager.Init(System.Object[])
+  nameWithType: ClientWorldManager.Init(Object[])
+  fullName: Engine.World.ClientWorldManager.Init(System.Object[])
   type: Method
   source:
     remote:
-      path: Assets/Engine/Logging/LogManager.cs
+      path: Assets/Engine/World/ClientWorldManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
-    path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 19
+    path: ../Assets/Engine/World/ClientWorldManager.cs
+    startLine: 17
   assemblies:
-  - Engine.Logging
-  namespace: Engine.Logging
-  summary: "\nCalled on initialization\n"
+  - Engine.World
+  namespace: Engine.World
+  summary: "\nCalled on manager initialization\n"
   example: []
   syntax:
     content: public override void Init(params object[] parameters)
     parameters:
     - id: parameters
       type: System.Object[]
-      description: No parameters used
+      description: Variable manager parameters
     content.vb: Public Overrides Sub Init(ParamArray parameters As Object())
   overridden: Engine.Factory.Manager.Init(System.Object[])
-  overload: Engine.Logging.LogManager.Init*
-  nameWithType.vb: LogManager.Init(Object())
+  overload: Engine.World.ClientWorldManager.Init*
+  nameWithType.vb: ClientWorldManager.Init(Object())
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-  fullName.vb: Engine.Logging.LogManager.Init(System.Object())
+  fullName.vb: Engine.World.ClientWorldManager.Init(System.Object())
   name.vb: Init(Object())
-- uid: Engine.Logging.LogManager.Process
-  commentId: M:Engine.Logging.LogManager.Process
-  id: Process
-  parent: Engine.Logging.LogManager
-  langs:
-  - csharp
-  - vb
-  name: Process()
-  nameWithType: LogManager.Process()
-  fullName: Engine.Logging.LogManager.Process()
-  type: Method
-  source:
-    remote:
-      path: Assets/Engine/Logging/LogManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
-    id: Process
-    path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 27
-  assemblies:
-  - Engine.Logging
-  namespace: Engine.Logging
-  summary: "\nCalled every frame\n"
-  example: []
-  syntax:
-    content: public override void Process()
-    content.vb: Public Overrides Sub Process
-  overridden: Engine.Factory.Manager.Process
-  overload: Engine.Logging.LogManager.Process*
-  modifiers.csharp:
-  - public
-  - override
-  modifiers.vb:
-  - Public
-  - Overrides
-- uid: Engine.Logging.LogManager.Shutdown
-  commentId: M:Engine.Logging.LogManager.Shutdown
+- uid: Engine.World.ClientWorldManager.Shutdown
+  commentId: M:Engine.World.ClientWorldManager.Shutdown
   id: Shutdown
-  parent: Engine.Logging.LogManager
+  parent: Engine.World.ClientWorldManager
   langs:
   - csharp
   - vb
   name: Shutdown()
-  nameWithType: LogManager.Shutdown()
-  fullName: Engine.Logging.LogManager.Shutdown()
+  nameWithType: ClientWorldManager.Shutdown()
+  fullName: Engine.World.ClientWorldManager.Shutdown()
   type: Method
   source:
     remote:
-      path: Assets/Engine/Logging/LogManager.cs
+      path: Assets/Engine/World/ClientWorldManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
-    path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 35
+    path: ../Assets/Engine/World/ClientWorldManager.cs
+    startLine: 25
   assemblies:
-  - Engine.Logging
-  namespace: Engine.Logging
+  - Engine.World
+  namespace: Engine.World
   summary: "\nCalled on shutdown\n"
   example: []
   syntax:
     content: public override void Shutdown()
     content.vb: Public Overrides Sub Shutdown
   overridden: Engine.Factory.Manager.Shutdown
-  overload: Engine.Logging.LogManager.Shutdown*
+  overload: Engine.World.ClientWorldManager.Shutdown*
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-- uid: Engine.Logging.LogManager.getLogLevel
-  commentId: M:Engine.Logging.LogManager.getLogLevel
-  id: getLogLevel
-  parent: Engine.Logging.LogManager
+- uid: Engine.World.ClientWorldManager.Process
+  commentId: M:Engine.World.ClientWorldManager.Process
+  id: Process
+  parent: Engine.World.ClientWorldManager
   langs:
   - csharp
   - vb
-  name: getLogLevel()
-  nameWithType: LogManager.getLogLevel()
-  fullName: Engine.Logging.LogManager.getLogLevel()
+  name: Process()
+  nameWithType: ClientWorldManager.Process()
+  fullName: Engine.World.ClientWorldManager.Process()
   type: Method
   source:
     remote:
-      path: Assets/Engine/Logging/LogManager.cs
+      path: Assets/Engine/World/ClientWorldManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: getLogLevel
-    path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 57
+    id: Process
+    path: ../Assets/Engine/World/ClientWorldManager.cs
+    startLine: 33
   assemblies:
-  - Engine.Logging
-  namespace: Engine.Logging
-  summary: "\nReturns the log level\n"
+  - Engine.World
+  namespace: Engine.World
+  summary: "\nCalled every frame\n"
   example: []
   syntax:
-    content: public LogLevel getLogLevel()
-    return:
-      type: Engine.Logging.LogLevel
-      description: LogLevel enum
-    content.vb: Public Function getLogLevel As LogLevel
-  overload: Engine.Logging.LogManager.getLogLevel*
+    content: public override void Process()
+    content.vb: Public Overrides Sub Process
+  overridden: Engine.Factory.Manager.Process
+  overload: Engine.World.ClientWorldManager.Process*
   modifiers.csharp:
   - public
+  - override
   modifiers.vb:
   - Public
-- uid: Engine.Logging.LogManager.SetLogLevel(Engine.Logging.LogLevel)
-  commentId: M:Engine.Logging.LogManager.SetLogLevel(Engine.Logging.LogLevel)
-  id: SetLogLevel(Engine.Logging.LogLevel)
-  parent: Engine.Logging.LogManager
-  langs:
-  - csharp
-  - vb
-  name: SetLogLevel(LogLevel)
-  nameWithType: LogManager.SetLogLevel(LogLevel)
-  fullName: Engine.Logging.LogManager.SetLogLevel(Engine.Logging.LogLevel)
-  type: Method
-  source:
-    remote:
-      path: Assets/Engine/Logging/LogManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
-    id: SetLogLevel
-    path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 66
-  assemblies:
-  - Engine.Logging
-  namespace: Engine.Logging
-  summary: "\nSet the log level\n"
-  example: []
-  syntax:
-    content: public void SetLogLevel(LogLevel level)
-    parameters:
-    - id: level
-      type: Engine.Logging.LogLevel
-      description: the LogLevel enum value
-    content.vb: Public Sub SetLogLevel(level As LogLevel)
-  overload: Engine.Logging.LogManager.SetLogLevel*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
+  - Overrides
 references:
-- uid: Engine.Logging
-  commentId: N:Engine.Logging
-  name: Engine.Logging
-  nameWithType: Engine.Logging
-  fullName: Engine.Logging
+- uid: Engine.World
+  commentId: N:Engine.World
+  name: Engine.World
+  nameWithType: Engine.World
+  fullName: Engine.World
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -593,11 +519,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Logging.LogManager.Init*
-  commentId: Overload:Engine.Logging.LogManager.Init
+- uid: Engine.World.ClientWorldManager.Init*
+  commentId: Overload:Engine.World.ClientWorldManager.Init
   name: Init
-  nameWithType: LogManager.Init
-  fullName: Engine.Logging.LogManager.Init
+  nameWithType: ClientWorldManager.Init
+  fullName: Engine.World.ClientWorldManager.Init
 - uid: System.Object[]
   isExternal: true
   name: Object[]
@@ -624,39 +550,6 @@ references:
   - name: ()
     nameWithType: ()
     fullName: ()
-- uid: Engine.Factory.Manager.Process
-  commentId: M:Engine.Factory.Manager.Process
-  parent: Engine.Factory.Manager
-  name: Process()
-  nameWithType: Manager.Process()
-  fullName: Engine.Factory.Manager.Process()
-  spec.csharp:
-  - uid: Engine.Factory.Manager.Process
-    name: Process
-    nameWithType: Manager.Process
-    fullName: Engine.Factory.Manager.Process
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Engine.Factory.Manager.Process
-    name: Process
-    nameWithType: Manager.Process
-    fullName: Engine.Factory.Manager.Process
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: Engine.Logging.LogManager.Process*
-  commentId: Overload:Engine.Logging.LogManager.Process
-  name: Process
-  nameWithType: LogManager.Process
-  fullName: Engine.Logging.LogManager.Process
 - uid: Engine.Factory.Manager.Shutdown
   commentId: M:Engine.Factory.Manager.Shutdown
   parent: Engine.Factory.Manager
@@ -685,24 +578,41 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Logging.LogManager.Shutdown*
-  commentId: Overload:Engine.Logging.LogManager.Shutdown
+- uid: Engine.World.ClientWorldManager.Shutdown*
+  commentId: Overload:Engine.World.ClientWorldManager.Shutdown
   name: Shutdown
-  nameWithType: LogManager.Shutdown
-  fullName: Engine.Logging.LogManager.Shutdown
-- uid: Engine.Logging.LogManager.getLogLevel*
-  commentId: Overload:Engine.Logging.LogManager.getLogLevel
-  name: getLogLevel
-  nameWithType: LogManager.getLogLevel
-  fullName: Engine.Logging.LogManager.getLogLevel
-- uid: Engine.Logging.LogLevel
-  commentId: T:Engine.Logging.LogLevel
-  parent: Engine.Logging
-  name: LogLevel
-  nameWithType: LogLevel
-  fullName: Engine.Logging.LogLevel
-- uid: Engine.Logging.LogManager.SetLogLevel*
-  commentId: Overload:Engine.Logging.LogManager.SetLogLevel
-  name: SetLogLevel
-  nameWithType: LogManager.SetLogLevel
-  fullName: Engine.Logging.LogManager.SetLogLevel
+  nameWithType: ClientWorldManager.Shutdown
+  fullName: Engine.World.ClientWorldManager.Shutdown
+- uid: Engine.Factory.Manager.Process
+  commentId: M:Engine.Factory.Manager.Process
+  parent: Engine.Factory.Manager
+  name: Process()
+  nameWithType: Manager.Process()
+  fullName: Engine.Factory.Manager.Process()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.Process
+    name: Process
+    nameWithType: Manager.Process
+    fullName: Engine.Factory.Manager.Process
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.Process
+    name: Process
+    nameWithType: Manager.Process
+    fullName: Engine.Factory.Manager.Process
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Engine.World.ClientWorldManager.Process*
+  commentId: Overload:Engine.World.ClientWorldManager.Process
+  name: Process
+  nameWithType: ClientWorldManager.Process
+  fullName: Engine.World.ClientWorldManager.Process

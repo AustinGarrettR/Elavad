@@ -5,9 +5,9 @@ items:
   id: ServerLoginManager
   parent: Engine.Account
   children:
-  - Engine.Account.ServerLoginManager.init(System.Object[])
-  - Engine.Account.ServerLoginManager.shutdown
-  - Engine.Account.ServerLoginManager.update
+  - Engine.Account.ServerLoginManager.Init(System.Object[])
+  - Engine.Account.ServerLoginManager.Process
+  - Engine.Account.ServerLoginManager.Shutdown
   langs:
   - csharp
   - vb
@@ -51,23 +51,23 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.Account.ServerLoginManager.init(System.Object[])
-  commentId: M:Engine.Account.ServerLoginManager.init(System.Object[])
-  id: init(System.Object[])
+- uid: Engine.Account.ServerLoginManager.Init(System.Object[])
+  commentId: M:Engine.Account.ServerLoginManager.Init(System.Object[])
+  id: Init(System.Object[])
   parent: Engine.Account.ServerLoginManager
   langs:
   - csharp
   - vb
-  name: init(Object[])
-  nameWithType: ServerLoginManager.init(Object[])
-  fullName: Engine.Account.ServerLoginManager.init(System.Object[])
+  name: Init(Object[])
+  nameWithType: ServerLoginManager.Init(Object[])
+  fullName: Engine.Account.ServerLoginManager.Init(System.Object[])
   type: Method
   source:
     remote:
       path: Assets/Engine/Account/ServerLoginManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: init
+    id: Init
     path: ../Assets/Engine/Account/ServerLoginManager.cs
     startLine: 23
   assemblies:
@@ -76,40 +76,40 @@ items:
   summary: "\nCalled on initialization\n"
   example: []
   syntax:
-    content: public override void init(params object[] parameters)
+    content: public override void Init(params object[] parameters)
     parameters:
     - id: parameters
       type: System.Object[]
       description: Connection manager parameter
-    content.vb: Public Overrides Sub init(ParamArray parameters As Object())
-  overridden: Engine.Factory.Manager.init(System.Object[])
-  overload: Engine.Account.ServerLoginManager.init*
-  nameWithType.vb: ServerLoginManager.init(Object())
+    content.vb: Public Overrides Sub Init(ParamArray parameters As Object())
+  overridden: Engine.Factory.Manager.Init(System.Object[])
+  overload: Engine.Account.ServerLoginManager.Init*
+  nameWithType.vb: ServerLoginManager.Init(Object())
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-  fullName.vb: Engine.Account.ServerLoginManager.init(System.Object())
-  name.vb: init(Object())
-- uid: Engine.Account.ServerLoginManager.shutdown
-  commentId: M:Engine.Account.ServerLoginManager.shutdown
-  id: shutdown
+  fullName.vb: Engine.Account.ServerLoginManager.Init(System.Object())
+  name.vb: Init(Object())
+- uid: Engine.Account.ServerLoginManager.Shutdown
+  commentId: M:Engine.Account.ServerLoginManager.Shutdown
+  id: Shutdown
   parent: Engine.Account.ServerLoginManager
   langs:
   - csharp
   - vb
-  name: shutdown()
-  nameWithType: ServerLoginManager.shutdown()
-  fullName: Engine.Account.ServerLoginManager.shutdown()
+  name: Shutdown()
+  nameWithType: ServerLoginManager.Shutdown()
+  fullName: Engine.Account.ServerLoginManager.Shutdown()
   type: Method
   source:
     remote:
       path: Assets/Engine/Account/ServerLoginManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: shutdown
+    id: Shutdown
     path: ../Assets/Engine/Account/ServerLoginManager.cs
     startLine: 34
   assemblies:
@@ -118,33 +118,33 @@ items:
   summary: "\nCalled on program shutdown\n"
   example: []
   syntax:
-    content: public override void shutdown()
-    content.vb: Public Overrides Sub shutdown
-  overridden: Engine.Factory.Manager.shutdown
-  overload: Engine.Account.ServerLoginManager.shutdown*
+    content: public override void Shutdown()
+    content.vb: Public Overrides Sub Shutdown
+  overridden: Engine.Factory.Manager.Shutdown
+  overload: Engine.Account.ServerLoginManager.Shutdown*
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-- uid: Engine.Account.ServerLoginManager.update
-  commentId: M:Engine.Account.ServerLoginManager.update
-  id: update
+- uid: Engine.Account.ServerLoginManager.Process
+  commentId: M:Engine.Account.ServerLoginManager.Process
+  id: Process
   parent: Engine.Account.ServerLoginManager
   langs:
   - csharp
   - vb
-  name: update()
-  nameWithType: ServerLoginManager.update()
-  fullName: Engine.Account.ServerLoginManager.update()
+  name: Process()
+  nameWithType: ServerLoginManager.Process()
+  fullName: Engine.Account.ServerLoginManager.Process()
   type: Method
   source:
     remote:
       path: Assets/Engine/Account/ServerLoginManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: update
+    id: Process
     path: ../Assets/Engine/Account/ServerLoginManager.cs
     startLine: 42
   assemblies:
@@ -153,10 +153,10 @@ items:
   summary: "\nCalled every frame\n"
   example: []
   syntax:
-    content: public override void update()
-    content.vb: Public Overrides Sub update
-  overridden: Engine.Factory.Manager.update
-  overload: Engine.Account.ServerLoginManager.update*
+    content: public override void Process()
+    content.vb: Public Overrides Sub Process
+  overridden: Engine.Factory.Manager.Process
+  overload: Engine.Account.ServerLoginManager.Process*
   modifiers.csharp:
   - public
   - override
@@ -472,21 +472,21 @@ references:
   name: Engine.Factory
   nameWithType: Engine.Factory
   fullName: Engine.Factory
-- uid: Engine.Factory.Manager.init(System.Object[])
-  commentId: M:Engine.Factory.Manager.init(System.Object[])
+- uid: Engine.Factory.Manager.Init(System.Object[])
+  commentId: M:Engine.Factory.Manager.Init(System.Object[])
   parent: Engine.Factory.Manager
   isExternal: true
-  name: init(Object[])
-  nameWithType: Manager.init(Object[])
-  fullName: Engine.Factory.Manager.init(System.Object[])
-  nameWithType.vb: Manager.init(Object())
-  fullName.vb: Engine.Factory.Manager.init(System.Object())
-  name.vb: init(Object())
+  name: Init(Object[])
+  nameWithType: Manager.Init(Object[])
+  fullName: Engine.Factory.Manager.Init(System.Object[])
+  nameWithType.vb: Manager.Init(Object())
+  fullName.vb: Engine.Factory.Manager.Init(System.Object())
+  name.vb: Init(Object())
   spec.csharp:
-  - uid: Engine.Factory.Manager.init(System.Object[])
-    name: init
-    nameWithType: Manager.init
-    fullName: Engine.Factory.Manager.init
+  - uid: Engine.Factory.Manager.Init(System.Object[])
+    name: Init
+    nameWithType: Manager.Init
+    fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
@@ -502,10 +502,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.init(System.Object[])
-    name: init
-    nameWithType: Manager.init
-    fullName: Engine.Factory.Manager.init
+  - uid: Engine.Factory.Manager.Init(System.Object[])
+    name: Init
+    nameWithType: Manager.Init
+    fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
@@ -520,11 +520,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Account.ServerLoginManager.init*
-  commentId: Overload:Engine.Account.ServerLoginManager.init
-  name: init
-  nameWithType: ServerLoginManager.init
-  fullName: Engine.Account.ServerLoginManager.init
+- uid: Engine.Account.ServerLoginManager.Init*
+  commentId: Overload:Engine.Account.ServerLoginManager.Init
+  name: Init
+  nameWithType: ServerLoginManager.Init
+  fullName: Engine.Account.ServerLoginManager.Init
 - uid: System.Object[]
   isExternal: true
   name: Object[]
@@ -551,17 +551,17 @@ references:
   - name: ()
     nameWithType: ()
     fullName: ()
-- uid: Engine.Factory.Manager.shutdown
-  commentId: M:Engine.Factory.Manager.shutdown
+- uid: Engine.Factory.Manager.Shutdown
+  commentId: M:Engine.Factory.Manager.Shutdown
   parent: Engine.Factory.Manager
-  name: shutdown()
-  nameWithType: Manager.shutdown()
-  fullName: Engine.Factory.Manager.shutdown()
+  name: Shutdown()
+  nameWithType: Manager.Shutdown()
+  fullName: Engine.Factory.Manager.Shutdown()
   spec.csharp:
-  - uid: Engine.Factory.Manager.shutdown
-    name: shutdown
-    nameWithType: Manager.shutdown
-    fullName: Engine.Factory.Manager.shutdown
+  - uid: Engine.Factory.Manager.Shutdown
+    name: Shutdown
+    nameWithType: Manager.Shutdown
+    fullName: Engine.Factory.Manager.Shutdown
   - name: (
     nameWithType: (
     fullName: (
@@ -569,32 +569,32 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.shutdown
-    name: shutdown
-    nameWithType: Manager.shutdown
-    fullName: Engine.Factory.Manager.shutdown
+  - uid: Engine.Factory.Manager.Shutdown
+    name: Shutdown
+    nameWithType: Manager.Shutdown
+    fullName: Engine.Factory.Manager.Shutdown
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Account.ServerLoginManager.shutdown*
-  commentId: Overload:Engine.Account.ServerLoginManager.shutdown
-  name: shutdown
-  nameWithType: ServerLoginManager.shutdown
-  fullName: Engine.Account.ServerLoginManager.shutdown
-- uid: Engine.Factory.Manager.update
-  commentId: M:Engine.Factory.Manager.update
+- uid: Engine.Account.ServerLoginManager.Shutdown*
+  commentId: Overload:Engine.Account.ServerLoginManager.Shutdown
+  name: Shutdown
+  nameWithType: ServerLoginManager.Shutdown
+  fullName: Engine.Account.ServerLoginManager.Shutdown
+- uid: Engine.Factory.Manager.Process
+  commentId: M:Engine.Factory.Manager.Process
   parent: Engine.Factory.Manager
-  name: update()
-  nameWithType: Manager.update()
-  fullName: Engine.Factory.Manager.update()
+  name: Process()
+  nameWithType: Manager.Process()
+  fullName: Engine.Factory.Manager.Process()
   spec.csharp:
-  - uid: Engine.Factory.Manager.update
-    name: update
-    nameWithType: Manager.update
-    fullName: Engine.Factory.Manager.update
+  - uid: Engine.Factory.Manager.Process
+    name: Process
+    nameWithType: Manager.Process
+    fullName: Engine.Factory.Manager.Process
   - name: (
     nameWithType: (
     fullName: (
@@ -602,18 +602,18 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.update
-    name: update
-    nameWithType: Manager.update
-    fullName: Engine.Factory.Manager.update
+  - uid: Engine.Factory.Manager.Process
+    name: Process
+    nameWithType: Manager.Process
+    fullName: Engine.Factory.Manager.Process
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Account.ServerLoginManager.update*
-  commentId: Overload:Engine.Account.ServerLoginManager.update
-  name: update
-  nameWithType: ServerLoginManager.update
-  fullName: Engine.Account.ServerLoginManager.update
+- uid: Engine.Account.ServerLoginManager.Process*
+  commentId: Overload:Engine.Account.ServerLoginManager.Process
+  name: Process
+  nameWithType: ServerLoginManager.Process
+  fullName: Engine.Account.ServerLoginManager.Process

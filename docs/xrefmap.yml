@@ -129,22 +129,22 @@ references:
   isSpec: "True"
   fullName: Engine.Account.ClientLoginManager.AttemptLogin
   nameWithType: ClientLoginManager.AttemptLogin
-- uid: Engine.Account.ClientLoginManager.init(System.Object[])
-  name: init(Object[])
-  href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager_init_System_Object___
-  commentId: M:Engine.Account.ClientLoginManager.init(System.Object[])
-  name.vb: init(Object())
-  fullName: Engine.Account.ClientLoginManager.init(System.Object[])
-  fullName.vb: Engine.Account.ClientLoginManager.init(System.Object())
-  nameWithType: ClientLoginManager.init(Object[])
-  nameWithType.vb: ClientLoginManager.init(Object())
-- uid: Engine.Account.ClientLoginManager.init*
-  name: init
-  href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager_init_
-  commentId: Overload:Engine.Account.ClientLoginManager.init
+- uid: Engine.Account.ClientLoginManager.Init(System.Object[])
+  name: Init(Object[])
+  href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager_Init_System_Object___
+  commentId: M:Engine.Account.ClientLoginManager.Init(System.Object[])
+  name.vb: Init(Object())
+  fullName: Engine.Account.ClientLoginManager.Init(System.Object[])
+  fullName.vb: Engine.Account.ClientLoginManager.Init(System.Object())
+  nameWithType: ClientLoginManager.Init(Object[])
+  nameWithType.vb: ClientLoginManager.Init(Object())
+- uid: Engine.Account.ClientLoginManager.Init*
+  name: Init
+  href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager_Init_
+  commentId: Overload:Engine.Account.ClientLoginManager.Init
   isSpec: "True"
-  fullName: Engine.Account.ClientLoginManager.init
-  nameWithType: ClientLoginManager.init
+  fullName: Engine.Account.ClientLoginManager.Init
+  nameWithType: ClientLoginManager.Init
 - uid: Engine.Account.ClientLoginManager.IsPlayerLoggedIn
   name: IsPlayerLoggedIn()
   href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager_IsPlayerLoggedIn
@@ -158,80 +158,80 @@ references:
   isSpec: "True"
   fullName: Engine.Account.ClientLoginManager.IsPlayerLoggedIn
   nameWithType: ClientLoginManager.IsPlayerLoggedIn
-- uid: Engine.Account.ClientLoginManager.shutdown
-  name: shutdown()
-  href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager_shutdown
-  commentId: M:Engine.Account.ClientLoginManager.shutdown
-  fullName: Engine.Account.ClientLoginManager.shutdown()
-  nameWithType: ClientLoginManager.shutdown()
-- uid: Engine.Account.ClientLoginManager.shutdown*
-  name: shutdown
-  href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager_shutdown_
-  commentId: Overload:Engine.Account.ClientLoginManager.shutdown
+- uid: Engine.Account.ClientLoginManager.Process
+  name: Process()
+  href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager_Process
+  commentId: M:Engine.Account.ClientLoginManager.Process
+  fullName: Engine.Account.ClientLoginManager.Process()
+  nameWithType: ClientLoginManager.Process()
+- uid: Engine.Account.ClientLoginManager.Process*
+  name: Process
+  href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager_Process_
+  commentId: Overload:Engine.Account.ClientLoginManager.Process
   isSpec: "True"
-  fullName: Engine.Account.ClientLoginManager.shutdown
-  nameWithType: ClientLoginManager.shutdown
-- uid: Engine.Account.ClientLoginManager.update
-  name: update()
-  href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager_update
-  commentId: M:Engine.Account.ClientLoginManager.update
-  fullName: Engine.Account.ClientLoginManager.update()
-  nameWithType: ClientLoginManager.update()
-- uid: Engine.Account.ClientLoginManager.update*
-  name: update
-  href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager_update_
-  commentId: Overload:Engine.Account.ClientLoginManager.update
+  fullName: Engine.Account.ClientLoginManager.Process
+  nameWithType: ClientLoginManager.Process
+- uid: Engine.Account.ClientLoginManager.Shutdown
+  name: Shutdown()
+  href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager_Shutdown
+  commentId: M:Engine.Account.ClientLoginManager.Shutdown
+  fullName: Engine.Account.ClientLoginManager.Shutdown()
+  nameWithType: ClientLoginManager.Shutdown()
+- uid: Engine.Account.ClientLoginManager.Shutdown*
+  name: Shutdown
+  href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager_Shutdown_
+  commentId: Overload:Engine.Account.ClientLoginManager.Shutdown
   isSpec: "True"
-  fullName: Engine.Account.ClientLoginManager.update
-  nameWithType: ClientLoginManager.update
+  fullName: Engine.Account.ClientLoginManager.Shutdown
+  nameWithType: ClientLoginManager.Shutdown
 - uid: Engine.Account.ServerLoginManager
   name: ServerLoginManager
   href: api/Engine.Account.ServerLoginManager.html
   commentId: T:Engine.Account.ServerLoginManager
   fullName: Engine.Account.ServerLoginManager
   nameWithType: ServerLoginManager
-- uid: Engine.Account.ServerLoginManager.init(System.Object[])
-  name: init(Object[])
-  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_init_System_Object___
-  commentId: M:Engine.Account.ServerLoginManager.init(System.Object[])
-  name.vb: init(Object())
-  fullName: Engine.Account.ServerLoginManager.init(System.Object[])
-  fullName.vb: Engine.Account.ServerLoginManager.init(System.Object())
-  nameWithType: ServerLoginManager.init(Object[])
-  nameWithType.vb: ServerLoginManager.init(Object())
-- uid: Engine.Account.ServerLoginManager.init*
-  name: init
-  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_init_
-  commentId: Overload:Engine.Account.ServerLoginManager.init
+- uid: Engine.Account.ServerLoginManager.Init(System.Object[])
+  name: Init(Object[])
+  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_Init_System_Object___
+  commentId: M:Engine.Account.ServerLoginManager.Init(System.Object[])
+  name.vb: Init(Object())
+  fullName: Engine.Account.ServerLoginManager.Init(System.Object[])
+  fullName.vb: Engine.Account.ServerLoginManager.Init(System.Object())
+  nameWithType: ServerLoginManager.Init(Object[])
+  nameWithType.vb: ServerLoginManager.Init(Object())
+- uid: Engine.Account.ServerLoginManager.Init*
+  name: Init
+  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_Init_
+  commentId: Overload:Engine.Account.ServerLoginManager.Init
   isSpec: "True"
-  fullName: Engine.Account.ServerLoginManager.init
-  nameWithType: ServerLoginManager.init
-- uid: Engine.Account.ServerLoginManager.shutdown
-  name: shutdown()
-  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_shutdown
-  commentId: M:Engine.Account.ServerLoginManager.shutdown
-  fullName: Engine.Account.ServerLoginManager.shutdown()
-  nameWithType: ServerLoginManager.shutdown()
-- uid: Engine.Account.ServerLoginManager.shutdown*
-  name: shutdown
-  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_shutdown_
-  commentId: Overload:Engine.Account.ServerLoginManager.shutdown
+  fullName: Engine.Account.ServerLoginManager.Init
+  nameWithType: ServerLoginManager.Init
+- uid: Engine.Account.ServerLoginManager.Process
+  name: Process()
+  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_Process
+  commentId: M:Engine.Account.ServerLoginManager.Process
+  fullName: Engine.Account.ServerLoginManager.Process()
+  nameWithType: ServerLoginManager.Process()
+- uid: Engine.Account.ServerLoginManager.Process*
+  name: Process
+  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_Process_
+  commentId: Overload:Engine.Account.ServerLoginManager.Process
   isSpec: "True"
-  fullName: Engine.Account.ServerLoginManager.shutdown
-  nameWithType: ServerLoginManager.shutdown
-- uid: Engine.Account.ServerLoginManager.update
-  name: update()
-  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_update
-  commentId: M:Engine.Account.ServerLoginManager.update
-  fullName: Engine.Account.ServerLoginManager.update()
-  nameWithType: ServerLoginManager.update()
-- uid: Engine.Account.ServerLoginManager.update*
-  name: update
-  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_update_
-  commentId: Overload:Engine.Account.ServerLoginManager.update
+  fullName: Engine.Account.ServerLoginManager.Process
+  nameWithType: ServerLoginManager.Process
+- uid: Engine.Account.ServerLoginManager.Shutdown
+  name: Shutdown()
+  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_Shutdown
+  commentId: M:Engine.Account.ServerLoginManager.Shutdown
+  fullName: Engine.Account.ServerLoginManager.Shutdown()
+  nameWithType: ServerLoginManager.Shutdown()
+- uid: Engine.Account.ServerLoginManager.Shutdown*
+  name: Shutdown
+  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_Shutdown_
+  commentId: Overload:Engine.Account.ServerLoginManager.Shutdown
   isSpec: "True"
-  fullName: Engine.Account.ServerLoginManager.update
-  nameWithType: ServerLoginManager.update
+  fullName: Engine.Account.ServerLoginManager.Shutdown
+  nameWithType: ServerLoginManager.Shutdown
 - uid: Engine.API
   name: Engine.API
   href: api/Engine.API.html
@@ -278,48 +278,48 @@ references:
   commentId: T:Engine.API.APIManager
   fullName: Engine.API.APIManager
   nameWithType: APIManager
-- uid: Engine.API.APIManager.init(System.Object[])
-  name: init(Object[])
-  href: api/Engine.API.APIManager.html#Engine_API_APIManager_init_System_Object___
-  commentId: M:Engine.API.APIManager.init(System.Object[])
-  name.vb: init(Object())
-  fullName: Engine.API.APIManager.init(System.Object[])
-  fullName.vb: Engine.API.APIManager.init(System.Object())
-  nameWithType: APIManager.init(Object[])
-  nameWithType.vb: APIManager.init(Object())
-- uid: Engine.API.APIManager.init*
-  name: init
-  href: api/Engine.API.APIManager.html#Engine_API_APIManager_init_
-  commentId: Overload:Engine.API.APIManager.init
+- uid: Engine.API.APIManager.Init(System.Object[])
+  name: Init(Object[])
+  href: api/Engine.API.APIManager.html#Engine_API_APIManager_Init_System_Object___
+  commentId: M:Engine.API.APIManager.Init(System.Object[])
+  name.vb: Init(Object())
+  fullName: Engine.API.APIManager.Init(System.Object[])
+  fullName.vb: Engine.API.APIManager.Init(System.Object())
+  nameWithType: APIManager.Init(Object[])
+  nameWithType.vb: APIManager.Init(Object())
+- uid: Engine.API.APIManager.Init*
+  name: Init
+  href: api/Engine.API.APIManager.html#Engine_API_APIManager_Init_
+  commentId: Overload:Engine.API.APIManager.Init
   isSpec: "True"
-  fullName: Engine.API.APIManager.init
-  nameWithType: APIManager.init
-- uid: Engine.API.APIManager.shutdown
-  name: shutdown()
-  href: api/Engine.API.APIManager.html#Engine_API_APIManager_shutdown
-  commentId: M:Engine.API.APIManager.shutdown
-  fullName: Engine.API.APIManager.shutdown()
-  nameWithType: APIManager.shutdown()
-- uid: Engine.API.APIManager.shutdown*
-  name: shutdown
-  href: api/Engine.API.APIManager.html#Engine_API_APIManager_shutdown_
-  commentId: Overload:Engine.API.APIManager.shutdown
+  fullName: Engine.API.APIManager.Init
+  nameWithType: APIManager.Init
+- uid: Engine.API.APIManager.Process
+  name: Process()
+  href: api/Engine.API.APIManager.html#Engine_API_APIManager_Process
+  commentId: M:Engine.API.APIManager.Process
+  fullName: Engine.API.APIManager.Process()
+  nameWithType: APIManager.Process()
+- uid: Engine.API.APIManager.Process*
+  name: Process
+  href: api/Engine.API.APIManager.html#Engine_API_APIManager_Process_
+  commentId: Overload:Engine.API.APIManager.Process
   isSpec: "True"
-  fullName: Engine.API.APIManager.shutdown
-  nameWithType: APIManager.shutdown
-- uid: Engine.API.APIManager.update
-  name: update()
-  href: api/Engine.API.APIManager.html#Engine_API_APIManager_update
-  commentId: M:Engine.API.APIManager.update
-  fullName: Engine.API.APIManager.update()
-  nameWithType: APIManager.update()
-- uid: Engine.API.APIManager.update*
-  name: update
-  href: api/Engine.API.APIManager.html#Engine_API_APIManager_update_
-  commentId: Overload:Engine.API.APIManager.update
+  fullName: Engine.API.APIManager.Process
+  nameWithType: APIManager.Process
+- uid: Engine.API.APIManager.Shutdown
+  name: Shutdown()
+  href: api/Engine.API.APIManager.html#Engine_API_APIManager_Shutdown
+  commentId: M:Engine.API.APIManager.Shutdown
+  fullName: Engine.API.APIManager.Shutdown()
+  nameWithType: APIManager.Shutdown()
+- uid: Engine.API.APIManager.Shutdown*
+  name: Shutdown
+  href: api/Engine.API.APIManager.html#Engine_API_APIManager_Shutdown_
+  commentId: Overload:Engine.API.APIManager.Shutdown
   isSpec: "True"
-  fullName: Engine.API.APIManager.update
-  nameWithType: APIManager.update
+  fullName: Engine.API.APIManager.Shutdown
+  nameWithType: APIManager.Shutdown
 - uid: Engine.Asset
   name: Engine.Asset
   href: api/Engine.Asset.html
@@ -345,48 +345,48 @@ references:
   isSpec: "True"
   fullName: Engine.Asset.ClientAssetManager.GetUIPanel
   nameWithType: ClientAssetManager.GetUIPanel
-- uid: Engine.Asset.ClientAssetManager.init(System.Object[])
-  name: init(Object[])
-  href: api/Engine.Asset.ClientAssetManager.html#Engine_Asset_ClientAssetManager_init_System_Object___
-  commentId: M:Engine.Asset.ClientAssetManager.init(System.Object[])
-  name.vb: init(Object())
-  fullName: Engine.Asset.ClientAssetManager.init(System.Object[])
-  fullName.vb: Engine.Asset.ClientAssetManager.init(System.Object())
-  nameWithType: ClientAssetManager.init(Object[])
-  nameWithType.vb: ClientAssetManager.init(Object())
-- uid: Engine.Asset.ClientAssetManager.init*
-  name: init
-  href: api/Engine.Asset.ClientAssetManager.html#Engine_Asset_ClientAssetManager_init_
-  commentId: Overload:Engine.Asset.ClientAssetManager.init
+- uid: Engine.Asset.ClientAssetManager.Init(System.Object[])
+  name: Init(Object[])
+  href: api/Engine.Asset.ClientAssetManager.html#Engine_Asset_ClientAssetManager_Init_System_Object___
+  commentId: M:Engine.Asset.ClientAssetManager.Init(System.Object[])
+  name.vb: Init(Object())
+  fullName: Engine.Asset.ClientAssetManager.Init(System.Object[])
+  fullName.vb: Engine.Asset.ClientAssetManager.Init(System.Object())
+  nameWithType: ClientAssetManager.Init(Object[])
+  nameWithType.vb: ClientAssetManager.Init(Object())
+- uid: Engine.Asset.ClientAssetManager.Init*
+  name: Init
+  href: api/Engine.Asset.ClientAssetManager.html#Engine_Asset_ClientAssetManager_Init_
+  commentId: Overload:Engine.Asset.ClientAssetManager.Init
   isSpec: "True"
-  fullName: Engine.Asset.ClientAssetManager.init
-  nameWithType: ClientAssetManager.init
-- uid: Engine.Asset.ClientAssetManager.shutdown
-  name: shutdown()
-  href: api/Engine.Asset.ClientAssetManager.html#Engine_Asset_ClientAssetManager_shutdown
-  commentId: M:Engine.Asset.ClientAssetManager.shutdown
-  fullName: Engine.Asset.ClientAssetManager.shutdown()
-  nameWithType: ClientAssetManager.shutdown()
-- uid: Engine.Asset.ClientAssetManager.shutdown*
-  name: shutdown
-  href: api/Engine.Asset.ClientAssetManager.html#Engine_Asset_ClientAssetManager_shutdown_
-  commentId: Overload:Engine.Asset.ClientAssetManager.shutdown
+  fullName: Engine.Asset.ClientAssetManager.Init
+  nameWithType: ClientAssetManager.Init
+- uid: Engine.Asset.ClientAssetManager.Process
+  name: Process()
+  href: api/Engine.Asset.ClientAssetManager.html#Engine_Asset_ClientAssetManager_Process
+  commentId: M:Engine.Asset.ClientAssetManager.Process
+  fullName: Engine.Asset.ClientAssetManager.Process()
+  nameWithType: ClientAssetManager.Process()
+- uid: Engine.Asset.ClientAssetManager.Process*
+  name: Process
+  href: api/Engine.Asset.ClientAssetManager.html#Engine_Asset_ClientAssetManager_Process_
+  commentId: Overload:Engine.Asset.ClientAssetManager.Process
   isSpec: "True"
-  fullName: Engine.Asset.ClientAssetManager.shutdown
-  nameWithType: ClientAssetManager.shutdown
-- uid: Engine.Asset.ClientAssetManager.update
-  name: update()
-  href: api/Engine.Asset.ClientAssetManager.html#Engine_Asset_ClientAssetManager_update
-  commentId: M:Engine.Asset.ClientAssetManager.update
-  fullName: Engine.Asset.ClientAssetManager.update()
-  nameWithType: ClientAssetManager.update()
-- uid: Engine.Asset.ClientAssetManager.update*
-  name: update
-  href: api/Engine.Asset.ClientAssetManager.html#Engine_Asset_ClientAssetManager_update_
-  commentId: Overload:Engine.Asset.ClientAssetManager.update
+  fullName: Engine.Asset.ClientAssetManager.Process
+  nameWithType: ClientAssetManager.Process
+- uid: Engine.Asset.ClientAssetManager.Shutdown
+  name: Shutdown()
+  href: api/Engine.Asset.ClientAssetManager.html#Engine_Asset_ClientAssetManager_Shutdown
+  commentId: M:Engine.Asset.ClientAssetManager.Shutdown
+  fullName: Engine.Asset.ClientAssetManager.Shutdown()
+  nameWithType: ClientAssetManager.Shutdown()
+- uid: Engine.Asset.ClientAssetManager.Shutdown*
+  name: Shutdown
+  href: api/Engine.Asset.ClientAssetManager.html#Engine_Asset_ClientAssetManager_Shutdown_
+  commentId: Overload:Engine.Asset.ClientAssetManager.Shutdown
   isSpec: "True"
-  fullName: Engine.Asset.ClientAssetManager.update
-  nameWithType: ClientAssetManager.update
+  fullName: Engine.Asset.ClientAssetManager.Shutdown
+  nameWithType: ClientAssetManager.Shutdown
 - uid: Engine.Asset.ClientAssetPack
   name: ClientAssetPack
   href: api/Engine.Asset.ClientAssetPack.html
@@ -399,6 +399,60 @@ references:
   commentId: F:Engine.Asset.ClientAssetPack.uiPack
   fullName: Engine.Asset.ClientAssetPack.uiPack
   nameWithType: ClientAssetPack.uiPack
+- uid: Engine.Asset.SharedAssetManager
+  name: SharedAssetManager
+  href: api/Engine.Asset.SharedAssetManager.html
+  commentId: T:Engine.Asset.SharedAssetManager
+  fullName: Engine.Asset.SharedAssetManager
+  nameWithType: SharedAssetManager
+- uid: Engine.Asset.SharedAssetManager.Init(System.Object[])
+  name: Init(Object[])
+  href: api/Engine.Asset.SharedAssetManager.html#Engine_Asset_SharedAssetManager_Init_System_Object___
+  commentId: M:Engine.Asset.SharedAssetManager.Init(System.Object[])
+  name.vb: Init(Object())
+  fullName: Engine.Asset.SharedAssetManager.Init(System.Object[])
+  fullName.vb: Engine.Asset.SharedAssetManager.Init(System.Object())
+  nameWithType: SharedAssetManager.Init(Object[])
+  nameWithType.vb: SharedAssetManager.Init(Object())
+- uid: Engine.Asset.SharedAssetManager.Init*
+  name: Init
+  href: api/Engine.Asset.SharedAssetManager.html#Engine_Asset_SharedAssetManager_Init_
+  commentId: Overload:Engine.Asset.SharedAssetManager.Init
+  isSpec: "True"
+  fullName: Engine.Asset.SharedAssetManager.Init
+  nameWithType: SharedAssetManager.Init
+- uid: Engine.Asset.SharedAssetManager.Process
+  name: Process()
+  href: api/Engine.Asset.SharedAssetManager.html#Engine_Asset_SharedAssetManager_Process
+  commentId: M:Engine.Asset.SharedAssetManager.Process
+  fullName: Engine.Asset.SharedAssetManager.Process()
+  nameWithType: SharedAssetManager.Process()
+- uid: Engine.Asset.SharedAssetManager.Process*
+  name: Process
+  href: api/Engine.Asset.SharedAssetManager.html#Engine_Asset_SharedAssetManager_Process_
+  commentId: Overload:Engine.Asset.SharedAssetManager.Process
+  isSpec: "True"
+  fullName: Engine.Asset.SharedAssetManager.Process
+  nameWithType: SharedAssetManager.Process
+- uid: Engine.Asset.SharedAssetManager.Shutdown
+  name: Shutdown()
+  href: api/Engine.Asset.SharedAssetManager.html#Engine_Asset_SharedAssetManager_Shutdown
+  commentId: M:Engine.Asset.SharedAssetManager.Shutdown
+  fullName: Engine.Asset.SharedAssetManager.Shutdown()
+  nameWithType: SharedAssetManager.Shutdown()
+- uid: Engine.Asset.SharedAssetManager.Shutdown*
+  name: Shutdown
+  href: api/Engine.Asset.SharedAssetManager.html#Engine_Asset_SharedAssetManager_Shutdown_
+  commentId: Overload:Engine.Asset.SharedAssetManager.Shutdown
+  isSpec: "True"
+  fullName: Engine.Asset.SharedAssetManager.Shutdown
+  nameWithType: SharedAssetManager.Shutdown
+- uid: Engine.Asset.SharedAssetPack
+  name: SharedAssetPack
+  href: api/Engine.Asset.SharedAssetPack.html
+  commentId: T:Engine.Asset.SharedAssetPack
+  fullName: Engine.Asset.SharedAssetPack
+  nameWithType: SharedAssetPack
 - uid: Engine.Asset.UI_Pack
   name: UI_Pack
   href: api/Engine.Asset.UI_Pack.html
@@ -447,6 +501,12 @@ references:
   commentId: F:Engine.ClientCore.clientUIManager
   fullName: Engine.ClientCore.clientUIManager
   nameWithType: ClientCore.clientUIManager
+- uid: Engine.ClientCore.clientWorldManager
+  name: clientWorldManager
+  href: api/Engine.ClientCore.html#Engine_ClientCore_clientWorldManager
+  commentId: F:Engine.ClientCore.clientWorldManager
+  fullName: Engine.ClientCore.clientWorldManager
+  nameWithType: ClientCore.clientWorldManager
 - uid: Engine.ClientCore.connectionManager
   name: connectionManager
   href: api/Engine.ClientCore.html#Engine_ClientCore_connectionManager
@@ -556,48 +616,48 @@ references:
   commentId: T:Engine.Dispatch.DispatchManager
   fullName: Engine.Dispatch.DispatchManager
   nameWithType: DispatchManager
-- uid: Engine.Dispatch.DispatchManager.init(System.Object[])
-  name: init(Object[])
-  href: api/Engine.Dispatch.DispatchManager.html#Engine_Dispatch_DispatchManager_init_System_Object___
-  commentId: M:Engine.Dispatch.DispatchManager.init(System.Object[])
-  name.vb: init(Object())
-  fullName: Engine.Dispatch.DispatchManager.init(System.Object[])
-  fullName.vb: Engine.Dispatch.DispatchManager.init(System.Object())
-  nameWithType: DispatchManager.init(Object[])
-  nameWithType.vb: DispatchManager.init(Object())
-- uid: Engine.Dispatch.DispatchManager.init*
-  name: init
-  href: api/Engine.Dispatch.DispatchManager.html#Engine_Dispatch_DispatchManager_init_
-  commentId: Overload:Engine.Dispatch.DispatchManager.init
+- uid: Engine.Dispatch.DispatchManager.Init(System.Object[])
+  name: Init(Object[])
+  href: api/Engine.Dispatch.DispatchManager.html#Engine_Dispatch_DispatchManager_Init_System_Object___
+  commentId: M:Engine.Dispatch.DispatchManager.Init(System.Object[])
+  name.vb: Init(Object())
+  fullName: Engine.Dispatch.DispatchManager.Init(System.Object[])
+  fullName.vb: Engine.Dispatch.DispatchManager.Init(System.Object())
+  nameWithType: DispatchManager.Init(Object[])
+  nameWithType.vb: DispatchManager.Init(Object())
+- uid: Engine.Dispatch.DispatchManager.Init*
+  name: Init
+  href: api/Engine.Dispatch.DispatchManager.html#Engine_Dispatch_DispatchManager_Init_
+  commentId: Overload:Engine.Dispatch.DispatchManager.Init
   isSpec: "True"
-  fullName: Engine.Dispatch.DispatchManager.init
-  nameWithType: DispatchManager.init
-- uid: Engine.Dispatch.DispatchManager.shutdown
-  name: shutdown()
-  href: api/Engine.Dispatch.DispatchManager.html#Engine_Dispatch_DispatchManager_shutdown
-  commentId: M:Engine.Dispatch.DispatchManager.shutdown
-  fullName: Engine.Dispatch.DispatchManager.shutdown()
-  nameWithType: DispatchManager.shutdown()
-- uid: Engine.Dispatch.DispatchManager.shutdown*
-  name: shutdown
-  href: api/Engine.Dispatch.DispatchManager.html#Engine_Dispatch_DispatchManager_shutdown_
-  commentId: Overload:Engine.Dispatch.DispatchManager.shutdown
+  fullName: Engine.Dispatch.DispatchManager.Init
+  nameWithType: DispatchManager.Init
+- uid: Engine.Dispatch.DispatchManager.Process
+  name: Process()
+  href: api/Engine.Dispatch.DispatchManager.html#Engine_Dispatch_DispatchManager_Process
+  commentId: M:Engine.Dispatch.DispatchManager.Process
+  fullName: Engine.Dispatch.DispatchManager.Process()
+  nameWithType: DispatchManager.Process()
+- uid: Engine.Dispatch.DispatchManager.Process*
+  name: Process
+  href: api/Engine.Dispatch.DispatchManager.html#Engine_Dispatch_DispatchManager_Process_
+  commentId: Overload:Engine.Dispatch.DispatchManager.Process
   isSpec: "True"
-  fullName: Engine.Dispatch.DispatchManager.shutdown
-  nameWithType: DispatchManager.shutdown
-- uid: Engine.Dispatch.DispatchManager.update
-  name: update()
-  href: api/Engine.Dispatch.DispatchManager.html#Engine_Dispatch_DispatchManager_update
-  commentId: M:Engine.Dispatch.DispatchManager.update
-  fullName: Engine.Dispatch.DispatchManager.update()
-  nameWithType: DispatchManager.update()
-- uid: Engine.Dispatch.DispatchManager.update*
-  name: update
-  href: api/Engine.Dispatch.DispatchManager.html#Engine_Dispatch_DispatchManager_update_
-  commentId: Overload:Engine.Dispatch.DispatchManager.update
+  fullName: Engine.Dispatch.DispatchManager.Process
+  nameWithType: DispatchManager.Process
+- uid: Engine.Dispatch.DispatchManager.Shutdown
+  name: Shutdown()
+  href: api/Engine.Dispatch.DispatchManager.html#Engine_Dispatch_DispatchManager_Shutdown
+  commentId: M:Engine.Dispatch.DispatchManager.Shutdown
+  fullName: Engine.Dispatch.DispatchManager.Shutdown()
+  nameWithType: DispatchManager.Shutdown()
+- uid: Engine.Dispatch.DispatchManager.Shutdown*
+  name: Shutdown
+  href: api/Engine.Dispatch.DispatchManager.html#Engine_Dispatch_DispatchManager_Shutdown_
+  commentId: Overload:Engine.Dispatch.DispatchManager.Shutdown
   isSpec: "True"
-  fullName: Engine.Dispatch.DispatchManager.update
-  nameWithType: DispatchManager.update
+  fullName: Engine.Dispatch.DispatchManager.Shutdown
+  nameWithType: DispatchManager.Shutdown
 - uid: Engine.Factory
   name: Engine.Factory
   href: api/Engine.Factory.html
@@ -610,48 +670,48 @@ references:
   commentId: T:Engine.Factory.Manager
   fullName: Engine.Factory.Manager
   nameWithType: Manager
-- uid: Engine.Factory.Manager.init(System.Object[])
-  name: init(Object[])
-  href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_init_System_Object___
-  commentId: M:Engine.Factory.Manager.init(System.Object[])
-  name.vb: init(Object())
-  fullName: Engine.Factory.Manager.init(System.Object[])
-  fullName.vb: Engine.Factory.Manager.init(System.Object())
-  nameWithType: Manager.init(Object[])
-  nameWithType.vb: Manager.init(Object())
-- uid: Engine.Factory.Manager.init*
-  name: init
-  href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_init_
-  commentId: Overload:Engine.Factory.Manager.init
+- uid: Engine.Factory.Manager.Init(System.Object[])
+  name: Init(Object[])
+  href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_Init_System_Object___
+  commentId: M:Engine.Factory.Manager.Init(System.Object[])
+  name.vb: Init(Object())
+  fullName: Engine.Factory.Manager.Init(System.Object[])
+  fullName.vb: Engine.Factory.Manager.Init(System.Object())
+  nameWithType: Manager.Init(Object[])
+  nameWithType.vb: Manager.Init(Object())
+- uid: Engine.Factory.Manager.Init*
+  name: Init
+  href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_Init_
+  commentId: Overload:Engine.Factory.Manager.Init
   isSpec: "True"
-  fullName: Engine.Factory.Manager.init
-  nameWithType: Manager.init
-- uid: Engine.Factory.Manager.shutdown
-  name: shutdown()
-  href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_shutdown
-  commentId: M:Engine.Factory.Manager.shutdown
-  fullName: Engine.Factory.Manager.shutdown()
-  nameWithType: Manager.shutdown()
-- uid: Engine.Factory.Manager.shutdown*
-  name: shutdown
-  href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_shutdown_
-  commentId: Overload:Engine.Factory.Manager.shutdown
+  fullName: Engine.Factory.Manager.Init
+  nameWithType: Manager.Init
+- uid: Engine.Factory.Manager.Process
+  name: Process()
+  href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_Process
+  commentId: M:Engine.Factory.Manager.Process
+  fullName: Engine.Factory.Manager.Process()
+  nameWithType: Manager.Process()
+- uid: Engine.Factory.Manager.Process*
+  name: Process
+  href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_Process_
+  commentId: Overload:Engine.Factory.Manager.Process
   isSpec: "True"
-  fullName: Engine.Factory.Manager.shutdown
-  nameWithType: Manager.shutdown
-- uid: Engine.Factory.Manager.update
-  name: update()
-  href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_update
-  commentId: M:Engine.Factory.Manager.update
-  fullName: Engine.Factory.Manager.update()
-  nameWithType: Manager.update()
-- uid: Engine.Factory.Manager.update*
-  name: update
-  href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_update_
-  commentId: Overload:Engine.Factory.Manager.update
+  fullName: Engine.Factory.Manager.Process
+  nameWithType: Manager.Process
+- uid: Engine.Factory.Manager.Shutdown
+  name: Shutdown()
+  href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_Shutdown
+  commentId: M:Engine.Factory.Manager.Shutdown
+  fullName: Engine.Factory.Manager.Shutdown()
+  nameWithType: Manager.Shutdown()
+- uid: Engine.Factory.Manager.Shutdown*
+  name: Shutdown
+  href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_Shutdown_
+  commentId: Overload:Engine.Factory.Manager.Shutdown
   isSpec: "True"
-  fullName: Engine.Factory.Manager.update
-  nameWithType: Manager.update
+  fullName: Engine.Factory.Manager.Shutdown
+  nameWithType: Manager.Shutdown
 - uid: Engine.GlobalCoreBase
   name: GlobalCoreBase
   href: api/Engine.GlobalCoreBase.html
@@ -670,48 +730,48 @@ references:
   commentId: T:Engine.Input.ClientInputManager
   fullName: Engine.Input.ClientInputManager
   nameWithType: ClientInputManager
-- uid: Engine.Input.ClientInputManager.init(System.Object[])
-  name: init(Object[])
-  href: api/Engine.Input.ClientInputManager.html#Engine_Input_ClientInputManager_init_System_Object___
-  commentId: M:Engine.Input.ClientInputManager.init(System.Object[])
-  name.vb: init(Object())
-  fullName: Engine.Input.ClientInputManager.init(System.Object[])
-  fullName.vb: Engine.Input.ClientInputManager.init(System.Object())
-  nameWithType: ClientInputManager.init(Object[])
-  nameWithType.vb: ClientInputManager.init(Object())
-- uid: Engine.Input.ClientInputManager.init*
-  name: init
-  href: api/Engine.Input.ClientInputManager.html#Engine_Input_ClientInputManager_init_
-  commentId: Overload:Engine.Input.ClientInputManager.init
+- uid: Engine.Input.ClientInputManager.Init(System.Object[])
+  name: Init(Object[])
+  href: api/Engine.Input.ClientInputManager.html#Engine_Input_ClientInputManager_Init_System_Object___
+  commentId: M:Engine.Input.ClientInputManager.Init(System.Object[])
+  name.vb: Init(Object())
+  fullName: Engine.Input.ClientInputManager.Init(System.Object[])
+  fullName.vb: Engine.Input.ClientInputManager.Init(System.Object())
+  nameWithType: ClientInputManager.Init(Object[])
+  nameWithType.vb: ClientInputManager.Init(Object())
+- uid: Engine.Input.ClientInputManager.Init*
+  name: Init
+  href: api/Engine.Input.ClientInputManager.html#Engine_Input_ClientInputManager_Init_
+  commentId: Overload:Engine.Input.ClientInputManager.Init
   isSpec: "True"
-  fullName: Engine.Input.ClientInputManager.init
-  nameWithType: ClientInputManager.init
-- uid: Engine.Input.ClientInputManager.shutdown
-  name: shutdown()
-  href: api/Engine.Input.ClientInputManager.html#Engine_Input_ClientInputManager_shutdown
-  commentId: M:Engine.Input.ClientInputManager.shutdown
-  fullName: Engine.Input.ClientInputManager.shutdown()
-  nameWithType: ClientInputManager.shutdown()
-- uid: Engine.Input.ClientInputManager.shutdown*
-  name: shutdown
-  href: api/Engine.Input.ClientInputManager.html#Engine_Input_ClientInputManager_shutdown_
-  commentId: Overload:Engine.Input.ClientInputManager.shutdown
+  fullName: Engine.Input.ClientInputManager.Init
+  nameWithType: ClientInputManager.Init
+- uid: Engine.Input.ClientInputManager.Process
+  name: Process()
+  href: api/Engine.Input.ClientInputManager.html#Engine_Input_ClientInputManager_Process
+  commentId: M:Engine.Input.ClientInputManager.Process
+  fullName: Engine.Input.ClientInputManager.Process()
+  nameWithType: ClientInputManager.Process()
+- uid: Engine.Input.ClientInputManager.Process*
+  name: Process
+  href: api/Engine.Input.ClientInputManager.html#Engine_Input_ClientInputManager_Process_
+  commentId: Overload:Engine.Input.ClientInputManager.Process
   isSpec: "True"
-  fullName: Engine.Input.ClientInputManager.shutdown
-  nameWithType: ClientInputManager.shutdown
-- uid: Engine.Input.ClientInputManager.update
-  name: update()
-  href: api/Engine.Input.ClientInputManager.html#Engine_Input_ClientInputManager_update
-  commentId: M:Engine.Input.ClientInputManager.update
-  fullName: Engine.Input.ClientInputManager.update()
-  nameWithType: ClientInputManager.update()
-- uid: Engine.Input.ClientInputManager.update*
-  name: update
-  href: api/Engine.Input.ClientInputManager.html#Engine_Input_ClientInputManager_update_
-  commentId: Overload:Engine.Input.ClientInputManager.update
+  fullName: Engine.Input.ClientInputManager.Process
+  nameWithType: ClientInputManager.Process
+- uid: Engine.Input.ClientInputManager.Shutdown
+  name: Shutdown()
+  href: api/Engine.Input.ClientInputManager.html#Engine_Input_ClientInputManager_Shutdown
+  commentId: M:Engine.Input.ClientInputManager.Shutdown
+  fullName: Engine.Input.ClientInputManager.Shutdown()
+  nameWithType: ClientInputManager.Shutdown()
+- uid: Engine.Input.ClientInputManager.Shutdown*
+  name: Shutdown
+  href: api/Engine.Input.ClientInputManager.html#Engine_Input_ClientInputManager_Shutdown_
+  commentId: Overload:Engine.Input.ClientInputManager.Shutdown
   isSpec: "True"
-  fullName: Engine.Input.ClientInputManager.update
-  nameWithType: ClientInputManager.update
+  fullName: Engine.Input.ClientInputManager.Shutdown
+  nameWithType: ClientInputManager.Shutdown
 - uid: Engine.Logging
   name: Engine.Logging
   href: api/Engine.Logging.html
@@ -793,22 +853,35 @@ references:
   isSpec: "True"
   fullName: Engine.Logging.LogManager.getLogLevel
   nameWithType: LogManager.getLogLevel
-- uid: Engine.Logging.LogManager.init(System.Object[])
-  name: init(Object[])
-  href: api/Engine.Logging.LogManager.html#Engine_Logging_LogManager_init_System_Object___
-  commentId: M:Engine.Logging.LogManager.init(System.Object[])
-  name.vb: init(Object())
-  fullName: Engine.Logging.LogManager.init(System.Object[])
-  fullName.vb: Engine.Logging.LogManager.init(System.Object())
-  nameWithType: LogManager.init(Object[])
-  nameWithType.vb: LogManager.init(Object())
-- uid: Engine.Logging.LogManager.init*
-  name: init
-  href: api/Engine.Logging.LogManager.html#Engine_Logging_LogManager_init_
-  commentId: Overload:Engine.Logging.LogManager.init
+- uid: Engine.Logging.LogManager.Init(System.Object[])
+  name: Init(Object[])
+  href: api/Engine.Logging.LogManager.html#Engine_Logging_LogManager_Init_System_Object___
+  commentId: M:Engine.Logging.LogManager.Init(System.Object[])
+  name.vb: Init(Object())
+  fullName: Engine.Logging.LogManager.Init(System.Object[])
+  fullName.vb: Engine.Logging.LogManager.Init(System.Object())
+  nameWithType: LogManager.Init(Object[])
+  nameWithType.vb: LogManager.Init(Object())
+- uid: Engine.Logging.LogManager.Init*
+  name: Init
+  href: api/Engine.Logging.LogManager.html#Engine_Logging_LogManager_Init_
+  commentId: Overload:Engine.Logging.LogManager.Init
   isSpec: "True"
-  fullName: Engine.Logging.LogManager.init
-  nameWithType: LogManager.init
+  fullName: Engine.Logging.LogManager.Init
+  nameWithType: LogManager.Init
+- uid: Engine.Logging.LogManager.Process
+  name: Process()
+  href: api/Engine.Logging.LogManager.html#Engine_Logging_LogManager_Process
+  commentId: M:Engine.Logging.LogManager.Process
+  fullName: Engine.Logging.LogManager.Process()
+  nameWithType: LogManager.Process()
+- uid: Engine.Logging.LogManager.Process*
+  name: Process
+  href: api/Engine.Logging.LogManager.html#Engine_Logging_LogManager_Process_
+  commentId: Overload:Engine.Logging.LogManager.Process
+  isSpec: "True"
+  fullName: Engine.Logging.LogManager.Process
+  nameWithType: LogManager.Process
 - uid: Engine.Logging.LogManager.SetLogLevel(Engine.Logging.LogLevel)
   name: SetLogLevel(LogLevel)
   href: api/Engine.Logging.LogManager.html#Engine_Logging_LogManager_SetLogLevel_Engine_Logging_LogLevel_
@@ -822,32 +895,19 @@ references:
   isSpec: "True"
   fullName: Engine.Logging.LogManager.SetLogLevel
   nameWithType: LogManager.SetLogLevel
-- uid: Engine.Logging.LogManager.shutdown
-  name: shutdown()
-  href: api/Engine.Logging.LogManager.html#Engine_Logging_LogManager_shutdown
-  commentId: M:Engine.Logging.LogManager.shutdown
-  fullName: Engine.Logging.LogManager.shutdown()
-  nameWithType: LogManager.shutdown()
-- uid: Engine.Logging.LogManager.shutdown*
-  name: shutdown
-  href: api/Engine.Logging.LogManager.html#Engine_Logging_LogManager_shutdown_
-  commentId: Overload:Engine.Logging.LogManager.shutdown
+- uid: Engine.Logging.LogManager.Shutdown
+  name: Shutdown()
+  href: api/Engine.Logging.LogManager.html#Engine_Logging_LogManager_Shutdown
+  commentId: M:Engine.Logging.LogManager.Shutdown
+  fullName: Engine.Logging.LogManager.Shutdown()
+  nameWithType: LogManager.Shutdown()
+- uid: Engine.Logging.LogManager.Shutdown*
+  name: Shutdown
+  href: api/Engine.Logging.LogManager.html#Engine_Logging_LogManager_Shutdown_
+  commentId: Overload:Engine.Logging.LogManager.Shutdown
   isSpec: "True"
-  fullName: Engine.Logging.LogManager.shutdown
-  nameWithType: LogManager.shutdown
-- uid: Engine.Logging.LogManager.update
-  name: update()
-  href: api/Engine.Logging.LogManager.html#Engine_Logging_LogManager_update
-  commentId: M:Engine.Logging.LogManager.update
-  fullName: Engine.Logging.LogManager.update()
-  nameWithType: LogManager.update()
-- uid: Engine.Logging.LogManager.update*
-  name: update
-  href: api/Engine.Logging.LogManager.html#Engine_Logging_LogManager_update_
-  commentId: Overload:Engine.Logging.LogManager.update
-  isSpec: "True"
-  fullName: Engine.Logging.LogManager.update
-  nameWithType: LogManager.update
+  fullName: Engine.Logging.LogManager.Shutdown
+  nameWithType: LogManager.Shutdown
 - uid: Engine.Networking
   name: Engine.Networking
   href: api/Engine.Networking.html
@@ -873,22 +933,22 @@ references:
   isSpec: "True"
   fullName: Engine.Networking.ConnectionManager.Disconnect
   nameWithType: ConnectionManager.Disconnect
-- uid: Engine.Networking.ConnectionManager.init(System.Object[])
-  name: init(Object[])
-  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_init_System_Object___
-  commentId: M:Engine.Networking.ConnectionManager.init(System.Object[])
-  name.vb: init(Object())
-  fullName: Engine.Networking.ConnectionManager.init(System.Object[])
-  fullName.vb: Engine.Networking.ConnectionManager.init(System.Object())
-  nameWithType: ConnectionManager.init(Object[])
-  nameWithType.vb: ConnectionManager.init(Object())
-- uid: Engine.Networking.ConnectionManager.init*
-  name: init
-  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_init_
-  commentId: Overload:Engine.Networking.ConnectionManager.init
+- uid: Engine.Networking.ConnectionManager.Init(System.Object[])
+  name: Init(Object[])
+  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_Init_System_Object___
+  commentId: M:Engine.Networking.ConnectionManager.Init(System.Object[])
+  name.vb: Init(Object())
+  fullName: Engine.Networking.ConnectionManager.Init(System.Object[])
+  fullName.vb: Engine.Networking.ConnectionManager.Init(System.Object())
+  nameWithType: ConnectionManager.Init(Object[])
+  nameWithType.vb: ConnectionManager.Init(Object())
+- uid: Engine.Networking.ConnectionManager.Init*
+  name: Init
+  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_Init_
+  commentId: Overload:Engine.Networking.ConnectionManager.Init
   isSpec: "True"
-  fullName: Engine.Networking.ConnectionManager.init
-  nameWithType: ConnectionManager.init
+  fullName: Engine.Networking.ConnectionManager.Init
+  nameWithType: ConnectionManager.Init
 - uid: Engine.Networking.ConnectionManager.isServer
   name: isServer
   href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_isServer
@@ -992,6 +1052,19 @@ references:
   commentId: T:Engine.Networking.ConnectionManager.NotifyPacketReceivedDelegate
   fullName: Engine.Networking.ConnectionManager.NotifyPacketReceivedDelegate
   nameWithType: ConnectionManager.NotifyPacketReceivedDelegate
+- uid: Engine.Networking.ConnectionManager.Process
+  name: Process()
+  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_Process
+  commentId: M:Engine.Networking.ConnectionManager.Process
+  fullName: Engine.Networking.ConnectionManager.Process()
+  nameWithType: ConnectionManager.Process()
+- uid: Engine.Networking.ConnectionManager.Process*
+  name: Process
+  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_Process_
+  commentId: Overload:Engine.Networking.ConnectionManager.Process
+  isSpec: "True"
+  fullName: Engine.Networking.ConnectionManager.Process
+  nameWithType: ConnectionManager.Process
 - uid: Engine.Networking.ConnectionManager.sendPacketToClient(Unity.Networking.Transport.NetworkConnection,Engine.Networking.Packet)
   name: sendPacketToClient(NetworkConnection, Packet)
   href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_sendPacketToClient_Unity_Networking_Transport_NetworkConnection_Engine_Networking_Packet_
@@ -1018,19 +1091,19 @@ references:
   isSpec: "True"
   fullName: Engine.Networking.ConnectionManager.sendPacketToServer
   nameWithType: ConnectionManager.sendPacketToServer
-- uid: Engine.Networking.ConnectionManager.shutdown
-  name: shutdown()
-  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_shutdown
-  commentId: M:Engine.Networking.ConnectionManager.shutdown
-  fullName: Engine.Networking.ConnectionManager.shutdown()
-  nameWithType: ConnectionManager.shutdown()
-- uid: Engine.Networking.ConnectionManager.shutdown*
-  name: shutdown
-  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_shutdown_
-  commentId: Overload:Engine.Networking.ConnectionManager.shutdown
+- uid: Engine.Networking.ConnectionManager.Shutdown
+  name: Shutdown()
+  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_Shutdown
+  commentId: M:Engine.Networking.ConnectionManager.Shutdown
+  fullName: Engine.Networking.ConnectionManager.Shutdown()
+  nameWithType: ConnectionManager.Shutdown()
+- uid: Engine.Networking.ConnectionManager.Shutdown*
+  name: Shutdown
+  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_Shutdown_
+  commentId: Overload:Engine.Networking.ConnectionManager.Shutdown
   isSpec: "True"
-  fullName: Engine.Networking.ConnectionManager.shutdown
-  nameWithType: ConnectionManager.shutdown
+  fullName: Engine.Networking.ConnectionManager.Shutdown
+  nameWithType: ConnectionManager.Shutdown
 - uid: Engine.Networking.ConnectionManager.Start
   name: Start()
   href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_Start
@@ -1044,19 +1117,6 @@ references:
   isSpec: "True"
   fullName: Engine.Networking.ConnectionManager.Start
   nameWithType: ConnectionManager.Start
-- uid: Engine.Networking.ConnectionManager.update
-  name: update()
-  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_update
-  commentId: M:Engine.Networking.ConnectionManager.update
-  fullName: Engine.Networking.ConnectionManager.update()
-  nameWithType: ConnectionManager.update()
-- uid: Engine.Networking.ConnectionManager.update*
-  name: update
-  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_update_
-  commentId: Overload:Engine.Networking.ConnectionManager.update
-  isSpec: "True"
-  fullName: Engine.Networking.ConnectionManager.update
-  nameWithType: ConnectionManager.update
 - uid: Engine.Networking.LoginRequest_1
   name: LoginRequest_1
   href: api/Engine.Networking.LoginRequest_1.html
@@ -1659,48 +1719,48 @@ references:
   commentId: T:Engine.UI.ClientUIManager
   fullName: Engine.UI.ClientUIManager
   nameWithType: ClientUIManager
-- uid: Engine.UI.ClientUIManager.init(System.Object[])
-  name: init(Object[])
-  href: api/Engine.UI.ClientUIManager.html#Engine_UI_ClientUIManager_init_System_Object___
-  commentId: M:Engine.UI.ClientUIManager.init(System.Object[])
-  name.vb: init(Object())
-  fullName: Engine.UI.ClientUIManager.init(System.Object[])
-  fullName.vb: Engine.UI.ClientUIManager.init(System.Object())
-  nameWithType: ClientUIManager.init(Object[])
-  nameWithType.vb: ClientUIManager.init(Object())
-- uid: Engine.UI.ClientUIManager.init*
-  name: init
-  href: api/Engine.UI.ClientUIManager.html#Engine_UI_ClientUIManager_init_
-  commentId: Overload:Engine.UI.ClientUIManager.init
+- uid: Engine.UI.ClientUIManager.Init(System.Object[])
+  name: Init(Object[])
+  href: api/Engine.UI.ClientUIManager.html#Engine_UI_ClientUIManager_Init_System_Object___
+  commentId: M:Engine.UI.ClientUIManager.Init(System.Object[])
+  name.vb: Init(Object())
+  fullName: Engine.UI.ClientUIManager.Init(System.Object[])
+  fullName.vb: Engine.UI.ClientUIManager.Init(System.Object())
+  nameWithType: ClientUIManager.Init(Object[])
+  nameWithType.vb: ClientUIManager.Init(Object())
+- uid: Engine.UI.ClientUIManager.Init*
+  name: Init
+  href: api/Engine.UI.ClientUIManager.html#Engine_UI_ClientUIManager_Init_
+  commentId: Overload:Engine.UI.ClientUIManager.Init
   isSpec: "True"
-  fullName: Engine.UI.ClientUIManager.init
-  nameWithType: ClientUIManager.init
-- uid: Engine.UI.ClientUIManager.shutdown
-  name: shutdown()
-  href: api/Engine.UI.ClientUIManager.html#Engine_UI_ClientUIManager_shutdown
-  commentId: M:Engine.UI.ClientUIManager.shutdown
-  fullName: Engine.UI.ClientUIManager.shutdown()
-  nameWithType: ClientUIManager.shutdown()
-- uid: Engine.UI.ClientUIManager.shutdown*
-  name: shutdown
-  href: api/Engine.UI.ClientUIManager.html#Engine_UI_ClientUIManager_shutdown_
-  commentId: Overload:Engine.UI.ClientUIManager.shutdown
+  fullName: Engine.UI.ClientUIManager.Init
+  nameWithType: ClientUIManager.Init
+- uid: Engine.UI.ClientUIManager.Process
+  name: Process()
+  href: api/Engine.UI.ClientUIManager.html#Engine_UI_ClientUIManager_Process
+  commentId: M:Engine.UI.ClientUIManager.Process
+  fullName: Engine.UI.ClientUIManager.Process()
+  nameWithType: ClientUIManager.Process()
+- uid: Engine.UI.ClientUIManager.Process*
+  name: Process
+  href: api/Engine.UI.ClientUIManager.html#Engine_UI_ClientUIManager_Process_
+  commentId: Overload:Engine.UI.ClientUIManager.Process
   isSpec: "True"
-  fullName: Engine.UI.ClientUIManager.shutdown
-  nameWithType: ClientUIManager.shutdown
-- uid: Engine.UI.ClientUIManager.update
-  name: update()
-  href: api/Engine.UI.ClientUIManager.html#Engine_UI_ClientUIManager_update
-  commentId: M:Engine.UI.ClientUIManager.update
-  fullName: Engine.UI.ClientUIManager.update()
-  nameWithType: ClientUIManager.update()
-- uid: Engine.UI.ClientUIManager.update*
-  name: update
-  href: api/Engine.UI.ClientUIManager.html#Engine_UI_ClientUIManager_update_
-  commentId: Overload:Engine.UI.ClientUIManager.update
+  fullName: Engine.UI.ClientUIManager.Process
+  nameWithType: ClientUIManager.Process
+- uid: Engine.UI.ClientUIManager.Shutdown
+  name: Shutdown()
+  href: api/Engine.UI.ClientUIManager.html#Engine_UI_ClientUIManager_Shutdown
+  commentId: M:Engine.UI.ClientUIManager.Shutdown
+  fullName: Engine.UI.ClientUIManager.Shutdown()
+  nameWithType: ClientUIManager.Shutdown()
+- uid: Engine.UI.ClientUIManager.Shutdown*
+  name: Shutdown
+  href: api/Engine.UI.ClientUIManager.html#Engine_UI_ClientUIManager_Shutdown_
+  commentId: Overload:Engine.UI.ClientUIManager.Shutdown
   isSpec: "True"
-  fullName: Engine.UI.ClientUIManager.update
-  nameWithType: ClientUIManager.update
+  fullName: Engine.UI.ClientUIManager.Shutdown
+  nameWithType: ClientUIManager.Shutdown
 - uid: Engine.UI.UIController
   name: UIController
   href: api/Engine.UI.UIController.html
@@ -1871,3 +1931,57 @@ references:
   isSpec: "True"
   fullName: Engine.Utility.TimeHandler.getTimeInMilliseconds
   nameWithType: TimeHandler.getTimeInMilliseconds
+- uid: Engine.World
+  name: Engine.World
+  href: api/Engine.World.html
+  commentId: N:Engine.World
+  fullName: Engine.World
+  nameWithType: Engine.World
+- uid: Engine.World.ClientWorldManager
+  name: ClientWorldManager
+  href: api/Engine.World.ClientWorldManager.html
+  commentId: T:Engine.World.ClientWorldManager
+  fullName: Engine.World.ClientWorldManager
+  nameWithType: ClientWorldManager
+- uid: Engine.World.ClientWorldManager.Init(System.Object[])
+  name: Init(Object[])
+  href: api/Engine.World.ClientWorldManager.html#Engine_World_ClientWorldManager_Init_System_Object___
+  commentId: M:Engine.World.ClientWorldManager.Init(System.Object[])
+  name.vb: Init(Object())
+  fullName: Engine.World.ClientWorldManager.Init(System.Object[])
+  fullName.vb: Engine.World.ClientWorldManager.Init(System.Object())
+  nameWithType: ClientWorldManager.Init(Object[])
+  nameWithType.vb: ClientWorldManager.Init(Object())
+- uid: Engine.World.ClientWorldManager.Init*
+  name: Init
+  href: api/Engine.World.ClientWorldManager.html#Engine_World_ClientWorldManager_Init_
+  commentId: Overload:Engine.World.ClientWorldManager.Init
+  isSpec: "True"
+  fullName: Engine.World.ClientWorldManager.Init
+  nameWithType: ClientWorldManager.Init
+- uid: Engine.World.ClientWorldManager.Process
+  name: Process()
+  href: api/Engine.World.ClientWorldManager.html#Engine_World_ClientWorldManager_Process
+  commentId: M:Engine.World.ClientWorldManager.Process
+  fullName: Engine.World.ClientWorldManager.Process()
+  nameWithType: ClientWorldManager.Process()
+- uid: Engine.World.ClientWorldManager.Process*
+  name: Process
+  href: api/Engine.World.ClientWorldManager.html#Engine_World_ClientWorldManager_Process_
+  commentId: Overload:Engine.World.ClientWorldManager.Process
+  isSpec: "True"
+  fullName: Engine.World.ClientWorldManager.Process
+  nameWithType: ClientWorldManager.Process
+- uid: Engine.World.ClientWorldManager.Shutdown
+  name: Shutdown()
+  href: api/Engine.World.ClientWorldManager.html#Engine_World_ClientWorldManager_Shutdown
+  commentId: M:Engine.World.ClientWorldManager.Shutdown
+  fullName: Engine.World.ClientWorldManager.Shutdown()
+  nameWithType: ClientWorldManager.Shutdown()
+- uid: Engine.World.ClientWorldManager.Shutdown*
+  name: Shutdown
+  href: api/Engine.World.ClientWorldManager.html#Engine_World_ClientWorldManager_Shutdown_
+  commentId: Overload:Engine.World.ClientWorldManager.Shutdown
+  isSpec: "True"
+  fullName: Engine.World.ClientWorldManager.Shutdown
+  nameWithType: ClientWorldManager.Shutdown

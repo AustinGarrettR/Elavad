@@ -6,6 +6,8 @@ items:
   children:
   - Engine.Asset.ClientAssetManager
   - Engine.Asset.ClientAssetPack
+  - Engine.Asset.SharedAssetManager
+  - Engine.Asset.SharedAssetPack
   - Engine.Asset.UI_Pack
   langs:
   - csharp
@@ -28,6 +30,16 @@ references:
   name: ClientAssetPack
   nameWithType: ClientAssetPack
   fullName: Engine.Asset.ClientAssetPack
+- uid: Engine.Asset.SharedAssetManager
+  commentId: T:Engine.Asset.SharedAssetManager
+  name: SharedAssetManager
+  nameWithType: SharedAssetManager
+  fullName: Engine.Asset.SharedAssetManager
+- uid: Engine.Asset.SharedAssetPack
+  commentId: T:Engine.Asset.SharedAssetPack
+  name: SharedAssetPack
+  nameWithType: SharedAssetPack
+  fullName: Engine.Asset.SharedAssetPack
 - uid: Engine.Asset.UI_Pack
   commentId: T:Engine.Asset.UI_Pack
   parent: Engine.Asset

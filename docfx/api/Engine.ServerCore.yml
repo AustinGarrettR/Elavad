@@ -165,7 +165,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: logManager
     path: ../Assets/Engine/ServerCore.cs
-    startLine: 42
+    startLine: 51
   assemblies:
   - Engine
   namespace: Engine
@@ -200,7 +200,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: connectionManager
     path: ../Assets/Engine/ServerCore.cs
-    startLine: 47
+    startLine: 56
   assemblies:
   - Engine
   namespace: Engine
@@ -235,7 +235,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: serverLoginManager
     path: ../Assets/Engine/ServerCore.cs
-    startLine: 52
+    startLine: 61
   assemblies:
   - Engine
   namespace: Engine
@@ -270,7 +270,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: dispatchManager
     path: ../Assets/Engine/ServerCore.cs
-    startLine: 57
+    startLine: 66
   assemblies:
   - Engine
   namespace: Engine

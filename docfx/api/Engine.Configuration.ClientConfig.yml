@@ -19,7 +19,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ClientConfig
     path: ../Assets/Engine/Configuration/ClientConfig.cs
-    startLine: 8
+    startLine: 7
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration

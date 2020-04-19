@@ -170,11 +170,11 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: onPanelLoaded
     path: ../Assets/Content/UI/Login Screen/Login_Screen_UIController.cs
-    startLine: 31
+    startLine: 33
   assemblies:
   - Content.UI
   namespace: Content.UI
-  summary: Called when the panel finished loading the UXML
+  summary: "\nCalled when the panel finished loading the UXML\n"
   example: []
   syntax:
     content: public override void onPanelLoaded()
