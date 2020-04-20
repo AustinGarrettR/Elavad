@@ -24,7 +24,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ClientLoginManager
     path: ../Assets/Engine/Account/ClientLoginManager.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -34,12 +34,12 @@ items:
     content: 'public class ClientLoginManager : Manager'
     content.vb: >-
       Public Class ClientLoginManager
-
           Inherits Manager
   inheritance:
   - System.Object
   - Engine.Factory.Manager
   inheritedMembers:
+  - Engine.Factory.Manager.LoadGameTask
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -71,7 +71,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/Account/ClientLoginManager.cs
-    startLine: 25
+    startLine: 26
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -113,7 +113,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/Account/ClientLoginManager.cs
-    startLine: 42
+    startLine: 44
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -148,7 +148,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/Account/ClientLoginManager.cs
-    startLine: 50
+    startLine: 52
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -183,7 +183,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: AttemptLogin
     path: ../Assets/Engine/Account/ClientLoginManager.cs
-    startLine: 67
+    startLine: 69
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -234,7 +234,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: IsPlayerLoggedIn
     path: ../Assets/Engine/Account/ClientLoginManager.cs
-    startLine: 272
+    startLine: 286
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -270,6 +270,34 @@ references:
   name: Manager
   nameWithType: Manager
   fullName: Engine.Factory.Manager
+- uid: Engine.Factory.Manager.LoadGameTask
+  commentId: M:Engine.Factory.Manager.LoadGameTask
+  parent: Engine.Factory.Manager
+  name: LoadGameTask()
+  nameWithType: Manager.LoadGameTask()
+  fullName: Engine.Factory.Manager.LoadGameTask()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.LoadGameTask
+    name: LoadGameTask
+    nameWithType: Manager.LoadGameTask
+    fullName: Engine.Factory.Manager.LoadGameTask
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.LoadGameTask
+    name: LoadGameTask
+    nameWithType: Manager.LoadGameTask
+    fullName: Engine.Factory.Manager.LoadGameTask
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object

@@ -16,6 +16,8 @@
   items:
   - uid: Editor.PacketInfoEditor
     name: PacketInfoEditor
+  - uid: Editor.WorldEditorSceneProcessor
+    name: WorldEditorSceneProcessor
 - uid: Engine
   name: Engine
   items:

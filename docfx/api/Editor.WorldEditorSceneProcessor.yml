@@ -1,51 +1,41 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Engine.Factory.Manager
-  commentId: T:Engine.Factory.Manager
-  id: Manager
-  parent: Engine.Factory
-  children:
-  - Engine.Factory.Manager.Init(System.Object[])
-  - Engine.Factory.Manager.LoadGameTask
-  - Engine.Factory.Manager.Process
-  - Engine.Factory.Manager.Shutdown
+- uid: Editor.WorldEditorSceneProcessor
+  commentId: T:Editor.WorldEditorSceneProcessor
+  id: WorldEditorSceneProcessor
+  parent: Editor
+  children: []
   langs:
   - csharp
   - vb
-  name: Manager
-  nameWithType: Manager
-  fullName: Engine.Factory.Manager
+  name: WorldEditorSceneProcessor
+  nameWithType: WorldEditorSceneProcessor
+  fullName: Editor.WorldEditorSceneProcessor
   type: Class
   source:
     remote:
-      path: Assets/Engine/Factory/Manager.cs
+      path: Assets/Editor/WorldEditorSceneProcessor.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: Manager
-    path: ../Assets/Engine/Factory/Manager.cs
-    startLine: 7
+    id: WorldEditorSceneProcessor
+    path: ../Assets/Editor/WorldEditorSceneProcessor.cs
+    startLine: 13
   assemblies:
-  - Engine.Factory
-  namespace: Engine.Factory
-  summary: "\nBase class for managers\n"
+  - Editor
+  namespace: Editor
+  summary: "\nThe world editor runs in editor to aid in designing the world regions\n"
   example: []
   syntax:
-    content: public abstract class Manager
-    content.vb: Public MustInherit Class Manager
+    content: >-
+      [InitializeOnLoad]
+
+      public static class WorldEditorSceneProcessor
+    content.vb: >-
+      <InitializeOnLoad>
+
+      Public Module WorldEditorSceneProcessor
   inheritance:
   - System.Object
-  derivedClasses:
-  - Engine.Account.ClientLoginManager
-  - Engine.Account.ServerLoginManager
-  - Engine.API.APIManager
-  - Engine.Asset.ClientAssetManager
-  - Engine.Asset.SharedAssetManager
-  - Engine.Dispatch.DispatchManager
-  - Engine.Input.ClientInputManager
-  - Engine.Logging.LogManager
-  - Engine.Networking.ConnectionManager
-  - Engine.UI.ClientUIManager
-  - Engine.World.ClientWorldManager
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -54,165 +44,23 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  attributes:
+  - type: UnityEditor.InitializeOnLoadAttribute
+    ctor: UnityEditor.InitializeOnLoadAttribute.#ctor
+    arguments: []
   modifiers.csharp:
   - public
-  - abstract
+  - static
   - class
   modifiers.vb:
   - Public
-  - MustInherit
-  - Class
-- uid: Engine.Factory.Manager.Init(System.Object[])
-  commentId: M:Engine.Factory.Manager.Init(System.Object[])
-  id: Init(System.Object[])
-  parent: Engine.Factory.Manager
-  langs:
-  - csharp
-  - vb
-  name: Init(Object[])
-  nameWithType: Manager.Init(Object[])
-  fullName: Engine.Factory.Manager.Init(System.Object[])
-  type: Method
-  source:
-    remote:
-      path: Assets/Engine/Factory/Manager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
-    id: Init
-    path: ../Assets/Engine/Factory/Manager.cs
-    startLine: 13
-  assemblies:
-  - Engine.Factory
-  namespace: Engine.Factory
-  summary: "\nCalled on initialization\n"
-  example: []
-  syntax:
-    content: public abstract void Init(params object[] parameters)
-    parameters:
-    - id: parameters
-      type: System.Object[]
-      description: Variable parameters
-    content.vb: Public MustOverride Sub Init(ParamArray parameters As Object())
-  overload: Engine.Factory.Manager.Init*
-  nameWithType.vb: Manager.Init(Object())
-  modifiers.csharp:
-  - public
-  - abstract
-  modifiers.vb:
-  - Public
-  - MustOverride
-  fullName.vb: Engine.Factory.Manager.Init(System.Object())
-  name.vb: Init(Object())
-- uid: Engine.Factory.Manager.Process
-  commentId: M:Engine.Factory.Manager.Process
-  id: Process
-  parent: Engine.Factory.Manager
-  langs:
-  - csharp
-  - vb
-  name: Process()
-  nameWithType: Manager.Process()
-  fullName: Engine.Factory.Manager.Process()
-  type: Method
-  source:
-    remote:
-      path: Assets/Engine/Factory/Manager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
-    id: Process
-    path: ../Assets/Engine/Factory/Manager.cs
-    startLine: 18
-  assemblies:
-  - Engine.Factory
-  namespace: Engine.Factory
-  summary: "\nCalled every frame\n"
-  example: []
-  syntax:
-    content: public abstract void Process()
-    content.vb: Public MustOverride Sub Process
-  overload: Engine.Factory.Manager.Process*
-  modifiers.csharp:
-  - public
-  - abstract
-  modifiers.vb:
-  - Public
-  - MustOverride
-- uid: Engine.Factory.Manager.Shutdown
-  commentId: M:Engine.Factory.Manager.Shutdown
-  id: Shutdown
-  parent: Engine.Factory.Manager
-  langs:
-  - csharp
-  - vb
-  name: Shutdown()
-  nameWithType: Manager.Shutdown()
-  fullName: Engine.Factory.Manager.Shutdown()
-  type: Method
-  source:
-    remote:
-      path: Assets/Engine/Factory/Manager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
-    id: Shutdown
-    path: ../Assets/Engine/Factory/Manager.cs
-    startLine: 23
-  assemblies:
-  - Engine.Factory
-  namespace: Engine.Factory
-  summary: "\nCalled on shutdown\n"
-  example: []
-  syntax:
-    content: public abstract void Shutdown()
-    content.vb: Public MustOverride Sub Shutdown
-  overload: Engine.Factory.Manager.Shutdown*
-  modifiers.csharp:
-  - public
-  - abstract
-  modifiers.vb:
-  - Public
-  - MustOverride
-- uid: Engine.Factory.Manager.LoadGameTask
-  commentId: M:Engine.Factory.Manager.LoadGameTask
-  id: LoadGameTask
-  parent: Engine.Factory.Manager
-  langs:
-  - csharp
-  - vb
-  name: LoadGameTask()
-  nameWithType: Manager.LoadGameTask()
-  fullName: Engine.Factory.Manager.LoadGameTask()
-  type: Method
-  source:
-    remote:
-      path: Assets/Engine/Factory/Manager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
-    id: LoadGameTask
-    path: ../Assets/Engine/Factory/Manager.cs
-    startLine: 28
-  assemblies:
-  - Engine.Factory
-  namespace: Engine.Factory
-  summary: "\nVirtual void that is called when the game is loaded.\n"
-  example: []
-  syntax:
-    content: public virtual Task LoadGameTask()
-    return:
-      type: System.Threading.Tasks.Task
-    content.vb: Public Overridable Function LoadGameTask As Task
-  overload: Engine.Factory.Manager.LoadGameTask*
-  modifiers.csharp:
-  - public
-  - virtual
-  modifiers.vb:
-  - Public
-  - Overridable
+  - Module
 references:
-- uid: Engine.Factory
-  commentId: N:Engine.Factory
-  name: Engine.Factory
-  nameWithType: Engine.Factory
-  fullName: Engine.Factory
+- uid: Editor
+  commentId: N:Editor
+  name: Editor
+  nameWithType: Editor
+  fullName: Editor
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -505,62 +353,3 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Engine.Factory.Manager.Init*
-  commentId: Overload:Engine.Factory.Manager.Init
-  name: Init
-  nameWithType: Manager.Init
-  fullName: Engine.Factory.Manager.Init
-- uid: System.Object[]
-  isExternal: true
-  name: Object[]
-  nameWithType: Object[]
-  fullName: System.Object[]
-  nameWithType.vb: Object()
-  fullName.vb: System.Object()
-  name.vb: Object()
-  spec.csharp:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
-  spec.vb:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
-- uid: Engine.Factory.Manager.Process*
-  commentId: Overload:Engine.Factory.Manager.Process
-  name: Process
-  nameWithType: Manager.Process
-  fullName: Engine.Factory.Manager.Process
-- uid: Engine.Factory.Manager.Shutdown*
-  commentId: Overload:Engine.Factory.Manager.Shutdown
-  name: Shutdown
-  nameWithType: Manager.Shutdown
-  fullName: Engine.Factory.Manager.Shutdown
-- uid: Engine.Factory.Manager.LoadGameTask*
-  commentId: Overload:Engine.Factory.Manager.LoadGameTask
-  name: LoadGameTask
-  nameWithType: Manager.LoadGameTask
-  fullName: Engine.Factory.Manager.LoadGameTask
-- uid: System.Threading.Tasks.Task
-  commentId: T:System.Threading.Tasks.Task
-  parent: System.Threading.Tasks
-  isExternal: true
-  name: Task
-  nameWithType: Task
-  fullName: System.Threading.Tasks.Task
-- uid: System.Threading.Tasks
-  commentId: N:System.Threading.Tasks
-  isExternal: true
-  name: System.Threading.Tasks
-  nameWithType: System.Threading.Tasks
-  fullName: System.Threading.Tasks

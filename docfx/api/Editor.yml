@@ -5,6 +5,7 @@ items:
   id: Editor
   children:
   - Editor.PacketInfoEditor
+  - Editor.WorldEditorSceneProcessor
   langs:
   - csharp
   - vb
@@ -20,3 +21,8 @@ references:
   name: PacketInfoEditor
   nameWithType: PacketInfoEditor
   fullName: Editor.PacketInfoEditor
+- uid: Editor.WorldEditorSceneProcessor
+  commentId: T:Editor.WorldEditorSceneProcessor
+  name: WorldEditorSceneProcessor
+  nameWithType: WorldEditorSceneProcessor
+  fullName: Editor.WorldEditorSceneProcessor

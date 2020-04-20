@@ -170,7 +170,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: logManager
     path: ../Assets/Engine/ClientCore.cs
-    startLine: 65
+    startLine: 66
   assemblies:
   - Engine
   namespace: Engine
@@ -205,7 +205,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: clientAssetManager
     path: ../Assets/Engine/ClientCore.cs
-    startLine: 70
+    startLine: 71
   assemblies:
   - Engine
   namespace: Engine
@@ -240,7 +240,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: connectionManager
     path: ../Assets/Engine/ClientCore.cs
-    startLine: 75
+    startLine: 76
   assemblies:
   - Engine
   namespace: Engine
@@ -275,7 +275,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: clientWorldManager
     path: ../Assets/Engine/ClientCore.cs
-    startLine: 80
+    startLine: 81
   assemblies:
   - Engine
   namespace: Engine
@@ -310,7 +310,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: clientLoginManager
     path: ../Assets/Engine/ClientCore.cs
-    startLine: 85
+    startLine: 86
   assemblies:
   - Engine
   namespace: Engine
@@ -345,7 +345,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: clientUIManager
     path: ../Assets/Engine/ClientCore.cs
-    startLine: 90
+    startLine: 91
   assemblies:
   - Engine
   namespace: Engine
@@ -380,7 +380,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: clientInputManager
     path: ../Assets/Engine/ClientCore.cs
-    startLine: 95
+    startLine: 96
   assemblies:
   - Engine
   namespace: Engine
@@ -415,7 +415,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: apiManager
     path: ../Assets/Engine/ClientCore.cs
-    startLine: 100
+    startLine: 101
   assemblies:
   - Engine
   namespace: Engine
@@ -450,7 +450,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: dispatchManager
     path: ../Assets/Engine/ClientCore.cs
-    startLine: 105
+    startLine: 106
   assemblies:
   - Engine
   namespace: Engine

@@ -30,7 +30,6 @@ items:
     content: 'public class PacketInfoEditor : EditorWindow'
     content.vb: >-
       Public Class PacketInfoEditor
-
           Inherits EditorWindow
   inheritance:
   - System.Object

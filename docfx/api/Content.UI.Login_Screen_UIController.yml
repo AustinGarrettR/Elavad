@@ -30,7 +30,6 @@ items:
     content: 'public class Login_Screen_UIController : UIController'
     content.vb: >-
       Public Class Login_Screen_UIController
-
           Inherits UIController
   inheritance:
   - System.Object
@@ -170,7 +169,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: onPanelLoaded
     path: ../Assets/Content/UI/Login Screen/Login_Screen_UIController.cs
-    startLine: 33
+    startLine: 34
   assemblies:
   - Content.UI
   namespace: Content.UI

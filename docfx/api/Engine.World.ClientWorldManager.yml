@@ -6,6 +6,7 @@ items:
   parent: Engine.World
   children:
   - Engine.World.ClientWorldManager.Init(System.Object[])
+  - Engine.World.ClientWorldManager.LoadGameTask
   - Engine.World.ClientWorldManager.Process
   - Engine.World.ClientWorldManager.Shutdown
   langs:
@@ -22,7 +23,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ClientWorldManager
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 11
+    startLine: 14
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -68,7 +69,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 17
+    startLine: 28
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -110,7 +111,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 25
+    startLine: 39
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -145,7 +146,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 33
+    startLine: 47
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -156,6 +157,44 @@ items:
     content.vb: Public Overrides Sub Process
   overridden: Engine.Factory.Manager.Process
   overload: Engine.World.ClientWorldManager.Process*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Engine.World.ClientWorldManager.LoadGameTask
+  commentId: M:Engine.World.ClientWorldManager.LoadGameTask
+  id: LoadGameTask
+  parent: Engine.World.ClientWorldManager
+  langs:
+  - csharp
+  - vb
+  name: LoadGameTask()
+  nameWithType: ClientWorldManager.LoadGameTask()
+  fullName: Engine.World.ClientWorldManager.LoadGameTask()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/World/ClientWorldManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: LoadGameTask
+    path: ../Assets/Engine/World/ClientWorldManager.cs
+    startLine: 60
+  assemblies:
+  - Engine.World
+  namespace: Engine.World
+  summary: "\nCalled on game load\n"
+  example: []
+  syntax:
+    content: public override Task LoadGameTask()
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Overrides Function LoadGameTask As Task
+  overridden: Engine.Factory.Manager.LoadGameTask
+  overload: Engine.World.ClientWorldManager.LoadGameTask*
   modifiers.csharp:
   - public
   - override
@@ -616,3 +655,49 @@ references:
   name: Process
   nameWithType: ClientWorldManager.Process
   fullName: Engine.World.ClientWorldManager.Process
+- uid: Engine.Factory.Manager.LoadGameTask
+  commentId: M:Engine.Factory.Manager.LoadGameTask
+  parent: Engine.Factory.Manager
+  name: LoadGameTask()
+  nameWithType: Manager.LoadGameTask()
+  fullName: Engine.Factory.Manager.LoadGameTask()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.LoadGameTask
+    name: LoadGameTask
+    nameWithType: Manager.LoadGameTask
+    fullName: Engine.Factory.Manager.LoadGameTask
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.LoadGameTask
+    name: LoadGameTask
+    nameWithType: Manager.LoadGameTask
+    fullName: Engine.Factory.Manager.LoadGameTask
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Engine.World.ClientWorldManager.LoadGameTask*
+  commentId: Overload:Engine.World.ClientWorldManager.LoadGameTask
+  name: LoadGameTask
+  nameWithType: ClientWorldManager.LoadGameTask
+  fullName: Engine.World.ClientWorldManager.LoadGameTask
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

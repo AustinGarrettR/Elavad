@@ -32,12 +32,12 @@ items:
     content: 'public class ServerLoginManager : Manager'
     content.vb: >-
       Public Class ServerLoginManager
-
           Inherits Manager
   inheritance:
   - System.Object
   - Engine.Factory.Manager
   inheritedMembers:
+  - Engine.Factory.Manager.LoadGameTask
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -182,6 +182,34 @@ references:
   name: Manager
   nameWithType: Manager
   fullName: Engine.Factory.Manager
+- uid: Engine.Factory.Manager.LoadGameTask
+  commentId: M:Engine.Factory.Manager.LoadGameTask
+  parent: Engine.Factory.Manager
+  name: LoadGameTask()
+  nameWithType: Manager.LoadGameTask()
+  fullName: Engine.Factory.Manager.LoadGameTask()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.LoadGameTask
+    name: LoadGameTask
+    nameWithType: Manager.LoadGameTask
+    fullName: Engine.Factory.Manager.LoadGameTask
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.LoadGameTask
+    name: LoadGameTask
+    nameWithType: Manager.LoadGameTask
+    fullName: Engine.Factory.Manager.LoadGameTask
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object

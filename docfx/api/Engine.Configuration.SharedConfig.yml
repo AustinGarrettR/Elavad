@@ -5,12 +5,15 @@ items:
   id: SharedConfig
   parent: Engine.Configuration
   children:
+  - Engine.Configuration.SharedConfig.CHUNK_LOAD_VIEW_DISTANCE
+  - Engine.Configuration.SharedConfig.CHUNK_UNLOAD_VIEW_DISTANCE
   - Engine.Configuration.SharedConfig.DELIMITER
   - Engine.Configuration.SharedConfig.ESCAPE
   - Engine.Configuration.SharedConfig.MAX_BUFFER_SIZE
   - Engine.Configuration.SharedConfig.MAX_PASSWORD_LENGTH
   - Engine.Configuration.SharedConfig.MAX_USERNAME_LENGTH
   - Engine.Configuration.SharedConfig.PORT
+  - Engine.Configuration.SharedConfig.WORLD_CHUNK_SIZE
   langs:
   - csharp
   - vb
@@ -68,7 +71,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ESCAPE
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 12
+    startLine: 17
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -105,7 +108,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: DELIMITER
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 17
+    startLine: 22
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -142,7 +145,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: PORT
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 22
+    startLine: 27
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -179,7 +182,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: MAX_BUFFER_SIZE
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 27
+    startLine: 32
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -216,7 +219,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: MAX_USERNAME_LENGTH
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 32
+    startLine: 41
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -253,7 +256,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: MAX_PASSWORD_LENGTH
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 37
+    startLine: 46
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -264,6 +267,117 @@ items:
     return:
       type: System.Int32
     content.vb: Public Shared ReadOnly MAX_PASSWORD_LENGTH As Integer
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.SharedConfig.WORLD_CHUNK_SIZE
+  commentId: F:Engine.Configuration.SharedConfig.WORLD_CHUNK_SIZE
+  id: WORLD_CHUNK_SIZE
+  parent: Engine.Configuration.SharedConfig
+  langs:
+  - csharp
+  - vb
+  name: WORLD_CHUNK_SIZE
+  nameWithType: SharedConfig.WORLD_CHUNK_SIZE
+  fullName: Engine.Configuration.SharedConfig.WORLD_CHUNK_SIZE
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/SharedConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: WORLD_CHUNK_SIZE
+    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    startLine: 55
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nThe size of the world chunks\n"
+  example: []
+  syntax:
+    content: public static readonly int WORLD_CHUNK_SIZE
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly WORLD_CHUNK_SIZE As Integer
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.SharedConfig.CHUNK_LOAD_VIEW_DISTANCE
+  commentId: F:Engine.Configuration.SharedConfig.CHUNK_LOAD_VIEW_DISTANCE
+  id: CHUNK_LOAD_VIEW_DISTANCE
+  parent: Engine.Configuration.SharedConfig
+  langs:
+  - csharp
+  - vb
+  name: CHUNK_LOAD_VIEW_DISTANCE
+  nameWithType: SharedConfig.CHUNK_LOAD_VIEW_DISTANCE
+  fullName: Engine.Configuration.SharedConfig.CHUNK_LOAD_VIEW_DISTANCE
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/SharedConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: CHUNK_LOAD_VIEW_DISTANCE
+    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    startLine: 60
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nHow close to a chunk position you need to be for it to load\n"
+  example: []
+  syntax:
+    content: public static readonly int CHUNK_LOAD_VIEW_DISTANCE
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly CHUNK_LOAD_VIEW_DISTANCE As Integer
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.SharedConfig.CHUNK_UNLOAD_VIEW_DISTANCE
+  commentId: F:Engine.Configuration.SharedConfig.CHUNK_UNLOAD_VIEW_DISTANCE
+  id: CHUNK_UNLOAD_VIEW_DISTANCE
+  parent: Engine.Configuration.SharedConfig
+  langs:
+  - csharp
+  - vb
+  name: CHUNK_UNLOAD_VIEW_DISTANCE
+  nameWithType: SharedConfig.CHUNK_UNLOAD_VIEW_DISTANCE
+  fullName: Engine.Configuration.SharedConfig.CHUNK_UNLOAD_VIEW_DISTANCE
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/SharedConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: CHUNK_UNLOAD_VIEW_DISTANCE
+    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    startLine: 65
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nHow far from a chunk position before it unloads\n"
+  example: []
+  syntax:
+    content: public static readonly int CHUNK_UNLOAD_VIEW_DISTANCE
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly CHUNK_UNLOAD_VIEW_DISTANCE As Integer
   modifiers.csharp:
   - public
   - static
