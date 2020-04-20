@@ -16,13 +16,16 @@ namespace Editor
     {
 
         /// <summary>
-        /// Called on initialization
+        /// Called on scene change
         /// </summary>
         static WorldEditorSceneProcessor()
         {
             EditorApplication.hierarchyChanged += checkScene;
         }
 
+        /// <summary>
+        /// Check if scene is the world editor scene
+        /// </summary>
         private static void checkScene()
         {
             if (EditorSceneManager.GetActiveScene().name.Equals("World_Editor"))
@@ -55,7 +58,6 @@ namespace Editor
              
             Vector2Int chunk = new Vector2Int(Int32.Parse(sceneName.Split(',')[0]), Int32.Parse(sceneName.Split(',')[1]));
 
-            //UnityEditor.SceneManagement.EditorSceneManager.LoadScene(sceneName, UnityEngine.SceneManagement.LoadSceneMode.Additive);
             EditorSceneManager.OpenScene(scenePath, OpenSceneMode.Additive);
             Scene scene = EditorSceneManager.GetSceneByName(sceneName);
             GameObject[] rootObjects = scene.GetRootGameObjects();
