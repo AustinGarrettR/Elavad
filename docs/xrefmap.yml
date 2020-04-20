@@ -95,6 +95,12 @@ references:
   isSpec: "True"
   fullName: Editor.PacketInfoEditor.ShowWindow
   nameWithType: PacketInfoEditor.ShowWindow
+- uid: Editor.WorldEditorSceneProcessor
+  name: WorldEditorSceneProcessor
+  href: api/Editor.WorldEditorSceneProcessor.html
+  commentId: T:Editor.WorldEditorSceneProcessor
+  fullName: Editor.WorldEditorSceneProcessor
+  nameWithType: WorldEditorSceneProcessor
 - uid: Engine
   name: Engine
   href: api/Engine.html
@@ -549,6 +555,18 @@ references:
   commentId: T:Engine.Configuration.SharedConfig
   fullName: Engine.Configuration.SharedConfig
   nameWithType: SharedConfig
+- uid: Engine.Configuration.SharedConfig.CHUNK_LOAD_VIEW_DISTANCE
+  name: CHUNK_LOAD_VIEW_DISTANCE
+  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_CHUNK_LOAD_VIEW_DISTANCE
+  commentId: F:Engine.Configuration.SharedConfig.CHUNK_LOAD_VIEW_DISTANCE
+  fullName: Engine.Configuration.SharedConfig.CHUNK_LOAD_VIEW_DISTANCE
+  nameWithType: SharedConfig.CHUNK_LOAD_VIEW_DISTANCE
+- uid: Engine.Configuration.SharedConfig.CHUNK_UNLOAD_VIEW_DISTANCE
+  name: CHUNK_UNLOAD_VIEW_DISTANCE
+  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_CHUNK_UNLOAD_VIEW_DISTANCE
+  commentId: F:Engine.Configuration.SharedConfig.CHUNK_UNLOAD_VIEW_DISTANCE
+  fullName: Engine.Configuration.SharedConfig.CHUNK_UNLOAD_VIEW_DISTANCE
+  nameWithType: SharedConfig.CHUNK_UNLOAD_VIEW_DISTANCE
 - uid: Engine.Configuration.SharedConfig.DELIMITER
   name: DELIMITER
   href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_DELIMITER
@@ -585,6 +603,12 @@ references:
   commentId: F:Engine.Configuration.SharedConfig.PORT
   fullName: Engine.Configuration.SharedConfig.PORT
   nameWithType: SharedConfig.PORT
+- uid: Engine.Configuration.SharedConfig.WORLD_CHUNK_SIZE
+  name: WORLD_CHUNK_SIZE
+  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_WORLD_CHUNK_SIZE
+  commentId: F:Engine.Configuration.SharedConfig.WORLD_CHUNK_SIZE
+  fullName: Engine.Configuration.SharedConfig.WORLD_CHUNK_SIZE
+  nameWithType: SharedConfig.WORLD_CHUNK_SIZE
 - uid: Engine.Dispatch
   name: Engine.Dispatch
   href: api/Engine.Dispatch.html
@@ -686,6 +710,19 @@ references:
   isSpec: "True"
   fullName: Engine.Factory.Manager.Init
   nameWithType: Manager.Init
+- uid: Engine.Factory.Manager.LoadGameTask
+  name: LoadGameTask()
+  href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_LoadGameTask
+  commentId: M:Engine.Factory.Manager.LoadGameTask
+  fullName: Engine.Factory.Manager.LoadGameTask()
+  nameWithType: Manager.LoadGameTask()
+- uid: Engine.Factory.Manager.LoadGameTask*
+  name: LoadGameTask
+  href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_LoadGameTask_
+  commentId: Overload:Engine.Factory.Manager.LoadGameTask
+  isSpec: "True"
+  fullName: Engine.Factory.Manager.LoadGameTask
+  nameWithType: Manager.LoadGameTask
 - uid: Engine.Factory.Manager.Process
   name: Process()
   href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_Process
@@ -1959,6 +1996,19 @@ references:
   isSpec: "True"
   fullName: Engine.World.ClientWorldManager.Init
   nameWithType: ClientWorldManager.Init
+- uid: Engine.World.ClientWorldManager.LoadGameTask
+  name: LoadGameTask()
+  href: api/Engine.World.ClientWorldManager.html#Engine_World_ClientWorldManager_LoadGameTask
+  commentId: M:Engine.World.ClientWorldManager.LoadGameTask
+  fullName: Engine.World.ClientWorldManager.LoadGameTask()
+  nameWithType: ClientWorldManager.LoadGameTask()
+- uid: Engine.World.ClientWorldManager.LoadGameTask*
+  name: LoadGameTask
+  href: api/Engine.World.ClientWorldManager.html#Engine_World_ClientWorldManager_LoadGameTask_
+  commentId: Overload:Engine.World.ClientWorldManager.LoadGameTask
+  isSpec: "True"
+  fullName: Engine.World.ClientWorldManager.LoadGameTask
+  nameWithType: ClientWorldManager.LoadGameTask
 - uid: Engine.World.ClientWorldManager.Process
   name: Process()
   href: api/Engine.World.ClientWorldManager.html#Engine_World_ClientWorldManager_Process

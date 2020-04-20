@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Content.UI.Login_Screen_UIController.html",
-          "hash": "mDfmaeN0CadR/Uuhd4iHIg=="
+          "hash": "PXti8fbJ3wCtUpv4A+fKJQ=="
         }
       },
       "is_incremental": false,
@@ -98,11 +98,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Editor.WorldEditorSceneProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Editor.WorldEditorSceneProcessor.html",
+          "hash": "zzG012xidM10VcYjAFS2sg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Editor.yml",
       "output": {
         ".html": {
           "relative_path": "api/Editor.html",
-          "hash": "i19J54fjDz/CZB8+COmLDQ=="
+          "hash": "y2ZyoTn/lTSVE92OencmhA=="
         }
       },
       "is_incremental": false,
@@ -150,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.API.APIManager.html",
-          "hash": "21zQ6t/PPEFJ0XjEDgP0Jg=="
+          "hash": "5v+PlYnosjiinPG3UR1FqQ=="
         }
       },
       "is_incremental": false,
@@ -174,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Account.ClientLoginManager.html",
-          "hash": "Eby8ATkA6a/zdYSaI0TV/Q=="
+          "hash": "ccXQouuu9JY/6iPFx89w1g=="
         }
       },
       "is_incremental": false,
@@ -186,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Account.ServerLoginManager.html",
-          "hash": "5XjHPS7d0I/f3csFxs1ycA=="
+          "hash": "5ZBjev2xAKZyoZHbqYE30Q=="
         }
       },
       "is_incremental": false,
@@ -210,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Asset.ClientAssetManager.html",
-          "hash": "B3RMmEaPV/ae9ysEmkBSEQ=="
+          "hash": "rFsDGo0lMfE02Yp03LjasA=="
         }
       },
       "is_incremental": false,
@@ -234,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Asset.SharedAssetManager.html",
-          "hash": "Rba2BvpBw8wkSVJJZrHaag=="
+          "hash": "wSXBXGYV2EiHiEcFCg01Yw=="
         }
       },
       "is_incremental": false,
@@ -282,7 +294,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.ClientCore.html",
-          "hash": "W46vOltqs6SnZCj1W8PzDg=="
+          "hash": "iKdhFwjwqQrpVS/qJQZusQ=="
         }
       },
       "is_incremental": false,
@@ -318,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Configuration.SharedConfig.html",
-          "hash": "7S4HuWXU5JY8fslsMhPhMg=="
+          "hash": "U819SfwrEV5tuseyq0cz5A=="
         }
       },
       "is_incremental": false,
@@ -342,7 +354,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Dispatch.DispatchManager.html",
-          "hash": "DNasRK/cbNL3wTz/Le1/jw=="
+          "hash": "RBRySqSJLWyL0o5U/DfrDQ=="
         }
       },
       "is_incremental": false,
@@ -378,7 +390,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Factory.Manager.html",
-          "hash": "VPR90VbnU6/sjDYsuz30hw=="
+          "hash": "8gOUrZlI6BrSfc8ecJaXaA=="
         }
       },
       "is_incremental": false,
@@ -414,7 +426,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Input.ClientInputManager.html",
-          "hash": "yGtLPYxtiYk6RiPeqtYckQ=="
+          "hash": "nzg0mJFtldggs0D275THUw=="
         }
       },
       "is_incremental": false,
@@ -462,7 +474,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Logging.LogManager.html",
-          "hash": "mJPrFvWAKJM3tMDFef6Ovg=="
+          "hash": "I9iirR3ynD/4lyLnWZPTNQ=="
         }
       },
       "is_incremental": false,
@@ -570,7 +582,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Networking.ConnectionManager.html",
-          "hash": "xS/6+jOwiC4KPcr+JnffvA=="
+          "hash": "Qpzk4z2uFm3wHok+DHAUjw=="
         }
       },
       "is_incremental": false,
@@ -714,7 +726,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.UI.ClientUIManager.html",
-          "hash": "VS+hoEXzxOnntYT59mJjeA=="
+          "hash": "R2PDrvZLxp5wi1wIZnnVgw=="
         }
       },
       "is_incremental": false,
@@ -726,7 +738,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.UI.UIController.html",
-          "hash": "OGRWkQ95/GYNcMT02vGe+w=="
+          "hash": "rmkvxItGZwfWE+qIHxxOxA=="
         }
       },
       "is_incremental": false,
@@ -786,7 +798,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.World.ClientWorldManager.html",
-          "hash": "ur9XjNP8Daj2LiC8JFHhJQ=="
+          "hash": "4maeh/7x3+mC/pDGO4SfXw=="
         }
       },
       "is_incremental": false,
@@ -834,7 +846,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "2IXawhT4EJF3Rfhjs2o7/A=="
+          "hash": "RdPa9HRjwl8B8nDvWwTSaw=="
         }
       },
       "is_incremental": false,
@@ -929,8 +941,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 66,
-          "skipped_file_count": 47
+          "total_file_count": 67,
+          "skipped_file_count": 42
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
