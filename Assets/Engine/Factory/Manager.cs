@@ -1,4 +1,6 @@
-﻿namespace Engine.Factory
+﻿using System.Threading.Tasks;
+
+namespace Engine.Factory
 {
     /// <summary>
     /// Base class for managers
@@ -20,5 +22,12 @@
         /// Called on shutdown
         /// </summary>
         public abstract void Shutdown();
+
+        /// <summary>
+        /// Virtual void that is called when the game is loaded.
+        /// </summary>
+        public virtual async Task LoadGameTask() { 
+            await Task.CompletedTask; 
+        }
     }
 }

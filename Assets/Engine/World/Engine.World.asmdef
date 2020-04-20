@@ -2,7 +2,8 @@
     "name": "Engine.World",
     "references": [
         "GUID:ab0bf26c474862745b86bd0d94851aea",
-        "GUID:c5a46be53e364594ebc8f1e55c3d9dbf"
+        "GUID:c5a46be53e364594ebc8f1e55c3d9dbf",
+        "GUID:ebc6f665d5f253e4c8c884714582fe56"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -1,7 +1,6 @@
 ﻿using Engine.Factory;
 using UnityEngine;
 using Engine.Logging;
-using UnityEngine.SceneManagement;
 
 namespace Engine.Asset
 {
@@ -50,10 +49,6 @@ namespace Engine.Asset
         * Public Functions
         */
 
-        /*public Scene[] getScenes()
-        {
-            return 
-        }*/
 
         /*
          * Internal Variables

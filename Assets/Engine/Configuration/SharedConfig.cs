@@ -7,6 +7,11 @@ namespace Engine.Configuration
     /// </summary>
     public class SharedConfig
     {
+
+        /*
+         * Networking
+         */
+
         /// <summary>
         /// The byte sequence to signify escaping the next byte
         /// </summary>
@@ -27,6 +32,10 @@ namespace Engine.Configuration
         /// </summary>
         public static readonly int MAX_BUFFER_SIZE = 1024;
 
+        /*
+         * Account
+         */
+
         /// <summary>
         /// Max length for usernames
         /// </summary>
@@ -36,6 +45,25 @@ namespace Engine.Configuration
         /// Max length for passwords
         /// </summary>
         public static readonly int MAX_PASSWORD_LENGTH = 35;
+
+        /*
+         * World
+         */
+
+        /// <summary>
+        /// The size of the world chunks
+        /// </summary>
+        public static readonly int WORLD_CHUNK_SIZE = 250;
+
+        /// <summary>
+        /// How close to a chunk position you need to be for it to load
+        /// </summary>
+        public static readonly int CHUNK_LOAD_VIEW_DISTANCE = 500;
+
+        /// <summary>
+        /// How far from a chunk position before it unloads
+        /// </summary>
+        public static readonly int CHUNK_UNLOAD_VIEW_DISTANCE = 600;
 
     }
 }

@@ -7,6 +7,7 @@ using Engine.Factory;
 using UnityEngine.SceneManagement;
 using Engine.Logging;
 using Engine.Dispatch;
+using System.Collections.Generic;
 
 namespace Engine.Account
 {
@@ -25,7 +26,8 @@ namespace Engine.Account
         /// <param name="parameters"></param>
         public override void Init(params object[] parameters)
         {
-            this.connectionManager = (ConnectionManager)parameters[1];
+            this.connectionManager = (ConnectionManager) parameters[0];
+            this.managers = (List<Manager>) parameters[1];
 
             //Subscribe to events
             connectionManager.NotifyFailedConnect += OnFailedToConnect;
@@ -94,6 +96,7 @@ namespace Engine.Account
          * Internal Variables
          */
 
+        private List<Manager> managers;
         private ConnectionManager connectionManager;
 
         private string email;
@@ -228,7 +231,18 @@ namespace Engine.Account
         /// <returns></returns>
         private async Task LoadGame()
         {
-            await Task.CompletedTask;
+            foreach (Manager manager in managers)
+            {
+                try
+                {
+                    Task loadGameTask = manager.LoadGameTask();
+                    await loadGameTask;
+                }
+                catch (Exception e)
+                {
+                    Log.LogError("Failed to load game on manager " + manager.GetType().Name + ". Error:" + e.Message+" Stack Trace:"+e.StackTrace);
+                }
+            }
         }
 
         /// <summary>

@@ -32,7 +32,7 @@ namespace Engine
             AddManager(clientAssetManager);
             AddManager(connectionManager, ConnectionManager.ListenerType.CLIENT);
             AddManager(clientWorldManager);
-            AddManager(clientLoginManager, this, connectionManager);
+            AddManager(clientLoginManager, connectionManager, managers);
             AddManager(clientInputManager);
             AddManager(clientUIManager, clientAssetManager);
             AddManager(apiManager, managers);
@@ -55,6 +55,7 @@ namespace Engine
         {
             ShutdownManagers();
         }
+
 
         /*
          * Internal Variables

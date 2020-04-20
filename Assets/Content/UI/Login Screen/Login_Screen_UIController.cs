@@ -23,6 +23,7 @@ namespace Content.UI
         private Toggle rememberMe;
         private Label statusMessage;
         private VisualElement statusPanel, background;
+        private UIElementsEventSystem eventSystem;
 
         /*
          * Functions
@@ -43,6 +44,9 @@ namespace Content.UI
             newUserButton = getElement<Button>("New_User_Button");
             statusMessage = getElement<Label>("Status_Message");
             statusPanel = getElement<VisualElement>("Status_Panel");
+
+            //Load event system
+            eventSystem = gameObject.GetComponent<UIElementsEventSystem>();
 
             //Delegate focus to children
             //(weird bug where selecting outer div-
@@ -73,7 +77,7 @@ namespace Content.UI
         /// <param name="mouseUpEvent">The mouse up event.</param>
         private void LoginButtonPressed(MouseUpEvent mouseUpEvent)
         {
-            API.Client.AttemptLogin(this.getPlaceholderTextFieldRealValue(username), this.getPlaceholderTextFieldRealValue(password), rememberMe.value, updateStatusMessage, updateOpacity);
+            API.Client.AttemptLogin(this.getPlaceholderTextFieldRealValue(username), this.getPlaceholderTextFieldRealValue(password), rememberMe.value, UpdateStatusMessage, UpdateOpacity);
         }
 
         /// <summary>
@@ -102,19 +106,19 @@ namespace Content.UI
         /// <param name="disableInteraction">if true, disable panel interaction</param>
         /// <param name="color">The color of the message.</param>
         /// <param name="message">The message.</param>
-        private void updateStatusMessage(bool disableInteraction, Color color, string message)
+        private void UpdateStatusMessage(bool disableInteraction, Color color, string message)
         {
             statusPanel.visible = true;
             statusMessage.text = message;
             statusMessage.style.color = new StyleColor(color);
-            gameObject.GetComponent<UIElementsEventSystem>().enabled = disableInteraction;
+            eventSystem.sendInputEvents = disableInteraction;
         }
 
         /// <summary>
         /// Updates the opacity of the main panel
         /// </summary>
         /// <param name="opacity">The opacity value.</param>
-        private void updateOpacity(float opacity)
+        private void UpdateOpacity(float opacity)
         {
             background.style.opacity = new StyleFloat(opacity);
         }
