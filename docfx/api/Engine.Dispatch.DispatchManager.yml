@@ -5,7 +5,7 @@ items:
   id: DispatchManager
   parent: Engine.Dispatch
   children:
-  - Engine.Dispatch.DispatchManager.Init(System.Object[])
+  - Engine.Dispatch.DispatchManager.Init
   - Engine.Dispatch.DispatchManager.Process
   - Engine.Dispatch.DispatchManager.Shutdown
   langs:
@@ -32,7 +32,6 @@ items:
     content: 'public class DispatchManager : Manager'
     content.vb: >-
       Public Class DispatchManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -52,16 +51,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.Dispatch.DispatchManager.Init(System.Object[])
-  commentId: M:Engine.Dispatch.DispatchManager.Init(System.Object[])
-  id: Init(System.Object[])
+- uid: Engine.Dispatch.DispatchManager.Init
+  commentId: M:Engine.Dispatch.DispatchManager.Init
+  id: Init
   parent: Engine.Dispatch.DispatchManager
   langs:
   - csharp
   - vb
-  name: Init(Object[])
-  nameWithType: DispatchManager.Init(Object[])
-  fullName: Engine.Dispatch.DispatchManager.Init(System.Object[])
+  name: Init()
+  nameWithType: DispatchManager.Init()
+  fullName: Engine.Dispatch.DispatchManager.Init()
   type: Method
   source:
     remote:
@@ -70,30 +69,23 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/Dispatch/DispatchManager.cs
-    startLine: 18
+    startLine: 17
   assemblies:
   - Engine.Dispatch
   namespace: Engine.Dispatch
   summary: "\nCalled upon initialization\n"
   example: []
   syntax:
-    content: public override void Init(params object[] parameters)
-    parameters:
-    - id: parameters
-      type: System.Object[]
-      description: ''
-    content.vb: Public Overrides Sub Init(ParamArray parameters As Object())
-  overridden: Engine.Factory.Manager.Init(System.Object[])
+    content: public override void Init()
+    content.vb: Public Overrides Sub Init
+  overridden: Engine.Factory.Manager.Init
   overload: Engine.Dispatch.DispatchManager.Init*
-  nameWithType.vb: DispatchManager.Init(Object())
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-  fullName.vb: Engine.Dispatch.DispatchManager.Init(System.Object())
-  name.vb: Init(Object())
 - uid: Engine.Dispatch.DispatchManager.Shutdown
   commentId: M:Engine.Dispatch.DispatchManager.Shutdown
   id: Shutdown
@@ -112,7 +104,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/Dispatch/DispatchManager.cs
-    startLine: 26
+    startLine: 25
   assemblies:
   - Engine.Dispatch
   namespace: Engine.Dispatch
@@ -147,7 +139,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/Dispatch/DispatchManager.cs
-    startLine: 34
+    startLine: 33
   assemblies:
   - Engine.Dispatch
   namespace: Engine.Dispatch
@@ -501,51 +493,31 @@ references:
   name: Engine.Factory
   nameWithType: Engine.Factory
   fullName: Engine.Factory
-- uid: Engine.Factory.Manager.Init(System.Object[])
-  commentId: M:Engine.Factory.Manager.Init(System.Object[])
+- uid: Engine.Factory.Manager.Init
+  commentId: M:Engine.Factory.Manager.Init
   parent: Engine.Factory.Manager
-  isExternal: true
-  name: Init(Object[])
-  nameWithType: Manager.Init(Object[])
-  fullName: Engine.Factory.Manager.Init(System.Object[])
-  nameWithType.vb: Manager.Init(Object())
-  fullName.vb: Engine.Factory.Manager.Init(System.Object())
-  name.vb: Init(Object())
+  name: Init()
+  nameWithType: Manager.Init()
+  fullName: Engine.Factory.Manager.Init()
   spec.csharp:
-  - uid: Engine.Factory.Manager.Init(System.Object[])
+  - uid: Engine.Factory.Manager.Init
     name: Init
     nameWithType: Manager.Init
     fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.Init(System.Object[])
+  - uid: Engine.Factory.Manager.Init
     name: Init
     nameWithType: Manager.Init
     fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
   - name: )
     nameWithType: )
     fullName: )
@@ -554,32 +526,6 @@ references:
   name: Init
   nameWithType: DispatchManager.Init
   fullName: Engine.Dispatch.DispatchManager.Init
-- uid: System.Object[]
-  isExternal: true
-  name: Object[]
-  nameWithType: Object[]
-  fullName: System.Object[]
-  nameWithType.vb: Object()
-  fullName.vb: System.Object()
-  name.vb: Object()
-  spec.csharp:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
-  spec.vb:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
 - uid: Engine.Factory.Manager.Shutdown
   commentId: M:Engine.Factory.Manager.Shutdown
   parent: Engine.Factory.Manager

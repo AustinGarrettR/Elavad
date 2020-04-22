@@ -18,18 +18,11 @@ items:
 references:
 - uid: Engine.Account.ClientLoginManager
   commentId: T:Engine.Account.ClientLoginManager
-  parent: Engine.Account
   name: ClientLoginManager
   nameWithType: ClientLoginManager
   fullName: Engine.Account.ClientLoginManager
 - uid: Engine.Account.ServerLoginManager
   commentId: T:Engine.Account.ServerLoginManager
-  parent: Engine.Account
   name: ServerLoginManager
   nameWithType: ServerLoginManager
   fullName: Engine.Account.ServerLoginManager
-- uid: Engine.Account
-  commentId: N:Engine.Account
-  name: Engine.Account
-  nameWithType: Engine.Account
-  fullName: Engine.Account

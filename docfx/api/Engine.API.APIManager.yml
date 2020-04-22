@@ -5,7 +5,8 @@ items:
   id: APIManager
   parent: Engine.API
   children:
-  - Engine.API.APIManager.Init(System.Object[])
+  - Engine.API.APIManager.#ctor(System.Collections.Generic.List{Engine.Factory.Manager})
+  - Engine.API.APIManager.Init
   - Engine.API.APIManager.Process
   - Engine.API.APIManager.Shutdown
   langs:
@@ -32,7 +33,6 @@ items:
     content: 'public class APIManager : Manager'
     content.vb: >-
       Public Class APIManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -52,16 +52,55 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.API.APIManager.Init(System.Object[])
-  commentId: M:Engine.API.APIManager.Init(System.Object[])
-  id: Init(System.Object[])
+- uid: Engine.API.APIManager.#ctor(System.Collections.Generic.List{Engine.Factory.Manager})
+  commentId: M:Engine.API.APIManager.#ctor(System.Collections.Generic.List{Engine.Factory.Manager})
+  id: '#ctor(System.Collections.Generic.List{Engine.Factory.Manager})'
   parent: Engine.API.APIManager
   langs:
   - csharp
   - vb
-  name: Init(Object[])
-  nameWithType: APIManager.Init(Object[])
-  fullName: Engine.API.APIManager.Init(System.Object[])
+  name: APIManager(List<Manager>)
+  nameWithType: APIManager.APIManager(List<Manager>)
+  fullName: Engine.API.APIManager.APIManager(System.Collections.Generic.List<Engine.Factory.Manager>)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Engine/API/APIManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: .ctor
+    path: ../Assets/Engine/API/APIManager.cs
+    startLine: 19
+  assemblies:
+  - Engine.API
+  namespace: Engine.API
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public APIManager(List<Manager> managers)
+    parameters:
+    - id: managers
+      type: System.Collections.Generic.List{Engine.Factory.Manager}
+      description: The list of managers for the api to reference
+    content.vb: Public Sub New(managers As List(Of Manager))
+  overload: Engine.API.APIManager.#ctor*
+  nameWithType.vb: APIManager.APIManager(List(Of Manager))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: Engine.API.APIManager.APIManager(System.Collections.Generic.List(Of Engine.Factory.Manager))
+  name.vb: APIManager(List(Of Manager))
+- uid: Engine.API.APIManager.Init
+  commentId: M:Engine.API.APIManager.Init
+  id: Init
+  parent: Engine.API.APIManager
+  langs:
+  - csharp
+  - vb
+  name: Init()
+  nameWithType: APIManager.Init()
+  fullName: Engine.API.APIManager.Init()
   type: Method
   source:
     remote:
@@ -70,30 +109,23 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/API/APIManager.cs
-    startLine: 19
+    startLine: 32
   assemblies:
   - Engine.API
   namespace: Engine.API
   summary: "\nManager startup function\n"
   example: []
   syntax:
-    content: public override void Init(params object[] parameters)
-    parameters:
-    - id: parameters
-      type: System.Object[]
-      description: List of managers needs to be supplied
-    content.vb: Public Overrides Sub Init(ParamArray parameters As Object())
-  overridden: Engine.Factory.Manager.Init(System.Object[])
+    content: public override void Init()
+    content.vb: Public Overrides Sub Init
+  overridden: Engine.Factory.Manager.Init
   overload: Engine.API.APIManager.Init*
-  nameWithType.vb: APIManager.Init(Object())
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-  fullName.vb: Engine.API.APIManager.Init(System.Object())
-  name.vb: Init(Object())
 - uid: Engine.API.APIManager.Shutdown
   commentId: M:Engine.API.APIManager.Shutdown
   id: Shutdown
@@ -112,7 +144,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/API/APIManager.cs
-    startLine: 28
+    startLine: 40
   assemblies:
   - Engine.API
   namespace: Engine.API
@@ -147,7 +179,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/API/APIManager.cs
-    startLine: 36
+    startLine: 48
   assemblies:
   - Engine.API
   namespace: Engine.API
@@ -501,51 +533,123 @@ references:
   name: Engine.Factory
   nameWithType: Engine.Factory
   fullName: Engine.Factory
-- uid: Engine.Factory.Manager.Init(System.Object[])
-  commentId: M:Engine.Factory.Manager.Init(System.Object[])
-  parent: Engine.Factory.Manager
-  isExternal: true
-  name: Init(Object[])
-  nameWithType: Manager.Init(Object[])
-  fullName: Engine.Factory.Manager.Init(System.Object[])
-  nameWithType.vb: Manager.Init(Object())
-  fullName.vb: Engine.Factory.Manager.Init(System.Object())
-  name.vb: Init(Object())
+- uid: Engine.API.APIManager.#ctor*
+  commentId: Overload:Engine.API.APIManager.#ctor
+  name: APIManager
+  nameWithType: APIManager.APIManager
+  fullName: Engine.API.APIManager.APIManager
+- uid: System.Collections.Generic.List{Engine.Factory.Manager}
+  commentId: T:System.Collections.Generic.List{Engine.Factory.Manager}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Manager>
+  nameWithType: List<Manager>
+  fullName: System.Collections.Generic.List<Engine.Factory.Manager>
+  nameWithType.vb: List(Of Manager)
+  fullName.vb: System.Collections.Generic.List(Of Engine.Factory.Manager)
+  name.vb: List(Of Manager)
   spec.csharp:
-  - uid: Engine.Factory.Manager.Init(System.Object[])
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: Engine.Factory.Manager
+    name: Manager
+    nameWithType: Manager
+    fullName: Engine.Factory.Manager
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: Engine.Factory.Manager
+    name: Manager
+    nameWithType: Manager
+    fullName: Engine.Factory.Manager
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: Engine.Factory.Manager.Init
+  commentId: M:Engine.Factory.Manager.Init
+  parent: Engine.Factory.Manager
+  name: Init()
+  nameWithType: Manager.Init()
+  fullName: Engine.Factory.Manager.Init()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.Init
     name: Init
     nameWithType: Manager.Init
     fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.Init(System.Object[])
+  - uid: Engine.Factory.Manager.Init
     name: Init
     nameWithType: Manager.Init
     fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
   - name: )
     nameWithType: )
     fullName: )
@@ -554,32 +658,6 @@ references:
   name: Init
   nameWithType: APIManager.Init
   fullName: Engine.API.APIManager.Init
-- uid: System.Object[]
-  isExternal: true
-  name: Object[]
-  nameWithType: Object[]
-  fullName: System.Object[]
-  nameWithType.vb: Object()
-  fullName.vb: System.Object()
-  name.vb: Object()
-  spec.csharp:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
-  spec.vb:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
 - uid: Engine.Factory.Manager.Shutdown
   commentId: M:Engine.Factory.Manager.Shutdown
   parent: Engine.Factory.Manager

@@ -54,6 +54,8 @@
     name: ClientAssetManager
   - uid: Engine.Asset.ClientAssetPack
     name: ClientAssetPack
+  - uid: Engine.Asset.Player_Pack
+    name: Player_Pack
   - uid: Engine.Asset.SharedAssetManager
     name: SharedAssetManager
   - uid: Engine.Asset.SharedAssetPack
@@ -133,6 +135,13 @@
     name: PacketReader
   - uid: Engine.Networking.Utility.PacketWriter
     name: PacketWriter
+- uid: Engine.Player
+  name: Engine.Player
+  items:
+  - uid: Engine.Player.ClientPlayerManager
+    name: ClientPlayerManager
+  - uid: Engine.Player.Player
+    name: Player
 - uid: Engine.UI
   name: Engine.UI
   items:

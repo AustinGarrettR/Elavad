@@ -5,7 +5,7 @@ items:
   id: Manager
   parent: Engine.Factory
   children:
-  - Engine.Factory.Manager.Init(System.Object[])
+  - Engine.Factory.Manager.Init
   - Engine.Factory.Manager.LoadGameTask
   - Engine.Factory.Manager.Process
   - Engine.Factory.Manager.Shutdown
@@ -44,6 +44,7 @@ items:
   - Engine.Input.ClientInputManager
   - Engine.Logging.LogManager
   - Engine.Networking.ConnectionManager
+  - Engine.Player.ClientPlayerManager
   - Engine.UI.ClientUIManager
   - Engine.World.ClientWorldManager
   inheritedMembers:
@@ -62,16 +63,16 @@ items:
   - Public
   - MustInherit
   - Class
-- uid: Engine.Factory.Manager.Init(System.Object[])
-  commentId: M:Engine.Factory.Manager.Init(System.Object[])
-  id: Init(System.Object[])
+- uid: Engine.Factory.Manager.Init
+  commentId: M:Engine.Factory.Manager.Init
+  id: Init
   parent: Engine.Factory.Manager
   langs:
   - csharp
   - vb
-  name: Init(Object[])
-  nameWithType: Manager.Init(Object[])
-  fullName: Engine.Factory.Manager.Init(System.Object[])
+  name: Init()
+  nameWithType: Manager.Init()
+  fullName: Engine.Factory.Manager.Init()
   type: Method
   source:
     remote:
@@ -80,29 +81,22 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/Factory/Manager.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - Engine.Factory
   namespace: Engine.Factory
   summary: "\nCalled on initialization\n"
   example: []
   syntax:
-    content: public abstract void Init(params object[] parameters)
-    parameters:
-    - id: parameters
-      type: System.Object[]
-      description: Variable parameters
-    content.vb: Public MustOverride Sub Init(ParamArray parameters As Object())
+    content: public abstract void Init()
+    content.vb: Public MustOverride Sub Init
   overload: Engine.Factory.Manager.Init*
-  nameWithType.vb: Manager.Init(Object())
   modifiers.csharp:
   - public
   - abstract
   modifiers.vb:
   - Public
   - MustOverride
-  fullName.vb: Engine.Factory.Manager.Init(System.Object())
-  name.vb: Init(Object())
 - uid: Engine.Factory.Manager.Process
   commentId: M:Engine.Factory.Manager.Process
   id: Process
@@ -121,7 +115,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/Factory/Manager.cs
-    startLine: 18
+    startLine: 17
   assemblies:
   - Engine.Factory
   namespace: Engine.Factory
@@ -155,7 +149,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/Factory/Manager.cs
-    startLine: 23
+    startLine: 22
   assemblies:
   - Engine.Factory
   namespace: Engine.Factory
@@ -189,7 +183,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: LoadGameTask
     path: ../Assets/Engine/Factory/Manager.cs
-    startLine: 28
+    startLine: 27
   assemblies:
   - Engine.Factory
   namespace: Engine.Factory
@@ -510,32 +504,6 @@ references:
   name: Init
   nameWithType: Manager.Init
   fullName: Engine.Factory.Manager.Init
-- uid: System.Object[]
-  isExternal: true
-  name: Object[]
-  nameWithType: Object[]
-  fullName: System.Object[]
-  nameWithType.vb: Object()
-  fullName.vb: System.Object()
-  name.vb: Object()
-  spec.csharp:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
-  spec.vb:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
 - uid: Engine.Factory.Manager.Process*
   commentId: Overload:Engine.Factory.Manager.Process
   name: Process

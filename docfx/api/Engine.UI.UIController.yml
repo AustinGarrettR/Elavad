@@ -42,7 +42,6 @@ items:
       <RequireComponent(GetType(PanelRenderer))>
 
       Public MustInherit Class UIController
-
           Inherits MonoBehaviour
   inheritance:
   - System.Object
@@ -298,7 +297,6 @@ items:
   syntax:
     content: >-
       public U getElement<U>(string name)
-
           where U : VisualElement
     parameters:
     - id: name

@@ -19,7 +19,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyFailedConnectDelegate
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 118
+    startLine: 128
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking

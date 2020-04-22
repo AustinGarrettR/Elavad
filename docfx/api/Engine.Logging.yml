@@ -24,7 +24,6 @@ references:
   fullName: Engine.Logging.Log
 - uid: Engine.Logging.LogManager
   commentId: T:Engine.Logging.LogManager
-  parent: Engine.Logging
   name: LogManager
   nameWithType: LogManager
   fullName: Engine.Logging.LogManager

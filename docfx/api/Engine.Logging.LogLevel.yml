@@ -22,7 +22,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: LogLevel
     path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 104
+    startLine: 103
   assemblies:
   - Engine.Logging
   namespace: Engine.Logging
@@ -55,7 +55,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NONE
     path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 109
+    startLine: 108
   assemblies:
   - Engine.Logging
   namespace: Engine.Logging
@@ -89,7 +89,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ERRORS
     path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 114
+    startLine: 113
   assemblies:
   - Engine.Logging
   namespace: Engine.Logging
@@ -123,7 +123,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ALL
     path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 119
+    startLine: 118
   assemblies:
   - Engine.Logging
   namespace: Engine.Logging

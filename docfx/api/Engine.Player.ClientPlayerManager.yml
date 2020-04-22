@@ -1,43 +1,45 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Engine.Input.ClientInputManager
-  commentId: T:Engine.Input.ClientInputManager
-  id: ClientInputManager
-  parent: Engine.Input
+- uid: Engine.Player.ClientPlayerManager
+  commentId: T:Engine.Player.ClientPlayerManager
+  id: ClientPlayerManager
+  parent: Engine.Player
   children:
-  - Engine.Input.ClientInputManager.Init
-  - Engine.Input.ClientInputManager.Process
-  - Engine.Input.ClientInputManager.Shutdown
+  - Engine.Player.ClientPlayerManager.#ctor(UnityEngine.GameObject)
+  - Engine.Player.ClientPlayerManager.GetMyPlayer
+  - Engine.Player.ClientPlayerManager.Init
+  - Engine.Player.ClientPlayerManager.LoadGameTask
+  - Engine.Player.ClientPlayerManager.Process
+  - Engine.Player.ClientPlayerManager.Shutdown
   langs:
   - csharp
   - vb
-  name: ClientInputManager
-  nameWithType: ClientInputManager
-  fullName: Engine.Input.ClientInputManager
+  name: ClientPlayerManager
+  nameWithType: ClientPlayerManager
+  fullName: Engine.Player.ClientPlayerManager
   type: Class
   source:
     remote:
-      path: Assets/Engine/Input/ClientInputManager.cs
+      path: Assets/Engine/Player/ClientPlayerManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: ClientInputManager
-    path: ../Assets/Engine/Input/ClientInputManager.cs
-    startLine: 10
+    id: ClientPlayerManager
+    path: ../Assets/Engine/Player/ClientPlayerManager.cs
+    startLine: 13
   assemblies:
-  - Engine.Input
-  namespace: Engine.Input
-  summary: "\nHandles input\n"
+  - Engine.Player
+  namespace: Engine.Player
+  summary: "\nManages the client player\n"
   example: []
   syntax:
-    content: 'public class ClientInputManager : Manager'
+    content: 'public class ClientPlayerManager : Manager'
     content.vb: >-
-      Public Class ClientInputManager
+      Public Class ClientPlayerManager
           Inherits Manager
   inheritance:
   - System.Object
   - Engine.Factory.Manager
   inheritedMembers:
-  - Engine.Factory.Manager.LoadGameTask
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -51,117 +53,223 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.Input.ClientInputManager.Init
-  commentId: M:Engine.Input.ClientInputManager.Init
+- uid: Engine.Player.ClientPlayerManager.#ctor(UnityEngine.GameObject)
+  commentId: M:Engine.Player.ClientPlayerManager.#ctor(UnityEngine.GameObject)
+  id: '#ctor(UnityEngine.GameObject)'
+  parent: Engine.Player.ClientPlayerManager
+  langs:
+  - csharp
+  - vb
+  name: ClientPlayerManager(GameObject)
+  nameWithType: ClientPlayerManager.ClientPlayerManager(GameObject)
+  fullName: Engine.Player.ClientPlayerManager.ClientPlayerManager(UnityEngine.GameObject)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Engine/Player/ClientPlayerManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: .ctor
+    path: ../Assets/Engine/Player/ClientPlayerManager.cs
+    startLine: 24
+  assemblies:
+  - Engine.Player
+  namespace: Engine.Player
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public ClientPlayerManager(GameObject playerPrefab)
+    parameters:
+    - id: playerPrefab
+      type: UnityEngine.GameObject
+      description: The player prefab
+    content.vb: Public Sub New(playerPrefab As GameObject)
+  overload: Engine.Player.ClientPlayerManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Player.ClientPlayerManager.Init
+  commentId: M:Engine.Player.ClientPlayerManager.Init
   id: Init
-  parent: Engine.Input.ClientInputManager
+  parent: Engine.Player.ClientPlayerManager
   langs:
   - csharp
   - vb
   name: Init()
-  nameWithType: ClientInputManager.Init()
-  fullName: Engine.Input.ClientInputManager.Init()
+  nameWithType: ClientPlayerManager.Init()
+  fullName: Engine.Player.ClientPlayerManager.Init()
   type: Method
   source:
     remote:
-      path: Assets/Engine/Input/ClientInputManager.cs
+      path: Assets/Engine/Player/ClientPlayerManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
-    path: ../Assets/Engine/Input/ClientInputManager.cs
-    startLine: 19
+    path: ../Assets/Engine/Player/ClientPlayerManager.cs
+    startLine: 37
   assemblies:
-  - Engine.Input
-  namespace: Engine.Input
-  summary: "\nInitialize method\n"
+  - Engine.Player
+  namespace: Engine.Player
+  summary: "\nCalled on initialization\n"
   example: []
   syntax:
     content: public override void Init()
     content.vb: Public Overrides Sub Init
   overridden: Engine.Factory.Manager.Init
-  overload: Engine.Input.ClientInputManager.Init*
+  overload: Engine.Player.ClientPlayerManager.Init*
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-- uid: Engine.Input.ClientInputManager.Shutdown
-  commentId: M:Engine.Input.ClientInputManager.Shutdown
-  id: Shutdown
-  parent: Engine.Input.ClientInputManager
+- uid: Engine.Player.ClientPlayerManager.LoadGameTask
+  commentId: M:Engine.Player.ClientPlayerManager.LoadGameTask
+  id: LoadGameTask
+  parent: Engine.Player.ClientPlayerManager
   langs:
   - csharp
   - vb
-  name: Shutdown()
-  nameWithType: ClientInputManager.Shutdown()
-  fullName: Engine.Input.ClientInputManager.Shutdown()
+  name: LoadGameTask()
+  nameWithType: ClientPlayerManager.LoadGameTask()
+  fullName: Engine.Player.ClientPlayerManager.LoadGameTask()
   type: Method
   source:
     remote:
-      path: Assets/Engine/Input/ClientInputManager.cs
+      path: Assets/Engine/Player/ClientPlayerManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: Shutdown
-    path: ../Assets/Engine/Input/ClientInputManager.cs
-    startLine: 27
+    id: LoadGameTask
+    path: ../Assets/Engine/Player/ClientPlayerManager.cs
+    startLine: 46
   assemblies:
-  - Engine.Input
-  namespace: Engine.Input
-  summary: "\nCalled on program shutdown\n"
+  - Engine.Player
+  namespace: Engine.Player
+  summary: "\nCalled on game load\n"
   example: []
   syntax:
-    content: public override void Shutdown()
-    content.vb: Public Overrides Sub Shutdown
-  overridden: Engine.Factory.Manager.Shutdown
-  overload: Engine.Input.ClientInputManager.Shutdown*
+    content: public override Task LoadGameTask()
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Overrides Function LoadGameTask As Task
+  overridden: Engine.Factory.Manager.LoadGameTask
+  overload: Engine.Player.ClientPlayerManager.LoadGameTask*
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-- uid: Engine.Input.ClientInputManager.Process
-  commentId: M:Engine.Input.ClientInputManager.Process
+- uid: Engine.Player.ClientPlayerManager.Process
+  commentId: M:Engine.Player.ClientPlayerManager.Process
   id: Process
-  parent: Engine.Input.ClientInputManager
+  parent: Engine.Player.ClientPlayerManager
   langs:
   - csharp
   - vb
   name: Process()
-  nameWithType: ClientInputManager.Process()
-  fullName: Engine.Input.ClientInputManager.Process()
+  nameWithType: ClientPlayerManager.Process()
+  fullName: Engine.Player.ClientPlayerManager.Process()
   type: Method
   source:
     remote:
-      path: Assets/Engine/Input/ClientInputManager.cs
+      path: Assets/Engine/Player/ClientPlayerManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
-    path: ../Assets/Engine/Input/ClientInputManager.cs
-    startLine: 35
+    path: ../Assets/Engine/Player/ClientPlayerManager.cs
+    startLine: 56
   assemblies:
-  - Engine.Input
-  namespace: Engine.Input
+  - Engine.Player
+  namespace: Engine.Player
   summary: "\nCalled every frame\n"
   example: []
   syntax:
     content: public override void Process()
     content.vb: Public Overrides Sub Process
   overridden: Engine.Factory.Manager.Process
-  overload: Engine.Input.ClientInputManager.Process*
+  overload: Engine.Player.ClientPlayerManager.Process*
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
+- uid: Engine.Player.ClientPlayerManager.Shutdown
+  commentId: M:Engine.Player.ClientPlayerManager.Shutdown
+  id: Shutdown
+  parent: Engine.Player.ClientPlayerManager
+  langs:
+  - csharp
+  - vb
+  name: Shutdown()
+  nameWithType: ClientPlayerManager.Shutdown()
+  fullName: Engine.Player.ClientPlayerManager.Shutdown()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Player/ClientPlayerManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: Shutdown
+    path: ../Assets/Engine/Player/ClientPlayerManager.cs
+    startLine: 67
+  assemblies:
+  - Engine.Player
+  namespace: Engine.Player
+  summary: "\nCalled on shutdown\n"
+  example: []
+  syntax:
+    content: public override void Shutdown()
+    content.vb: Public Overrides Sub Shutdown
+  overridden: Engine.Factory.Manager.Shutdown
+  overload: Engine.Player.ClientPlayerManager.Shutdown*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Engine.Player.ClientPlayerManager.GetMyPlayer
+  commentId: M:Engine.Player.ClientPlayerManager.GetMyPlayer
+  id: GetMyPlayer
+  parent: Engine.Player.ClientPlayerManager
+  langs:
+  - csharp
+  - vb
+  name: GetMyPlayer()
+  nameWithType: ClientPlayerManager.GetMyPlayer()
+  fullName: Engine.Player.ClientPlayerManager.GetMyPlayer()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Player/ClientPlayerManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: GetMyPlayer
+    path: ../Assets/Engine/Player/ClientPlayerManager.cs
+    startLine: 76
+  assemblies:
+  - Engine.Player
+  namespace: Engine.Player
+  syntax:
+    content: public Player GetMyPlayer()
+    return:
+      type: Engine.Player.Player
+    content.vb: Public Function GetMyPlayer As Player
+  overload: Engine.Player.ClientPlayerManager.GetMyPlayer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 references:
-- uid: Engine.Input
-  commentId: N:Engine.Input
-  name: Engine.Input
-  nameWithType: Engine.Input
-  fullName: Engine.Input
+- uid: Engine.Player
+  commentId: N:Engine.Player
+  name: Engine.Player
+  nameWithType: Engine.Player
+  fullName: Engine.Player
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -175,34 +283,6 @@ references:
   name: Manager
   nameWithType: Manager
   fullName: Engine.Factory.Manager
-- uid: Engine.Factory.Manager.LoadGameTask
-  commentId: M:Engine.Factory.Manager.LoadGameTask
-  parent: Engine.Factory.Manager
-  name: LoadGameTask()
-  nameWithType: Manager.LoadGameTask()
-  fullName: Engine.Factory.Manager.LoadGameTask()
-  spec.csharp:
-  - uid: Engine.Factory.Manager.LoadGameTask
-    name: LoadGameTask
-    nameWithType: Manager.LoadGameTask
-    fullName: Engine.Factory.Manager.LoadGameTask
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: Engine.Factory.Manager.LoadGameTask
-    name: LoadGameTask
-    nameWithType: Manager.LoadGameTask
-    fullName: Engine.Factory.Manager.LoadGameTask
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -493,6 +573,24 @@ references:
   name: Engine.Factory
   nameWithType: Engine.Factory
   fullName: Engine.Factory
+- uid: Engine.Player.ClientPlayerManager.#ctor*
+  commentId: Overload:Engine.Player.ClientPlayerManager.#ctor
+  name: ClientPlayerManager
+  nameWithType: ClientPlayerManager.ClientPlayerManager
+  fullName: Engine.Player.ClientPlayerManager.ClientPlayerManager
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
 - uid: Engine.Factory.Manager.Init
   commentId: M:Engine.Factory.Manager.Init
   parent: Engine.Factory.Manager
@@ -521,22 +619,22 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Input.ClientInputManager.Init*
-  commentId: Overload:Engine.Input.ClientInputManager.Init
+- uid: Engine.Player.ClientPlayerManager.Init*
+  commentId: Overload:Engine.Player.ClientPlayerManager.Init
   name: Init
-  nameWithType: ClientInputManager.Init
-  fullName: Engine.Input.ClientInputManager.Init
-- uid: Engine.Factory.Manager.Shutdown
-  commentId: M:Engine.Factory.Manager.Shutdown
+  nameWithType: ClientPlayerManager.Init
+  fullName: Engine.Player.ClientPlayerManager.Init
+- uid: Engine.Factory.Manager.LoadGameTask
+  commentId: M:Engine.Factory.Manager.LoadGameTask
   parent: Engine.Factory.Manager
-  name: Shutdown()
-  nameWithType: Manager.Shutdown()
-  fullName: Engine.Factory.Manager.Shutdown()
+  name: LoadGameTask()
+  nameWithType: Manager.LoadGameTask()
+  fullName: Engine.Factory.Manager.LoadGameTask()
   spec.csharp:
-  - uid: Engine.Factory.Manager.Shutdown
-    name: Shutdown
-    nameWithType: Manager.Shutdown
-    fullName: Engine.Factory.Manager.Shutdown
+  - uid: Engine.Factory.Manager.LoadGameTask
+    name: LoadGameTask
+    nameWithType: Manager.LoadGameTask
+    fullName: Engine.Factory.Manager.LoadGameTask
   - name: (
     nameWithType: (
     fullName: (
@@ -544,21 +642,34 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.Shutdown
-    name: Shutdown
-    nameWithType: Manager.Shutdown
-    fullName: Engine.Factory.Manager.Shutdown
+  - uid: Engine.Factory.Manager.LoadGameTask
+    name: LoadGameTask
+    nameWithType: Manager.LoadGameTask
+    fullName: Engine.Factory.Manager.LoadGameTask
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Input.ClientInputManager.Shutdown*
-  commentId: Overload:Engine.Input.ClientInputManager.Shutdown
-  name: Shutdown
-  nameWithType: ClientInputManager.Shutdown
-  fullName: Engine.Input.ClientInputManager.Shutdown
+- uid: Engine.Player.ClientPlayerManager.LoadGameTask*
+  commentId: Overload:Engine.Player.ClientPlayerManager.LoadGameTask
+  name: LoadGameTask
+  nameWithType: ClientPlayerManager.LoadGameTask
+  fullName: Engine.Player.ClientPlayerManager.LoadGameTask
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
 - uid: Engine.Factory.Manager.Process
   commentId: M:Engine.Factory.Manager.Process
   parent: Engine.Factory.Manager
@@ -587,8 +698,52 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Input.ClientInputManager.Process*
-  commentId: Overload:Engine.Input.ClientInputManager.Process
+- uid: Engine.Player.ClientPlayerManager.Process*
+  commentId: Overload:Engine.Player.ClientPlayerManager.Process
   name: Process
-  nameWithType: ClientInputManager.Process
-  fullName: Engine.Input.ClientInputManager.Process
+  nameWithType: ClientPlayerManager.Process
+  fullName: Engine.Player.ClientPlayerManager.Process
+- uid: Engine.Factory.Manager.Shutdown
+  commentId: M:Engine.Factory.Manager.Shutdown
+  parent: Engine.Factory.Manager
+  name: Shutdown()
+  nameWithType: Manager.Shutdown()
+  fullName: Engine.Factory.Manager.Shutdown()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.Shutdown
+    name: Shutdown
+    nameWithType: Manager.Shutdown
+    fullName: Engine.Factory.Manager.Shutdown
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.Shutdown
+    name: Shutdown
+    nameWithType: Manager.Shutdown
+    fullName: Engine.Factory.Manager.Shutdown
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Engine.Player.ClientPlayerManager.Shutdown*
+  commentId: Overload:Engine.Player.ClientPlayerManager.Shutdown
+  name: Shutdown
+  nameWithType: ClientPlayerManager.Shutdown
+  fullName: Engine.Player.ClientPlayerManager.Shutdown
+- uid: Engine.Player.ClientPlayerManager.GetMyPlayer*
+  commentId: Overload:Engine.Player.ClientPlayerManager.GetMyPlayer
+  name: GetMyPlayer
+  nameWithType: ClientPlayerManager.GetMyPlayer
+  fullName: Engine.Player.ClientPlayerManager.GetMyPlayer
+- uid: Engine.Player.Player
+  commentId: T:Engine.Player.Player
+  parent: Engine.Player
+  name: Player
+  nameWithType: Player
+  fullName: Engine.Player.Player

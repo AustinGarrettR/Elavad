@@ -35,12 +35,6 @@ references:
   fullName: Engine.API.API.Server
 - uid: Engine.API.APIManager
   commentId: T:Engine.API.APIManager
-  parent: Engine.API
   name: APIManager
   nameWithType: APIManager
   fullName: Engine.API.APIManager
-- uid: Engine.API
-  commentId: N:Engine.API
-  name: Engine.API
-  nameWithType: Engine.API
-  fullName: Engine.API

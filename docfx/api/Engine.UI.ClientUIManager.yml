@@ -5,7 +5,8 @@ items:
   id: ClientUIManager
   parent: Engine.UI
   children:
-  - Engine.UI.ClientUIManager.Init(System.Object[])
+  - Engine.UI.ClientUIManager.#ctor(Engine.Asset.ClientAssetManager)
+  - Engine.UI.ClientUIManager.Init
   - Engine.UI.ClientUIManager.Process
   - Engine.UI.ClientUIManager.Shutdown
   langs:
@@ -32,7 +33,6 @@ items:
     content: 'public class ClientUIManager : Manager'
     content.vb: >-
       Public Class ClientUIManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -52,16 +52,52 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.UI.ClientUIManager.Init(System.Object[])
-  commentId: M:Engine.UI.ClientUIManager.Init(System.Object[])
-  id: Init(System.Object[])
+- uid: Engine.UI.ClientUIManager.#ctor(Engine.Asset.ClientAssetManager)
+  commentId: M:Engine.UI.ClientUIManager.#ctor(Engine.Asset.ClientAssetManager)
+  id: '#ctor(Engine.Asset.ClientAssetManager)'
   parent: Engine.UI.ClientUIManager
   langs:
   - csharp
   - vb
-  name: Init(Object[])
-  nameWithType: ClientUIManager.Init(Object[])
-  fullName: Engine.UI.ClientUIManager.Init(System.Object[])
+  name: ClientUIManager(ClientAssetManager)
+  nameWithType: ClientUIManager.ClientUIManager(ClientAssetManager)
+  fullName: Engine.UI.ClientUIManager.ClientUIManager(Engine.Asset.ClientAssetManager)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Engine/UI/ClientUIManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: .ctor
+    path: ../Assets/Engine/UI/ClientUIManager.cs
+    startLine: 19
+  assemblies:
+  - Engine.UI
+  namespace: Engine.UI
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public ClientUIManager(ClientAssetManager clientAssetManager)
+    parameters:
+    - id: clientAssetManager
+      type: Engine.Asset.ClientAssetManager
+      description: The client asset manager
+    content.vb: Public Sub New(clientAssetManager As ClientAssetManager)
+  overload: Engine.UI.ClientUIManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.UI.ClientUIManager.Init
+  commentId: M:Engine.UI.ClientUIManager.Init
+  id: Init
+  parent: Engine.UI.ClientUIManager
+  langs:
+  - csharp
+  - vb
+  name: Init()
+  nameWithType: ClientUIManager.Init()
+  fullName: Engine.UI.ClientUIManager.Init()
   type: Method
   source:
     remote:
@@ -70,30 +106,23 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/UI/ClientUIManager.cs
-    startLine: 19
+    startLine: 32
   assemblies:
   - Engine.UI
   namespace: Engine.UI
   summary: "\nInitialize method\n"
   example: []
   syntax:
-    content: public override void Init(params object[] parameters)
-    parameters:
-    - id: parameters
-      type: System.Object[]
-      description: ClientAsetManager input
-    content.vb: Public Overrides Sub Init(ParamArray parameters As Object())
-  overridden: Engine.Factory.Manager.Init(System.Object[])
+    content: public override void Init()
+    content.vb: Public Overrides Sub Init
+  overridden: Engine.Factory.Manager.Init
   overload: Engine.UI.ClientUIManager.Init*
-  nameWithType.vb: ClientUIManager.Init(Object())
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-  fullName.vb: Engine.UI.ClientUIManager.Init(System.Object())
-  name.vb: Init(Object())
 - uid: Engine.UI.ClientUIManager.Shutdown
   commentId: M:Engine.UI.ClientUIManager.Shutdown
   id: Shutdown
@@ -112,7 +141,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/UI/ClientUIManager.cs
-    startLine: 29
+    startLine: 40
   assemblies:
   - Engine.UI
   namespace: Engine.UI
@@ -147,7 +176,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/UI/ClientUIManager.cs
-    startLine: 37
+    startLine: 48
   assemblies:
   - Engine.UI
   namespace: Engine.UI
@@ -501,51 +530,47 @@ references:
   name: Engine.Factory
   nameWithType: Engine.Factory
   fullName: Engine.Factory
-- uid: Engine.Factory.Manager.Init(System.Object[])
-  commentId: M:Engine.Factory.Manager.Init(System.Object[])
+- uid: Engine.UI.ClientUIManager.#ctor*
+  commentId: Overload:Engine.UI.ClientUIManager.#ctor
+  name: ClientUIManager
+  nameWithType: ClientUIManager.ClientUIManager
+  fullName: Engine.UI.ClientUIManager.ClientUIManager
+- uid: Engine.Asset.ClientAssetManager
+  commentId: T:Engine.Asset.ClientAssetManager
+  parent: Engine.Asset
+  name: ClientAssetManager
+  nameWithType: ClientAssetManager
+  fullName: Engine.Asset.ClientAssetManager
+- uid: Engine.Asset
+  commentId: N:Engine.Asset
+  name: Engine.Asset
+  nameWithType: Engine.Asset
+  fullName: Engine.Asset
+- uid: Engine.Factory.Manager.Init
+  commentId: M:Engine.Factory.Manager.Init
   parent: Engine.Factory.Manager
-  isExternal: true
-  name: Init(Object[])
-  nameWithType: Manager.Init(Object[])
-  fullName: Engine.Factory.Manager.Init(System.Object[])
-  nameWithType.vb: Manager.Init(Object())
-  fullName.vb: Engine.Factory.Manager.Init(System.Object())
-  name.vb: Init(Object())
+  name: Init()
+  nameWithType: Manager.Init()
+  fullName: Engine.Factory.Manager.Init()
   spec.csharp:
-  - uid: Engine.Factory.Manager.Init(System.Object[])
+  - uid: Engine.Factory.Manager.Init
     name: Init
     nameWithType: Manager.Init
     fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.Init(System.Object[])
+  - uid: Engine.Factory.Manager.Init
     name: Init
     nameWithType: Manager.Init
     fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
   - name: )
     nameWithType: )
     fullName: )
@@ -554,32 +579,6 @@ references:
   name: Init
   nameWithType: ClientUIManager.Init
   fullName: Engine.UI.ClientUIManager.Init
-- uid: System.Object[]
-  isExternal: true
-  name: Object[]
-  nameWithType: Object[]
-  fullName: System.Object[]
-  nameWithType.vb: Object()
-  fullName.vb: System.Object()
-  name.vb: Object()
-  spec.csharp:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
-  spec.vb:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
 - uid: Engine.Factory.Manager.Shutdown
   commentId: M:Engine.Factory.Manager.Shutdown
   parent: Engine.Factory.Manager

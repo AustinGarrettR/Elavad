@@ -6,7 +6,7 @@ items:
   parent: Engine.Logging
   children:
   - Engine.Logging.LogManager.getLogLevel
-  - Engine.Logging.LogManager.Init(System.Object[])
+  - Engine.Logging.LogManager.Init
   - Engine.Logging.LogManager.Process
   - Engine.Logging.LogManager.SetLogLevel(Engine.Logging.LogLevel)
   - Engine.Logging.LogManager.Shutdown
@@ -34,7 +34,6 @@ items:
     content: 'public class LogManager : Manager'
     content.vb: >-
       Public Class LogManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -54,16 +53,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.Logging.LogManager.Init(System.Object[])
-  commentId: M:Engine.Logging.LogManager.Init(System.Object[])
-  id: Init(System.Object[])
+- uid: Engine.Logging.LogManager.Init
+  commentId: M:Engine.Logging.LogManager.Init
+  id: Init
   parent: Engine.Logging.LogManager
   langs:
   - csharp
   - vb
-  name: Init(Object[])
-  nameWithType: LogManager.Init(Object[])
-  fullName: Engine.Logging.LogManager.Init(System.Object[])
+  name: Init()
+  nameWithType: LogManager.Init()
+  fullName: Engine.Logging.LogManager.Init()
   type: Method
   source:
     remote:
@@ -72,30 +71,23 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 19
+    startLine: 18
   assemblies:
   - Engine.Logging
   namespace: Engine.Logging
   summary: "\nCalled on initialization\n"
   example: []
   syntax:
-    content: public override void Init(params object[] parameters)
-    parameters:
-    - id: parameters
-      type: System.Object[]
-      description: No parameters used
-    content.vb: Public Overrides Sub Init(ParamArray parameters As Object())
-  overridden: Engine.Factory.Manager.Init(System.Object[])
+    content: public override void Init()
+    content.vb: Public Overrides Sub Init
+  overridden: Engine.Factory.Manager.Init
   overload: Engine.Logging.LogManager.Init*
-  nameWithType.vb: LogManager.Init(Object())
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-  fullName.vb: Engine.Logging.LogManager.Init(System.Object())
-  name.vb: Init(Object())
 - uid: Engine.Logging.LogManager.Process
   commentId: M:Engine.Logging.LogManager.Process
   id: Process
@@ -114,7 +106,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 27
+    startLine: 26
   assemblies:
   - Engine.Logging
   namespace: Engine.Logging
@@ -149,7 +141,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 35
+    startLine: 34
   assemblies:
   - Engine.Logging
   namespace: Engine.Logging
@@ -184,7 +176,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: getLogLevel
     path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 57
+    startLine: 56
   assemblies:
   - Engine.Logging
   namespace: Engine.Logging
@@ -219,7 +211,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: SetLogLevel
     path: ../Assets/Engine/Logging/LogManager.cs
-    startLine: 66
+    startLine: 65
   assemblies:
   - Engine.Logging
   namespace: Engine.Logging
@@ -574,51 +566,31 @@ references:
   name: Engine.Factory
   nameWithType: Engine.Factory
   fullName: Engine.Factory
-- uid: Engine.Factory.Manager.Init(System.Object[])
-  commentId: M:Engine.Factory.Manager.Init(System.Object[])
+- uid: Engine.Factory.Manager.Init
+  commentId: M:Engine.Factory.Manager.Init
   parent: Engine.Factory.Manager
-  isExternal: true
-  name: Init(Object[])
-  nameWithType: Manager.Init(Object[])
-  fullName: Engine.Factory.Manager.Init(System.Object[])
-  nameWithType.vb: Manager.Init(Object())
-  fullName.vb: Engine.Factory.Manager.Init(System.Object())
-  name.vb: Init(Object())
+  name: Init()
+  nameWithType: Manager.Init()
+  fullName: Engine.Factory.Manager.Init()
   spec.csharp:
-  - uid: Engine.Factory.Manager.Init(System.Object[])
+  - uid: Engine.Factory.Manager.Init
     name: Init
     nameWithType: Manager.Init
     fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.Init(System.Object[])
+  - uid: Engine.Factory.Manager.Init
     name: Init
     nameWithType: Manager.Init
     fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
   - name: )
     nameWithType: )
     fullName: )
@@ -627,32 +599,6 @@ references:
   name: Init
   nameWithType: LogManager.Init
   fullName: Engine.Logging.LogManager.Init
-- uid: System.Object[]
-  isExternal: true
-  name: Object[]
-  nameWithType: Object[]
-  fullName: System.Object[]
-  nameWithType.vb: Object()
-  fullName.vb: System.Object()
-  name.vb: Object()
-  spec.csharp:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
-  spec.vb:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
 - uid: Engine.Factory.Manager.Process
   commentId: M:Engine.Factory.Manager.Process
   parent: Engine.Factory.Manager

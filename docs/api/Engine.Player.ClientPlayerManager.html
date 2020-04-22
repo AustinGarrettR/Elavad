@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class ClientAssetManager
+    <title>Class ClientPlayerManager
    | Elavad Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class ClientAssetManager
+    <meta name="title" content="Class ClientPlayerManager
    | Elavad Documentation ">
     <meta name="generator" content="docfx 2.52.0.0">
     
@@ -77,25 +77,22 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Engine.Asset.ClientAssetManager">
+            <article class="content wrap" id="_content" data-uid="Engine.Player.ClientPlayerManager">
   
   
-  <h1 id="Engine_Asset_ClientAssetManager" data-uid="Engine.Asset.ClientAssetManager" class="text-break">Class ClientAssetManager
+  <h1 id="Engine_Player_ClientPlayerManager" data-uid="Engine.Player.ClientPlayerManager" class="text-break">Class ClientPlayerManager
   </h1>
-  <div class="markdown level0 summary"><p>The manager that handles asset loading</p>
+  <div class="markdown level0 summary"><p>Manages the client player</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><a class="xref" href="Engine.Factory.Manager.html">Manager</a></div>
-    <div class="level2"><span class="xref">ClientAssetManager</span></div>
+    <div class="level2"><span class="xref">ClientPlayerManager</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="Engine.Factory.Manager.html#Engine_Factory_Manager_LoadGameTask">Manager.LoadGameTask()</a>
-    </div>
     <div>
       <span class="xref">System.Object.Equals(System.Object)</span>
     </div>
@@ -118,61 +115,29 @@
       <span class="xref">System.Object.ToString()</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Engine.Asset.html">Engine.Asset</a></h6>
-  <h6><strong>Assembly</strong>: Engine.Asset.dll</h6>
-  <h5 id="Engine_Asset_ClientAssetManager_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Engine.Player.html">Engine.Player</a></h6>
+  <h6><strong>Assembly</strong>: Engine.Player.dll</h6>
+  <h5 id="Engine_Player_ClientPlayerManager_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ClientAssetManager : Manager</code></pre>
+    <pre><code class="lang-csharp hljs">public class ClientPlayerManager : Manager</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h3 id="constructors">Constructors
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_Asset_ClientAssetManager_GetPlayerPrefab.md&amp;value=---%0Auid%3A%20Engine.Asset.ClientAssetManager.GetPlayerPrefab%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_Player_ClientPlayerManager__ctor_UnityEngine_GameObject_.md&amp;value=---%0Auid%3A%20Engine.Player.ClientPlayerManager.%23ctor(UnityEngine.GameObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/Asset/ClientAssetManager.cs/#L77">View Source</a>
+    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/Player/ClientPlayerManager.cs/#L25">View Source</a>
   </span>
-  <a id="Engine_Asset_ClientAssetManager_GetPlayerPrefab_" data-uid="Engine.Asset.ClientAssetManager.GetPlayerPrefab*"></a>
-  <h4 id="Engine_Asset_ClientAssetManager_GetPlayerPrefab" data-uid="Engine.Asset.ClientAssetManager.GetPlayerPrefab">GetPlayerPrefab()</h4>
-  <div class="markdown level1 summary"><p>Returns the main player prefab</p>
+  <a id="Engine_Player_ClientPlayerManager__ctor_" data-uid="Engine.Player.ClientPlayerManager.#ctor*"></a>
+  <h4 id="Engine_Player_ClientPlayerManager__ctor_UnityEngine_GameObject_" data-uid="Engine.Player.ClientPlayerManager.#ctor(UnityEngine.GameObject)">ClientPlayerManager(GameObject)</h4>
+  <div class="markdown level1 summary"><p>Constructor</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GameObject GetPlayerPrefab()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UnityEngine.GameObject</span></td>
-        <td><p>The player prefab</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_Asset_ClientAssetManager_GetUIPanel_System_String_.md&amp;value=---%0Auid%3A%20Engine.Asset.ClientAssetManager.GetUIPanel(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/Asset/ClientAssetManager.cs/#L56">View Source</a>
-  </span>
-  <a id="Engine_Asset_ClientAssetManager_GetUIPanel_" data-uid="Engine.Asset.ClientAssetManager.GetUIPanel*"></a>
-  <h4 id="Engine_Asset_ClientAssetManager_GetUIPanel_System_String_" data-uid="Engine.Asset.ClientAssetManager.GetUIPanel(System.String)">GetUIPanel(String)</h4>
-  <div class="markdown level1 summary"><p>Return a UI panel from the asset pack</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public GameObject GetUIPanel(string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public ClientPlayerManager(GameObject playerPrefab)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -185,13 +150,30 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td><p>The name of the panel</p>
+        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td><span class="parametername">playerPrefab</span></td>
+        <td><p>The player prefab</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_Player_ClientPlayerManager_GetMyPlayer.md&amp;value=---%0Auid%3A%20Engine.Player.ClientPlayerManager.GetMyPlayer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/Player/ClientPlayerManager.cs/#L77">View Source</a>
+  </span>
+  <a id="Engine_Player_ClientPlayerManager_GetMyPlayer_" data-uid="Engine.Player.ClientPlayerManager.GetMyPlayer*"></a>
+  <h4 id="Engine_Player_ClientPlayerManager_GetMyPlayer" data-uid="Engine.Player.ClientPlayerManager.GetMyPlayer">GetMyPlayer()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Player GetMyPlayer()</code></pre>
+  </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
@@ -202,21 +184,21 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnityEngine.GameObject</span></td>
+        <td><a class="xref" href="Engine.Player.Player.html">Player</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_Asset_ClientAssetManager_Init.md&amp;value=---%0Auid%3A%20Engine.Asset.ClientAssetManager.Init%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_Player_ClientPlayerManager_Init.md&amp;value=---%0Auid%3A%20Engine.Player.ClientPlayerManager.Init%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/Asset/ClientAssetManager.cs/#L20">View Source</a>
+    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/Player/ClientPlayerManager.cs/#L38">View Source</a>
   </span>
-  <a id="Engine_Asset_ClientAssetManager_Init_" data-uid="Engine.Asset.ClientAssetManager.Init*"></a>
-  <h4 id="Engine_Asset_ClientAssetManager_Init" data-uid="Engine.Asset.ClientAssetManager.Init">Init()</h4>
-  <div class="markdown level1 summary"><p>Initialize method</p>
+  <a id="Engine_Player_ClientPlayerManager_Init_" data-uid="Engine.Player.ClientPlayerManager.Init*"></a>
+  <h4 id="Engine_Player_ClientPlayerManager_Init" data-uid="Engine.Player.ClientPlayerManager.Init">Init()</h4>
+  <div class="markdown level1 summary"><p>Called on initialization</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -227,13 +209,46 @@
   <div><a class="xref" href="Engine.Factory.Manager.html#Engine_Factory_Manager_Init">Manager.Init()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_Asset_ClientAssetManager_Process.md&amp;value=---%0Auid%3A%20Engine.Asset.ClientAssetManager.Process%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_Player_ClientPlayerManager_LoadGameTask.md&amp;value=---%0Auid%3A%20Engine.Player.ClientPlayerManager.LoadGameTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/Asset/ClientAssetManager.cs/#L42">View Source</a>
+    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/Player/ClientPlayerManager.cs/#L47">View Source</a>
   </span>
-  <a id="Engine_Asset_ClientAssetManager_Process_" data-uid="Engine.Asset.ClientAssetManager.Process*"></a>
-  <h4 id="Engine_Asset_ClientAssetManager_Process" data-uid="Engine.Asset.ClientAssetManager.Process">Process()</h4>
+  <a id="Engine_Player_ClientPlayerManager_LoadGameTask_" data-uid="Engine.Player.ClientPlayerManager.LoadGameTask*"></a>
+  <h4 id="Engine_Player_ClientPlayerManager_LoadGameTask" data-uid="Engine.Player.ClientPlayerManager.LoadGameTask">LoadGameTask()</h4>
+  <div class="markdown level1 summary"><p>Called on game load</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task LoadGameTask()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Engine.Factory.Manager.html#Engine_Factory_Manager_LoadGameTask">Manager.LoadGameTask()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_Player_ClientPlayerManager_Process.md&amp;value=---%0Auid%3A%20Engine.Player.ClientPlayerManager.Process%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/Player/ClientPlayerManager.cs/#L57">View Source</a>
+  </span>
+  <a id="Engine_Player_ClientPlayerManager_Process_" data-uid="Engine.Player.ClientPlayerManager.Process*"></a>
+  <h4 id="Engine_Player_ClientPlayerManager_Process" data-uid="Engine.Player.ClientPlayerManager.Process">Process()</h4>
   <div class="markdown level1 summary"><p>Called every frame</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -245,14 +260,14 @@
   <div><a class="xref" href="Engine.Factory.Manager.html#Engine_Factory_Manager_Process">Manager.Process()</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_Asset_ClientAssetManager_Shutdown.md&amp;value=---%0Auid%3A%20Engine.Asset.ClientAssetManager.Shutdown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_Player_ClientPlayerManager_Shutdown.md&amp;value=---%0Auid%3A%20Engine.Player.ClientPlayerManager.Shutdown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/Asset/ClientAssetManager.cs/#L34">View Source</a>
+    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/Player/ClientPlayerManager.cs/#L68">View Source</a>
   </span>
-  <a id="Engine_Asset_ClientAssetManager_Shutdown_" data-uid="Engine.Asset.ClientAssetManager.Shutdown*"></a>
-  <h4 id="Engine_Asset_ClientAssetManager_Shutdown" data-uid="Engine.Asset.ClientAssetManager.Shutdown">Shutdown()</h4>
-  <div class="markdown level1 summary"><p>Called on program shutdown</p>
+  <a id="Engine_Player_ClientPlayerManager_Shutdown_" data-uid="Engine.Player.ClientPlayerManager.Shutdown*"></a>
+  <h4 id="Engine_Player_ClientPlayerManager_Shutdown" data-uid="Engine.Player.ClientPlayerManager.Shutdown">Shutdown()</h4>
+  <div class="markdown level1 summary"><p>Called on shutdown</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -269,10 +284,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_Asset_ClientAssetManager.md&amp;value=---%0Auid%3A%20Engine.Asset.ClientAssetManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_Player_ClientPlayerManager.md&amp;value=---%0Auid%3A%20Engine.Player.ClientPlayerManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/Asset/ClientAssetManager.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/Player/ClientPlayerManager.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

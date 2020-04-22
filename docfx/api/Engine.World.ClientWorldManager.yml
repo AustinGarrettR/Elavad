@@ -5,7 +5,8 @@ items:
   id: ClientWorldManager
   parent: Engine.World
   children:
-  - Engine.World.ClientWorldManager.Init(System.Object[])
+  - Engine.World.ClientWorldManager.#ctor(Engine.Player.ClientPlayerManager)
+  - Engine.World.ClientWorldManager.Init
   - Engine.World.ClientWorldManager.LoadGameTask
   - Engine.World.ClientWorldManager.Process
   - Engine.World.ClientWorldManager.Shutdown
@@ -23,7 +24,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ClientWorldManager
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -33,7 +34,6 @@ items:
     content: 'public class ClientWorldManager : Manager'
     content.vb: >-
       Public Class ClientWorldManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -52,16 +52,52 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.World.ClientWorldManager.Init(System.Object[])
-  commentId: M:Engine.World.ClientWorldManager.Init(System.Object[])
-  id: Init(System.Object[])
+- uid: Engine.World.ClientWorldManager.#ctor(Engine.Player.ClientPlayerManager)
+  commentId: M:Engine.World.ClientWorldManager.#ctor(Engine.Player.ClientPlayerManager)
+  id: '#ctor(Engine.Player.ClientPlayerManager)'
   parent: Engine.World.ClientWorldManager
   langs:
   - csharp
   - vb
-  name: Init(Object[])
-  nameWithType: ClientWorldManager.Init(Object[])
-  fullName: Engine.World.ClientWorldManager.Init(System.Object[])
+  name: ClientWorldManager(ClientPlayerManager)
+  nameWithType: ClientWorldManager.ClientWorldManager(ClientPlayerManager)
+  fullName: Engine.World.ClientWorldManager.ClientWorldManager(Engine.Player.ClientPlayerManager)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Engine/World/ClientWorldManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: .ctor
+    path: ../Assets/Engine/World/ClientWorldManager.cs
+    startLine: 24
+  assemblies:
+  - Engine.World
+  namespace: Engine.World
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public ClientWorldManager(ClientPlayerManager clientPlayerManager)
+    parameters:
+    - id: clientPlayerManager
+      type: Engine.Player.ClientPlayerManager
+      description: The client player manager reference
+    content.vb: Public Sub New(clientPlayerManager As ClientPlayerManager)
+  overload: Engine.World.ClientWorldManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.World.ClientWorldManager.Init
+  commentId: M:Engine.World.ClientWorldManager.Init
+  id: Init
+  parent: Engine.World.ClientWorldManager
+  langs:
+  - csharp
+  - vb
+  name: Init()
+  nameWithType: ClientWorldManager.Init()
+  fullName: Engine.World.ClientWorldManager.Init()
   type: Method
   source:
     remote:
@@ -70,30 +106,23 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 27
+    startLine: 37
   assemblies:
   - Engine.World
   namespace: Engine.World
   summary: "\nCalled on manager initialization\n"
   example: []
   syntax:
-    content: public override void Init(params object[] parameters)
-    parameters:
-    - id: parameters
-      type: System.Object[]
-      description: Variable manager parameters
-    content.vb: Public Overrides Sub Init(ParamArray parameters As Object())
-  overridden: Engine.Factory.Manager.Init(System.Object[])
+    content: public override void Init()
+    content.vb: Public Overrides Sub Init
+  overridden: Engine.Factory.Manager.Init
   overload: Engine.World.ClientWorldManager.Init*
-  nameWithType.vb: ClientWorldManager.Init(Object())
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-  fullName.vb: Engine.World.ClientWorldManager.Init(System.Object())
-  name.vb: Init(Object())
 - uid: Engine.World.ClientWorldManager.Shutdown
   commentId: M:Engine.World.ClientWorldManager.Shutdown
   id: Shutdown
@@ -112,7 +141,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 44
+    startLine: 48
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -147,7 +176,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 52
+    startLine: 56
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -182,7 +211,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: LoadGameTask
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 67
+    startLine: 71
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -511,51 +540,47 @@ references:
   name: Engine.Factory
   nameWithType: Engine.Factory
   fullName: Engine.Factory
-- uid: Engine.Factory.Manager.Init(System.Object[])
-  commentId: M:Engine.Factory.Manager.Init(System.Object[])
+- uid: Engine.World.ClientWorldManager.#ctor*
+  commentId: Overload:Engine.World.ClientWorldManager.#ctor
+  name: ClientWorldManager
+  nameWithType: ClientWorldManager.ClientWorldManager
+  fullName: Engine.World.ClientWorldManager.ClientWorldManager
+- uid: Engine.Player.ClientPlayerManager
+  commentId: T:Engine.Player.ClientPlayerManager
+  parent: Engine.Player
+  name: ClientPlayerManager
+  nameWithType: ClientPlayerManager
+  fullName: Engine.Player.ClientPlayerManager
+- uid: Engine.Player
+  commentId: N:Engine.Player
+  name: Engine.Player
+  nameWithType: Engine.Player
+  fullName: Engine.Player
+- uid: Engine.Factory.Manager.Init
+  commentId: M:Engine.Factory.Manager.Init
   parent: Engine.Factory.Manager
-  isExternal: true
-  name: Init(Object[])
-  nameWithType: Manager.Init(Object[])
-  fullName: Engine.Factory.Manager.Init(System.Object[])
-  nameWithType.vb: Manager.Init(Object())
-  fullName.vb: Engine.Factory.Manager.Init(System.Object())
-  name.vb: Init(Object())
+  name: Init()
+  nameWithType: Manager.Init()
+  fullName: Engine.Factory.Manager.Init()
   spec.csharp:
-  - uid: Engine.Factory.Manager.Init(System.Object[])
+  - uid: Engine.Factory.Manager.Init
     name: Init
     nameWithType: Manager.Init
     fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.Init(System.Object[])
+  - uid: Engine.Factory.Manager.Init
     name: Init
     nameWithType: Manager.Init
     fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
   - name: )
     nameWithType: )
     fullName: )
@@ -564,32 +589,6 @@ references:
   name: Init
   nameWithType: ClientWorldManager.Init
   fullName: Engine.World.ClientWorldManager.Init
-- uid: System.Object[]
-  isExternal: true
-  name: Object[]
-  nameWithType: Object[]
-  fullName: System.Object[]
-  nameWithType.vb: Object()
-  fullName.vb: System.Object()
-  name.vb: Object()
-  spec.csharp:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
-  spec.vb:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
 - uid: Engine.Factory.Manager.Shutdown
   commentId: M:Engine.Factory.Manager.Shutdown
   parent: Engine.Factory.Manager

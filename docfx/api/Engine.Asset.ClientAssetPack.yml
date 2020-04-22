@@ -5,6 +5,7 @@ items:
   id: ClientAssetPack
   parent: Engine.Asset
   children:
+  - Engine.Asset.ClientAssetPack.playerPack
   - Engine.Asset.ClientAssetPack.uiPack
   langs:
   - csharp
@@ -35,7 +36,6 @@ items:
       <CreateAssetMenu(fileName:="ClientAssetPack", menuName:="Data Packs/ClientAssetPack", order:=1)>
 
       Public Class ClientAssetPack
-
           Inherits ScriptableObject
   inheritance:
   - System.Object
@@ -133,6 +133,39 @@ items:
     return:
       type: Engine.Asset.UI_Pack
     content.vb: Public uiPack As UI_Pack
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Asset.ClientAssetPack.playerPack
+  commentId: F:Engine.Asset.ClientAssetPack.playerPack
+  id: playerPack
+  parent: Engine.Asset.ClientAssetPack
+  langs:
+  - csharp
+  - vb
+  name: playerPack
+  nameWithType: ClientAssetPack.playerPack
+  fullName: Engine.Asset.ClientAssetPack.playerPack
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Asset/ClientAssetPack.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: playerPack
+    path: ../Assets/Engine/Asset/ClientAssetPack.cs
+    startLine: 18
+  assemblies:
+  - Engine.Asset
+  namespace: Engine.Asset
+  summary: "\nA reference to a player pack\n"
+  example: []
+  syntax:
+    content: public Player_Pack playerPack
+    return:
+      type: Engine.Asset.Player_Pack
+    content.vb: Public playerPack As Player_Pack
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -2447,3 +2480,9 @@ references:
   name: UI_Pack
   nameWithType: UI_Pack
   fullName: Engine.Asset.UI_Pack
+- uid: Engine.Asset.Player_Pack
+  commentId: T:Engine.Asset.Player_Pack
+  parent: Engine.Asset
+  name: Player_Pack
+  nameWithType: Player_Pack
+  fullName: Engine.Asset.Player_Pack

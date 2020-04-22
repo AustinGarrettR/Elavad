@@ -20,7 +20,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Dispatcher
     path: ../Assets/Engine/Dispatch/Dispatcher.cs
-    startLine: 8
+    startLine: 9
   assemblies:
   - Engine.Dispatch
   namespace: Engine.Dispatch
@@ -64,7 +64,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Invoke
     path: ../Assets/Engine/Dispatch/Dispatcher.cs
-    startLine: 25
+    startLine: 26
   assemblies:
   - Engine.Dispatch
   namespace: Engine.Dispatch

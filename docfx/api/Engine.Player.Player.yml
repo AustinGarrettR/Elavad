@@ -1,33 +1,34 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Engine.World.EnvironmentSystem
-  commentId: T:Engine.World.EnvironmentSystem
-  id: EnvironmentSystem
-  parent: Engine.World
-  children: []
+- uid: Engine.Player.Player
+  commentId: T:Engine.Player.Player
+  id: Player
+  parent: Engine.Player
+  children:
+  - Engine.Player.Player.GetPlayerObject
   langs:
   - csharp
   - vb
-  name: EnvironmentSystem
-  nameWithType: EnvironmentSystem
-  fullName: Engine.World.EnvironmentSystem
+  name: Player
+  nameWithType: Player
+  fullName: Engine.Player.Player
   type: Class
   source:
     remote:
-      path: Assets/Engine/World/EnvironmentSystem.cs
+      path: Assets/Engine/Player/Player.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: EnvironmentSystem
-    path: ../Assets/Engine/World/EnvironmentSystem.cs
-    startLine: 13
+    id: Player
+    path: ../Assets/Engine/Player/Player.cs
+    startLine: 7
   assemblies:
-  - Engine.World
-  namespace: Engine.World
-  summary: "\nHandles changing the environment based on volumes\n"
+  - Engine.Player
+  namespace: Engine.Player
+  summary: "\nThis class represents a player instance\n"
   example: []
   syntax:
-    content: public class EnvironmentSystem
-    content.vb: Public Class EnvironmentSystem
+    content: public class Player
+    content.vb: Public Class Player
   inheritance:
   - System.Object
   inheritedMembers:
@@ -44,12 +45,47 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: Engine.Player.Player.GetPlayerObject
+  commentId: M:Engine.Player.Player.GetPlayerObject
+  id: GetPlayerObject
+  parent: Engine.Player.Player
+  langs:
+  - csharp
+  - vb
+  name: GetPlayerObject()
+  nameWithType: Player.GetPlayerObject()
+  fullName: Engine.Player.Player.GetPlayerObject()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Player/Player.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: GetPlayerObject
+    path: ../Assets/Engine/Player/Player.cs
+    startLine: 45
+  assemblies:
+  - Engine.Player
+  namespace: Engine.Player
+  summary: "\nReturns the player object\n"
+  example: []
+  syntax:
+    content: public GameObject GetPlayerObject()
+    return:
+      type: UnityEngine.GameObject
+      description: ''
+    content.vb: Public Function GetPlayerObject As GameObject
+  overload: Engine.Player.Player.GetPlayerObject*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 references:
-- uid: Engine.World
-  commentId: N:Engine.World
-  name: Engine.World
-  nameWithType: Engine.World
-  fullName: Engine.World
+- uid: Engine.Player
+  commentId: N:Engine.Player
+  name: Engine.Player
+  nameWithType: Engine.Player
+  fullName: Engine.Player
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -342,3 +378,21 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: Engine.Player.Player.GetPlayerObject*
+  commentId: Overload:Engine.Player.Player.GetPlayerObject
+  name: GetPlayerObject
+  nameWithType: Player.GetPlayerObject
+  fullName: Engine.Player.Player.GetPlayerObject
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

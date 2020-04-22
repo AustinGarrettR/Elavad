@@ -125,6 +125,22 @@ references:
   commentId: T:Engine.Account.ClientLoginManager
   fullName: Engine.Account.ClientLoginManager
   nameWithType: ClientLoginManager
+- uid: Engine.Account.ClientLoginManager.#ctor(Engine.Networking.ConnectionManager,System.Collections.Generic.List{Engine.Factory.Manager})
+  name: ClientLoginManager(ConnectionManager, List<Manager>)
+  href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager__ctor_Engine_Networking_ConnectionManager_System_Collections_Generic_List_Engine_Factory_Manager__
+  commentId: M:Engine.Account.ClientLoginManager.#ctor(Engine.Networking.ConnectionManager,System.Collections.Generic.List{Engine.Factory.Manager})
+  name.vb: ClientLoginManager(ConnectionManager, List(Of Manager))
+  fullName: Engine.Account.ClientLoginManager.ClientLoginManager(Engine.Networking.ConnectionManager, System.Collections.Generic.List<Engine.Factory.Manager>)
+  fullName.vb: Engine.Account.ClientLoginManager.ClientLoginManager(Engine.Networking.ConnectionManager, System.Collections.Generic.List(Of Engine.Factory.Manager))
+  nameWithType: ClientLoginManager.ClientLoginManager(ConnectionManager, List<Manager>)
+  nameWithType.vb: ClientLoginManager.ClientLoginManager(ConnectionManager, List(Of Manager))
+- uid: Engine.Account.ClientLoginManager.#ctor*
+  name: ClientLoginManager
+  href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager__ctor_
+  commentId: Overload:Engine.Account.ClientLoginManager.#ctor
+  isSpec: "True"
+  fullName: Engine.Account.ClientLoginManager.ClientLoginManager
+  nameWithType: ClientLoginManager.ClientLoginManager
 - uid: Engine.Account.ClientLoginManager.AttemptLogin(System.String,System.String,System.Boolean,System.Action{System.Boolean,UnityEngine.Color,System.String},System.Action{System.Single})
   name: AttemptLogin(String, String, Boolean, Action<Boolean, Color, String>, Action<Single>)
   href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager_AttemptLogin_System_String_System_String_System_Boolean_System_Action_System_Boolean_UnityEngine_Color_System_String__System_Action_System_Single__
@@ -141,15 +157,12 @@ references:
   isSpec: "True"
   fullName: Engine.Account.ClientLoginManager.AttemptLogin
   nameWithType: ClientLoginManager.AttemptLogin
-- uid: Engine.Account.ClientLoginManager.Init(System.Object[])
-  name: Init(Object[])
-  href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager_Init_System_Object___
-  commentId: M:Engine.Account.ClientLoginManager.Init(System.Object[])
-  name.vb: Init(Object())
-  fullName: Engine.Account.ClientLoginManager.Init(System.Object[])
-  fullName.vb: Engine.Account.ClientLoginManager.Init(System.Object())
-  nameWithType: ClientLoginManager.Init(Object[])
-  nameWithType.vb: ClientLoginManager.Init(Object())
+- uid: Engine.Account.ClientLoginManager.Init
+  name: Init()
+  href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager_Init
+  commentId: M:Engine.Account.ClientLoginManager.Init
+  fullName: Engine.Account.ClientLoginManager.Init()
+  nameWithType: ClientLoginManager.Init()
 - uid: Engine.Account.ClientLoginManager.Init*
   name: Init
   href: api/Engine.Account.ClientLoginManager.html#Engine_Account_ClientLoginManager_Init_
@@ -202,15 +215,25 @@ references:
   commentId: T:Engine.Account.ServerLoginManager
   fullName: Engine.Account.ServerLoginManager
   nameWithType: ServerLoginManager
-- uid: Engine.Account.ServerLoginManager.Init(System.Object[])
-  name: Init(Object[])
-  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_Init_System_Object___
-  commentId: M:Engine.Account.ServerLoginManager.Init(System.Object[])
-  name.vb: Init(Object())
-  fullName: Engine.Account.ServerLoginManager.Init(System.Object[])
-  fullName.vb: Engine.Account.ServerLoginManager.Init(System.Object())
-  nameWithType: ServerLoginManager.Init(Object[])
-  nameWithType.vb: ServerLoginManager.Init(Object())
+- uid: Engine.Account.ServerLoginManager.#ctor(Engine.Networking.ConnectionManager)
+  name: ServerLoginManager(ConnectionManager)
+  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager__ctor_Engine_Networking_ConnectionManager_
+  commentId: M:Engine.Account.ServerLoginManager.#ctor(Engine.Networking.ConnectionManager)
+  fullName: Engine.Account.ServerLoginManager.ServerLoginManager(Engine.Networking.ConnectionManager)
+  nameWithType: ServerLoginManager.ServerLoginManager(ConnectionManager)
+- uid: Engine.Account.ServerLoginManager.#ctor*
+  name: ServerLoginManager
+  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager__ctor_
+  commentId: Overload:Engine.Account.ServerLoginManager.#ctor
+  isSpec: "True"
+  fullName: Engine.Account.ServerLoginManager.ServerLoginManager
+  nameWithType: ServerLoginManager.ServerLoginManager
+- uid: Engine.Account.ServerLoginManager.Init
+  name: Init()
+  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_Init
+  commentId: M:Engine.Account.ServerLoginManager.Init
+  fullName: Engine.Account.ServerLoginManager.Init()
+  nameWithType: ServerLoginManager.Init()
 - uid: Engine.Account.ServerLoginManager.Init*
   name: Init
   href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_Init_
@@ -290,15 +313,28 @@ references:
   commentId: T:Engine.API.APIManager
   fullName: Engine.API.APIManager
   nameWithType: APIManager
-- uid: Engine.API.APIManager.Init(System.Object[])
-  name: Init(Object[])
-  href: api/Engine.API.APIManager.html#Engine_API_APIManager_Init_System_Object___
-  commentId: M:Engine.API.APIManager.Init(System.Object[])
-  name.vb: Init(Object())
-  fullName: Engine.API.APIManager.Init(System.Object[])
-  fullName.vb: Engine.API.APIManager.Init(System.Object())
-  nameWithType: APIManager.Init(Object[])
-  nameWithType.vb: APIManager.Init(Object())
+- uid: Engine.API.APIManager.#ctor(System.Collections.Generic.List{Engine.Factory.Manager})
+  name: APIManager(List<Manager>)
+  href: api/Engine.API.APIManager.html#Engine_API_APIManager__ctor_System_Collections_Generic_List_Engine_Factory_Manager__
+  commentId: M:Engine.API.APIManager.#ctor(System.Collections.Generic.List{Engine.Factory.Manager})
+  name.vb: APIManager(List(Of Manager))
+  fullName: Engine.API.APIManager.APIManager(System.Collections.Generic.List<Engine.Factory.Manager>)
+  fullName.vb: Engine.API.APIManager.APIManager(System.Collections.Generic.List(Of Engine.Factory.Manager))
+  nameWithType: APIManager.APIManager(List<Manager>)
+  nameWithType.vb: APIManager.APIManager(List(Of Manager))
+- uid: Engine.API.APIManager.#ctor*
+  name: APIManager
+  href: api/Engine.API.APIManager.html#Engine_API_APIManager__ctor_
+  commentId: Overload:Engine.API.APIManager.#ctor
+  isSpec: "True"
+  fullName: Engine.API.APIManager.APIManager
+  nameWithType: APIManager.APIManager
+- uid: Engine.API.APIManager.Init
+  name: Init()
+  href: api/Engine.API.APIManager.html#Engine_API_APIManager_Init
+  commentId: M:Engine.API.APIManager.Init
+  fullName: Engine.API.APIManager.Init()
+  nameWithType: APIManager.Init()
 - uid: Engine.API.APIManager.Init*
   name: Init
   href: api/Engine.API.APIManager.html#Engine_API_APIManager_Init_
@@ -344,6 +380,19 @@ references:
   commentId: T:Engine.Asset.ClientAssetManager
   fullName: Engine.Asset.ClientAssetManager
   nameWithType: ClientAssetManager
+- uid: Engine.Asset.ClientAssetManager.GetPlayerPrefab
+  name: GetPlayerPrefab()
+  href: api/Engine.Asset.ClientAssetManager.html#Engine_Asset_ClientAssetManager_GetPlayerPrefab
+  commentId: M:Engine.Asset.ClientAssetManager.GetPlayerPrefab
+  fullName: Engine.Asset.ClientAssetManager.GetPlayerPrefab()
+  nameWithType: ClientAssetManager.GetPlayerPrefab()
+- uid: Engine.Asset.ClientAssetManager.GetPlayerPrefab*
+  name: GetPlayerPrefab
+  href: api/Engine.Asset.ClientAssetManager.html#Engine_Asset_ClientAssetManager_GetPlayerPrefab_
+  commentId: Overload:Engine.Asset.ClientAssetManager.GetPlayerPrefab
+  isSpec: "True"
+  fullName: Engine.Asset.ClientAssetManager.GetPlayerPrefab
+  nameWithType: ClientAssetManager.GetPlayerPrefab
 - uid: Engine.Asset.ClientAssetManager.GetUIPanel(System.String)
   name: GetUIPanel(String)
   href: api/Engine.Asset.ClientAssetManager.html#Engine_Asset_ClientAssetManager_GetUIPanel_System_String_
@@ -357,15 +406,12 @@ references:
   isSpec: "True"
   fullName: Engine.Asset.ClientAssetManager.GetUIPanel
   nameWithType: ClientAssetManager.GetUIPanel
-- uid: Engine.Asset.ClientAssetManager.Init(System.Object[])
-  name: Init(Object[])
-  href: api/Engine.Asset.ClientAssetManager.html#Engine_Asset_ClientAssetManager_Init_System_Object___
-  commentId: M:Engine.Asset.ClientAssetManager.Init(System.Object[])
-  name.vb: Init(Object())
-  fullName: Engine.Asset.ClientAssetManager.Init(System.Object[])
-  fullName.vb: Engine.Asset.ClientAssetManager.Init(System.Object())
-  nameWithType: ClientAssetManager.Init(Object[])
-  nameWithType.vb: ClientAssetManager.Init(Object())
+- uid: Engine.Asset.ClientAssetManager.Init
+  name: Init()
+  href: api/Engine.Asset.ClientAssetManager.html#Engine_Asset_ClientAssetManager_Init
+  commentId: M:Engine.Asset.ClientAssetManager.Init
+  fullName: Engine.Asset.ClientAssetManager.Init()
+  nameWithType: ClientAssetManager.Init()
 - uid: Engine.Asset.ClientAssetManager.Init*
   name: Init
   href: api/Engine.Asset.ClientAssetManager.html#Engine_Asset_ClientAssetManager_Init_
@@ -405,27 +451,42 @@ references:
   commentId: T:Engine.Asset.ClientAssetPack
   fullName: Engine.Asset.ClientAssetPack
   nameWithType: ClientAssetPack
+- uid: Engine.Asset.ClientAssetPack.playerPack
+  name: playerPack
+  href: api/Engine.Asset.ClientAssetPack.html#Engine_Asset_ClientAssetPack_playerPack
+  commentId: F:Engine.Asset.ClientAssetPack.playerPack
+  fullName: Engine.Asset.ClientAssetPack.playerPack
+  nameWithType: ClientAssetPack.playerPack
 - uid: Engine.Asset.ClientAssetPack.uiPack
   name: uiPack
   href: api/Engine.Asset.ClientAssetPack.html#Engine_Asset_ClientAssetPack_uiPack
   commentId: F:Engine.Asset.ClientAssetPack.uiPack
   fullName: Engine.Asset.ClientAssetPack.uiPack
   nameWithType: ClientAssetPack.uiPack
+- uid: Engine.Asset.Player_Pack
+  name: Player_Pack
+  href: api/Engine.Asset.Player_Pack.html
+  commentId: T:Engine.Asset.Player_Pack
+  fullName: Engine.Asset.Player_Pack
+  nameWithType: Player_Pack
+- uid: Engine.Asset.Player_Pack.playerPrefab
+  name: playerPrefab
+  href: api/Engine.Asset.Player_Pack.html#Engine_Asset_Player_Pack_playerPrefab
+  commentId: F:Engine.Asset.Player_Pack.playerPrefab
+  fullName: Engine.Asset.Player_Pack.playerPrefab
+  nameWithType: Player_Pack.playerPrefab
 - uid: Engine.Asset.SharedAssetManager
   name: SharedAssetManager
   href: api/Engine.Asset.SharedAssetManager.html
   commentId: T:Engine.Asset.SharedAssetManager
   fullName: Engine.Asset.SharedAssetManager
   nameWithType: SharedAssetManager
-- uid: Engine.Asset.SharedAssetManager.Init(System.Object[])
-  name: Init(Object[])
-  href: api/Engine.Asset.SharedAssetManager.html#Engine_Asset_SharedAssetManager_Init_System_Object___
-  commentId: M:Engine.Asset.SharedAssetManager.Init(System.Object[])
-  name.vb: Init(Object())
-  fullName: Engine.Asset.SharedAssetManager.Init(System.Object[])
-  fullName.vb: Engine.Asset.SharedAssetManager.Init(System.Object())
-  nameWithType: SharedAssetManager.Init(Object[])
-  nameWithType.vb: SharedAssetManager.Init(Object())
+- uid: Engine.Asset.SharedAssetManager.Init
+  name: Init()
+  href: api/Engine.Asset.SharedAssetManager.html#Engine_Asset_SharedAssetManager_Init
+  commentId: M:Engine.Asset.SharedAssetManager.Init
+  fullName: Engine.Asset.SharedAssetManager.Init()
+  nameWithType: SharedAssetManager.Init()
 - uid: Engine.Asset.SharedAssetManager.Init*
   name: Init
   href: api/Engine.Asset.SharedAssetManager.html#Engine_Asset_SharedAssetManager_Init_
@@ -483,60 +544,6 @@ references:
   commentId: T:Engine.ClientCore
   fullName: Engine.ClientCore
   nameWithType: ClientCore
-- uid: Engine.ClientCore.apiManager
-  name: apiManager
-  href: api/Engine.ClientCore.html#Engine_ClientCore_apiManager
-  commentId: F:Engine.ClientCore.apiManager
-  fullName: Engine.ClientCore.apiManager
-  nameWithType: ClientCore.apiManager
-- uid: Engine.ClientCore.clientAssetManager
-  name: clientAssetManager
-  href: api/Engine.ClientCore.html#Engine_ClientCore_clientAssetManager
-  commentId: F:Engine.ClientCore.clientAssetManager
-  fullName: Engine.ClientCore.clientAssetManager
-  nameWithType: ClientCore.clientAssetManager
-- uid: Engine.ClientCore.clientInputManager
-  name: clientInputManager
-  href: api/Engine.ClientCore.html#Engine_ClientCore_clientInputManager
-  commentId: F:Engine.ClientCore.clientInputManager
-  fullName: Engine.ClientCore.clientInputManager
-  nameWithType: ClientCore.clientInputManager
-- uid: Engine.ClientCore.clientLoginManager
-  name: clientLoginManager
-  href: api/Engine.ClientCore.html#Engine_ClientCore_clientLoginManager
-  commentId: F:Engine.ClientCore.clientLoginManager
-  fullName: Engine.ClientCore.clientLoginManager
-  nameWithType: ClientCore.clientLoginManager
-- uid: Engine.ClientCore.clientUIManager
-  name: clientUIManager
-  href: api/Engine.ClientCore.html#Engine_ClientCore_clientUIManager
-  commentId: F:Engine.ClientCore.clientUIManager
-  fullName: Engine.ClientCore.clientUIManager
-  nameWithType: ClientCore.clientUIManager
-- uid: Engine.ClientCore.clientWorldManager
-  name: clientWorldManager
-  href: api/Engine.ClientCore.html#Engine_ClientCore_clientWorldManager
-  commentId: F:Engine.ClientCore.clientWorldManager
-  fullName: Engine.ClientCore.clientWorldManager
-  nameWithType: ClientCore.clientWorldManager
-- uid: Engine.ClientCore.connectionManager
-  name: connectionManager
-  href: api/Engine.ClientCore.html#Engine_ClientCore_connectionManager
-  commentId: F:Engine.ClientCore.connectionManager
-  fullName: Engine.ClientCore.connectionManager
-  nameWithType: ClientCore.connectionManager
-- uid: Engine.ClientCore.dispatchManager
-  name: dispatchManager
-  href: api/Engine.ClientCore.html#Engine_ClientCore_dispatchManager
-  commentId: F:Engine.ClientCore.dispatchManager
-  fullName: Engine.ClientCore.dispatchManager
-  nameWithType: ClientCore.dispatchManager
-- uid: Engine.ClientCore.logManager
-  name: logManager
-  href: api/Engine.ClientCore.html#Engine_ClientCore_logManager
-  commentId: F:Engine.ClientCore.logManager
-  fullName: Engine.ClientCore.logManager
-  nameWithType: ClientCore.logManager
 - uid: Engine.Configuration
   name: Engine.Configuration
   href: api/Engine.Configuration.html
@@ -670,15 +677,12 @@ references:
   commentId: T:Engine.Dispatch.DispatchManager
   fullName: Engine.Dispatch.DispatchManager
   nameWithType: DispatchManager
-- uid: Engine.Dispatch.DispatchManager.Init(System.Object[])
-  name: Init(Object[])
-  href: api/Engine.Dispatch.DispatchManager.html#Engine_Dispatch_DispatchManager_Init_System_Object___
-  commentId: M:Engine.Dispatch.DispatchManager.Init(System.Object[])
-  name.vb: Init(Object())
-  fullName: Engine.Dispatch.DispatchManager.Init(System.Object[])
-  fullName.vb: Engine.Dispatch.DispatchManager.Init(System.Object())
-  nameWithType: DispatchManager.Init(Object[])
-  nameWithType.vb: DispatchManager.Init(Object())
+- uid: Engine.Dispatch.DispatchManager.Init
+  name: Init()
+  href: api/Engine.Dispatch.DispatchManager.html#Engine_Dispatch_DispatchManager_Init
+  commentId: M:Engine.Dispatch.DispatchManager.Init
+  fullName: Engine.Dispatch.DispatchManager.Init()
+  nameWithType: DispatchManager.Init()
 - uid: Engine.Dispatch.DispatchManager.Init*
   name: Init
   href: api/Engine.Dispatch.DispatchManager.html#Engine_Dispatch_DispatchManager_Init_
@@ -724,15 +728,12 @@ references:
   commentId: T:Engine.Factory.Manager
   fullName: Engine.Factory.Manager
   nameWithType: Manager
-- uid: Engine.Factory.Manager.Init(System.Object[])
-  name: Init(Object[])
-  href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_Init_System_Object___
-  commentId: M:Engine.Factory.Manager.Init(System.Object[])
-  name.vb: Init(Object())
-  fullName: Engine.Factory.Manager.Init(System.Object[])
-  fullName.vb: Engine.Factory.Manager.Init(System.Object())
-  nameWithType: Manager.Init(Object[])
-  nameWithType.vb: Manager.Init(Object())
+- uid: Engine.Factory.Manager.Init
+  name: Init()
+  href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_Init
+  commentId: M:Engine.Factory.Manager.Init
+  fullName: Engine.Factory.Manager.Init()
+  nameWithType: Manager.Init()
 - uid: Engine.Factory.Manager.Init*
   name: Init
   href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_Init_
@@ -797,15 +798,12 @@ references:
   commentId: T:Engine.Input.ClientInputManager
   fullName: Engine.Input.ClientInputManager
   nameWithType: ClientInputManager
-- uid: Engine.Input.ClientInputManager.Init(System.Object[])
-  name: Init(Object[])
-  href: api/Engine.Input.ClientInputManager.html#Engine_Input_ClientInputManager_Init_System_Object___
-  commentId: M:Engine.Input.ClientInputManager.Init(System.Object[])
-  name.vb: Init(Object())
-  fullName: Engine.Input.ClientInputManager.Init(System.Object[])
-  fullName.vb: Engine.Input.ClientInputManager.Init(System.Object())
-  nameWithType: ClientInputManager.Init(Object[])
-  nameWithType.vb: ClientInputManager.Init(Object())
+- uid: Engine.Input.ClientInputManager.Init
+  name: Init()
+  href: api/Engine.Input.ClientInputManager.html#Engine_Input_ClientInputManager_Init
+  commentId: M:Engine.Input.ClientInputManager.Init
+  fullName: Engine.Input.ClientInputManager.Init()
+  nameWithType: ClientInputManager.Init()
 - uid: Engine.Input.ClientInputManager.Init*
   name: Init
   href: api/Engine.Input.ClientInputManager.html#Engine_Input_ClientInputManager_Init_
@@ -920,15 +918,12 @@ references:
   isSpec: "True"
   fullName: Engine.Logging.LogManager.getLogLevel
   nameWithType: LogManager.getLogLevel
-- uid: Engine.Logging.LogManager.Init(System.Object[])
-  name: Init(Object[])
-  href: api/Engine.Logging.LogManager.html#Engine_Logging_LogManager_Init_System_Object___
-  commentId: M:Engine.Logging.LogManager.Init(System.Object[])
-  name.vb: Init(Object())
-  fullName: Engine.Logging.LogManager.Init(System.Object[])
-  fullName.vb: Engine.Logging.LogManager.Init(System.Object())
-  nameWithType: LogManager.Init(Object[])
-  nameWithType.vb: LogManager.Init(Object())
+- uid: Engine.Logging.LogManager.Init
+  name: Init()
+  href: api/Engine.Logging.LogManager.html#Engine_Logging_LogManager_Init
+  commentId: M:Engine.Logging.LogManager.Init
+  fullName: Engine.Logging.LogManager.Init()
+  nameWithType: LogManager.Init()
 - uid: Engine.Logging.LogManager.Init*
   name: Init
   href: api/Engine.Logging.LogManager.html#Engine_Logging_LogManager_Init_
@@ -987,6 +982,19 @@ references:
   commentId: T:Engine.Networking.ConnectionManager
   fullName: Engine.Networking.ConnectionManager
   nameWithType: ConnectionManager
+- uid: Engine.Networking.ConnectionManager.#ctor(Engine.Networking.ConnectionManager.ListenerType)
+  name: ConnectionManager(ConnectionManager.ListenerType)
+  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager__ctor_Engine_Networking_ConnectionManager_ListenerType_
+  commentId: M:Engine.Networking.ConnectionManager.#ctor(Engine.Networking.ConnectionManager.ListenerType)
+  fullName: Engine.Networking.ConnectionManager.ConnectionManager(Engine.Networking.ConnectionManager.ListenerType)
+  nameWithType: ConnectionManager.ConnectionManager(ConnectionManager.ListenerType)
+- uid: Engine.Networking.ConnectionManager.#ctor*
+  name: ConnectionManager
+  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager__ctor_
+  commentId: Overload:Engine.Networking.ConnectionManager.#ctor
+  isSpec: "True"
+  fullName: Engine.Networking.ConnectionManager.ConnectionManager
+  nameWithType: ConnectionManager.ConnectionManager
 - uid: Engine.Networking.ConnectionManager.Disconnect
   name: Disconnect()
   href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_Disconnect
@@ -1000,15 +1008,12 @@ references:
   isSpec: "True"
   fullName: Engine.Networking.ConnectionManager.Disconnect
   nameWithType: ConnectionManager.Disconnect
-- uid: Engine.Networking.ConnectionManager.Init(System.Object[])
-  name: Init(Object[])
-  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_Init_System_Object___
-  commentId: M:Engine.Networking.ConnectionManager.Init(System.Object[])
-  name.vb: Init(Object())
-  fullName: Engine.Networking.ConnectionManager.Init(System.Object[])
-  fullName.vb: Engine.Networking.ConnectionManager.Init(System.Object())
-  nameWithType: ConnectionManager.Init(Object[])
-  nameWithType.vb: ConnectionManager.Init(Object())
+- uid: Engine.Networking.ConnectionManager.Init
+  name: Init()
+  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_Init
+  commentId: M:Engine.Networking.ConnectionManager.Init
+  fullName: Engine.Networking.ConnectionManager.Init()
+  nameWithType: ConnectionManager.Init()
 - uid: Engine.Networking.ConnectionManager.Init*
   name: Init
   href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_Init_
@@ -1744,36 +1749,121 @@ references:
   fullName.vb: Engine.Networking.Utility.PacketWriter.Add(Of T)(ByRef System.Byte(), T)
   nameWithType: PacketWriter.Add<T>(ref Byte[], T)
   nameWithType.vb: PacketWriter.Add(Of T)(ByRef Byte(), T)
+- uid: Engine.Player
+  name: Engine.Player
+  href: api/Engine.Player.html
+  commentId: N:Engine.Player
+  fullName: Engine.Player
+  nameWithType: Engine.Player
+- uid: Engine.Player.ClientPlayerManager
+  name: ClientPlayerManager
+  href: api/Engine.Player.ClientPlayerManager.html
+  commentId: T:Engine.Player.ClientPlayerManager
+  fullName: Engine.Player.ClientPlayerManager
+  nameWithType: ClientPlayerManager
+- uid: Engine.Player.ClientPlayerManager.#ctor(UnityEngine.GameObject)
+  name: ClientPlayerManager(GameObject)
+  href: api/Engine.Player.ClientPlayerManager.html#Engine_Player_ClientPlayerManager__ctor_UnityEngine_GameObject_
+  commentId: M:Engine.Player.ClientPlayerManager.#ctor(UnityEngine.GameObject)
+  fullName: Engine.Player.ClientPlayerManager.ClientPlayerManager(UnityEngine.GameObject)
+  nameWithType: ClientPlayerManager.ClientPlayerManager(GameObject)
+- uid: Engine.Player.ClientPlayerManager.#ctor*
+  name: ClientPlayerManager
+  href: api/Engine.Player.ClientPlayerManager.html#Engine_Player_ClientPlayerManager__ctor_
+  commentId: Overload:Engine.Player.ClientPlayerManager.#ctor
+  isSpec: "True"
+  fullName: Engine.Player.ClientPlayerManager.ClientPlayerManager
+  nameWithType: ClientPlayerManager.ClientPlayerManager
+- uid: Engine.Player.ClientPlayerManager.GetMyPlayer
+  name: GetMyPlayer()
+  href: api/Engine.Player.ClientPlayerManager.html#Engine_Player_ClientPlayerManager_GetMyPlayer
+  commentId: M:Engine.Player.ClientPlayerManager.GetMyPlayer
+  fullName: Engine.Player.ClientPlayerManager.GetMyPlayer()
+  nameWithType: ClientPlayerManager.GetMyPlayer()
+- uid: Engine.Player.ClientPlayerManager.GetMyPlayer*
+  name: GetMyPlayer
+  href: api/Engine.Player.ClientPlayerManager.html#Engine_Player_ClientPlayerManager_GetMyPlayer_
+  commentId: Overload:Engine.Player.ClientPlayerManager.GetMyPlayer
+  isSpec: "True"
+  fullName: Engine.Player.ClientPlayerManager.GetMyPlayer
+  nameWithType: ClientPlayerManager.GetMyPlayer
+- uid: Engine.Player.ClientPlayerManager.Init
+  name: Init()
+  href: api/Engine.Player.ClientPlayerManager.html#Engine_Player_ClientPlayerManager_Init
+  commentId: M:Engine.Player.ClientPlayerManager.Init
+  fullName: Engine.Player.ClientPlayerManager.Init()
+  nameWithType: ClientPlayerManager.Init()
+- uid: Engine.Player.ClientPlayerManager.Init*
+  name: Init
+  href: api/Engine.Player.ClientPlayerManager.html#Engine_Player_ClientPlayerManager_Init_
+  commentId: Overload:Engine.Player.ClientPlayerManager.Init
+  isSpec: "True"
+  fullName: Engine.Player.ClientPlayerManager.Init
+  nameWithType: ClientPlayerManager.Init
+- uid: Engine.Player.ClientPlayerManager.LoadGameTask
+  name: LoadGameTask()
+  href: api/Engine.Player.ClientPlayerManager.html#Engine_Player_ClientPlayerManager_LoadGameTask
+  commentId: M:Engine.Player.ClientPlayerManager.LoadGameTask
+  fullName: Engine.Player.ClientPlayerManager.LoadGameTask()
+  nameWithType: ClientPlayerManager.LoadGameTask()
+- uid: Engine.Player.ClientPlayerManager.LoadGameTask*
+  name: LoadGameTask
+  href: api/Engine.Player.ClientPlayerManager.html#Engine_Player_ClientPlayerManager_LoadGameTask_
+  commentId: Overload:Engine.Player.ClientPlayerManager.LoadGameTask
+  isSpec: "True"
+  fullName: Engine.Player.ClientPlayerManager.LoadGameTask
+  nameWithType: ClientPlayerManager.LoadGameTask
+- uid: Engine.Player.ClientPlayerManager.Process
+  name: Process()
+  href: api/Engine.Player.ClientPlayerManager.html#Engine_Player_ClientPlayerManager_Process
+  commentId: M:Engine.Player.ClientPlayerManager.Process
+  fullName: Engine.Player.ClientPlayerManager.Process()
+  nameWithType: ClientPlayerManager.Process()
+- uid: Engine.Player.ClientPlayerManager.Process*
+  name: Process
+  href: api/Engine.Player.ClientPlayerManager.html#Engine_Player_ClientPlayerManager_Process_
+  commentId: Overload:Engine.Player.ClientPlayerManager.Process
+  isSpec: "True"
+  fullName: Engine.Player.ClientPlayerManager.Process
+  nameWithType: ClientPlayerManager.Process
+- uid: Engine.Player.ClientPlayerManager.Shutdown
+  name: Shutdown()
+  href: api/Engine.Player.ClientPlayerManager.html#Engine_Player_ClientPlayerManager_Shutdown
+  commentId: M:Engine.Player.ClientPlayerManager.Shutdown
+  fullName: Engine.Player.ClientPlayerManager.Shutdown()
+  nameWithType: ClientPlayerManager.Shutdown()
+- uid: Engine.Player.ClientPlayerManager.Shutdown*
+  name: Shutdown
+  href: api/Engine.Player.ClientPlayerManager.html#Engine_Player_ClientPlayerManager_Shutdown_
+  commentId: Overload:Engine.Player.ClientPlayerManager.Shutdown
+  isSpec: "True"
+  fullName: Engine.Player.ClientPlayerManager.Shutdown
+  nameWithType: ClientPlayerManager.Shutdown
+- uid: Engine.Player.Player
+  name: Player
+  href: api/Engine.Player.Player.html
+  commentId: T:Engine.Player.Player
+  fullName: Engine.Player.Player
+  nameWithType: Player
+- uid: Engine.Player.Player.GetPlayerObject
+  name: GetPlayerObject()
+  href: api/Engine.Player.Player.html#Engine_Player_Player_GetPlayerObject
+  commentId: M:Engine.Player.Player.GetPlayerObject
+  fullName: Engine.Player.Player.GetPlayerObject()
+  nameWithType: Player.GetPlayerObject()
+- uid: Engine.Player.Player.GetPlayerObject*
+  name: GetPlayerObject
+  href: api/Engine.Player.Player.html#Engine_Player_Player_GetPlayerObject_
+  commentId: Overload:Engine.Player.Player.GetPlayerObject
+  isSpec: "True"
+  fullName: Engine.Player.Player.GetPlayerObject
+  nameWithType: Player.GetPlayerObject
 - uid: Engine.ServerCore
   name: ServerCore
   href: api/Engine.ServerCore.html
   commentId: T:Engine.ServerCore
   fullName: Engine.ServerCore
   nameWithType: ServerCore
-- uid: Engine.ServerCore.connectionManager
-  name: connectionManager
-  href: api/Engine.ServerCore.html#Engine_ServerCore_connectionManager
-  commentId: F:Engine.ServerCore.connectionManager
-  fullName: Engine.ServerCore.connectionManager
-  nameWithType: ServerCore.connectionManager
-- uid: Engine.ServerCore.dispatchManager
-  name: dispatchManager
-  href: api/Engine.ServerCore.html#Engine_ServerCore_dispatchManager
-  commentId: F:Engine.ServerCore.dispatchManager
-  fullName: Engine.ServerCore.dispatchManager
-  nameWithType: ServerCore.dispatchManager
-- uid: Engine.ServerCore.logManager
-  name: logManager
-  href: api/Engine.ServerCore.html#Engine_ServerCore_logManager
-  commentId: F:Engine.ServerCore.logManager
-  fullName: Engine.ServerCore.logManager
-  nameWithType: ServerCore.logManager
-- uid: Engine.ServerCore.serverLoginManager
-  name: serverLoginManager
-  href: api/Engine.ServerCore.html#Engine_ServerCore_serverLoginManager
-  commentId: F:Engine.ServerCore.serverLoginManager
-  fullName: Engine.ServerCore.serverLoginManager
-  nameWithType: ServerCore.serverLoginManager
 - uid: Engine.UI
   name: Engine.UI
   href: api/Engine.UI.html
@@ -1786,15 +1876,25 @@ references:
   commentId: T:Engine.UI.ClientUIManager
   fullName: Engine.UI.ClientUIManager
   nameWithType: ClientUIManager
-- uid: Engine.UI.ClientUIManager.Init(System.Object[])
-  name: Init(Object[])
-  href: api/Engine.UI.ClientUIManager.html#Engine_UI_ClientUIManager_Init_System_Object___
-  commentId: M:Engine.UI.ClientUIManager.Init(System.Object[])
-  name.vb: Init(Object())
-  fullName: Engine.UI.ClientUIManager.Init(System.Object[])
-  fullName.vb: Engine.UI.ClientUIManager.Init(System.Object())
-  nameWithType: ClientUIManager.Init(Object[])
-  nameWithType.vb: ClientUIManager.Init(Object())
+- uid: Engine.UI.ClientUIManager.#ctor(Engine.Asset.ClientAssetManager)
+  name: ClientUIManager(ClientAssetManager)
+  href: api/Engine.UI.ClientUIManager.html#Engine_UI_ClientUIManager__ctor_Engine_Asset_ClientAssetManager_
+  commentId: M:Engine.UI.ClientUIManager.#ctor(Engine.Asset.ClientAssetManager)
+  fullName: Engine.UI.ClientUIManager.ClientUIManager(Engine.Asset.ClientAssetManager)
+  nameWithType: ClientUIManager.ClientUIManager(ClientAssetManager)
+- uid: Engine.UI.ClientUIManager.#ctor*
+  name: ClientUIManager
+  href: api/Engine.UI.ClientUIManager.html#Engine_UI_ClientUIManager__ctor_
+  commentId: Overload:Engine.UI.ClientUIManager.#ctor
+  isSpec: "True"
+  fullName: Engine.UI.ClientUIManager.ClientUIManager
+  nameWithType: ClientUIManager.ClientUIManager
+- uid: Engine.UI.ClientUIManager.Init
+  name: Init()
+  href: api/Engine.UI.ClientUIManager.html#Engine_UI_ClientUIManager_Init
+  commentId: M:Engine.UI.ClientUIManager.Init
+  fullName: Engine.UI.ClientUIManager.Init()
+  nameWithType: ClientUIManager.Init()
 - uid: Engine.UI.ClientUIManager.Init*
   name: Init
   href: api/Engine.UI.ClientUIManager.html#Engine_UI_ClientUIManager_Init_
@@ -2010,15 +2110,25 @@ references:
   commentId: T:Engine.World.ClientWorldManager
   fullName: Engine.World.ClientWorldManager
   nameWithType: ClientWorldManager
-- uid: Engine.World.ClientWorldManager.Init(System.Object[])
-  name: Init(Object[])
-  href: api/Engine.World.ClientWorldManager.html#Engine_World_ClientWorldManager_Init_System_Object___
-  commentId: M:Engine.World.ClientWorldManager.Init(System.Object[])
-  name.vb: Init(Object())
-  fullName: Engine.World.ClientWorldManager.Init(System.Object[])
-  fullName.vb: Engine.World.ClientWorldManager.Init(System.Object())
-  nameWithType: ClientWorldManager.Init(Object[])
-  nameWithType.vb: ClientWorldManager.Init(Object())
+- uid: Engine.World.ClientWorldManager.#ctor(Engine.Player.ClientPlayerManager)
+  name: ClientWorldManager(ClientPlayerManager)
+  href: api/Engine.World.ClientWorldManager.html#Engine_World_ClientWorldManager__ctor_Engine_Player_ClientPlayerManager_
+  commentId: M:Engine.World.ClientWorldManager.#ctor(Engine.Player.ClientPlayerManager)
+  fullName: Engine.World.ClientWorldManager.ClientWorldManager(Engine.Player.ClientPlayerManager)
+  nameWithType: ClientWorldManager.ClientWorldManager(ClientPlayerManager)
+- uid: Engine.World.ClientWorldManager.#ctor*
+  name: ClientWorldManager
+  href: api/Engine.World.ClientWorldManager.html#Engine_World_ClientWorldManager__ctor_
+  commentId: Overload:Engine.World.ClientWorldManager.#ctor
+  isSpec: "True"
+  fullName: Engine.World.ClientWorldManager.ClientWorldManager
+  nameWithType: ClientWorldManager.ClientWorldManager
+- uid: Engine.World.ClientWorldManager.Init
+  name: Init()
+  href: api/Engine.World.ClientWorldManager.html#Engine_World_ClientWorldManager_Init
+  commentId: M:Engine.World.ClientWorldManager.Init
+  fullName: Engine.World.ClientWorldManager.Init()
+  nameWithType: ClientWorldManager.Init()
 - uid: Engine.World.ClientWorldManager.Init*
   name: Init
   href: api/Engine.World.ClientWorldManager.html#Engine_World_ClientWorldManager_Init_

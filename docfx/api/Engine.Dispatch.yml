@@ -18,7 +18,6 @@ items:
 references:
 - uid: Engine.Dispatch.DispatchManager
   commentId: T:Engine.Dispatch.DispatchManager
-  parent: Engine.Dispatch
   name: DispatchManager
   nameWithType: DispatchManager
   fullName: Engine.Dispatch.DispatchManager
@@ -27,8 +26,3 @@ references:
   name: Dispatcher
   nameWithType: Dispatcher
   fullName: Engine.Dispatch.Dispatcher
-- uid: Engine.Dispatch
-  commentId: N:Engine.Dispatch
-  name: Engine.Dispatch
-  nameWithType: Engine.Dispatch
-  fullName: Engine.Dispatch

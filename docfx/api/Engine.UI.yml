@@ -18,7 +18,6 @@ items:
 references:
 - uid: Engine.UI.ClientUIManager
   commentId: T:Engine.UI.ClientUIManager
-  parent: Engine.UI
   name: ClientUIManager
   nameWithType: ClientUIManager
   fullName: Engine.UI.ClientUIManager

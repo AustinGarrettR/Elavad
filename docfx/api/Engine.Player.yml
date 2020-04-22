@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Player
+  commentId: N:Engine.Player
+  id: Engine.Player
+  children:
+  - Engine.Player.ClientPlayerManager
+  - Engine.Player.Player
+  langs:
+  - csharp
+  - vb
+  name: Engine.Player
+  nameWithType: Engine.Player
+  fullName: Engine.Player
+  type: Namespace
+  assemblies:
+  - Engine.Player
+references:
+- uid: Engine.Player.ClientPlayerManager
+  commentId: T:Engine.Player.ClientPlayerManager
+  parent: Engine.Player
+  name: ClientPlayerManager
+  nameWithType: ClientPlayerManager
+  fullName: Engine.Player.ClientPlayerManager
+- uid: Engine.Player.Player
+  commentId: T:Engine.Player.Player
+  parent: Engine.Player
+  name: Player
+  nameWithType: Player
+  fullName: Engine.Player.Player
+- uid: Engine.Player
+  commentId: N:Engine.Player
+  name: Engine.Player
+  nameWithType: Engine.Player
+  fullName: Engine.Player

@@ -5,7 +5,8 @@ items:
   id: ServerLoginManager
   parent: Engine.Account
   children:
-  - Engine.Account.ServerLoginManager.Init(System.Object[])
+  - Engine.Account.ServerLoginManager.#ctor(Engine.Networking.ConnectionManager)
+  - Engine.Account.ServerLoginManager.Init
   - Engine.Account.ServerLoginManager.Process
   - Engine.Account.ServerLoginManager.Shutdown
   langs:
@@ -32,7 +33,6 @@ items:
     content: 'public class ServerLoginManager : Manager'
     content.vb: >-
       Public Class ServerLoginManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -52,16 +52,52 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.Account.ServerLoginManager.Init(System.Object[])
-  commentId: M:Engine.Account.ServerLoginManager.Init(System.Object[])
-  id: Init(System.Object[])
+- uid: Engine.Account.ServerLoginManager.#ctor(Engine.Networking.ConnectionManager)
+  commentId: M:Engine.Account.ServerLoginManager.#ctor(Engine.Networking.ConnectionManager)
+  id: '#ctor(Engine.Networking.ConnectionManager)'
   parent: Engine.Account.ServerLoginManager
   langs:
   - csharp
   - vb
-  name: Init(Object[])
-  nameWithType: ServerLoginManager.Init(Object[])
-  fullName: Engine.Account.ServerLoginManager.Init(System.Object[])
+  name: ServerLoginManager(ConnectionManager)
+  nameWithType: ServerLoginManager.ServerLoginManager(ConnectionManager)
+  fullName: Engine.Account.ServerLoginManager.ServerLoginManager(Engine.Networking.ConnectionManager)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Engine/Account/ServerLoginManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: .ctor
+    path: ../Assets/Engine/Account/ServerLoginManager.cs
+    startLine: 19
+  assemblies:
+  - Engine.Account
+  namespace: Engine.Account
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public ServerLoginManager(ConnectionManager connectionManager)
+    parameters:
+    - id: connectionManager
+      type: Engine.Networking.ConnectionManager
+      description: The connection manager reference
+    content.vb: Public Sub New(connectionManager As ConnectionManager)
+  overload: Engine.Account.ServerLoginManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Account.ServerLoginManager.Init
+  commentId: M:Engine.Account.ServerLoginManager.Init
+  id: Init
+  parent: Engine.Account.ServerLoginManager
+  langs:
+  - csharp
+  - vb
+  name: Init()
+  nameWithType: ServerLoginManager.Init()
+  fullName: Engine.Account.ServerLoginManager.Init()
   type: Method
   source:
     remote:
@@ -70,30 +106,23 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/Account/ServerLoginManager.cs
-    startLine: 19
+    startLine: 32
   assemblies:
   - Engine.Account
   namespace: Engine.Account
   summary: "\nCalled on initialization\n"
   example: []
   syntax:
-    content: public override void Init(params object[] parameters)
-    parameters:
-    - id: parameters
-      type: System.Object[]
-      description: Connection manager parameter
-    content.vb: Public Overrides Sub Init(ParamArray parameters As Object())
-  overridden: Engine.Factory.Manager.Init(System.Object[])
+    content: public override void Init()
+    content.vb: Public Overrides Sub Init
+  overridden: Engine.Factory.Manager.Init
   overload: Engine.Account.ServerLoginManager.Init*
-  nameWithType.vb: ServerLoginManager.Init(Object())
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-  fullName.vb: Engine.Account.ServerLoginManager.Init(System.Object())
-  name.vb: Init(Object())
 - uid: Engine.Account.ServerLoginManager.Shutdown
   commentId: M:Engine.Account.ServerLoginManager.Shutdown
   id: Shutdown
@@ -112,7 +141,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/Account/ServerLoginManager.cs
-    startLine: 30
+    startLine: 41
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -147,7 +176,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/Account/ServerLoginManager.cs
-    startLine: 38
+    startLine: 49
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -501,51 +530,47 @@ references:
   name: Engine.Factory
   nameWithType: Engine.Factory
   fullName: Engine.Factory
-- uid: Engine.Factory.Manager.Init(System.Object[])
-  commentId: M:Engine.Factory.Manager.Init(System.Object[])
+- uid: Engine.Account.ServerLoginManager.#ctor*
+  commentId: Overload:Engine.Account.ServerLoginManager.#ctor
+  name: ServerLoginManager
+  nameWithType: ServerLoginManager.ServerLoginManager
+  fullName: Engine.Account.ServerLoginManager.ServerLoginManager
+- uid: Engine.Networking.ConnectionManager
+  commentId: T:Engine.Networking.ConnectionManager
+  parent: Engine.Networking
+  name: ConnectionManager
+  nameWithType: ConnectionManager
+  fullName: Engine.Networking.ConnectionManager
+- uid: Engine.Networking
+  commentId: N:Engine.Networking
+  name: Engine.Networking
+  nameWithType: Engine.Networking
+  fullName: Engine.Networking
+- uid: Engine.Factory.Manager.Init
+  commentId: M:Engine.Factory.Manager.Init
   parent: Engine.Factory.Manager
-  isExternal: true
-  name: Init(Object[])
-  nameWithType: Manager.Init(Object[])
-  fullName: Engine.Factory.Manager.Init(System.Object[])
-  nameWithType.vb: Manager.Init(Object())
-  fullName.vb: Engine.Factory.Manager.Init(System.Object())
-  name.vb: Init(Object())
+  name: Init()
+  nameWithType: Manager.Init()
+  fullName: Engine.Factory.Manager.Init()
   spec.csharp:
-  - uid: Engine.Factory.Manager.Init(System.Object[])
+  - uid: Engine.Factory.Manager.Init
     name: Init
     nameWithType: Manager.Init
     fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.Init(System.Object[])
+  - uid: Engine.Factory.Manager.Init
     name: Init
     nameWithType: Manager.Init
     fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
   - name: )
     nameWithType: )
     fullName: )
@@ -554,32 +579,6 @@ references:
   name: Init
   nameWithType: ServerLoginManager.Init
   fullName: Engine.Account.ServerLoginManager.Init
-- uid: System.Object[]
-  isExternal: true
-  name: Object[]
-  nameWithType: Object[]
-  fullName: System.Object[]
-  nameWithType.vb: Object()
-  fullName.vb: System.Object()
-  name.vb: Object()
-  spec.csharp:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
-  spec.vb:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
 - uid: Engine.Factory.Manager.Shutdown
   commentId: M:Engine.Factory.Manager.Shutdown
   parent: Engine.Factory.Manager

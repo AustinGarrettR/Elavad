@@ -5,8 +5,9 @@ items:
   id: ConnectionManager
   parent: Engine.Networking
   children:
+  - Engine.Networking.ConnectionManager.#ctor(Engine.Networking.ConnectionManager.ListenerType)
   - Engine.Networking.ConnectionManager.Disconnect
-  - Engine.Networking.ConnectionManager.Init(System.Object[])
+  - Engine.Networking.ConnectionManager.Init
   - Engine.Networking.ConnectionManager.isServer
   - Engine.Networking.ConnectionManager.NotifyClientConnected
   - Engine.Networking.ConnectionManager.NotifyClientDisconnected
@@ -43,7 +44,6 @@ items:
     content: 'public class ConnectionManager : Manager'
     content.vb: >-
       Public Class ConnectionManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -63,16 +63,52 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.Networking.ConnectionManager.Init(System.Object[])
-  commentId: M:Engine.Networking.ConnectionManager.Init(System.Object[])
-  id: Init(System.Object[])
+- uid: Engine.Networking.ConnectionManager.#ctor(Engine.Networking.ConnectionManager.ListenerType)
+  commentId: M:Engine.Networking.ConnectionManager.#ctor(Engine.Networking.ConnectionManager.ListenerType)
+  id: '#ctor(Engine.Networking.ConnectionManager.ListenerType)'
   parent: Engine.Networking.ConnectionManager
   langs:
   - csharp
   - vb
-  name: Init(Object[])
-  nameWithType: ConnectionManager.Init(Object[])
-  fullName: Engine.Networking.ConnectionManager.Init(System.Object[])
+  name: ConnectionManager(ConnectionManager.ListenerType)
+  nameWithType: ConnectionManager.ConnectionManager(ConnectionManager.ListenerType)
+  fullName: Engine.Networking.ConnectionManager.ConnectionManager(Engine.Networking.ConnectionManager.ListenerType)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: .ctor
+    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    startLine: 26
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public ConnectionManager(ConnectionManager.ListenerType listenerType)
+    parameters:
+    - id: listenerType
+      type: Engine.Networking.ConnectionManager.ListenerType
+      description: Whether the connection manager is the server or not
+    content.vb: Public Sub New(listenerType As ConnectionManager.ListenerType)
+  overload: Engine.Networking.ConnectionManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.ConnectionManager.Init
+  commentId: M:Engine.Networking.ConnectionManager.Init
+  id: Init
+  parent: Engine.Networking.ConnectionManager
+  langs:
+  - csharp
+  - vb
+  name: Init()
+  nameWithType: ConnectionManager.Init()
+  fullName: Engine.Networking.ConnectionManager.Init()
   type: Method
   source:
     remote:
@@ -81,30 +117,23 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 26
+    startLine: 38
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
   summary: "\nCalled on start\n"
   example: []
   syntax:
-    content: public override void Init(params object[] parameters)
-    parameters:
-    - id: parameters
-      type: System.Object[]
-      description: ''
-    content.vb: Public Overrides Sub Init(ParamArray parameters As Object())
-  overridden: Engine.Factory.Manager.Init(System.Object[])
+    content: public override void Init()
+    content.vb: Public Overrides Sub Init
+  overridden: Engine.Factory.Manager.Init
   overload: Engine.Networking.ConnectionManager.Init*
-  nameWithType.vb: ConnectionManager.Init(Object())
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-  fullName.vb: Engine.Networking.ConnectionManager.Init(System.Object())
-  name.vb: Init(Object())
 - uid: Engine.Networking.ConnectionManager.Process
   commentId: M:Engine.Networking.ConnectionManager.Process
   id: Process
@@ -123,7 +152,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 38
+    startLine: 48
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -158,7 +187,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 50
+    startLine: 60
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -193,7 +222,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: isServer
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 67
+    startLine: 77
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -232,7 +261,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyClientDisconnected
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 133
+    startLine: 143
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -265,7 +294,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyClientConnected
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 138
+    startLine: 148
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -298,7 +327,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyPacketReceived
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 143
+    startLine: 153
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -331,7 +360,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyFailedConnect
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 148
+    startLine: 158
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -364,7 +393,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyOnDisconnectedFromServer
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 153
+    startLine: 163
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -397,7 +426,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyOnConnectedToServer
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 158
+    startLine: 168
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -430,7 +459,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Start
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 188
+    startLine: 198
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -462,7 +491,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: sendPacketToServer
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 418
+    startLine: 428
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -498,7 +527,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: sendPacketToClient
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 434
+    startLine: 444
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -537,7 +566,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Disconnect
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 504
+    startLine: 514
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -888,51 +917,42 @@ references:
   name: Engine.Factory
   nameWithType: Engine.Factory
   fullName: Engine.Factory
-- uid: Engine.Factory.Manager.Init(System.Object[])
-  commentId: M:Engine.Factory.Manager.Init(System.Object[])
+- uid: Engine.Networking.ConnectionManager.#ctor*
+  commentId: Overload:Engine.Networking.ConnectionManager.#ctor
+  name: ConnectionManager
+  nameWithType: ConnectionManager.ConnectionManager
+  fullName: Engine.Networking.ConnectionManager.ConnectionManager
+- uid: Engine.Networking.ConnectionManager.ListenerType
+  commentId: T:Engine.Networking.ConnectionManager.ListenerType
+  parent: Engine.Networking
+  name: ConnectionManager.ListenerType
+  nameWithType: ConnectionManager.ListenerType
+  fullName: Engine.Networking.ConnectionManager.ListenerType
+- uid: Engine.Factory.Manager.Init
+  commentId: M:Engine.Factory.Manager.Init
   parent: Engine.Factory.Manager
-  isExternal: true
-  name: Init(Object[])
-  nameWithType: Manager.Init(Object[])
-  fullName: Engine.Factory.Manager.Init(System.Object[])
-  nameWithType.vb: Manager.Init(Object())
-  fullName.vb: Engine.Factory.Manager.Init(System.Object())
-  name.vb: Init(Object())
+  name: Init()
+  nameWithType: Manager.Init()
+  fullName: Engine.Factory.Manager.Init()
   spec.csharp:
-  - uid: Engine.Factory.Manager.Init(System.Object[])
+  - uid: Engine.Factory.Manager.Init
     name: Init
     nameWithType: Manager.Init
     fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.Init(System.Object[])
+  - uid: Engine.Factory.Manager.Init
     name: Init
     nameWithType: Manager.Init
     fullName: Engine.Factory.Manager.Init
   - name: (
     nameWithType: (
     fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
   - name: )
     nameWithType: )
     fullName: )
@@ -941,32 +961,6 @@ references:
   name: Init
   nameWithType: ConnectionManager.Init
   fullName: Engine.Networking.ConnectionManager.Init
-- uid: System.Object[]
-  isExternal: true
-  name: Object[]
-  nameWithType: Object[]
-  fullName: System.Object[]
-  nameWithType.vb: Object()
-  fullName.vb: System.Object()
-  name.vb: Object()
-  spec.csharp:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
-  spec.vb:
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
 - uid: Engine.Factory.Manager.Process
   commentId: M:Engine.Factory.Manager.Process
   parent: Engine.Factory.Manager
