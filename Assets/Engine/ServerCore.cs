@@ -20,9 +20,16 @@ namespace Engine
         /// </summary>
         internal override void Init()
         {
+            logManager = new LogManager();
             AddManager(logManager);
-            AddManager(connectionManager, ConnectionManager.ListenerType.SERVER);
-            AddManager(serverLoginManager, connectionManager);
+
+            connectionManager = new ConnectionManager(ConnectionManager.ListenerType.SERVER);
+            AddManager(connectionManager);
+
+            serverLoginManager = new ServerLoginManager(connectionManager);
+            AddManager(serverLoginManager);
+
+            dispatchManager = new DispatchManager();
             AddManager(dispatchManager);
         }
 
@@ -49,22 +56,22 @@ namespace Engine
         /// <summary>
         /// The log manager which handles errors and messages
         /// </summary>
-        public readonly LogManager logManager = new LogManager();
+        internal LogManager logManager;
 
         /// <summary>
         /// The connection manager which handles connections to the clients
         /// </summary>
-        public readonly ConnectionManager connectionManager = new ConnectionManager();
+        internal ConnectionManager connectionManager;
 
         /// <summary>
         /// The server login manager which handles incoming connections from clients to be logged in
         /// </summary>
-        public readonly ServerLoginManager serverLoginManager = new ServerLoginManager();
+        internal ServerLoginManager serverLoginManager;
 
         /// <summary>
         /// The dispatcher manager which allows asynchronous contexts to execute functions on the main thread
         /// </summary>
-        public readonly DispatchManager dispatchManager = new DispatchManager();
+        internal DispatchManager dispatchManager;
 
     }
 }

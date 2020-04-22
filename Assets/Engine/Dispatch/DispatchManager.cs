@@ -15,8 +15,7 @@ namespace Engine.Dispatch
         /// <summary>
         /// Called upon initialization
         /// </summary>
-        /// <param name="parameters"></param>
-        public override void Init(params object[] parameters)
+        public override void Init()
         {
             
         }

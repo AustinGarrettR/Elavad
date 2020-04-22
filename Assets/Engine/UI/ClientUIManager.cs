@@ -10,17 +10,28 @@ namespace Engine.UI
     public class ClientUIManager : Manager
     {
         /*
+         * Constructor
+         */
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="clientAssetManager">The client asset manager</param>
+        public ClientUIManager(ClientAssetManager clientAssetManager)
+        {
+            //Assign asset manager
+            this.clientAssetManager = clientAssetManager;
+        }
+
+        /*
          * Override Methods
          */
 
         /// <summary>
         /// Initialize method
         /// </summary>
-        /// <param name="parameters">ClientAsetManager input</param>
-        public override void Init(params object[] parameters)
+        public override void Init()
         {
-            //Assign asset manager
-            clientAssetManager = (ClientAssetManager) parameters[0];
 
         }
 

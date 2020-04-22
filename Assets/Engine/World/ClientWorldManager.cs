@@ -5,6 +5,7 @@ using Engine.Factory;
 using UnityEngine.SceneManagement;
 using System.Threading.Tasks;
 using Engine.Logging;
+using Engine.Player;
 
 namespace Engine.World
 {
@@ -13,9 +14,19 @@ namespace Engine.World
     /// </summary>
     public class ClientWorldManager : Manager
     {
+        /*
+         * Constructor
+         */
 
-        //REMOVE AFTER TEST
-        GameObject test;
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="clientPlayerManager">The client player manager reference</param>
+        public ClientWorldManager(ClientPlayerManager clientPlayerManager)
+        {
+            //Assign client player manager
+            this.clientPlayerManager = clientPlayerManager;
+        }
 
         /*
          * Override Methods
@@ -24,19 +35,12 @@ namespace Engine.World
         /// <summary>
         /// Called on manager initialization
         /// </summary>
-        /// <param name="parameters">Variable manager parameters</param>
-        public override void Init(params object[] parameters)
+        public override void Init()
         {
 
-            //REMOVE AFTER TEST
-            test = new GameObject("Chunk Position Test Target");
-            test.transform.position = new Vector3(125, 0, 125);
-            //REMOVE AFTER TEST
-
+            //Create environment system
             environmentSystem = new EnvironmentSystem();
 
-            //TODO change to a more permanent focus target system
-            environmentSystem.SetFocusTarget(test);
         }
 
         /// <summary>
@@ -54,7 +58,7 @@ namespace Engine.World
         {
             if (gameLoaded)
             {
-                UpdateChunks(test.transform.position);
+                UpdateChunks(focusTarget.transform.position);
                 UpdateScenes();
 
                 environmentSystem.Update();
@@ -67,8 +71,16 @@ namespace Engine.World
         /// <returns></returns>
         public override async Task LoadGameTask()
         {
+            //Set focus object
+            focusTarget = clientPlayerManager.GetMyPlayer().GetPlayerObject();
 
+            //Set focus to the target
+            environmentSystem.SetFocusTarget(focusTarget);
+
+            //Done loading this class
             gameLoaded = true;
+
+            //Task completed
             await Task.CompletedTask;
         }
 
@@ -76,12 +88,39 @@ namespace Engine.World
          * Internal Variables
          */
 
+        /// <summary>
+        /// The target focus for chunk loading and environment switching
+        /// </summary>
+        private GameObject focusTarget;
+
+        /// <summary>
+        /// The client player manager reference
+        /// </summary>
+        private ClientPlayerManager clientPlayerManager;
+
+        /// <summary>
+        /// Whether or not the game is loaded
+        /// </summary>
         private bool gameLoaded = false;
 
+        /// <summary>
+        /// The list of chunks that are to be loaded
+        /// </summary>
         private List<Vector2Int> chunks = new List<Vector2Int>();
+
+        /// <summary>
+        /// The list of chunks that are being loaded
+        /// </summary>
         private List<Vector2Int> chunksInOperation = new List<Vector2Int>();
+
+        /// <summary>
+        /// The list of chunks that are loaded
+        /// </summary>
         private List<Vector2Int> chunksLoaded = new List<Vector2Int>();
 
+        /// <summary>
+        /// The environment system instance
+        /// </summary>
         private EnvironmentSystem environmentSystem;
 
         /*

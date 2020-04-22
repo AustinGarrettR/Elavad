@@ -17,8 +17,7 @@ namespace Engine.Asset
         /// <summary>
         /// Initialize method
         /// </summary>
-        /// <param name="parameters"></param>
-        public override void Init(params object[] parameters)
+        public override void Init()
         {
             //Load data pack from resources
             clientAssetPack = Resources.Load<ClientAssetPack>("Client_Assets");
@@ -69,6 +68,15 @@ namespace Engine.Asset
             Log.LogError("Asset Error. Unable to find UI Panel:" + name);
 
             return null;
+        }
+
+        /// <summary>
+        /// Returns the main player prefab
+        /// </summary>
+        /// <returns>The player prefab</returns>
+        public GameObject GetPlayerPrefab()
+        {
+            return clientAssetPack.playerPack.playerPrefab;
         }
         
         /*

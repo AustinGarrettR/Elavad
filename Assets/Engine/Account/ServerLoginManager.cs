@@ -10,6 +10,19 @@ namespace Engine.Account
     public class ServerLoginManager : Manager
     {
         /*
+         * Constructor
+         */
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="connectionManager">The connection manager reference</param>
+        public ServerLoginManager(ConnectionManager connectionManager)
+        { 
+            this.connectionManager = connectionManager;
+        }
+
+        /*
          * Override Methods
          */
 
@@ -17,10 +30,8 @@ namespace Engine.Account
         /// Called on initialization
         /// </summary>
         /// <param name="parameters">Connection manager parameter</param>
-        public override void Init(params object[] parameters)
+        public override void Init()
         {
-            connectionManager = (ConnectionManager)parameters[0];
-
             //Subscribe to events
             connectionManager.NotifyPacketReceived += OnPacketReceived;
         }

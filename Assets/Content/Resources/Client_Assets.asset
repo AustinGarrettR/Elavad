@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Client_Assets
   m_EditorClassIdentifier: 
   uiPack: {fileID: 11400000, guid: 7566ab7fc482da84e86bb04001893ebf, type: 2}
+  playerPack: {fileID: 11400000, guid: d16e1990ba2884045bb443c10aadf957, type: 2}

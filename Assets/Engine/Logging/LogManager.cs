@@ -16,8 +16,7 @@ namespace Engine.Logging
         /// <summary>
         /// Called on initialization
         /// </summary>
-        /// <param name="parameters">No parameters used</param>
-        public override void Init(params object[] parameters)
+        public override void Init()
         {
             Log.setLogManager(this);
         }

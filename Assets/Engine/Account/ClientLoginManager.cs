@@ -6,7 +6,6 @@ using UnityEngine;
 using Engine.Factory;
 using UnityEngine.SceneManagement;
 using Engine.Logging;
-using Engine.Dispatch;
 using System.Collections.Generic;
 
 namespace Engine.Account
@@ -16,6 +15,22 @@ namespace Engine.Account
     /// </summary>
     public class ClientLoginManager : Manager
     {
+
+        /*
+         * Constructor
+         */
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="connectionManager">The connection manager</param>
+        /// <param name="managers">All the managers</param>
+        public ClientLoginManager(ConnectionManager connectionManager, List<Manager> managers)
+        {
+            this.connectionManager = connectionManager;
+            this.managers = managers;
+        } 
+
         /*
          * Override Methods
          */
@@ -23,12 +38,8 @@ namespace Engine.Account
         /// <summary>
         /// Initialize method
         /// </summary>
-        /// <param name="parameters"></param>
-        public override void Init(params object[] parameters)
+        public override void Init()
         {
-            this.connectionManager = (ConnectionManager) parameters[0];
-            this.managers = (List<Manager>) parameters[1];
-
             //Subscribe to events
             connectionManager.NotifyFailedConnect += OnFailedToConnect;
             connectionManager.NotifyOnConnectedToServer += OnConnectedToServer;
@@ -190,9 +201,11 @@ namespace Engine.Account
 
                 this.statusMessageAction(true, Color.white, "Loading...");
 
-                //Run game load asynchronously
-                Task.Run(BeginGameLoad);
-                
+
+                //Run game load asynchronously on main thread
+                Task task = BeginGameLoad();
+                task.RunSynchronously();
+
                 loggedIn = true;
 
             }
@@ -257,15 +270,11 @@ namespace Engine.Account
             {
                 float opacity = ((float)i) / (float) iterations;
 
-                Dispatcher.Invoke(() => {
-                     opacityAction(opacity);
-                });
+                opacityAction(opacity);
                 await Task.Delay(delayInMillisecondsPerIteration);
             }
 
-            Dispatcher.Invoke(() => {
-                opacityAction(0);
-            });
+            opacityAction(0);
         }
 
         /// <summary>
@@ -274,9 +283,7 @@ namespace Engine.Account
         /// <returns></returns>
         private async Task EndGameLoad()
         {
-            Dispatcher.Invoke(() => {
-                SceneManager.UnloadSceneAsync(1, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
-            });
+            SceneManager.UnloadSceneAsync(1, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
             await Task.CompletedTask;
         }
 

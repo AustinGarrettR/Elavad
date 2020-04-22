@@ -17,8 +17,7 @@ namespace Engine.Asset
         /// <summary>
         /// Called on initialize
         /// </summary>
-        /// <param name="parameters">Variable parameters</param>
-        public override void Init(params object[] parameters)
+        public override void Init()
         {
             //Load data pack from resources
             sharedAssetPack = Resources.Load<SharedAssetPack>("Shared_Assets");

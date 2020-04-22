@@ -10,8 +10,7 @@ namespace Engine.Factory
         /// <summary>
         /// Called on initialization
         /// </summary>
-        /// <param name="parameters">Variable parameters</param>
-        public abstract void Init(params System.Object[] parameters);
+        public abstract void Init();
 
         /// <summary>
         /// Called every frame

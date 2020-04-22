@@ -76,12 +76,11 @@ namespace Engine
         /// <summary>
         /// Instantiate manager of type
         /// </summary>
-        /// <param name="m"></param>
-        /// <param name="parameters"></param>
-        internal void AddManager(Manager m, params System.Object[] parameters)
+        /// <param name="m">The manager to add</param>
+        internal void AddManager(Manager m)
         {
-            //Init manager
-            m.Init(parameters);
+            //Call start function in manager
+            m.Init();
 
             //Add to list for updating
             managers.Add(m);

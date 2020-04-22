@@ -10,6 +10,19 @@ namespace Engine.API
     {
 
         /*
+         * Constructor
+         */
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="managers">The list of managers for the api to reference</param>
+        public APIManager(List<Manager> managers)
+        {
+            API.SetManagers(managers);
+        }
+
+        /*
          * Override Functions
          */
 
@@ -17,10 +30,9 @@ namespace Engine.API
         /// Manager startup function
         /// </summary>
         /// <param name="parameters">List of managers needs to be supplied</param>
-        public override void Init(params object[] parameters)
+        public override void Init()
         {
-            List<Manager> managers = (List<Manager>) parameters[0];
-            API.SetManagers(managers);
+
         }
 
         /// <summary>

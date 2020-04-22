@@ -1,0 +1,16 @@
+{
+    "name": "Engine.Player",
+    "references": [
+        "GUID:ab0bf26c474862745b86bd0d94851aea",
+        "GUID:8b26b4ffcbc22dc4cbc2c215f4fe3def"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

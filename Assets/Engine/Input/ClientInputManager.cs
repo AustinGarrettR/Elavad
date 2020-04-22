@@ -17,8 +17,7 @@ namespace Engine.Input
         /// <summary>
         /// Initialize method
         /// </summary>
-        /// <param name="parameters"></param>
-        public override void Init(params object[] parameters)
+        public override void Init()
         {
 
         }

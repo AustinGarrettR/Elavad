@@ -17,17 +17,27 @@ namespace Engine.Networking
     {
 
         /*
+         * Constructor
+         */
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="listenerType">Whether the connection manager is the server or not</param>
+        public ConnectionManager(ListenerType listenerType)
+        {
+            this._isServer = listenerType == ListenerType.SERVER;
+        }
+
+        /*
          * Override Functions
          */
 
         /// <summary>
         /// Called on start
         /// </summary>
-        /// <param name="parameters"></param>
-        public override void Init(params System.Object[] parameters)
+        public override void Init()
         {
-            ListenerType listenerType = (ListenerType)parameters[0];
-            this._isServer = listenerType == ListenerType.SERVER;
 
             if (isServer)
                 Start();

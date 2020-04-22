@@ -5,8 +5,7 @@
         "Unity.Burst",
         "Engine.Logging",
         "Engine.Factory",
-        "Unity.Networking.Transport",
-        "Engine.Dispatch"
+        "Unity.Networking.Transport"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
