@@ -58,10 +58,7 @@ namespace Engine.World
         {
             if (gameLoaded)
             {
-                UpdateChunks(focusTarget.transform.position);
-                UpdateScenes();
-
-                environmentSystem.Update();
+                ProcessLoaded();
             }
         }
 
@@ -76,6 +73,12 @@ namespace Engine.World
 
             //Set focus to the target
             environmentSystem.SetFocusTarget(focusTarget);
+
+            //Process
+            ProcessLoaded();
+
+            //Ensure the world is loaded before continuing
+            await WaitForAllChunksToFinishLoad();
 
             //Done loading this class
             gameLoaded = true;
@@ -126,6 +129,27 @@ namespace Engine.World
         /*
          * Internal Methods
          */
+
+        /// <summary>
+        /// Waits for all chunks to finish loading
+        /// </summary>
+        /// <returns></returns>
+        private async Task WaitForAllChunksToFinishLoad()
+        {
+            while (chunksInOperation.Count > 0)
+                await Task.Delay(1);
+        }
+
+        /// <summary>
+        /// Runs every frame when game is loaded
+        /// </summary>
+        private void ProcessLoaded()
+        {
+            UpdateChunks(focusTarget.transform.position);
+            UpdateScenes();
+
+            environmentSystem.Update();
+        }
 
         /// <summary>
         /// Update chunks based around a target position

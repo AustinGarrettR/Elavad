@@ -35,6 +35,7 @@ items:
     content: 'public class ClientLoginManager : Manager'
     content.vb: >-
       Public Class ClientLoginManager
+
           Inherits Manager
   inheritance:
   - System.Object
@@ -270,7 +271,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: IsPlayerLoggedIn
     path: ../Assets/Engine/Account/ClientLoginManager.cs
-    startLine: 293
+    startLine: 296
   assemblies:
   - Engine.Account
   namespace: Engine.Account

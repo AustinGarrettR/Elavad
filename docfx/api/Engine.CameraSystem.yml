@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.CameraSystem
+  commentId: N:Engine.CameraSystem
+  id: Engine.CameraSystem
+  children:
+  - Engine.CameraSystem.ClientCameraManager
+  langs:
+  - csharp
+  - vb
+  name: Engine.CameraSystem
+  nameWithType: Engine.CameraSystem
+  fullName: Engine.CameraSystem
+  type: Namespace
+  assemblies:
+  - Engine.Camera
+references:
+- uid: Engine.CameraSystem.ClientCameraManager
+  commentId: T:Engine.CameraSystem.ClientCameraManager
+  name: ClientCameraManager
+  nameWithType: ClientCameraManager
+  fullName: Engine.CameraSystem.ClientCameraManager

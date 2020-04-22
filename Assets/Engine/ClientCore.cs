@@ -8,7 +8,7 @@ using Engine.API;
 using Engine.Dispatch;
 using Engine.World;
 using Engine.Player;
-using UnityEditor.PackageManager;
+using Engine.CameraSystem;
 
 namespace Engine
 {
@@ -50,6 +50,9 @@ namespace Engine
 
             clientUIManager = new ClientUIManager(clientAssetManager);
             AddManager(clientUIManager);
+
+            clientCameraManager = new ClientCameraManager(clientPlayerManager);
+            AddManager(clientCameraManager);
 
             clientLoginManager = new ClientLoginManager(connectionManager, managers);
             AddManager(clientLoginManager);
@@ -132,6 +135,11 @@ namespace Engine
         /// The dispatcher which allows asynchronous contexts to execute functions on the main thread
         /// </summary>
         internal DispatchManager dispatchManager;
+
+        /// <summary>
+        /// The client camera manager processes the camera system
+        /// </summary>
+        internal ClientCameraManager clientCameraManager;
 
     }
 }

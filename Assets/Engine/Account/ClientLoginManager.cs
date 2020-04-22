@@ -264,17 +264,20 @@ namespace Engine.Account
         /// <returns></returns>
         private async Task FadeLoginScreen()
         {
-            int iterations = 500;
-            int delayInMillisecondsPerIteration = 3;
-            for (int i = iterations; i > 0; i--)
+            float opacity = 1f;
+            float speed = 0.65f;
+            while (opacity > 0f)
             {
-                float opacity = ((float)i) / (float) iterations;
+                opacity -= (Time.deltaTime) * speed;
+                if (opacity < 0)
+                    opacity = 0;
 
                 opacityAction(opacity);
-                await Task.Delay(delayInMillisecondsPerIteration);
+
+                await Task.Delay(5);
             }
 
-            opacityAction(0);
+            await Task.CompletedTask;
         }
 
         /// <summary>

@@ -1,0 +1,797 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.CameraSystem.ClientCameraManager
+  commentId: T:Engine.CameraSystem.ClientCameraManager
+  id: ClientCameraManager
+  parent: Engine.CameraSystem
+  children:
+  - Engine.CameraSystem.ClientCameraManager.#ctor(Engine.Player.ClientPlayerManager)
+  - Engine.CameraSystem.ClientCameraManager.Init
+  - Engine.CameraSystem.ClientCameraManager.LoadGameTask
+  - Engine.CameraSystem.ClientCameraManager.Process
+  - Engine.CameraSystem.ClientCameraManager.SetRotateAroundTarget(UnityEngine.GameObject)
+  - Engine.CameraSystem.ClientCameraManager.SetRotateAroundTargetToPlayer
+  - Engine.CameraSystem.ClientCameraManager.Shutdown
+  langs:
+  - csharp
+  - vb
+  name: ClientCameraManager
+  nameWithType: ClientCameraManager
+  fullName: Engine.CameraSystem.ClientCameraManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Engine/Camera/ClientCameraManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: ClientCameraManager
+    path: ../Assets/Engine/Camera/ClientCameraManager.cs
+    startLine: 14
+  assemblies:
+  - Engine.Camera
+  namespace: Engine.CameraSystem
+  summary: "\nThe manager that controls the player camera\n"
+  example: []
+  syntax:
+    content: 'public class ClientCameraManager : Manager'
+    content.vb: >-
+      Public Class ClientCameraManager
+
+          Inherits Manager
+  inheritance:
+  - System.Object
+  - Engine.Factory.Manager
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Engine.CameraSystem.ClientCameraManager.#ctor(Engine.Player.ClientPlayerManager)
+  commentId: M:Engine.CameraSystem.ClientCameraManager.#ctor(Engine.Player.ClientPlayerManager)
+  id: '#ctor(Engine.Player.ClientPlayerManager)'
+  parent: Engine.CameraSystem.ClientCameraManager
+  langs:
+  - csharp
+  - vb
+  name: ClientCameraManager(ClientPlayerManager)
+  nameWithType: ClientCameraManager.ClientCameraManager(ClientPlayerManager)
+  fullName: Engine.CameraSystem.ClientCameraManager.ClientCameraManager(Engine.Player.ClientPlayerManager)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Engine/Camera/ClientCameraManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: .ctor
+    path: ../Assets/Engine/Camera/ClientCameraManager.cs
+    startLine: 24
+  assemblies:
+  - Engine.Camera
+  namespace: Engine.CameraSystem
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public ClientCameraManager(ClientPlayerManager clientPlayerManager)
+    parameters:
+    - id: clientPlayerManager
+      type: Engine.Player.ClientPlayerManager
+      description: The client player manager
+    content.vb: Public Sub New(clientPlayerManager As ClientPlayerManager)
+  overload: Engine.CameraSystem.ClientCameraManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.CameraSystem.ClientCameraManager.Init
+  commentId: M:Engine.CameraSystem.ClientCameraManager.Init
+  id: Init
+  parent: Engine.CameraSystem.ClientCameraManager
+  langs:
+  - csharp
+  - vb
+  name: Init()
+  nameWithType: ClientCameraManager.Init()
+  fullName: Engine.CameraSystem.ClientCameraManager.Init()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Camera/ClientCameraManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: Init
+    path: ../Assets/Engine/Camera/ClientCameraManager.cs
+    startLine: 36
+  assemblies:
+  - Engine.Camera
+  namespace: Engine.CameraSystem
+  summary: "\nCalled on initialization\n"
+  example: []
+  syntax:
+    content: public override void Init()
+    content.vb: Public Overrides Sub Init
+  overridden: Engine.Factory.Manager.Init
+  overload: Engine.CameraSystem.ClientCameraManager.Init*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Engine.CameraSystem.ClientCameraManager.Process
+  commentId: M:Engine.CameraSystem.ClientCameraManager.Process
+  id: Process
+  parent: Engine.CameraSystem.ClientCameraManager
+  langs:
+  - csharp
+  - vb
+  name: Process()
+  nameWithType: ClientCameraManager.Process()
+  fullName: Engine.CameraSystem.ClientCameraManager.Process()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Camera/ClientCameraManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: Process
+    path: ../Assets/Engine/Camera/ClientCameraManager.cs
+    startLine: 54
+  assemblies:
+  - Engine.Camera
+  namespace: Engine.CameraSystem
+  summary: "\nCalled every frame\n"
+  example: []
+  syntax:
+    content: public override void Process()
+    content.vb: Public Overrides Sub Process
+  overridden: Engine.Factory.Manager.Process
+  overload: Engine.CameraSystem.ClientCameraManager.Process*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Engine.CameraSystem.ClientCameraManager.LoadGameTask
+  commentId: M:Engine.CameraSystem.ClientCameraManager.LoadGameTask
+  id: LoadGameTask
+  parent: Engine.CameraSystem.ClientCameraManager
+  langs:
+  - csharp
+  - vb
+  name: LoadGameTask()
+  nameWithType: ClientCameraManager.LoadGameTask()
+  fullName: Engine.CameraSystem.ClientCameraManager.LoadGameTask()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Camera/ClientCameraManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: LoadGameTask
+    path: ../Assets/Engine/Camera/ClientCameraManager.cs
+    startLine: 67
+  assemblies:
+  - Engine.Camera
+  namespace: Engine.CameraSystem
+  summary: "\nCalled on game load\n"
+  example: []
+  syntax:
+    content: public override Task LoadGameTask()
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Public Overrides Function LoadGameTask As Task
+  overridden: Engine.Factory.Manager.LoadGameTask
+  overload: Engine.CameraSystem.ClientCameraManager.LoadGameTask*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Engine.CameraSystem.ClientCameraManager.Shutdown
+  commentId: M:Engine.CameraSystem.ClientCameraManager.Shutdown
+  id: Shutdown
+  parent: Engine.CameraSystem.ClientCameraManager
+  langs:
+  - csharp
+  - vb
+  name: Shutdown()
+  nameWithType: ClientCameraManager.Shutdown()
+  fullName: Engine.CameraSystem.ClientCameraManager.Shutdown()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Camera/ClientCameraManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: Shutdown
+    path: ../Assets/Engine/Camera/ClientCameraManager.cs
+    startLine: 83
+  assemblies:
+  - Engine.Camera
+  namespace: Engine.CameraSystem
+  summary: "\nCalled on shutdown\n"
+  example: []
+  syntax:
+    content: public override void Shutdown()
+    content.vb: Public Overrides Sub Shutdown
+  overridden: Engine.Factory.Manager.Shutdown
+  overload: Engine.CameraSystem.ClientCameraManager.Shutdown*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Engine.CameraSystem.ClientCameraManager.SetRotateAroundTarget(UnityEngine.GameObject)
+  commentId: M:Engine.CameraSystem.ClientCameraManager.SetRotateAroundTarget(UnityEngine.GameObject)
+  id: SetRotateAroundTarget(UnityEngine.GameObject)
+  parent: Engine.CameraSystem.ClientCameraManager
+  langs:
+  - csharp
+  - vb
+  name: SetRotateAroundTarget(GameObject)
+  nameWithType: ClientCameraManager.SetRotateAroundTarget(GameObject)
+  fullName: Engine.CameraSystem.ClientCameraManager.SetRotateAroundTarget(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Camera/ClientCameraManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: SetRotateAroundTarget
+    path: ../Assets/Engine/Camera/ClientCameraManager.cs
+    startLine: 96
+  assemblies:
+  - Engine.Camera
+  namespace: Engine.CameraSystem
+  summary: "\nChange rotate around target\n"
+  example: []
+  syntax:
+    content: public void SetRotateAroundTarget(GameObject target)
+    parameters:
+    - id: target
+      type: UnityEngine.GameObject
+      description: The target gameobject other than the my player
+    content.vb: Public Sub SetRotateAroundTarget(target As GameObject)
+  overload: Engine.CameraSystem.ClientCameraManager.SetRotateAroundTarget*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.CameraSystem.ClientCameraManager.SetRotateAroundTargetToPlayer
+  commentId: M:Engine.CameraSystem.ClientCameraManager.SetRotateAroundTargetToPlayer
+  id: SetRotateAroundTargetToPlayer
+  parent: Engine.CameraSystem.ClientCameraManager
+  langs:
+  - csharp
+  - vb
+  name: SetRotateAroundTargetToPlayer()
+  nameWithType: ClientCameraManager.SetRotateAroundTargetToPlayer()
+  fullName: Engine.CameraSystem.ClientCameraManager.SetRotateAroundTargetToPlayer()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Camera/ClientCameraManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: SetRotateAroundTargetToPlayer
+    path: ../Assets/Engine/Camera/ClientCameraManager.cs
+    startLine: 111
+  assemblies:
+  - Engine.Camera
+  namespace: Engine.CameraSystem
+  summary: "\nChange rotate around target to the my player\n"
+  example: []
+  syntax:
+    content: public void SetRotateAroundTargetToPlayer()
+    content.vb: Public Sub SetRotateAroundTargetToPlayer
+  overload: Engine.CameraSystem.ClientCameraManager.SetRotateAroundTargetToPlayer*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Engine.CameraSystem
+  commentId: N:Engine.CameraSystem
+  name: Engine.CameraSystem
+  nameWithType: Engine.CameraSystem
+  fullName: Engine.CameraSystem
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Engine.Factory.Manager
+  commentId: T:Engine.Factory.Manager
+  parent: Engine.Factory
+  name: Manager
+  nameWithType: Manager
+  fullName: Engine.Factory.Manager
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Engine.Factory
+  commentId: N:Engine.Factory
+  name: Engine.Factory
+  nameWithType: Engine.Factory
+  fullName: Engine.Factory
+- uid: Engine.CameraSystem.ClientCameraManager.#ctor*
+  commentId: Overload:Engine.CameraSystem.ClientCameraManager.#ctor
+  name: ClientCameraManager
+  nameWithType: ClientCameraManager.ClientCameraManager
+  fullName: Engine.CameraSystem.ClientCameraManager.ClientCameraManager
+- uid: Engine.Player.ClientPlayerManager
+  commentId: T:Engine.Player.ClientPlayerManager
+  parent: Engine.Player
+  name: ClientPlayerManager
+  nameWithType: ClientPlayerManager
+  fullName: Engine.Player.ClientPlayerManager
+- uid: Engine.Player
+  commentId: N:Engine.Player
+  name: Engine.Player
+  nameWithType: Engine.Player
+  fullName: Engine.Player
+- uid: Engine.Factory.Manager.Init
+  commentId: M:Engine.Factory.Manager.Init
+  parent: Engine.Factory.Manager
+  name: Init()
+  nameWithType: Manager.Init()
+  fullName: Engine.Factory.Manager.Init()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.Init
+    name: Init
+    nameWithType: Manager.Init
+    fullName: Engine.Factory.Manager.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.Init
+    name: Init
+    nameWithType: Manager.Init
+    fullName: Engine.Factory.Manager.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Engine.CameraSystem.ClientCameraManager.Init*
+  commentId: Overload:Engine.CameraSystem.ClientCameraManager.Init
+  name: Init
+  nameWithType: ClientCameraManager.Init
+  fullName: Engine.CameraSystem.ClientCameraManager.Init
+- uid: Engine.Factory.Manager.Process
+  commentId: M:Engine.Factory.Manager.Process
+  parent: Engine.Factory.Manager
+  name: Process()
+  nameWithType: Manager.Process()
+  fullName: Engine.Factory.Manager.Process()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.Process
+    name: Process
+    nameWithType: Manager.Process
+    fullName: Engine.Factory.Manager.Process
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.Process
+    name: Process
+    nameWithType: Manager.Process
+    fullName: Engine.Factory.Manager.Process
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Engine.CameraSystem.ClientCameraManager.Process*
+  commentId: Overload:Engine.CameraSystem.ClientCameraManager.Process
+  name: Process
+  nameWithType: ClientCameraManager.Process
+  fullName: Engine.CameraSystem.ClientCameraManager.Process
+- uid: Engine.Factory.Manager.LoadGameTask
+  commentId: M:Engine.Factory.Manager.LoadGameTask
+  parent: Engine.Factory.Manager
+  name: LoadGameTask()
+  nameWithType: Manager.LoadGameTask()
+  fullName: Engine.Factory.Manager.LoadGameTask()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.LoadGameTask
+    name: LoadGameTask
+    nameWithType: Manager.LoadGameTask
+    fullName: Engine.Factory.Manager.LoadGameTask
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.LoadGameTask
+    name: LoadGameTask
+    nameWithType: Manager.LoadGameTask
+    fullName: Engine.Factory.Manager.LoadGameTask
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Engine.CameraSystem.ClientCameraManager.LoadGameTask*
+  commentId: Overload:Engine.CameraSystem.ClientCameraManager.LoadGameTask
+  name: LoadGameTask
+  nameWithType: ClientCameraManager.LoadGameTask
+  fullName: Engine.CameraSystem.ClientCameraManager.LoadGameTask
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: Engine.Factory.Manager.Shutdown
+  commentId: M:Engine.Factory.Manager.Shutdown
+  parent: Engine.Factory.Manager
+  name: Shutdown()
+  nameWithType: Manager.Shutdown()
+  fullName: Engine.Factory.Manager.Shutdown()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.Shutdown
+    name: Shutdown
+    nameWithType: Manager.Shutdown
+    fullName: Engine.Factory.Manager.Shutdown
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.Shutdown
+    name: Shutdown
+    nameWithType: Manager.Shutdown
+    fullName: Engine.Factory.Manager.Shutdown
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Engine.CameraSystem.ClientCameraManager.Shutdown*
+  commentId: Overload:Engine.CameraSystem.ClientCameraManager.Shutdown
+  name: Shutdown
+  nameWithType: ClientCameraManager.Shutdown
+  fullName: Engine.CameraSystem.ClientCameraManager.Shutdown
+- uid: Engine.CameraSystem.ClientCameraManager.SetRotateAroundTarget*
+  commentId: Overload:Engine.CameraSystem.ClientCameraManager.SetRotateAroundTarget
+  name: SetRotateAroundTarget
+  nameWithType: ClientCameraManager.SetRotateAroundTarget
+  fullName: Engine.CameraSystem.ClientCameraManager.SetRotateAroundTarget
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: Engine.CameraSystem.ClientCameraManager.SetRotateAroundTargetToPlayer*
+  commentId: Overload:Engine.CameraSystem.ClientCameraManager.SetRotateAroundTargetToPlayer
+  name: SetRotateAroundTargetToPlayer
+  nameWithType: ClientCameraManager.SetRotateAroundTargetToPlayer
+  fullName: Engine.CameraSystem.ClientCameraManager.SetRotateAroundTargetToPlayer

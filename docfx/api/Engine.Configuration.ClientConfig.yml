@@ -5,6 +5,17 @@ items:
   id: ClientConfig
   parent: Engine.Configuration
   children:
+  - Engine.Configuration.ClientConfig.CAMERA_DEFAULT_DISTANCE
+  - Engine.Configuration.ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION
+  - Engine.Configuration.ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION_SPEED
+  - Engine.Configuration.ClientConfig.CAMERA_DEFAULT_Y_AXIS_ROTATION
+  - Engine.Configuration.ClientConfig.CAMERA_DEFAULT_Y_AXIS_ROTATION_SPEED
+  - Engine.Configuration.ClientConfig.CAMERA_DEFAULT_ZOOM_WHEN_INTERCEPTED
+  - Engine.Configuration.ClientConfig.CAMERA_DISTANCE_MAXIMUM
+  - Engine.Configuration.ClientConfig.CAMERA_DISTANCE_MINIMUM
+  - Engine.Configuration.ClientConfig.CAMERA_Y_AXIS_MAXIMUM
+  - Engine.Configuration.ClientConfig.CAMERA_Y_AXIS_MINIMUM
+  - Engine.Configuration.ClientConfig.CAMERA_Y_OFFSET
   - Engine.Configuration.ClientConfig.ENVIRONMENT_TRANSITION_SPEED
   langs:
   - csharp
@@ -74,6 +85,413 @@ items:
     return:
       type: System.Single
     content.vb: Public Shared ReadOnly ENVIRONMENT_TRANSITION_SPEED As Single
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.ClientConfig.CAMERA_Y_OFFSET
+  commentId: F:Engine.Configuration.ClientConfig.CAMERA_Y_OFFSET
+  id: CAMERA_Y_OFFSET
+  parent: Engine.Configuration.ClientConfig
+  langs:
+  - csharp
+  - vb
+  name: CAMERA_Y_OFFSET
+  nameWithType: ClientConfig.CAMERA_Y_OFFSET
+  fullName: Engine.Configuration.ClientConfig.CAMERA_Y_OFFSET
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/ClientConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: CAMERA_Y_OFFSET
+    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    startLine: 23
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nThe camera rotation for the x axis\n"
+  example: []
+  syntax:
+    content: public static readonly float CAMERA_Y_OFFSET
+    return:
+      type: System.Single
+    content.vb: Public Shared ReadOnly CAMERA_Y_OFFSET As Single
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.ClientConfig.CAMERA_DISTANCE_MINIMUM
+  commentId: F:Engine.Configuration.ClientConfig.CAMERA_DISTANCE_MINIMUM
+  id: CAMERA_DISTANCE_MINIMUM
+  parent: Engine.Configuration.ClientConfig
+  langs:
+  - csharp
+  - vb
+  name: CAMERA_DISTANCE_MINIMUM
+  nameWithType: ClientConfig.CAMERA_DISTANCE_MINIMUM
+  fullName: Engine.Configuration.ClientConfig.CAMERA_DISTANCE_MINIMUM
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/ClientConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: CAMERA_DISTANCE_MINIMUM
+    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    startLine: 28
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nThe camera distance minimum\n"
+  example: []
+  syntax:
+    content: public static readonly float CAMERA_DISTANCE_MINIMUM
+    return:
+      type: System.Single
+    content.vb: Public Shared ReadOnly CAMERA_DISTANCE_MINIMUM As Single
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.ClientConfig.CAMERA_DISTANCE_MAXIMUM
+  commentId: F:Engine.Configuration.ClientConfig.CAMERA_DISTANCE_MAXIMUM
+  id: CAMERA_DISTANCE_MAXIMUM
+  parent: Engine.Configuration.ClientConfig
+  langs:
+  - csharp
+  - vb
+  name: CAMERA_DISTANCE_MAXIMUM
+  nameWithType: ClientConfig.CAMERA_DISTANCE_MAXIMUM
+  fullName: Engine.Configuration.ClientConfig.CAMERA_DISTANCE_MAXIMUM
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/ClientConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: CAMERA_DISTANCE_MAXIMUM
+    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    startLine: 33
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nThe camera distance maximum\n"
+  example: []
+  syntax:
+    content: public static readonly float CAMERA_DISTANCE_MAXIMUM
+    return:
+      type: System.Single
+    content.vb: Public Shared ReadOnly CAMERA_DISTANCE_MAXIMUM As Single
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.ClientConfig.CAMERA_Y_AXIS_MINIMUM
+  commentId: F:Engine.Configuration.ClientConfig.CAMERA_Y_AXIS_MINIMUM
+  id: CAMERA_Y_AXIS_MINIMUM
+  parent: Engine.Configuration.ClientConfig
+  langs:
+  - csharp
+  - vb
+  name: CAMERA_Y_AXIS_MINIMUM
+  nameWithType: ClientConfig.CAMERA_Y_AXIS_MINIMUM
+  fullName: Engine.Configuration.ClientConfig.CAMERA_Y_AXIS_MINIMUM
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/ClientConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: CAMERA_Y_AXIS_MINIMUM
+    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    startLine: 38
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nThe camera  y minimum limit\n"
+  example: []
+  syntax:
+    content: public static readonly float CAMERA_Y_AXIS_MINIMUM
+    return:
+      type: System.Single
+    content.vb: Public Shared ReadOnly CAMERA_Y_AXIS_MINIMUM As Single
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.ClientConfig.CAMERA_Y_AXIS_MAXIMUM
+  commentId: F:Engine.Configuration.ClientConfig.CAMERA_Y_AXIS_MAXIMUM
+  id: CAMERA_Y_AXIS_MAXIMUM
+  parent: Engine.Configuration.ClientConfig
+  langs:
+  - csharp
+  - vb
+  name: CAMERA_Y_AXIS_MAXIMUM
+  nameWithType: ClientConfig.CAMERA_Y_AXIS_MAXIMUM
+  fullName: Engine.Configuration.ClientConfig.CAMERA_Y_AXIS_MAXIMUM
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/ClientConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: CAMERA_Y_AXIS_MAXIMUM
+    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    startLine: 43
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nThe camera  y maximum limit\n"
+  example: []
+  syntax:
+    content: public static readonly float CAMERA_Y_AXIS_MAXIMUM
+    return:
+      type: System.Single
+    content.vb: Public Shared ReadOnly CAMERA_Y_AXIS_MAXIMUM As Single
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION_SPEED
+  commentId: F:Engine.Configuration.ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION_SPEED
+  id: CAMERA_DEFAULT_X_AXIS_ROTATION_SPEED
+  parent: Engine.Configuration.ClientConfig
+  langs:
+  - csharp
+  - vb
+  name: CAMERA_DEFAULT_X_AXIS_ROTATION_SPEED
+  nameWithType: ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION_SPEED
+  fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION_SPEED
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/ClientConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: CAMERA_DEFAULT_X_AXIS_ROTATION_SPEED
+    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    startLine: 52
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nThe default camera rotation speed for the x axis\n"
+  example: []
+  syntax:
+    content: public static readonly float CAMERA_DEFAULT_X_AXIS_ROTATION_SPEED
+    return:
+      type: System.Single
+    content.vb: Public Shared ReadOnly CAMERA_DEFAULT_X_AXIS_ROTATION_SPEED As Single
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_Y_AXIS_ROTATION_SPEED
+  commentId: F:Engine.Configuration.ClientConfig.CAMERA_DEFAULT_Y_AXIS_ROTATION_SPEED
+  id: CAMERA_DEFAULT_Y_AXIS_ROTATION_SPEED
+  parent: Engine.Configuration.ClientConfig
+  langs:
+  - csharp
+  - vb
+  name: CAMERA_DEFAULT_Y_AXIS_ROTATION_SPEED
+  nameWithType: ClientConfig.CAMERA_DEFAULT_Y_AXIS_ROTATION_SPEED
+  fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_Y_AXIS_ROTATION_SPEED
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/ClientConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: CAMERA_DEFAULT_Y_AXIS_ROTATION_SPEED
+    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    startLine: 57
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nThe default camera rotation speed for the y axis\n"
+  example: []
+  syntax:
+    content: public static readonly float CAMERA_DEFAULT_Y_AXIS_ROTATION_SPEED
+    return:
+      type: System.Single
+    content.vb: Public Shared ReadOnly CAMERA_DEFAULT_Y_AXIS_ROTATION_SPEED As Single
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION
+  commentId: F:Engine.Configuration.ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION
+  id: CAMERA_DEFAULT_X_AXIS_ROTATION
+  parent: Engine.Configuration.ClientConfig
+  langs:
+  - csharp
+  - vb
+  name: CAMERA_DEFAULT_X_AXIS_ROTATION
+  nameWithType: ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION
+  fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/ClientConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: CAMERA_DEFAULT_X_AXIS_ROTATION
+    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    startLine: 62
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nThe default camera rotation for the x axis\n"
+  example: []
+  syntax:
+    content: public static readonly float CAMERA_DEFAULT_X_AXIS_ROTATION
+    return:
+      type: System.Single
+    content.vb: Public Shared ReadOnly CAMERA_DEFAULT_X_AXIS_ROTATION As Single
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_Y_AXIS_ROTATION
+  commentId: F:Engine.Configuration.ClientConfig.CAMERA_DEFAULT_Y_AXIS_ROTATION
+  id: CAMERA_DEFAULT_Y_AXIS_ROTATION
+  parent: Engine.Configuration.ClientConfig
+  langs:
+  - csharp
+  - vb
+  name: CAMERA_DEFAULT_Y_AXIS_ROTATION
+  nameWithType: ClientConfig.CAMERA_DEFAULT_Y_AXIS_ROTATION
+  fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_Y_AXIS_ROTATION
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/ClientConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: CAMERA_DEFAULT_Y_AXIS_ROTATION
+    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    startLine: 67
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nThe default camera rotation for the y axis\n"
+  example: []
+  syntax:
+    content: public static readonly float CAMERA_DEFAULT_Y_AXIS_ROTATION
+    return:
+      type: System.Single
+    content.vb: Public Shared ReadOnly CAMERA_DEFAULT_Y_AXIS_ROTATION As Single
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_DISTANCE
+  commentId: F:Engine.Configuration.ClientConfig.CAMERA_DEFAULT_DISTANCE
+  id: CAMERA_DEFAULT_DISTANCE
+  parent: Engine.Configuration.ClientConfig
+  langs:
+  - csharp
+  - vb
+  name: CAMERA_DEFAULT_DISTANCE
+  nameWithType: ClientConfig.CAMERA_DEFAULT_DISTANCE
+  fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_DISTANCE
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/ClientConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: CAMERA_DEFAULT_DISTANCE
+    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    startLine: 72
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nThe default camera distance\n"
+  example: []
+  syntax:
+    content: public static readonly float CAMERA_DEFAULT_DISTANCE
+    return:
+      type: System.Single
+    content.vb: Public Shared ReadOnly CAMERA_DEFAULT_DISTANCE As Single
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_ZOOM_WHEN_INTERCEPTED
+  commentId: F:Engine.Configuration.ClientConfig.CAMERA_DEFAULT_ZOOM_WHEN_INTERCEPTED
+  id: CAMERA_DEFAULT_ZOOM_WHEN_INTERCEPTED
+  parent: Engine.Configuration.ClientConfig
+  langs:
+  - csharp
+  - vb
+  name: CAMERA_DEFAULT_ZOOM_WHEN_INTERCEPTED
+  nameWithType: ClientConfig.CAMERA_DEFAULT_ZOOM_WHEN_INTERCEPTED
+  fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_ZOOM_WHEN_INTERCEPTED
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/ClientConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: CAMERA_DEFAULT_ZOOM_WHEN_INTERCEPTED
+    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    startLine: 77
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nThe default setting for the zamera zoom when an object interceps\n"
+  example: []
+  syntax:
+    content: public static readonly bool CAMERA_DEFAULT_ZOOM_WHEN_INTERCEPTED
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly CAMERA_DEFAULT_ZOOM_WHEN_INTERCEPTED As Boolean
   modifiers.csharp:
   - public
   - static
@@ -387,3 +805,10 @@ references:
   name: Single
   nameWithType: Single
   fullName: System.Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean

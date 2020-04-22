@@ -198,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Account.ClientLoginManager.html",
-          "hash": "6rgY7RX4P3M7HrPzaiOZnQ=="
+          "hash": "tzitMYkOmffi+Z79PhopUg=="
         }
       },
       "is_incremental": false,
@@ -314,6 +314,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Engine.CameraSystem.ClientCameraManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Engine.CameraSystem.ClientCameraManager.html",
+          "hash": "5q7ncxd0A4H4blvo4Nkw9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Engine.CameraSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Engine.CameraSystem.html",
+          "hash": "DjFymyg1E/IvXL5bg4WOUw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Engine.ClientCore.yml",
       "output": {
         ".html": {
@@ -330,7 +354,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Configuration.ClientConfig.html",
-          "hash": "VlvCV3upYq7CJMOC4loYmg=="
+          "hash": "9RxCDvRxMiYVznzvVM/2Fg=="
         }
       },
       "is_incremental": false,
@@ -414,7 +438,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Factory.Manager.html",
-          "hash": "nFzenWBe4pwbCrJzp8QkzA=="
+          "hash": "+VYkYzzgulc40GpqeXzbsg=="
         }
       },
       "is_incremental": false,
@@ -798,7 +822,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.UI.UIController.html",
-          "hash": "rmkvxItGZwfWE+qIHxxOxA=="
+          "hash": "OGRWkQ95/GYNcMT02vGe+w=="
         }
       },
       "is_incremental": false,
@@ -858,7 +882,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.World.ClientWorldManager.html",
-          "hash": "LS4QAJTNVURGLjoaBlDkVg=="
+          "hash": "KPqB92uPOhliwTIXbiJ7qQ=="
         }
       },
       "is_incremental": false,
@@ -942,7 +966,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Uqj8/M3sMH364xJH97/BYA=="
+          "hash": "Eni5oNtYfgpV8btfc5G2jw=="
         }
       },
       "is_incremental": false,
@@ -1037,8 +1061,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 75,
-          "skipped_file_count": 28
+          "total_file_count": 77,
+          "skipped_file_count": 47
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

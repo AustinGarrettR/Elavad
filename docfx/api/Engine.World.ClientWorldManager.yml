@@ -34,6 +34,7 @@ items:
     content: 'public class ClientWorldManager : Manager'
     content.vb: >-
       Public Class ClientWorldManager
+
           Inherits Manager
   inheritance:
   - System.Object
@@ -211,7 +212,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: LoadGameTask
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 71
+    startLine: 68
   assemblies:
   - Engine.World
   namespace: Engine.World

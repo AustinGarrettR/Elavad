@@ -35,6 +35,7 @@ items:
     content: 'public class ClientPlayerManager : Manager'
     content.vb: >-
       Public Class ClientPlayerManager
+
           Inherits Manager
   inheritance:
   - System.Object

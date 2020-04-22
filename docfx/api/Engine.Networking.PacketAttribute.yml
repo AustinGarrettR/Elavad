@@ -40,7 +40,9 @@ items:
       <AttributeUsage(AttributeTargets.Class Or AttributeTargets.Interface, AllowMultiple:=False, Inherited:=True)>
 
       Public Class PacketAttribute
+
           Inherits Attribute
+
           Implements _Attribute
   inheritance:
   - System.Object
