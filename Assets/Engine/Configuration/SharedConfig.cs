@@ -1,5 +1,3 @@
-using System;
-
 namespace Engine.Configuration
 {
     /// <summary>
@@ -64,6 +62,26 @@ namespace Engine.Configuration
         /// How far from a chunk position before it unloads
         /// </summary>
         public static readonly int CHUNK_UNLOAD_VIEW_DISTANCE = 600;
+
+        /*
+         * Scenes
+         */
+
+        /// <summary>
+        /// Location of the main scene
+        /// </summary>
+        public static readonly string MAIN_SCENE_PATH = "Assets/Scenes/Engine/Main.unity";
+
+        /// <summary>
+        /// Location of the login scene
+        /// </summary>
+        public static readonly string LOGIN_SCENE_PATH = "Assets/Scenes/Engine/Login.unity";
+
+        /// <summary>
+        /// Location of the world scenes
+        /// </summary>
+        public static readonly string WORLD_SCENES_FOLDER = "Assets/Scenes/World";
+
 
     }
 }

@@ -1,5 +1,4 @@
 ﻿using System;
-using UnityEngine;
 using Unity.Collections;
 using Unity.Networking.Transport;
 using System.Collections.Generic;
@@ -87,12 +86,12 @@ namespace Engine.Networking
         /// <summary>
         /// List of connections
         /// </summary>
-        private NativeList<NetworkConnection> connections;
+        private List<NetworkConnection> connections;
 
         /// <summary>
         /// List of connections which last read an escaped byte
         /// </summary>
-        private NativeList<int> escapedConnections;
+        private List<int> escapedConnections;
 
         /// <summary>
         /// Event delegate called when client is disconnected
@@ -190,8 +189,8 @@ namespace Engine.Networking
         public void Start()
         {
 
-            connections = new NativeList<NetworkConnection>(16, Allocator.Persistent);
-            escapedConnections = new NativeList<int>(16, Allocator.Persistent);
+            connections = new List<NetworkConnection>();
+            escapedConnections = new List<int>();
 
             networkDriver = NetworkDriver.Create();
 
@@ -229,7 +228,7 @@ namespace Engine.Networking
             networkDriver.ScheduleUpdate().Complete();
 
             // Clean Up Connections
-            for (int i = 0; i < connections.Length; i++)
+            for (int i = 0; i < connections.Count; i++)
             {
                 if (!connections[i].IsCreated)
                 {
@@ -252,7 +251,7 @@ namespace Engine.Networking
             //Queued Packet buffer
             List<byte> queuedMsg = new List<byte>();
 
-            for (int index = 0; index < connections.Length; index++)
+            for (int index = 0; index < connections.Count; index++)
             {
                 if (!connections[index].IsCreated)
                     Assert.IsTrue(true);
@@ -399,11 +398,11 @@ namespace Engine.Networking
 
             Log.LogMsg("Closed connection.");
 
-            if(connections.IsCreated)
-                connections.Dispose();
+            if (connections != null)
+                connections = null;
 
-            if (escapedConnections.IsCreated)
-                escapedConnections.Dispose();
+            if (escapedConnections != null)
+                escapedConnections = null;
 
             if (networkDriver.IsCreated)
                 networkDriver.Dispose();
@@ -419,7 +418,7 @@ namespace Engine.Networking
         /// <param name="packet">The packet</param>
         public void sendPacketToServer(Packet packet)
         {
-            if (connections.Length != 1)
+            if (connections.Count != 1)
             {
                 Log.LogError("Attempted sending packet to server when there is either 0 or more than 1 connection active, indicating this is the server.");
                 return;

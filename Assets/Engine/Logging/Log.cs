@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace Engine.Logging
+﻿namespace Engine.Logging
 {
     /// <summary>
     /// Static class to log messages and errors

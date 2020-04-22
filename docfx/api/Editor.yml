@@ -4,6 +4,7 @@ items:
   commentId: N:Editor
   id: Editor
   children:
+  - Editor.BuildSceneEditor
   - Editor.PacketInfoEditor
   - Editor.WorldEditorSceneProcessor
   langs:
@@ -16,6 +17,11 @@ items:
   assemblies:
   - Editor
 references:
+- uid: Editor.BuildSceneEditor
+  commentId: T:Editor.BuildSceneEditor
+  name: BuildSceneEditor
+  nameWithType: BuildSceneEditor
+  fullName: Editor.BuildSceneEditor
 - uid: Editor.PacketInfoEditor
   commentId: T:Editor.PacketInfoEditor
   name: PacketInfoEditor

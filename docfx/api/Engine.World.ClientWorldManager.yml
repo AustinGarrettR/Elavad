@@ -23,7 +23,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ClientWorldManager
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 14
+    startLine: 13
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -33,6 +33,7 @@ items:
     content: 'public class ClientWorldManager : Manager'
     content.vb: >-
       Public Class ClientWorldManager
+
           Inherits Manager
   inheritance:
   - System.Object
@@ -69,7 +70,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 28
+    startLine: 27
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -111,7 +112,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 39
+    startLine: 44
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -146,7 +147,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 47
+    startLine: 52
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -181,7 +182,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: LoadGameTask
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 60
+    startLine: 67
   assemblies:
   - Engine.World
   namespace: Engine.World

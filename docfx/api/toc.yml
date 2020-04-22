@@ -14,6 +14,8 @@
 - uid: Editor
   name: Editor
   items:
+  - uid: Editor.BuildSceneEditor
+    name: BuildSceneEditor
   - uid: Editor.PacketInfoEditor
     name: PacketInfoEditor
   - uid: Editor.WorldEditorSceneProcessor
@@ -150,3 +152,9 @@
   items:
   - uid: Engine.World.ClientWorldManager
     name: ClientWorldManager
+  - uid: Engine.World.EnvironmentSystem
+    name: EnvironmentSystem
+  - uid: Engine.World.EnvironmentVolume
+    name: EnvironmentVolume
+  - uid: Engine.World.EnvironmentVolume.volumeEnteredDelegate
+    name: EnvironmentVolume.volumeEnteredDelegate

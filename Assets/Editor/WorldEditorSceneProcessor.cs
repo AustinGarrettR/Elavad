@@ -9,11 +9,12 @@ using Engine.Configuration;
 namespace Editor
 {
     /// <summary>
-    /// The world editor runs in editor to aid in designing the world regions
+    /// This script runs on editor load to aid in designing the world regions
     /// </summary>
     [InitializeOnLoad]
     public static class WorldEditorSceneProcessor
     {
+        private static bool enteringPlayMode;
 
         /// <summary>
         /// Called on scene change
@@ -21,6 +22,25 @@ namespace Editor
         static WorldEditorSceneProcessor()
         {
             EditorApplication.hierarchyChanged += checkScene;
+            EditorApplication.playModeStateChanged += PlayModeChanged;
+        }
+
+        /// <summary>
+        /// Called on play mode changed event
+        /// </summary>
+        /// <param name="obj"></param>
+        private static void PlayModeChanged(PlayModeStateChange stateChange)
+        {
+            if (stateChange == PlayModeStateChange.EnteredEditMode)
+            {
+                enteringPlayMode = false;
+                checkScene();
+            }
+            else if (stateChange == PlayModeStateChange.ExitingEditMode)
+            {
+                enteringPlayMode = true;
+                UnloadWorldScenes();                
+            }
         }
 
         /// <summary>
@@ -28,10 +48,43 @@ namespace Editor
         /// </summary>
         private static void checkScene()
         {
-            if (EditorSceneManager.GetActiveScene().name.Equals("World_Editor"))
-            {
+            if (enteringPlayMode == false && Application.isPlaying == false && EditorSceneManager.GetActiveScene().path.Equals(SharedConfig.MAIN_SCENE_PATH))
+            {                
                 LoadWorld();
+                SetDefaultSkybox();
             }
+        }
+
+        /// <summary>
+        /// Unloads all additive scenes except active
+        /// </summary>
+        private static void UnloadWorldScenes()
+        {
+            if (Application.isPlaying == false && EditorSceneManager.GetActiveScene().path.Equals(SharedConfig.MAIN_SCENE_PATH))
+            {
+                int sceneCount = SceneManager.sceneCount;
+                for (int i = 0; i < sceneCount; i++)
+                {
+                    Scene scene = EditorSceneManager.GetSceneAt(i);
+                    if (scene.path.StartsWith(SharedConfig.WORLD_SCENES_FOLDER))
+                    {
+                        AsyncOperation sceneOp = EditorSceneManager.UnloadSceneAsync(scene);
+
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Sets the scene skybox back to default for editing
+        /// </summary>
+        private static void SetDefaultSkybox()
+        {
+            RenderSettings.skybox.SetTexture("_Tex1", AssetDatabase.LoadAssetAtPath<Cubemap>("Assets/Settings/Editor Skybox.png"));
+            RenderSettings.skybox.SetFloat("_Opacity1", 1);
+            RenderSettings.skybox.SetFloat("_Opacity2", 0);
+            RenderSettings.skybox.SetFloat("_Opacity3", 0);
+            RenderSettings.skybox.SetFloat("_Opacity4", 0);
         }
 
         /// <summary>
@@ -39,11 +92,17 @@ namespace Editor
         /// </summary>
         private static void LoadWorld()
         {
-            string[] sceneAssets = AssetDatabase.FindAssets("t:Scene", new[] { "Assets/Scenes/World" });
+
+            string[] sceneAssets = AssetDatabase.FindAssets("t:Scene", new[] { SharedConfig.WORLD_SCENES_FOLDER });
             foreach (string sceneAsset in sceneAssets)
             {
-                LoadScene(AssetDatabase.GUIDToAssetPath(sceneAsset));
+                string scenePath = AssetDatabase.GUIDToAssetPath(sceneAsset);
+
+                //Load scene
+                LoadScene(scenePath);
+
             }
+
         }
 
         /// <summary>
@@ -66,15 +125,12 @@ namespace Editor
             {
                 Debug.LogError("Scene " + sceneName + " is missing a root object.");
             }
-            else
-            if (rootObjects.Length > 1)
-            {
-                Debug.LogError("Scene " + sceneName + " has more than one root object.");
-            }
 
             GameObject rootObject = rootObjects[0];
             rootObject.transform.position = new Vector3(chunk.x * SharedConfig.WORLD_CHUNK_SIZE, 0, chunk.y * SharedConfig.WORLD_CHUNK_SIZE);
+
         }
+
     }
 
 }

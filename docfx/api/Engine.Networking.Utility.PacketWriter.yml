@@ -20,7 +20,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: PacketWriter
     path: ../Assets/Engine/Networking/Utilities/PacketWriter.cs
-    startLine: 11
+    startLine: 8
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking.Utility
@@ -63,7 +63,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Add
     path: ../Assets/Engine/Networking/Utilities/PacketWriter.cs
-    startLine: 20
+    startLine: 17
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking.Utility

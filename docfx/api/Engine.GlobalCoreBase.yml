@@ -19,7 +19,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: GlobalCoreBase
     path: ../Assets/Engine/GlobalCoreBase.cs
-    startLine: 10
+    startLine: 9
   assemblies:
   - Engine
   namespace: Engine
@@ -29,6 +29,7 @@ items:
     content: 'public abstract class GlobalCoreBase : MonoBehaviour'
     content.vb: >-
       Public MustInherit Class GlobalCoreBase
+
           Inherits MonoBehaviour
   inheritance:
   - System.Object

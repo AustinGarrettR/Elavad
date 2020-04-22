@@ -86,6 +86,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Editor.BuildSceneEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Editor.BuildSceneEditor.html",
+          "hash": "ROr9Mb1fqReKNUnbUAil9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Editor.PacketInfoEditor.yml",
       "output": {
         ".html": {
@@ -102,7 +114,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Editor.WorldEditorSceneProcessor.html",
-          "hash": "zzG012xidM10VcYjAFS2sg=="
+          "hash": "ovRtL8tABZfCRdwMXjRVVQ=="
         }
       },
       "is_incremental": false,
@@ -114,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Editor.html",
-          "hash": "y2ZyoTn/lTSVE92OencmhA=="
+          "hash": "F3wAUBJNMgWVFWF3b5sYNA=="
         }
       },
       "is_incremental": false,
@@ -126,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.API.API.Client.html",
-          "hash": "CH4abIZsZCUMkzlSwqV1Uw=="
+          "hash": "D5k+NxYkYAMGU1VnITAHfQ=="
         }
       },
       "is_incremental": false,
@@ -150,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.API.API.html",
-          "hash": "TcJcB7if7jwTeoox5hchCw=="
+          "hash": "KJiDg+Hq0wxCSW46IY1rSQ=="
         }
       },
       "is_incremental": false,
@@ -198,7 +210,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Account.ServerLoginManager.html",
-          "hash": "5ZBjev2xAKZyoZHbqYE30Q=="
+          "hash": "XvLmeQAiosn2NBRrN8jNig=="
         }
       },
       "is_incremental": false,
@@ -222,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Asset.ClientAssetManager.html",
-          "hash": "rFsDGo0lMfE02Yp03LjasA=="
+          "hash": "7d0kVHd7mR5HDdokNkE7jw=="
         }
       },
       "is_incremental": false,
@@ -270,7 +282,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Asset.UI_Pack.html",
-          "hash": "6VeS2DN0ajs+M6aefIFzbg=="
+          "hash": "pEYEnZhIZv+ZYbsY8s74vw=="
         }
       },
       "is_incremental": false,
@@ -294,7 +306,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.ClientCore.html",
-          "hash": "iKdhFwjwqQrpVS/qJQZusQ=="
+          "hash": "qSqy2jzcvDC6gV2mfv7fiQ=="
         }
       },
       "is_incremental": false,
@@ -306,7 +318,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Configuration.ClientConfig.html",
-          "hash": "10mPeQtQqLX3foRa47zfbQ=="
+          "hash": "VlvCV3upYq7CJMOC4loYmg=="
         }
       },
       "is_incremental": false,
@@ -318,7 +330,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Configuration.ServerConfig.html",
-          "hash": "UBRvQCznTWMmuKucAGua7w=="
+          "hash": "Sdv91LgjYP99PrBkg4YazA=="
         }
       },
       "is_incremental": false,
@@ -330,7 +342,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Configuration.SharedConfig.html",
-          "hash": "U819SfwrEV5tuseyq0cz5A=="
+          "hash": "QSzP4OUou8WCucO0zPkzhQ=="
         }
       },
       "is_incremental": false,
@@ -414,7 +426,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.GlobalCoreBase.html",
-          "hash": "vPsxX0JYhbmmjqcxO5oVNw=="
+          "hash": "JM5YfuY5dGH5N1223DhJQw=="
         }
       },
       "is_incremental": false,
@@ -450,7 +462,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Logging.Log.html",
-          "hash": "dedPuDSuSEiW+/Eqj3+yVw=="
+          "hash": "d3LUb5Rvs7fylwpD7cewBQ=="
         }
       },
       "is_incremental": false,
@@ -498,7 +510,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Networking.ConnectionManager.ListenerType.html",
-          "hash": "VryYCgfCRjzoHtqxg8J5yQ=="
+          "hash": "mu/llrrERI/Ov8tDPwjA2w=="
         }
       },
       "is_incremental": false,
@@ -510,7 +522,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Networking.ConnectionManager.NotifyClientConnectedDelegate.html",
-          "hash": "6ipDtvBbrtb/36Ynr8fnLA=="
+          "hash": "O6X6lgx+vyr4Hv0DeXFgAQ=="
         }
       },
       "is_incremental": false,
@@ -522,7 +534,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Networking.ConnectionManager.NotifyClientDisconnectedDelegate.html",
-          "hash": "/4i9g6plmcKEKlh7WxLfAg=="
+          "hash": "TbLNKB6U9gVLlm+fnwv9mw=="
         }
       },
       "is_incremental": false,
@@ -534,7 +546,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Networking.ConnectionManager.NotifyFailedConnectDelegate.html",
-          "hash": "XactV7QXVyj5RyoWEGB+VA=="
+          "hash": "oZdFHlZGDGPektHUXu0/EQ=="
         }
       },
       "is_incremental": false,
@@ -546,7 +558,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Networking.ConnectionManager.NotifyOnConnectedToServerDelegate.html",
-          "hash": "qNAOTTlBiFRjwAno7+y6/Q=="
+          "hash": "QnjjIJYi98drOffPWRCwDQ=="
         }
       },
       "is_incremental": false,
@@ -558,7 +570,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Networking.ConnectionManager.NotifyOnDisconnectedFromServerDelegate.html",
-          "hash": "jtw6JcbpqjVbLjcMA/lM/w=="
+          "hash": "ZzNFJ5h0qCDrdGXQVruBKA=="
         }
       },
       "is_incremental": false,
@@ -570,7 +582,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Networking.ConnectionManager.NotifyPacketReceivedDelegate.html",
-          "hash": "fVnVUbf4NXwgmMHoIdFRVQ=="
+          "hash": "/UFLUE+iUzn/7TbnA1dQIQ=="
         }
       },
       "is_incremental": false,
@@ -582,7 +594,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Networking.ConnectionManager.html",
-          "hash": "Qpzk4z2uFm3wHok+DHAUjw=="
+          "hash": "vvU4IRI9HwkV7vH0Y0ZI4A=="
         }
       },
       "is_incremental": false,
@@ -618,7 +630,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Networking.Packet.html",
-          "hash": "AaMy+KBvQZycQSUmppO8jQ=="
+          "hash": "i5ML5Y3Ofw7ByAI3ZhQ7VQ=="
         }
       },
       "is_incremental": false,
@@ -678,7 +690,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.Networking.Utility.PacketWriter.html",
-          "hash": "isoY6XXqnQCRi02Pcjp1BQ=="
+          "hash": "d7lsGfFhiDDm2Euw9VE2fg=="
         }
       },
       "is_incremental": false,
@@ -726,7 +738,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.UI.ClientUIManager.html",
-          "hash": "R2PDrvZLxp5wi1wIZnnVgw=="
+          "hash": "0tzTfgIiDvWDv8H0rNQkNw=="
         }
       },
       "is_incremental": false,
@@ -738,7 +750,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.UI.UIController.html",
-          "hash": "rmkvxItGZwfWE+qIHxxOxA=="
+          "hash": "OGRWkQ95/GYNcMT02vGe+w=="
         }
       },
       "is_incremental": false,
@@ -798,7 +810,43 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.World.ClientWorldManager.html",
-          "hash": "4maeh/7x3+mC/pDGO4SfXw=="
+          "hash": "66lSx/K3bzou2T7f8qz8dg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Engine.World.EnvironmentSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Engine.World.EnvironmentSystem.html",
+          "hash": "E0TnjBaP/aEMjWsoTTiVdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Engine.World.EnvironmentVolume.volumeEnteredDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Engine.World.EnvironmentVolume.volumeEnteredDelegate.html",
+          "hash": "EtkcNDuagwagH4ihjKjA9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Engine.World.EnvironmentVolume.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Engine.World.EnvironmentVolume.html",
+          "hash": "26YZYVNTBeHTni9wrf9BQA=="
         }
       },
       "is_incremental": false,
@@ -810,7 +858,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine.World.html",
-          "hash": "7+5XD1gcL+7pKRh0kH2Kcg=="
+          "hash": "XnmtoMQDrA8nhfv0LRX3sg=="
         }
       },
       "is_incremental": false,
@@ -846,7 +894,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "RdPa9HRjwl8B8nDvWwTSaw=="
+          "hash": "EKWMmOt7rkUcQQ5M+QiW3w=="
         }
       },
       "is_incremental": false,
@@ -941,8 +989,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 67,
-          "skipped_file_count": 42
+          "total_file_count": 71,
+          "skipped_file_count": 71
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

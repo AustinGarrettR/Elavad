@@ -21,7 +21,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ListenerType
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 169
+    startLine: 168
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -54,7 +54,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: SERVER
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 174
+    startLine: 173
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -88,7 +88,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: CLIENT
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 179
+    startLine: 178
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking

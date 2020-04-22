@@ -1,5 +1,3 @@
-using System;
-
 namespace Engine.Configuration
 {
     /// <summary>
@@ -7,6 +5,13 @@ namespace Engine.Configuration
     /// </summary>
     public class ClientConfig
     {
+        /*
+        * Environment
+        */
 
+        /// <summary>
+        /// The speed the sky transitions when changing environments
+        /// </summary>
+        public static readonly float ENVIRONMENT_TRANSITION_SPEED = 1.0f;
     }
 }

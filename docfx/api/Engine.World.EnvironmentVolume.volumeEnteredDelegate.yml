@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.World.EnvironmentVolume.volumeEnteredDelegate
+  commentId: T:Engine.World.EnvironmentVolume.volumeEnteredDelegate
+  id: EnvironmentVolume.volumeEnteredDelegate
+  parent: Engine.World
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: EnvironmentVolume.volumeEnteredDelegate
+  nameWithType: EnvironmentVolume.volumeEnteredDelegate
+  fullName: Engine.World.EnvironmentVolume.volumeEnteredDelegate
+  type: Delegate
+  source:
+    remote:
+      path: Assets/Engine/World/EnvironmentVolume.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: volumeEnteredDelegate
+    path: ../Assets/Engine/World/EnvironmentVolume.cs
+    startLine: 80
+  assemblies:
+  - Engine.World
+  namespace: Engine.World
+  summary: "\nThe delegate called when entering the volume\n"
+  example: []
+  syntax:
+    content: public delegate void volumeEnteredDelegate(EnvironmentVolume environmentVolume);
+    parameters:
+    - id: environmentVolume
+      type: Engine.World.EnvironmentVolume
+    content.vb: Public Delegate Sub volumeEnteredDelegate(environmentVolume As EnvironmentVolume)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Engine.World
+  commentId: N:Engine.World
+  name: Engine.World
+  nameWithType: Engine.World
+  fullName: Engine.World
+- uid: Engine.World.EnvironmentVolume
+  commentId: T:Engine.World.EnvironmentVolume
+  parent: Engine.World
+  name: EnvironmentVolume
+  nameWithType: EnvironmentVolume
+  fullName: Engine.World.EnvironmentVolume

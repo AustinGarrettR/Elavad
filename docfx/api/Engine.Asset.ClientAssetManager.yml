@@ -23,7 +23,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ClientAssetManager
     path: ../Assets/Engine/Asset/ClientAssetManager.cs
-    startLine: 12
+    startLine: 10
   assemblies:
   - Engine.Asset
   namespace: Engine.Asset
@@ -33,6 +33,7 @@ items:
     content: 'public class ClientAssetManager : Manager'
     content.vb: >-
       Public Class ClientAssetManager
+
           Inherits Manager
   inheritance:
   - System.Object
@@ -70,7 +71,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/Asset/ClientAssetManager.cs
-    startLine: 22
+    startLine: 20
   assemblies:
   - Engine.Asset
   namespace: Engine.Asset
@@ -112,7 +113,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/Asset/ClientAssetManager.cs
-    startLine: 36
+    startLine: 34
   assemblies:
   - Engine.Asset
   namespace: Engine.Asset
@@ -147,7 +148,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/Asset/ClientAssetManager.cs
-    startLine: 44
+    startLine: 42
   assemblies:
   - Engine.Asset
   namespace: Engine.Asset
@@ -182,7 +183,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: GetUIPanel
     path: ../Assets/Engine/Asset/ClientAssetManager.cs
-    startLine: 58
+    startLine: 56
   assemblies:
   - Engine.Asset
   namespace: Engine.Asset

@@ -5,6 +5,9 @@ items:
   id: Engine.World
   children:
   - Engine.World.ClientWorldManager
+  - Engine.World.EnvironmentSystem
+  - Engine.World.EnvironmentVolume
+  - Engine.World.EnvironmentVolume.volumeEnteredDelegate
   langs:
   - csharp
   - vb
@@ -21,6 +24,23 @@ references:
   name: ClientWorldManager
   nameWithType: ClientWorldManager
   fullName: Engine.World.ClientWorldManager
+- uid: Engine.World.EnvironmentSystem
+  commentId: T:Engine.World.EnvironmentSystem
+  name: EnvironmentSystem
+  nameWithType: EnvironmentSystem
+  fullName: Engine.World.EnvironmentSystem
+- uid: Engine.World.EnvironmentVolume
+  commentId: T:Engine.World.EnvironmentVolume
+  parent: Engine.World
+  name: EnvironmentVolume
+  nameWithType: EnvironmentVolume
+  fullName: Engine.World.EnvironmentVolume
+- uid: Engine.World.EnvironmentVolume.volumeEnteredDelegate
+  commentId: T:Engine.World.EnvironmentVolume.volumeEnteredDelegate
+  parent: Engine.World
+  name: EnvironmentVolume.volumeEnteredDelegate
+  nameWithType: EnvironmentVolume.volumeEnteredDelegate
+  fullName: Engine.World.EnvironmentVolume.volumeEnteredDelegate
 - uid: Engine.World
   commentId: N:Engine.World
   name: Engine.World

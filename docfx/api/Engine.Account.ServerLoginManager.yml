@@ -22,7 +22,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ServerLoginManager
     path: ../Assets/Engine/Account/ServerLoginManager.cs
-    startLine: 13
+    startLine: 9
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -32,6 +32,7 @@ items:
     content: 'public class ServerLoginManager : Manager'
     content.vb: >-
       Public Class ServerLoginManager
+
           Inherits Manager
   inheritance:
   - System.Object
@@ -69,7 +70,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/Account/ServerLoginManager.cs
-    startLine: 23
+    startLine: 19
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -111,7 +112,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/Account/ServerLoginManager.cs
-    startLine: 34
+    startLine: 30
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -146,7 +147,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/Account/ServerLoginManager.cs
-    startLine: 42
+    startLine: 38
   assemblies:
   - Engine.Account
   namespace: Engine.Account

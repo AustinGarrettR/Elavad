@@ -9,11 +9,14 @@ items:
   - Engine.Configuration.SharedConfig.CHUNK_UNLOAD_VIEW_DISTANCE
   - Engine.Configuration.SharedConfig.DELIMITER
   - Engine.Configuration.SharedConfig.ESCAPE
+  - Engine.Configuration.SharedConfig.LOGIN_SCENE_PATH
+  - Engine.Configuration.SharedConfig.MAIN_SCENE_PATH
   - Engine.Configuration.SharedConfig.MAX_BUFFER_SIZE
   - Engine.Configuration.SharedConfig.MAX_PASSWORD_LENGTH
   - Engine.Configuration.SharedConfig.MAX_USERNAME_LENGTH
   - Engine.Configuration.SharedConfig.PORT
   - Engine.Configuration.SharedConfig.WORLD_CHUNK_SIZE
+  - Engine.Configuration.SharedConfig.WORLD_SCENES_FOLDER
   langs:
   - csharp
   - vb
@@ -28,7 +31,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: SharedConfig
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 7
+    startLine: 5
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -71,7 +74,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ESCAPE
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 17
+    startLine: 15
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -108,7 +111,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: DELIMITER
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 22
+    startLine: 20
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -145,7 +148,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: PORT
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 27
+    startLine: 25
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -182,7 +185,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: MAX_BUFFER_SIZE
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 32
+    startLine: 30
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -219,7 +222,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: MAX_USERNAME_LENGTH
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 41
+    startLine: 39
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -256,7 +259,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: MAX_PASSWORD_LENGTH
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 46
+    startLine: 44
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -293,7 +296,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: WORLD_CHUNK_SIZE
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 55
+    startLine: 53
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -330,7 +333,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: CHUNK_LOAD_VIEW_DISTANCE
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 60
+    startLine: 58
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -367,7 +370,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: CHUNK_UNLOAD_VIEW_DISTANCE
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 65
+    startLine: 63
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -378,6 +381,117 @@ items:
     return:
       type: System.Int32
     content.vb: Public Shared ReadOnly CHUNK_UNLOAD_VIEW_DISTANCE As Integer
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.SharedConfig.MAIN_SCENE_PATH
+  commentId: F:Engine.Configuration.SharedConfig.MAIN_SCENE_PATH
+  id: MAIN_SCENE_PATH
+  parent: Engine.Configuration.SharedConfig
+  langs:
+  - csharp
+  - vb
+  name: MAIN_SCENE_PATH
+  nameWithType: SharedConfig.MAIN_SCENE_PATH
+  fullName: Engine.Configuration.SharedConfig.MAIN_SCENE_PATH
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/SharedConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: MAIN_SCENE_PATH
+    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    startLine: 72
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nLocation of the main scene\n"
+  example: []
+  syntax:
+    content: public static readonly string MAIN_SCENE_PATH
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly MAIN_SCENE_PATH As String
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.SharedConfig.LOGIN_SCENE_PATH
+  commentId: F:Engine.Configuration.SharedConfig.LOGIN_SCENE_PATH
+  id: LOGIN_SCENE_PATH
+  parent: Engine.Configuration.SharedConfig
+  langs:
+  - csharp
+  - vb
+  name: LOGIN_SCENE_PATH
+  nameWithType: SharedConfig.LOGIN_SCENE_PATH
+  fullName: Engine.Configuration.SharedConfig.LOGIN_SCENE_PATH
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/SharedConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: LOGIN_SCENE_PATH
+    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    startLine: 77
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nLocation of the login scene\n"
+  example: []
+  syntax:
+    content: public static readonly string LOGIN_SCENE_PATH
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly LOGIN_SCENE_PATH As String
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.SharedConfig.WORLD_SCENES_FOLDER
+  commentId: F:Engine.Configuration.SharedConfig.WORLD_SCENES_FOLDER
+  id: WORLD_SCENES_FOLDER
+  parent: Engine.Configuration.SharedConfig
+  langs:
+  - csharp
+  - vb
+  name: WORLD_SCENES_FOLDER
+  nameWithType: SharedConfig.WORLD_SCENES_FOLDER
+  fullName: Engine.Configuration.SharedConfig.WORLD_SCENES_FOLDER
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/SharedConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: WORLD_SCENES_FOLDER
+    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    startLine: 82
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nLocation of the world scenes\n"
+  example: []
+  syntax:
+    content: public static readonly string WORLD_SCENES_FOLDER
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly WORLD_SCENES_FOLDER As String
   modifiers.csharp:
   - public
   - static
@@ -705,3 +819,10 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

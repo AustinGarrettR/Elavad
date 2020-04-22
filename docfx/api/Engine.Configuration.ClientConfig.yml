@@ -4,7 +4,8 @@ items:
   commentId: T:Engine.Configuration.ClientConfig
   id: ClientConfig
   parent: Engine.Configuration
-  children: []
+  children:
+  - Engine.Configuration.ClientConfig.ENVIRONMENT_TRANSITION_SPEED
   langs:
   - csharp
   - vb
@@ -19,7 +20,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ClientConfig
     path: ../Assets/Engine/Configuration/ClientConfig.cs
-    startLine: 7
+    startLine: 5
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -44,6 +45,43 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: Engine.Configuration.ClientConfig.ENVIRONMENT_TRANSITION_SPEED
+  commentId: F:Engine.Configuration.ClientConfig.ENVIRONMENT_TRANSITION_SPEED
+  id: ENVIRONMENT_TRANSITION_SPEED
+  parent: Engine.Configuration.ClientConfig
+  langs:
+  - csharp
+  - vb
+  name: ENVIRONMENT_TRANSITION_SPEED
+  nameWithType: ClientConfig.ENVIRONMENT_TRANSITION_SPEED
+  fullName: Engine.Configuration.ClientConfig.ENVIRONMENT_TRANSITION_SPEED
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/ClientConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: ENVIRONMENT_TRANSITION_SPEED
+    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    startLine: 14
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nThe speed the sky transitions when changing environments\n"
+  example: []
+  syntax:
+    content: public static readonly float ENVIRONMENT_TRANSITION_SPEED
+    return:
+      type: System.Single
+    content.vb: Public Shared ReadOnly ENVIRONMENT_TRANSITION_SPEED As Single
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
 references:
 - uid: Engine.Configuration
   commentId: N:Engine.Configuration
@@ -342,3 +380,10 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single

@@ -22,7 +22,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ClientUIManager
     path: ../Assets/Engine/UI/ClientUIManager.cs
-    startLine: 10
+    startLine: 9
   assemblies:
   - Engine.UI
   namespace: Engine.UI
@@ -32,6 +32,7 @@ items:
     content: 'public class ClientUIManager : Manager'
     content.vb: >-
       Public Class ClientUIManager
+
           Inherits Manager
   inheritance:
   - System.Object
@@ -69,7 +70,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/UI/ClientUIManager.cs
-    startLine: 20
+    startLine: 19
   assemblies:
   - Engine.UI
   namespace: Engine.UI
@@ -111,7 +112,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/UI/ClientUIManager.cs
-    startLine: 30
+    startLine: 29
   assemblies:
   - Engine.UI
   namespace: Engine.UI
@@ -146,7 +147,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/UI/ClientUIManager.cs
-    startLine: 38
+    startLine: 37
   assemblies:
   - Engine.UI
   namespace: Engine.UI

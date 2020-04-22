@@ -20,7 +20,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Client
     path: ../Assets/Engine/API/Client/Login.cs
-    startLine: 11
+    startLine: 9
   assemblies:
   - Engine.API
   namespace: Engine.API
@@ -64,7 +64,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: AttemptLogin
     path: ../Assets/Engine/API/Client/Login.cs
-    startLine: 21
+    startLine: 19
   assemblies:
   - Engine.API
   namespace: Engine.API

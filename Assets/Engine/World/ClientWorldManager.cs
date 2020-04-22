@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using Engine.Configuration;
 using Engine.Factory;
@@ -28,10 +27,16 @@ namespace Engine.World
         /// <param name="parameters">Variable manager parameters</param>
         public override void Init(params object[] parameters)
         {
+
             //REMOVE AFTER TEST
             test = new GameObject("Chunk Position Test Target");
             test.transform.position = new Vector3(125, 0, 125);
             //REMOVE AFTER TEST
+
+            environmentSystem = new EnvironmentSystem();
+
+            //TODO change to a more permanent focus target system
+            environmentSystem.SetFocusTarget(test);
         }
 
         /// <summary>
@@ -51,6 +56,8 @@ namespace Engine.World
             {
                 UpdateChunks(test.transform.position);
                 UpdateScenes();
+
+                environmentSystem.Update();
             }
         }
 
@@ -74,6 +81,8 @@ namespace Engine.World
         private List<Vector2Int> chunks = new List<Vector2Int>();
         private List<Vector2Int> chunksInOperation = new List<Vector2Int>();
         private List<Vector2Int> chunksLoaded = new List<Vector2Int>();
+
+        private EnvironmentSystem environmentSystem;
 
         /*
          * Internal Methods
@@ -252,10 +261,6 @@ namespace Engine.World
             //Check root objects
             GameObject[] rootObjects = scene.GetRootGameObjects();
 
-            if(rootObjects.Length > 1)
-            {
-                Log.LogError("Scene " + sceneName + " contains more than 1 root object.");
-            } else
             if (rootObjects.Length == 0)
             {
                 Log.LogError("Scene " + sceneName + " contains no root object.");
@@ -264,6 +269,9 @@ namespace Engine.World
             //Position root
             GameObject root = rootObjects[0];
             root.transform.position = new Vector3(chunk.x * SharedConfig.WORLD_CHUNK_SIZE, 0, chunk.y * SharedConfig.WORLD_CHUNK_SIZE);
+
+            //Call environment system to scan for environment volumes
+            environmentSystem.OnChunkSceneLoaded(scene);
         }
 
         /// <summary>

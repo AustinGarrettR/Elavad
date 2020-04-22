@@ -76,6 +76,12 @@ references:
   commentId: N:Editor
   fullName: Editor
   nameWithType: Editor
+- uid: Editor.BuildSceneEditor
+  name: BuildSceneEditor
+  href: api/Editor.BuildSceneEditor.html
+  commentId: T:Editor.BuildSceneEditor
+  fullName: Editor.BuildSceneEditor
+  nameWithType: BuildSceneEditor
 - uid: Editor.PacketInfoEditor
   name: PacketInfoEditor
   href: api/Editor.PacketInfoEditor.html
@@ -543,6 +549,12 @@ references:
   commentId: T:Engine.Configuration.ClientConfig
   fullName: Engine.Configuration.ClientConfig
   nameWithType: ClientConfig
+- uid: Engine.Configuration.ClientConfig.ENVIRONMENT_TRANSITION_SPEED
+  name: ENVIRONMENT_TRANSITION_SPEED
+  href: api/Engine.Configuration.ClientConfig.html#Engine_Configuration_ClientConfig_ENVIRONMENT_TRANSITION_SPEED
+  commentId: F:Engine.Configuration.ClientConfig.ENVIRONMENT_TRANSITION_SPEED
+  fullName: Engine.Configuration.ClientConfig.ENVIRONMENT_TRANSITION_SPEED
+  nameWithType: ClientConfig.ENVIRONMENT_TRANSITION_SPEED
 - uid: Engine.Configuration.ServerConfig
   name: ServerConfig
   href: api/Engine.Configuration.ServerConfig.html
@@ -579,6 +591,18 @@ references:
   commentId: F:Engine.Configuration.SharedConfig.ESCAPE
   fullName: Engine.Configuration.SharedConfig.ESCAPE
   nameWithType: SharedConfig.ESCAPE
+- uid: Engine.Configuration.SharedConfig.LOGIN_SCENE_PATH
+  name: LOGIN_SCENE_PATH
+  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_LOGIN_SCENE_PATH
+  commentId: F:Engine.Configuration.SharedConfig.LOGIN_SCENE_PATH
+  fullName: Engine.Configuration.SharedConfig.LOGIN_SCENE_PATH
+  nameWithType: SharedConfig.LOGIN_SCENE_PATH
+- uid: Engine.Configuration.SharedConfig.MAIN_SCENE_PATH
+  name: MAIN_SCENE_PATH
+  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_MAIN_SCENE_PATH
+  commentId: F:Engine.Configuration.SharedConfig.MAIN_SCENE_PATH
+  fullName: Engine.Configuration.SharedConfig.MAIN_SCENE_PATH
+  nameWithType: SharedConfig.MAIN_SCENE_PATH
 - uid: Engine.Configuration.SharedConfig.MAX_BUFFER_SIZE
   name: MAX_BUFFER_SIZE
   href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_MAX_BUFFER_SIZE
@@ -609,6 +633,12 @@ references:
   commentId: F:Engine.Configuration.SharedConfig.WORLD_CHUNK_SIZE
   fullName: Engine.Configuration.SharedConfig.WORLD_CHUNK_SIZE
   nameWithType: SharedConfig.WORLD_CHUNK_SIZE
+- uid: Engine.Configuration.SharedConfig.WORLD_SCENES_FOLDER
+  name: WORLD_SCENES_FOLDER
+  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_WORLD_SCENES_FOLDER
+  commentId: F:Engine.Configuration.SharedConfig.WORLD_SCENES_FOLDER
+  fullName: Engine.Configuration.SharedConfig.WORLD_SCENES_FOLDER
+  nameWithType: SharedConfig.WORLD_SCENES_FOLDER
 - uid: Engine.Dispatch
   name: Engine.Dispatch
   href: api/Engine.Dispatch.html
@@ -2035,3 +2065,122 @@ references:
   isSpec: "True"
   fullName: Engine.World.ClientWorldManager.Shutdown
   nameWithType: ClientWorldManager.Shutdown
+- uid: Engine.World.EnvironmentSystem
+  name: EnvironmentSystem
+  href: api/Engine.World.EnvironmentSystem.html
+  commentId: T:Engine.World.EnvironmentSystem
+  fullName: Engine.World.EnvironmentSystem
+  nameWithType: EnvironmentSystem
+- uid: Engine.World.EnvironmentVolume
+  name: EnvironmentVolume
+  href: api/Engine.World.EnvironmentVolume.html
+  commentId: T:Engine.World.EnvironmentVolume
+  fullName: Engine.World.EnvironmentVolume
+  nameWithType: EnvironmentVolume
+- uid: Engine.World.EnvironmentVolume.ambientLight
+  name: ambientLight
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_ambientLight
+  commentId: F:Engine.World.EnvironmentVolume.ambientLight
+  fullName: Engine.World.EnvironmentVolume.ambientLight
+  nameWithType: EnvironmentVolume.ambientLight
+- uid: Engine.World.EnvironmentVolume.fogColor
+  name: fogColor
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_fogColor
+  commentId: F:Engine.World.EnvironmentVolume.fogColor
+  fullName: Engine.World.EnvironmentVolume.fogColor
+  nameWithType: EnvironmentVolume.fogColor
+- uid: Engine.World.EnvironmentVolume.isTargetInsideVolume
+  name: isTargetInsideVolume()
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_isTargetInsideVolume
+  commentId: M:Engine.World.EnvironmentVolume.isTargetInsideVolume
+  fullName: Engine.World.EnvironmentVolume.isTargetInsideVolume()
+  nameWithType: EnvironmentVolume.isTargetInsideVolume()
+- uid: Engine.World.EnvironmentVolume.isTargetInsideVolume*
+  name: isTargetInsideVolume
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_isTargetInsideVolume_
+  commentId: Overload:Engine.World.EnvironmentVolume.isTargetInsideVolume
+  isSpec: "True"
+  fullName: Engine.World.EnvironmentVolume.isTargetInsideVolume
+  nameWithType: EnvironmentVolume.isTargetInsideVolume
+- uid: Engine.World.EnvironmentVolume.SetTarget(UnityEngine.GameObject)
+  name: SetTarget(GameObject)
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_SetTarget_UnityEngine_GameObject_
+  commentId: M:Engine.World.EnvironmentVolume.SetTarget(UnityEngine.GameObject)
+  fullName: Engine.World.EnvironmentVolume.SetTarget(UnityEngine.GameObject)
+  nameWithType: EnvironmentVolume.SetTarget(GameObject)
+- uid: Engine.World.EnvironmentVolume.SetTarget*
+  name: SetTarget
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_SetTarget_
+  commentId: Overload:Engine.World.EnvironmentVolume.SetTarget
+  isSpec: "True"
+  fullName: Engine.World.EnvironmentVolume.SetTarget
+  nameWithType: EnvironmentVolume.SetTarget
+- uid: Engine.World.EnvironmentVolume.sky
+  name: sky
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_sky
+  commentId: F:Engine.World.EnvironmentVolume.sky
+  fullName: Engine.World.EnvironmentVolume.sky
+  nameWithType: EnvironmentVolume.sky
+- uid: Engine.World.EnvironmentVolume.Start
+  name: Start()
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_Start
+  commentId: M:Engine.World.EnvironmentVolume.Start
+  fullName: Engine.World.EnvironmentVolume.Start()
+  nameWithType: EnvironmentVolume.Start()
+- uid: Engine.World.EnvironmentVolume.Start*
+  name: Start
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_Start_
+  commentId: Overload:Engine.World.EnvironmentVolume.Start
+  isSpec: "True"
+  fullName: Engine.World.EnvironmentVolume.Start
+  nameWithType: EnvironmentVolume.Start
+- uid: Engine.World.EnvironmentVolume.SubscribeToVolumeEnteredEvent(Engine.World.EnvironmentVolume.volumeEnteredDelegate)
+  name: SubscribeToVolumeEnteredEvent(EnvironmentVolume.volumeEnteredDelegate)
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_SubscribeToVolumeEnteredEvent_Engine_World_EnvironmentVolume_volumeEnteredDelegate_
+  commentId: M:Engine.World.EnvironmentVolume.SubscribeToVolumeEnteredEvent(Engine.World.EnvironmentVolume.volumeEnteredDelegate)
+  fullName: Engine.World.EnvironmentVolume.SubscribeToVolumeEnteredEvent(Engine.World.EnvironmentVolume.volumeEnteredDelegate)
+  nameWithType: EnvironmentVolume.SubscribeToVolumeEnteredEvent(EnvironmentVolume.volumeEnteredDelegate)
+- uid: Engine.World.EnvironmentVolume.SubscribeToVolumeEnteredEvent*
+  name: SubscribeToVolumeEnteredEvent
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_SubscribeToVolumeEnteredEvent_
+  commentId: Overload:Engine.World.EnvironmentVolume.SubscribeToVolumeEnteredEvent
+  isSpec: "True"
+  fullName: Engine.World.EnvironmentVolume.SubscribeToVolumeEnteredEvent
+  nameWithType: EnvironmentVolume.SubscribeToVolumeEnteredEvent
+- uid: Engine.World.EnvironmentVolume.sunColor
+  name: sunColor
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_sunColor
+  commentId: F:Engine.World.EnvironmentVolume.sunColor
+  fullName: Engine.World.EnvironmentVolume.sunColor
+  nameWithType: EnvironmentVolume.sunColor
+- uid: Engine.World.EnvironmentVolume.sunIntensity
+  name: sunIntensity
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_sunIntensity
+  commentId: F:Engine.World.EnvironmentVolume.sunIntensity
+  fullName: Engine.World.EnvironmentVolume.sunIntensity
+  nameWithType: EnvironmentVolume.sunIntensity
+- uid: Engine.World.EnvironmentVolume.sunRotation
+  name: sunRotation
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_sunRotation
+  commentId: F:Engine.World.EnvironmentVolume.sunRotation
+  fullName: Engine.World.EnvironmentVolume.sunRotation
+  nameWithType: EnvironmentVolume.sunRotation
+- uid: Engine.World.EnvironmentVolume.Update
+  name: Update()
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_Update
+  commentId: M:Engine.World.EnvironmentVolume.Update
+  fullName: Engine.World.EnvironmentVolume.Update()
+  nameWithType: EnvironmentVolume.Update()
+- uid: Engine.World.EnvironmentVolume.Update*
+  name: Update
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_Update_
+  commentId: Overload:Engine.World.EnvironmentVolume.Update
+  isSpec: "True"
+  fullName: Engine.World.EnvironmentVolume.Update
+  nameWithType: EnvironmentVolume.Update
+- uid: Engine.World.EnvironmentVolume.volumeEnteredDelegate
+  name: EnvironmentVolume.volumeEnteredDelegate
+  href: api/Engine.World.EnvironmentVolume.volumeEnteredDelegate.html
+  commentId: T:Engine.World.EnvironmentVolume.volumeEnteredDelegate
+  fullName: Engine.World.EnvironmentVolume.volumeEnteredDelegate
+  nameWithType: EnvironmentVolume.volumeEnteredDelegate

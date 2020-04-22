@@ -33,6 +33,7 @@ items:
     content: 'public class ServerCore : GlobalCoreBase'
     content.vb: >-
       Public Class ServerCore
+
           Inherits GlobalCoreBase
   inheritance:
   - System.Object

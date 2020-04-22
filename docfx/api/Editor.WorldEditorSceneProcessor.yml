@@ -23,7 +23,7 @@ items:
   assemblies:
   - Editor
   namespace: Editor
-  summary: "\nThe world editor runs in editor to aid in designing the world regions\n"
+  summary: "\nThis script runs on editor load to aid in designing the world regions\n"
   example: []
   syntax:
     content: >-

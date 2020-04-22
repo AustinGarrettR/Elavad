@@ -19,7 +19,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyOnDisconnectedFromServerDelegate
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 124
+    startLine: 123
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
