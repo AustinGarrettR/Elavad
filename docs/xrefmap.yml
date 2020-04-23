@@ -665,6 +665,12 @@ references:
   commentId: F:Engine.Configuration.ClientConfig.CAMERA_DEFAULT_DISTANCE
   fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_DISTANCE
   nameWithType: ClientConfig.CAMERA_DEFAULT_DISTANCE
+- uid: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
+  name: CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
+  href: api/Engine.Configuration.ClientConfig.html#Engine_Configuration_ClientConfig_CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
+  commentId: F:Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
+  fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
+  nameWithType: ClientConfig.CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
 - uid: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION
   name: CAMERA_DEFAULT_X_AXIS_ROTATION
   href: api/Engine.Configuration.ClientConfig.html#Engine_Configuration_ClientConfig_CAMERA_DEFAULT_X_AXIS_ROTATION

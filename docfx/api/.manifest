@@ -68,6 +68,7 @@
   "Engine.Configuration": "Engine.Configuration.yml",
   "Engine.Configuration.ClientConfig": "Engine.Configuration.ClientConfig.yml",
   "Engine.Configuration.ClientConfig.CAMERA_DEFAULT_DISTANCE": "Engine.Configuration.ClientConfig.yml",
+  "Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED": "Engine.Configuration.ClientConfig.yml",
   "Engine.Configuration.ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION": "Engine.Configuration.ClientConfig.yml",
   "Engine.Configuration.ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION_SPEED": "Engine.Configuration.ClientConfig.yml",
   "Engine.Configuration.ClientConfig.CAMERA_DEFAULT_Y_AXIS_ROTATION": "Engine.Configuration.ClientConfig.yml",

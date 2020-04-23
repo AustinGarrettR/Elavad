@@ -30,7 +30,6 @@ items:
     content: 'public class Login_Screen_UIController : UIController'
     content.vb: >-
       Public Class Login_Screen_UIController
-
           Inherits UIController
   inheritance:
   - System.Object

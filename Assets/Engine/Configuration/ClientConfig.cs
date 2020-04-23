@@ -21,7 +21,7 @@ namespace Engine.Configuration
         /// <summary>
         /// The camera rotation for the x axis
         /// </summary>
-        public static readonly float CAMERA_Y_OFFSET = 0.5f;
+        public static readonly float CAMERA_Y_OFFSET = 0.75f;
 
         /// <summary>
         /// The camera distance minimum
@@ -70,12 +70,17 @@ namespace Engine.Configuration
         /// <summary>
         /// The default camera distance
         /// </summary>
-        public static readonly float CAMERA_DEFAULT_DISTANCE = 8;
+        public static readonly float CAMERA_DEFAULT_DISTANCE = 7;
 
         /// <summary>
-        /// The default setting for the zamera zoom when an object interceps
+        /// The default setting for the camera zoom when an object interceps
         /// </summary>
         public static readonly bool CAMERA_DEFAULT_ZOOM_WHEN_INTERCEPTED = true;
+
+        /// <summary>
+        /// The default speed the camera zoom changes
+        /// </summary>
+        public static readonly float CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED = 3;
 
     }
 }

@@ -150,6 +150,8 @@ namespace Engine.CameraSystem
             Vector3 negDistance = new Vector3(0.0f, 0.0f, -distanceFromTarget);
 
             //Zoom closer when an object interceps the sight line
+            bool intercepted = false;
+
             if (zoomWhenIntercepted)
             {
                 Vector3 desiredDistanceVector = new Vector3(0.0f, 0.0f, -distanceFromTarget);
@@ -157,10 +159,38 @@ namespace Engine.CameraSystem
 
                 if (Physics.SphereCast(rotateAroundTarget.transform.position + cameraOffset, 0.35f, positionBeforeRaycast - rotateAroundTarget.transform.position + cameraOffset, out RaycastHit hit, distanceFromTarget))
                 {
-                    //A little extra room from the hit
-                    negDistance = new Vector3(0.0f, 0.0f, -(hit.distance - 0.15f));
+                    //How far extra to move in
+                    float offset = 0.15f;
+
+                    //Update distance to the hit and offset
+                    float updatedDistance = hit.distance - offset;
+
+                    //Only update the actual zoom instantly if forcing zoom in
+                    //Zooming out should still be dampened.
+                    if (updatedDistance < smoothDistanceFromTarget + offset)
+                    {
+                        negDistance = new Vector3(0.0f, 0.0f, -updatedDistance);
+
+
+                        smoothDistanceFromTarget = updatedDistance;
+
+                        //Set intercepted to true so we dont dampen the zoom
+                        intercepted = true;
+                    }
+
+
                 }
             }
+
+            //If not intercepted, change zoom gradually
+            if(intercepted == false)
+            {
+
+                smoothDistanceFromTarget = Mathf.Lerp(smoothDistanceFromTarget, distanceFromTarget, smoothZoomSpeed * Time.deltaTime);
+
+                negDistance = new Vector3(0.0f, 0.0f, -smoothDistanceFromTarget);
+            }
+
             //Calcualate new position with distance
             Vector3 position = rotation * negDistance + rotateAroundTarget.transform.position + cameraOffset;
 
@@ -218,6 +248,16 @@ namespace Engine.CameraSystem
         /// The distance from the player
         /// </summary>
         private float distanceFromTarget = ClientConfig.CAMERA_DEFAULT_DISTANCE;
+
+        /// <summary>
+        /// The distance from the player
+        /// </summary>
+        private float smoothDistanceFromTarget = ClientConfig.CAMERA_DEFAULT_DISTANCE;
+
+        /// <summary>
+        /// The default speed the distance changes
+        /// </summary>
+        private float smoothZoomSpeed = ClientConfig.CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED;
 
         /// <summary>
         /// If to zoom when intercepted by an object

@@ -44,7 +44,6 @@ items:
     content: 'public class ConnectionManager : Manager'
     content.vb: >-
       Public Class ConnectionManager
-
           Inherits Manager
   inheritance:
   - System.Object

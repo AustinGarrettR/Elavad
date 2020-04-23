@@ -45,7 +45,6 @@ items:
       <RequireComponent(GetType(BoxCollider))>
 
       Public Class EnvironmentVolume
-
           Inherits MonoBehaviour
   inheritance:
   - System.Object

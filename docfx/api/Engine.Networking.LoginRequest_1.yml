@@ -42,7 +42,6 @@ items:
       <Packet(1, "Login Request", "Server", ReliabilityScheme.RELIABLE, "Login request to the server.")>
 
       Public Class LoginRequest_1
-
           Inherits Packet
   inheritance:
   - System.Object

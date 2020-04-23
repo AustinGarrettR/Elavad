@@ -6,6 +6,7 @@ items:
   parent: Engine.Configuration
   children:
   - Engine.Configuration.ClientConfig.CAMERA_DEFAULT_DISTANCE
+  - Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
   - Engine.Configuration.ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION
   - Engine.Configuration.ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION_SPEED
   - Engine.Configuration.ClientConfig.CAMERA_DEFAULT_Y_AXIS_ROTATION
@@ -485,13 +486,50 @@ items:
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
-  summary: "\nThe default setting for the zamera zoom when an object interceps\n"
+  summary: "\nThe default setting for the camera zoom when an object interceps\n"
   example: []
   syntax:
     content: public static readonly bool CAMERA_DEFAULT_ZOOM_WHEN_INTERCEPTED
     return:
       type: System.Boolean
     content.vb: Public Shared ReadOnly CAMERA_DEFAULT_ZOOM_WHEN_INTERCEPTED As Boolean
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
+  commentId: F:Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
+  id: CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
+  parent: Engine.Configuration.ClientConfig
+  langs:
+  - csharp
+  - vb
+  name: CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
+  nameWithType: ClientConfig.CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
+  fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/ClientConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
+    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    startLine: 82
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nThe default speed the camera zoom changes\n"
+  example: []
+  syntax:
+    content: public static readonly float CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
+    return:
+      type: System.Single
+    content.vb: Public Shared ReadOnly CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED As Single
   modifiers.csharp:
   - public
   - static
