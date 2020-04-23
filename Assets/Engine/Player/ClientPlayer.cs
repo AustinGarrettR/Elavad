@@ -5,7 +5,7 @@ namespace Engine.Player
     /// <summary>
     /// This class represents a player instance
     /// </summary>
-    public class Player
+    public class ClientPlayer
     {
         /*
          * Constructor
@@ -17,7 +17,7 @@ namespace Engine.Player
         /// <param name="prefab">The player prefab</param>
         /// <param name="startPosition">The starting position</param>
         /// <param name="startRotation">The starting rotation</param>
-        internal Player(string name, GameObject prefab, Vector3 startPosition, Vector3 startRotation)
+        internal ClientPlayer(string name, GameObject prefab, Vector3 startPosition, Vector3 startRotation)
         {
             playerObject = GameObject.Instantiate(prefab);
             playerObject.name = name;

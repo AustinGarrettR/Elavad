@@ -1,25 +1,25 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Engine.Player.Player
-  commentId: T:Engine.Player.Player
-  id: Player
+- uid: Engine.Player.ClientPlayer
+  commentId: T:Engine.Player.ClientPlayer
+  id: ClientPlayer
   parent: Engine.Player
   children:
-  - Engine.Player.Player.GetPlayerObject
+  - Engine.Player.ClientPlayer.GetPlayerObject
   langs:
   - csharp
   - vb
-  name: Player
-  nameWithType: Player
-  fullName: Engine.Player.Player
+  name: ClientPlayer
+  nameWithType: ClientPlayer
+  fullName: Engine.Player.ClientPlayer
   type: Class
   source:
     remote:
-      path: Assets/Engine/Player/Player.cs
+      path: Assets/Engine/Player/ClientPlayer.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: Player
-    path: ../Assets/Engine/Player/Player.cs
+    id: ClientPlayer
+    path: ../Assets/Engine/Player/ClientPlayer.cs
     startLine: 7
   assemblies:
   - Engine.Player
@@ -27,8 +27,8 @@ items:
   summary: "\nThis class represents a player instance\n"
   example: []
   syntax:
-    content: public class Player
-    content.vb: Public Class Player
+    content: public class ClientPlayer
+    content.vb: Public Class ClientPlayer
   inheritance:
   - System.Object
   inheritedMembers:
@@ -45,24 +45,24 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.Player.Player.GetPlayerObject
-  commentId: M:Engine.Player.Player.GetPlayerObject
+- uid: Engine.Player.ClientPlayer.GetPlayerObject
+  commentId: M:Engine.Player.ClientPlayer.GetPlayerObject
   id: GetPlayerObject
-  parent: Engine.Player.Player
+  parent: Engine.Player.ClientPlayer
   langs:
   - csharp
   - vb
   name: GetPlayerObject()
-  nameWithType: Player.GetPlayerObject()
-  fullName: Engine.Player.Player.GetPlayerObject()
+  nameWithType: ClientPlayer.GetPlayerObject()
+  fullName: Engine.Player.ClientPlayer.GetPlayerObject()
   type: Method
   source:
     remote:
-      path: Assets/Engine/Player/Player.cs
+      path: Assets/Engine/Player/ClientPlayer.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
     id: GetPlayerObject
-    path: ../Assets/Engine/Player/Player.cs
+    path: ../Assets/Engine/Player/ClientPlayer.cs
     startLine: 45
   assemblies:
   - Engine.Player
@@ -75,7 +75,7 @@ items:
       type: UnityEngine.GameObject
       description: ''
     content.vb: Public Function GetPlayerObject As GameObject
-  overload: Engine.Player.Player.GetPlayerObject*
+  overload: Engine.Player.ClientPlayer.GetPlayerObject*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -378,11 +378,11 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: Engine.Player.Player.GetPlayerObject*
-  commentId: Overload:Engine.Player.Player.GetPlayerObject
+- uid: Engine.Player.ClientPlayer.GetPlayerObject*
+  commentId: Overload:Engine.Player.ClientPlayer.GetPlayerObject
   name: GetPlayerObject
-  nameWithType: Player.GetPlayerObject
-  fullName: Engine.Player.Player.GetPlayerObject
+  nameWithType: ClientPlayer.GetPlayerObject
+  fullName: Engine.Player.ClientPlayer.GetPlayerObject
 - uid: UnityEngine.GameObject
   commentId: T:UnityEngine.GameObject
   parent: UnityEngine

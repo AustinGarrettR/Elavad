@@ -32,7 +32,6 @@ items:
     content: 'public class SharedAssetManager : Manager'
     content.vb: >-
       Public Class SharedAssetManager
-
           Inherits Manager
   inheritance:
   - System.Object

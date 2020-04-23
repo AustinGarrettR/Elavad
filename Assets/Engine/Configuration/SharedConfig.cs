@@ -54,6 +54,11 @@ namespace Engine.Configuration
         public static readonly int WORLD_CHUNK_SIZE = 250;
 
         /// <summary>
+        /// The maximum height of the world chunk
+        /// </summary>
+        public static readonly int WORLD_CHUNK_MAX_HEIGHT = 1000;
+
+        /// <summary>
         /// How close to a chunk position you need to be for it to load
         /// </summary>
         public static readonly int CHUNK_LOAD_VIEW_DISTANCE = 500;
@@ -81,6 +86,20 @@ namespace Engine.Configuration
         /// Location of the world scenes
         /// </summary>
         public static readonly string WORLD_SCENES_FOLDER = "Assets/Scenes/World";
+
+        /*
+         * Layers
+         */
+
+        /// <summary>
+        /// The layer name for players
+        /// </summary>
+        public static readonly string PLAYERS_LAYER_NAME = "Players";
+
+        /// <summary>
+        /// The layer name for volumes
+        /// </summary>
+        public static readonly string VOLUMES_LAYER_NAME = "Volumes";
 
 
     }

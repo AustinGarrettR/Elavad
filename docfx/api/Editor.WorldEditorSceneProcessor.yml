@@ -19,7 +19,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: WorldEditorSceneProcessor
     path: ../Assets/Editor/WorldEditorSceneProcessor.cs
-    startLine: 13
+    startLine: 15
   assemblies:
   - Editor
   namespace: Editor

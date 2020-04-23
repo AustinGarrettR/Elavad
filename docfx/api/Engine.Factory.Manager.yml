@@ -46,8 +46,10 @@ items:
   - Engine.Logging.LogManager
   - Engine.Networking.ConnectionManager
   - Engine.Player.ClientPlayerManager
+  - Engine.Player.ServerPlayerManager
   - Engine.UI.ClientUIManager
   - Engine.World.ClientWorldManager
+  - Engine.World.ServerWorldManager
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)

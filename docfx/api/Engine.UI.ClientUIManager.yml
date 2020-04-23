@@ -33,7 +33,6 @@ items:
     content: 'public class ClientUIManager : Manager'
     content.vb: >-
       Public Class ClientUIManager
-
           Inherits Manager
   inheritance:
   - System.Object

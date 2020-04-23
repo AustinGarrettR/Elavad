@@ -74,7 +74,7 @@ namespace Engine.Player
          * Public Functions
          */
 
-        public Player GetMyPlayer()
+        public ClientPlayer GetMyPlayer()
         {
             return myPlayer;
         }
@@ -96,7 +96,7 @@ namespace Engine.Player
         /// <summary>
         /// The player object
         /// </summary>
-        private Player myPlayer;
+        private ClientPlayer myPlayer;
 
         /*
          * Internal Functions
@@ -109,7 +109,7 @@ namespace Engine.Player
         private async Task CreateMyPlayerTask()
         {
             //Create instance for my player
-            myPlayer = new Player("_MyPlayer", playerPrefab, new Vector3(125, 0, 125), Vector3.zero);
+            myPlayer = new ClientPlayer("_MyPlayer", playerPrefab, new Vector3(125, 0, 125), Vector3.zero);
 
             await Task.CompletedTask;
         }

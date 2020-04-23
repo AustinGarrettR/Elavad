@@ -34,7 +34,6 @@ items:
     content: 'public class LogManager : Manager'
     content.vb: >-
       Public Class LogManager
-
           Inherits Manager
   inheritance:
   - System.Object

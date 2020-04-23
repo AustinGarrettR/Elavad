@@ -143,10 +143,12 @@
 - uid: Engine.Player
   name: Engine.Player
   items:
+  - uid: Engine.Player.ClientPlayer
+    name: ClientPlayer
   - uid: Engine.Player.ClientPlayerManager
     name: ClientPlayerManager
-  - uid: Engine.Player.Player
-    name: Player
+  - uid: Engine.Player.ServerPlayerManager
+    name: ServerPlayerManager
 - uid: Engine.UI
   name: Engine.UI
   items:
@@ -172,3 +174,5 @@
     name: EnvironmentVolume
   - uid: Engine.World.EnvironmentVolume.volumeEnteredDelegate
     name: EnvironmentVolume.volumeEnteredDelegate
+  - uid: Engine.World.ServerWorldManager
+    name: ServerWorldManager

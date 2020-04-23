@@ -2,6 +2,8 @@
 using Engine.Networking;
 using Engine.Logging;
 using Engine.Dispatch;
+using Engine.World;
+using Engine.Player;
 
 namespace Engine
 {
@@ -23,14 +25,9 @@ namespace Engine
             logManager = new LogManager();
             AddManager(logManager);
 
-            connectionManager = new ConnectionManager(ConnectionManager.ListenerType.SERVER);
-            AddManager(connectionManager);
+            serverWorldManager = new ServerWorldManager(OnWorldLoaded);
+            AddManager(serverWorldManager);
 
-            serverLoginManager = new ServerLoginManager(connectionManager);
-            AddManager(serverLoginManager);
-
-            dispatchManager = new DispatchManager();
-            AddManager(dispatchManager);
         }
 
         /// <summary>
@@ -47,6 +44,28 @@ namespace Engine
         internal override void Shutdown()
         {
             ShutdownManagers();
+        }
+
+        /*
+         * Internal Functions
+         */
+
+        /// <summary>
+        /// Called when the world is finished loading
+        /// </summary>
+        private void OnWorldLoaded()
+        {
+            serverPlayerManager = new ServerPlayerManager();
+            AddManager(serverPlayerManager);
+
+            connectionManager = new ConnectionManager(ConnectionManager.ListenerType.SERVER);
+            AddManager(connectionManager);
+
+            serverLoginManager = new ServerLoginManager(connectionManager);
+            AddManager(serverLoginManager);
+
+            dispatchManager = new DispatchManager();
+            AddManager(dispatchManager);
         }
 
         /*
@@ -72,6 +91,16 @@ namespace Engine
         /// The dispatcher manager which allows asynchronous contexts to execute functions on the main thread
         /// </summary>
         internal DispatchManager dispatchManager;
+
+        /// <summary>
+        /// The server world manager loads the world
+        /// </summary>
+        internal ServerWorldManager serverWorldManager;
+
+        /// <summary>
+        /// The server player manager manages player instances
+        /// </summary>
+        internal ServerPlayerManager serverPlayerManager;
 
     }
 }

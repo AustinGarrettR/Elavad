@@ -203,8 +203,8 @@ namespace Engine.Account
 
 
                 //Run game load asynchronously on main thread
-                Task task = BeginGameLoad();
-                task.RunSynchronously();
+                BeginGameLoad().ConfigureAwait(true);
+
 
                 loggedIn = true;
 

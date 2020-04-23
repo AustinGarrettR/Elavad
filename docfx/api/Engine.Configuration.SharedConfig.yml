@@ -14,7 +14,10 @@ items:
   - Engine.Configuration.SharedConfig.MAX_BUFFER_SIZE
   - Engine.Configuration.SharedConfig.MAX_PASSWORD_LENGTH
   - Engine.Configuration.SharedConfig.MAX_USERNAME_LENGTH
+  - Engine.Configuration.SharedConfig.PLAYERS_LAYER_NAME
   - Engine.Configuration.SharedConfig.PORT
+  - Engine.Configuration.SharedConfig.VOLUMES_LAYER_NAME
+  - Engine.Configuration.SharedConfig.WORLD_CHUNK_MAX_HEIGHT
   - Engine.Configuration.SharedConfig.WORLD_CHUNK_SIZE
   - Engine.Configuration.SharedConfig.WORLD_SCENES_FOLDER
   langs:
@@ -315,6 +318,43 @@ items:
   - Public
   - Shared
   - ReadOnly
+- uid: Engine.Configuration.SharedConfig.WORLD_CHUNK_MAX_HEIGHT
+  commentId: F:Engine.Configuration.SharedConfig.WORLD_CHUNK_MAX_HEIGHT
+  id: WORLD_CHUNK_MAX_HEIGHT
+  parent: Engine.Configuration.SharedConfig
+  langs:
+  - csharp
+  - vb
+  name: WORLD_CHUNK_MAX_HEIGHT
+  nameWithType: SharedConfig.WORLD_CHUNK_MAX_HEIGHT
+  fullName: Engine.Configuration.SharedConfig.WORLD_CHUNK_MAX_HEIGHT
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/SharedConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: WORLD_CHUNK_MAX_HEIGHT
+    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    startLine: 58
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nThe maximum height of the world chunk\n"
+  example: []
+  syntax:
+    content: public static readonly int WORLD_CHUNK_MAX_HEIGHT
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly WORLD_CHUNK_MAX_HEIGHT As Integer
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
 - uid: Engine.Configuration.SharedConfig.CHUNK_LOAD_VIEW_DISTANCE
   commentId: F:Engine.Configuration.SharedConfig.CHUNK_LOAD_VIEW_DISTANCE
   id: CHUNK_LOAD_VIEW_DISTANCE
@@ -333,7 +373,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: CHUNK_LOAD_VIEW_DISTANCE
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 58
+    startLine: 63
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -370,7 +410,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: CHUNK_UNLOAD_VIEW_DISTANCE
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 63
+    startLine: 68
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -407,7 +447,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: MAIN_SCENE_PATH
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 72
+    startLine: 77
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -444,7 +484,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: LOGIN_SCENE_PATH
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 77
+    startLine: 82
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -481,7 +521,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: WORLD_SCENES_FOLDER
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 82
+    startLine: 87
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -492,6 +532,80 @@ items:
     return:
       type: System.String
     content.vb: Public Shared ReadOnly WORLD_SCENES_FOLDER As String
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.SharedConfig.PLAYERS_LAYER_NAME
+  commentId: F:Engine.Configuration.SharedConfig.PLAYERS_LAYER_NAME
+  id: PLAYERS_LAYER_NAME
+  parent: Engine.Configuration.SharedConfig
+  langs:
+  - csharp
+  - vb
+  name: PLAYERS_LAYER_NAME
+  nameWithType: SharedConfig.PLAYERS_LAYER_NAME
+  fullName: Engine.Configuration.SharedConfig.PLAYERS_LAYER_NAME
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/SharedConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: PLAYERS_LAYER_NAME
+    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    startLine: 96
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nThe layer name for players\n"
+  example: []
+  syntax:
+    content: public static readonly string PLAYERS_LAYER_NAME
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly PLAYERS_LAYER_NAME As String
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.SharedConfig.VOLUMES_LAYER_NAME
+  commentId: F:Engine.Configuration.SharedConfig.VOLUMES_LAYER_NAME
+  id: VOLUMES_LAYER_NAME
+  parent: Engine.Configuration.SharedConfig
+  langs:
+  - csharp
+  - vb
+  name: VOLUMES_LAYER_NAME
+  nameWithType: SharedConfig.VOLUMES_LAYER_NAME
+  fullName: Engine.Configuration.SharedConfig.VOLUMES_LAYER_NAME
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/SharedConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: VOLUMES_LAYER_NAME
+    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    startLine: 101
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nThe layer name for volumes\n"
+  example: []
+  syntax:
+    content: public static readonly string VOLUMES_LAYER_NAME
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly VOLUMES_LAYER_NAME As String
   modifiers.csharp:
   - public
   - static

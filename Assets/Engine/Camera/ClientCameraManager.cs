@@ -157,7 +157,10 @@ namespace Engine.CameraSystem
                 Vector3 desiredDistanceVector = new Vector3(0.0f, 0.0f, -distanceFromTarget);
                 Vector3 positionBeforeRaycast = rotation * desiredDistanceVector + rotateAroundTarget.transform.position + cameraOffset;
 
-                if (Physics.SphereCast(rotateAroundTarget.transform.position + cameraOffset, 0.35f, positionBeforeRaycast - rotateAroundTarget.transform.position + cameraOffset, out RaycastHit hit, distanceFromTarget))
+                //Layer mask all but players layer (=~ inverts the bits)
+                int layerMask =~ LayerMask.GetMask(SharedConfig.PLAYERS_LAYER_NAME);
+
+                if (Physics.SphereCast(rotateAroundTarget.transform.position + cameraOffset, 0.35f, positionBeforeRaycast - rotateAroundTarget.transform.position + cameraOffset, out RaycastHit hit, distanceFromTarget, layerMask))
                 {
                     //How far extra to move in
                     float offset = 0.15f;
@@ -165,13 +168,11 @@ namespace Engine.CameraSystem
                     //Update distance to the hit and offset
                     float updatedDistance = hit.distance - offset;
 
-                    //Only update the actual zoom instantly if forcing zoom in
+                    //Only update the actual zoom instantly if forcing zoom in.
                     //Zooming out should still be dampened.
                     if (updatedDistance < smoothDistanceFromTarget + offset)
                     {
                         negDistance = new Vector3(0.0f, 0.0f, -updatedDistance);
-
-
                         smoothDistanceFromTarget = updatedDistance;
 
                         //Set intercepted to true so we dont dampen the zoom

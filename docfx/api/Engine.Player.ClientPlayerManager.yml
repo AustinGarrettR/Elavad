@@ -35,7 +35,6 @@ items:
     content: 'public class ClientPlayerManager : Manager'
     content.vb: >-
       Public Class ClientPlayerManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -256,10 +255,10 @@ items:
   - Engine.Player
   namespace: Engine.Player
   syntax:
-    content: public Player GetMyPlayer()
+    content: public ClientPlayer GetMyPlayer()
     return:
-      type: Engine.Player.Player
-    content.vb: Public Function GetMyPlayer As Player
+      type: Engine.Player.ClientPlayer
+    content.vb: Public Function GetMyPlayer As ClientPlayer
   overload: Engine.Player.ClientPlayerManager.GetMyPlayer*
   modifiers.csharp:
   - public
@@ -742,9 +741,9 @@ references:
   name: GetMyPlayer
   nameWithType: ClientPlayerManager.GetMyPlayer
   fullName: Engine.Player.ClientPlayerManager.GetMyPlayer
-- uid: Engine.Player.Player
-  commentId: T:Engine.Player.Player
+- uid: Engine.Player.ClientPlayer
+  commentId: T:Engine.Player.ClientPlayer
   parent: Engine.Player
-  name: Player
-  nameWithType: Player
-  fullName: Engine.Player.Player
+  name: ClientPlayer
+  nameWithType: ClientPlayer
+  fullName: Engine.Player.ClientPlayer

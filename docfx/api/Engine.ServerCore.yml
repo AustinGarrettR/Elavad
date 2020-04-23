@@ -19,7 +19,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ServerCore
     path: ../Assets/Engine/ServerCore.cs
-    startLine: 10
+    startLine: 12
   assemblies:
   - Engine
   namespace: Engine

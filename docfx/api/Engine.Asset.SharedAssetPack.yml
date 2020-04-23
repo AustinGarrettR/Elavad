@@ -34,7 +34,6 @@ items:
       <CreateAssetMenu(fileName:="SharedAssetPack", menuName:="Data Packs/SharedAssetPack", order:=1)>
 
       Public Class SharedAssetPack
-
           Inherits ScriptableObject
   inheritance:
   - System.Object

@@ -5,6 +5,8 @@ using System;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using Engine.Configuration;
+using System.Threading.Tasks;
+using System.Threading;
 
 namespace Editor
 {
@@ -39,7 +41,7 @@ namespace Editor
             else if (stateChange == PlayModeStateChange.ExitingEditMode)
             {
                 enteringPlayMode = true;
-                UnloadWorldScenes();                
+                UnloadWorldScenes();
             }
         }
 
@@ -62,17 +64,24 @@ namespace Editor
         {
             if (Application.isPlaying == false && EditorSceneManager.GetActiveScene().path.Equals(SharedConfig.MAIN_SCENE_PATH))
             {
-                int sceneCount = SceneManager.sceneCount;
-                for (int i = 0; i < sceneCount; i++)
+                int countLoaded = SceneManager.sceneCount;
+                Scene[] loadedScenes = new Scene[countLoaded];
+
+                for (int i = 0; i < countLoaded; i++)
                 {
-                    Scene scene = EditorSceneManager.GetSceneAt(i);
+                    loadedScenes[i] = SceneManager.GetSceneAt(i);
+                }
+
+                for (int i = 0; i < loadedScenes.Length; i++)
+                {
+                    Scene scene = loadedScenes[i];
                     if (scene.path.StartsWith(SharedConfig.WORLD_SCENES_FOLDER))
                     {
-                        AsyncOperation sceneOp = EditorSceneManager.UnloadSceneAsync(scene);
-
+                        EditorSceneManager.CloseScene(scene, true);
                     }
                 }
             }
+
         }
 
         /// <summary>
@@ -111,7 +120,7 @@ namespace Editor
         /// <param name="scene"></param>
         private static void LoadScene(string scenePath)
         {
-            string sceneName = Path.GetFileName(scenePath).Replace(".unity", "");
+            string sceneName = Path.GetFileNameWithoutExtension(scenePath);
             if (EditorSceneManager.GetSceneByName(sceneName).isLoaded)
                 return;
              

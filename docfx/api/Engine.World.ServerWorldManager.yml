@@ -1,37 +1,38 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Engine.Input.ClientInputManager
-  commentId: T:Engine.Input.ClientInputManager
-  id: ClientInputManager
-  parent: Engine.Input
+- uid: Engine.World.ServerWorldManager
+  commentId: T:Engine.World.ServerWorldManager
+  id: ServerWorldManager
+  parent: Engine.World
   children:
-  - Engine.Input.ClientInputManager.Init
-  - Engine.Input.ClientInputManager.Process
-  - Engine.Input.ClientInputManager.Shutdown
+  - Engine.World.ServerWorldManager.#ctor(System.Action)
+  - Engine.World.ServerWorldManager.Init
+  - Engine.World.ServerWorldManager.Process
+  - Engine.World.ServerWorldManager.Shutdown
   langs:
   - csharp
   - vb
-  name: ClientInputManager
-  nameWithType: ClientInputManager
-  fullName: Engine.Input.ClientInputManager
+  name: ServerWorldManager
+  nameWithType: ServerWorldManager
+  fullName: Engine.World.ServerWorldManager
   type: Class
   source:
     remote:
-      path: Assets/Engine/Input/ClientInputManager.cs
+      path: Assets/Engine/World/ServerWorldManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: ClientInputManager
-    path: ../Assets/Engine/Input/ClientInputManager.cs
-    startLine: 10
+    id: ServerWorldManager
+    path: ../Assets/Engine/World/ServerWorldManager.cs
+    startLine: 18
   assemblies:
-  - Engine.Input
-  namespace: Engine.Input
-  summary: "\nHandles input\n"
+  - Engine.World
+  namespace: Engine.World
+  summary: "\nHandles loading and managing the game world for the server\n"
   example: []
   syntax:
-    content: 'public class ClientInputManager : Manager'
+    content: 'public class ServerWorldManager : Manager'
     content.vb: >-
-      Public Class ClientInputManager
+      Public Class ServerWorldManager
           Inherits Manager
   inheritance:
   - System.Object
@@ -51,105 +52,141 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.Input.ClientInputManager.Init
-  commentId: M:Engine.Input.ClientInputManager.Init
+- uid: Engine.World.ServerWorldManager.#ctor(System.Action)
+  commentId: M:Engine.World.ServerWorldManager.#ctor(System.Action)
+  id: '#ctor(System.Action)'
+  parent: Engine.World.ServerWorldManager
+  langs:
+  - csharp
+  - vb
+  name: ServerWorldManager(Action)
+  nameWithType: ServerWorldManager.ServerWorldManager(Action)
+  fullName: Engine.World.ServerWorldManager.ServerWorldManager(System.Action)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Engine/World/ServerWorldManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: .ctor
+    path: ../Assets/Engine/World/ServerWorldManager.cs
+    startLine: 29
+  assemblies:
+  - Engine.World
+  namespace: Engine.World
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public ServerWorldManager(Action worldLoadedCallback)
+    parameters:
+    - id: worldLoadedCallback
+      type: System.Action
+      description: The callback action called when the world is finished loading
+    content.vb: Public Sub New(worldLoadedCallback As Action)
+  overload: Engine.World.ServerWorldManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.World.ServerWorldManager.Init
+  commentId: M:Engine.World.ServerWorldManager.Init
   id: Init
-  parent: Engine.Input.ClientInputManager
+  parent: Engine.World.ServerWorldManager
   langs:
   - csharp
   - vb
   name: Init()
-  nameWithType: ClientInputManager.Init()
-  fullName: Engine.Input.ClientInputManager.Init()
+  nameWithType: ServerWorldManager.Init()
+  fullName: Engine.World.ServerWorldManager.Init()
   type: Method
   source:
     remote:
-      path: Assets/Engine/Input/ClientInputManager.cs
+      path: Assets/Engine/World/ServerWorldManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
-    path: ../Assets/Engine/Input/ClientInputManager.cs
-    startLine: 19
+    path: ../Assets/Engine/World/ServerWorldManager.cs
+    startLine: 41
   assemblies:
-  - Engine.Input
-  namespace: Engine.Input
-  summary: "\nInitialize method\n"
+  - Engine.World
+  namespace: Engine.World
+  summary: "\nCalled on manager initialization\n"
   example: []
   syntax:
     content: public override void Init()
     content.vb: Public Overrides Sub Init
   overridden: Engine.Factory.Manager.Init
-  overload: Engine.Input.ClientInputManager.Init*
+  overload: Engine.World.ServerWorldManager.Init*
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-- uid: Engine.Input.ClientInputManager.Shutdown
-  commentId: M:Engine.Input.ClientInputManager.Shutdown
+- uid: Engine.World.ServerWorldManager.Shutdown
+  commentId: M:Engine.World.ServerWorldManager.Shutdown
   id: Shutdown
-  parent: Engine.Input.ClientInputManager
+  parent: Engine.World.ServerWorldManager
   langs:
   - csharp
   - vb
   name: Shutdown()
-  nameWithType: ClientInputManager.Shutdown()
-  fullName: Engine.Input.ClientInputManager.Shutdown()
+  nameWithType: ServerWorldManager.Shutdown()
+  fullName: Engine.World.ServerWorldManager.Shutdown()
   type: Method
   source:
     remote:
-      path: Assets/Engine/Input/ClientInputManager.cs
+      path: Assets/Engine/World/ServerWorldManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
-    path: ../Assets/Engine/Input/ClientInputManager.cs
-    startLine: 27
+    path: ../Assets/Engine/World/ServerWorldManager.cs
+    startLine: 49
   assemblies:
-  - Engine.Input
-  namespace: Engine.Input
-  summary: "\nCalled on program shutdown\n"
+  - Engine.World
+  namespace: Engine.World
+  summary: "\nCalled on shutdown\n"
   example: []
   syntax:
     content: public override void Shutdown()
     content.vb: Public Overrides Sub Shutdown
   overridden: Engine.Factory.Manager.Shutdown
-  overload: Engine.Input.ClientInputManager.Shutdown*
+  overload: Engine.World.ServerWorldManager.Shutdown*
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-- uid: Engine.Input.ClientInputManager.Process
-  commentId: M:Engine.Input.ClientInputManager.Process
+- uid: Engine.World.ServerWorldManager.Process
+  commentId: M:Engine.World.ServerWorldManager.Process
   id: Process
-  parent: Engine.Input.ClientInputManager
+  parent: Engine.World.ServerWorldManager
   langs:
   - csharp
   - vb
   name: Process()
-  nameWithType: ClientInputManager.Process()
-  fullName: Engine.Input.ClientInputManager.Process()
+  nameWithType: ServerWorldManager.Process()
+  fullName: Engine.World.ServerWorldManager.Process()
   type: Method
   source:
     remote:
-      path: Assets/Engine/Input/ClientInputManager.cs
+      path: Assets/Engine/World/ServerWorldManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
-    path: ../Assets/Engine/Input/ClientInputManager.cs
-    startLine: 35
+    path: ../Assets/Engine/World/ServerWorldManager.cs
+    startLine: 57
   assemblies:
-  - Engine.Input
-  namespace: Engine.Input
+  - Engine.World
+  namespace: Engine.World
   summary: "\nCalled every frame\n"
   example: []
   syntax:
     content: public override void Process()
     content.vb: Public Overrides Sub Process
   overridden: Engine.Factory.Manager.Process
-  overload: Engine.Input.ClientInputManager.Process*
+  overload: Engine.World.ServerWorldManager.Process*
   modifiers.csharp:
   - public
   - override
@@ -157,11 +194,11 @@ items:
   - Public
   - Overrides
 references:
-- uid: Engine.Input
-  commentId: N:Engine.Input
-  name: Engine.Input
-  nameWithType: Engine.Input
-  fullName: Engine.Input
+- uid: Engine.World
+  commentId: N:Engine.World
+  name: Engine.World
+  nameWithType: Engine.World
+  fullName: Engine.World
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -493,6 +530,18 @@ references:
   name: Engine.Factory
   nameWithType: Engine.Factory
   fullName: Engine.Factory
+- uid: Engine.World.ServerWorldManager.#ctor*
+  commentId: Overload:Engine.World.ServerWorldManager.#ctor
+  name: ServerWorldManager
+  nameWithType: ServerWorldManager.ServerWorldManager
+  fullName: Engine.World.ServerWorldManager.ServerWorldManager
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
 - uid: Engine.Factory.Manager.Init
   commentId: M:Engine.Factory.Manager.Init
   parent: Engine.Factory.Manager
@@ -521,11 +570,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Input.ClientInputManager.Init*
-  commentId: Overload:Engine.Input.ClientInputManager.Init
+- uid: Engine.World.ServerWorldManager.Init*
+  commentId: Overload:Engine.World.ServerWorldManager.Init
   name: Init
-  nameWithType: ClientInputManager.Init
-  fullName: Engine.Input.ClientInputManager.Init
+  nameWithType: ServerWorldManager.Init
+  fullName: Engine.World.ServerWorldManager.Init
 - uid: Engine.Factory.Manager.Shutdown
   commentId: M:Engine.Factory.Manager.Shutdown
   parent: Engine.Factory.Manager
@@ -554,11 +603,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Input.ClientInputManager.Shutdown*
-  commentId: Overload:Engine.Input.ClientInputManager.Shutdown
+- uid: Engine.World.ServerWorldManager.Shutdown*
+  commentId: Overload:Engine.World.ServerWorldManager.Shutdown
   name: Shutdown
-  nameWithType: ClientInputManager.Shutdown
-  fullName: Engine.Input.ClientInputManager.Shutdown
+  nameWithType: ServerWorldManager.Shutdown
+  fullName: Engine.World.ServerWorldManager.Shutdown
 - uid: Engine.Factory.Manager.Process
   commentId: M:Engine.Factory.Manager.Process
   parent: Engine.Factory.Manager
@@ -587,8 +636,8 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Input.ClientInputManager.Process*
-  commentId: Overload:Engine.Input.ClientInputManager.Process
+- uid: Engine.World.ServerWorldManager.Process*
+  commentId: Overload:Engine.World.ServerWorldManager.Process
   name: Process
-  nameWithType: ClientInputManager.Process
-  fullName: Engine.Input.ClientInputManager.Process
+  nameWithType: ServerWorldManager.Process
+  fullName: Engine.World.ServerWorldManager.Process

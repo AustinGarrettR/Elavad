@@ -8,6 +8,7 @@ items:
   - Engine.World.EnvironmentSystem
   - Engine.World.EnvironmentVolume
   - Engine.World.EnvironmentVolume.volumeEnteredDelegate
+  - Engine.World.ServerWorldManager
   langs:
   - csharp
   - vb
@@ -40,6 +41,11 @@ references:
   name: EnvironmentVolume.volumeEnteredDelegate
   nameWithType: EnvironmentVolume.volumeEnteredDelegate
   fullName: Engine.World.EnvironmentVolume.volumeEnteredDelegate
+- uid: Engine.World.ServerWorldManager
+  commentId: T:Engine.World.ServerWorldManager
+  name: ServerWorldManager
+  nameWithType: ServerWorldManager
+  fullName: Engine.World.ServerWorldManager
 - uid: Engine.World
   commentId: N:Engine.World
   name: Engine.World

@@ -803,12 +803,30 @@ references:
   commentId: F:Engine.Configuration.SharedConfig.MAX_USERNAME_LENGTH
   fullName: Engine.Configuration.SharedConfig.MAX_USERNAME_LENGTH
   nameWithType: SharedConfig.MAX_USERNAME_LENGTH
+- uid: Engine.Configuration.SharedConfig.PLAYERS_LAYER_NAME
+  name: PLAYERS_LAYER_NAME
+  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_PLAYERS_LAYER_NAME
+  commentId: F:Engine.Configuration.SharedConfig.PLAYERS_LAYER_NAME
+  fullName: Engine.Configuration.SharedConfig.PLAYERS_LAYER_NAME
+  nameWithType: SharedConfig.PLAYERS_LAYER_NAME
 - uid: Engine.Configuration.SharedConfig.PORT
   name: PORT
   href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_PORT
   commentId: F:Engine.Configuration.SharedConfig.PORT
   fullName: Engine.Configuration.SharedConfig.PORT
   nameWithType: SharedConfig.PORT
+- uid: Engine.Configuration.SharedConfig.VOLUMES_LAYER_NAME
+  name: VOLUMES_LAYER_NAME
+  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_VOLUMES_LAYER_NAME
+  commentId: F:Engine.Configuration.SharedConfig.VOLUMES_LAYER_NAME
+  fullName: Engine.Configuration.SharedConfig.VOLUMES_LAYER_NAME
+  nameWithType: SharedConfig.VOLUMES_LAYER_NAME
+- uid: Engine.Configuration.SharedConfig.WORLD_CHUNK_MAX_HEIGHT
+  name: WORLD_CHUNK_MAX_HEIGHT
+  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_WORLD_CHUNK_MAX_HEIGHT
+  commentId: F:Engine.Configuration.SharedConfig.WORLD_CHUNK_MAX_HEIGHT
+  fullName: Engine.Configuration.SharedConfig.WORLD_CHUNK_MAX_HEIGHT
+  nameWithType: SharedConfig.WORLD_CHUNK_MAX_HEIGHT
 - uid: Engine.Configuration.SharedConfig.WORLD_CHUNK_SIZE
   name: WORLD_CHUNK_SIZE
   href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_WORLD_CHUNK_SIZE
@@ -1930,6 +1948,25 @@ references:
   commentId: N:Engine.Player
   fullName: Engine.Player
   nameWithType: Engine.Player
+- uid: Engine.Player.ClientPlayer
+  name: ClientPlayer
+  href: api/Engine.Player.ClientPlayer.html
+  commentId: T:Engine.Player.ClientPlayer
+  fullName: Engine.Player.ClientPlayer
+  nameWithType: ClientPlayer
+- uid: Engine.Player.ClientPlayer.GetPlayerObject
+  name: GetPlayerObject()
+  href: api/Engine.Player.ClientPlayer.html#Engine_Player_ClientPlayer_GetPlayerObject
+  commentId: M:Engine.Player.ClientPlayer.GetPlayerObject
+  fullName: Engine.Player.ClientPlayer.GetPlayerObject()
+  nameWithType: ClientPlayer.GetPlayerObject()
+- uid: Engine.Player.ClientPlayer.GetPlayerObject*
+  name: GetPlayerObject
+  href: api/Engine.Player.ClientPlayer.html#Engine_Player_ClientPlayer_GetPlayerObject_
+  commentId: Overload:Engine.Player.ClientPlayer.GetPlayerObject
+  isSpec: "True"
+  fullName: Engine.Player.ClientPlayer.GetPlayerObject
+  nameWithType: ClientPlayer.GetPlayerObject
 - uid: Engine.Player.ClientPlayerManager
   name: ClientPlayerManager
   href: api/Engine.Player.ClientPlayerManager.html
@@ -2014,25 +2051,51 @@ references:
   isSpec: "True"
   fullName: Engine.Player.ClientPlayerManager.Shutdown
   nameWithType: ClientPlayerManager.Shutdown
-- uid: Engine.Player.Player
-  name: Player
-  href: api/Engine.Player.Player.html
-  commentId: T:Engine.Player.Player
-  fullName: Engine.Player.Player
-  nameWithType: Player
-- uid: Engine.Player.Player.GetPlayerObject
-  name: GetPlayerObject()
-  href: api/Engine.Player.Player.html#Engine_Player_Player_GetPlayerObject
-  commentId: M:Engine.Player.Player.GetPlayerObject
-  fullName: Engine.Player.Player.GetPlayerObject()
-  nameWithType: Player.GetPlayerObject()
-- uid: Engine.Player.Player.GetPlayerObject*
-  name: GetPlayerObject
-  href: api/Engine.Player.Player.html#Engine_Player_Player_GetPlayerObject_
-  commentId: Overload:Engine.Player.Player.GetPlayerObject
+- uid: Engine.Player.ServerPlayerManager
+  name: ServerPlayerManager
+  href: api/Engine.Player.ServerPlayerManager.html
+  commentId: T:Engine.Player.ServerPlayerManager
+  fullName: Engine.Player.ServerPlayerManager
+  nameWithType: ServerPlayerManager
+- uid: Engine.Player.ServerPlayerManager.Init
+  name: Init()
+  href: api/Engine.Player.ServerPlayerManager.html#Engine_Player_ServerPlayerManager_Init
+  commentId: M:Engine.Player.ServerPlayerManager.Init
+  fullName: Engine.Player.ServerPlayerManager.Init()
+  nameWithType: ServerPlayerManager.Init()
+- uid: Engine.Player.ServerPlayerManager.Init*
+  name: Init
+  href: api/Engine.Player.ServerPlayerManager.html#Engine_Player_ServerPlayerManager_Init_
+  commentId: Overload:Engine.Player.ServerPlayerManager.Init
   isSpec: "True"
-  fullName: Engine.Player.Player.GetPlayerObject
-  nameWithType: Player.GetPlayerObject
+  fullName: Engine.Player.ServerPlayerManager.Init
+  nameWithType: ServerPlayerManager.Init
+- uid: Engine.Player.ServerPlayerManager.Process
+  name: Process()
+  href: api/Engine.Player.ServerPlayerManager.html#Engine_Player_ServerPlayerManager_Process
+  commentId: M:Engine.Player.ServerPlayerManager.Process
+  fullName: Engine.Player.ServerPlayerManager.Process()
+  nameWithType: ServerPlayerManager.Process()
+- uid: Engine.Player.ServerPlayerManager.Process*
+  name: Process
+  href: api/Engine.Player.ServerPlayerManager.html#Engine_Player_ServerPlayerManager_Process_
+  commentId: Overload:Engine.Player.ServerPlayerManager.Process
+  isSpec: "True"
+  fullName: Engine.Player.ServerPlayerManager.Process
+  nameWithType: ServerPlayerManager.Process
+- uid: Engine.Player.ServerPlayerManager.Shutdown
+  name: Shutdown()
+  href: api/Engine.Player.ServerPlayerManager.html#Engine_Player_ServerPlayerManager_Shutdown
+  commentId: M:Engine.Player.ServerPlayerManager.Shutdown
+  fullName: Engine.Player.ServerPlayerManager.Shutdown()
+  nameWithType: ServerPlayerManager.Shutdown()
+- uid: Engine.Player.ServerPlayerManager.Shutdown*
+  name: Shutdown
+  href: api/Engine.Player.ServerPlayerManager.html#Engine_Player_ServerPlayerManager_Shutdown_
+  commentId: Overload:Engine.Player.ServerPlayerManager.Shutdown
+  isSpec: "True"
+  fullName: Engine.Player.ServerPlayerManager.Shutdown
+  nameWithType: ServerPlayerManager.Shutdown
 - uid: Engine.ServerCore
   name: ServerCore
   href: api/Engine.ServerCore.html
@@ -2469,3 +2532,61 @@ references:
   commentId: T:Engine.World.EnvironmentVolume.volumeEnteredDelegate
   fullName: Engine.World.EnvironmentVolume.volumeEnteredDelegate
   nameWithType: EnvironmentVolume.volumeEnteredDelegate
+- uid: Engine.World.ServerWorldManager
+  name: ServerWorldManager
+  href: api/Engine.World.ServerWorldManager.html
+  commentId: T:Engine.World.ServerWorldManager
+  fullName: Engine.World.ServerWorldManager
+  nameWithType: ServerWorldManager
+- uid: Engine.World.ServerWorldManager.#ctor(System.Action)
+  name: ServerWorldManager(Action)
+  href: api/Engine.World.ServerWorldManager.html#Engine_World_ServerWorldManager__ctor_System_Action_
+  commentId: M:Engine.World.ServerWorldManager.#ctor(System.Action)
+  fullName: Engine.World.ServerWorldManager.ServerWorldManager(System.Action)
+  nameWithType: ServerWorldManager.ServerWorldManager(Action)
+- uid: Engine.World.ServerWorldManager.#ctor*
+  name: ServerWorldManager
+  href: api/Engine.World.ServerWorldManager.html#Engine_World_ServerWorldManager__ctor_
+  commentId: Overload:Engine.World.ServerWorldManager.#ctor
+  isSpec: "True"
+  fullName: Engine.World.ServerWorldManager.ServerWorldManager
+  nameWithType: ServerWorldManager.ServerWorldManager
+- uid: Engine.World.ServerWorldManager.Init
+  name: Init()
+  href: api/Engine.World.ServerWorldManager.html#Engine_World_ServerWorldManager_Init
+  commentId: M:Engine.World.ServerWorldManager.Init
+  fullName: Engine.World.ServerWorldManager.Init()
+  nameWithType: ServerWorldManager.Init()
+- uid: Engine.World.ServerWorldManager.Init*
+  name: Init
+  href: api/Engine.World.ServerWorldManager.html#Engine_World_ServerWorldManager_Init_
+  commentId: Overload:Engine.World.ServerWorldManager.Init
+  isSpec: "True"
+  fullName: Engine.World.ServerWorldManager.Init
+  nameWithType: ServerWorldManager.Init
+- uid: Engine.World.ServerWorldManager.Process
+  name: Process()
+  href: api/Engine.World.ServerWorldManager.html#Engine_World_ServerWorldManager_Process
+  commentId: M:Engine.World.ServerWorldManager.Process
+  fullName: Engine.World.ServerWorldManager.Process()
+  nameWithType: ServerWorldManager.Process()
+- uid: Engine.World.ServerWorldManager.Process*
+  name: Process
+  href: api/Engine.World.ServerWorldManager.html#Engine_World_ServerWorldManager_Process_
+  commentId: Overload:Engine.World.ServerWorldManager.Process
+  isSpec: "True"
+  fullName: Engine.World.ServerWorldManager.Process
+  nameWithType: ServerWorldManager.Process
+- uid: Engine.World.ServerWorldManager.Shutdown
+  name: Shutdown()
+  href: api/Engine.World.ServerWorldManager.html#Engine_World_ServerWorldManager_Shutdown
+  commentId: M:Engine.World.ServerWorldManager.Shutdown
+  fullName: Engine.World.ServerWorldManager.Shutdown()
+  nameWithType: ServerWorldManager.Shutdown()
+- uid: Engine.World.ServerWorldManager.Shutdown*
+  name: Shutdown
+  href: api/Engine.World.ServerWorldManager.html#Engine_World_ServerWorldManager_Shutdown_
+  commentId: Overload:Engine.World.ServerWorldManager.Shutdown
+  isSpec: "True"
+  fullName: Engine.World.ServerWorldManager.Shutdown
+  nameWithType: ServerWorldManager.Shutdown

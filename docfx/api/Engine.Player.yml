@@ -4,8 +4,9 @@ items:
   commentId: N:Engine.Player
   id: Engine.Player
   children:
+  - Engine.Player.ClientPlayer
   - Engine.Player.ClientPlayerManager
-  - Engine.Player.Player
+  - Engine.Player.ServerPlayerManager
   langs:
   - csharp
   - vb
@@ -16,18 +17,23 @@ items:
   assemblies:
   - Engine.Player
 references:
+- uid: Engine.Player.ClientPlayer
+  commentId: T:Engine.Player.ClientPlayer
+  parent: Engine.Player
+  name: ClientPlayer
+  nameWithType: ClientPlayer
+  fullName: Engine.Player.ClientPlayer
 - uid: Engine.Player.ClientPlayerManager
   commentId: T:Engine.Player.ClientPlayerManager
   parent: Engine.Player
   name: ClientPlayerManager
   nameWithType: ClientPlayerManager
   fullName: Engine.Player.ClientPlayerManager
-- uid: Engine.Player.Player
-  commentId: T:Engine.Player.Player
-  parent: Engine.Player
-  name: Player
-  nameWithType: Player
-  fullName: Engine.Player.Player
+- uid: Engine.Player.ServerPlayerManager
+  commentId: T:Engine.Player.ServerPlayerManager
+  name: ServerPlayerManager
+  nameWithType: ServerPlayerManager
+  fullName: Engine.Player.ServerPlayerManager
 - uid: Engine.Player
   commentId: N:Engine.Player
   name: Engine.Player
