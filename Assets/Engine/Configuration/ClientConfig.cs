@@ -82,5 +82,10 @@ namespace Engine.Configuration
         /// </summary>
         public static readonly float CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED = 3;
 
+        /// <summary>
+        /// The default speed the camera updates the target position
+        /// </summary>
+        public static readonly float CAMERA_DEFAULT_SMOOTH_POSITION_SPEED = 8;
+
     }
 }

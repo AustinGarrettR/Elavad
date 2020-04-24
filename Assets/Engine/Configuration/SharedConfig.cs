@@ -35,6 +35,11 @@ namespace Engine.Configuration
         /// </summary>
         public static readonly int KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS = 3000;
 
+        /// <summary>
+        /// How often to send a position update packet
+        /// </summary>
+        public static readonly int POSITION_UPDATE_INTERVAL_IN_MILLISECONDS = 50;
+
         /*
          * Account
          */
@@ -110,6 +115,7 @@ namespace Engine.Configuration
         /// The layer name for volumes
         /// </summary>
         public static readonly string VOLUMES_LAYER_NAME = "Volumes";
+
 
 
     }

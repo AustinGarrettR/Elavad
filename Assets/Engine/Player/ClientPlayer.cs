@@ -26,7 +26,7 @@ namespace Engine.Player
         }
 
         /*
-         * Internal
+         * Private
          */
 
         /// <summary>
@@ -34,6 +34,39 @@ namespace Engine.Player
         /// </summary>
         private GameObject playerObject;
 
+        /*
+         * Internal
+         */
+
+        /// <summary>
+        /// The last time a transform update was received
+        /// </summary>
+        internal long lastTransformUpdateTimestamp;
+
+        /// <summary>
+        /// The last transform update position
+        /// </summary>
+        internal Vector3 lastTransformUpdatePosition;
+
+        /// <summary>
+        /// The current transform update position
+        /// </summary>
+        internal Vector3 currentTransformUpdatePosition;
+
+        /// <summary>
+        /// The last transform update rotation
+        /// </summary>
+        internal Quaternion lastTransformUpdateRotation;
+
+        /// <summary>
+        /// The current transform update rotation
+        /// </summary>
+        internal Quaternion currentTransformUpdateRotation;
+
+        /// <summary>
+        /// Whether the position has been set at least once
+        /// </summary>
+        internal bool positionSet;
 
         /*
          * Public 
@@ -47,7 +80,6 @@ namespace Engine.Player
         {
             return playerObject;
         }
-
 
     }
 }

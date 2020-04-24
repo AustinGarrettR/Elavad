@@ -147,6 +147,7 @@ namespace Engine.Account
         /// </summary>
         private void OnDisconnectedFromServer()
         {
+            Debug.Log("Called disconnect from server from login manager.");
             if (loggedIn)
             {
                 loggedIn = false;

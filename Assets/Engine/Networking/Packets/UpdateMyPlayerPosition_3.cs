@@ -4,11 +4,11 @@ using System;
 namespace Engine.Networking
 {
     /// <summary>
-    /// The packet that tells the client the player position
+    /// The packet that tells the client the player position and rotation
     /// </summary>
     [Serializable]
-    [Packet(3, "Update My Player Position", "Client", ReliabilityScheme.UNRELIABLE, "Updates the main client player position")]
-    public class UpdateMyPlayerPosition_3 : Packet
+    [Packet(3, "Update MyPlayer Transform", "Client", ReliabilityScheme.UNRELIABLE, "Updates the main client player transform")]
+    public class UpdateMyPlayerTransform_3 : Packet
     {
         /// <summary>
         /// The x coordinate
@@ -26,6 +26,26 @@ namespace Engine.Networking
         public float z;
 
         /// <summary>
+        /// The rotation x axis
+        /// </summary>
+        public float rotationX;
+
+        /// <summary>
+        /// The rotation y axis
+        /// </summary>
+        public float rotationY;
+
+        /// <summary>
+        /// The rotation z axis
+        /// </summary>
+        public float rotationZ;
+
+        /// <summary>
+        /// The rotation w axis
+        /// </summary>
+        public float rotationW;
+
+        /// <summary>
         /// Converts the packet value types to a byte array
         /// </summary>
         /// <returns></returns>
@@ -35,6 +55,10 @@ namespace Engine.Networking
             PacketWriter.Add(ref bytes, x); //1-float
             PacketWriter.Add(ref bytes, y); //2-float
             PacketWriter.Add(ref bytes, z); //3-float
+            PacketWriter.Add(ref bytes, rotationX); //4-float
+            PacketWriter.Add(ref bytes, rotationY); //5-float
+            PacketWriter.Add(ref bytes, rotationZ); //6-float
+            PacketWriter.Add(ref bytes, rotationW); //7-float
             return bytes;
         }
 
@@ -47,6 +71,10 @@ namespace Engine.Networking
             x = PacketReader.ReadFloat(ref bytes); //1-float
             y = PacketReader.ReadFloat(ref bytes); //2-float
             z = PacketReader.ReadFloat(ref bytes); //3-float
+            rotationX = PacketReader.ReadFloat(ref bytes); //4-float
+            rotationY = PacketReader.ReadFloat(ref bytes); //5-float
+            rotationZ = PacketReader.ReadFloat(ref bytes); //6-float
+            rotationW = PacketReader.ReadFloat(ref bytes); //7-float
         }
 
     }

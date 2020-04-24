@@ -77,7 +77,7 @@ namespace Editor
             GUIStyle style = new GUIStyle();
             Texture2D originalBGColor = style.normal.background;
             EditorWindow window = GetWindow<PacketInfoEditor>("Packet Info");
-            window.maxSize = new Vector2(550, 10000);
+            window.maxSize = new Vector2(650, 10000);
             window.minSize = new Vector2(0, 4 + (21 * packets.Count));
             GUILayout.BeginVertical(GUILayout.MaxHeight((20 * packets.Count) + 10));
             GUILayout.Space(5);
@@ -117,9 +117,9 @@ namespace Editor
                 string description = packet.packetDescription;
 
                 style.normal.background = !dark ? BGText : BGTextDark;
-                GUILayout.BeginHorizontal(GUILayout.MinWidth(150), GUILayout.MaxWidth(550), GUILayout.ExpandHeight(false));
+                GUILayout.BeginHorizontal(GUILayout.MinWidth(150), GUILayout.MaxWidth(650), GUILayout.ExpandHeight(false));
                 GUILayout.Label(new GUIContent(" <size=13><b>" + packetId + ".</b></size> ", "Packet Index"), style, GUILayout.Width(30), GUILayout.ExpandHeight(false), GUILayout.Height(20), GUILayout.MinHeight(20), GUILayout.MaxHeight(20));
-                GUILayout.Label(new GUIContent(" <size=13>" + name + "</size>", "Packet Name"), style, GUILayout.MinWidth(130), GUILayout.MaxWidth(130), GUILayout.MinHeight(20), GUILayout.Height(20), GUILayout.ExpandHeight(false));
+                GUILayout.Label(new GUIContent(" <size=13>" + name + "</size>", "Packet Name"), style, GUILayout.MinWidth(170), GUILayout.MaxWidth(170), GUILayout.MinHeight(20), GUILayout.Height(20), GUILayout.ExpandHeight(false));
                 style.padding = new RectOffset(0, 0, 2, 0);
                 GUILayout.Label(new GUIContent(target, "Packet Target"), style, GUILayout.MinWidth(50), GUILayout.MaxWidth(50), GUILayout.MinHeight(20), GUILayout.Height(20), GUILayout.ExpandHeight(false));
                 GUILayout.Label(new GUIContent(reliability, "Reliability Scheme"), style, GUILayout.MinWidth(20), GUILayout.MaxWidth(20), GUILayout.MinHeight(20), GUILayout.Height(20), GUILayout.ExpandHeight(false));

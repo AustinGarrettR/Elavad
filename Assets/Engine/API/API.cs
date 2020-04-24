@@ -16,6 +16,7 @@ namespace Engine.API
 
         internal static void SetManagers(List<Manager> listedManagers)
         {
+            managers.Clear();
             foreach (Manager manager in listedManagers)
             {
                 managers.Add(manager.GetType(), manager);

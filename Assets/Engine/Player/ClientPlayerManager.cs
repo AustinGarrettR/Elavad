@@ -5,6 +5,9 @@ using Engine.Asset;
 using Engine.Networking;
 using Unity.Networking.Transport;
 using System.Threading;
+using Engine.Utility;
+using Engine.Configuration;
+using System;
 
 namespace Engine.Player
 {
@@ -63,6 +66,7 @@ namespace Engine.Player
             if(gameLoaded)
             {
                 CheckForClickToWalkInput();
+                ProcessMyPlayerMovement();
             }
         }
 
@@ -129,6 +133,22 @@ namespace Engine.Player
         }
 
         /// <summary>
+        /// Called every frame to lerp the position
+        /// </summary>
+        private void ProcessMyPlayerMovement()
+        {
+
+            //Ensure the position has been set
+            if (myPlayer.positionSet == false)
+                return;
+
+            float lerpAmount = (float) (TimeHandler.getTimeInMilliseconds() - myPlayer.lastTransformUpdateTimestamp) / (float) SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS;
+            lerpAmount = Mathf.Clamp(lerpAmount, 0, 1);
+            myPlayer.GetPlayerObject().transform.position = Vector3.Lerp(myPlayer.lastTransformUpdatePosition, myPlayer.currentTransformUpdatePosition, lerpAmount);
+            myPlayer.GetPlayerObject().transform.rotation = Quaternion.Lerp(myPlayer.lastTransformUpdateRotation, myPlayer.currentTransformUpdateRotation, lerpAmount);
+        }
+
+        /// <summary>
         /// Send walk request to the server
         /// </summary>
         /// <param name="targetPosition">The target position</param>
@@ -153,10 +173,10 @@ namespace Engine.Player
             if (packetId == 3)
             {
                 //Read packet
-                UpdateMyPlayerPosition_3 packet = new UpdateMyPlayerPosition_3();
+                UpdateMyPlayerTransform_3 packet = new UpdateMyPlayerTransform_3();
                 packet.readPacket(packetBytes);
 
-                UpdateMyPlayerPosition(new Vector3(packet.x, packet.y, packet.z));
+                UpdateMyPlayerPosition(new Vector3(packet.x, packet.y, packet.z), new Quaternion(packet.rotationX, packet.rotationY, packet.rotationZ, packet.rotationW));
             }
         }
 
@@ -166,9 +186,14 @@ namespace Engine.Player
         /// Updates the client position from the server
         /// </summary>
         /// <param name="newPosition">The new position vector3</param>
-        private void UpdateMyPlayerPosition(Vector3 newPosition)
+        private void UpdateMyPlayerPosition(Vector3 newPosition, Quaternion newRotation)
         {
-            myPlayer.GetPlayerObject().transform.position = newPosition;
+            myPlayer.positionSet = true;
+            myPlayer.lastTransformUpdateTimestamp = TimeHandler.getTimeInMilliseconds();
+            myPlayer.lastTransformUpdatePosition = myPlayer.GetPlayerObject().transform.position;
+            myPlayer.lastTransformUpdateRotation = myPlayer.GetPlayerObject().transform.rotation;
+            myPlayer.currentTransformUpdatePosition = newPosition;
+            myPlayer.currentTransformUpdateRotation = newRotation;
         }
 
         /// <summary>

@@ -7,7 +7,8 @@ using Engine.Account;
 using Unity.Networking.Transport;
 using Engine.Asset;
 using Engine.Networking;
-using System;
+using Engine.Utility;
+using Engine.Configuration;
 
 namespace Engine.Player
 {
@@ -142,7 +143,6 @@ namespace Engine.Player
         /// <param name="targetPosition">The position Vector3</param>
         private void WalkToTargetRequest(ServerPlayer player, Vector3 targetPosition)
         {
-            Debug.Log("Walk Target request:" + targetPosition);
             //Find closest point on navmesh or don't change
             if(NavMesh.SamplePosition(targetPosition, out NavMeshHit hit, 5.0f, NavMesh.AllAreas))
             {
@@ -168,6 +168,9 @@ namespace Engine.Player
 
             NavMeshAgent agent = playerObject.AddComponent<NavMeshAgent>();
             agent.obstacleAvoidanceType = ObstacleAvoidanceType.MedQualityObstacleAvoidance;
+            agent.acceleration = 1000;
+            agent.stoppingDistance = 0.1f;
+            agent.autoBraking = false;
             player.SetPlayerAgent(agent);
             
         }
@@ -192,12 +195,17 @@ namespace Engine.Player
                 ServerPlayer player = (ServerPlayer) playerObject;
 
                 //Update position if moving
-                if (player.GetPlayerAgent().velocity.magnitude > 0)
+                if (player.GetPlayerAgent().velocity.magnitude > 0 && TimeHandler.getTimeInMilliseconds() - player.lastMovementUpdateTimestamp >= SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS)
                 {
-                    UpdateMyPlayerPosition_3 packet = new UpdateMyPlayerPosition_3();
+                    player.lastMovementUpdateTimestamp = TimeHandler.getTimeInMilliseconds();
+                    UpdateMyPlayerTransform_3 packet = new UpdateMyPlayerTransform_3();
                     packet.x = player.GetPlayerGameObject().transform.position.x;
                     packet.y = player.GetPlayerGameObject().transform.position.y;
                     packet.z = player.GetPlayerGameObject().transform.position.z;
+                    packet.rotationX = player.GetPlayerGameObject().transform.rotation.x;
+                    packet.rotationY = player.GetPlayerGameObject().transform.rotation.y;
+                    packet.rotationZ = player.GetPlayerGameObject().transform.rotation.z;
+                    packet.rotationW = player.GetPlayerGameObject().transform.rotation.w;
 
                     connectionManager.SendPacketToClient(player.getConnection(), packet);
                 }

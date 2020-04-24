@@ -127,6 +127,12 @@ namespace Engine.CameraSystem
             if (rotateAroundTarget == null)
                 return;
 
+            if(instantCameraMove)
+            {
+                instantCameraMove = false;
+                smoothTargetPosition = rotateAroundTarget.transform.position;
+            }
+
             //Set offset
             Vector3 cameraOffset = new Vector3(0, ClientConfig.CAMERA_Y_OFFSET, 0);
 
@@ -147,62 +153,15 @@ namespace Engine.CameraSystem
 
             //Distance from target
             distanceFromTarget = Mathf.Clamp(distanceFromTarget - UnityEngine.Input.GetAxis("Mouse ScrollWheel") * 5, ClientConfig.CAMERA_DISTANCE_MINIMUM, ClientConfig.CAMERA_DISTANCE_MAXIMUM);
-            Vector3 negDistance = new Vector3(0.0f, 0.0f, -distanceFromTarget);
+            smoothDistanceFromTarget = Mathf.Lerp(smoothDistanceFromTarget, distanceFromTarget, smoothZoomSpeed * Time.deltaTime);
 
-            //Zoom closer when an object interceps the sight line
-          /*  bool intercepted = false;
+            Vector3 negDistance = new Vector3(0.0f, 0.0f, -smoothDistanceFromTarget);
 
-            if (zoomWhenIntercepted)
-            {
-                Vector3 desiredDistanceVector = new Vector3(0.0f, 0.0f, -distanceFromTarget);
-                Vector3 positionBeforeRaycast = rotation * desiredDistanceVector + rotateAroundTarget.transform.position + cameraOffset;
-
-                //Layer mask all but players layer (=~ inverts the bits)
-                int layerMask =~ LayerMask.GetMask(SharedConfig.PLAYERS_LAYER_NAME);
-
-                RaycastHit[] hits = Physics.SphereCastAll(rotateAroundTarget.transform.position + cameraOffset, 0.35f, positionBeforeRaycast - rotateAroundTarget.transform.position + cameraOffset, distanceFromTarget, layerMask);
-                if (hits.Length > 0)
-                {
-                    //How far extra to move in
-                    float offset = 0.15f;
-                    foreach (RaycastHit hit in hits)
-                    {
-                        if (hit.collider.bounds.Contains(positionBeforeRaycast) || hit.collider.bounds.Contains(positionBeforeRaycast + new Vector3(0, 0, -offset)))
-                        {
-                            if (smoothDistanceFromTarget > hit.distance - offset)
-                            {
-                                //Update distance to the hit and offset
-                                float updatedDistance = hit.distance - offset;
-
-                                //Only update the actual zoom instantly if forcing zoom in.
-                                //Zooming out should still be dampened.
-                                //if (updatedDistance < smoothDistanceFromTarget + offset)
-                                //{
-                                    negDistance = new Vector3(0.0f, 0.0f, -updatedDistance);
-                                    smoothDistanceFromTarget = updatedDistance;
-
-                                    //Set intercepted to true so we dont dampen the zoom
-                                    intercepted = true;
-                                //}
-                            }
-                        }
-                    }
-
-                }
-            }
-            */
-
-            //If not intercepted, change zoom gradually
-            //if(intercepted == false)
-            //{
-
-                smoothDistanceFromTarget = Mathf.Lerp(smoothDistanceFromTarget, distanceFromTarget, smoothZoomSpeed * Time.deltaTime);
-
-                negDistance = new Vector3(0.0f, 0.0f, -smoothDistanceFromTarget);
-            //}
+            smoothTargetPosition = Vector3.Lerp(smoothTargetPosition, rotateAroundTarget.transform.position, ClientConfig.CAMERA_DEFAULT_SMOOTH_POSITION_SPEED * Time.deltaTime);
 
             //Calcualate new position with distance
-            Vector3 position = rotation * negDistance + rotateAroundTarget.transform.position + cameraOffset;
+            Vector3 position = rotation * negDistance + smoothTargetPosition + cameraOffset;
+        
 
             //Apply
             mainCamera.transform.rotation = rotation;
@@ -233,6 +192,16 @@ namespace Engine.CameraSystem
         /// The client player manager reference
         /// </summary>
         private ClientPlayerManager clientPlayerManager;
+
+        /// <summary>
+        /// If to set the smooth position on start
+        /// </summary>
+        private bool instantCameraMove = true;
+
+        /// <summary>
+        /// Smooth position for camera
+        /// </summary>
+        private Vector3 smoothTargetPosition;
 
         /// <summary>
         /// The x axis rotation of the camera
@@ -268,6 +237,11 @@ namespace Engine.CameraSystem
         /// The default speed the distance changes
         /// </summary>
         private float smoothZoomSpeed = ClientConfig.CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED;
+
+        /// <summary>
+        /// The default speed for camera dampening
+        /// </summary>
+        private float smoothCameraSpeed = ClientConfig.CAMERA_DEFAULT_SMOOTH_POSITION_SPEED;
 
         /// <summary>
         /// If to zoom when intercepted by an object

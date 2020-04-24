@@ -41,10 +41,14 @@ namespace Engine.Player
         /// </summary>
         private NavMeshAgent navMeshAgent;
 
-
         /*
          * Public (Internal)
          */
+
+        /// <summary>
+        /// The last time a movement update was received
+        /// </summary>
+        internal long lastMovementUpdateTimestamp;
 
         /// <summary>
         /// Getter for the network connection reference

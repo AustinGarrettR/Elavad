@@ -52,9 +52,9 @@ namespace Engine
         }
 
         /// <summary>
-        /// Called by mono behavior on application quit
+        /// Called by mono behavior on scene reset/quit
         /// </summary>
-        public void OnApplicationQuit()
+        public void OnDestroy()
         {
             //Call abstract method for derived class
             Shutdown();
