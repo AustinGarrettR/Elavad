@@ -55,6 +55,13 @@ namespace Engine.Asset
         /// <returns></returns>
         public GameObject GetUIPanel(string name)
         {
+
+            if (clientAssetPack.uiPack == null || clientAssetPack.uiPack.UI_Panels == null)
+            {
+                Log.LogError("Unable to load UI Panel asset:"+name+". UI Pack or panels is null.");
+                return null;
+            }
+
             GameObject[] panelObjects = clientAssetPack.uiPack.UI_Panels;
             foreach(GameObject obj in panelObjects)
             {
@@ -76,7 +83,13 @@ namespace Engine.Asset
         /// <returns>The player prefab</returns>
         public GameObject GetPlayerPrefab()
         {
-            return clientAssetPack.playerPack.playerPrefab;
+            if (clientAssetPack.clientPlayerPack == null || clientAssetPack.clientPlayerPack.playerPrefab == null)
+            {
+                Log.LogError("Unable to load client player prefa. Player Pack or prefab is null.");
+                return null;
+            }
+
+            return clientAssetPack.clientPlayerPack.playerPrefab;
         }
         
         /*

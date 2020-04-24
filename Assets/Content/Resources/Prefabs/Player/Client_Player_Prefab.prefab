@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7042541304277251764}
   - component: {fileID: 3374672465430078427}
   - component: {fileID: 4570285084297111774}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Model Placeholder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,8 +91,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6081548394481015151}
   - component: {fileID: 6688267124825779992}
-  m_Layer: 9
-  m_Name: Player_Prefab
+  m_Layer: 10
+  m_Name: Client_Player_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

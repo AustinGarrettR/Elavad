@@ -2,10 +2,10 @@
     "name": "Engine.Account",
     "references": [
         "Engine.Networking",
-        "Unity.Burst",
         "Engine.Logging",
         "Engine.Factory",
-        "Unity.Networking.Transport"
+        "Unity.Networking.Transport",
+        "Engine.Configuration"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

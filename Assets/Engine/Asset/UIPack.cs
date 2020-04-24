@@ -6,7 +6,7 @@ namespace Engine.Asset
     /// An object that stores references to UI panels
     /// </summary>
     [CreateAssetMenu(fileName = "UI_Pack", menuName = "Data Packs/UI_Pack", order = 1)]
-    public class UI_Pack : ScriptableObject
+    public class UIPack : ScriptableObject
     { 
         /// <summary>
         /// Reference of UI panel prefabs

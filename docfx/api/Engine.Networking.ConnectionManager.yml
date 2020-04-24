@@ -16,8 +16,8 @@ items:
   - Engine.Networking.ConnectionManager.NotifyOnDisconnectedFromServer
   - Engine.Networking.ConnectionManager.NotifyPacketReceived
   - Engine.Networking.ConnectionManager.Process
-  - Engine.Networking.ConnectionManager.sendPacketToClient(Unity.Networking.Transport.NetworkConnection,Engine.Networking.Packet)
-  - Engine.Networking.ConnectionManager.sendPacketToServer(Engine.Networking.Packet)
+  - Engine.Networking.ConnectionManager.SendPacketToClient(Unity.Networking.Transport.NetworkConnection,Engine.Networking.Packet)
+  - Engine.Networking.ConnectionManager.SendPacketToServer(Engine.Networking.Packet)
   - Engine.Networking.ConnectionManager.Shutdown
   - Engine.Networking.ConnectionManager.Start
   langs:
@@ -34,7 +34,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ConnectionManager
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 15
+    startLine: 16
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -81,7 +81,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: .ctor
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 26
+    startLine: 27
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -117,7 +117,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 38
+    startLine: 39
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -152,7 +152,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 48
+    startLine: 49
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -187,7 +187,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 60
+    startLine: 64
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -222,7 +222,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: isServer
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 77
+    startLine: 81
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -261,7 +261,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyClientDisconnected
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 143
+    startLine: 147
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -294,7 +294,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyClientConnected
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 148
+    startLine: 152
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -327,7 +327,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyPacketReceived
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 153
+    startLine: 157
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -360,7 +360,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyFailedConnect
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 158
+    startLine: 162
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -393,7 +393,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyOnDisconnectedFromServer
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 163
+    startLine: 167
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -426,7 +426,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyOnConnectedToServer
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 168
+    startLine: 172
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -459,7 +459,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Start
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 198
+    startLine: 207
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -473,68 +473,68 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Engine.Networking.ConnectionManager.sendPacketToServer(Engine.Networking.Packet)
-  commentId: M:Engine.Networking.ConnectionManager.sendPacketToServer(Engine.Networking.Packet)
-  id: sendPacketToServer(Engine.Networking.Packet)
+- uid: Engine.Networking.ConnectionManager.SendPacketToServer(Engine.Networking.Packet)
+  commentId: M:Engine.Networking.ConnectionManager.SendPacketToServer(Engine.Networking.Packet)
+  id: SendPacketToServer(Engine.Networking.Packet)
   parent: Engine.Networking.ConnectionManager
   langs:
   - csharp
   - vb
-  name: sendPacketToServer(Packet)
-  nameWithType: ConnectionManager.sendPacketToServer(Packet)
-  fullName: Engine.Networking.ConnectionManager.sendPacketToServer(Engine.Networking.Packet)
+  name: SendPacketToServer(Packet)
+  nameWithType: ConnectionManager.SendPacketToServer(Packet)
+  fullName: Engine.Networking.ConnectionManager.SendPacketToServer(Engine.Networking.Packet)
   type: Method
   source:
     remote:
       path: Assets/Engine/Networking/Managers/ConnectionManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: sendPacketToServer
+    id: SendPacketToServer
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 428
+    startLine: 471
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
   summary: "\nMethod for sending packet to server. \n"
   example: []
   syntax:
-    content: public void sendPacketToServer(Packet packet)
+    content: public void SendPacketToServer(Packet packet)
     parameters:
     - id: packet
       type: Engine.Networking.Packet
       description: The packet
-    content.vb: Public Sub sendPacketToServer(packet As Packet)
-  overload: Engine.Networking.ConnectionManager.sendPacketToServer*
+    content.vb: Public Sub SendPacketToServer(packet As Packet)
+  overload: Engine.Networking.ConnectionManager.SendPacketToServer*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Engine.Networking.ConnectionManager.sendPacketToClient(Unity.Networking.Transport.NetworkConnection,Engine.Networking.Packet)
-  commentId: M:Engine.Networking.ConnectionManager.sendPacketToClient(Unity.Networking.Transport.NetworkConnection,Engine.Networking.Packet)
-  id: sendPacketToClient(Unity.Networking.Transport.NetworkConnection,Engine.Networking.Packet)
+- uid: Engine.Networking.ConnectionManager.SendPacketToClient(Unity.Networking.Transport.NetworkConnection,Engine.Networking.Packet)
+  commentId: M:Engine.Networking.ConnectionManager.SendPacketToClient(Unity.Networking.Transport.NetworkConnection,Engine.Networking.Packet)
+  id: SendPacketToClient(Unity.Networking.Transport.NetworkConnection,Engine.Networking.Packet)
   parent: Engine.Networking.ConnectionManager
   langs:
   - csharp
   - vb
-  name: sendPacketToClient(NetworkConnection, Packet)
-  nameWithType: ConnectionManager.sendPacketToClient(NetworkConnection, Packet)
-  fullName: Engine.Networking.ConnectionManager.sendPacketToClient(Unity.Networking.Transport.NetworkConnection, Engine.Networking.Packet)
+  name: SendPacketToClient(NetworkConnection, Packet)
+  nameWithType: ConnectionManager.SendPacketToClient(NetworkConnection, Packet)
+  fullName: Engine.Networking.ConnectionManager.SendPacketToClient(Unity.Networking.Transport.NetworkConnection, Engine.Networking.Packet)
   type: Method
   source:
     remote:
       path: Assets/Engine/Networking/Managers/ConnectionManager.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: sendPacketToClient
+    id: SendPacketToClient
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 444
+    startLine: 487
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
   summary: "\nMethod for sending packet to client\n"
   example: []
   syntax:
-    content: public void sendPacketToClient(NetworkConnection client, Packet packet)
+    content: public void SendPacketToClient(NetworkConnection client, Packet packet)
     parameters:
     - id: client
       type: Unity.Networking.Transport.NetworkConnection
@@ -542,8 +542,8 @@ items:
     - id: packet
       type: Engine.Networking.Packet
       description: The packet
-    content.vb: Public Sub sendPacketToClient(client As NetworkConnection, packet As Packet)
-  overload: Engine.Networking.ConnectionManager.sendPacketToClient*
+    content.vb: Public Sub SendPacketToClient(client As NetworkConnection, packet As Packet)
+  overload: Engine.Networking.ConnectionManager.SendPacketToClient*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -566,7 +566,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Disconnect
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 514
+    startLine: 554
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -1080,22 +1080,22 @@ references:
   name: Start
   nameWithType: ConnectionManager.Start
   fullName: Engine.Networking.ConnectionManager.Start
-- uid: Engine.Networking.ConnectionManager.sendPacketToServer*
-  commentId: Overload:Engine.Networking.ConnectionManager.sendPacketToServer
-  name: sendPacketToServer
-  nameWithType: ConnectionManager.sendPacketToServer
-  fullName: Engine.Networking.ConnectionManager.sendPacketToServer
+- uid: Engine.Networking.ConnectionManager.SendPacketToServer*
+  commentId: Overload:Engine.Networking.ConnectionManager.SendPacketToServer
+  name: SendPacketToServer
+  nameWithType: ConnectionManager.SendPacketToServer
+  fullName: Engine.Networking.ConnectionManager.SendPacketToServer
 - uid: Engine.Networking.Packet
   commentId: T:Engine.Networking.Packet
   parent: Engine.Networking
   name: Packet
   nameWithType: Packet
   fullName: Engine.Networking.Packet
-- uid: Engine.Networking.ConnectionManager.sendPacketToClient*
-  commentId: Overload:Engine.Networking.ConnectionManager.sendPacketToClient
-  name: sendPacketToClient
-  nameWithType: ConnectionManager.sendPacketToClient
-  fullName: Engine.Networking.ConnectionManager.sendPacketToClient
+- uid: Engine.Networking.ConnectionManager.SendPacketToClient*
+  commentId: Overload:Engine.Networking.ConnectionManager.SendPacketToClient
+  name: SendPacketToClient
+  nameWithType: ConnectionManager.SendPacketToClient
+  fullName: Engine.Networking.ConnectionManager.SendPacketToClient
 - uid: Unity.Networking.Transport.NetworkConnection
   commentId: T:Unity.Networking.Transport.NetworkConnection
   parent: Unity.Networking.Transport

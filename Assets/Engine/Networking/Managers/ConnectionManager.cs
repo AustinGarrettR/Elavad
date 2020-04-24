@@ -7,6 +7,7 @@ using Engine.Networking.Utility;
 using Engine.Configuration;
 using Engine.Logging;
 using Engine.Factory;
+using Engine.Utility;
 
 namespace Engine.Networking
 {
@@ -50,9 +51,12 @@ namespace Engine.Networking
         {
 
             if (isServer)
-                serverUpdateLoop();
+                ServerUpdateLoop();
             else if (networkDriver.IsCreated)
-                clientUpdateLoop();
+            {
+                ClientUpdateLoop();
+                KeepAlive();
+            }
         }
 
         /// <summary>
@@ -60,7 +64,7 @@ namespace Engine.Networking
         /// </summary>
         public override void Shutdown()
         {
-            close();
+            Close();
         }
 
         /*
@@ -174,6 +178,11 @@ namespace Engine.Networking
         private bool connected;
 
         /// <summary>
+        /// Timestamp in milliseconds of the last keep alive packet sent
+        /// </summary>
+        private long lastKeepAlive;
+
+        /// <summary>
         /// Server or Client
         /// </summary>
         public enum ListenerType
@@ -231,9 +240,29 @@ namespace Engine.Networking
         }
 
         /// <summary>
+        /// Sends a keep alive packet to the server to prevent timeout
+        /// </summary>
+        private void KeepAlive()
+        {
+            //Make sure it's been enough time
+            if (TimeHandler.getTimeInMilliseconds() - lastKeepAlive < SharedConfig.KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS)
+                return;
+
+            lastKeepAlive = TimeHandler.getTimeInMilliseconds();
+
+            //Create the packet
+            KeepAlive_0 packet = new KeepAlive_0();
+
+            //Packet is empty, do nothing to it
+
+            //Send packet
+            this.SendPacketToServer(packet);
+        }
+
+        /// <summary>
         /// Server update loop
         /// </summary>
-        private void serverUpdateLoop()
+        private void ServerUpdateLoop()
         {
             networkDriver.ScheduleUpdate().Complete();
 
@@ -256,18 +285,20 @@ namespace Engine.Networking
 
             //Update Block
 
-            DataStreamReader stream;
 
-            //Queued Packet buffer
-            List<byte> queuedMsg = new List<byte>();
+
 
             for (int index = 0; index < connections.Count; index++)
             {
+
                 if (!connections[index].IsCreated)
                     Assert.IsTrue(true);
 
+                //Queued Packet buffer
+                List<byte> queuedMsg = new List<byte>();
+
                 NetworkEvent.Type cmd;
-                while ((cmd = networkDriver.PopEventForConnection(connections[index], out stream)) !=
+                while ((cmd = networkDriver.PopEventForConnection(connections[index], out DataStreamReader stream)) !=
                        NetworkEvent.Type.Empty)
                 {
 
@@ -291,7 +322,7 @@ namespace Engine.Networking
                             {
                                 if (stream.GetBytesRead() < streamMaxLength)
                                 {
-                                    escapedConnections[index] = default;
+                                    escapedConnections.Remove(connections[index].InternalId);
 
                                     nextByte = stream.ReadByte();
                                     if (nextByte == SharedConfig.DELIMITER)
@@ -300,6 +331,7 @@ namespace Engine.Networking
                                         {
                                             byte[] bytes = queuedMsg.ToArray();
                                             queuedMsg.Clear();
+                                            Log.LogMsg("Received packet of byte length:" + bytes.Length);
                                             OnPacketReceived(connections[index], bytes);
                                         }
                                     }
@@ -325,7 +357,7 @@ namespace Engine.Networking
         /// <summary>
         /// Client update loop
         /// </summary>
-        private void clientUpdateLoop()
+        private void ClientUpdateLoop()
         {
             networkDriver.ScheduleUpdate().Complete();
 
@@ -369,7 +401,7 @@ namespace Engine.Networking
                         {
                             if (stream.GetBytesRead() < streamMaxLength)
                             {
-                                escapedConnections.RemoveAtSwapBack(connections[0].InternalId);
+                                escapedConnections.Remove(connections[0].InternalId);
 
                                 nextByte = stream.ReadByte();
                                 if (nextByte == SharedConfig.DELIMITER)
@@ -393,7 +425,7 @@ namespace Engine.Networking
                 else if (cmd == NetworkEvent.Type.Disconnect)
                 {
                     Log.LogMsg("Client got disconnected from server");
-                    close();
+                    Close();
                 }
 
             }
@@ -403,16 +435,27 @@ namespace Engine.Networking
         /// <summary>
         /// Close and reset
         /// </summary>
-        private void close()
+        private void Close()
         {
+            if (isServer)
+            {
+                Log.LogMsg("Closed server connection manager.");
+            } 
+            else
+            {
+                Log.LogMsg("Closed connection to the server.");
+            }
 
-            Log.LogMsg("Closed connection.");
-
+            //Disconnect connections
             if (connections != null)
-                connections = null;
+            {
+                foreach (NetworkConnection connection in connections)
+                {
+                    connection.Disconnect(networkDriver);
+                }
 
-            if (escapedConnections != null)
-                escapedConnections = null;
+                connections = null;
+            }
 
             if (networkDriver.IsCreated)
                 networkDriver.Dispose();
@@ -426,7 +469,7 @@ namespace Engine.Networking
         /// Method for sending packet to server. 
         /// </summary>
         /// <param name="packet">The packet</param>
-        public void sendPacketToServer(Packet packet)
+        public void SendPacketToServer(Packet packet)
         {
             if (connections.Count != 1)
             {
@@ -434,7 +477,7 @@ namespace Engine.Networking
                 return;
             }
 
-            sendPacket(connections[0], packet);
+            SendPacket(connections[0], packet);
         }
 
         /// <summary>
@@ -442,9 +485,9 @@ namespace Engine.Networking
         /// </summary>
         /// <param name="client">Client connection to receive the packet</param>
         /// <param name="packet">The packet</param>
-        public void sendPacketToClient(NetworkConnection client, Packet packet)
+        public void SendPacketToClient(NetworkConnection client, Packet packet)
         {
-            sendPacket(client, packet);
+            SendPacket(client, packet);
         }
 
         /// <summary>
@@ -452,20 +495,17 @@ namespace Engine.Networking
         /// </summary>
         /// <param name="c">The connection</param>
         /// <param name="packet">The Packet</param>
-        private void sendPacket(NetworkConnection c, Packet packet)
+        private void SendPacket(NetworkConnection c, Packet packet)
         {
             //Ensure connection is valid
             if (c.IsCreated == false) return;
 
-            byte[] packetBytes;
-
-            try
+            byte[] packetBytes = packet.getBytes();
+            
+            if(packetBytes == null)
             {
-                packetBytes = packet.getBytes();
-            }
-            catch (Exception e)
-            {
-                throw e;
+                Log.LogError("Unable to retrieve packet bytes from packet: " + packet.packetId+". Bytes are null.");
+                return;
             }
 
             //Choose pipeline
@@ -475,10 +515,10 @@ namespace Engine.Networking
             DataStreamWriter writer = networkDriver.BeginSend(pipeline, c);
 
             //Write packetID
-            writeEscapedBytes(ref writer, ByteConverter.getBytes<int>(packet.packetId));
+            WriteEscapedBytes(ref writer, ByteConverter.getBytes<int>(packet.packetId));
 
             //Write packet data
-            writeEscapedBytes(ref writer, packetBytes);
+            WriteEscapedBytes(ref writer, packetBytes);
 
             //Write delimiter to indiciate the end of packet
             writer.WriteByte(SharedConfig.ESCAPE);
@@ -494,7 +534,7 @@ namespace Engine.Networking
         /// </summary>
         /// <param name="writer">Data stream writer</param>
         /// <param name="bytes">Bytes to write</param>
-        private void writeEscapedBytes(ref DataStreamWriter writer, byte[] bytes)
+        private void WriteEscapedBytes(ref DataStreamWriter writer, byte[] bytes)
         {
             foreach (byte b in bytes)
             {
@@ -526,7 +566,7 @@ namespace Engine.Networking
                 OnDisconnectedFromServer();
             }
 
-            close();
+            Close();
         }
 
         /// <summary>

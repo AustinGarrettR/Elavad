@@ -4,6 +4,7 @@ using Engine.Logging;
 using Engine.Dispatch;
 using Engine.World;
 using Engine.Player;
+using Engine.Asset;
 
 namespace Engine
 {
@@ -22,10 +23,11 @@ namespace Engine
         /// </summary>
         internal override void Init()
         {
+            //Must be executed in order
             logManager = new LogManager();
-            AddManager(logManager);
-
             serverWorldManager = new ServerWorldManager(OnWorldLoaded);
+
+            AddManager(logManager);
             AddManager(serverWorldManager);
 
         }
@@ -55,17 +57,20 @@ namespace Engine
         /// </summary>
         private void OnWorldLoaded()
         {
-            serverPlayerManager = new ServerPlayerManager();
-            AddManager(serverPlayerManager);
-
+            //Must be executed in order
+            serverAssetManager = new ServerAssetManager();
             connectionManager = new ConnectionManager(ConnectionManager.ListenerType.SERVER);
-            AddManager(connectionManager);
-
             serverLoginManager = new ServerLoginManager(connectionManager);
-            AddManager(serverLoginManager);
-
+            serverPlayerManager = new ServerPlayerManager(serverLoginManager, serverAssetManager, connectionManager);
             dispatchManager = new DispatchManager();
+
+            AddManager(serverAssetManager);
+            AddManager(serverLoginManager);
+            AddManager(serverPlayerManager);
             AddManager(dispatchManager);
+
+            //Run connection manager at the end to open server
+            AddManager(connectionManager);
         }
 
         /*
@@ -102,5 +107,9 @@ namespace Engine
         /// </summary>
         internal ServerPlayerManager serverPlayerManager;
 
+        /// <summary>
+        /// The server asset manager manages asset loading
+        /// </summary>
+        internal ServerAssetManager serverAssetManager;
     }
 }

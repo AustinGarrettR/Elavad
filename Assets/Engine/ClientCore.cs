@@ -27,41 +27,34 @@ namespace Engine
         /// </summary>
         internal override void Init()
         {
-            //Must be executed in the desired order
-            //process will be called
+            //Must be executed in the order
 
             logManager = new LogManager();
-            AddManager(logManager);
-
             clientAssetManager = new ClientAssetManager();
-            AddManager(clientAssetManager);
-
             connectionManager = new ConnectionManager(ConnectionManager.ListenerType.CLIENT);
-            AddManager(connectionManager);
-
-            clientPlayerManager = new ClientPlayerManager(clientAssetManager.GetPlayerPrefab());
-            AddManager(clientPlayerManager);
-
+            clientPlayerManager = new ClientPlayerManager(clientAssetManager, connectionManager);
             clientWorldManager = new ClientWorldManager(clientPlayerManager);
-            AddManager(clientWorldManager);
-
             clientInputManager = new ClientInputManager();
-            AddManager(clientInputManager);
-
             clientUIManager = new ClientUIManager(clientAssetManager);
-            AddManager(clientUIManager);
-
             clientCameraManager = new ClientCameraManager(clientPlayerManager);
-            AddManager(clientCameraManager);
-
             clientLoginManager = new ClientLoginManager(connectionManager, managers);
-            AddManager(clientLoginManager);
+            dispatchManager = new DispatchManager();
 
+            AddManager(logManager);
+            AddManager(clientAssetManager);
+            AddManager(connectionManager);
+            AddManager(clientPlayerManager);
+            AddManager(clientWorldManager);
+            AddManager(clientInputManager);
+            AddManager(clientUIManager);
+            AddManager(clientCameraManager);
+            AddManager(clientLoginManager);
+            AddManager(dispatchManager);
+
+
+            //API needs managers reference, so construct after managers have been added
             apiManager = new APIManager(managers);
             AddManager(apiManager);
-
-            dispatchManager = new DispatchManager();
-            AddManager(dispatchManager);
 
         }
 

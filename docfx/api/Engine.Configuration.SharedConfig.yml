@@ -7,15 +7,17 @@ items:
   children:
   - Engine.Configuration.SharedConfig.CHUNK_LOAD_VIEW_DISTANCE
   - Engine.Configuration.SharedConfig.CHUNK_UNLOAD_VIEW_DISTANCE
+  - Engine.Configuration.SharedConfig.CLIENT_SCENE_PATH
   - Engine.Configuration.SharedConfig.DELIMITER
   - Engine.Configuration.SharedConfig.ESCAPE
+  - Engine.Configuration.SharedConfig.KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS
   - Engine.Configuration.SharedConfig.LOGIN_SCENE_PATH
-  - Engine.Configuration.SharedConfig.MAIN_SCENE_PATH
   - Engine.Configuration.SharedConfig.MAX_BUFFER_SIZE
   - Engine.Configuration.SharedConfig.MAX_PASSWORD_LENGTH
   - Engine.Configuration.SharedConfig.MAX_USERNAME_LENGTH
   - Engine.Configuration.SharedConfig.PLAYERS_LAYER_NAME
   - Engine.Configuration.SharedConfig.PORT
+  - Engine.Configuration.SharedConfig.SERVER_SCENE_PATH
   - Engine.Configuration.SharedConfig.VOLUMES_LAYER_NAME
   - Engine.Configuration.SharedConfig.WORLD_CHUNK_MAX_HEIGHT
   - Engine.Configuration.SharedConfig.WORLD_CHUNK_SIZE
@@ -207,6 +209,43 @@ items:
   - Public
   - Shared
   - ReadOnly
+- uid: Engine.Configuration.SharedConfig.KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS
+  commentId: F:Engine.Configuration.SharedConfig.KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS
+  id: KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS
+  parent: Engine.Configuration.SharedConfig
+  langs:
+  - csharp
+  - vb
+  name: KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS
+  nameWithType: SharedConfig.KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS
+  fullName: Engine.Configuration.SharedConfig.KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/SharedConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS
+    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    startLine: 35
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nHow often to send the keep alive packet to maintain connection\n"
+  example: []
+  syntax:
+    content: public static readonly int KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS As Integer
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
 - uid: Engine.Configuration.SharedConfig.MAX_USERNAME_LENGTH
   commentId: F:Engine.Configuration.SharedConfig.MAX_USERNAME_LENGTH
   id: MAX_USERNAME_LENGTH
@@ -225,7 +264,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: MAX_USERNAME_LENGTH
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 39
+    startLine: 44
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -262,7 +301,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: MAX_PASSWORD_LENGTH
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 44
+    startLine: 49
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -299,7 +338,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: WORLD_CHUNK_SIZE
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 53
+    startLine: 58
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -336,7 +375,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: WORLD_CHUNK_MAX_HEIGHT
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 58
+    startLine: 63
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -373,7 +412,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: CHUNK_LOAD_VIEW_DISTANCE
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 63
+    startLine: 68
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -410,7 +449,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: CHUNK_UNLOAD_VIEW_DISTANCE
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 68
+    startLine: 73
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -429,35 +468,72 @@ items:
   - Public
   - Shared
   - ReadOnly
-- uid: Engine.Configuration.SharedConfig.MAIN_SCENE_PATH
-  commentId: F:Engine.Configuration.SharedConfig.MAIN_SCENE_PATH
-  id: MAIN_SCENE_PATH
+- uid: Engine.Configuration.SharedConfig.CLIENT_SCENE_PATH
+  commentId: F:Engine.Configuration.SharedConfig.CLIENT_SCENE_PATH
+  id: CLIENT_SCENE_PATH
   parent: Engine.Configuration.SharedConfig
   langs:
   - csharp
   - vb
-  name: MAIN_SCENE_PATH
-  nameWithType: SharedConfig.MAIN_SCENE_PATH
-  fullName: Engine.Configuration.SharedConfig.MAIN_SCENE_PATH
+  name: CLIENT_SCENE_PATH
+  nameWithType: SharedConfig.CLIENT_SCENE_PATH
+  fullName: Engine.Configuration.SharedConfig.CLIENT_SCENE_PATH
   type: Field
   source:
     remote:
       path: Assets/Engine/Configuration/SharedConfig.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: MAIN_SCENE_PATH
+    id: CLIENT_SCENE_PATH
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 77
+    startLine: 82
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
-  summary: "\nLocation of the main scene\n"
+  summary: "\nLocation of the client scene\n"
   example: []
   syntax:
-    content: public static readonly string MAIN_SCENE_PATH
+    content: public static readonly string CLIENT_SCENE_PATH
     return:
       type: System.String
-    content.vb: Public Shared ReadOnly MAIN_SCENE_PATH As String
+    content.vb: Public Shared ReadOnly CLIENT_SCENE_PATH As String
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.SharedConfig.SERVER_SCENE_PATH
+  commentId: F:Engine.Configuration.SharedConfig.SERVER_SCENE_PATH
+  id: SERVER_SCENE_PATH
+  parent: Engine.Configuration.SharedConfig
+  langs:
+  - csharp
+  - vb
+  name: SERVER_SCENE_PATH
+  nameWithType: SharedConfig.SERVER_SCENE_PATH
+  fullName: Engine.Configuration.SharedConfig.SERVER_SCENE_PATH
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/SharedConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: SERVER_SCENE_PATH
+    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    startLine: 87
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nLocation of the server scene\n"
+  example: []
+  syntax:
+    content: public static readonly string SERVER_SCENE_PATH
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly SERVER_SCENE_PATH As String
   modifiers.csharp:
   - public
   - static
@@ -484,7 +560,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: LOGIN_SCENE_PATH
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 82
+    startLine: 92
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -521,7 +597,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: WORLD_SCENES_FOLDER
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 87
+    startLine: 97
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -558,7 +634,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: PLAYERS_LAYER_NAME
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 96
+    startLine: 106
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -595,7 +671,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: VOLUMES_LAYER_NAME
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 101
+    startLine: 111
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration

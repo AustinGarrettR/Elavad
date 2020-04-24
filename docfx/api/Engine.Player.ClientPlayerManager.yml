@@ -5,7 +5,7 @@ items:
   id: ClientPlayerManager
   parent: Engine.Player
   children:
-  - Engine.Player.ClientPlayerManager.#ctor(UnityEngine.GameObject)
+  - Engine.Player.ClientPlayerManager.#ctor(Engine.Asset.ClientAssetManager,Engine.Networking.ConnectionManager)
   - Engine.Player.ClientPlayerManager.GetMyPlayer
   - Engine.Player.ClientPlayerManager.Init
   - Engine.Player.ClientPlayerManager.LoadGameTask
@@ -53,16 +53,16 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.Player.ClientPlayerManager.#ctor(UnityEngine.GameObject)
-  commentId: M:Engine.Player.ClientPlayerManager.#ctor(UnityEngine.GameObject)
-  id: '#ctor(UnityEngine.GameObject)'
+- uid: Engine.Player.ClientPlayerManager.#ctor(Engine.Asset.ClientAssetManager,Engine.Networking.ConnectionManager)
+  commentId: M:Engine.Player.ClientPlayerManager.#ctor(Engine.Asset.ClientAssetManager,Engine.Networking.ConnectionManager)
+  id: '#ctor(Engine.Asset.ClientAssetManager,Engine.Networking.ConnectionManager)'
   parent: Engine.Player.ClientPlayerManager
   langs:
   - csharp
   - vb
-  name: ClientPlayerManager(GameObject)
-  nameWithType: ClientPlayerManager.ClientPlayerManager(GameObject)
-  fullName: Engine.Player.ClientPlayerManager.ClientPlayerManager(UnityEngine.GameObject)
+  name: ClientPlayerManager(ClientAssetManager, ConnectionManager)
+  nameWithType: ClientPlayerManager.ClientPlayerManager(ClientAssetManager, ConnectionManager)
+  fullName: Engine.Player.ClientPlayerManager.ClientPlayerManager(Engine.Asset.ClientAssetManager, Engine.Networking.ConnectionManager)
   type: Constructor
   source:
     remote:
@@ -78,12 +78,14 @@ items:
   summary: "\nConstructor\n"
   example: []
   syntax:
-    content: public ClientPlayerManager(GameObject playerPrefab)
+    content: public ClientPlayerManager(ClientAssetManager clientAssetManager, ConnectionManager connectionManager)
     parameters:
-    - id: playerPrefab
-      type: UnityEngine.GameObject
-      description: The player prefab
-    content.vb: Public Sub New(playerPrefab As GameObject)
+    - id: clientAssetManager
+      type: Engine.Asset.ClientAssetManager
+      description: The client asset manager reference
+    - id: connectionManager
+      type: Engine.Networking.ConnectionManager
+    content.vb: Public Sub New(clientAssetManager As ClientAssetManager, connectionManager As ConnectionManager)
   overload: Engine.Player.ClientPlayerManager.#ctor*
   modifiers.csharp:
   - public
@@ -107,7 +109,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/Player/ClientPlayerManager.cs
-    startLine: 37
+    startLine: 38
   assemblies:
   - Engine.Player
   namespace: Engine.Player
@@ -142,7 +144,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: LoadGameTask
     path: ../Assets/Engine/Player/ClientPlayerManager.cs
-    startLine: 46
+    startLine: 48
   assemblies:
   - Engine.Player
   namespace: Engine.Player
@@ -180,7 +182,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/Player/ClientPlayerManager.cs
-    startLine: 56
+    startLine: 60
   assemblies:
   - Engine.Player
   namespace: Engine.Player
@@ -215,7 +217,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/Player/ClientPlayerManager.cs
-    startLine: 67
+    startLine: 71
   assemblies:
   - Engine.Player
   namespace: Engine.Player
@@ -250,7 +252,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: GetMyPlayer
     path: ../Assets/Engine/Player/ClientPlayerManager.cs
-    startLine: 76
+    startLine: 80
   assemblies:
   - Engine.Player
   namespace: Engine.Player
@@ -578,19 +580,28 @@ references:
   name: ClientPlayerManager
   nameWithType: ClientPlayerManager.ClientPlayerManager
   fullName: Engine.Player.ClientPlayerManager.ClientPlayerManager
-- uid: UnityEngine.GameObject
-  commentId: T:UnityEngine.GameObject
-  parent: UnityEngine
-  isExternal: true
-  name: GameObject
-  nameWithType: GameObject
-  fullName: UnityEngine.GameObject
-- uid: UnityEngine
-  commentId: N:UnityEngine
-  isExternal: true
-  name: UnityEngine
-  nameWithType: UnityEngine
-  fullName: UnityEngine
+- uid: Engine.Asset.ClientAssetManager
+  commentId: T:Engine.Asset.ClientAssetManager
+  parent: Engine.Asset
+  name: ClientAssetManager
+  nameWithType: ClientAssetManager
+  fullName: Engine.Asset.ClientAssetManager
+- uid: Engine.Networking.ConnectionManager
+  commentId: T:Engine.Networking.ConnectionManager
+  parent: Engine.Networking
+  name: ConnectionManager
+  nameWithType: ConnectionManager
+  fullName: Engine.Networking.ConnectionManager
+- uid: Engine.Asset
+  commentId: N:Engine.Asset
+  name: Engine.Asset
+  nameWithType: Engine.Asset
+  fullName: Engine.Asset
+- uid: Engine.Networking
+  commentId: N:Engine.Networking
+  name: Engine.Networking
+  nameWithType: Engine.Networking
+  fullName: Engine.Networking
 - uid: Engine.Factory.Manager.Init
   commentId: M:Engine.Factory.Manager.Init
   parent: Engine.Factory.Manager

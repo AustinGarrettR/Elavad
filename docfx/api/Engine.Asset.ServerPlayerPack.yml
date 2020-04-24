@@ -1,40 +1,40 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Engine.Asset.UI_Pack
-  commentId: T:Engine.Asset.UI_Pack
-  id: UI_Pack
+- uid: Engine.Asset.ServerPlayerPack
+  commentId: T:Engine.Asset.ServerPlayerPack
+  id: ServerPlayerPack
   parent: Engine.Asset
   children:
-  - Engine.Asset.UI_Pack.UI_Panels
+  - Engine.Asset.ServerPlayerPack.playerPrefab
   langs:
   - csharp
   - vb
-  name: UI_Pack
-  nameWithType: UI_Pack
-  fullName: Engine.Asset.UI_Pack
+  name: ServerPlayerPack
+  nameWithType: ServerPlayerPack
+  fullName: Engine.Asset.ServerPlayerPack
   type: Class
   source:
     remote:
-      path: Assets/Engine/Asset/UI_Pack.cs
+      path: Assets/Engine/Asset/ServerPlayerPack.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: UI_Pack
-    path: ../Assets/Engine/Asset/UI_Pack.cs
+    id: ServerPlayerPack
+    path: ../Assets/Engine/Asset/ServerPlayerPack.cs
     startLine: 7
   assemblies:
   - Engine.Asset
   namespace: Engine.Asset
-  summary: "\nAn object that stores references to UI panels\n"
+  summary: "\nAn object that stores references to player prefabs\n"
   example: []
   syntax:
     content: >-
-      [CreateAssetMenu(fileName = "UI_Pack", menuName = "Data Packs/UI_Pack", order = 1)]
+      [CreateAssetMenu(fileName = "Server_Player_Pack", menuName = "Data Packs/Server_Player_Pack", order = 1)]
 
-      public class UI_Pack : ScriptableObject
+      public class ServerPlayerPack : ScriptableObject
     content.vb: >-
-      <CreateAssetMenu(fileName:="UI_Pack", menuName:="Data Packs/UI_Pack", order:=1)>
+      <CreateAssetMenu(fileName:="Server_Player_Pack", menuName:="Data Packs/Server_Player_Pack", order:=1)>
 
-      Public Class UI_Pack
+      Public Class ServerPlayerPack
           Inherits ScriptableObject
   inheritance:
   - System.Object
@@ -90,10 +90,10 @@ items:
     namedArguments:
     - name: fileName
       type: System.String
-      value: UI_Pack
+      value: Server_Player_Pack
     - name: menuName
       type: System.String
-      value: Data Packs/UI_Pack
+      value: Data Packs/Server_Player_Pack
     - name: order
       type: System.Int32
       value: 1
@@ -103,35 +103,35 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.Asset.UI_Pack.UI_Panels
-  commentId: F:Engine.Asset.UI_Pack.UI_Panels
-  id: UI_Panels
-  parent: Engine.Asset.UI_Pack
+- uid: Engine.Asset.ServerPlayerPack.playerPrefab
+  commentId: F:Engine.Asset.ServerPlayerPack.playerPrefab
+  id: playerPrefab
+  parent: Engine.Asset.ServerPlayerPack
   langs:
   - csharp
   - vb
-  name: UI_Panels
-  nameWithType: UI_Pack.UI_Panels
-  fullName: Engine.Asset.UI_Pack.UI_Panels
+  name: playerPrefab
+  nameWithType: ServerPlayerPack.playerPrefab
+  fullName: Engine.Asset.ServerPlayerPack.playerPrefab
   type: Field
   source:
     remote:
-      path: Assets/Engine/Asset/UI_Pack.cs
+      path: Assets/Engine/Asset/ServerPlayerPack.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: UI_Panels
-    path: ../Assets/Engine/Asset/UI_Pack.cs
+    id: playerPrefab
+    path: ../Assets/Engine/Asset/ServerPlayerPack.cs
     startLine: 13
   assemblies:
   - Engine.Asset
   namespace: Engine.Asset
-  summary: "\nReference of UI panel prefabs\n"
+  summary: "\nReference of the server player prefab\n"
   example: []
   syntax:
-    content: public GameObject[] UI_Panels
+    content: public GameObject playerPrefab
     return:
-      type: UnityEngine.GameObject[]
-    content.vb: Public UI_Panels As GameObject()
+      type: UnityEngine.GameObject
+    content.vb: Public playerPrefab As GameObject
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -2440,29 +2440,10 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: UnityEngine.GameObject[]
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
   isExternal: true
-  name: GameObject[]
-  nameWithType: GameObject[]
-  fullName: UnityEngine.GameObject[]
-  nameWithType.vb: GameObject()
-  fullName.vb: UnityEngine.GameObject()
-  name.vb: GameObject()
-  spec.csharp:
-  - uid: UnityEngine.GameObject
-    name: GameObject
-    nameWithType: GameObject
-    fullName: UnityEngine.GameObject
-    isExternal: true
-  - name: '[]'
-    nameWithType: '[]'
-    fullName: '[]'
-  spec.vb:
-  - uid: UnityEngine.GameObject
-    name: GameObject
-    nameWithType: GameObject
-    fullName: UnityEngine.GameObject
-    isExternal: true
-  - name: ()
-    nameWithType: ()
-    fullName: ()
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject

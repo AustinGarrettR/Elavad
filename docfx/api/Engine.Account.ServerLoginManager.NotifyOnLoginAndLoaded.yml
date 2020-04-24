@@ -1,0 +1,59 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded
+  commentId: T:Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded
+  id: ServerLoginManager.NotifyOnLoginAndLoaded
+  parent: Engine.Account
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ServerLoginManager.NotifyOnLoginAndLoaded
+  nameWithType: ServerLoginManager.NotifyOnLoginAndLoaded
+  fullName: Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded
+  type: Delegate
+  source:
+    remote:
+      path: Assets/Engine/Account/ServerLoginManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: NotifyOnLoginAndLoaded
+    path: ../Assets/Engine/Account/ServerLoginManager.cs
+    startLine: 65
+  assemblies:
+  - Engine.Account
+  namespace: Engine.Account
+  summary: "\nEvent delegate for a successful login\n"
+  example: []
+  syntax:
+    content: public delegate void NotifyOnLoginAndLoaded(NetworkConnection c);
+    parameters:
+    - id: c
+      type: Unity.Networking.Transport.NetworkConnection
+      description: The network connection
+    content.vb: Public Delegate Sub NotifyOnLoginAndLoaded(c As NetworkConnection)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Engine.Account
+  commentId: N:Engine.Account
+  name: Engine.Account
+  nameWithType: Engine.Account
+  fullName: Engine.Account
+- uid: Unity.Networking.Transport.NetworkConnection
+  commentId: T:Unity.Networking.Transport.NetworkConnection
+  parent: Unity.Networking.Transport
+  isExternal: true
+  name: NetworkConnection
+  nameWithType: NetworkConnection
+  fullName: Unity.Networking.Transport.NetworkConnection
+- uid: Unity.Networking.Transport
+  commentId: N:Unity.Networking.Transport
+  isExternal: true
+  name: Unity.Networking.Transport
+  nameWithType: Unity.Networking.Transport
+  fullName: Unity.Networking.Transport

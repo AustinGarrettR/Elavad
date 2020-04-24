@@ -6,6 +6,8 @@ items:
   children:
   - Engine.Account.ClientLoginManager
   - Engine.Account.ServerLoginManager
+  - Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded
+  - Engine.Account.ServerLoginManager.NotifyOnLogout
   langs:
   - csharp
   - vb
@@ -23,6 +25,24 @@ references:
   fullName: Engine.Account.ClientLoginManager
 - uid: Engine.Account.ServerLoginManager
   commentId: T:Engine.Account.ServerLoginManager
+  parent: Engine.Account
   name: ServerLoginManager
   nameWithType: ServerLoginManager
   fullName: Engine.Account.ServerLoginManager
+- uid: Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded
+  commentId: T:Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded
+  parent: Engine.Account
+  name: ServerLoginManager.NotifyOnLoginAndLoaded
+  nameWithType: ServerLoginManager.NotifyOnLoginAndLoaded
+  fullName: Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded
+- uid: Engine.Account.ServerLoginManager.NotifyOnLogout
+  commentId: T:Engine.Account.ServerLoginManager.NotifyOnLogout
+  parent: Engine.Account
+  name: ServerLoginManager.NotifyOnLogout
+  nameWithType: ServerLoginManager.NotifyOnLogout
+  fullName: Engine.Account.ServerLoginManager.NotifyOnLogout
+- uid: Engine.Account
+  commentId: N:Engine.Account
+  name: Engine.Account
+  nameWithType: Engine.Account
+  fullName: Engine.Account

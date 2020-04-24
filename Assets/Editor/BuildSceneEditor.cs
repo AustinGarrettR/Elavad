@@ -25,8 +25,13 @@ namespace Editor
         {
             List<EditorBuildSettingsScene> scenesToBuild = new List<EditorBuildSettingsScene>();
 
-            //Add Main and Login scenes
-            scenesToBuild.Add(new EditorBuildSettingsScene(SharedConfig.MAIN_SCENE_PATH, true));
+            //Add Client Scene
+            scenesToBuild.Add(new EditorBuildSettingsScene(SharedConfig.CLIENT_SCENE_PATH, true));
+
+            //Add Server Scene
+            scenesToBuild.Add(new EditorBuildSettingsScene(SharedConfig.SERVER_SCENE_PATH, true));
+
+            //Add Login Scene
             scenesToBuild.Add(new EditorBuildSettingsScene(SharedConfig.LOGIN_SCENE_PATH, true));
 
             //Add world scenes

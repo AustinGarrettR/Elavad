@@ -215,7 +215,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: GetPlayerPrefab
     path: ../Assets/Engine/Asset/ClientAssetManager.cs
-    startLine: 76
+    startLine: 83
   assemblies:
   - Engine.Asset
   namespace: Engine.Asset

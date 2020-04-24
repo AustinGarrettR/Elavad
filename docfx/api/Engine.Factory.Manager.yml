@@ -39,6 +39,7 @@ items:
   - Engine.Account.ServerLoginManager
   - Engine.API.APIManager
   - Engine.Asset.ClientAssetManager
+  - Engine.Asset.ServerAssetManager
   - Engine.Asset.SharedAssetManager
   - Engine.CameraSystem.ClientCameraManager
   - Engine.Dispatch.DispatchManager

@@ -1,6 +1,7 @@
 ﻿using Engine.Networking;
 using Unity.Networking.Transport;
 using Engine.Factory;
+using Engine.Logging;
 
 namespace Engine.Account
 {
@@ -34,6 +35,7 @@ namespace Engine.Account
         {
             //Subscribe to events
             connectionManager.NotifyPacketReceived += OnPacketReceived;
+            connectionManager.NotifyClientDisconnected += OnClientDisconnected;
         }
 
         /// <summary>
@@ -49,8 +51,35 @@ namespace Engine.Account
         /// </summary>
         public override void Process()
         {
-
+             
         }
+
+        /*
+         * Public Variables
+         */
+
+        /// <summary>
+        /// Event delegate for a successful login
+        /// </summary>
+        /// <param name="c">The network connection</param>
+        /// <param name="email">The player email</param>
+        public delegate void NotifyOnLoginAndLoaded(NetworkConnection c);
+
+        /// <summary>
+        /// Event for a successful login
+        /// </summary>
+        public event NotifyOnLoginAndLoaded NotifyClientLoggedInAndLoaded;
+
+        /// <summary>
+        /// Event delegate for logging out
+        /// </summary>
+        /// <param name="c">The network connection</param>
+        public delegate void NotifyOnLogout(NetworkConnection c);
+
+        /// <summary>
+        /// Event for a successful login
+        /// </summary>
+        public event NotifyOnLogout NotifyClientLoggedOut;
 
         /*
          * Internal Variables
@@ -76,8 +105,22 @@ namespace Engine.Account
                 LoginRequest_1 packet = new LoginRequest_1();
                 packet.readPacket(packetBytes);
 
-                logInPlayer(c, packet.email, packet.password);
+                LogInPlayer(c, packet.email, packet.password);
+            } else
+            if (packetId == 4)
+            {
+                //Packet is empty, ignore contents
+                NotifyClientLoggedInAndLoaded?.Invoke(c);
             }
+        }
+
+        /// <summary>
+        /// Called when a client disconnects
+        /// </summary>
+        /// <param name="c">The client connection</param>
+        private void OnClientDisconnected(NetworkConnection c)
+        {
+            NotifyClientLoggedOut?.Invoke(c);
         }
 
         /*
@@ -90,24 +133,31 @@ namespace Engine.Account
         /// <param name="c">The player connection</param>
         /// <param name="email">Inputted player email</param>
         /// <param name="password">Inputted player password</param>
-        private void logInPlayer(NetworkConnection c, string email, string password)
+        private void LogInPlayer(NetworkConnection c, string email, string password)
         {
             LoginResponse_2 packet = new LoginResponse_2();
 
+            //TODO
             if (email.Equals("austin@gmail.com", System.StringComparison.OrdinalIgnoreCase))
             {
                 packet.accept = true;
                 packet.errorResponse = "Logging in...";
+
+                connectionManager.SendPacketToClient(c, packet);
+
             }
             else
             {
                 packet.accept = false;
                 packet.errorResponse = "Invalid email or password.";
+
+
+                connectionManager.SendPacketToClient(c, packet);
             }
 
-            connectionManager.sendPacketToClient(c, packet);
 
         }
+
     }
 
 }

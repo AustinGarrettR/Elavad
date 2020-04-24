@@ -7,6 +7,8 @@ items:
   children:
   - Engine.Account.ServerLoginManager.#ctor(Engine.Networking.ConnectionManager)
   - Engine.Account.ServerLoginManager.Init
+  - Engine.Account.ServerLoginManager.NotifyClientLoggedInAndLoaded
+  - Engine.Account.ServerLoginManager.NotifyClientLoggedOut
   - Engine.Account.ServerLoginManager.Process
   - Engine.Account.ServerLoginManager.Shutdown
   langs:
@@ -23,7 +25,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ServerLoginManager
     path: ../Assets/Engine/Account/ServerLoginManager.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -70,7 +72,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: .ctor
     path: ../Assets/Engine/Account/ServerLoginManager.cs
-    startLine: 19
+    startLine: 20
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -106,7 +108,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/Account/ServerLoginManager.cs
-    startLine: 32
+    startLine: 33
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -141,7 +143,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/Account/ServerLoginManager.cs
-    startLine: 41
+    startLine: 43
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -176,7 +178,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/Account/ServerLoginManager.cs
-    startLine: 49
+    startLine: 51
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -193,6 +195,72 @@ items:
   modifiers.vb:
   - Public
   - Overrides
+- uid: Engine.Account.ServerLoginManager.NotifyClientLoggedInAndLoaded
+  commentId: E:Engine.Account.ServerLoginManager.NotifyClientLoggedInAndLoaded
+  id: NotifyClientLoggedInAndLoaded
+  parent: Engine.Account.ServerLoginManager
+  langs:
+  - csharp
+  - vb
+  name: NotifyClientLoggedInAndLoaded
+  nameWithType: ServerLoginManager.NotifyClientLoggedInAndLoaded
+  fullName: Engine.Account.ServerLoginManager.NotifyClientLoggedInAndLoaded
+  type: Event
+  source:
+    remote:
+      path: Assets/Engine/Account/ServerLoginManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: NotifyClientLoggedInAndLoaded
+    path: ../Assets/Engine/Account/ServerLoginManager.cs
+    startLine: 70
+  assemblies:
+  - Engine.Account
+  namespace: Engine.Account
+  summary: "\nEvent for a successful login\n"
+  example: []
+  syntax:
+    content: public event ServerLoginManager.NotifyOnLoginAndLoaded NotifyClientLoggedInAndLoaded
+    return:
+      type: Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded
+    content.vb: Public Event NotifyClientLoggedInAndLoaded As ServerLoginManager.NotifyOnLoginAndLoaded
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Account.ServerLoginManager.NotifyClientLoggedOut
+  commentId: E:Engine.Account.ServerLoginManager.NotifyClientLoggedOut
+  id: NotifyClientLoggedOut
+  parent: Engine.Account.ServerLoginManager
+  langs:
+  - csharp
+  - vb
+  name: NotifyClientLoggedOut
+  nameWithType: ServerLoginManager.NotifyClientLoggedOut
+  fullName: Engine.Account.ServerLoginManager.NotifyClientLoggedOut
+  type: Event
+  source:
+    remote:
+      path: Assets/Engine/Account/ServerLoginManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: NotifyClientLoggedOut
+    path: ../Assets/Engine/Account/ServerLoginManager.cs
+    startLine: 81
+  assemblies:
+  - Engine.Account
+  namespace: Engine.Account
+  summary: "\nEvent for a successful login\n"
+  example: []
+  syntax:
+    content: public event ServerLoginManager.NotifyOnLogout NotifyClientLoggedOut
+    return:
+      type: Engine.Account.ServerLoginManager.NotifyOnLogout
+    content.vb: Public Event NotifyClientLoggedOut As ServerLoginManager.NotifyOnLogout
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 references:
 - uid: Engine.Account
   commentId: N:Engine.Account
@@ -645,3 +713,15 @@ references:
   name: Process
   nameWithType: ServerLoginManager.Process
   fullName: Engine.Account.ServerLoginManager.Process
+- uid: Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded
+  commentId: T:Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded
+  parent: Engine.Account
+  name: ServerLoginManager.NotifyOnLoginAndLoaded
+  nameWithType: ServerLoginManager.NotifyOnLoginAndLoaded
+  fullName: Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded
+- uid: Engine.Account.ServerLoginManager.NotifyOnLogout
+  commentId: T:Engine.Account.ServerLoginManager.NotifyOnLogout
+  parent: Engine.Account
+  name: ServerLoginManager.NotifyOnLogout
+  nameWithType: ServerLoginManager.NotifyOnLogout
+  fullName: Engine.Account.ServerLoginManager.NotifyOnLogout

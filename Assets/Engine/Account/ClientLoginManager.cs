@@ -7,6 +7,8 @@ using Engine.Factory;
 using UnityEngine.SceneManagement;
 using Engine.Logging;
 using System.Collections.Generic;
+using Engine.Configuration;
+using System.IO;
 
 namespace Engine.Account
 {
@@ -47,7 +49,7 @@ namespace Engine.Account
             connectionManager.NotifyOnDisconnectedFromServer += OnDisconnectedFromServer;
 
             //Load login screen
-            SceneManager.LoadScene(1, LoadSceneMode.Additive);
+            SceneManager.LoadScene(Path.GetFileNameWithoutExtension(SharedConfig.LOGIN_SCENE_PATH), LoadSceneMode.Additive);
         }
 
         /// <summary>
@@ -150,7 +152,11 @@ namespace Engine.Account
                 loggedIn = false;
                 Log.LogMsg("Disconnected from server.");
 
-                SceneManager.LoadScene(0);
+                //Reload first scene
+                SceneManager.LoadScene(Path.GetFileNameWithoutExtension(SharedConfig.CLIENT_SCENE_PATH), LoadSceneMode.Single);
+            } else
+            {
+                this.statusMessageAction(false, Color.white, "Unable to connect to server.");
             }
         }
 
@@ -180,7 +186,7 @@ namespace Engine.Account
             packet.password = password;
 
             //Send packet
-            connectionManager.sendPacketToServer(packet);
+            connectionManager.SendPacketToServer(packet);
         }
 
         /*
@@ -201,12 +207,8 @@ namespace Engine.Account
 
                 this.statusMessageAction(true, Color.white, "Loading...");
 
-
                 //Run game load asynchronously on main thread
-                BeginGameLoad().ConfigureAwait(true);
-
-
-                loggedIn = true;
+                BeginGameLoad().ConfigureAwait(false);
 
             }
             else
@@ -226,15 +228,38 @@ namespace Engine.Account
             Task loadGameTask = LoadGame();
             await loadGameTask;
 
-            Log.LogMsg("Game has been loaded. Fading out login screen...");
+            Log.LogMsg("Done loading. Informing server we're done loading...");
+            Task finishedLoadingTask = FinishedLoading();
+            await finishedLoadingTask;
+
+            //Logged in set to true
+            loggedIn = true;
+
+            Log.LogMsg("Done loading packet sent. Fading out login screen...");
             Task fadeLoginTask = FadeLoginScreen();
             await fadeLoginTask;
 
-            Log.LogMsg("Login screen has been faded. Ending game load.");
-            Task endLoadTask = EndGameLoad();
+            Log.LogMsg("Login screen has been faded. Ending game load...");
+            Task endLoadTask = FinishGameLoadSequence();
             await endLoadTask;
 
             Log.LogMsg("Completed the end phase of game loading.");
+            await Task.CompletedTask;
+        }
+
+        /// <summary>
+        /// Game has been loaded, tell server.
+        /// </summary>
+        private async Task FinishedLoading()
+        {
+            //Inform server we're done loading
+            FinishedLoading_4 packet = new FinishedLoading_4();
+
+            //Empty packet, don't add anything to it
+            
+            //Send packet
+            connectionManager.SendPacketToServer(packet);
+
             await Task.CompletedTask;
         }
 
@@ -284,9 +309,9 @@ namespace Engine.Account
         /// Game is done loading, cleanup login screen
         /// </summary>
         /// <returns></returns>
-        private async Task EndGameLoad()
+        private async Task FinishGameLoadSequence()
         {
-            SceneManager.UnloadSceneAsync(1, UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
+            SceneManager.UnloadSceneAsync(Path.GetFileNameWithoutExtension(SharedConfig.LOGIN_SCENE_PATH), UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
             await Task.CompletedTask;
         }
 

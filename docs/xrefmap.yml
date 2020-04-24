@@ -241,6 +241,30 @@ references:
   isSpec: "True"
   fullName: Engine.Account.ServerLoginManager.Init
   nameWithType: ServerLoginManager.Init
+- uid: Engine.Account.ServerLoginManager.NotifyClientLoggedInAndLoaded
+  name: NotifyClientLoggedInAndLoaded
+  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_NotifyClientLoggedInAndLoaded
+  commentId: E:Engine.Account.ServerLoginManager.NotifyClientLoggedInAndLoaded
+  fullName: Engine.Account.ServerLoginManager.NotifyClientLoggedInAndLoaded
+  nameWithType: ServerLoginManager.NotifyClientLoggedInAndLoaded
+- uid: Engine.Account.ServerLoginManager.NotifyClientLoggedOut
+  name: NotifyClientLoggedOut
+  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_NotifyClientLoggedOut
+  commentId: E:Engine.Account.ServerLoginManager.NotifyClientLoggedOut
+  fullName: Engine.Account.ServerLoginManager.NotifyClientLoggedOut
+  nameWithType: ServerLoginManager.NotifyClientLoggedOut
+- uid: Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded
+  name: ServerLoginManager.NotifyOnLoginAndLoaded
+  href: api/Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded.html
+  commentId: T:Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded
+  fullName: Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded
+  nameWithType: ServerLoginManager.NotifyOnLoginAndLoaded
+- uid: Engine.Account.ServerLoginManager.NotifyOnLogout
+  name: ServerLoginManager.NotifyOnLogout
+  href: api/Engine.Account.ServerLoginManager.NotifyOnLogout.html
+  commentId: T:Engine.Account.ServerLoginManager.NotifyOnLogout
+  fullName: Engine.Account.ServerLoginManager.NotifyOnLogout
+  nameWithType: ServerLoginManager.NotifyOnLogout
 - uid: Engine.Account.ServerLoginManager.Process
   name: Process()
   href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_Process
@@ -451,30 +475,112 @@ references:
   commentId: T:Engine.Asset.ClientAssetPack
   fullName: Engine.Asset.ClientAssetPack
   nameWithType: ClientAssetPack
-- uid: Engine.Asset.ClientAssetPack.playerPack
-  name: playerPack
-  href: api/Engine.Asset.ClientAssetPack.html#Engine_Asset_ClientAssetPack_playerPack
-  commentId: F:Engine.Asset.ClientAssetPack.playerPack
-  fullName: Engine.Asset.ClientAssetPack.playerPack
-  nameWithType: ClientAssetPack.playerPack
+- uid: Engine.Asset.ClientAssetPack.clientPlayerPack
+  name: clientPlayerPack
+  href: api/Engine.Asset.ClientAssetPack.html#Engine_Asset_ClientAssetPack_clientPlayerPack
+  commentId: F:Engine.Asset.ClientAssetPack.clientPlayerPack
+  fullName: Engine.Asset.ClientAssetPack.clientPlayerPack
+  nameWithType: ClientAssetPack.clientPlayerPack
 - uid: Engine.Asset.ClientAssetPack.uiPack
   name: uiPack
   href: api/Engine.Asset.ClientAssetPack.html#Engine_Asset_ClientAssetPack_uiPack
   commentId: F:Engine.Asset.ClientAssetPack.uiPack
   fullName: Engine.Asset.ClientAssetPack.uiPack
   nameWithType: ClientAssetPack.uiPack
-- uid: Engine.Asset.Player_Pack
-  name: Player_Pack
-  href: api/Engine.Asset.Player_Pack.html
-  commentId: T:Engine.Asset.Player_Pack
-  fullName: Engine.Asset.Player_Pack
-  nameWithType: Player_Pack
-- uid: Engine.Asset.Player_Pack.playerPrefab
+- uid: Engine.Asset.ClientPlayerPack
+  name: ClientPlayerPack
+  href: api/Engine.Asset.ClientPlayerPack.html
+  commentId: T:Engine.Asset.ClientPlayerPack
+  fullName: Engine.Asset.ClientPlayerPack
+  nameWithType: ClientPlayerPack
+- uid: Engine.Asset.ClientPlayerPack.playerPrefab
   name: playerPrefab
-  href: api/Engine.Asset.Player_Pack.html#Engine_Asset_Player_Pack_playerPrefab
-  commentId: F:Engine.Asset.Player_Pack.playerPrefab
-  fullName: Engine.Asset.Player_Pack.playerPrefab
-  nameWithType: Player_Pack.playerPrefab
+  href: api/Engine.Asset.ClientPlayerPack.html#Engine_Asset_ClientPlayerPack_playerPrefab
+  commentId: F:Engine.Asset.ClientPlayerPack.playerPrefab
+  fullName: Engine.Asset.ClientPlayerPack.playerPrefab
+  nameWithType: ClientPlayerPack.playerPrefab
+- uid: Engine.Asset.ServerAssetManager
+  name: ServerAssetManager
+  href: api/Engine.Asset.ServerAssetManager.html
+  commentId: T:Engine.Asset.ServerAssetManager
+  fullName: Engine.Asset.ServerAssetManager
+  nameWithType: ServerAssetManager
+- uid: Engine.Asset.ServerAssetManager.GetPlayerPrefab
+  name: GetPlayerPrefab()
+  href: api/Engine.Asset.ServerAssetManager.html#Engine_Asset_ServerAssetManager_GetPlayerPrefab
+  commentId: M:Engine.Asset.ServerAssetManager.GetPlayerPrefab
+  fullName: Engine.Asset.ServerAssetManager.GetPlayerPrefab()
+  nameWithType: ServerAssetManager.GetPlayerPrefab()
+- uid: Engine.Asset.ServerAssetManager.GetPlayerPrefab*
+  name: GetPlayerPrefab
+  href: api/Engine.Asset.ServerAssetManager.html#Engine_Asset_ServerAssetManager_GetPlayerPrefab_
+  commentId: Overload:Engine.Asset.ServerAssetManager.GetPlayerPrefab
+  isSpec: "True"
+  fullName: Engine.Asset.ServerAssetManager.GetPlayerPrefab
+  nameWithType: ServerAssetManager.GetPlayerPrefab
+- uid: Engine.Asset.ServerAssetManager.Init
+  name: Init()
+  href: api/Engine.Asset.ServerAssetManager.html#Engine_Asset_ServerAssetManager_Init
+  commentId: M:Engine.Asset.ServerAssetManager.Init
+  fullName: Engine.Asset.ServerAssetManager.Init()
+  nameWithType: ServerAssetManager.Init()
+- uid: Engine.Asset.ServerAssetManager.Init*
+  name: Init
+  href: api/Engine.Asset.ServerAssetManager.html#Engine_Asset_ServerAssetManager_Init_
+  commentId: Overload:Engine.Asset.ServerAssetManager.Init
+  isSpec: "True"
+  fullName: Engine.Asset.ServerAssetManager.Init
+  nameWithType: ServerAssetManager.Init
+- uid: Engine.Asset.ServerAssetManager.Process
+  name: Process()
+  href: api/Engine.Asset.ServerAssetManager.html#Engine_Asset_ServerAssetManager_Process
+  commentId: M:Engine.Asset.ServerAssetManager.Process
+  fullName: Engine.Asset.ServerAssetManager.Process()
+  nameWithType: ServerAssetManager.Process()
+- uid: Engine.Asset.ServerAssetManager.Process*
+  name: Process
+  href: api/Engine.Asset.ServerAssetManager.html#Engine_Asset_ServerAssetManager_Process_
+  commentId: Overload:Engine.Asset.ServerAssetManager.Process
+  isSpec: "True"
+  fullName: Engine.Asset.ServerAssetManager.Process
+  nameWithType: ServerAssetManager.Process
+- uid: Engine.Asset.ServerAssetManager.Shutdown
+  name: Shutdown()
+  href: api/Engine.Asset.ServerAssetManager.html#Engine_Asset_ServerAssetManager_Shutdown
+  commentId: M:Engine.Asset.ServerAssetManager.Shutdown
+  fullName: Engine.Asset.ServerAssetManager.Shutdown()
+  nameWithType: ServerAssetManager.Shutdown()
+- uid: Engine.Asset.ServerAssetManager.Shutdown*
+  name: Shutdown
+  href: api/Engine.Asset.ServerAssetManager.html#Engine_Asset_ServerAssetManager_Shutdown_
+  commentId: Overload:Engine.Asset.ServerAssetManager.Shutdown
+  isSpec: "True"
+  fullName: Engine.Asset.ServerAssetManager.Shutdown
+  nameWithType: ServerAssetManager.Shutdown
+- uid: Engine.Asset.ServerAssetPack
+  name: ServerAssetPack
+  href: api/Engine.Asset.ServerAssetPack.html
+  commentId: T:Engine.Asset.ServerAssetPack
+  fullName: Engine.Asset.ServerAssetPack
+  nameWithType: ServerAssetPack
+- uid: Engine.Asset.ServerAssetPack.serverPlayerPack
+  name: serverPlayerPack
+  href: api/Engine.Asset.ServerAssetPack.html#Engine_Asset_ServerAssetPack_serverPlayerPack
+  commentId: F:Engine.Asset.ServerAssetPack.serverPlayerPack
+  fullName: Engine.Asset.ServerAssetPack.serverPlayerPack
+  nameWithType: ServerAssetPack.serverPlayerPack
+- uid: Engine.Asset.ServerPlayerPack
+  name: ServerPlayerPack
+  href: api/Engine.Asset.ServerPlayerPack.html
+  commentId: T:Engine.Asset.ServerPlayerPack
+  fullName: Engine.Asset.ServerPlayerPack
+  nameWithType: ServerPlayerPack
+- uid: Engine.Asset.ServerPlayerPack.playerPrefab
+  name: playerPrefab
+  href: api/Engine.Asset.ServerPlayerPack.html#Engine_Asset_ServerPlayerPack_playerPrefab
+  commentId: F:Engine.Asset.ServerPlayerPack.playerPrefab
+  fullName: Engine.Asset.ServerPlayerPack.playerPrefab
+  nameWithType: ServerPlayerPack.playerPrefab
 - uid: Engine.Asset.SharedAssetManager
   name: SharedAssetManager
   href: api/Engine.Asset.SharedAssetManager.html
@@ -526,18 +632,18 @@ references:
   commentId: T:Engine.Asset.SharedAssetPack
   fullName: Engine.Asset.SharedAssetPack
   nameWithType: SharedAssetPack
-- uid: Engine.Asset.UI_Pack
-  name: UI_Pack
-  href: api/Engine.Asset.UI_Pack.html
-  commentId: T:Engine.Asset.UI_Pack
-  fullName: Engine.Asset.UI_Pack
-  nameWithType: UI_Pack
-- uid: Engine.Asset.UI_Pack.UI_Panels
+- uid: Engine.Asset.UIPack
+  name: UIPack
+  href: api/Engine.Asset.UIPack.html
+  commentId: T:Engine.Asset.UIPack
+  fullName: Engine.Asset.UIPack
+  nameWithType: UIPack
+- uid: Engine.Asset.UIPack.UI_Panels
   name: UI_Panels
-  href: api/Engine.Asset.UI_Pack.html#Engine_Asset_UI_Pack_UI_Panels
-  commentId: F:Engine.Asset.UI_Pack.UI_Panels
-  fullName: Engine.Asset.UI_Pack.UI_Panels
-  nameWithType: UI_Pack.UI_Panels
+  href: api/Engine.Asset.UIPack.html#Engine_Asset_UIPack_UI_Panels
+  commentId: F:Engine.Asset.UIPack.UI_Panels
+  fullName: Engine.Asset.UIPack.UI_Panels
+  nameWithType: UIPack.UI_Panels
 - uid: Engine.CameraSystem
   name: Engine.CameraSystem
   href: api/Engine.CameraSystem.html
@@ -761,6 +867,12 @@ references:
   commentId: F:Engine.Configuration.SharedConfig.CHUNK_UNLOAD_VIEW_DISTANCE
   fullName: Engine.Configuration.SharedConfig.CHUNK_UNLOAD_VIEW_DISTANCE
   nameWithType: SharedConfig.CHUNK_UNLOAD_VIEW_DISTANCE
+- uid: Engine.Configuration.SharedConfig.CLIENT_SCENE_PATH
+  name: CLIENT_SCENE_PATH
+  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_CLIENT_SCENE_PATH
+  commentId: F:Engine.Configuration.SharedConfig.CLIENT_SCENE_PATH
+  fullName: Engine.Configuration.SharedConfig.CLIENT_SCENE_PATH
+  nameWithType: SharedConfig.CLIENT_SCENE_PATH
 - uid: Engine.Configuration.SharedConfig.DELIMITER
   name: DELIMITER
   href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_DELIMITER
@@ -773,18 +885,18 @@ references:
   commentId: F:Engine.Configuration.SharedConfig.ESCAPE
   fullName: Engine.Configuration.SharedConfig.ESCAPE
   nameWithType: SharedConfig.ESCAPE
+- uid: Engine.Configuration.SharedConfig.KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS
+  name: KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS
+  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS
+  commentId: F:Engine.Configuration.SharedConfig.KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS
+  fullName: Engine.Configuration.SharedConfig.KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS
+  nameWithType: SharedConfig.KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS
 - uid: Engine.Configuration.SharedConfig.LOGIN_SCENE_PATH
   name: LOGIN_SCENE_PATH
   href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_LOGIN_SCENE_PATH
   commentId: F:Engine.Configuration.SharedConfig.LOGIN_SCENE_PATH
   fullName: Engine.Configuration.SharedConfig.LOGIN_SCENE_PATH
   nameWithType: SharedConfig.LOGIN_SCENE_PATH
-- uid: Engine.Configuration.SharedConfig.MAIN_SCENE_PATH
-  name: MAIN_SCENE_PATH
-  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_MAIN_SCENE_PATH
-  commentId: F:Engine.Configuration.SharedConfig.MAIN_SCENE_PATH
-  fullName: Engine.Configuration.SharedConfig.MAIN_SCENE_PATH
-  nameWithType: SharedConfig.MAIN_SCENE_PATH
 - uid: Engine.Configuration.SharedConfig.MAX_BUFFER_SIZE
   name: MAX_BUFFER_SIZE
   href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_MAX_BUFFER_SIZE
@@ -815,6 +927,12 @@ references:
   commentId: F:Engine.Configuration.SharedConfig.PORT
   fullName: Engine.Configuration.SharedConfig.PORT
   nameWithType: SharedConfig.PORT
+- uid: Engine.Configuration.SharedConfig.SERVER_SCENE_PATH
+  name: SERVER_SCENE_PATH
+  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_SERVER_SCENE_PATH
+  commentId: F:Engine.Configuration.SharedConfig.SERVER_SCENE_PATH
+  fullName: Engine.Configuration.SharedConfig.SERVER_SCENE_PATH
+  nameWithType: SharedConfig.SERVER_SCENE_PATH
 - uid: Engine.Configuration.SharedConfig.VOLUMES_LAYER_NAME
   name: VOLUMES_LAYER_NAME
   href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_VOLUMES_LAYER_NAME
@@ -1330,32 +1448,32 @@ references:
   isSpec: "True"
   fullName: Engine.Networking.ConnectionManager.Process
   nameWithType: ConnectionManager.Process
-- uid: Engine.Networking.ConnectionManager.sendPacketToClient(Unity.Networking.Transport.NetworkConnection,Engine.Networking.Packet)
-  name: sendPacketToClient(NetworkConnection, Packet)
-  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_sendPacketToClient_Unity_Networking_Transport_NetworkConnection_Engine_Networking_Packet_
-  commentId: M:Engine.Networking.ConnectionManager.sendPacketToClient(Unity.Networking.Transport.NetworkConnection,Engine.Networking.Packet)
-  fullName: Engine.Networking.ConnectionManager.sendPacketToClient(Unity.Networking.Transport.NetworkConnection, Engine.Networking.Packet)
-  nameWithType: ConnectionManager.sendPacketToClient(NetworkConnection, Packet)
-- uid: Engine.Networking.ConnectionManager.sendPacketToClient*
-  name: sendPacketToClient
-  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_sendPacketToClient_
-  commentId: Overload:Engine.Networking.ConnectionManager.sendPacketToClient
+- uid: Engine.Networking.ConnectionManager.SendPacketToClient(Unity.Networking.Transport.NetworkConnection,Engine.Networking.Packet)
+  name: SendPacketToClient(NetworkConnection, Packet)
+  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_SendPacketToClient_Unity_Networking_Transport_NetworkConnection_Engine_Networking_Packet_
+  commentId: M:Engine.Networking.ConnectionManager.SendPacketToClient(Unity.Networking.Transport.NetworkConnection,Engine.Networking.Packet)
+  fullName: Engine.Networking.ConnectionManager.SendPacketToClient(Unity.Networking.Transport.NetworkConnection, Engine.Networking.Packet)
+  nameWithType: ConnectionManager.SendPacketToClient(NetworkConnection, Packet)
+- uid: Engine.Networking.ConnectionManager.SendPacketToClient*
+  name: SendPacketToClient
+  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_SendPacketToClient_
+  commentId: Overload:Engine.Networking.ConnectionManager.SendPacketToClient
   isSpec: "True"
-  fullName: Engine.Networking.ConnectionManager.sendPacketToClient
-  nameWithType: ConnectionManager.sendPacketToClient
-- uid: Engine.Networking.ConnectionManager.sendPacketToServer(Engine.Networking.Packet)
-  name: sendPacketToServer(Packet)
-  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_sendPacketToServer_Engine_Networking_Packet_
-  commentId: M:Engine.Networking.ConnectionManager.sendPacketToServer(Engine.Networking.Packet)
-  fullName: Engine.Networking.ConnectionManager.sendPacketToServer(Engine.Networking.Packet)
-  nameWithType: ConnectionManager.sendPacketToServer(Packet)
-- uid: Engine.Networking.ConnectionManager.sendPacketToServer*
-  name: sendPacketToServer
-  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_sendPacketToServer_
-  commentId: Overload:Engine.Networking.ConnectionManager.sendPacketToServer
+  fullName: Engine.Networking.ConnectionManager.SendPacketToClient
+  nameWithType: ConnectionManager.SendPacketToClient
+- uid: Engine.Networking.ConnectionManager.SendPacketToServer(Engine.Networking.Packet)
+  name: SendPacketToServer(Packet)
+  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_SendPacketToServer_Engine_Networking_Packet_
+  commentId: M:Engine.Networking.ConnectionManager.SendPacketToServer(Engine.Networking.Packet)
+  fullName: Engine.Networking.ConnectionManager.SendPacketToServer(Engine.Networking.Packet)
+  nameWithType: ConnectionManager.SendPacketToServer(Packet)
+- uid: Engine.Networking.ConnectionManager.SendPacketToServer*
+  name: SendPacketToServer
+  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_SendPacketToServer_
+  commentId: Overload:Engine.Networking.ConnectionManager.SendPacketToServer
   isSpec: "True"
-  fullName: Engine.Networking.ConnectionManager.sendPacketToServer
-  nameWithType: ConnectionManager.sendPacketToServer
+  fullName: Engine.Networking.ConnectionManager.SendPacketToServer
+  nameWithType: ConnectionManager.SendPacketToServer
 - uid: Engine.Networking.ConnectionManager.Shutdown
   name: Shutdown()
   href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_Shutdown
@@ -1382,6 +1500,76 @@ references:
   isSpec: "True"
   fullName: Engine.Networking.ConnectionManager.Start
   nameWithType: ConnectionManager.Start
+- uid: Engine.Networking.FinishedLoading_4
+  name: FinishedLoading_4
+  href: api/Engine.Networking.FinishedLoading_4.html
+  commentId: T:Engine.Networking.FinishedLoading_4
+  fullName: Engine.Networking.FinishedLoading_4
+  nameWithType: FinishedLoading_4
+- uid: Engine.Networking.FinishedLoading_4.getBytes
+  name: getBytes()
+  href: api/Engine.Networking.FinishedLoading_4.html#Engine_Networking_FinishedLoading_4_getBytes
+  commentId: M:Engine.Networking.FinishedLoading_4.getBytes
+  fullName: Engine.Networking.FinishedLoading_4.getBytes()
+  nameWithType: FinishedLoading_4.getBytes()
+- uid: Engine.Networking.FinishedLoading_4.getBytes*
+  name: getBytes
+  href: api/Engine.Networking.FinishedLoading_4.html#Engine_Networking_FinishedLoading_4_getBytes_
+  commentId: Overload:Engine.Networking.FinishedLoading_4.getBytes
+  isSpec: "True"
+  fullName: Engine.Networking.FinishedLoading_4.getBytes
+  nameWithType: FinishedLoading_4.getBytes
+- uid: Engine.Networking.FinishedLoading_4.readPacket(System.Byte[])
+  name: readPacket(Byte[])
+  href: api/Engine.Networking.FinishedLoading_4.html#Engine_Networking_FinishedLoading_4_readPacket_System_Byte___
+  commentId: M:Engine.Networking.FinishedLoading_4.readPacket(System.Byte[])
+  name.vb: readPacket(Byte())
+  fullName: Engine.Networking.FinishedLoading_4.readPacket(System.Byte[])
+  fullName.vb: Engine.Networking.FinishedLoading_4.readPacket(System.Byte())
+  nameWithType: FinishedLoading_4.readPacket(Byte[])
+  nameWithType.vb: FinishedLoading_4.readPacket(Byte())
+- uid: Engine.Networking.FinishedLoading_4.readPacket*
+  name: readPacket
+  href: api/Engine.Networking.FinishedLoading_4.html#Engine_Networking_FinishedLoading_4_readPacket_
+  commentId: Overload:Engine.Networking.FinishedLoading_4.readPacket
+  isSpec: "True"
+  fullName: Engine.Networking.FinishedLoading_4.readPacket
+  nameWithType: FinishedLoading_4.readPacket
+- uid: Engine.Networking.KeepAlive_0
+  name: KeepAlive_0
+  href: api/Engine.Networking.KeepAlive_0.html
+  commentId: T:Engine.Networking.KeepAlive_0
+  fullName: Engine.Networking.KeepAlive_0
+  nameWithType: KeepAlive_0
+- uid: Engine.Networking.KeepAlive_0.getBytes
+  name: getBytes()
+  href: api/Engine.Networking.KeepAlive_0.html#Engine_Networking_KeepAlive_0_getBytes
+  commentId: M:Engine.Networking.KeepAlive_0.getBytes
+  fullName: Engine.Networking.KeepAlive_0.getBytes()
+  nameWithType: KeepAlive_0.getBytes()
+- uid: Engine.Networking.KeepAlive_0.getBytes*
+  name: getBytes
+  href: api/Engine.Networking.KeepAlive_0.html#Engine_Networking_KeepAlive_0_getBytes_
+  commentId: Overload:Engine.Networking.KeepAlive_0.getBytes
+  isSpec: "True"
+  fullName: Engine.Networking.KeepAlive_0.getBytes
+  nameWithType: KeepAlive_0.getBytes
+- uid: Engine.Networking.KeepAlive_0.readPacket(System.Byte[])
+  name: readPacket(Byte[])
+  href: api/Engine.Networking.KeepAlive_0.html#Engine_Networking_KeepAlive_0_readPacket_System_Byte___
+  commentId: M:Engine.Networking.KeepAlive_0.readPacket(System.Byte[])
+  name.vb: readPacket(Byte())
+  fullName: Engine.Networking.KeepAlive_0.readPacket(System.Byte[])
+  fullName.vb: Engine.Networking.KeepAlive_0.readPacket(System.Byte())
+  nameWithType: KeepAlive_0.readPacket(Byte[])
+  nameWithType.vb: KeepAlive_0.readPacket(Byte())
+- uid: Engine.Networking.KeepAlive_0.readPacket*
+  name: readPacket
+  href: api/Engine.Networking.KeepAlive_0.html#Engine_Networking_KeepAlive_0_readPacket_
+  commentId: Overload:Engine.Networking.KeepAlive_0.readPacket
+  isSpec: "True"
+  fullName: Engine.Networking.KeepAlive_0.readPacket
+  nameWithType: KeepAlive_0.readPacket
 - uid: Engine.Networking.LoginRequest_1
   name: LoginRequest_1
   href: api/Engine.Networking.LoginRequest_1.html
@@ -1678,6 +1866,59 @@ references:
   commentId: F:Engine.Networking.ReliabilityScheme.UNRELIABLE
   fullName: Engine.Networking.ReliabilityScheme.UNRELIABLE
   nameWithType: ReliabilityScheme.UNRELIABLE
+- uid: Engine.Networking.UpdateMyPlayerPosition_3
+  name: UpdateMyPlayerPosition_3
+  href: api/Engine.Networking.UpdateMyPlayerPosition_3.html
+  commentId: T:Engine.Networking.UpdateMyPlayerPosition_3
+  fullName: Engine.Networking.UpdateMyPlayerPosition_3
+  nameWithType: UpdateMyPlayerPosition_3
+- uid: Engine.Networking.UpdateMyPlayerPosition_3.getBytes
+  name: getBytes()
+  href: api/Engine.Networking.UpdateMyPlayerPosition_3.html#Engine_Networking_UpdateMyPlayerPosition_3_getBytes
+  commentId: M:Engine.Networking.UpdateMyPlayerPosition_3.getBytes
+  fullName: Engine.Networking.UpdateMyPlayerPosition_3.getBytes()
+  nameWithType: UpdateMyPlayerPosition_3.getBytes()
+- uid: Engine.Networking.UpdateMyPlayerPosition_3.getBytes*
+  name: getBytes
+  href: api/Engine.Networking.UpdateMyPlayerPosition_3.html#Engine_Networking_UpdateMyPlayerPosition_3_getBytes_
+  commentId: Overload:Engine.Networking.UpdateMyPlayerPosition_3.getBytes
+  isSpec: "True"
+  fullName: Engine.Networking.UpdateMyPlayerPosition_3.getBytes
+  nameWithType: UpdateMyPlayerPosition_3.getBytes
+- uid: Engine.Networking.UpdateMyPlayerPosition_3.readPacket(System.Byte[])
+  name: readPacket(Byte[])
+  href: api/Engine.Networking.UpdateMyPlayerPosition_3.html#Engine_Networking_UpdateMyPlayerPosition_3_readPacket_System_Byte___
+  commentId: M:Engine.Networking.UpdateMyPlayerPosition_3.readPacket(System.Byte[])
+  name.vb: readPacket(Byte())
+  fullName: Engine.Networking.UpdateMyPlayerPosition_3.readPacket(System.Byte[])
+  fullName.vb: Engine.Networking.UpdateMyPlayerPosition_3.readPacket(System.Byte())
+  nameWithType: UpdateMyPlayerPosition_3.readPacket(Byte[])
+  nameWithType.vb: UpdateMyPlayerPosition_3.readPacket(Byte())
+- uid: Engine.Networking.UpdateMyPlayerPosition_3.readPacket*
+  name: readPacket
+  href: api/Engine.Networking.UpdateMyPlayerPosition_3.html#Engine_Networking_UpdateMyPlayerPosition_3_readPacket_
+  commentId: Overload:Engine.Networking.UpdateMyPlayerPosition_3.readPacket
+  isSpec: "True"
+  fullName: Engine.Networking.UpdateMyPlayerPosition_3.readPacket
+  nameWithType: UpdateMyPlayerPosition_3.readPacket
+- uid: Engine.Networking.UpdateMyPlayerPosition_3.x
+  name: x
+  href: api/Engine.Networking.UpdateMyPlayerPosition_3.html#Engine_Networking_UpdateMyPlayerPosition_3_x
+  commentId: F:Engine.Networking.UpdateMyPlayerPosition_3.x
+  fullName: Engine.Networking.UpdateMyPlayerPosition_3.x
+  nameWithType: UpdateMyPlayerPosition_3.x
+- uid: Engine.Networking.UpdateMyPlayerPosition_3.y
+  name: y
+  href: api/Engine.Networking.UpdateMyPlayerPosition_3.html#Engine_Networking_UpdateMyPlayerPosition_3_y
+  commentId: F:Engine.Networking.UpdateMyPlayerPosition_3.y
+  fullName: Engine.Networking.UpdateMyPlayerPosition_3.y
+  nameWithType: UpdateMyPlayerPosition_3.y
+- uid: Engine.Networking.UpdateMyPlayerPosition_3.z
+  name: z
+  href: api/Engine.Networking.UpdateMyPlayerPosition_3.html#Engine_Networking_UpdateMyPlayerPosition_3_z
+  commentId: F:Engine.Networking.UpdateMyPlayerPosition_3.z
+  fullName: Engine.Networking.UpdateMyPlayerPosition_3.z
+  nameWithType: UpdateMyPlayerPosition_3.z
 - uid: Engine.Networking.Utility
   name: Engine.Networking.Utility
   href: api/Engine.Networking.Utility.html
@@ -1942,6 +2183,59 @@ references:
   fullName.vb: Engine.Networking.Utility.PacketWriter.Add(Of T)(ByRef System.Byte(), T)
   nameWithType: PacketWriter.Add<T>(ref Byte[], T)
   nameWithType.vb: PacketWriter.Add(Of T)(ByRef Byte(), T)
+- uid: Engine.Networking.WalkRequest_5
+  name: WalkRequest_5
+  href: api/Engine.Networking.WalkRequest_5.html
+  commentId: T:Engine.Networking.WalkRequest_5
+  fullName: Engine.Networking.WalkRequest_5
+  nameWithType: WalkRequest_5
+- uid: Engine.Networking.WalkRequest_5.getBytes
+  name: getBytes()
+  href: api/Engine.Networking.WalkRequest_5.html#Engine_Networking_WalkRequest_5_getBytes
+  commentId: M:Engine.Networking.WalkRequest_5.getBytes
+  fullName: Engine.Networking.WalkRequest_5.getBytes()
+  nameWithType: WalkRequest_5.getBytes()
+- uid: Engine.Networking.WalkRequest_5.getBytes*
+  name: getBytes
+  href: api/Engine.Networking.WalkRequest_5.html#Engine_Networking_WalkRequest_5_getBytes_
+  commentId: Overload:Engine.Networking.WalkRequest_5.getBytes
+  isSpec: "True"
+  fullName: Engine.Networking.WalkRequest_5.getBytes
+  nameWithType: WalkRequest_5.getBytes
+- uid: Engine.Networking.WalkRequest_5.readPacket(System.Byte[])
+  name: readPacket(Byte[])
+  href: api/Engine.Networking.WalkRequest_5.html#Engine_Networking_WalkRequest_5_readPacket_System_Byte___
+  commentId: M:Engine.Networking.WalkRequest_5.readPacket(System.Byte[])
+  name.vb: readPacket(Byte())
+  fullName: Engine.Networking.WalkRequest_5.readPacket(System.Byte[])
+  fullName.vb: Engine.Networking.WalkRequest_5.readPacket(System.Byte())
+  nameWithType: WalkRequest_5.readPacket(Byte[])
+  nameWithType.vb: WalkRequest_5.readPacket(Byte())
+- uid: Engine.Networking.WalkRequest_5.readPacket*
+  name: readPacket
+  href: api/Engine.Networking.WalkRequest_5.html#Engine_Networking_WalkRequest_5_readPacket_
+  commentId: Overload:Engine.Networking.WalkRequest_5.readPacket
+  isSpec: "True"
+  fullName: Engine.Networking.WalkRequest_5.readPacket
+  nameWithType: WalkRequest_5.readPacket
+- uid: Engine.Networking.WalkRequest_5.x
+  name: x
+  href: api/Engine.Networking.WalkRequest_5.html#Engine_Networking_WalkRequest_5_x
+  commentId: F:Engine.Networking.WalkRequest_5.x
+  fullName: Engine.Networking.WalkRequest_5.x
+  nameWithType: WalkRequest_5.x
+- uid: Engine.Networking.WalkRequest_5.y
+  name: y
+  href: api/Engine.Networking.WalkRequest_5.html#Engine_Networking_WalkRequest_5_y
+  commentId: F:Engine.Networking.WalkRequest_5.y
+  fullName: Engine.Networking.WalkRequest_5.y
+  nameWithType: WalkRequest_5.y
+- uid: Engine.Networking.WalkRequest_5.z
+  name: z
+  href: api/Engine.Networking.WalkRequest_5.html#Engine_Networking_WalkRequest_5_z
+  commentId: F:Engine.Networking.WalkRequest_5.z
+  fullName: Engine.Networking.WalkRequest_5.z
+  nameWithType: WalkRequest_5.z
 - uid: Engine.Player
   name: Engine.Player
   href: api/Engine.Player.html
@@ -1973,12 +2267,12 @@ references:
   commentId: T:Engine.Player.ClientPlayerManager
   fullName: Engine.Player.ClientPlayerManager
   nameWithType: ClientPlayerManager
-- uid: Engine.Player.ClientPlayerManager.#ctor(UnityEngine.GameObject)
-  name: ClientPlayerManager(GameObject)
-  href: api/Engine.Player.ClientPlayerManager.html#Engine_Player_ClientPlayerManager__ctor_UnityEngine_GameObject_
-  commentId: M:Engine.Player.ClientPlayerManager.#ctor(UnityEngine.GameObject)
-  fullName: Engine.Player.ClientPlayerManager.ClientPlayerManager(UnityEngine.GameObject)
-  nameWithType: ClientPlayerManager.ClientPlayerManager(GameObject)
+- uid: Engine.Player.ClientPlayerManager.#ctor(Engine.Asset.ClientAssetManager,Engine.Networking.ConnectionManager)
+  name: ClientPlayerManager(ClientAssetManager, ConnectionManager)
+  href: api/Engine.Player.ClientPlayerManager.html#Engine_Player_ClientPlayerManager__ctor_Engine_Asset_ClientAssetManager_Engine_Networking_ConnectionManager_
+  commentId: M:Engine.Player.ClientPlayerManager.#ctor(Engine.Asset.ClientAssetManager,Engine.Networking.ConnectionManager)
+  fullName: Engine.Player.ClientPlayerManager.ClientPlayerManager(Engine.Asset.ClientAssetManager, Engine.Networking.ConnectionManager)
+  nameWithType: ClientPlayerManager.ClientPlayerManager(ClientAssetManager, ConnectionManager)
 - uid: Engine.Player.ClientPlayerManager.#ctor*
   name: ClientPlayerManager
   href: api/Engine.Player.ClientPlayerManager.html#Engine_Player_ClientPlayerManager__ctor_
@@ -2051,12 +2345,57 @@ references:
   isSpec: "True"
   fullName: Engine.Player.ClientPlayerManager.Shutdown
   nameWithType: ClientPlayerManager.Shutdown
+- uid: Engine.Player.ServerPlayer
+  name: ServerPlayer
+  href: api/Engine.Player.ServerPlayer.html
+  commentId: T:Engine.Player.ServerPlayer
+  fullName: Engine.Player.ServerPlayer
+  nameWithType: ServerPlayer
+- uid: Engine.Player.ServerPlayer.GetPlayerAgent
+  name: GetPlayerAgent()
+  href: api/Engine.Player.ServerPlayer.html#Engine_Player_ServerPlayer_GetPlayerAgent
+  commentId: M:Engine.Player.ServerPlayer.GetPlayerAgent
+  fullName: Engine.Player.ServerPlayer.GetPlayerAgent()
+  nameWithType: ServerPlayer.GetPlayerAgent()
+- uid: Engine.Player.ServerPlayer.GetPlayerAgent*
+  name: GetPlayerAgent
+  href: api/Engine.Player.ServerPlayer.html#Engine_Player_ServerPlayer_GetPlayerAgent_
+  commentId: Overload:Engine.Player.ServerPlayer.GetPlayerAgent
+  isSpec: "True"
+  fullName: Engine.Player.ServerPlayer.GetPlayerAgent
+  nameWithType: ServerPlayer.GetPlayerAgent
+- uid: Engine.Player.ServerPlayer.GetPlayerGameObject
+  name: GetPlayerGameObject()
+  href: api/Engine.Player.ServerPlayer.html#Engine_Player_ServerPlayer_GetPlayerGameObject
+  commentId: M:Engine.Player.ServerPlayer.GetPlayerGameObject
+  fullName: Engine.Player.ServerPlayer.GetPlayerGameObject()
+  nameWithType: ServerPlayer.GetPlayerGameObject()
+- uid: Engine.Player.ServerPlayer.GetPlayerGameObject*
+  name: GetPlayerGameObject
+  href: api/Engine.Player.ServerPlayer.html#Engine_Player_ServerPlayer_GetPlayerGameObject_
+  commentId: Overload:Engine.Player.ServerPlayer.GetPlayerGameObject
+  isSpec: "True"
+  fullName: Engine.Player.ServerPlayer.GetPlayerGameObject
+  nameWithType: ServerPlayer.GetPlayerGameObject
 - uid: Engine.Player.ServerPlayerManager
   name: ServerPlayerManager
   href: api/Engine.Player.ServerPlayerManager.html
   commentId: T:Engine.Player.ServerPlayerManager
   fullName: Engine.Player.ServerPlayerManager
   nameWithType: ServerPlayerManager
+- uid: Engine.Player.ServerPlayerManager.#ctor(Engine.Account.ServerLoginManager,Engine.Asset.ServerAssetManager,Engine.Networking.ConnectionManager)
+  name: ServerPlayerManager(ServerLoginManager, ServerAssetManager, ConnectionManager)
+  href: api/Engine.Player.ServerPlayerManager.html#Engine_Player_ServerPlayerManager__ctor_Engine_Account_ServerLoginManager_Engine_Asset_ServerAssetManager_Engine_Networking_ConnectionManager_
+  commentId: M:Engine.Player.ServerPlayerManager.#ctor(Engine.Account.ServerLoginManager,Engine.Asset.ServerAssetManager,Engine.Networking.ConnectionManager)
+  fullName: Engine.Player.ServerPlayerManager.ServerPlayerManager(Engine.Account.ServerLoginManager, Engine.Asset.ServerAssetManager, Engine.Networking.ConnectionManager)
+  nameWithType: ServerPlayerManager.ServerPlayerManager(ServerLoginManager, ServerAssetManager, ConnectionManager)
+- uid: Engine.Player.ServerPlayerManager.#ctor*
+  name: ServerPlayerManager
+  href: api/Engine.Player.ServerPlayerManager.html#Engine_Player_ServerPlayerManager__ctor_
+  commentId: Overload:Engine.Player.ServerPlayerManager.#ctor
+  isSpec: "True"
+  fullName: Engine.Player.ServerPlayerManager.ServerPlayerManager
+  nameWithType: ServerPlayerManager.ServerPlayerManager
 - uid: Engine.Player.ServerPlayerManager.Init
   name: Init()
   href: api/Engine.Player.ServerPlayerManager.html#Engine_Player_ServerPlayerManager_Init

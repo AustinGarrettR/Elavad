@@ -5,7 +5,7 @@ items:
   id: ClientAssetPack
   parent: Engine.Asset
   children:
-  - Engine.Asset.ClientAssetPack.playerPack
+  - Engine.Asset.ClientAssetPack.clientPlayerPack
   - Engine.Asset.ClientAssetPack.uiPack
   langs:
   - csharp
@@ -129,31 +129,31 @@ items:
   summary: "\nA reference to a UI Pack\n"
   example: []
   syntax:
-    content: public UI_Pack uiPack
+    content: public UIPack uiPack
     return:
-      type: Engine.Asset.UI_Pack
-    content.vb: Public uiPack As UI_Pack
+      type: Engine.Asset.UIPack
+    content.vb: Public uiPack As UIPack
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Engine.Asset.ClientAssetPack.playerPack
-  commentId: F:Engine.Asset.ClientAssetPack.playerPack
-  id: playerPack
+- uid: Engine.Asset.ClientAssetPack.clientPlayerPack
+  commentId: F:Engine.Asset.ClientAssetPack.clientPlayerPack
+  id: clientPlayerPack
   parent: Engine.Asset.ClientAssetPack
   langs:
   - csharp
   - vb
-  name: playerPack
-  nameWithType: ClientAssetPack.playerPack
-  fullName: Engine.Asset.ClientAssetPack.playerPack
+  name: clientPlayerPack
+  nameWithType: ClientAssetPack.clientPlayerPack
+  fullName: Engine.Asset.ClientAssetPack.clientPlayerPack
   type: Field
   source:
     remote:
       path: Assets/Engine/Asset/ClientAssetPack.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: playerPack
+    id: clientPlayerPack
     path: ../Assets/Engine/Asset/ClientAssetPack.cs
     startLine: 18
   assemblies:
@@ -162,10 +162,10 @@ items:
   summary: "\nA reference to a player pack\n"
   example: []
   syntax:
-    content: public Player_Pack playerPack
+    content: public ClientPlayerPack clientPlayerPack
     return:
-      type: Engine.Asset.Player_Pack
-    content.vb: Public playerPack As Player_Pack
+      type: Engine.Asset.ClientPlayerPack
+    content.vb: Public clientPlayerPack As ClientPlayerPack
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -2474,15 +2474,15 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Asset.UI_Pack
-  commentId: T:Engine.Asset.UI_Pack
+- uid: Engine.Asset.UIPack
+  commentId: T:Engine.Asset.UIPack
   parent: Engine.Asset
-  name: UI_Pack
-  nameWithType: UI_Pack
-  fullName: Engine.Asset.UI_Pack
-- uid: Engine.Asset.Player_Pack
-  commentId: T:Engine.Asset.Player_Pack
+  name: UIPack
+  nameWithType: UIPack
+  fullName: Engine.Asset.UIPack
+- uid: Engine.Asset.ClientPlayerPack
+  commentId: T:Engine.Asset.ClientPlayerPack
   parent: Engine.Asset
-  name: Player_Pack
-  nameWithType: Player_Pack
-  fullName: Engine.Asset.Player_Pack
+  name: ClientPlayerPack
+  nameWithType: ClientPlayerPack
+  fullName: Engine.Asset.ClientPlayerPack

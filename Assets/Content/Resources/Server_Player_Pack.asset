@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f265576725f0e945844256477baee20, type: 3}
-  m_Name: Player_Pack
+  m_Script: {fileID: 11500000, guid: 139ba651d745a5b40ad7e93d6d41cd13, type: 3}
+  m_Name: Server_Player_Pack
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 5962352774144729457, guid: c2b56395330721c4d8510860768d930b,
+  playerPrefab: {fileID: 5962352774144729457, guid: 8b1cdbb8e1d1cb34e86cba3c890a4302,
     type: 3}

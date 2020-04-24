@@ -92,7 +92,7 @@ namespace Engine.World
                 string sceneName = Path.GetFileNameWithoutExtension(scenePath);
 
                 //Only support world scenes, skip Main and Login scenes
-                if (scenePath.Equals(SharedConfig.MAIN_SCENE_PATH) || scenePath.Equals(SharedConfig.LOGIN_SCENE_PATH))
+                if (scenePath.Equals(SharedConfig.CLIENT_SCENE_PATH) || scenePath.Equals(SharedConfig.SERVER_SCENE_PATH) || scenePath.Equals(SharedConfig.LOGIN_SCENE_PATH))
                     continue;
 
                 try

@@ -1,40 +1,40 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Engine.Asset.Player_Pack
-  commentId: T:Engine.Asset.Player_Pack
-  id: Player_Pack
+- uid: Engine.Asset.ServerAssetPack
+  commentId: T:Engine.Asset.ServerAssetPack
+  id: ServerAssetPack
   parent: Engine.Asset
   children:
-  - Engine.Asset.Player_Pack.playerPrefab
+  - Engine.Asset.ServerAssetPack.serverPlayerPack
   langs:
   - csharp
   - vb
-  name: Player_Pack
-  nameWithType: Player_Pack
-  fullName: Engine.Asset.Player_Pack
+  name: ServerAssetPack
+  nameWithType: ServerAssetPack
+  fullName: Engine.Asset.ServerAssetPack
   type: Class
   source:
     remote:
-      path: Assets/Engine/Asset/Player_Pack.cs
+      path: Assets/Engine/Asset/ServerAssetPack.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: Player_Pack
-    path: ../Assets/Engine/Asset/Player_Pack.cs
+    id: ServerAssetPack
+    path: ../Assets/Engine/Asset/ServerAssetPack.cs
     startLine: 7
   assemblies:
   - Engine.Asset
   namespace: Engine.Asset
-  summary: "\nAn object that stores references to player prefabs\n"
+  summary: "\nAn pack that contains references to assets\n"
   example: []
   syntax:
     content: >-
-      [CreateAssetMenu(fileName = "Player_Pack", menuName = "Data Packs/Player_Pack", order = 1)]
+      [CreateAssetMenu(fileName = "ServerAssetPack", menuName = "Data Packs/ServerAssetPack", order = 1)]
 
-      public class Player_Pack : ScriptableObject
+      public class ServerAssetPack : ScriptableObject
     content.vb: >-
-      <CreateAssetMenu(fileName:="Player_Pack", menuName:="Data Packs/Player_Pack", order:=1)>
+      <CreateAssetMenu(fileName:="ServerAssetPack", menuName:="Data Packs/ServerAssetPack", order:=1)>
 
-      Public Class Player_Pack
+      Public Class ServerAssetPack
           Inherits ScriptableObject
   inheritance:
   - System.Object
@@ -90,10 +90,10 @@ items:
     namedArguments:
     - name: fileName
       type: System.String
-      value: Player_Pack
+      value: ServerAssetPack
     - name: menuName
       type: System.String
-      value: Data Packs/Player_Pack
+      value: Data Packs/ServerAssetPack
     - name: order
       type: System.Int32
       value: 1
@@ -103,35 +103,35 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.Asset.Player_Pack.playerPrefab
-  commentId: F:Engine.Asset.Player_Pack.playerPrefab
-  id: playerPrefab
-  parent: Engine.Asset.Player_Pack
+- uid: Engine.Asset.ServerAssetPack.serverPlayerPack
+  commentId: F:Engine.Asset.ServerAssetPack.serverPlayerPack
+  id: serverPlayerPack
+  parent: Engine.Asset.ServerAssetPack
   langs:
   - csharp
   - vb
-  name: playerPrefab
-  nameWithType: Player_Pack.playerPrefab
-  fullName: Engine.Asset.Player_Pack.playerPrefab
+  name: serverPlayerPack
+  nameWithType: ServerAssetPack.serverPlayerPack
+  fullName: Engine.Asset.ServerAssetPack.serverPlayerPack
   type: Field
   source:
     remote:
-      path: Assets/Engine/Asset/Player_Pack.cs
+      path: Assets/Engine/Asset/ServerAssetPack.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: playerPrefab
-    path: ../Assets/Engine/Asset/Player_Pack.cs
+    id: serverPlayerPack
+    path: ../Assets/Engine/Asset/ServerAssetPack.cs
     startLine: 13
   assemblies:
   - Engine.Asset
   namespace: Engine.Asset
-  summary: "\nReference of the main player prefab\n"
+  summary: "\nA reference to a player pack\n"
   example: []
   syntax:
-    content: public GameObject playerPrefab
+    content: public ServerPlayerPack serverPlayerPack
     return:
-      type: UnityEngine.GameObject
-    content.vb: Public playerPrefab As GameObject
+      type: Engine.Asset.ServerPlayerPack
+    content.vb: Public serverPlayerPack As ServerPlayerPack
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -2440,10 +2440,9 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: UnityEngine.GameObject
-  commentId: T:UnityEngine.GameObject
-  parent: UnityEngine
-  isExternal: true
-  name: GameObject
-  nameWithType: GameObject
-  fullName: UnityEngine.GameObject
+- uid: Engine.Asset.ServerPlayerPack
+  commentId: T:Engine.Asset.ServerPlayerPack
+  parent: Engine.Asset
+  name: ServerPlayerPack
+  nameWithType: ServerPlayerPack
+  fullName: Engine.Asset.ServerPlayerPack

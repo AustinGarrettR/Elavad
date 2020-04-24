@@ -1,0 +1,648 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Asset.ServerAssetManager
+  commentId: T:Engine.Asset.ServerAssetManager
+  id: ServerAssetManager
+  parent: Engine.Asset
+  children:
+  - Engine.Asset.ServerAssetManager.GetPlayerPrefab
+  - Engine.Asset.ServerAssetManager.Init
+  - Engine.Asset.ServerAssetManager.Process
+  - Engine.Asset.ServerAssetManager.Shutdown
+  langs:
+  - csharp
+  - vb
+  name: ServerAssetManager
+  nameWithType: ServerAssetManager
+  fullName: Engine.Asset.ServerAssetManager
+  type: Class
+  source:
+    remote:
+      path: Assets/Engine/Asset/ServerAssetManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: ServerAssetManager
+    path: ../Assets/Engine/Asset/ServerAssetManager.cs
+    startLine: 10
+  assemblies:
+  - Engine.Asset
+  namespace: Engine.Asset
+  summary: "\nThe manager that handles asset loading\n"
+  example: []
+  syntax:
+    content: 'public class ServerAssetManager : Manager'
+    content.vb: >-
+      Public Class ServerAssetManager
+          Inherits Manager
+  inheritance:
+  - System.Object
+  - Engine.Factory.Manager
+  inheritedMembers:
+  - Engine.Factory.Manager.LoadGameTask
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Engine.Asset.ServerAssetManager.Init
+  commentId: M:Engine.Asset.ServerAssetManager.Init
+  id: Init
+  parent: Engine.Asset.ServerAssetManager
+  langs:
+  - csharp
+  - vb
+  name: Init()
+  nameWithType: ServerAssetManager.Init()
+  fullName: Engine.Asset.ServerAssetManager.Init()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Asset/ServerAssetManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: Init
+    path: ../Assets/Engine/Asset/ServerAssetManager.cs
+    startLine: 19
+  assemblies:
+  - Engine.Asset
+  namespace: Engine.Asset
+  summary: "\nInitialize method\n"
+  example: []
+  syntax:
+    content: public override void Init()
+    content.vb: Public Overrides Sub Init
+  overridden: Engine.Factory.Manager.Init
+  overload: Engine.Asset.ServerAssetManager.Init*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Engine.Asset.ServerAssetManager.Shutdown
+  commentId: M:Engine.Asset.ServerAssetManager.Shutdown
+  id: Shutdown
+  parent: Engine.Asset.ServerAssetManager
+  langs:
+  - csharp
+  - vb
+  name: Shutdown()
+  nameWithType: ServerAssetManager.Shutdown()
+  fullName: Engine.Asset.ServerAssetManager.Shutdown()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Asset/ServerAssetManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: Shutdown
+    path: ../Assets/Engine/Asset/ServerAssetManager.cs
+    startLine: 33
+  assemblies:
+  - Engine.Asset
+  namespace: Engine.Asset
+  summary: "\nCalled on program shutdown\n"
+  example: []
+  syntax:
+    content: public override void Shutdown()
+    content.vb: Public Overrides Sub Shutdown
+  overridden: Engine.Factory.Manager.Shutdown
+  overload: Engine.Asset.ServerAssetManager.Shutdown*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Engine.Asset.ServerAssetManager.Process
+  commentId: M:Engine.Asset.ServerAssetManager.Process
+  id: Process
+  parent: Engine.Asset.ServerAssetManager
+  langs:
+  - csharp
+  - vb
+  name: Process()
+  nameWithType: ServerAssetManager.Process()
+  fullName: Engine.Asset.ServerAssetManager.Process()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Asset/ServerAssetManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: Process
+    path: ../Assets/Engine/Asset/ServerAssetManager.cs
+    startLine: 41
+  assemblies:
+  - Engine.Asset
+  namespace: Engine.Asset
+  summary: "\nCalled every frame\n"
+  example: []
+  syntax:
+    content: public override void Process()
+    content.vb: Public Overrides Sub Process
+  overridden: Engine.Factory.Manager.Process
+  overload: Engine.Asset.ServerAssetManager.Process*
+  modifiers.csharp:
+  - public
+  - override
+  modifiers.vb:
+  - Public
+  - Overrides
+- uid: Engine.Asset.ServerAssetManager.GetPlayerPrefab
+  commentId: M:Engine.Asset.ServerAssetManager.GetPlayerPrefab
+  id: GetPlayerPrefab
+  parent: Engine.Asset.ServerAssetManager
+  langs:
+  - csharp
+  - vb
+  name: GetPlayerPrefab()
+  nameWithType: ServerAssetManager.GetPlayerPrefab()
+  fullName: Engine.Asset.ServerAssetManager.GetPlayerPrefab()
+  type: Method
+  source:
+    remote:
+      path: Assets/Engine/Asset/ServerAssetManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: GetPlayerPrefab
+    path: ../Assets/Engine/Asset/ServerAssetManager.cs
+    startLine: 54
+  assemblies:
+  - Engine.Asset
+  namespace: Engine.Asset
+  summary: "\nReturns the server player prefab\n"
+  example: []
+  syntax:
+    content: public GameObject GetPlayerPrefab()
+    return:
+      type: UnityEngine.GameObject
+      description: The player prefab
+    content.vb: Public Function GetPlayerPrefab As GameObject
+  overload: Engine.Asset.ServerAssetManager.GetPlayerPrefab*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Engine.Asset
+  commentId: N:Engine.Asset
+  name: Engine.Asset
+  nameWithType: Engine.Asset
+  fullName: Engine.Asset
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: Engine.Factory.Manager
+  commentId: T:Engine.Factory.Manager
+  parent: Engine.Factory
+  name: Manager
+  nameWithType: Manager
+  fullName: Engine.Factory.Manager
+- uid: Engine.Factory.Manager.LoadGameTask
+  commentId: M:Engine.Factory.Manager.LoadGameTask
+  parent: Engine.Factory.Manager
+  name: LoadGameTask()
+  nameWithType: Manager.LoadGameTask()
+  fullName: Engine.Factory.Manager.LoadGameTask()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.LoadGameTask
+    name: LoadGameTask
+    nameWithType: Manager.LoadGameTask
+    fullName: Engine.Factory.Manager.LoadGameTask
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.LoadGameTask
+    name: LoadGameTask
+    nameWithType: Manager.LoadGameTask
+    fullName: Engine.Factory.Manager.LoadGameTask
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Engine.Factory
+  commentId: N:Engine.Factory
+  name: Engine.Factory
+  nameWithType: Engine.Factory
+  fullName: Engine.Factory
+- uid: Engine.Factory.Manager.Init
+  commentId: M:Engine.Factory.Manager.Init
+  parent: Engine.Factory.Manager
+  name: Init()
+  nameWithType: Manager.Init()
+  fullName: Engine.Factory.Manager.Init()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.Init
+    name: Init
+    nameWithType: Manager.Init
+    fullName: Engine.Factory.Manager.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.Init
+    name: Init
+    nameWithType: Manager.Init
+    fullName: Engine.Factory.Manager.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Engine.Asset.ServerAssetManager.Init*
+  commentId: Overload:Engine.Asset.ServerAssetManager.Init
+  name: Init
+  nameWithType: ServerAssetManager.Init
+  fullName: Engine.Asset.ServerAssetManager.Init
+- uid: Engine.Factory.Manager.Shutdown
+  commentId: M:Engine.Factory.Manager.Shutdown
+  parent: Engine.Factory.Manager
+  name: Shutdown()
+  nameWithType: Manager.Shutdown()
+  fullName: Engine.Factory.Manager.Shutdown()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.Shutdown
+    name: Shutdown
+    nameWithType: Manager.Shutdown
+    fullName: Engine.Factory.Manager.Shutdown
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.Shutdown
+    name: Shutdown
+    nameWithType: Manager.Shutdown
+    fullName: Engine.Factory.Manager.Shutdown
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Engine.Asset.ServerAssetManager.Shutdown*
+  commentId: Overload:Engine.Asset.ServerAssetManager.Shutdown
+  name: Shutdown
+  nameWithType: ServerAssetManager.Shutdown
+  fullName: Engine.Asset.ServerAssetManager.Shutdown
+- uid: Engine.Factory.Manager.Process
+  commentId: M:Engine.Factory.Manager.Process
+  parent: Engine.Factory.Manager
+  name: Process()
+  nameWithType: Manager.Process()
+  fullName: Engine.Factory.Manager.Process()
+  spec.csharp:
+  - uid: Engine.Factory.Manager.Process
+    name: Process
+    nameWithType: Manager.Process
+    fullName: Engine.Factory.Manager.Process
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.Factory.Manager.Process
+    name: Process
+    nameWithType: Manager.Process
+    fullName: Engine.Factory.Manager.Process
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Engine.Asset.ServerAssetManager.Process*
+  commentId: Overload:Engine.Asset.ServerAssetManager.Process
+  name: Process
+  nameWithType: ServerAssetManager.Process
+  fullName: Engine.Asset.ServerAssetManager.Process
+- uid: Engine.Asset.ServerAssetManager.GetPlayerPrefab*
+  commentId: Overload:Engine.Asset.ServerAssetManager.GetPlayerPrefab
+  name: GetPlayerPrefab
+  nameWithType: ServerAssetManager.GetPlayerPrefab
+  fullName: Engine.Asset.ServerAssetManager.GetPlayerPrefab
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

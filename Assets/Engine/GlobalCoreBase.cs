@@ -54,11 +54,11 @@ namespace Engine
         /// <summary>
         /// Called by mono behavior on application quit
         /// </summary>
-        internal void OnApplicationQuit()
+        /*public void OnApplicationQuit()
         {
             //Call abstract method for derived class
             Shutdown();
-        }
+        }*/
 
         /*
         * Internal Variables

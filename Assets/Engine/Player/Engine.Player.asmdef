@@ -2,7 +2,10 @@
     "name": "Engine.Player",
     "references": [
         "GUID:ab0bf26c474862745b86bd0d94851aea",
-        "GUID:8b26b4ffcbc22dc4cbc2c215f4fe3def"
+        "GUID:8b26b4ffcbc22dc4cbc2c215f4fe3def",
+        "GUID:f2d49d9fa7e7eb3418e39723a7d3b92f",
+        "GUID:7029235393baeb24397b48842d3c66f2",
+        "GUID:40ba67163def5bd4491016fdda1e97e0"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

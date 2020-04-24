@@ -44,8 +44,12 @@ items:
   inheritance:
   - System.Object
   derivedClasses:
+  - Engine.Networking.FinishedLoading_4
+  - Engine.Networking.KeepAlive_0
   - Engine.Networking.LoginRequest_1
   - Engine.Networking.LoginResponse_2
+  - Engine.Networking.UpdateMyPlayerPosition_3
+  - Engine.Networking.WalkRequest_5
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)

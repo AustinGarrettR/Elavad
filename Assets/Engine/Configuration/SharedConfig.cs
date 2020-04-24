@@ -30,6 +30,11 @@ namespace Engine.Configuration
         /// </summary>
         public static readonly int MAX_BUFFER_SIZE = 1024;
 
+        /// <summary>
+        /// How often to send the keep alive packet to maintain connection
+        /// </summary>
+        public static readonly int KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS = 3000;
+
         /*
          * Account
          */
@@ -73,9 +78,14 @@ namespace Engine.Configuration
          */
 
         /// <summary>
-        /// Location of the main scene
+        /// Location of the client scene
         /// </summary>
-        public static readonly string MAIN_SCENE_PATH = "Assets/Scenes/Engine/Main.unity";
+        public static readonly string CLIENT_SCENE_PATH = "Assets/Scenes/Engine/Client.unity";
+
+        /// <summary>
+        /// Location of the server scene
+        /// </summary>
+        public static readonly string SERVER_SCENE_PATH = "Assets/Scenes/Engine/Server.unity";
 
         /// <summary>
         /// Location of the login scene

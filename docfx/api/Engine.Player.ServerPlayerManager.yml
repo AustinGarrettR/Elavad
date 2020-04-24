@@ -5,6 +5,7 @@ items:
   id: ServerPlayerManager
   parent: Engine.Player
   children:
+  - Engine.Player.ServerPlayerManager.#ctor(Engine.Account.ServerLoginManager,Engine.Asset.ServerAssetManager,Engine.Networking.ConnectionManager)
   - Engine.Player.ServerPlayerManager.Init
   - Engine.Player.ServerPlayerManager.Process
   - Engine.Player.ServerPlayerManager.Shutdown
@@ -22,7 +23,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ServerPlayerManager
     path: ../Assets/Engine/Player/ServerPlayerManager.cs
-    startLine: 8
+    startLine: 13
   assemblies:
   - Engine.Player
   namespace: Engine.Player
@@ -49,6 +50,48 @@ items:
   modifiers.vb:
   - Public
   - Class
+- uid: Engine.Player.ServerPlayerManager.#ctor(Engine.Account.ServerLoginManager,Engine.Asset.ServerAssetManager,Engine.Networking.ConnectionManager)
+  commentId: M:Engine.Player.ServerPlayerManager.#ctor(Engine.Account.ServerLoginManager,Engine.Asset.ServerAssetManager,Engine.Networking.ConnectionManager)
+  id: '#ctor(Engine.Account.ServerLoginManager,Engine.Asset.ServerAssetManager,Engine.Networking.ConnectionManager)'
+  parent: Engine.Player.ServerPlayerManager
+  langs:
+  - csharp
+  - vb
+  name: ServerPlayerManager(ServerLoginManager, ServerAssetManager, ConnectionManager)
+  nameWithType: ServerPlayerManager.ServerPlayerManager(ServerLoginManager, ServerAssetManager, ConnectionManager)
+  fullName: Engine.Player.ServerPlayerManager.ServerPlayerManager(Engine.Account.ServerLoginManager, Engine.Asset.ServerAssetManager, Engine.Networking.ConnectionManager)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/Engine/Player/ServerPlayerManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: .ctor
+    path: ../Assets/Engine/Player/ServerPlayerManager.cs
+    startLine: 25
+  assemblies:
+  - Engine.Player
+  namespace: Engine.Player
+  summary: "\nConstructor\n"
+  example: []
+  syntax:
+    content: public ServerPlayerManager(ServerLoginManager serverLoginManager, ServerAssetManager serverAssetManager, ConnectionManager connectionManager)
+    parameters:
+    - id: serverLoginManager
+      type: Engine.Account.ServerLoginManager
+      description: The server login manager reference
+    - id: serverAssetManager
+      type: Engine.Asset.ServerAssetManager
+      description: The server asset manager reference
+    - id: connectionManager
+      type: Engine.Networking.ConnectionManager
+      description: The connection manager reference
+    content.vb: Public Sub New(serverLoginManager As ServerLoginManager, serverAssetManager As ServerAssetManager, connectionManager As ConnectionManager)
+  overload: Engine.Player.ServerPlayerManager.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: Engine.Player.ServerPlayerManager.Init
   commentId: M:Engine.Player.ServerPlayerManager.Init
   id: Init
@@ -67,7 +110,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/Player/ServerPlayerManager.cs
-    startLine: 13
+    startLine: 39
   assemblies:
   - Engine.Player
   namespace: Engine.Player
@@ -102,7 +145,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/Player/ServerPlayerManager.cs
-    startLine: 22
+    startLine: 51
   assemblies:
   - Engine.Player
   namespace: Engine.Player
@@ -137,7 +180,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/Player/ServerPlayerManager.cs
-    startLine: 30
+    startLine: 59
   assemblies:
   - Engine.Player
   namespace: Engine.Player
@@ -491,6 +534,44 @@ references:
   name: Engine.Factory
   nameWithType: Engine.Factory
   fullName: Engine.Factory
+- uid: Engine.Player.ServerPlayerManager.#ctor*
+  commentId: Overload:Engine.Player.ServerPlayerManager.#ctor
+  name: ServerPlayerManager
+  nameWithType: ServerPlayerManager.ServerPlayerManager
+  fullName: Engine.Player.ServerPlayerManager.ServerPlayerManager
+- uid: Engine.Account.ServerLoginManager
+  commentId: T:Engine.Account.ServerLoginManager
+  parent: Engine.Account
+  name: ServerLoginManager
+  nameWithType: ServerLoginManager
+  fullName: Engine.Account.ServerLoginManager
+- uid: Engine.Asset.ServerAssetManager
+  commentId: T:Engine.Asset.ServerAssetManager
+  parent: Engine.Asset
+  name: ServerAssetManager
+  nameWithType: ServerAssetManager
+  fullName: Engine.Asset.ServerAssetManager
+- uid: Engine.Networking.ConnectionManager
+  commentId: T:Engine.Networking.ConnectionManager
+  parent: Engine.Networking
+  name: ConnectionManager
+  nameWithType: ConnectionManager
+  fullName: Engine.Networking.ConnectionManager
+- uid: Engine.Account
+  commentId: N:Engine.Account
+  name: Engine.Account
+  nameWithType: Engine.Account
+  fullName: Engine.Account
+- uid: Engine.Asset
+  commentId: N:Engine.Asset
+  name: Engine.Asset
+  nameWithType: Engine.Asset
+  fullName: Engine.Asset
+- uid: Engine.Networking
+  commentId: N:Engine.Networking
+  name: Engine.Networking
+  nameWithType: Engine.Networking
+  fullName: Engine.Networking
 - uid: Engine.Factory.Manager.Init
   commentId: M:Engine.Factory.Manager.Init
   parent: Engine.Factory.Manager

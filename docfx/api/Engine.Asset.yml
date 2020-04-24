@@ -6,10 +6,13 @@ items:
   children:
   - Engine.Asset.ClientAssetManager
   - Engine.Asset.ClientAssetPack
-  - Engine.Asset.Player_Pack
+  - Engine.Asset.ClientPlayerPack
+  - Engine.Asset.ServerAssetManager
+  - Engine.Asset.ServerAssetPack
+  - Engine.Asset.ServerPlayerPack
   - Engine.Asset.SharedAssetManager
   - Engine.Asset.SharedAssetPack
-  - Engine.Asset.UI_Pack
+  - Engine.Asset.UIPack
   langs:
   - csharp
   - vb
@@ -31,12 +34,29 @@ references:
   name: ClientAssetPack
   nameWithType: ClientAssetPack
   fullName: Engine.Asset.ClientAssetPack
-- uid: Engine.Asset.Player_Pack
-  commentId: T:Engine.Asset.Player_Pack
+- uid: Engine.Asset.ClientPlayerPack
+  commentId: T:Engine.Asset.ClientPlayerPack
   parent: Engine.Asset
-  name: Player_Pack
-  nameWithType: Player_Pack
-  fullName: Engine.Asset.Player_Pack
+  name: ClientPlayerPack
+  nameWithType: ClientPlayerPack
+  fullName: Engine.Asset.ClientPlayerPack
+- uid: Engine.Asset.ServerAssetManager
+  commentId: T:Engine.Asset.ServerAssetManager
+  parent: Engine.Asset
+  name: ServerAssetManager
+  nameWithType: ServerAssetManager
+  fullName: Engine.Asset.ServerAssetManager
+- uid: Engine.Asset.ServerAssetPack
+  commentId: T:Engine.Asset.ServerAssetPack
+  name: ServerAssetPack
+  nameWithType: ServerAssetPack
+  fullName: Engine.Asset.ServerAssetPack
+- uid: Engine.Asset.ServerPlayerPack
+  commentId: T:Engine.Asset.ServerPlayerPack
+  parent: Engine.Asset
+  name: ServerPlayerPack
+  nameWithType: ServerPlayerPack
+  fullName: Engine.Asset.ServerPlayerPack
 - uid: Engine.Asset.SharedAssetManager
   commentId: T:Engine.Asset.SharedAssetManager
   name: SharedAssetManager
@@ -47,12 +67,12 @@ references:
   name: SharedAssetPack
   nameWithType: SharedAssetPack
   fullName: Engine.Asset.SharedAssetPack
-- uid: Engine.Asset.UI_Pack
-  commentId: T:Engine.Asset.UI_Pack
+- uid: Engine.Asset.UIPack
+  commentId: T:Engine.Asset.UIPack
   parent: Engine.Asset
-  name: UI_Pack
-  nameWithType: UI_Pack
-  fullName: Engine.Asset.UI_Pack
+  name: UIPack
+  nameWithType: UIPack
+  fullName: Engine.Asset.UIPack
 - uid: Engine.Asset
   commentId: N:Engine.Asset
   name: Engine.Asset

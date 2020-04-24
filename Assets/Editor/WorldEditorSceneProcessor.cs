@@ -50,7 +50,7 @@ namespace Editor
         /// </summary>
         private static void checkScene()
         {
-            if (enteringPlayMode == false && Application.isPlaying == false && EditorSceneManager.GetActiveScene().path.Equals(SharedConfig.MAIN_SCENE_PATH))
+            if (enteringPlayMode == false && Application.isPlaying == false && (EditorSceneManager.GetActiveScene().path.Equals(SharedConfig.CLIENT_SCENE_PATH) || EditorSceneManager.GetActiveScene().path.Equals(SharedConfig.SERVER_SCENE_PATH)))
             {                
                 LoadWorld();
                 SetDefaultSkybox();
@@ -62,7 +62,7 @@ namespace Editor
         /// </summary>
         private static void UnloadWorldScenes()
         {
-            if (Application.isPlaying == false && EditorSceneManager.GetActiveScene().path.Equals(SharedConfig.MAIN_SCENE_PATH))
+            if (Application.isPlaying == false && (EditorSceneManager.GetActiveScene().path.Equals(SharedConfig.CLIENT_SCENE_PATH) || EditorSceneManager.GetActiveScene().path.Equals(SharedConfig.SERVER_SCENE_PATH)))
             {
                 int countLoaded = SceneManager.sceneCount;
                 Scene[] loadedScenes = new Scene[countLoaded];

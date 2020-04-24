@@ -25,7 +25,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ClientLoginManager
     path: ../Assets/Engine/Account/ClientLoginManager.cs
-    startLine: 15
+    startLine: 17
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -72,7 +72,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: .ctor
     path: ../Assets/Engine/Account/ClientLoginManager.cs
-    startLine: 27
+    startLine: 29
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -114,7 +114,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/Account/ClientLoginManager.cs
-    startLine: 40
+    startLine: 42
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -149,7 +149,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/Account/ClientLoginManager.cs
-    startLine: 55
+    startLine: 57
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -184,7 +184,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/Account/ClientLoginManager.cs
-    startLine: 63
+    startLine: 65
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -219,7 +219,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: AttemptLogin
     path: ../Assets/Engine/Account/ClientLoginManager.cs
-    startLine: 80
+    startLine: 82
   assemblies:
   - Engine.Account
   namespace: Engine.Account
@@ -270,7 +270,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: IsPlayerLoggedIn
     path: ../Assets/Engine/Account/ClientLoginManager.cs
-    startLine: 296
+    startLine: 321
   assemblies:
   - Engine.Account
   namespace: Engine.Account

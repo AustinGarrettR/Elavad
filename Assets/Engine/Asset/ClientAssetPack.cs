@@ -11,11 +11,11 @@ namespace Engine.Asset
         /// <summary>
         /// A reference to a UI Pack
         /// </summary>
-        public UI_Pack uiPack;
+        public UIPack uiPack;
 
         /// <summary>
         /// A reference to a player pack
         /// </summary>
-        public Player_Pack playerPack;
+        public ClientPlayerPack clientPlayerPack;
     }
 }
