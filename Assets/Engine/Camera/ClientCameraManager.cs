@@ -150,7 +150,7 @@ namespace Engine.CameraSystem
             Vector3 negDistance = new Vector3(0.0f, 0.0f, -distanceFromTarget);
 
             //Zoom closer when an object interceps the sight line
-            bool intercepted = false;
+          /*  bool intercepted = false;
 
             if (zoomWhenIntercepted)
             {
@@ -160,37 +160,46 @@ namespace Engine.CameraSystem
                 //Layer mask all but players layer (=~ inverts the bits)
                 int layerMask =~ LayerMask.GetMask(SharedConfig.PLAYERS_LAYER_NAME);
 
-                if (Physics.SphereCast(rotateAroundTarget.transform.position + cameraOffset, 0.35f, positionBeforeRaycast - rotateAroundTarget.transform.position + cameraOffset, out RaycastHit hit, distanceFromTarget, layerMask))
+                RaycastHit[] hits = Physics.SphereCastAll(rotateAroundTarget.transform.position + cameraOffset, 0.35f, positionBeforeRaycast - rotateAroundTarget.transform.position + cameraOffset, distanceFromTarget, layerMask);
+                if (hits.Length > 0)
                 {
                     //How far extra to move in
                     float offset = 0.15f;
-
-                    //Update distance to the hit and offset
-                    float updatedDistance = hit.distance - offset;
-
-                    //Only update the actual zoom instantly if forcing zoom in.
-                    //Zooming out should still be dampened.
-                    if (updatedDistance < smoothDistanceFromTarget + offset)
+                    foreach (RaycastHit hit in hits)
                     {
-                        negDistance = new Vector3(0.0f, 0.0f, -updatedDistance);
-                        smoothDistanceFromTarget = updatedDistance;
+                        if (hit.collider.bounds.Contains(positionBeforeRaycast) || hit.collider.bounds.Contains(positionBeforeRaycast + new Vector3(0, 0, -offset)))
+                        {
+                            if (smoothDistanceFromTarget > hit.distance - offset)
+                            {
+                                //Update distance to the hit and offset
+                                float updatedDistance = hit.distance - offset;
 
-                        //Set intercepted to true so we dont dampen the zoom
-                        intercepted = true;
+                                //Only update the actual zoom instantly if forcing zoom in.
+                                //Zooming out should still be dampened.
+                                //if (updatedDistance < smoothDistanceFromTarget + offset)
+                                //{
+                                    negDistance = new Vector3(0.0f, 0.0f, -updatedDistance);
+                                    smoothDistanceFromTarget = updatedDistance;
+
+                                    //Set intercepted to true so we dont dampen the zoom
+                                    intercepted = true;
+                                //}
+                            }
+                        }
                     }
-
 
                 }
             }
+            */
 
             //If not intercepted, change zoom gradually
-            if(intercepted == false)
-            {
+            //if(intercepted == false)
+            //{
 
                 smoothDistanceFromTarget = Mathf.Lerp(smoothDistanceFromTarget, distanceFromTarget, smoothZoomSpeed * Time.deltaTime);
 
                 negDistance = new Vector3(0.0f, 0.0f, -smoothDistanceFromTarget);
-            }
+            //}
 
             //Calcualate new position with distance
             Vector3 position = rotation * negDistance + rotateAroundTarget.transform.position + cameraOffset;

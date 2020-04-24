@@ -52,7 +52,7 @@ namespace Engine.Networking
 
             if (isServer)
                 ServerUpdateLoop();
-            else if (networkDriver.IsCreated)
+            else if (clientConnecting)
             {
                 ClientUpdateLoop();
                 KeepAlive();
@@ -70,6 +70,11 @@ namespace Engine.Networking
         /*
          * Internal Variables
          */
+
+        /// <summary>
+        /// If the client is trying to connect
+        /// </summary>
+        private bool clientConnecting;
 
         /// <summary>
         /// Instance running as server or client
@@ -211,7 +216,15 @@ namespace Engine.Networking
             connections = new List<NetworkConnection>();
             escapedConnections = new List<int>();
 
-            networkDriver = NetworkDriver.Create();
+            //Config
+            NetworkConfigParameter config = new NetworkConfigParameter
+            {
+                connectTimeoutMS = 8000,
+                disconnectTimeoutMS = 30000
+            };
+
+            networkDriver = NetworkDriver.Create(config);
+
 
             unreliablePipeline = networkDriver.CreatePipeline(typeof(UnreliableSequencedPipelineStage));
             reliablePipeline = networkDriver.CreatePipeline(typeof(ReliableSequencedPipelineStage));
@@ -232,9 +245,12 @@ namespace Engine.Networking
             }
             else
             {
+
                 //Connect if client
                 NetworkConnection connection = networkDriver.Connect(endpoint);
                 connections.Add(connection);
+
+                clientConnecting = true;
             }
 
         }
@@ -305,7 +321,7 @@ namespace Engine.Networking
                     if (cmd == NetworkEvent.Type.Data)
                     {
                         int streamMaxLength = stream.Length;
-                        while (stream.GetBytesRead() < streamMaxLength)
+                        while (networkDriver.IsCreated && stream.GetBytesRead() < streamMaxLength)
                         {
                             byte nextByte = stream.ReadByte();
                             if (nextByte == SharedConfig.ESCAPE)
@@ -384,7 +400,7 @@ namespace Engine.Networking
                 else if (cmd == NetworkEvent.Type.Data)
                 {
                     int streamMaxLength = stream.Length;
-                    while (stream.GetBytesRead() < streamMaxLength)
+                    while (networkDriver.IsCreated && stream.GetBytesRead() < streamMaxLength)
                     {
                         byte nextByte = stream.ReadByte();
                         if (nextByte == SharedConfig.ESCAPE)
@@ -425,6 +441,7 @@ namespace Engine.Networking
                 else if (cmd == NetworkEvent.Type.Disconnect)
                 {
                     Log.LogMsg("Client got disconnected from server");
+                    OnDisconnectedFromServer();
                     Close();
                 }
 
@@ -457,8 +474,11 @@ namespace Engine.Networking
                 connections = null;
             }
 
-            if (networkDriver.IsCreated)
+            if (clientConnecting || connected)
+            {
                 networkDriver.Dispose();
+                networkDriver = default;
+            }
 
             //Clear variables
             connected = false;
@@ -607,6 +627,7 @@ namespace Engine.Networking
         /// </summary>
         internal void OnFailedConnect()
         {
+            clientConnecting = false;
             NotifyFailedConnect?.Invoke();
         }
 
@@ -615,6 +636,7 @@ namespace Engine.Networking
         /// </summary>
         private void OnDisconnectedFromServer()
         {
+            clientConnecting = false;
             NotifyOnDisconnectedFromServer?.Invoke();
         }
 

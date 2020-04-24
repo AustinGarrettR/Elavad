@@ -156,7 +156,7 @@ namespace Engine.Account
                 SceneManager.LoadScene(Path.GetFileNameWithoutExtension(SharedConfig.CLIENT_SCENE_PATH), LoadSceneMode.Single);
             } else
             {
-                this.statusMessageAction(false, Color.white, "Unable to connect to server.");
+                OnFailedToConnect();
             }
         }
 
