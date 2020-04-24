@@ -16,6 +16,8 @@
   items:
   - uid: Editor.BuildSceneEditor
     name: BuildSceneEditor
+  - uid: Editor.GameBuildPipeline
+    name: GameBuildPipeline
   - uid: Editor.PacketInfoEditor
     name: PacketInfoEditor
   - uid: Editor.WorldEditorSceneProcessor

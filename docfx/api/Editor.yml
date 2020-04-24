@@ -5,6 +5,7 @@ items:
   id: Editor
   children:
   - Editor.BuildSceneEditor
+  - Editor.GameBuildPipeline
   - Editor.PacketInfoEditor
   - Editor.WorldEditorSceneProcessor
   langs:
@@ -22,6 +23,11 @@ references:
   name: BuildSceneEditor
   nameWithType: BuildSceneEditor
   fullName: Editor.BuildSceneEditor
+- uid: Editor.GameBuildPipeline
+  commentId: T:Editor.GameBuildPipeline
+  name: GameBuildPipeline
+  nameWithType: GameBuildPipeline
+  fullName: Editor.GameBuildPipeline
 - uid: Editor.PacketInfoEditor
   commentId: T:Editor.PacketInfoEditor
   name: PacketInfoEditor

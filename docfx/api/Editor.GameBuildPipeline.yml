@@ -1,35 +1,36 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Engine.GlobalCoreBase
-  commentId: T:Engine.GlobalCoreBase
-  id: GlobalCoreBase
-  parent: Engine
+- uid: Editor.GameBuildPipeline
+  commentId: T:Editor.GameBuildPipeline
+  id: GameBuildPipeline
+  parent: Editor
   children:
-  - Engine.GlobalCoreBase.OnApplicationQuit
+  - Editor.GameBuildPipeline.BuildWindows32Client
+  - Editor.GameBuildPipeline.BuildWindows32Server
+  - Editor.GameBuildPipeline.BuildWindows64Client
+  - Editor.GameBuildPipeline.BuildWindows64Server
   langs:
   - csharp
   - vb
-  name: GlobalCoreBase
-  nameWithType: GlobalCoreBase
-  fullName: Engine.GlobalCoreBase
+  name: GameBuildPipeline
+  nameWithType: GameBuildPipeline
+  fullName: Editor.GameBuildPipeline
   type: Class
   source:
     remote:
-      path: Assets/Engine/GlobalCoreBase.cs
+      path: Assets/Editor/GameBuildPipeline.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: GlobalCoreBase
-    path: ../Assets/Engine/GlobalCoreBase.cs
+    id: GameBuildPipeline
+    path: ../Assets/Editor/GameBuildPipeline.cs
     startLine: 9
   assemblies:
-  - Engine
-  namespace: Engine
-  summary: "\nThe base monobehavior for the client and server cores\n"
-  example: []
+  - Editor
+  namespace: Editor
   syntax:
-    content: 'public abstract class GlobalCoreBase : MonoBehaviour'
+    content: 'public class GameBuildPipeline : MonoBehaviour'
     content.vb: >-
-      Public MustInherit Class GlobalCoreBase
+      Public Class GameBuildPipeline
           Inherits MonoBehaviour
   inheritance:
   - System.Object
@@ -37,9 +38,6 @@ items:
   - UnityEngine.Component
   - UnityEngine.Behaviour
   - UnityEngine.MonoBehaviour
-  derivedClasses:
-  - Engine.ClientCore
-  - Engine.ServerCore
   inheritedMembers:
   - UnityEngine.MonoBehaviour.IsInvoking
   - UnityEngine.MonoBehaviour.CancelInvoke
@@ -142,50 +140,192 @@ items:
   - System.Object.ReferenceEquals(System.Object,System.Object)
   modifiers.csharp:
   - public
-  - abstract
   - class
   modifiers.vb:
   - Public
-  - MustInherit
   - Class
-- uid: Engine.GlobalCoreBase.OnApplicationQuit
-  commentId: M:Engine.GlobalCoreBase.OnApplicationQuit
-  id: OnApplicationQuit
-  parent: Engine.GlobalCoreBase
+- uid: Editor.GameBuildPipeline.BuildWindows64Client
+  commentId: M:Editor.GameBuildPipeline.BuildWindows64Client
+  id: BuildWindows64Client
+  parent: Editor.GameBuildPipeline
   langs:
   - csharp
   - vb
-  name: OnApplicationQuit()
-  nameWithType: GlobalCoreBase.OnApplicationQuit()
-  fullName: Engine.GlobalCoreBase.OnApplicationQuit()
+  name: BuildWindows64Client()
+  nameWithType: GameBuildPipeline.BuildWindows64Client()
+  fullName: Editor.GameBuildPipeline.BuildWindows64Client()
   type: Method
   source:
     remote:
-      path: Assets/Engine/GlobalCoreBase.cs
+      path: Assets/Editor/GameBuildPipeline.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: OnApplicationQuit
-    path: ../Assets/Engine/GlobalCoreBase.cs
-    startLine: 56
+    id: BuildWindows64Client
+    path: ../Assets/Editor/GameBuildPipeline.cs
+    startLine: 15
   assemblies:
-  - Engine
-  namespace: Engine
-  summary: "\nCalled by mono behavior on application quit\n"
-  example: []
+  - Editor
+  namespace: Editor
   syntax:
-    content: public void OnApplicationQuit()
-    content.vb: Public Sub OnApplicationQuit
-  overload: Engine.GlobalCoreBase.OnApplicationQuit*
+    content: >-
+      [MenuItem("Elavad/Build/Windows64/Build Client")]
+
+      public static void BuildWindows64Client()
+    content.vb: >-
+      <MenuItem("Elavad/Build/Windows64/Build Client")>
+
+      Public Shared Sub BuildWindows64Client
+  overload: Editor.GameBuildPipeline.BuildWindows64Client*
+  attributes:
+  - type: UnityEditor.MenuItem
+    ctor: UnityEditor.MenuItem.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Elavad/Build/Windows64/Build Client
   modifiers.csharp:
   - public
+  - static
   modifiers.vb:
   - Public
+  - Shared
+- uid: Editor.GameBuildPipeline.BuildWindows64Server
+  commentId: M:Editor.GameBuildPipeline.BuildWindows64Server
+  id: BuildWindows64Server
+  parent: Editor.GameBuildPipeline
+  langs:
+  - csharp
+  - vb
+  name: BuildWindows64Server()
+  nameWithType: GameBuildPipeline.BuildWindows64Server()
+  fullName: Editor.GameBuildPipeline.BuildWindows64Server()
+  type: Method
+  source:
+    remote:
+      path: Assets/Editor/GameBuildPipeline.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: BuildWindows64Server
+    path: ../Assets/Editor/GameBuildPipeline.cs
+    startLine: 21
+  assemblies:
+  - Editor
+  namespace: Editor
+  syntax:
+    content: >-
+      [MenuItem("Elavad/Build/Windows64/Build Server")]
+
+      public static void BuildWindows64Server()
+    content.vb: >-
+      <MenuItem("Elavad/Build/Windows64/Build Server")>
+
+      Public Shared Sub BuildWindows64Server
+  overload: Editor.GameBuildPipeline.BuildWindows64Server*
+  attributes:
+  - type: UnityEditor.MenuItem
+    ctor: UnityEditor.MenuItem.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Elavad/Build/Windows64/Build Server
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Editor.GameBuildPipeline.BuildWindows32Client
+  commentId: M:Editor.GameBuildPipeline.BuildWindows32Client
+  id: BuildWindows32Client
+  parent: Editor.GameBuildPipeline
+  langs:
+  - csharp
+  - vb
+  name: BuildWindows32Client()
+  nameWithType: GameBuildPipeline.BuildWindows32Client()
+  fullName: Editor.GameBuildPipeline.BuildWindows32Client()
+  type: Method
+  source:
+    remote:
+      path: Assets/Editor/GameBuildPipeline.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: BuildWindows32Client
+    path: ../Assets/Editor/GameBuildPipeline.cs
+    startLine: 27
+  assemblies:
+  - Editor
+  namespace: Editor
+  syntax:
+    content: >-
+      [MenuItem("Elavad/Build/Windows32/Build Client")]
+
+      public static void BuildWindows32Client()
+    content.vb: >-
+      <MenuItem("Elavad/Build/Windows32/Build Client")>
+
+      Public Shared Sub BuildWindows32Client
+  overload: Editor.GameBuildPipeline.BuildWindows32Client*
+  attributes:
+  - type: UnityEditor.MenuItem
+    ctor: UnityEditor.MenuItem.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Elavad/Build/Windows32/Build Client
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: Editor.GameBuildPipeline.BuildWindows32Server
+  commentId: M:Editor.GameBuildPipeline.BuildWindows32Server
+  id: BuildWindows32Server
+  parent: Editor.GameBuildPipeline
+  langs:
+  - csharp
+  - vb
+  name: BuildWindows32Server()
+  nameWithType: GameBuildPipeline.BuildWindows32Server()
+  fullName: Editor.GameBuildPipeline.BuildWindows32Server()
+  type: Method
+  source:
+    remote:
+      path: Assets/Editor/GameBuildPipeline.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: BuildWindows32Server
+    path: ../Assets/Editor/GameBuildPipeline.cs
+    startLine: 33
+  assemblies:
+  - Editor
+  namespace: Editor
+  syntax:
+    content: >-
+      [MenuItem("Elavad/Build/Windows32/Build Server")]
+
+      public static void BuildWindows32Server()
+    content.vb: >-
+      <MenuItem("Elavad/Build/Windows32/Build Server")>
+
+      Public Shared Sub BuildWindows32Server
+  overload: Editor.GameBuildPipeline.BuildWindows32Server*
+  attributes:
+  - type: UnityEditor.MenuItem
+    ctor: UnityEditor.MenuItem.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Elavad/Build/Windows32/Build Server
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 references:
-- uid: Engine
-  commentId: N:Engine
-  name: Engine
-  nameWithType: Engine
-  fullName: Engine
+- uid: Editor
+  commentId: N:Editor
+  name: Editor
+  nameWithType: Editor
+  fullName: Editor
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -5342,8 +5482,23 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.GlobalCoreBase.OnApplicationQuit*
-  commentId: Overload:Engine.GlobalCoreBase.OnApplicationQuit
-  name: OnApplicationQuit
-  nameWithType: GlobalCoreBase.OnApplicationQuit
-  fullName: Engine.GlobalCoreBase.OnApplicationQuit
+- uid: Editor.GameBuildPipeline.BuildWindows64Client*
+  commentId: Overload:Editor.GameBuildPipeline.BuildWindows64Client
+  name: BuildWindows64Client
+  nameWithType: GameBuildPipeline.BuildWindows64Client
+  fullName: Editor.GameBuildPipeline.BuildWindows64Client
+- uid: Editor.GameBuildPipeline.BuildWindows64Server*
+  commentId: Overload:Editor.GameBuildPipeline.BuildWindows64Server
+  name: BuildWindows64Server
+  nameWithType: GameBuildPipeline.BuildWindows64Server
+  fullName: Editor.GameBuildPipeline.BuildWindows64Server
+- uid: Editor.GameBuildPipeline.BuildWindows32Client*
+  commentId: Overload:Editor.GameBuildPipeline.BuildWindows32Client
+  name: BuildWindows32Client
+  nameWithType: GameBuildPipeline.BuildWindows32Client
+  fullName: Editor.GameBuildPipeline.BuildWindows32Client
+- uid: Editor.GameBuildPipeline.BuildWindows32Server*
+  commentId: Overload:Editor.GameBuildPipeline.BuildWindows32Server
+  name: BuildWindows32Server
+  nameWithType: GameBuildPipeline.BuildWindows32Server
+  fullName: Editor.GameBuildPipeline.BuildWindows32Server

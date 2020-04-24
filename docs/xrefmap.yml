@@ -82,6 +82,64 @@ references:
   commentId: T:Editor.BuildSceneEditor
   fullName: Editor.BuildSceneEditor
   nameWithType: BuildSceneEditor
+- uid: Editor.GameBuildPipeline
+  name: GameBuildPipeline
+  href: api/Editor.GameBuildPipeline.html
+  commentId: T:Editor.GameBuildPipeline
+  fullName: Editor.GameBuildPipeline
+  nameWithType: GameBuildPipeline
+- uid: Editor.GameBuildPipeline.BuildWindows32Client
+  name: BuildWindows32Client()
+  href: api/Editor.GameBuildPipeline.html#Editor_GameBuildPipeline_BuildWindows32Client
+  commentId: M:Editor.GameBuildPipeline.BuildWindows32Client
+  fullName: Editor.GameBuildPipeline.BuildWindows32Client()
+  nameWithType: GameBuildPipeline.BuildWindows32Client()
+- uid: Editor.GameBuildPipeline.BuildWindows32Client*
+  name: BuildWindows32Client
+  href: api/Editor.GameBuildPipeline.html#Editor_GameBuildPipeline_BuildWindows32Client_
+  commentId: Overload:Editor.GameBuildPipeline.BuildWindows32Client
+  isSpec: "True"
+  fullName: Editor.GameBuildPipeline.BuildWindows32Client
+  nameWithType: GameBuildPipeline.BuildWindows32Client
+- uid: Editor.GameBuildPipeline.BuildWindows32Server
+  name: BuildWindows32Server()
+  href: api/Editor.GameBuildPipeline.html#Editor_GameBuildPipeline_BuildWindows32Server
+  commentId: M:Editor.GameBuildPipeline.BuildWindows32Server
+  fullName: Editor.GameBuildPipeline.BuildWindows32Server()
+  nameWithType: GameBuildPipeline.BuildWindows32Server()
+- uid: Editor.GameBuildPipeline.BuildWindows32Server*
+  name: BuildWindows32Server
+  href: api/Editor.GameBuildPipeline.html#Editor_GameBuildPipeline_BuildWindows32Server_
+  commentId: Overload:Editor.GameBuildPipeline.BuildWindows32Server
+  isSpec: "True"
+  fullName: Editor.GameBuildPipeline.BuildWindows32Server
+  nameWithType: GameBuildPipeline.BuildWindows32Server
+- uid: Editor.GameBuildPipeline.BuildWindows64Client
+  name: BuildWindows64Client()
+  href: api/Editor.GameBuildPipeline.html#Editor_GameBuildPipeline_BuildWindows64Client
+  commentId: M:Editor.GameBuildPipeline.BuildWindows64Client
+  fullName: Editor.GameBuildPipeline.BuildWindows64Client()
+  nameWithType: GameBuildPipeline.BuildWindows64Client()
+- uid: Editor.GameBuildPipeline.BuildWindows64Client*
+  name: BuildWindows64Client
+  href: api/Editor.GameBuildPipeline.html#Editor_GameBuildPipeline_BuildWindows64Client_
+  commentId: Overload:Editor.GameBuildPipeline.BuildWindows64Client
+  isSpec: "True"
+  fullName: Editor.GameBuildPipeline.BuildWindows64Client
+  nameWithType: GameBuildPipeline.BuildWindows64Client
+- uid: Editor.GameBuildPipeline.BuildWindows64Server
+  name: BuildWindows64Server()
+  href: api/Editor.GameBuildPipeline.html#Editor_GameBuildPipeline_BuildWindows64Server
+  commentId: M:Editor.GameBuildPipeline.BuildWindows64Server
+  fullName: Editor.GameBuildPipeline.BuildWindows64Server()
+  nameWithType: GameBuildPipeline.BuildWindows64Server()
+- uid: Editor.GameBuildPipeline.BuildWindows64Server*
+  name: BuildWindows64Server
+  href: api/Editor.GameBuildPipeline.html#Editor_GameBuildPipeline_BuildWindows64Server_
+  commentId: Overload:Editor.GameBuildPipeline.BuildWindows64Server
+  isSpec: "True"
+  fullName: Editor.GameBuildPipeline.BuildWindows64Server
+  nameWithType: GameBuildPipeline.BuildWindows64Server
 - uid: Editor.PacketInfoEditor
   name: PacketInfoEditor
   href: api/Editor.PacketInfoEditor.html
@@ -1097,6 +1155,19 @@ references:
   commentId: T:Engine.GlobalCoreBase
   fullName: Engine.GlobalCoreBase
   nameWithType: GlobalCoreBase
+- uid: Engine.GlobalCoreBase.OnApplicationQuit
+  name: OnApplicationQuit()
+  href: api/Engine.GlobalCoreBase.html#Engine_GlobalCoreBase_OnApplicationQuit
+  commentId: M:Engine.GlobalCoreBase.OnApplicationQuit
+  fullName: Engine.GlobalCoreBase.OnApplicationQuit()
+  nameWithType: GlobalCoreBase.OnApplicationQuit()
+- uid: Engine.GlobalCoreBase.OnApplicationQuit*
+  name: OnApplicationQuit
+  href: api/Engine.GlobalCoreBase.html#Engine_GlobalCoreBase_OnApplicationQuit_
+  commentId: Overload:Engine.GlobalCoreBase.OnApplicationQuit
+  isSpec: "True"
+  fullName: Engine.GlobalCoreBase.OnApplicationQuit
+  nameWithType: GlobalCoreBase.OnApplicationQuit
 - uid: Engine.Input
   name: Engine.Input
   href: api/Engine.Input.html

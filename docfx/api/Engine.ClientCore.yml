@@ -38,6 +38,7 @@ items:
   - UnityEngine.MonoBehaviour
   - Engine.GlobalCoreBase
   inheritedMembers:
+  - Engine.GlobalCoreBase.OnApplicationQuit
   - UnityEngine.MonoBehaviour.IsInvoking
   - UnityEngine.MonoBehaviour.CancelInvoke
   - UnityEngine.MonoBehaviour.Invoke(System.String,System.Single)
@@ -190,6 +191,34 @@ references:
   name: GlobalCoreBase
   nameWithType: GlobalCoreBase
   fullName: Engine.GlobalCoreBase
+- uid: Engine.GlobalCoreBase.OnApplicationQuit
+  commentId: M:Engine.GlobalCoreBase.OnApplicationQuit
+  parent: Engine.GlobalCoreBase
+  name: OnApplicationQuit()
+  nameWithType: GlobalCoreBase.OnApplicationQuit()
+  fullName: Engine.GlobalCoreBase.OnApplicationQuit()
+  spec.csharp:
+  - uid: Engine.GlobalCoreBase.OnApplicationQuit
+    name: OnApplicationQuit
+    nameWithType: GlobalCoreBase.OnApplicationQuit
+    fullName: Engine.GlobalCoreBase.OnApplicationQuit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: Engine.GlobalCoreBase.OnApplicationQuit
+    name: OnApplicationQuit
+    nameWithType: GlobalCoreBase.OnApplicationQuit
+    fullName: Engine.GlobalCoreBase.OnApplicationQuit
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: UnityEngine.MonoBehaviour.IsInvoking
   commentId: M:UnityEngine.MonoBehaviour.IsInvoking
   parent: UnityEngine.MonoBehaviour
