@@ -38,7 +38,7 @@ items:
   - UnityEngine.MonoBehaviour
   - Engine.GlobalCoreBase
   inheritedMembers:
-  - Engine.GlobalCoreBase.OnApplicationQuit
+  - Engine.GlobalCoreBase.OnDestroy
   - UnityEngine.MonoBehaviour.IsInvoking
   - UnityEngine.MonoBehaviour.CancelInvoke
   - UnityEngine.MonoBehaviour.Invoke(System.String,System.Single)
@@ -191,17 +191,17 @@ references:
   name: GlobalCoreBase
   nameWithType: GlobalCoreBase
   fullName: Engine.GlobalCoreBase
-- uid: Engine.GlobalCoreBase.OnApplicationQuit
-  commentId: M:Engine.GlobalCoreBase.OnApplicationQuit
+- uid: Engine.GlobalCoreBase.OnDestroy
+  commentId: M:Engine.GlobalCoreBase.OnDestroy
   parent: Engine.GlobalCoreBase
-  name: OnApplicationQuit()
-  nameWithType: GlobalCoreBase.OnApplicationQuit()
-  fullName: Engine.GlobalCoreBase.OnApplicationQuit()
+  name: OnDestroy()
+  nameWithType: GlobalCoreBase.OnDestroy()
+  fullName: Engine.GlobalCoreBase.OnDestroy()
   spec.csharp:
-  - uid: Engine.GlobalCoreBase.OnApplicationQuit
-    name: OnApplicationQuit
-    nameWithType: GlobalCoreBase.OnApplicationQuit
-    fullName: Engine.GlobalCoreBase.OnApplicationQuit
+  - uid: Engine.GlobalCoreBase.OnDestroy
+    name: OnDestroy
+    nameWithType: GlobalCoreBase.OnDestroy
+    fullName: Engine.GlobalCoreBase.OnDestroy
   - name: (
     nameWithType: (
     fullName: (
@@ -209,10 +209,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.GlobalCoreBase.OnApplicationQuit
-    name: OnApplicationQuit
-    nameWithType: GlobalCoreBase.OnApplicationQuit
-    fullName: Engine.GlobalCoreBase.OnApplicationQuit
+  - uid: Engine.GlobalCoreBase.OnDestroy
+    name: OnDestroy
+    nameWithType: GlobalCoreBase.OnDestroy
+    fullName: Engine.GlobalCoreBase.OnDestroy
   - name: (
     nameWithType: (
     fullName: (

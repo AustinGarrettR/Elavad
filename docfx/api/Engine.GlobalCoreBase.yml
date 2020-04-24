@@ -5,7 +5,7 @@ items:
   id: GlobalCoreBase
   parent: Engine
   children:
-  - Engine.GlobalCoreBase.OnApplicationQuit
+  - Engine.GlobalCoreBase.OnDestroy
   langs:
   - csharp
   - vb
@@ -148,34 +148,34 @@ items:
   - Public
   - MustInherit
   - Class
-- uid: Engine.GlobalCoreBase.OnApplicationQuit
-  commentId: M:Engine.GlobalCoreBase.OnApplicationQuit
-  id: OnApplicationQuit
+- uid: Engine.GlobalCoreBase.OnDestroy
+  commentId: M:Engine.GlobalCoreBase.OnDestroy
+  id: OnDestroy
   parent: Engine.GlobalCoreBase
   langs:
   - csharp
   - vb
-  name: OnApplicationQuit()
-  nameWithType: GlobalCoreBase.OnApplicationQuit()
-  fullName: Engine.GlobalCoreBase.OnApplicationQuit()
+  name: OnDestroy()
+  nameWithType: GlobalCoreBase.OnDestroy()
+  fullName: Engine.GlobalCoreBase.OnDestroy()
   type: Method
   source:
     remote:
       path: Assets/Engine/GlobalCoreBase.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: OnApplicationQuit
+    id: OnDestroy
     path: ../Assets/Engine/GlobalCoreBase.cs
     startLine: 56
   assemblies:
   - Engine
   namespace: Engine
-  summary: "\nCalled by mono behavior on application quit\n"
+  summary: "\nCalled by mono behavior on scene reset/quit\n"
   example: []
   syntax:
-    content: public void OnApplicationQuit()
-    content.vb: Public Sub OnApplicationQuit
-  overload: Engine.GlobalCoreBase.OnApplicationQuit*
+    content: public void OnDestroy()
+    content.vb: Public Sub OnDestroy
+  overload: Engine.GlobalCoreBase.OnDestroy*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -5342,8 +5342,8 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.GlobalCoreBase.OnApplicationQuit*
-  commentId: Overload:Engine.GlobalCoreBase.OnApplicationQuit
-  name: OnApplicationQuit
-  nameWithType: GlobalCoreBase.OnApplicationQuit
-  fullName: Engine.GlobalCoreBase.OnApplicationQuit
+- uid: Engine.GlobalCoreBase.OnDestroy*
+  commentId: Overload:Engine.GlobalCoreBase.OnDestroy
+  name: OnDestroy
+  nameWithType: GlobalCoreBase.OnDestroy
+  fullName: Engine.GlobalCoreBase.OnDestroy

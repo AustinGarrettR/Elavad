@@ -147,8 +147,8 @@
     name: PacketAttribute
   - uid: Engine.Networking.ReliabilityScheme
     name: ReliabilityScheme
-  - uid: Engine.Networking.UpdateMyPlayerPosition_3
-    name: UpdateMyPlayerPosition_3
+  - uid: Engine.Networking.UpdateMyPlayerTransform_3
+    name: UpdateMyPlayerTransform_3
   - uid: Engine.Networking.WalkRequest_5
     name: WalkRequest_5
 - uid: Engine.Networking.Utility

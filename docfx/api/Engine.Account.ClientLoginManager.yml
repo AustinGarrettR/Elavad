@@ -270,7 +270,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: IsPlayerLoggedIn
     path: ../Assets/Engine/Account/ClientLoginManager.cs
-    startLine: 321
+    startLine: 322
   assemblies:
   - Engine.Account
   namespace: Engine.Account

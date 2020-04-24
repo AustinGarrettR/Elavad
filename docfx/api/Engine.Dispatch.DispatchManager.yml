@@ -32,7 +32,6 @@ items:
     content: 'public class DispatchManager : Manager'
     content.vb: >-
       Public Class DispatchManager
-
           Inherits Manager
   inheritance:
   - System.Object

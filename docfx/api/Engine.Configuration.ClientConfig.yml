@@ -6,6 +6,7 @@ items:
   parent: Engine.Configuration
   children:
   - Engine.Configuration.ClientConfig.CAMERA_DEFAULT_DISTANCE
+  - Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_POSITION_SPEED
   - Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
   - Engine.Configuration.ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION
   - Engine.Configuration.ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION_SPEED
@@ -530,6 +531,43 @@ items:
     return:
       type: System.Single
     content.vb: Public Shared ReadOnly CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED As Single
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_POSITION_SPEED
+  commentId: F:Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_POSITION_SPEED
+  id: CAMERA_DEFAULT_SMOOTH_POSITION_SPEED
+  parent: Engine.Configuration.ClientConfig
+  langs:
+  - csharp
+  - vb
+  name: CAMERA_DEFAULT_SMOOTH_POSITION_SPEED
+  nameWithType: ClientConfig.CAMERA_DEFAULT_SMOOTH_POSITION_SPEED
+  fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_POSITION_SPEED
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/ClientConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: CAMERA_DEFAULT_SMOOTH_POSITION_SPEED
+    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    startLine: 87
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nThe default speed the camera updates the target position\n"
+  example: []
+  syntax:
+    content: public static readonly float CAMERA_DEFAULT_SMOOTH_POSITION_SPEED
+    return:
+      type: System.Single
+    content.vb: Public Shared ReadOnly CAMERA_DEFAULT_SMOOTH_POSITION_SPEED As Single
   modifiers.csharp:
   - public
   - static

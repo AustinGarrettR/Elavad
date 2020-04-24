@@ -1,48 +1,52 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Engine.Networking.UpdateMyPlayerPosition_3
-  commentId: T:Engine.Networking.UpdateMyPlayerPosition_3
-  id: UpdateMyPlayerPosition_3
+- uid: Engine.Networking.UpdateMyPlayerTransform_3
+  commentId: T:Engine.Networking.UpdateMyPlayerTransform_3
+  id: UpdateMyPlayerTransform_3
   parent: Engine.Networking
   children:
-  - Engine.Networking.UpdateMyPlayerPosition_3.getBytes
-  - Engine.Networking.UpdateMyPlayerPosition_3.readPacket(System.Byte[])
-  - Engine.Networking.UpdateMyPlayerPosition_3.x
-  - Engine.Networking.UpdateMyPlayerPosition_3.y
-  - Engine.Networking.UpdateMyPlayerPosition_3.z
+  - Engine.Networking.UpdateMyPlayerTransform_3.getBytes
+  - Engine.Networking.UpdateMyPlayerTransform_3.readPacket(System.Byte[])
+  - Engine.Networking.UpdateMyPlayerTransform_3.rotationW
+  - Engine.Networking.UpdateMyPlayerTransform_3.rotationX
+  - Engine.Networking.UpdateMyPlayerTransform_3.rotationY
+  - Engine.Networking.UpdateMyPlayerTransform_3.rotationZ
+  - Engine.Networking.UpdateMyPlayerTransform_3.x
+  - Engine.Networking.UpdateMyPlayerTransform_3.y
+  - Engine.Networking.UpdateMyPlayerTransform_3.z
   langs:
   - csharp
   - vb
-  name: UpdateMyPlayerPosition_3
-  nameWithType: UpdateMyPlayerPosition_3
-  fullName: Engine.Networking.UpdateMyPlayerPosition_3
+  name: UpdateMyPlayerTransform_3
+  nameWithType: UpdateMyPlayerTransform_3
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3
   type: Class
   source:
     remote:
       path: Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: UpdateMyPlayerPosition_3
+    id: UpdateMyPlayerTransform_3
     path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
     startLine: 8
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
-  summary: "\nThe packet that tells the client the player position\n"
+  summary: "\nThe packet that tells the client the player position and rotation\n"
   example: []
   syntax:
     content: >-
       [Serializable]
 
-      [Packet(3, "Update My Player Position", "Client", ReliabilityScheme.UNRELIABLE, "Updates the main client player position")]
+      [Packet(3, "Update MyPlayer Transform", "Client", ReliabilityScheme.UNRELIABLE, "Updates the main client player transform")]
 
-      public class UpdateMyPlayerPosition_3 : Packet
+      public class UpdateMyPlayerTransform_3 : Packet
     content.vb: >-
       <Serializable>
 
-      <Packet(3, "Update My Player Position", "Client", ReliabilityScheme.UNRELIABLE, "Updates the main client player position")>
+      <Packet(3, "Update MyPlayer Transform", "Client", ReliabilityScheme.UNRELIABLE, "Updates the main client player transform")>
 
-      Public Class UpdateMyPlayerPosition_3
+      Public Class UpdateMyPlayerTransform_3
           Inherits Packet
   inheritance:
   - System.Object
@@ -70,29 +74,29 @@ items:
     - type: System.Int32
       value: 3
     - type: System.String
-      value: Update My Player Position
+      value: Update MyPlayer Transform
     - type: System.String
       value: Client
     - type: Engine.Networking.ReliabilityScheme
       value: 0
     - type: System.String
-      value: Updates the main client player position
+      value: Updates the main client player transform
   modifiers.csharp:
   - public
   - class
   modifiers.vb:
   - Public
   - Class
-- uid: Engine.Networking.UpdateMyPlayerPosition_3.x
-  commentId: F:Engine.Networking.UpdateMyPlayerPosition_3.x
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.x
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.x
   id: x
-  parent: Engine.Networking.UpdateMyPlayerPosition_3
+  parent: Engine.Networking.UpdateMyPlayerTransform_3
   langs:
   - csharp
   - vb
   name: x
-  nameWithType: UpdateMyPlayerPosition_3.x
-  fullName: Engine.Networking.UpdateMyPlayerPosition_3.x
+  nameWithType: UpdateMyPlayerTransform_3.x
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.x
   type: Field
   source:
     remote:
@@ -116,16 +120,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Engine.Networking.UpdateMyPlayerPosition_3.y
-  commentId: F:Engine.Networking.UpdateMyPlayerPosition_3.y
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.y
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.y
   id: y
-  parent: Engine.Networking.UpdateMyPlayerPosition_3
+  parent: Engine.Networking.UpdateMyPlayerTransform_3
   langs:
   - csharp
   - vb
   name: y
-  nameWithType: UpdateMyPlayerPosition_3.y
-  fullName: Engine.Networking.UpdateMyPlayerPosition_3.y
+  nameWithType: UpdateMyPlayerTransform_3.y
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.y
   type: Field
   source:
     remote:
@@ -149,16 +153,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Engine.Networking.UpdateMyPlayerPosition_3.z
-  commentId: F:Engine.Networking.UpdateMyPlayerPosition_3.z
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.z
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.z
   id: z
-  parent: Engine.Networking.UpdateMyPlayerPosition_3
+  parent: Engine.Networking.UpdateMyPlayerTransform_3
   langs:
   - csharp
   - vb
   name: z
-  nameWithType: UpdateMyPlayerPosition_3.z
-  fullName: Engine.Networking.UpdateMyPlayerPosition_3.z
+  nameWithType: UpdateMyPlayerTransform_3.z
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.z
   type: Field
   source:
     remote:
@@ -182,16 +186,148 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Engine.Networking.UpdateMyPlayerPosition_3.getBytes
-  commentId: M:Engine.Networking.UpdateMyPlayerPosition_3.getBytes
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.rotationX
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.rotationX
+  id: rotationX
+  parent: Engine.Networking.UpdateMyPlayerTransform_3
+  langs:
+  - csharp
+  - vb
+  name: rotationX
+  nameWithType: UpdateMyPlayerTransform_3.rotationX
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.rotationX
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: rotationX
+    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
+    startLine: 30
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe rotation x axis\n"
+  example: []
+  syntax:
+    content: public float rotationX
+    return:
+      type: System.Single
+    content.vb: Public rotationX As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.rotationY
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.rotationY
+  id: rotationY
+  parent: Engine.Networking.UpdateMyPlayerTransform_3
+  langs:
+  - csharp
+  - vb
+  name: rotationY
+  nameWithType: UpdateMyPlayerTransform_3.rotationY
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.rotationY
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: rotationY
+    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
+    startLine: 35
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe rotation y axis\n"
+  example: []
+  syntax:
+    content: public float rotationY
+    return:
+      type: System.Single
+    content.vb: Public rotationY As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.rotationZ
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.rotationZ
+  id: rotationZ
+  parent: Engine.Networking.UpdateMyPlayerTransform_3
+  langs:
+  - csharp
+  - vb
+  name: rotationZ
+  nameWithType: UpdateMyPlayerTransform_3.rotationZ
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.rotationZ
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: rotationZ
+    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
+    startLine: 40
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe rotation z axis\n"
+  example: []
+  syntax:
+    content: public float rotationZ
+    return:
+      type: System.Single
+    content.vb: Public rotationZ As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.rotationW
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.rotationW
+  id: rotationW
+  parent: Engine.Networking.UpdateMyPlayerTransform_3
+  langs:
+  - csharp
+  - vb
+  name: rotationW
+  nameWithType: UpdateMyPlayerTransform_3.rotationW
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.rotationW
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: rotationW
+    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
+    startLine: 45
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe rotation w axis\n"
+  example: []
+  syntax:
+    content: public float rotationW
+    return:
+      type: System.Single
+    content.vb: Public rotationW As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.getBytes
+  commentId: M:Engine.Networking.UpdateMyPlayerTransform_3.getBytes
   id: getBytes
-  parent: Engine.Networking.UpdateMyPlayerPosition_3
+  parent: Engine.Networking.UpdateMyPlayerTransform_3
   langs:
   - csharp
   - vb
   name: getBytes()
-  nameWithType: UpdateMyPlayerPosition_3.getBytes()
-  fullName: Engine.Networking.UpdateMyPlayerPosition_3.getBytes()
+  nameWithType: UpdateMyPlayerTransform_3.getBytes()
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.getBytes()
   type: Method
   source:
     remote:
@@ -200,7 +336,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: getBytes
     path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
-    startLine: 31
+    startLine: 51
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -213,23 +349,23 @@ items:
       description: ''
     content.vb: Public Overrides Function getBytes As Byte()
   overridden: Engine.Networking.Packet.getBytes
-  overload: Engine.Networking.UpdateMyPlayerPosition_3.getBytes*
+  overload: Engine.Networking.UpdateMyPlayerTransform_3.getBytes*
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-- uid: Engine.Networking.UpdateMyPlayerPosition_3.readPacket(System.Byte[])
-  commentId: M:Engine.Networking.UpdateMyPlayerPosition_3.readPacket(System.Byte[])
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.readPacket(System.Byte[])
+  commentId: M:Engine.Networking.UpdateMyPlayerTransform_3.readPacket(System.Byte[])
   id: readPacket(System.Byte[])
-  parent: Engine.Networking.UpdateMyPlayerPosition_3
+  parent: Engine.Networking.UpdateMyPlayerTransform_3
   langs:
   - csharp
   - vb
   name: readPacket(Byte[])
-  nameWithType: UpdateMyPlayerPosition_3.readPacket(Byte[])
-  fullName: Engine.Networking.UpdateMyPlayerPosition_3.readPacket(System.Byte[])
+  nameWithType: UpdateMyPlayerTransform_3.readPacket(Byte[])
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.readPacket(System.Byte[])
   type: Method
   source:
     remote:
@@ -238,7 +374,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: readPacket
     path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
-    startLine: 44
+    startLine: 68
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -252,15 +388,15 @@ items:
       description: The packet bytes to read
     content.vb: Public Overrides Sub readPacket(bytes As Byte())
   overridden: Engine.Networking.Packet.readPacket(System.Byte[])
-  overload: Engine.Networking.UpdateMyPlayerPosition_3.readPacket*
-  nameWithType.vb: UpdateMyPlayerPosition_3.readPacket(Byte())
+  overload: Engine.Networking.UpdateMyPlayerTransform_3.readPacket*
+  nameWithType.vb: UpdateMyPlayerTransform_3.readPacket(Byte())
   modifiers.csharp:
   - public
   - override
   modifiers.vb:
   - Public
   - Overrides
-  fullName.vb: Engine.Networking.UpdateMyPlayerPosition_3.readPacket(System.Byte())
+  fullName.vb: Engine.Networking.UpdateMyPlayerTransform_3.readPacket(System.Byte())
   name.vb: readPacket(Byte())
 references:
 - uid: Engine.Networking
@@ -631,11 +767,11 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Networking.UpdateMyPlayerPosition_3.getBytes*
-  commentId: Overload:Engine.Networking.UpdateMyPlayerPosition_3.getBytes
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.getBytes*
+  commentId: Overload:Engine.Networking.UpdateMyPlayerTransform_3.getBytes
   name: getBytes
-  nameWithType: UpdateMyPlayerPosition_3.getBytes
-  fullName: Engine.Networking.UpdateMyPlayerPosition_3.getBytes
+  nameWithType: UpdateMyPlayerTransform_3.getBytes
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.getBytes
 - uid: System.Byte[]
   isExternal: true
   name: Byte[]
@@ -710,8 +846,8 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.Networking.UpdateMyPlayerPosition_3.readPacket*
-  commentId: Overload:Engine.Networking.UpdateMyPlayerPosition_3.readPacket
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.readPacket*
+  commentId: Overload:Engine.Networking.UpdateMyPlayerTransform_3.readPacket
   name: readPacket
-  nameWithType: UpdateMyPlayerPosition_3.readPacket
-  fullName: Engine.Networking.UpdateMyPlayerPosition_3.readPacket
+  nameWithType: UpdateMyPlayerTransform_3.readPacket
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.readPacket

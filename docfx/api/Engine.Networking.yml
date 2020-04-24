@@ -19,7 +19,7 @@ items:
   - Engine.Networking.Packet
   - Engine.Networking.PacketAttribute
   - Engine.Networking.ReliabilityScheme
-  - Engine.Networking.UpdateMyPlayerPosition_3
+  - Engine.Networking.UpdateMyPlayerTransform_3
   - Engine.Networking.WalkRequest_5
   langs:
   - csharp
@@ -117,11 +117,11 @@ references:
   name: LoginResponse_2
   nameWithType: LoginResponse_2
   fullName: Engine.Networking.LoginResponse_2
-- uid: Engine.Networking.UpdateMyPlayerPosition_3
-  commentId: T:Engine.Networking.UpdateMyPlayerPosition_3
-  name: UpdateMyPlayerPosition_3
-  nameWithType: UpdateMyPlayerPosition_3
-  fullName: Engine.Networking.UpdateMyPlayerPosition_3
+- uid: Engine.Networking.UpdateMyPlayerTransform_3
+  commentId: T:Engine.Networking.UpdateMyPlayerTransform_3
+  name: UpdateMyPlayerTransform_3
+  nameWithType: UpdateMyPlayerTransform_3
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3
 - uid: Engine.Networking.WalkRequest_5
   commentId: T:Engine.Networking.WalkRequest_5
   name: WalkRequest_5

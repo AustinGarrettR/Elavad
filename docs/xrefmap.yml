@@ -829,6 +829,12 @@ references:
   commentId: F:Engine.Configuration.ClientConfig.CAMERA_DEFAULT_DISTANCE
   fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_DISTANCE
   nameWithType: ClientConfig.CAMERA_DEFAULT_DISTANCE
+- uid: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_POSITION_SPEED
+  name: CAMERA_DEFAULT_SMOOTH_POSITION_SPEED
+  href: api/Engine.Configuration.ClientConfig.html#Engine_Configuration_ClientConfig_CAMERA_DEFAULT_SMOOTH_POSITION_SPEED
+  commentId: F:Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_POSITION_SPEED
+  fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_POSITION_SPEED
+  nameWithType: ClientConfig.CAMERA_DEFAULT_SMOOTH_POSITION_SPEED
 - uid: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
   name: CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
   href: api/Engine.Configuration.ClientConfig.html#Engine_Configuration_ClientConfig_CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
@@ -985,6 +991,12 @@ references:
   commentId: F:Engine.Configuration.SharedConfig.PORT
   fullName: Engine.Configuration.SharedConfig.PORT
   nameWithType: SharedConfig.PORT
+- uid: Engine.Configuration.SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
+  name: POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
+  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
+  commentId: F:Engine.Configuration.SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
+  fullName: Engine.Configuration.SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
+  nameWithType: SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
 - uid: Engine.Configuration.SharedConfig.SERVER_SCENE_PATH
   name: SERVER_SCENE_PATH
   href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_SERVER_SCENE_PATH
@@ -1155,19 +1167,19 @@ references:
   commentId: T:Engine.GlobalCoreBase
   fullName: Engine.GlobalCoreBase
   nameWithType: GlobalCoreBase
-- uid: Engine.GlobalCoreBase.OnApplicationQuit
-  name: OnApplicationQuit()
-  href: api/Engine.GlobalCoreBase.html#Engine_GlobalCoreBase_OnApplicationQuit
-  commentId: M:Engine.GlobalCoreBase.OnApplicationQuit
-  fullName: Engine.GlobalCoreBase.OnApplicationQuit()
-  nameWithType: GlobalCoreBase.OnApplicationQuit()
-- uid: Engine.GlobalCoreBase.OnApplicationQuit*
-  name: OnApplicationQuit
-  href: api/Engine.GlobalCoreBase.html#Engine_GlobalCoreBase_OnApplicationQuit_
-  commentId: Overload:Engine.GlobalCoreBase.OnApplicationQuit
+- uid: Engine.GlobalCoreBase.OnDestroy
+  name: OnDestroy()
+  href: api/Engine.GlobalCoreBase.html#Engine_GlobalCoreBase_OnDestroy
+  commentId: M:Engine.GlobalCoreBase.OnDestroy
+  fullName: Engine.GlobalCoreBase.OnDestroy()
+  nameWithType: GlobalCoreBase.OnDestroy()
+- uid: Engine.GlobalCoreBase.OnDestroy*
+  name: OnDestroy
+  href: api/Engine.GlobalCoreBase.html#Engine_GlobalCoreBase_OnDestroy_
+  commentId: Overload:Engine.GlobalCoreBase.OnDestroy
   isSpec: "True"
-  fullName: Engine.GlobalCoreBase.OnApplicationQuit
-  nameWithType: GlobalCoreBase.OnApplicationQuit
+  fullName: Engine.GlobalCoreBase.OnDestroy
+  nameWithType: GlobalCoreBase.OnDestroy
 - uid: Engine.Input
   name: Engine.Input
   href: api/Engine.Input.html
@@ -1937,59 +1949,83 @@ references:
   commentId: F:Engine.Networking.ReliabilityScheme.UNRELIABLE
   fullName: Engine.Networking.ReliabilityScheme.UNRELIABLE
   nameWithType: ReliabilityScheme.UNRELIABLE
-- uid: Engine.Networking.UpdateMyPlayerPosition_3
-  name: UpdateMyPlayerPosition_3
-  href: api/Engine.Networking.UpdateMyPlayerPosition_3.html
-  commentId: T:Engine.Networking.UpdateMyPlayerPosition_3
-  fullName: Engine.Networking.UpdateMyPlayerPosition_3
-  nameWithType: UpdateMyPlayerPosition_3
-- uid: Engine.Networking.UpdateMyPlayerPosition_3.getBytes
+- uid: Engine.Networking.UpdateMyPlayerTransform_3
+  name: UpdateMyPlayerTransform_3
+  href: api/Engine.Networking.UpdateMyPlayerTransform_3.html
+  commentId: T:Engine.Networking.UpdateMyPlayerTransform_3
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3
+  nameWithType: UpdateMyPlayerTransform_3
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.getBytes
   name: getBytes()
-  href: api/Engine.Networking.UpdateMyPlayerPosition_3.html#Engine_Networking_UpdateMyPlayerPosition_3_getBytes
-  commentId: M:Engine.Networking.UpdateMyPlayerPosition_3.getBytes
-  fullName: Engine.Networking.UpdateMyPlayerPosition_3.getBytes()
-  nameWithType: UpdateMyPlayerPosition_3.getBytes()
-- uid: Engine.Networking.UpdateMyPlayerPosition_3.getBytes*
+  href: api/Engine.Networking.UpdateMyPlayerTransform_3.html#Engine_Networking_UpdateMyPlayerTransform_3_getBytes
+  commentId: M:Engine.Networking.UpdateMyPlayerTransform_3.getBytes
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.getBytes()
+  nameWithType: UpdateMyPlayerTransform_3.getBytes()
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.getBytes*
   name: getBytes
-  href: api/Engine.Networking.UpdateMyPlayerPosition_3.html#Engine_Networking_UpdateMyPlayerPosition_3_getBytes_
-  commentId: Overload:Engine.Networking.UpdateMyPlayerPosition_3.getBytes
+  href: api/Engine.Networking.UpdateMyPlayerTransform_3.html#Engine_Networking_UpdateMyPlayerTransform_3_getBytes_
+  commentId: Overload:Engine.Networking.UpdateMyPlayerTransform_3.getBytes
   isSpec: "True"
-  fullName: Engine.Networking.UpdateMyPlayerPosition_3.getBytes
-  nameWithType: UpdateMyPlayerPosition_3.getBytes
-- uid: Engine.Networking.UpdateMyPlayerPosition_3.readPacket(System.Byte[])
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.getBytes
+  nameWithType: UpdateMyPlayerTransform_3.getBytes
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.readPacket(System.Byte[])
   name: readPacket(Byte[])
-  href: api/Engine.Networking.UpdateMyPlayerPosition_3.html#Engine_Networking_UpdateMyPlayerPosition_3_readPacket_System_Byte___
-  commentId: M:Engine.Networking.UpdateMyPlayerPosition_3.readPacket(System.Byte[])
+  href: api/Engine.Networking.UpdateMyPlayerTransform_3.html#Engine_Networking_UpdateMyPlayerTransform_3_readPacket_System_Byte___
+  commentId: M:Engine.Networking.UpdateMyPlayerTransform_3.readPacket(System.Byte[])
   name.vb: readPacket(Byte())
-  fullName: Engine.Networking.UpdateMyPlayerPosition_3.readPacket(System.Byte[])
-  fullName.vb: Engine.Networking.UpdateMyPlayerPosition_3.readPacket(System.Byte())
-  nameWithType: UpdateMyPlayerPosition_3.readPacket(Byte[])
-  nameWithType.vb: UpdateMyPlayerPosition_3.readPacket(Byte())
-- uid: Engine.Networking.UpdateMyPlayerPosition_3.readPacket*
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.readPacket(System.Byte[])
+  fullName.vb: Engine.Networking.UpdateMyPlayerTransform_3.readPacket(System.Byte())
+  nameWithType: UpdateMyPlayerTransform_3.readPacket(Byte[])
+  nameWithType.vb: UpdateMyPlayerTransform_3.readPacket(Byte())
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.readPacket*
   name: readPacket
-  href: api/Engine.Networking.UpdateMyPlayerPosition_3.html#Engine_Networking_UpdateMyPlayerPosition_3_readPacket_
-  commentId: Overload:Engine.Networking.UpdateMyPlayerPosition_3.readPacket
+  href: api/Engine.Networking.UpdateMyPlayerTransform_3.html#Engine_Networking_UpdateMyPlayerTransform_3_readPacket_
+  commentId: Overload:Engine.Networking.UpdateMyPlayerTransform_3.readPacket
   isSpec: "True"
-  fullName: Engine.Networking.UpdateMyPlayerPosition_3.readPacket
-  nameWithType: UpdateMyPlayerPosition_3.readPacket
-- uid: Engine.Networking.UpdateMyPlayerPosition_3.x
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.readPacket
+  nameWithType: UpdateMyPlayerTransform_3.readPacket
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.rotationW
+  name: rotationW
+  href: api/Engine.Networking.UpdateMyPlayerTransform_3.html#Engine_Networking_UpdateMyPlayerTransform_3_rotationW
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.rotationW
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.rotationW
+  nameWithType: UpdateMyPlayerTransform_3.rotationW
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.rotationX
+  name: rotationX
+  href: api/Engine.Networking.UpdateMyPlayerTransform_3.html#Engine_Networking_UpdateMyPlayerTransform_3_rotationX
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.rotationX
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.rotationX
+  nameWithType: UpdateMyPlayerTransform_3.rotationX
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.rotationY
+  name: rotationY
+  href: api/Engine.Networking.UpdateMyPlayerTransform_3.html#Engine_Networking_UpdateMyPlayerTransform_3_rotationY
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.rotationY
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.rotationY
+  nameWithType: UpdateMyPlayerTransform_3.rotationY
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.rotationZ
+  name: rotationZ
+  href: api/Engine.Networking.UpdateMyPlayerTransform_3.html#Engine_Networking_UpdateMyPlayerTransform_3_rotationZ
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.rotationZ
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.rotationZ
+  nameWithType: UpdateMyPlayerTransform_3.rotationZ
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.x
   name: x
-  href: api/Engine.Networking.UpdateMyPlayerPosition_3.html#Engine_Networking_UpdateMyPlayerPosition_3_x
-  commentId: F:Engine.Networking.UpdateMyPlayerPosition_3.x
-  fullName: Engine.Networking.UpdateMyPlayerPosition_3.x
-  nameWithType: UpdateMyPlayerPosition_3.x
-- uid: Engine.Networking.UpdateMyPlayerPosition_3.y
+  href: api/Engine.Networking.UpdateMyPlayerTransform_3.html#Engine_Networking_UpdateMyPlayerTransform_3_x
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.x
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.x
+  nameWithType: UpdateMyPlayerTransform_3.x
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.y
   name: y
-  href: api/Engine.Networking.UpdateMyPlayerPosition_3.html#Engine_Networking_UpdateMyPlayerPosition_3_y
-  commentId: F:Engine.Networking.UpdateMyPlayerPosition_3.y
-  fullName: Engine.Networking.UpdateMyPlayerPosition_3.y
-  nameWithType: UpdateMyPlayerPosition_3.y
-- uid: Engine.Networking.UpdateMyPlayerPosition_3.z
+  href: api/Engine.Networking.UpdateMyPlayerTransform_3.html#Engine_Networking_UpdateMyPlayerTransform_3_y
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.y
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.y
+  nameWithType: UpdateMyPlayerTransform_3.y
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.z
   name: z
-  href: api/Engine.Networking.UpdateMyPlayerPosition_3.html#Engine_Networking_UpdateMyPlayerPosition_3_z
-  commentId: F:Engine.Networking.UpdateMyPlayerPosition_3.z
-  fullName: Engine.Networking.UpdateMyPlayerPosition_3.z
-  nameWithType: UpdateMyPlayerPosition_3.z
+  href: api/Engine.Networking.UpdateMyPlayerTransform_3.html#Engine_Networking_UpdateMyPlayerTransform_3_z
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.z
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.z
+  nameWithType: UpdateMyPlayerTransform_3.z
 - uid: Engine.Networking.Utility
   name: Engine.Networking.Utility
   href: api/Engine.Networking.Utility.html
