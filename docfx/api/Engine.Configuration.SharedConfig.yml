@@ -15,10 +15,13 @@ items:
   - Engine.Configuration.SharedConfig.MAX_BUFFER_SIZE
   - Engine.Configuration.SharedConfig.MAX_PASSWORD_LENGTH
   - Engine.Configuration.SharedConfig.MAX_USERNAME_LENGTH
+  - Engine.Configuration.SharedConfig.NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS
+  - Engine.Configuration.SharedConfig.NEARBY_PLAYERS_DISTANCE
+  - Engine.Configuration.SharedConfig.NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
   - Engine.Configuration.SharedConfig.PLAYERS_LAYER_NAME
   - Engine.Configuration.SharedConfig.PORT
-  - Engine.Configuration.SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
   - Engine.Configuration.SharedConfig.SERVER_SCENE_PATH
+  - Engine.Configuration.SharedConfig.TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
   - Engine.Configuration.SharedConfig.VOLUMES_LAYER_NAME
   - Engine.Configuration.SharedConfig.WORLD_CHUNK_MAX_HEIGHT
   - Engine.Configuration.SharedConfig.WORLD_CHUNK_SIZE
@@ -247,35 +250,146 @@ items:
   - Public
   - Shared
   - ReadOnly
-- uid: Engine.Configuration.SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
-  commentId: F:Engine.Configuration.SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
-  id: POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
+- uid: Engine.Configuration.SharedConfig.TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  commentId: F:Engine.Configuration.SharedConfig.TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  id: TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
   parent: Engine.Configuration.SharedConfig
   langs:
   - csharp
   - vb
-  name: POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
-  nameWithType: SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
-  fullName: Engine.Configuration.SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
+  name: TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  nameWithType: SharedConfig.TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  fullName: Engine.Configuration.SharedConfig.TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
   type: Field
   source:
     remote:
       path: Assets/Engine/Configuration/SharedConfig.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
+    id: TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
     path: ../Assets/Engine/Configuration/SharedConfig.cs
     startLine: 40
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
-  summary: "\nHow often to send a position update packet\n"
+  summary: "\nHow often to send a transform update packet\n"
   example: []
   syntax:
-    content: public static readonly int POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
+    content: public static readonly int TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
     return:
       type: System.Int32
-    content.vb: Public Shared ReadOnly POSITION_UPDATE_INTERVAL_IN_MILLISECONDS As Integer
+    content.vb: Public Shared ReadOnly TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS As Integer
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.SharedConfig.NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  commentId: F:Engine.Configuration.SharedConfig.NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  id: NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  parent: Engine.Configuration.SharedConfig
+  langs:
+  - csharp
+  - vb
+  name: NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  nameWithType: SharedConfig.NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  fullName: Engine.Configuration.SharedConfig.NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/SharedConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    startLine: 45
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nHow often to send a transform update packet for nearby players\n"
+  example: []
+  syntax:
+    content: public static readonly int NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS As Integer
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.SharedConfig.NEARBY_PLAYERS_DISTANCE
+  commentId: F:Engine.Configuration.SharedConfig.NEARBY_PLAYERS_DISTANCE
+  id: NEARBY_PLAYERS_DISTANCE
+  parent: Engine.Configuration.SharedConfig
+  langs:
+  - csharp
+  - vb
+  name: NEARBY_PLAYERS_DISTANCE
+  nameWithType: SharedConfig.NEARBY_PLAYERS_DISTANCE
+  fullName: Engine.Configuration.SharedConfig.NEARBY_PLAYERS_DISTANCE
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/SharedConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: NEARBY_PLAYERS_DISTANCE
+    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    startLine: 50
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nHow far you can see players nearby\n"
+  example: []
+  syntax:
+    content: public static readonly int NEARBY_PLAYERS_DISTANCE
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly NEARBY_PLAYERS_DISTANCE As Integer
+  modifiers.csharp:
+  - public
+  - static
+  - readonly
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+- uid: Engine.Configuration.SharedConfig.NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS
+  commentId: F:Engine.Configuration.SharedConfig.NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS
+  id: NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS
+  parent: Engine.Configuration.SharedConfig
+  langs:
+  - csharp
+  - vb
+  name: NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS
+  nameWithType: SharedConfig.NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS
+  fullName: Engine.Configuration.SharedConfig.NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Configuration/SharedConfig.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS
+    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    startLine: 55
+  assemblies:
+  - Engine.Configuration
+  namespace: Engine.Configuration
+  summary: "\nHow often to check for nearby players\n"
+  example: []
+  syntax:
+    content: public static readonly int NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS
+    return:
+      type: System.Int32
+    content.vb: Public Shared ReadOnly NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS As Integer
   modifiers.csharp:
   - public
   - static
@@ -302,7 +416,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: MAX_USERNAME_LENGTH
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 49
+    startLine: 64
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -339,7 +453,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: MAX_PASSWORD_LENGTH
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 54
+    startLine: 69
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -376,7 +490,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: WORLD_CHUNK_SIZE
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 63
+    startLine: 78
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -413,7 +527,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: WORLD_CHUNK_MAX_HEIGHT
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 68
+    startLine: 83
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -450,7 +564,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: CHUNK_LOAD_VIEW_DISTANCE
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 73
+    startLine: 88
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -487,7 +601,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: CHUNK_UNLOAD_VIEW_DISTANCE
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 78
+    startLine: 93
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -524,7 +638,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: CLIENT_SCENE_PATH
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 87
+    startLine: 102
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -561,7 +675,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: SERVER_SCENE_PATH
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 92
+    startLine: 107
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -598,7 +712,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: LOGIN_SCENE_PATH
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 97
+    startLine: 112
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -635,7 +749,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: WORLD_SCENES_FOLDER
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 102
+    startLine: 117
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -672,7 +786,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: PLAYERS_LAYER_NAME
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 111
+    startLine: 126
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration
@@ -709,7 +823,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: VOLUMES_LAYER_NAME
     path: ../Assets/Engine/Configuration/SharedConfig.cs
-    startLine: 116
+    startLine: 131
   assemblies:
   - Engine.Configuration
   namespace: Engine.Configuration

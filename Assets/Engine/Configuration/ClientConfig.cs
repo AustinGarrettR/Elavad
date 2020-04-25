@@ -44,6 +44,15 @@ namespace Engine.Configuration
         public static readonly float CAMERA_Y_AXIS_MAXIMUM = 90;
 
         /*
+         * Walking
+         */
+
+        /// <summary>
+        /// How often to send movement updates when holding the mouse down
+        /// </summary>
+        public static readonly int MOUSE_HOLD_MOVEMENT_TIME_IN_MILLISECONDS = 200;
+
+        /*
          * Camera Defaults
          */
 

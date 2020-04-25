@@ -1,4 +1,5 @@
-﻿using Unity.Networking.Transport;
+﻿using System.Collections.Generic;
+using Unity.Networking.Transport;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -49,6 +50,21 @@ namespace Engine.Player
         /// The last time a movement update was received
         /// </summary>
         internal long lastMovementUpdateTimestamp;
+
+        /// <summary>
+        /// The last time a nearby player check occurred
+        /// </summary>
+        internal long lastNearbyPlayerCheckTimestamp;
+
+        /// <summary>
+        /// The last time a nearby player update occurred
+        /// </summary>
+        internal long lastNearbyPlayerUpdateTimestamp;
+
+        /// <summary>
+        /// List of nearby players
+        /// </summary>
+        internal List<ServerPlayer> nearbyPlayers = new List<ServerPlayer>();
 
         /// <summary>
         /// Getter for the network connection reference

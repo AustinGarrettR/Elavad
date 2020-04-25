@@ -10,6 +10,7 @@ using Engine.Factory;
 using Engine.Utility;
 using UnityEngine;
 using System.Collections;
+using System.Runtime.Serialization;
 
 namespace Engine.Networking
 {
@@ -78,16 +79,7 @@ namespace Engine.Networking
         /// <summary>
         /// A hastable of packet instances
         /// </summary>
-        private Dictionary<Type, Packet> packetInstances = new Dictionary<Type, Packet>() {
-
-            { typeof(KeepAlive_0), new KeepAlive_0() },
-            { typeof(LoginRequest_1), new LoginRequest_1() },
-            { typeof(LoginResponse_2), new LoginResponse_2() },
-            { typeof(UpdateMyPlayerTransform_3), new UpdateMyPlayerTransform_3() },
-            { typeof(FinishedLoading_4), new FinishedLoading_4() },
-            { typeof(WalkRequest_5), new WalkRequest_5() },
-
-        };
+        private Dictionary<Type, Packet> packetInstances = new Dictionary<Type, Packet>();
 
         /// <summary>
         /// If the client is trying to connect
@@ -510,7 +502,14 @@ namespace Engine.Networking
         public T GetPacket<T>() where T : Packet
         {
             Type type = typeof(T);
+
+            if(packetInstances.ContainsKey(type) == false)
+            {
+                packetInstances.Add(type, (T) FormatterServices.GetUninitializedObject(type));
+            }
+            
             return (T) packetInstances[type];
+
         }
 
         /// <summary>

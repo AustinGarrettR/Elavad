@@ -19,7 +19,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyOnConnectedToServerDelegate
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 165
+    startLine: 157
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking

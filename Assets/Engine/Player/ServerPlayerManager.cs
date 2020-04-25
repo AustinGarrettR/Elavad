@@ -192,6 +192,7 @@ namespace Engine.Player
             agent.angularSpeed = 360;
             agent.stoppingDistance = 0.1f;
             agent.autoBraking = false;
+            agent.obstacleAvoidanceType = ObstacleAvoidanceType.NoObstacleAvoidance;
             player.SetPlayerAgent(agent);
 
         }
@@ -218,10 +219,106 @@ namespace Engine.Player
                 ServerPlayer player = (ServerPlayer) playerObject;
 
                 //Update position if moving
-                if (player.GetPlayerAgent().velocity.magnitude > 0 && TimeHandler.getTimeInMilliseconds() - player.lastMovementUpdateTimestamp >= SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS)
+                if (player.GetPlayerAgent().velocity.magnitude > 0 && TimeHandler.getTimeInMilliseconds() - player.lastMovementUpdateTimestamp >= SharedConfig.TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS)
                 {
                     player.lastMovementUpdateTimestamp = TimeHandler.getTimeInMilliseconds();
                     SendMyPlayerTransformUpdateForPlayer(player, false);
+                }
+
+                CheckForNearbyPlayers(player);
+                UpdateNearbyPlayers(player);
+            }
+        }
+
+        private void CheckForNearbyPlayers(ServerPlayer player)
+        {
+            //Only check every so often set by interval
+            if (TimeHandler.getTimeInMilliseconds() - player.lastNearbyPlayerCheckTimestamp < SharedConfig.NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS)
+                return;
+
+            player.lastNearbyPlayerCheckTimestamp = TimeHandler.getTimeInMilliseconds();
+
+            foreach(ServerPlayer otherPlayer in players.Values)
+            {
+                //Skip ourselves
+                if (otherPlayer.Equals(player))
+                    continue;
+
+                //Convert to 2D space ignoring Y coordinate
+                Vector2 playerPos = new Vector2(player.GetPlayerGameObject().transform.position.x, player.GetPlayerGameObject().transform.position.z);
+                Vector2 otherPlayerPos = new Vector2(otherPlayer.GetPlayerGameObject().transform.position.x, otherPlayer.GetPlayerGameObject().transform.position.z);
+
+                //Get the distance between them horizontally
+                float distanceBetween = Vector2.Distance(playerPos, otherPlayerPos);
+
+                if(distanceBetween < SharedConfig.NEARBY_PLAYERS_DISTANCE)
+                {
+                    //Add
+                    AddPlayerToNearbyPlayers(player, otherPlayer);
+                } else
+                {
+                    //Remove
+                    RemovePlayerFromNearbyPlayers(player, otherPlayer);
+                }
+            }
+
+        }
+
+        /// <summary>
+        /// Adds another player to a player's nearby players list
+        /// </summary>
+        /// <param name="player">The server player instance</param>
+        /// <param name="otherPlayer">The player being added to the nearby players</param>
+        private void AddPlayerToNearbyPlayers(ServerPlayer player, ServerPlayer otherPlayer)
+        {
+            //Check if the player is already in there
+            if (player.nearbyPlayers.Contains(otherPlayer))
+                return;
+
+            player.nearbyPlayers.Add(otherPlayer);
+
+            //Send add player packet
+            AddOtherPlayerToPlayer(player, otherPlayer);
+
+        }
+
+        /// <summary>
+        /// Removes another player to a player's nearby players list
+        /// </summary>
+        /// <param name="player">The server player instance</param>
+        /// <param name="otherPlayer">The player being removed to the nearby players</param>
+        private void RemovePlayerFromNearbyPlayers(ServerPlayer player, ServerPlayer otherPlayer)
+        {
+            //Check if the player is already in there
+            if (player.nearbyPlayers.Contains(otherPlayer) == false)
+                return;
+
+            player.nearbyPlayers.Remove(otherPlayer);
+
+            //Send remove player packet
+            RemoveOtherPlayerToPlayer(player, otherPlayer);
+        }
+
+        /// <summary>
+        /// Update nearby players positions
+        /// </summary>
+        /// <param name="player">The player to receive the updates</param>
+        private void UpdateNearbyPlayers(ServerPlayer player)
+        {
+            //Check if its been enough time
+            if(TimeHandler.getTimeInMilliseconds() - player.lastNearbyPlayerUpdateTimestamp < SharedConfig.NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS)            
+                return;            
+
+            player.lastNearbyPlayerUpdateTimestamp = TimeHandler.getTimeInMilliseconds();
+
+            //iterate other players to update their positions
+            foreach(ServerPlayer otherPlayer in player.nearbyPlayers)
+            {
+                //Check to make sure they're moving
+                if(otherPlayer.GetPlayerAgent().velocity.magnitude > 0)
+                {
+                    //Update position
+                    SendOtherPlayerTransformUpdateForPlayer(player, otherPlayer, false);
                 }
             }
         }
@@ -244,6 +341,63 @@ namespace Engine.Player
             packet.movementSpeed = player.GetPlayerAgent().speed;
             packet.angularSpeed = player.GetPlayerAgent().angularSpeed;
             packet.instantUpdate = instant;
+
+            connectionManager.SendPacketToClient(player.getConnection(), packet);
+        }
+
+        /// <summary>
+        /// Send a transform update for the user's myPlayer
+        /// </summary>
+        /// <param name="player">The server player instance</param>
+        /// <param name="otherPlayer">The other player instance</param>
+        /// <param name="instant">If the position should be instantly updated.</param>
+        private void SendOtherPlayerTransformUpdateForPlayer(ServerPlayer player, ServerPlayer otherPlayer, bool instant)
+        {
+            UpdateOtherPlayerTransform_6 packet = connectionManager.GetPacket<UpdateOtherPlayerTransform_6>();
+            packet.x = otherPlayer.GetPlayerGameObject().transform.position.x;
+            packet.y = otherPlayer.GetPlayerGameObject().transform.position.y;
+            packet.z = otherPlayer.GetPlayerGameObject().transform.position.z;
+            packet.rotationX = otherPlayer.GetPlayerGameObject().transform.rotation.x;
+            packet.rotationY = otherPlayer.GetPlayerGameObject().transform.rotation.y;
+            packet.rotationZ = otherPlayer.GetPlayerGameObject().transform.rotation.z;
+            packet.rotationW = otherPlayer.GetPlayerGameObject().transform.rotation.w;
+            packet.movementSpeed = otherPlayer.GetPlayerAgent().speed;
+            packet.angularSpeed = otherPlayer.GetPlayerAgent().angularSpeed;
+            packet.instantUpdate = instant;
+            packet.uniqueId = player.GetPlayerGameObject().GetInstanceID();
+
+            connectionManager.SendPacketToClient(player.getConnection(), packet);
+        }
+
+        /// <summary>
+        /// Adds another player to the nearby players on the client
+        /// </summary>
+        /// <param name="player">The server player instance</param>
+        /// <param name="otherPlayer">The other player instance</param>
+        private void AddOtherPlayerToPlayer(ServerPlayer player, ServerPlayer otherPlayer)
+        {
+            AddOtherPlayer_7 packet = connectionManager.GetPacket<AddOtherPlayer_7>();
+            packet.x = otherPlayer.GetPlayerGameObject().transform.position.x;
+            packet.y = otherPlayer.GetPlayerGameObject().transform.position.y;
+            packet.z = otherPlayer.GetPlayerGameObject().transform.position.z;
+            packet.rotationX = otherPlayer.GetPlayerGameObject().transform.rotation.x;
+            packet.rotationY = otherPlayer.GetPlayerGameObject().transform.rotation.y;
+            packet.rotationZ = otherPlayer.GetPlayerGameObject().transform.rotation.z;
+            packet.rotationW = otherPlayer.GetPlayerGameObject().transform.rotation.w;
+            packet.uniqueId = player.GetPlayerGameObject().GetInstanceID();
+
+            connectionManager.SendPacketToClient(player.getConnection(), packet);
+        }
+
+        /// <summary>
+        /// Removes another player from the nearby players on the client
+        /// </summary>
+        /// <param name="player">The server player instance</param>
+        /// <param name="otherPlayer">The other player instance</param>
+        private void RemoveOtherPlayerToPlayer(ServerPlayer player, ServerPlayer otherPlayer)
+        {
+            RemoveOtherPlayer_8 packet = connectionManager.GetPacket<RemoveOtherPlayer_8>();
+            packet.uniqueId = player.GetPlayerGameObject().GetInstanceID();
 
             connectionManager.SendPacketToClient(player.getConnection(), packet);
         }

@@ -4,6 +4,7 @@ items:
   commentId: N:Engine.Networking
   id: Engine.Networking
   children:
+  - Engine.Networking.AddOtherPlayer_7
   - Engine.Networking.ConnectionManager
   - Engine.Networking.ConnectionManager.ListenerType
   - Engine.Networking.ConnectionManager.NotifyClientConnectedDelegate
@@ -19,7 +20,9 @@ items:
   - Engine.Networking.Packet
   - Engine.Networking.PacketAttribute
   - Engine.Networking.ReliabilityScheme
+  - Engine.Networking.RemoveOtherPlayer_8
   - Engine.Networking.UpdateMyPlayerTransform_3
+  - Engine.Networking.UpdateOtherPlayerTransform_6
   - Engine.Networking.WalkRequest_5
   langs:
   - csharp
@@ -97,6 +100,11 @@ references:
   name: ConnectionManager.ListenerType
   nameWithType: ConnectionManager.ListenerType
   fullName: Engine.Networking.ConnectionManager.ListenerType
+- uid: Engine.Networking.AddOtherPlayer_7
+  commentId: T:Engine.Networking.AddOtherPlayer_7
+  name: AddOtherPlayer_7
+  nameWithType: AddOtherPlayer_7
+  fullName: Engine.Networking.AddOtherPlayer_7
 - uid: Engine.Networking.FinishedLoading_4
   commentId: T:Engine.Networking.FinishedLoading_4
   name: FinishedLoading_4
@@ -118,11 +126,21 @@ references:
   name: LoginResponse_2
   nameWithType: LoginResponse_2
   fullName: Engine.Networking.LoginResponse_2
+- uid: Engine.Networking.RemoveOtherPlayer_8
+  commentId: T:Engine.Networking.RemoveOtherPlayer_8
+  name: RemoveOtherPlayer_8
+  nameWithType: RemoveOtherPlayer_8
+  fullName: Engine.Networking.RemoveOtherPlayer_8
 - uid: Engine.Networking.UpdateMyPlayerTransform_3
   commentId: T:Engine.Networking.UpdateMyPlayerTransform_3
   name: UpdateMyPlayerTransform_3
   nameWithType: UpdateMyPlayerTransform_3
   fullName: Engine.Networking.UpdateMyPlayerTransform_3
+- uid: Engine.Networking.UpdateOtherPlayerTransform_6
+  commentId: T:Engine.Networking.UpdateOtherPlayerTransform_6
+  name: UpdateOtherPlayerTransform_6
+  nameWithType: UpdateOtherPlayerTransform_6
+  fullName: Engine.Networking.UpdateOtherPlayerTransform_6
 - uid: Engine.Networking.WalkRequest_5
   commentId: T:Engine.Networking.WalkRequest_5
   name: WalkRequest_5

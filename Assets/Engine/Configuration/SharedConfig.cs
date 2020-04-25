@@ -36,9 +36,24 @@ namespace Engine.Configuration
         public static readonly int KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS = 1000;
 
         /// <summary>
-        /// How often to send a position update packet
+        /// How often to send a transform update packet
         /// </summary>
-        public static readonly int POSITION_UPDATE_INTERVAL_IN_MILLISECONDS = 50;
+        public static readonly int TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS = 50;
+
+        /// <summary>
+        /// How often to send a transform update packet for nearby players
+        /// </summary>
+        public static readonly int NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS = 100;
+
+        /// <summary>
+        /// How far you can see players nearby
+        /// </summary>
+        public static readonly int NEARBY_PLAYERS_DISTANCE = 150;
+
+        /// <summary>
+        /// How often to check for nearby players
+        /// </summary>
+        public static readonly int NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS = 1000;
 
         /*
          * Account

@@ -919,6 +919,12 @@ references:
   commentId: F:Engine.Configuration.ClientConfig.ENVIRONMENT_TRANSITION_SPEED
   fullName: Engine.Configuration.ClientConfig.ENVIRONMENT_TRANSITION_SPEED
   nameWithType: ClientConfig.ENVIRONMENT_TRANSITION_SPEED
+- uid: Engine.Configuration.ClientConfig.MOUSE_HOLD_MOVEMENT_TIME_IN_MILLISECONDS
+  name: MOUSE_HOLD_MOVEMENT_TIME_IN_MILLISECONDS
+  href: api/Engine.Configuration.ClientConfig.html#Engine_Configuration_ClientConfig_MOUSE_HOLD_MOVEMENT_TIME_IN_MILLISECONDS
+  commentId: F:Engine.Configuration.ClientConfig.MOUSE_HOLD_MOVEMENT_TIME_IN_MILLISECONDS
+  fullName: Engine.Configuration.ClientConfig.MOUSE_HOLD_MOVEMENT_TIME_IN_MILLISECONDS
+  nameWithType: ClientConfig.MOUSE_HOLD_MOVEMENT_TIME_IN_MILLISECONDS
 - uid: Engine.Configuration.ServerConfig
   name: ServerConfig
   href: api/Engine.Configuration.ServerConfig.html
@@ -991,6 +997,24 @@ references:
   commentId: F:Engine.Configuration.SharedConfig.MAX_USERNAME_LENGTH
   fullName: Engine.Configuration.SharedConfig.MAX_USERNAME_LENGTH
   nameWithType: SharedConfig.MAX_USERNAME_LENGTH
+- uid: Engine.Configuration.SharedConfig.NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS
+  name: NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS
+  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS
+  commentId: F:Engine.Configuration.SharedConfig.NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS
+  fullName: Engine.Configuration.SharedConfig.NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS
+  nameWithType: SharedConfig.NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS
+- uid: Engine.Configuration.SharedConfig.NEARBY_PLAYERS_DISTANCE
+  name: NEARBY_PLAYERS_DISTANCE
+  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_NEARBY_PLAYERS_DISTANCE
+  commentId: F:Engine.Configuration.SharedConfig.NEARBY_PLAYERS_DISTANCE
+  fullName: Engine.Configuration.SharedConfig.NEARBY_PLAYERS_DISTANCE
+  nameWithType: SharedConfig.NEARBY_PLAYERS_DISTANCE
+- uid: Engine.Configuration.SharedConfig.NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  name: NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  commentId: F:Engine.Configuration.SharedConfig.NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  fullName: Engine.Configuration.SharedConfig.NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  nameWithType: SharedConfig.NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
 - uid: Engine.Configuration.SharedConfig.PLAYERS_LAYER_NAME
   name: PLAYERS_LAYER_NAME
   href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_PLAYERS_LAYER_NAME
@@ -1003,18 +1027,18 @@ references:
   commentId: F:Engine.Configuration.SharedConfig.PORT
   fullName: Engine.Configuration.SharedConfig.PORT
   nameWithType: SharedConfig.PORT
-- uid: Engine.Configuration.SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
-  name: POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
-  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
-  commentId: F:Engine.Configuration.SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
-  fullName: Engine.Configuration.SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
-  nameWithType: SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS
 - uid: Engine.Configuration.SharedConfig.SERVER_SCENE_PATH
   name: SERVER_SCENE_PATH
   href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_SERVER_SCENE_PATH
   commentId: F:Engine.Configuration.SharedConfig.SERVER_SCENE_PATH
   fullName: Engine.Configuration.SharedConfig.SERVER_SCENE_PATH
   nameWithType: SharedConfig.SERVER_SCENE_PATH
+- uid: Engine.Configuration.SharedConfig.TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  name: TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  commentId: F:Engine.Configuration.SharedConfig.TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  fullName: Engine.Configuration.SharedConfig.TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
+  nameWithType: SharedConfig.TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
 - uid: Engine.Configuration.SharedConfig.VOLUMES_LAYER_NAME
   name: VOLUMES_LAYER_NAME
   href: api/Engine.Configuration.SharedConfig.html#Engine_Configuration_SharedConfig_VOLUMES_LAYER_NAME
@@ -1406,6 +1430,89 @@ references:
   commentId: N:Engine.Networking
   fullName: Engine.Networking
   nameWithType: Engine.Networking
+- uid: Engine.Networking.AddOtherPlayer_7
+  name: AddOtherPlayer_7
+  href: api/Engine.Networking.AddOtherPlayer_7.html
+  commentId: T:Engine.Networking.AddOtherPlayer_7
+  fullName: Engine.Networking.AddOtherPlayer_7
+  nameWithType: AddOtherPlayer_7
+- uid: Engine.Networking.AddOtherPlayer_7.getBytes
+  name: getBytes()
+  href: api/Engine.Networking.AddOtherPlayer_7.html#Engine_Networking_AddOtherPlayer_7_getBytes
+  commentId: M:Engine.Networking.AddOtherPlayer_7.getBytes
+  fullName: Engine.Networking.AddOtherPlayer_7.getBytes()
+  nameWithType: AddOtherPlayer_7.getBytes()
+- uid: Engine.Networking.AddOtherPlayer_7.getBytes*
+  name: getBytes
+  href: api/Engine.Networking.AddOtherPlayer_7.html#Engine_Networking_AddOtherPlayer_7_getBytes_
+  commentId: Overload:Engine.Networking.AddOtherPlayer_7.getBytes
+  isSpec: "True"
+  fullName: Engine.Networking.AddOtherPlayer_7.getBytes
+  nameWithType: AddOtherPlayer_7.getBytes
+- uid: Engine.Networking.AddOtherPlayer_7.readPacket(System.Byte[])
+  name: readPacket(Byte[])
+  href: api/Engine.Networking.AddOtherPlayer_7.html#Engine_Networking_AddOtherPlayer_7_readPacket_System_Byte___
+  commentId: M:Engine.Networking.AddOtherPlayer_7.readPacket(System.Byte[])
+  name.vb: readPacket(Byte())
+  fullName: Engine.Networking.AddOtherPlayer_7.readPacket(System.Byte[])
+  fullName.vb: Engine.Networking.AddOtherPlayer_7.readPacket(System.Byte())
+  nameWithType: AddOtherPlayer_7.readPacket(Byte[])
+  nameWithType.vb: AddOtherPlayer_7.readPacket(Byte())
+- uid: Engine.Networking.AddOtherPlayer_7.readPacket*
+  name: readPacket
+  href: api/Engine.Networking.AddOtherPlayer_7.html#Engine_Networking_AddOtherPlayer_7_readPacket_
+  commentId: Overload:Engine.Networking.AddOtherPlayer_7.readPacket
+  isSpec: "True"
+  fullName: Engine.Networking.AddOtherPlayer_7.readPacket
+  nameWithType: AddOtherPlayer_7.readPacket
+- uid: Engine.Networking.AddOtherPlayer_7.rotationW
+  name: rotationW
+  href: api/Engine.Networking.AddOtherPlayer_7.html#Engine_Networking_AddOtherPlayer_7_rotationW
+  commentId: F:Engine.Networking.AddOtherPlayer_7.rotationW
+  fullName: Engine.Networking.AddOtherPlayer_7.rotationW
+  nameWithType: AddOtherPlayer_7.rotationW
+- uid: Engine.Networking.AddOtherPlayer_7.rotationX
+  name: rotationX
+  href: api/Engine.Networking.AddOtherPlayer_7.html#Engine_Networking_AddOtherPlayer_7_rotationX
+  commentId: F:Engine.Networking.AddOtherPlayer_7.rotationX
+  fullName: Engine.Networking.AddOtherPlayer_7.rotationX
+  nameWithType: AddOtherPlayer_7.rotationX
+- uid: Engine.Networking.AddOtherPlayer_7.rotationY
+  name: rotationY
+  href: api/Engine.Networking.AddOtherPlayer_7.html#Engine_Networking_AddOtherPlayer_7_rotationY
+  commentId: F:Engine.Networking.AddOtherPlayer_7.rotationY
+  fullName: Engine.Networking.AddOtherPlayer_7.rotationY
+  nameWithType: AddOtherPlayer_7.rotationY
+- uid: Engine.Networking.AddOtherPlayer_7.rotationZ
+  name: rotationZ
+  href: api/Engine.Networking.AddOtherPlayer_7.html#Engine_Networking_AddOtherPlayer_7_rotationZ
+  commentId: F:Engine.Networking.AddOtherPlayer_7.rotationZ
+  fullName: Engine.Networking.AddOtherPlayer_7.rotationZ
+  nameWithType: AddOtherPlayer_7.rotationZ
+- uid: Engine.Networking.AddOtherPlayer_7.uniqueId
+  name: uniqueId
+  href: api/Engine.Networking.AddOtherPlayer_7.html#Engine_Networking_AddOtherPlayer_7_uniqueId
+  commentId: F:Engine.Networking.AddOtherPlayer_7.uniqueId
+  fullName: Engine.Networking.AddOtherPlayer_7.uniqueId
+  nameWithType: AddOtherPlayer_7.uniqueId
+- uid: Engine.Networking.AddOtherPlayer_7.x
+  name: x
+  href: api/Engine.Networking.AddOtherPlayer_7.html#Engine_Networking_AddOtherPlayer_7_x
+  commentId: F:Engine.Networking.AddOtherPlayer_7.x
+  fullName: Engine.Networking.AddOtherPlayer_7.x
+  nameWithType: AddOtherPlayer_7.x
+- uid: Engine.Networking.AddOtherPlayer_7.y
+  name: y
+  href: api/Engine.Networking.AddOtherPlayer_7.html#Engine_Networking_AddOtherPlayer_7_y
+  commentId: F:Engine.Networking.AddOtherPlayer_7.y
+  fullName: Engine.Networking.AddOtherPlayer_7.y
+  nameWithType: AddOtherPlayer_7.y
+- uid: Engine.Networking.AddOtherPlayer_7.z
+  name: z
+  href: api/Engine.Networking.AddOtherPlayer_7.html#Engine_Networking_AddOtherPlayer_7_z
+  commentId: F:Engine.Networking.AddOtherPlayer_7.z
+  fullName: Engine.Networking.AddOtherPlayer_7.z
+  nameWithType: AddOtherPlayer_7.z
 - uid: Engine.Networking.ConnectionManager
   name: ConnectionManager
   href: api/Engine.Networking.ConnectionManager.html
@@ -2043,6 +2150,47 @@ references:
   commentId: F:Engine.Networking.ReliabilityScheme.UNRELIABLE
   fullName: Engine.Networking.ReliabilityScheme.UNRELIABLE
   nameWithType: ReliabilityScheme.UNRELIABLE
+- uid: Engine.Networking.RemoveOtherPlayer_8
+  name: RemoveOtherPlayer_8
+  href: api/Engine.Networking.RemoveOtherPlayer_8.html
+  commentId: T:Engine.Networking.RemoveOtherPlayer_8
+  fullName: Engine.Networking.RemoveOtherPlayer_8
+  nameWithType: RemoveOtherPlayer_8
+- uid: Engine.Networking.RemoveOtherPlayer_8.getBytes
+  name: getBytes()
+  href: api/Engine.Networking.RemoveOtherPlayer_8.html#Engine_Networking_RemoveOtherPlayer_8_getBytes
+  commentId: M:Engine.Networking.RemoveOtherPlayer_8.getBytes
+  fullName: Engine.Networking.RemoveOtherPlayer_8.getBytes()
+  nameWithType: RemoveOtherPlayer_8.getBytes()
+- uid: Engine.Networking.RemoveOtherPlayer_8.getBytes*
+  name: getBytes
+  href: api/Engine.Networking.RemoveOtherPlayer_8.html#Engine_Networking_RemoveOtherPlayer_8_getBytes_
+  commentId: Overload:Engine.Networking.RemoveOtherPlayer_8.getBytes
+  isSpec: "True"
+  fullName: Engine.Networking.RemoveOtherPlayer_8.getBytes
+  nameWithType: RemoveOtherPlayer_8.getBytes
+- uid: Engine.Networking.RemoveOtherPlayer_8.readPacket(System.Byte[])
+  name: readPacket(Byte[])
+  href: api/Engine.Networking.RemoveOtherPlayer_8.html#Engine_Networking_RemoveOtherPlayer_8_readPacket_System_Byte___
+  commentId: M:Engine.Networking.RemoveOtherPlayer_8.readPacket(System.Byte[])
+  name.vb: readPacket(Byte())
+  fullName: Engine.Networking.RemoveOtherPlayer_8.readPacket(System.Byte[])
+  fullName.vb: Engine.Networking.RemoveOtherPlayer_8.readPacket(System.Byte())
+  nameWithType: RemoveOtherPlayer_8.readPacket(Byte[])
+  nameWithType.vb: RemoveOtherPlayer_8.readPacket(Byte())
+- uid: Engine.Networking.RemoveOtherPlayer_8.readPacket*
+  name: readPacket
+  href: api/Engine.Networking.RemoveOtherPlayer_8.html#Engine_Networking_RemoveOtherPlayer_8_readPacket_
+  commentId: Overload:Engine.Networking.RemoveOtherPlayer_8.readPacket
+  isSpec: "True"
+  fullName: Engine.Networking.RemoveOtherPlayer_8.readPacket
+  nameWithType: RemoveOtherPlayer_8.readPacket
+- uid: Engine.Networking.RemoveOtherPlayer_8.uniqueId
+  name: uniqueId
+  href: api/Engine.Networking.RemoveOtherPlayer_8.html#Engine_Networking_RemoveOtherPlayer_8_uniqueId
+  commentId: F:Engine.Networking.RemoveOtherPlayer_8.uniqueId
+  fullName: Engine.Networking.RemoveOtherPlayer_8.uniqueId
+  nameWithType: RemoveOtherPlayer_8.uniqueId
 - uid: Engine.Networking.UpdateMyPlayerTransform_3
   name: UpdateMyPlayerTransform_3
   href: api/Engine.Networking.UpdateMyPlayerTransform_3.html
@@ -2138,6 +2286,107 @@ references:
   commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.z
   fullName: Engine.Networking.UpdateMyPlayerTransform_3.z
   nameWithType: UpdateMyPlayerTransform_3.z
+- uid: Engine.Networking.UpdateOtherPlayerTransform_6
+  name: UpdateOtherPlayerTransform_6
+  href: api/Engine.Networking.UpdateOtherPlayerTransform_6.html
+  commentId: T:Engine.Networking.UpdateOtherPlayerTransform_6
+  fullName: Engine.Networking.UpdateOtherPlayerTransform_6
+  nameWithType: UpdateOtherPlayerTransform_6
+- uid: Engine.Networking.UpdateOtherPlayerTransform_6.angularSpeed
+  name: angularSpeed
+  href: api/Engine.Networking.UpdateOtherPlayerTransform_6.html#Engine_Networking_UpdateOtherPlayerTransform_6_angularSpeed
+  commentId: F:Engine.Networking.UpdateOtherPlayerTransform_6.angularSpeed
+  fullName: Engine.Networking.UpdateOtherPlayerTransform_6.angularSpeed
+  nameWithType: UpdateOtherPlayerTransform_6.angularSpeed
+- uid: Engine.Networking.UpdateOtherPlayerTransform_6.getBytes
+  name: getBytes()
+  href: api/Engine.Networking.UpdateOtherPlayerTransform_6.html#Engine_Networking_UpdateOtherPlayerTransform_6_getBytes
+  commentId: M:Engine.Networking.UpdateOtherPlayerTransform_6.getBytes
+  fullName: Engine.Networking.UpdateOtherPlayerTransform_6.getBytes()
+  nameWithType: UpdateOtherPlayerTransform_6.getBytes()
+- uid: Engine.Networking.UpdateOtherPlayerTransform_6.getBytes*
+  name: getBytes
+  href: api/Engine.Networking.UpdateOtherPlayerTransform_6.html#Engine_Networking_UpdateOtherPlayerTransform_6_getBytes_
+  commentId: Overload:Engine.Networking.UpdateOtherPlayerTransform_6.getBytes
+  isSpec: "True"
+  fullName: Engine.Networking.UpdateOtherPlayerTransform_6.getBytes
+  nameWithType: UpdateOtherPlayerTransform_6.getBytes
+- uid: Engine.Networking.UpdateOtherPlayerTransform_6.instantUpdate
+  name: instantUpdate
+  href: api/Engine.Networking.UpdateOtherPlayerTransform_6.html#Engine_Networking_UpdateOtherPlayerTransform_6_instantUpdate
+  commentId: F:Engine.Networking.UpdateOtherPlayerTransform_6.instantUpdate
+  fullName: Engine.Networking.UpdateOtherPlayerTransform_6.instantUpdate
+  nameWithType: UpdateOtherPlayerTransform_6.instantUpdate
+- uid: Engine.Networking.UpdateOtherPlayerTransform_6.movementSpeed
+  name: movementSpeed
+  href: api/Engine.Networking.UpdateOtherPlayerTransform_6.html#Engine_Networking_UpdateOtherPlayerTransform_6_movementSpeed
+  commentId: F:Engine.Networking.UpdateOtherPlayerTransform_6.movementSpeed
+  fullName: Engine.Networking.UpdateOtherPlayerTransform_6.movementSpeed
+  nameWithType: UpdateOtherPlayerTransform_6.movementSpeed
+- uid: Engine.Networking.UpdateOtherPlayerTransform_6.readPacket(System.Byte[])
+  name: readPacket(Byte[])
+  href: api/Engine.Networking.UpdateOtherPlayerTransform_6.html#Engine_Networking_UpdateOtherPlayerTransform_6_readPacket_System_Byte___
+  commentId: M:Engine.Networking.UpdateOtherPlayerTransform_6.readPacket(System.Byte[])
+  name.vb: readPacket(Byte())
+  fullName: Engine.Networking.UpdateOtherPlayerTransform_6.readPacket(System.Byte[])
+  fullName.vb: Engine.Networking.UpdateOtherPlayerTransform_6.readPacket(System.Byte())
+  nameWithType: UpdateOtherPlayerTransform_6.readPacket(Byte[])
+  nameWithType.vb: UpdateOtherPlayerTransform_6.readPacket(Byte())
+- uid: Engine.Networking.UpdateOtherPlayerTransform_6.readPacket*
+  name: readPacket
+  href: api/Engine.Networking.UpdateOtherPlayerTransform_6.html#Engine_Networking_UpdateOtherPlayerTransform_6_readPacket_
+  commentId: Overload:Engine.Networking.UpdateOtherPlayerTransform_6.readPacket
+  isSpec: "True"
+  fullName: Engine.Networking.UpdateOtherPlayerTransform_6.readPacket
+  nameWithType: UpdateOtherPlayerTransform_6.readPacket
+- uid: Engine.Networking.UpdateOtherPlayerTransform_6.rotationW
+  name: rotationW
+  href: api/Engine.Networking.UpdateOtherPlayerTransform_6.html#Engine_Networking_UpdateOtherPlayerTransform_6_rotationW
+  commentId: F:Engine.Networking.UpdateOtherPlayerTransform_6.rotationW
+  fullName: Engine.Networking.UpdateOtherPlayerTransform_6.rotationW
+  nameWithType: UpdateOtherPlayerTransform_6.rotationW
+- uid: Engine.Networking.UpdateOtherPlayerTransform_6.rotationX
+  name: rotationX
+  href: api/Engine.Networking.UpdateOtherPlayerTransform_6.html#Engine_Networking_UpdateOtherPlayerTransform_6_rotationX
+  commentId: F:Engine.Networking.UpdateOtherPlayerTransform_6.rotationX
+  fullName: Engine.Networking.UpdateOtherPlayerTransform_6.rotationX
+  nameWithType: UpdateOtherPlayerTransform_6.rotationX
+- uid: Engine.Networking.UpdateOtherPlayerTransform_6.rotationY
+  name: rotationY
+  href: api/Engine.Networking.UpdateOtherPlayerTransform_6.html#Engine_Networking_UpdateOtherPlayerTransform_6_rotationY
+  commentId: F:Engine.Networking.UpdateOtherPlayerTransform_6.rotationY
+  fullName: Engine.Networking.UpdateOtherPlayerTransform_6.rotationY
+  nameWithType: UpdateOtherPlayerTransform_6.rotationY
+- uid: Engine.Networking.UpdateOtherPlayerTransform_6.rotationZ
+  name: rotationZ
+  href: api/Engine.Networking.UpdateOtherPlayerTransform_6.html#Engine_Networking_UpdateOtherPlayerTransform_6_rotationZ
+  commentId: F:Engine.Networking.UpdateOtherPlayerTransform_6.rotationZ
+  fullName: Engine.Networking.UpdateOtherPlayerTransform_6.rotationZ
+  nameWithType: UpdateOtherPlayerTransform_6.rotationZ
+- uid: Engine.Networking.UpdateOtherPlayerTransform_6.uniqueId
+  name: uniqueId
+  href: api/Engine.Networking.UpdateOtherPlayerTransform_6.html#Engine_Networking_UpdateOtherPlayerTransform_6_uniqueId
+  commentId: F:Engine.Networking.UpdateOtherPlayerTransform_6.uniqueId
+  fullName: Engine.Networking.UpdateOtherPlayerTransform_6.uniqueId
+  nameWithType: UpdateOtherPlayerTransform_6.uniqueId
+- uid: Engine.Networking.UpdateOtherPlayerTransform_6.x
+  name: x
+  href: api/Engine.Networking.UpdateOtherPlayerTransform_6.html#Engine_Networking_UpdateOtherPlayerTransform_6_x
+  commentId: F:Engine.Networking.UpdateOtherPlayerTransform_6.x
+  fullName: Engine.Networking.UpdateOtherPlayerTransform_6.x
+  nameWithType: UpdateOtherPlayerTransform_6.x
+- uid: Engine.Networking.UpdateOtherPlayerTransform_6.y
+  name: y
+  href: api/Engine.Networking.UpdateOtherPlayerTransform_6.html#Engine_Networking_UpdateOtherPlayerTransform_6_y
+  commentId: F:Engine.Networking.UpdateOtherPlayerTransform_6.y
+  fullName: Engine.Networking.UpdateOtherPlayerTransform_6.y
+  nameWithType: UpdateOtherPlayerTransform_6.y
+- uid: Engine.Networking.UpdateOtherPlayerTransform_6.z
+  name: z
+  href: api/Engine.Networking.UpdateOtherPlayerTransform_6.html#Engine_Networking_UpdateOtherPlayerTransform_6_z
+  commentId: F:Engine.Networking.UpdateOtherPlayerTransform_6.z
+  fullName: Engine.Networking.UpdateOtherPlayerTransform_6.z
+  nameWithType: UpdateOtherPlayerTransform_6.z
 - uid: Engine.Networking.Utility
   name: Engine.Networking.Utility
   href: api/Engine.Networking.Utility.html

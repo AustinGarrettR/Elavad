@@ -63,7 +63,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: GetPlayerObject
     path: ../Assets/Engine/Player/ClientPlayer.cs
-    startLine: 68
+    startLine: 84
   assemblies:
   - Engine.Player
   namespace: Engine.Player

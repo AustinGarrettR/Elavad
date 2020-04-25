@@ -35,7 +35,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ConnectionManager
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -82,7 +82,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: .ctor
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -118,7 +118,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 41
+    startLine: 42
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -153,7 +153,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 51
+    startLine: 52
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -188,7 +188,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 66
+    startLine: 67
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -223,7 +223,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: isServer
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 104
+    startLine: 96
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -262,7 +262,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyClientDisconnected
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 170
+    startLine: 162
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -295,7 +295,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyClientConnected
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 175
+    startLine: 167
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -328,7 +328,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyPacketReceived
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 180
+    startLine: 172
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -361,7 +361,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyFailedConnect
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 185
+    startLine: 177
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -394,7 +394,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyOnDisconnectedFromServer
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 190
+    startLine: 182
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -427,7 +427,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyOnConnectedToServer
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 195
+    startLine: 187
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -460,7 +460,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Start
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 231
+    startLine: 223
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -492,7 +492,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: GetPacket
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 509
+    startLine: 501
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -535,7 +535,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: SendPacketToServer
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 519
+    startLine: 518
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -571,7 +571,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: SendPacketToClient
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 535
+    startLine: 534
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -610,7 +610,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Disconnect
     path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 603
+    startLine: 602
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking

@@ -21,7 +21,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ServerPlayer
     path: ../Assets/Engine/Player/ServerPlayer.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - Engine.Player
   namespace: Engine.Player
@@ -64,7 +64,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: GetPlayerGameObject
     path: ../Assets/Engine/Player/ServerPlayer.cs
-    startLine: 87
+    startLine: 103
   assemblies:
   - Engine.Player
   namespace: Engine.Player
@@ -99,7 +99,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: GetPlayerAgent
     path: ../Assets/Engine/Player/ServerPlayer.cs
-    startLine: 96
+    startLine: 112
   assemblies:
   - Engine.Player
   namespace: Engine.Player

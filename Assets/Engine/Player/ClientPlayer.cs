@@ -14,13 +14,24 @@ namespace Engine.Player
         /// <summary>
         /// Construct the player instance
         /// </summary>
+        /// <param name="uniqueId">The unique ID</param>
         /// <param name="prefab">The player prefab</param>
         /// <param name="startPosition">The starting position</param>
         /// <param name="startRotation">The starting rotation</param>
-        internal ClientPlayer(string name, GameObject prefab, Vector3 startPosition, Quaternion startRotation)
+        internal ClientPlayer(int uniqueId, GameObject prefab, Vector3 startPosition, Quaternion startRotation)
         {
+            this.uniqueId = uniqueId;
             playerObject = GameObject.Instantiate(prefab);
-            playerObject.name = name;
+
+            if (uniqueId == -1)
+            {
+                playerObject.name = "_My Player";
+            }
+            else
+            {
+                playerObject.name = "_Player_" + uniqueId;
+            }
+
             playerObject.transform.position = startPosition;
             playerObject.transform.rotation = startRotation;
         }
@@ -37,6 +48,11 @@ namespace Engine.Player
         /*
          * Internal
          */
+
+        /// <summary>
+        /// The unique id for the player
+        /// </summary>
+        internal int uniqueId;
               
         /// <summary>
         /// The current transform update position

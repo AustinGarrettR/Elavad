@@ -124,6 +124,8 @@
 - uid: Engine.Networking
   name: Engine.Networking
   items:
+  - uid: Engine.Networking.AddOtherPlayer_7
+    name: AddOtherPlayer_7
   - uid: Engine.Networking.ConnectionManager
     name: ConnectionManager
   - uid: Engine.Networking.ConnectionManager.ListenerType
@@ -154,8 +156,12 @@
     name: PacketAttribute
   - uid: Engine.Networking.ReliabilityScheme
     name: ReliabilityScheme
+  - uid: Engine.Networking.RemoveOtherPlayer_8
+    name: RemoveOtherPlayer_8
   - uid: Engine.Networking.UpdateMyPlayerTransform_3
     name: UpdateMyPlayerTransform_3
+  - uid: Engine.Networking.UpdateOtherPlayerTransform_6
+    name: UpdateOtherPlayerTransform_6
   - uid: Engine.Networking.WalkRequest_5
     name: WalkRequest_5
 - uid: Engine.Networking.Utility

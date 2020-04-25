@@ -9,6 +9,7 @@ using Engine.Utility;
 using Engine.Configuration;
 using System;
 using Engine.Loading;
+using System.Collections.Generic;
 
 namespace Engine.Player
 {
@@ -68,6 +69,7 @@ namespace Engine.Player
             {
                 CheckForClickToWalkInput();
                 ProcessMyPlayerMovement();
+                ProcessOtherPlayerMovement();
             }
         }
 
@@ -112,6 +114,16 @@ namespace Engine.Player
         /// </summary>
         private ClientPlayer myPlayer;
 
+        /// <summary>
+        /// Nearby client players
+        /// </summary>
+        private List<ClientPlayer> otherPlayers = new List<ClientPlayer>();
+
+        /// <summary>
+        /// How long ago the last walk update was sent when holding mouse down
+        /// </summary>
+        private long lastWalkInputHoldTimestamp;
+
         /*
          * Internal Functions
          */
@@ -121,9 +133,18 @@ namespace Engine.Player
         /// </summary>
         private void CheckForClickToWalkInput()
         {
-            //Check for right click
-            //TODO change to permanent solution
+
+            bool sendWalk = false;
             if (Input.GetMouseButtonDown(1))
+                sendWalk = true;
+
+            if (sendWalk == false && Input.GetMouseButton(1) && TimeHandler.getTimeInMilliseconds() - lastWalkInputHoldTimestamp > ClientConfig.MOUSE_HOLD_MOVEMENT_TIME_IN_MILLISECONDS)
+            {
+                lastWalkInputHoldTimestamp = TimeHandler.getTimeInMilliseconds();
+                sendWalk = true;
+            }
+
+            if (sendWalk)
             {
                 //Find point
                 if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, 250f))
@@ -140,7 +161,7 @@ namespace Engine.Player
         {
 
             //Interpolate Position
-            if (Vector3.Distance(myPlayer.GetPlayerObject().transform.position, myPlayer.targetTransformUpdatePosition) > (myPlayer.movementSpeed * 0.8f / (1000 / SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS)))
+            if (Vector3.Distance(myPlayer.GetPlayerObject().transform.position, myPlayer.targetTransformUpdatePosition) > (myPlayer.movementSpeed * 0.8f / (1000 / SharedConfig.TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS)))
             {
                 Vector3 positionDirection = (myPlayer.targetTransformUpdatePosition - myPlayer.GetPlayerObject().transform.position).normalized;
                 myPlayer.GetPlayerObject().transform.position = myPlayer.GetPlayerObject().transform.position + positionDirection * myPlayer.movementSpeed * Time.deltaTime;
@@ -149,6 +170,25 @@ namespace Engine.Player
             //Interpolate Rotation
             myPlayer.GetPlayerObject().transform.rotation = Quaternion.RotateTowards(myPlayer.GetPlayerObject().transform.rotation, myPlayer.targetTransformUpdateRotation, Time.deltaTime * myPlayer.angularSpeed);
 
+        }
+
+        /// <summary>
+        /// Called every frame to lerp the position
+        /// </summary>
+        private void ProcessOtherPlayerMovement()
+        {
+            foreach (ClientPlayer player in otherPlayers)
+            {
+                //Interpolate Position
+                if (Vector3.Distance(player.GetPlayerObject().transform.position, player.targetTransformUpdatePosition) > (player.movementSpeed * 0.8f / (1000 / SharedConfig.NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS)))
+                {
+                    Vector3 positionDirection = (player.targetTransformUpdatePosition - player.GetPlayerObject().transform.position).normalized;
+                    player.GetPlayerObject().transform.position = player.GetPlayerObject().transform.position + positionDirection * player.movementSpeed * Time.deltaTime;
+                }
+
+                //Interpolate Rotation
+                player.GetPlayerObject().transform.rotation = Quaternion.RotateTowards(player.GetPlayerObject().transform.rotation, player.targetTransformUpdateRotation, Time.deltaTime * player.angularSpeed);
+            }
         }
 
         /// <summary>
@@ -180,10 +220,88 @@ namespace Engine.Player
                 packet.readPacket(packetBytes);
 
                 UpdateMyPlayerPosition(new Vector3(packet.x, packet.y, packet.z), new Quaternion(packet.rotationX, packet.rotationY, packet.rotationZ, packet.rotationW), packet.movementSpeed, packet.angularSpeed, packet.instantUpdate);
+            } else
+            if (packetId == 6)
+            {
+                //Read packet
+                UpdateOtherPlayerTransform_6 packet = connectionManager.GetPacket<UpdateOtherPlayerTransform_6>();
+                packet.readPacket(packetBytes);
+
+                UpdateOtherPlayerPosition(packet.uniqueId, new Vector3(packet.x, packet.y, packet.z), new Quaternion(packet.rotationX, packet.rotationY, packet.rotationZ, packet.rotationW), packet.movementSpeed, packet.angularSpeed, packet.instantUpdate);
+            }
+            else
+            if (packetId == 7)
+            {                
+                //Read packet
+                AddOtherPlayer_7 packet = connectionManager.GetPacket<AddOtherPlayer_7>();
+                packet.readPacket(packetBytes);
+
+                AddOtherPlayer(packet.uniqueId, new Vector3(packet.x, packet.y, packet.z), new Quaternion(packet.rotationX, packet.rotationY, packet.rotationZ, packet.rotationW));
+            }
+            else
+            if (packetId == 8)
+            {
+                //Read packet
+                RemoveOtherPlayer_8 packet = connectionManager.GetPacket<RemoveOtherPlayer_8>();
+                packet.readPacket(packetBytes);
+
+                RemoveOtherPlayer(packet.uniqueId);
             }
         }
 
+        /// <summary>
+        /// Add other player to the game
+        /// </summary>
+        /// <param name="uniqueId">The player's unique id</param>
+        /// <param name="startPosition">The player's start position</param>
+        /// <param name="startRotation">The player's start rotation</param>
+        private void AddOtherPlayer(int uniqueId, Vector3 startPosition, Quaternion startRotation)
+        {
+           ClientPlayer otherPlayer = new ClientPlayer(uniqueId, clientAssetManager.GetPlayerPrefab(), startPosition, startRotation);
+           otherPlayers.Add(otherPlayer);
+        }
 
+        /// <summary>
+        /// Remove other player from the game
+        /// </summary>
+        /// <param name="uniqueId">The player's unique id</param>
+        private void RemoveOtherPlayer(int uniqueId)
+        {
+            foreach(ClientPlayer player in otherPlayers)
+            {
+                if (player.uniqueId != uniqueId)
+                    continue;
+
+                GameObject.Destroy(player.GetPlayerObject());
+                otherPlayers.Remove(player);
+                break;
+            }
+        }
+
+        /// <summary>
+        /// Updates the client position from the server
+        /// </summary>
+        /// <param name="newPosition">The new position vector3</param>
+        private void UpdateOtherPlayerPosition(int uniqueId, Vector3 newPosition, Quaternion newRotation, float movementSpeed, float angularSpeed, bool instantUpdate)
+        {
+            foreach (ClientPlayer player in otherPlayers)
+            {
+                if (player.uniqueId != uniqueId)
+                    continue;
+
+                player.movementSpeed = movementSpeed;
+                player.angularSpeed = angularSpeed;
+                player.targetTransformUpdatePosition = newPosition;
+                player.targetTransformUpdateRotation = newRotation;
+
+                if (instantUpdate)
+                {
+                    player.GetPlayerObject().transform.position = newPosition;
+                    player.GetPlayerObject().transform.rotation = newRotation;
+                }
+                break;
+            }
+        }
 
         /// <summary>
         /// Updates the client position from the server
@@ -210,7 +328,7 @@ namespace Engine.Player
         private async Task CreateMyPlayerTask(Vector3 startPosition, Quaternion startRotation)
         {
             //Create instance for my player
-            myPlayer = new ClientPlayer("_MyPlayer", clientAssetManager.GetPlayerPrefab(), startPosition, startRotation);
+            myPlayer = new ClientPlayer(-1, clientAssetManager.GetPlayerPrefab(), startPosition, startRotation);
             await Task.CompletedTask;
         }
 
