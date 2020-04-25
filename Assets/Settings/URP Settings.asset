@@ -42,7 +42,7 @@ MonoBehaviour:
   m_SoftShadowsSupported: 1
   m_UseSRPBatcher: 1
   m_SupportsDynamicBatching: 1
-  m_MixedLightingSupported: 0
+  m_MixedLightingSupported: 1
   m_DebugLevel: 0
   m_ColorGradingMode: 1
   m_ColorGradingLutSize: 32

@@ -50,7 +50,7 @@ namespace Engine.Configuration
         /// <summary>
         /// How often to send movement updates when holding the mouse down
         /// </summary>
-        public static readonly int MOUSE_HOLD_MOVEMENT_TIME_IN_MILLISECONDS = 200;
+        public static readonly int MOUSE_HOLD_MOVEMENT_TIME_IN_MILLISECONDS = 100;
 
         /*
          * Camera Defaults
