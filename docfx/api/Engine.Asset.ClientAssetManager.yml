@@ -39,7 +39,7 @@ items:
   - System.Object
   - Engine.Factory.Manager
   inheritedMembers:
-  - Engine.Factory.Manager.LoadGameTask
+  - Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -251,31 +251,39 @@ references:
   name: Manager
   nameWithType: Manager
   fullName: Engine.Factory.Manager
-- uid: Engine.Factory.Manager.LoadGameTask
-  commentId: M:Engine.Factory.Manager.LoadGameTask
+- uid: Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
+  commentId: M:Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
   parent: Engine.Factory.Manager
-  name: LoadGameTask()
-  nameWithType: Manager.LoadGameTask()
-  fullName: Engine.Factory.Manager.LoadGameTask()
+  name: LoadGameTask(ClientLoadData)
+  nameWithType: Manager.LoadGameTask(ClientLoadData)
+  fullName: Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
   spec.csharp:
-  - uid: Engine.Factory.Manager.LoadGameTask
+  - uid: Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
     name: LoadGameTask
     nameWithType: Manager.LoadGameTask
     fullName: Engine.Factory.Manager.LoadGameTask
   - name: (
     nameWithType: (
     fullName: (
+  - uid: Engine.Loading.ClientLoadData
+    name: ClientLoadData
+    nameWithType: ClientLoadData
+    fullName: Engine.Loading.ClientLoadData
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.LoadGameTask
+  - uid: Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
     name: LoadGameTask
     nameWithType: Manager.LoadGameTask
     fullName: Engine.Factory.Manager.LoadGameTask
   - name: (
     nameWithType: (
     fullName: (
+  - uid: Engine.Loading.ClientLoadData
+    name: ClientLoadData
+    nameWithType: ClientLoadData
+    fullName: Engine.Loading.ClientLoadData
   - name: )
     nameWithType: )
     fullName: )

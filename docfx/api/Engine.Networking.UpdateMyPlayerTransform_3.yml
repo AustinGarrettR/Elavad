@@ -5,7 +5,10 @@ items:
   id: UpdateMyPlayerTransform_3
   parent: Engine.Networking
   children:
+  - Engine.Networking.UpdateMyPlayerTransform_3.angularSpeed
   - Engine.Networking.UpdateMyPlayerTransform_3.getBytes
+  - Engine.Networking.UpdateMyPlayerTransform_3.instantUpdate
+  - Engine.Networking.UpdateMyPlayerTransform_3.movementSpeed
   - Engine.Networking.UpdateMyPlayerTransform_3.readPacket(System.Byte[])
   - Engine.Networking.UpdateMyPlayerTransform_3.rotationW
   - Engine.Networking.UpdateMyPlayerTransform_3.rotationX
@@ -105,7 +108,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: x
     path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
-    startLine: 15
+    startLine: 21
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -138,7 +141,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: y
     path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
-    startLine: 20
+    startLine: 26
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -171,7 +174,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: z
     path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
-    startLine: 25
+    startLine: 31
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -204,7 +207,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: rotationX
     path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
-    startLine: 30
+    startLine: 36
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -237,7 +240,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: rotationY
     path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
-    startLine: 35
+    startLine: 41
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -270,7 +273,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: rotationZ
     path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
-    startLine: 40
+    startLine: 46
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -303,7 +306,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: rotationW
     path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
-    startLine: 45
+    startLine: 51
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -314,6 +317,105 @@ items:
     return:
       type: System.Single
     content.vb: Public rotationW As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.movementSpeed
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.movementSpeed
+  id: movementSpeed
+  parent: Engine.Networking.UpdateMyPlayerTransform_3
+  langs:
+  - csharp
+  - vb
+  name: movementSpeed
+  nameWithType: UpdateMyPlayerTransform_3.movementSpeed
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.movementSpeed
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: movementSpeed
+    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
+    startLine: 56
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe movement speed\n"
+  example: []
+  syntax:
+    content: public float movementSpeed
+    return:
+      type: System.Single
+    content.vb: Public movementSpeed As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.angularSpeed
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.angularSpeed
+  id: angularSpeed
+  parent: Engine.Networking.UpdateMyPlayerTransform_3
+  langs:
+  - csharp
+  - vb
+  name: angularSpeed
+  nameWithType: UpdateMyPlayerTransform_3.angularSpeed
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.angularSpeed
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: angularSpeed
+    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
+    startLine: 61
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe rotation speed\n"
+  example: []
+  syntax:
+    content: public float angularSpeed
+    return:
+      type: System.Single
+    content.vb: Public angularSpeed As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.instantUpdate
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.instantUpdate
+  id: instantUpdate
+  parent: Engine.Networking.UpdateMyPlayerTransform_3
+  langs:
+  - csharp
+  - vb
+  name: instantUpdate
+  nameWithType: UpdateMyPlayerTransform_3.instantUpdate
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.instantUpdate
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: instantUpdate
+    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
+    startLine: 66
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nIf the update is instant\n"
+  example: []
+  syntax:
+    content: public bool instantUpdate
+    return:
+      type: System.Boolean
+    content.vb: Public instantUpdate As Boolean
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -336,7 +438,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: getBytes
     path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
-    startLine: 51
+    startLine: 72
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -374,7 +476,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: readPacket
     path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerPosition_3.cs
-    startLine: 68
+    startLine: 92
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -739,6 +841,13 @@ references:
   name: Single
   nameWithType: Single
   fullName: System.Single
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: Engine.Networking.Packet.getBytes
   commentId: M:Engine.Networking.Packet.getBytes
   parent: Engine.Networking.Packet

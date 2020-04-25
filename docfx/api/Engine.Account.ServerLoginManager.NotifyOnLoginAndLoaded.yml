@@ -19,11 +19,11 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyOnLoginAndLoaded
     path: ../Assets/Engine/Account/ServerLoginManager.cs
-    startLine: 65
+    startLine: 64
   assemblies:
   - Engine.Account
   namespace: Engine.Account
-  summary: "\nEvent delegate for a successful login\n"
+  summary: "\nEvent delegate for a successful login and load\n"
   example: []
   syntax:
     content: public delegate void NotifyOnLoginAndLoaded(NetworkConnection c);

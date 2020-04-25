@@ -33,7 +33,7 @@ namespace Engine.Configuration
         /// <summary>
         /// How often to send the keep alive packet to maintain connection
         /// </summary>
-        public static readonly int KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS = 3000;
+        public static readonly int KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS = 1000;
 
         /// <summary>
         /// How often to send a position update packet

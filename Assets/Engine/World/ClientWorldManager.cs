@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using System.Threading.Tasks;
 using Engine.Logging;
 using Engine.Player;
+using Engine.Loading;
 
 namespace Engine.World
 {
@@ -66,7 +67,7 @@ namespace Engine.World
         /// Called on game load
         /// </summary>
         /// <returns></returns>
-        public override async Task LoadGameTask()
+        public override async Task LoadGameTask(ClientLoadData clientLoadData)
         {
             //Set focus object
             focusTarget = clientPlayerManager.GetMyPlayer().GetPlayerObject();

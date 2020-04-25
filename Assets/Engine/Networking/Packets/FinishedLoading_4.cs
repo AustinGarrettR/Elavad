@@ -9,7 +9,12 @@ namespace Engine.Networking
     [Serializable]
     [Packet(4, "Finished Loading", "Server", ReliabilityScheme.RELIABLE, "Informs the server the client finished loading")]
     public class FinishedLoading_4 : Packet
-    {        
+    {
+        /// <summary>
+        /// Internal constructor
+        /// </summary>
+        internal FinishedLoading_4() { }
+
         /// <summary>
         /// Converts the data to a byte array
         /// </summary>

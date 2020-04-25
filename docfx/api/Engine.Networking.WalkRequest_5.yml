@@ -101,7 +101,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: x
     path: ../Assets/Engine/Networking/Packets/WalkRequest_5.cs
-    startLine: 15
+    startLine: 20
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -134,7 +134,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: y
     path: ../Assets/Engine/Networking/Packets/WalkRequest_5.cs
-    startLine: 20
+    startLine: 25
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -167,7 +167,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: z
     path: ../Assets/Engine/Networking/Packets/WalkRequest_5.cs
-    startLine: 25
+    startLine: 30
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -200,7 +200,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: getBytes
     path: ../Assets/Engine/Networking/Packets/WalkRequest_5.cs
-    startLine: 31
+    startLine: 36
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -238,7 +238,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: readPacket
     path: ../Assets/Engine/Networking/Packets/WalkRequest_5.cs
-    startLine: 44
+    startLine: 49
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking

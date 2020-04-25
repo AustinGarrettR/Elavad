@@ -38,6 +38,8 @@
     name: ClientLoginManager
   - uid: Engine.Account.ServerLoginManager
     name: ServerLoginManager
+  - uid: Engine.Account.ServerLoginManager.NotifyOnLogin
+    name: ServerLoginManager.NotifyOnLogin
   - uid: Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded
     name: ServerLoginManager.NotifyOnLoginAndLoaded
   - uid: Engine.Account.ServerLoginManager.NotifyOnLogout
@@ -105,6 +107,11 @@
   items:
   - uid: Engine.Input.ClientInputManager
     name: ClientInputManager
+- uid: Engine.Loading
+  name: Engine.Loading
+  items:
+  - uid: Engine.Loading.ClientLoadData
+    name: ClientLoadData
 - uid: Engine.Logging
   name: Engine.Logging
   items:

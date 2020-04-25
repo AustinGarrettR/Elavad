@@ -8,7 +8,13 @@ namespace Engine.Networking
     [Serializable]
     [Packet(0, "Keep Alive", "Server", ReliabilityScheme.RELIABLE, "Pings to keep the connection alive.")]
     public class KeepAlive_0 : Packet
-    {        
+    {
+
+        /// <summary>
+        /// Internal constructor
+        /// </summary>
+        internal KeepAlive_0() { }
+
         /// <summary>
         /// Converts the data to a byte array
         /// </summary>

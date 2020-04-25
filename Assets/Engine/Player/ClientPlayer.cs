@@ -17,12 +17,12 @@ namespace Engine.Player
         /// <param name="prefab">The player prefab</param>
         /// <param name="startPosition">The starting position</param>
         /// <param name="startRotation">The starting rotation</param>
-        internal ClientPlayer(string name, GameObject prefab, Vector3 startPosition, Vector3 startRotation)
+        internal ClientPlayer(string name, GameObject prefab, Vector3 startPosition, Quaternion startRotation)
         {
             playerObject = GameObject.Instantiate(prefab);
             playerObject.name = name;
             playerObject.transform.position = startPosition;
-            playerObject.transform.rotation = Quaternion.Euler(startRotation);
+            playerObject.transform.rotation = startRotation;
         }
 
         /*
@@ -37,36 +37,26 @@ namespace Engine.Player
         /*
          * Internal
          */
-
-        /// <summary>
-        /// The last time a transform update was received
-        /// </summary>
-        internal long lastTransformUpdateTimestamp;
-
-        /// <summary>
-        /// The last transform update position
-        /// </summary>
-        internal Vector3 lastTransformUpdatePosition;
-
+              
         /// <summary>
         /// The current transform update position
         /// </summary>
-        internal Vector3 currentTransformUpdatePosition;
-
-        /// <summary>
-        /// The last transform update rotation
-        /// </summary>
-        internal Quaternion lastTransformUpdateRotation;
+        internal Vector3 targetTransformUpdatePosition;
 
         /// <summary>
         /// The current transform update rotation
         /// </summary>
-        internal Quaternion currentTransformUpdateRotation;
+        internal Quaternion targetTransformUpdateRotation;
 
         /// <summary>
-        /// Whether the position has been set at least once
+        /// The speed in units per second the player moves
         /// </summary>
-        internal bool positionSet;
+        internal float movementSpeed;
+
+        /// <summary>
+        /// The speed in degrees per second the player rotates
+        /// </summary>
+        internal float angularSpeed;
 
         /*
          * Public 

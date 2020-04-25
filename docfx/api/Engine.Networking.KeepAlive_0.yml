@@ -98,7 +98,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: getBytes
     path: ../Assets/Engine/Networking/Packets/KeepAlive_0.cs
-    startLine: 15
+    startLine: 21
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -136,7 +136,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: readPacket
     path: ../Assets/Engine/Networking/Packets/KeepAlive_0.cs
-    startLine: 26
+    startLine: 32
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking

@@ -8,6 +8,7 @@ namespace Engine.Networking
     [Packet(-1, "Undefined Packet", "Undefined", ReliabilityScheme.RELIABLE, "Undefined")]
     public abstract class Packet
     {
+
         /// <summary>
         /// The unique ID for the packet
         /// </summary>

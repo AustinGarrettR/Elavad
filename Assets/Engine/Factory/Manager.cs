@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using Engine.Loading;
 
 namespace Engine.Factory
 {
@@ -25,7 +26,7 @@ namespace Engine.Factory
         /// <summary>
         /// Virtual void that is called when the game is loaded.
         /// </summary>
-        public virtual async Task LoadGameTask() { 
+        public virtual async Task LoadGameTask(ClientLoadData loadData) { 
             await Task.CompletedTask; 
         }
     }

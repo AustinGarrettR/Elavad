@@ -10,6 +10,12 @@ namespace Engine.Networking
     [Packet(3, "Update MyPlayer Transform", "Client", ReliabilityScheme.UNRELIABLE, "Updates the main client player transform")]
     public class UpdateMyPlayerTransform_3 : Packet
     {
+
+        /// <summary>
+        /// Internal constructor
+        /// </summary>
+        internal UpdateMyPlayerTransform_3() { }
+
         /// <summary>
         /// The x coordinate
         /// </summary>
@@ -46,6 +52,21 @@ namespace Engine.Networking
         public float rotationW;
 
         /// <summary>
+        /// The movement speed
+        /// </summary>
+        public float movementSpeed;
+
+        /// <summary>
+        /// The rotation speed
+        /// </summary>
+        public float angularSpeed;
+
+        /// <summary>
+        /// If the update is instant
+        /// </summary>
+        public bool instantUpdate;
+
+        /// <summary>
         /// Converts the packet value types to a byte array
         /// </summary>
         /// <returns></returns>
@@ -59,6 +80,9 @@ namespace Engine.Networking
             PacketWriter.Add(ref bytes, rotationY); //5-float
             PacketWriter.Add(ref bytes, rotationZ); //6-float
             PacketWriter.Add(ref bytes, rotationW); //7-float
+            PacketWriter.Add(ref bytes, movementSpeed); //8-float
+            PacketWriter.Add(ref bytes, angularSpeed); //9-float
+            PacketWriter.Add(ref bytes, instantUpdate); //10-bool
             return bytes;
         }
 
@@ -75,6 +99,9 @@ namespace Engine.Networking
             rotationY = PacketReader.ReadFloat(ref bytes); //5-float
             rotationZ = PacketReader.ReadFloat(ref bytes); //6-float
             rotationW = PacketReader.ReadFloat(ref bytes); //7-float
+            movementSpeed = PacketReader.ReadFloat(ref bytes); //8-float
+            angularSpeed = PacketReader.ReadFloat(ref bytes); //9-float
+            instantUpdate = PacketReader.ReadBool(ref bytes);//10-bool
         }
 
     }

@@ -59,16 +59,26 @@ namespace Engine.Account
          */
 
         /// <summary>
+        /// Event delegate for a successful login and load
+        /// </summary>
+        /// <param name="c">The network connection</param>
+        public delegate void NotifyOnLoginAndLoaded(NetworkConnection c);
+
+        /// <summary>
+        /// Event for a successful login and load
+        /// </summary>
+        public event NotifyOnLoginAndLoaded NotifyClientLoggedInAndLoaded;
+
+        /// <summary>
         /// Event delegate for a successful login
         /// </summary>
         /// <param name="c">The network connection</param>
-        /// <param name="email">The player email</param>
-        public delegate void NotifyOnLoginAndLoaded(NetworkConnection c);
+        public delegate void NotifyOnLogin(NetworkConnection c, LoginResponse_2 responsePacket);
 
         /// <summary>
         /// Event for a successful login
         /// </summary>
-        public event NotifyOnLoginAndLoaded NotifyClientLoggedInAndLoaded;
+        public event NotifyOnLogin NotifyClientLoggedIn;
 
         /// <summary>
         /// Event delegate for logging out
@@ -102,7 +112,7 @@ namespace Engine.Account
             if (packetId == 1)
             {
                 //Read packet
-                LoginRequest_1 packet = new LoginRequest_1();
+                LoginRequest_1 packet = connectionManager.GetPacket<LoginRequest_1>();
                 packet.readPacket(packetBytes);
 
                 LogInPlayer(c, packet.email, packet.password);
@@ -135,7 +145,7 @@ namespace Engine.Account
         /// <param name="password">Inputted player password</param>
         private void LogInPlayer(NetworkConnection c, string email, string password)
         {
-            LoginResponse_2 packet = new LoginResponse_2();
+            LoginResponse_2 packet = connectionManager.GetPacket<LoginResponse_2>();
 
             //TODO
             if (email.Equals("austin@gmail.com", System.StringComparison.OrdinalIgnoreCase))
@@ -143,8 +153,9 @@ namespace Engine.Account
                 packet.accept = true;
                 packet.errorResponse = "Logging in...";
 
-                connectionManager.SendPacketToClient(c, packet);
+                NotifyClientLoggedIn?.Invoke(c, packet);
 
+                connectionManager.SendPacketToClient(c, packet);
             }
             else
             {

@@ -20,7 +20,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: PacketInfoEditor
     path: ../Assets/Editor/PacketInfoEditor.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - Editor
   namespace: Editor
@@ -164,7 +164,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ShowWindow
     path: ../Assets/Editor/PacketInfoEditor.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - Editor
   namespace: Editor

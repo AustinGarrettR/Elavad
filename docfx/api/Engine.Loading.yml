@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Loading
+  commentId: N:Engine.Loading
+  id: Engine.Loading
+  children:
+  - Engine.Loading.ClientLoadData
+  langs:
+  - csharp
+  - vb
+  name: Engine.Loading
+  nameWithType: Engine.Loading
+  fullName: Engine.Loading
+  type: Namespace
+  assemblies:
+  - Engine.Loading
+references:
+- uid: Engine.Loading.ClientLoadData
+  commentId: T:Engine.Loading.ClientLoadData
+  parent: Engine.Loading
+  name: ClientLoadData
+  nameWithType: ClientLoadData
+  fullName: Engine.Loading.ClientLoadData
+- uid: Engine.Loading
+  commentId: N:Engine.Loading
+  name: Engine.Loading
+  nameWithType: Engine.Loading
+  fullName: Engine.Loading

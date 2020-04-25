@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.Serialization;
 using UnityEditor;
 using UnityEngine;
 
@@ -57,7 +58,7 @@ namespace Editor
                 IEnumerable<Type> subclasses = types.Where(t => t.IsSubclassOf(parentType));
                 foreach (Type type in subclasses)
                 {
-                    Packet packet = (Packet)Activator.CreateInstance(type);
+                    Packet packet = (Packet) FormatterServices.GetUninitializedObject(type);
                     packets.Add(packet);
                 }
             }

@@ -9,6 +9,7 @@ using Engine.Logging;
 using System.Collections.Generic;
 using Engine.Configuration;
 using System.IO;
+using Engine.Loading;
 
 namespace Engine.Account
 {
@@ -135,10 +136,16 @@ namespace Engine.Account
             if (packetId == 2)
             {
                 //Read packet
-                LoginResponse_2 packet = new LoginResponse_2();
+                LoginResponse_2 packet = connectionManager.GetPacket<LoginResponse_2>();
                 packet.readPacket(packetBytes);
 
-                LoginResponse(packet.accept, packet.errorResponse);
+                ClientLoadData clientLoadData = new ClientLoadData()
+                {
+                    startPosition = new Vector3(packet.x, packet.y, packet.z),
+                    startRotation = new Quaternion(packet.rotationX, packet.rotationY, packet.rotationZ, packet.rotationW),
+                };
+
+                LoginResponse(packet.accept, packet.errorResponse, clientLoadData);
             }
         }
 
@@ -147,7 +154,6 @@ namespace Engine.Account
         /// </summary>
         private void OnDisconnectedFromServer()
         {
-            Debug.Log("Called disconnect from server from login manager.");
             if (loggedIn)
             {
                 loggedIn = false;
@@ -182,7 +188,7 @@ namespace Engine.Account
             this.statusMessageAction(true, Color.white, "Sending login details...");
 
             //Form packet
-            LoginRequest_1 packet = new LoginRequest_1();
+            LoginRequest_1 packet = connectionManager.GetPacket<LoginRequest_1>();
             packet.email = email;
             packet.password = password;
 
@@ -199,7 +205,7 @@ namespace Engine.Account
         /// </summary>
         /// <param name="accepted">If it was accepted</param>
         /// <param name="errorResponse">If not accepted, the reason why</param>
-        private void LoginResponse(bool accepted, string errorResponse)
+        private void LoginResponse(bool accepted, string errorResponse, ClientLoadData clientLoadData)
         {
             if (accepted)
             {
@@ -209,8 +215,8 @@ namespace Engine.Account
                 this.statusMessageAction(true, Color.white, "Loading...");
 
                 //Run game load asynchronously on main thread
-                BeginGameLoad().ConfigureAwait(false);
-
+                BeginGameLoad(clientLoadData).ConfigureAwait(true);
+                Debug.Log("Game load thread over.");
             }
             else
             {
@@ -223,10 +229,10 @@ namespace Engine.Account
         /// Begin game load on login
         /// </summary>
         /// <returns></returns>
-        private async Task BeginGameLoad()
+        private async Task BeginGameLoad(ClientLoadData clientLoadData)
         {
             Log.LogMsg("Loading game...");
-            Task loadGameTask = LoadGame();
+            Task loadGameTask = LoadGame(clientLoadData);
             await loadGameTask;
 
             Log.LogMsg("Done loading. Informing server we're done loading...");
@@ -254,7 +260,7 @@ namespace Engine.Account
         private async Task FinishedLoading()
         {
             //Inform server we're done loading
-            FinishedLoading_4 packet = new FinishedLoading_4();
+            FinishedLoading_4 packet = connectionManager.GetPacket<FinishedLoading_4>();
 
             //Empty packet, don't add anything to it
             
@@ -268,13 +274,13 @@ namespace Engine.Account
         /// Load game call upon successful login
         /// </summary>
         /// <returns></returns>
-        private async Task LoadGame()
+        private async Task LoadGame(ClientLoadData clientLoadData)
         {
             foreach (Manager manager in managers)
             {
                 try
                 {
-                    Task loadGameTask = manager.LoadGameTask();
+                    Task loadGameTask = manager.LoadGameTask(clientLoadData);
                     await loadGameTask;
                 }
                 catch (Exception e)
@@ -312,7 +318,9 @@ namespace Engine.Account
         /// <returns></returns>
         private async Task FinishGameLoadSequence()
         {
-            SceneManager.UnloadSceneAsync(Path.GetFileNameWithoutExtension(SharedConfig.LOGIN_SCENE_PATH), UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
+            AsyncOperation op = SceneManager.UnloadSceneAsync(Path.GetFileNameWithoutExtension(SharedConfig.LOGIN_SCENE_PATH), UnloadSceneOptions.UnloadAllEmbeddedSceneObjects);
+            while (op.isDone == false)
+                await Task.Delay(1);
             await Task.CompletedTask;
         }
 

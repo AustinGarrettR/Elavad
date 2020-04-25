@@ -100,7 +100,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: email
     path: ../Assets/Engine/Networking/Packets/LoginRequest_1.cs
-    startLine: 15
+    startLine: 21
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -133,7 +133,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: password
     path: ../Assets/Engine/Networking/Packets/LoginRequest_1.cs
-    startLine: 20
+    startLine: 26
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -166,7 +166,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: getBytes
     path: ../Assets/Engine/Networking/Packets/LoginRequest_1.cs
-    startLine: 26
+    startLine: 32
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -204,7 +204,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: readPacket
     path: ../Assets/Engine/Networking/Packets/LoginRequest_1.cs
-    startLine: 38
+    startLine: 44
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking

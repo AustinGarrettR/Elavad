@@ -8,6 +8,7 @@ using System.Threading;
 using Engine.Utility;
 using Engine.Configuration;
 using System;
+using Engine.Loading;
 
 namespace Engine.Player
 {
@@ -49,9 +50,9 @@ namespace Engine.Player
         /// Called on game load
         /// </summary>
         /// <returns></returns>
-        public override async Task LoadGameTask()
+        public override async Task LoadGameTask(ClientLoadData clientLoadData)
         {
-            Task createPlayerTask = CreateMyPlayerTask();
+            Task createPlayerTask = CreateMyPlayerTask(clientLoadData.startPosition, clientLoadData.startRotation);
             await createPlayerTask;
 
             gameLoaded = true;
@@ -138,14 +139,16 @@ namespace Engine.Player
         private void ProcessMyPlayerMovement()
         {
 
-            //Ensure the position has been set
-            if (myPlayer.positionSet == false)
-                return;
+            //Interpolate Position
+            if (Vector3.Distance(myPlayer.GetPlayerObject().transform.position, myPlayer.targetTransformUpdatePosition) > (myPlayer.movementSpeed * 0.8f / (1000 / SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS)))
+            {
+                Vector3 positionDirection = (myPlayer.targetTransformUpdatePosition - myPlayer.GetPlayerObject().transform.position).normalized;
+                myPlayer.GetPlayerObject().transform.position = myPlayer.GetPlayerObject().transform.position + positionDirection * myPlayer.movementSpeed * Time.deltaTime;
+            }
 
-            float lerpAmount = (float) (TimeHandler.getTimeInMilliseconds() - myPlayer.lastTransformUpdateTimestamp) / (float) SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS;
-            lerpAmount = Mathf.Clamp(lerpAmount, 0, 1);
-            myPlayer.GetPlayerObject().transform.position = Vector3.Lerp(myPlayer.lastTransformUpdatePosition, myPlayer.currentTransformUpdatePosition, lerpAmount);
-            myPlayer.GetPlayerObject().transform.rotation = Quaternion.Lerp(myPlayer.lastTransformUpdateRotation, myPlayer.currentTransformUpdateRotation, lerpAmount);
+            //Interpolate Rotation
+            myPlayer.GetPlayerObject().transform.rotation = Quaternion.RotateTowards(myPlayer.GetPlayerObject().transform.rotation, myPlayer.targetTransformUpdateRotation, Time.deltaTime * myPlayer.angularSpeed);
+
         }
 
         /// <summary>
@@ -154,7 +157,7 @@ namespace Engine.Player
         /// <param name="targetPosition">The target position</param>
         private void SendWalkRequest(Vector3 targetPosition)
         {
-            WalkRequest_5 packet = new WalkRequest_5();
+            WalkRequest_5 packet = connectionManager.GetPacket<WalkRequest_5>();
             packet.x = targetPosition.x;
             packet.y = targetPosition.y;
             packet.z = targetPosition.z;
@@ -173,10 +176,10 @@ namespace Engine.Player
             if (packetId == 3)
             {
                 //Read packet
-                UpdateMyPlayerTransform_3 packet = new UpdateMyPlayerTransform_3();
+                UpdateMyPlayerTransform_3 packet = connectionManager.GetPacket<UpdateMyPlayerTransform_3>();
                 packet.readPacket(packetBytes);
 
-                UpdateMyPlayerPosition(new Vector3(packet.x, packet.y, packet.z), new Quaternion(packet.rotationX, packet.rotationY, packet.rotationZ, packet.rotationW));
+                UpdateMyPlayerPosition(new Vector3(packet.x, packet.y, packet.z), new Quaternion(packet.rotationX, packet.rotationY, packet.rotationZ, packet.rotationW), packet.movementSpeed, packet.angularSpeed, packet.instantUpdate);
             }
         }
 
@@ -186,25 +189,28 @@ namespace Engine.Player
         /// Updates the client position from the server
         /// </summary>
         /// <param name="newPosition">The new position vector3</param>
-        private void UpdateMyPlayerPosition(Vector3 newPosition, Quaternion newRotation)
+        private void UpdateMyPlayerPosition(Vector3 newPosition, Quaternion newRotation, float movementSpeed, float angularSpeed, bool instantUpdate)
         {
-            myPlayer.positionSet = true;
-            myPlayer.lastTransformUpdateTimestamp = TimeHandler.getTimeInMilliseconds();
-            myPlayer.lastTransformUpdatePosition = myPlayer.GetPlayerObject().transform.position;
-            myPlayer.lastTransformUpdateRotation = myPlayer.GetPlayerObject().transform.rotation;
-            myPlayer.currentTransformUpdatePosition = newPosition;
-            myPlayer.currentTransformUpdateRotation = newRotation;
+            myPlayer.movementSpeed = movementSpeed;
+            myPlayer.angularSpeed = angularSpeed;
+            myPlayer.targetTransformUpdatePosition = newPosition;
+            myPlayer.targetTransformUpdateRotation = newRotation;
+
+            if(instantUpdate)
+            {
+                myPlayer.GetPlayerObject().transform.position = newPosition;
+                myPlayer.GetPlayerObject().transform.rotation = newRotation;
+            }
         }
 
         /// <summary>
-        /// Async task to trigger create player on game load
+        /// Create my player
         /// </summary>
         /// <returns></returns>
-        private async Task CreateMyPlayerTask()
+        private async Task CreateMyPlayerTask(Vector3 startPosition, Quaternion startRotation)
         {
             //Create instance for my player
-            myPlayer = new ClientPlayer("_MyPlayer", clientAssetManager.GetPlayerPrefab(), new Vector3(125, 0, 125), Vector3.zero);
-
+            myPlayer = new ClientPlayer("_MyPlayer", clientAssetManager.GetPlayerPrefab(), startPosition, startRotation);
             await Task.CompletedTask;
         }
 

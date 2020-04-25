@@ -114,6 +114,7 @@ references:
   fullName: Engine.Networking.LoginRequest_1
 - uid: Engine.Networking.LoginResponse_2
   commentId: T:Engine.Networking.LoginResponse_2
+  parent: Engine.Networking
   name: LoginResponse_2
   nameWithType: LoginResponse_2
   fullName: Engine.Networking.LoginResponse_2

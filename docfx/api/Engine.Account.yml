@@ -6,6 +6,7 @@ items:
   children:
   - Engine.Account.ClientLoginManager
   - Engine.Account.ServerLoginManager
+  - Engine.Account.ServerLoginManager.NotifyOnLogin
   - Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded
   - Engine.Account.ServerLoginManager.NotifyOnLogout
   langs:
@@ -35,6 +36,12 @@ references:
   name: ServerLoginManager.NotifyOnLoginAndLoaded
   nameWithType: ServerLoginManager.NotifyOnLoginAndLoaded
   fullName: Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded
+- uid: Engine.Account.ServerLoginManager.NotifyOnLogin
+  commentId: T:Engine.Account.ServerLoginManager.NotifyOnLogin
+  parent: Engine.Account
+  name: ServerLoginManager.NotifyOnLogin
+  nameWithType: ServerLoginManager.NotifyOnLogin
+  fullName: Engine.Account.ServerLoginManager.NotifyOnLogin
 - uid: Engine.Account.ServerLoginManager.NotifyOnLogout
   commentId: T:Engine.Account.ServerLoginManager.NotifyOnLogout
   parent: Engine.Account

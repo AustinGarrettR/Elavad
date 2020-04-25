@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Account.ServerLoginManager.NotifyOnLogin
+  commentId: T:Engine.Account.ServerLoginManager.NotifyOnLogin
+  id: ServerLoginManager.NotifyOnLogin
+  parent: Engine.Account
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ServerLoginManager.NotifyOnLogin
+  nameWithType: ServerLoginManager.NotifyOnLogin
+  fullName: Engine.Account.ServerLoginManager.NotifyOnLogin
+  type: Delegate
+  source:
+    remote:
+      path: Assets/Engine/Account/ServerLoginManager.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: NotifyOnLogin
+    path: ../Assets/Engine/Account/ServerLoginManager.cs
+    startLine: 75
+  assemblies:
+  - Engine.Account
+  namespace: Engine.Account
+  summary: "\nEvent delegate for a successful login\n"
+  example: []
+  syntax:
+    content: public delegate void NotifyOnLogin(NetworkConnection c, LoginResponse_2 responsePacket);
+    parameters:
+    - id: c
+      type: Unity.Networking.Transport.NetworkConnection
+      description: The network connection
+    - id: responsePacket
+      type: Engine.Networking.LoginResponse_2
+    content.vb: Public Delegate Sub NotifyOnLogin(c As NetworkConnection, responsePacket As LoginResponse_2)
+  modifiers.csharp:
+  - public
+  - delegate
+  modifiers.vb:
+  - Public
+  - Delegate
+references:
+- uid: Engine.Account
+  commentId: N:Engine.Account
+  name: Engine.Account
+  nameWithType: Engine.Account
+  fullName: Engine.Account
+- uid: Unity.Networking.Transport.NetworkConnection
+  commentId: T:Unity.Networking.Transport.NetworkConnection
+  parent: Unity.Networking.Transport
+  isExternal: true
+  name: NetworkConnection
+  nameWithType: NetworkConnection
+  fullName: Unity.Networking.Transport.NetworkConnection
+- uid: Engine.Networking.LoginResponse_2
+  commentId: T:Engine.Networking.LoginResponse_2
+  parent: Engine.Networking
+  name: LoginResponse_2
+  nameWithType: LoginResponse_2
+  fullName: Engine.Networking.LoginResponse_2
+- uid: Unity.Networking.Transport
+  commentId: N:Unity.Networking.Transport
+  isExternal: true
+  name: Unity.Networking.Transport
+  nameWithType: Unity.Networking.Transport
+  fullName: Unity.Networking.Transport
+- uid: Engine.Networking
+  commentId: N:Engine.Networking
+  name: Engine.Networking
+  nameWithType: Engine.Networking
+  fullName: Engine.Networking

@@ -43,6 +43,7 @@ namespace Engine.Player
             //Subscribe to events
             serverLoginManager.NotifyClientLoggedInAndLoaded += OnLoginAndLoaded;
             serverLoginManager.NotifyClientLoggedOut += OnLogout;
+            serverLoginManager.NotifyClientLoggedIn += OnLogin;
 
             connectionManager.NotifyPacketReceived += OnPacketReceived;
         }
@@ -92,14 +93,33 @@ namespace Engine.Player
          */
 
         /// <summary>
-        /// Called on player successful login
+        /// Called on client login
+        /// </summary>
+        /// <param name="client">The network connection for the client</param>
+        /// <param name="packet">The login response packet for loading</param>
+        private void OnLogin(NetworkConnection client, LoginResponse_2 packet)
+        {
+            ServerPlayer serverPlayer = new ServerPlayer(client);
+            LoadPlayer(serverPlayer);
+
+            packet.x = serverPlayer.GetPlayerGameObject().transform.position.x;
+            packet.y = serverPlayer.GetPlayerGameObject().transform.position.y;
+            packet.z = serverPlayer.GetPlayerGameObject().transform.position.z;
+            packet.rotationX = serverPlayer.GetPlayerGameObject().transform.rotation.x;
+            packet.rotationY = serverPlayer.GetPlayerGameObject().transform.rotation.y;
+            packet.rotationZ = serverPlayer.GetPlayerGameObject().transform.rotation.z;
+            packet.rotationW = serverPlayer.GetPlayerGameObject().transform.rotation.w;
+
+            players.Add(client, serverPlayer);
+        }
+
+        /// <summary>
+        /// Called on player successful login and load
         /// </summary>
         /// <param name="client">The network connection for the client</param>
         private void OnLoginAndLoaded(NetworkConnection client)
         {
-            ServerPlayer serverPlayer = new ServerPlayer(client);
-            LoadPlayer(serverPlayer);
-            players.Add(client, serverPlayer);
+
         }
 
         /// <summary>
@@ -122,7 +142,7 @@ namespace Engine.Player
         {
             if(packetId == 5)
             {
-                WalkRequest_5 packet = new WalkRequest_5();
+                WalkRequest_5 packet = connectionManager.GetPacket<WalkRequest_5>();
                 packet.readPacket(rawPacket);
 
                 Vector3 targetPosition = new Vector3(packet.x, packet.y, packet.z);
@@ -162,17 +182,18 @@ namespace Engine.Player
         {
             GameObject playerObject = GameObject.Instantiate(serverAssetManager.GetPlayerPrefab());
             playerObject.name = "Player_" + player.getConnection().InternalId;
-            playerObject.transform.position = new Vector3(125, 0, 125);
+            playerObject.transform.position = new Vector3(135, 0, 125);
 
             player.SetPlayerGameObject(playerObject);
 
             NavMeshAgent agent = playerObject.AddComponent<NavMeshAgent>();
             agent.obstacleAvoidanceType = ObstacleAvoidanceType.MedQualityObstacleAvoidance;
             agent.acceleration = 1000;
+            agent.angularSpeed = 360;
             agent.stoppingDistance = 0.1f;
             agent.autoBraking = false;
             player.SetPlayerAgent(agent);
-            
+
         }
 
         /// <summary>
@@ -181,6 +202,8 @@ namespace Engine.Player
         /// <param name="player">The server player reference</param>
         private void UnloadPlayer(ServerPlayer player)
         {
+            //Destroy game object
+            GameObject.Destroy(player.GetPlayerGameObject());
 
         }
 
@@ -198,18 +221,31 @@ namespace Engine.Player
                 if (player.GetPlayerAgent().velocity.magnitude > 0 && TimeHandler.getTimeInMilliseconds() - player.lastMovementUpdateTimestamp >= SharedConfig.POSITION_UPDATE_INTERVAL_IN_MILLISECONDS)
                 {
                     player.lastMovementUpdateTimestamp = TimeHandler.getTimeInMilliseconds();
-                    UpdateMyPlayerTransform_3 packet = new UpdateMyPlayerTransform_3();
-                    packet.x = player.GetPlayerGameObject().transform.position.x;
-                    packet.y = player.GetPlayerGameObject().transform.position.y;
-                    packet.z = player.GetPlayerGameObject().transform.position.z;
-                    packet.rotationX = player.GetPlayerGameObject().transform.rotation.x;
-                    packet.rotationY = player.GetPlayerGameObject().transform.rotation.y;
-                    packet.rotationZ = player.GetPlayerGameObject().transform.rotation.z;
-                    packet.rotationW = player.GetPlayerGameObject().transform.rotation.w;
-
-                    connectionManager.SendPacketToClient(player.getConnection(), packet);
+                    SendMyPlayerTransformUpdateForPlayer(player, false);
                 }
             }
+        }
+
+        /// <summary>
+        /// Send a transform update for the user's myPlayer
+        /// </summary>
+        /// <param name="player">The server player instance</param>
+        /// <param name="instant">If the position should be instantly updated.</param>
+        private void SendMyPlayerTransformUpdateForPlayer(ServerPlayer player, bool instant)
+        {
+            UpdateMyPlayerTransform_3 packet = connectionManager.GetPacket<UpdateMyPlayerTransform_3>();
+            packet.x = player.GetPlayerGameObject().transform.position.x;
+            packet.y = player.GetPlayerGameObject().transform.position.y;
+            packet.z = player.GetPlayerGameObject().transform.position.z;
+            packet.rotationX = player.GetPlayerGameObject().transform.rotation.x;
+            packet.rotationY = player.GetPlayerGameObject().transform.rotation.y;
+            packet.rotationZ = player.GetPlayerGameObject().transform.rotation.z;
+            packet.rotationW = player.GetPlayerGameObject().transform.rotation.w;
+            packet.movementSpeed = player.GetPlayerAgent().speed;
+            packet.angularSpeed = player.GetPlayerAgent().angularSpeed;
+            packet.instantUpdate = instant;
+
+            connectionManager.SendPacketToClient(player.getConnection(), packet);
         }
     }
 }

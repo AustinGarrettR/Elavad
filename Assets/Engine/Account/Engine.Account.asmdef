@@ -5,7 +5,8 @@
         "Engine.Logging",
         "Engine.Factory",
         "Unity.Networking.Transport",
-        "Engine.Configuration"
+        "Engine.Configuration",
+        "Engine.Loading"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

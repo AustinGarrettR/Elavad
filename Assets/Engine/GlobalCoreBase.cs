@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using Engine.Factory;
+using System.Threading;
 
 namespace Engine
 {
@@ -36,7 +37,7 @@ namespace Engine
         /// <summary>
         /// Called by mono behavior on start
         /// </summary>
-        internal void Start()
+        internal void Awake()
         {
             //Call abstract start method
             Init();
@@ -58,6 +59,7 @@ namespace Engine
         {
             //Call abstract method for derived class
             Shutdown();
+            Debug.Log("Core shutdown complete.");
         }
 
         /*

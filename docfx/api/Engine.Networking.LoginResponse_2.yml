@@ -9,6 +9,13 @@ items:
   - Engine.Networking.LoginResponse_2.errorResponse
   - Engine.Networking.LoginResponse_2.getBytes
   - Engine.Networking.LoginResponse_2.readPacket(System.Byte[])
+  - Engine.Networking.LoginResponse_2.rotationW
+  - Engine.Networking.LoginResponse_2.rotationX
+  - Engine.Networking.LoginResponse_2.rotationY
+  - Engine.Networking.LoginResponse_2.rotationZ
+  - Engine.Networking.LoginResponse_2.x
+  - Engine.Networking.LoginResponse_2.y
+  - Engine.Networking.LoginResponse_2.z
   langs:
   - csharp
   - vb
@@ -100,7 +107,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: accept
     path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
-    startLine: 15
+    startLine: 21
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -133,7 +140,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: errorResponse
     path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
-    startLine: 20
+    startLine: 26
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -144,6 +151,237 @@ items:
     return:
       type: System.String
     content.vb: Public errorResponse As String
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.LoginResponse_2.x
+  commentId: F:Engine.Networking.LoginResponse_2.x
+  id: x
+  parent: Engine.Networking.LoginResponse_2
+  langs:
+  - csharp
+  - vb
+  name: x
+  nameWithType: LoginResponse_2.x
+  fullName: Engine.Networking.LoginResponse_2.x
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: x
+    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    startLine: 31
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe x coordinate\n"
+  example: []
+  syntax:
+    content: public float x
+    return:
+      type: System.Single
+    content.vb: Public x As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.LoginResponse_2.y
+  commentId: F:Engine.Networking.LoginResponse_2.y
+  id: y
+  parent: Engine.Networking.LoginResponse_2
+  langs:
+  - csharp
+  - vb
+  name: y
+  nameWithType: LoginResponse_2.y
+  fullName: Engine.Networking.LoginResponse_2.y
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: y
+    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    startLine: 36
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe y coordinate\n"
+  example: []
+  syntax:
+    content: public float y
+    return:
+      type: System.Single
+    content.vb: Public y As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.LoginResponse_2.z
+  commentId: F:Engine.Networking.LoginResponse_2.z
+  id: z
+  parent: Engine.Networking.LoginResponse_2
+  langs:
+  - csharp
+  - vb
+  name: z
+  nameWithType: LoginResponse_2.z
+  fullName: Engine.Networking.LoginResponse_2.z
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: z
+    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    startLine: 41
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe z coordinate\n"
+  example: []
+  syntax:
+    content: public float z
+    return:
+      type: System.Single
+    content.vb: Public z As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.LoginResponse_2.rotationX
+  commentId: F:Engine.Networking.LoginResponse_2.rotationX
+  id: rotationX
+  parent: Engine.Networking.LoginResponse_2
+  langs:
+  - csharp
+  - vb
+  name: rotationX
+  nameWithType: LoginResponse_2.rotationX
+  fullName: Engine.Networking.LoginResponse_2.rotationX
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: rotationX
+    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    startLine: 46
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe rotation x axis\n"
+  example: []
+  syntax:
+    content: public float rotationX
+    return:
+      type: System.Single
+    content.vb: Public rotationX As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.LoginResponse_2.rotationY
+  commentId: F:Engine.Networking.LoginResponse_2.rotationY
+  id: rotationY
+  parent: Engine.Networking.LoginResponse_2
+  langs:
+  - csharp
+  - vb
+  name: rotationY
+  nameWithType: LoginResponse_2.rotationY
+  fullName: Engine.Networking.LoginResponse_2.rotationY
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: rotationY
+    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    startLine: 51
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe rotation y axis\n"
+  example: []
+  syntax:
+    content: public float rotationY
+    return:
+      type: System.Single
+    content.vb: Public rotationY As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.LoginResponse_2.rotationZ
+  commentId: F:Engine.Networking.LoginResponse_2.rotationZ
+  id: rotationZ
+  parent: Engine.Networking.LoginResponse_2
+  langs:
+  - csharp
+  - vb
+  name: rotationZ
+  nameWithType: LoginResponse_2.rotationZ
+  fullName: Engine.Networking.LoginResponse_2.rotationZ
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: rotationZ
+    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    startLine: 56
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe rotation z axis\n"
+  example: []
+  syntax:
+    content: public float rotationZ
+    return:
+      type: System.Single
+    content.vb: Public rotationZ As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.Networking.LoginResponse_2.rotationW
+  commentId: F:Engine.Networking.LoginResponse_2.rotationW
+  id: rotationW
+  parent: Engine.Networking.LoginResponse_2
+  langs:
+  - csharp
+  - vb
+  name: rotationW
+  nameWithType: LoginResponse_2.rotationW
+  fullName: Engine.Networking.LoginResponse_2.rotationW
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: rotationW
+    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    startLine: 61
+  assemblies:
+  - Engine.Networking
+  namespace: Engine.Networking
+  summary: "\nThe rotation w axis\n"
+  example: []
+  syntax:
+    content: public float rotationW
+    return:
+      type: System.Single
+    content.vb: Public rotationW As Single
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -166,7 +404,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: getBytes
     path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
-    startLine: 26
+    startLine: 67
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -204,7 +442,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: readPacket
     path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
-    startLine: 38
+    startLine: 86
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -576,6 +814,13 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
 - uid: Engine.Networking.Packet.getBytes
   commentId: M:Engine.Networking.Packet.getBytes
   parent: Engine.Networking.Packet

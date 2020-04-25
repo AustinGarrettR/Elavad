@@ -10,6 +10,12 @@ namespace Engine.Networking
     [Packet(1, "Login Request", "Server", ReliabilityScheme.RELIABLE, "Login request to the server.")]
     public class LoginRequest_1 : Packet
     {
+
+        /// <summary>
+        /// Internal constructor
+        /// </summary>
+        internal LoginRequest_1() { }
+
         /// <summary>
         /// The input email
         /// </summary>

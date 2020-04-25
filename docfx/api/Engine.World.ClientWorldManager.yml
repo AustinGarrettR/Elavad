@@ -7,7 +7,7 @@ items:
   children:
   - Engine.World.ClientWorldManager.#ctor(Engine.Player.ClientPlayerManager)
   - Engine.World.ClientWorldManager.Init
-  - Engine.World.ClientWorldManager.LoadGameTask
+  - Engine.World.ClientWorldManager.LoadGameTask(Engine.Loading.ClientLoadData)
   - Engine.World.ClientWorldManager.Process
   - Engine.World.ClientWorldManager.Shutdown
   langs:
@@ -24,7 +24,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ClientWorldManager
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -70,7 +70,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: .ctor
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 24
+    startLine: 25
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -106,7 +106,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 37
+    startLine: 38
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -141,7 +141,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 48
+    startLine: 49
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -176,7 +176,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 56
+    startLine: 57
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -193,16 +193,16 @@ items:
   modifiers.vb:
   - Public
   - Overrides
-- uid: Engine.World.ClientWorldManager.LoadGameTask
-  commentId: M:Engine.World.ClientWorldManager.LoadGameTask
-  id: LoadGameTask
+- uid: Engine.World.ClientWorldManager.LoadGameTask(Engine.Loading.ClientLoadData)
+  commentId: M:Engine.World.ClientWorldManager.LoadGameTask(Engine.Loading.ClientLoadData)
+  id: LoadGameTask(Engine.Loading.ClientLoadData)
   parent: Engine.World.ClientWorldManager
   langs:
   - csharp
   - vb
-  name: LoadGameTask()
-  nameWithType: ClientWorldManager.LoadGameTask()
-  fullName: Engine.World.ClientWorldManager.LoadGameTask()
+  name: LoadGameTask(ClientLoadData)
+  nameWithType: ClientWorldManager.LoadGameTask(ClientLoadData)
+  fullName: Engine.World.ClientWorldManager.LoadGameTask(Engine.Loading.ClientLoadData)
   type: Method
   source:
     remote:
@@ -211,19 +211,22 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: LoadGameTask
     path: ../Assets/Engine/World/ClientWorldManager.cs
-    startLine: 68
+    startLine: 69
   assemblies:
   - Engine.World
   namespace: Engine.World
   summary: "\nCalled on game load\n"
   example: []
   syntax:
-    content: public override Task LoadGameTask()
+    content: public override Task LoadGameTask(ClientLoadData clientLoadData)
+    parameters:
+    - id: clientLoadData
+      type: Engine.Loading.ClientLoadData
     return:
       type: System.Threading.Tasks.Task
       description: ''
-    content.vb: Public Overrides Function LoadGameTask As Task
-  overridden: Engine.Factory.Manager.LoadGameTask
+    content.vb: Public Overrides Function LoadGameTask(clientLoadData As ClientLoadData) As Task
+  overridden: Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
   overload: Engine.World.ClientWorldManager.LoadGameTask*
   modifiers.csharp:
   - public
@@ -655,31 +658,39 @@ references:
   name: Process
   nameWithType: ClientWorldManager.Process
   fullName: Engine.World.ClientWorldManager.Process
-- uid: Engine.Factory.Manager.LoadGameTask
-  commentId: M:Engine.Factory.Manager.LoadGameTask
+- uid: Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
+  commentId: M:Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
   parent: Engine.Factory.Manager
-  name: LoadGameTask()
-  nameWithType: Manager.LoadGameTask()
-  fullName: Engine.Factory.Manager.LoadGameTask()
+  name: LoadGameTask(ClientLoadData)
+  nameWithType: Manager.LoadGameTask(ClientLoadData)
+  fullName: Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
   spec.csharp:
-  - uid: Engine.Factory.Manager.LoadGameTask
+  - uid: Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
     name: LoadGameTask
     nameWithType: Manager.LoadGameTask
     fullName: Engine.Factory.Manager.LoadGameTask
   - name: (
     nameWithType: (
     fullName: (
+  - uid: Engine.Loading.ClientLoadData
+    name: ClientLoadData
+    nameWithType: ClientLoadData
+    fullName: Engine.Loading.ClientLoadData
   - name: )
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.Factory.Manager.LoadGameTask
+  - uid: Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
     name: LoadGameTask
     nameWithType: Manager.LoadGameTask
     fullName: Engine.Factory.Manager.LoadGameTask
   - name: (
     nameWithType: (
     fullName: (
+  - uid: Engine.Loading.ClientLoadData
+    name: ClientLoadData
+    nameWithType: ClientLoadData
+    fullName: Engine.Loading.ClientLoadData
   - name: )
     nameWithType: )
     fullName: )
@@ -688,6 +699,12 @@ references:
   name: LoadGameTask
   nameWithType: ClientWorldManager.LoadGameTask
   fullName: Engine.World.ClientWorldManager.LoadGameTask
+- uid: Engine.Loading.ClientLoadData
+  commentId: T:Engine.Loading.ClientLoadData
+  parent: Engine.Loading
+  name: ClientLoadData
+  nameWithType: ClientLoadData
+  fullName: Engine.Loading.ClientLoadData
 - uid: System.Threading.Tasks.Task
   commentId: T:System.Threading.Tasks.Task
   parent: System.Threading.Tasks
@@ -695,6 +712,11 @@ references:
   name: Task
   nameWithType: Task
   fullName: System.Threading.Tasks.Task
+- uid: Engine.Loading
+  commentId: N:Engine.Loading
+  name: Engine.Loading
+  nameWithType: Engine.Loading
+  fullName: Engine.Loading
 - uid: System.Threading.Tasks
   commentId: N:System.Threading.Tasks
   isExternal: true

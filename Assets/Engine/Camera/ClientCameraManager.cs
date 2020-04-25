@@ -6,6 +6,7 @@ using UnityEngine;
 using Engine.Logging;
 using Engine.Configuration;
 using System.Threading.Tasks;
+using Engine.Loading;
 
 namespace Engine.CameraSystem
 {
@@ -65,7 +66,7 @@ namespace Engine.CameraSystem
         /// Called on game load
         /// </summary>
         /// <returns></returns>
-        public override async Task LoadGameTask()
+        public override async Task LoadGameTask(ClientLoadData clientLoadData)
         {
             //Set rotate around target
             this.SetRotateAroundTargetToPlayer();

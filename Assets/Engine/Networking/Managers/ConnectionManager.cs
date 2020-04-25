@@ -8,6 +8,8 @@ using Engine.Configuration;
 using Engine.Logging;
 using Engine.Factory;
 using Engine.Utility;
+using UnityEngine;
+using System.Collections;
 
 namespace Engine.Networking
 {
@@ -67,9 +69,25 @@ namespace Engine.Networking
             Close();
         }
 
+
+
         /*
          * Internal Variables
          */
+
+        /// <summary>
+        /// A hastable of packet instances
+        /// </summary>
+        private Dictionary<Type, Packet> packetInstances = new Dictionary<Type, Packet>() {
+
+            { typeof(KeepAlive_0), new KeepAlive_0() },
+            { typeof(LoginRequest_1), new LoginRequest_1() },
+            { typeof(LoginResponse_2), new LoginResponse_2() },
+            { typeof(UpdateMyPlayerTransform_3), new UpdateMyPlayerTransform_3() },
+            { typeof(FinishedLoading_4), new FinishedLoading_4() },
+            { typeof(WalkRequest_5), new WalkRequest_5() },
+
+        };
 
         /// <summary>
         /// If the client is trying to connect
@@ -203,6 +221,7 @@ namespace Engine.Networking
             CLIENT
         }
 
+
         /*
          * Internal Functions
          */
@@ -219,12 +238,11 @@ namespace Engine.Networking
             //Config
             NetworkConfigParameter config = new NetworkConfigParameter
             {
-                connectTimeoutMS = 8000,
-                disconnectTimeoutMS = 30000
+                connectTimeoutMS = 5000,
+                disconnectTimeoutMS = 5000
             };
 
             networkDriver = NetworkDriver.Create(config);
-
 
             unreliablePipeline = networkDriver.CreatePipeline(typeof(UnreliableSequencedPipelineStage));
             reliablePipeline = networkDriver.CreatePipeline(typeof(ReliableSequencedPipelineStage));
@@ -300,28 +318,26 @@ namespace Engine.Networking
             }
 
             //Update Block
-
-
-
-
             for (int index = 0; index < connections.Count; index++)
             {
 
                 if (!connections[index].IsCreated)
-                    Assert.IsTrue(true);
+                {
+                    continue;
+                }
 
                 //Queued Packet buffer
                 List<byte> queuedMsg = new List<byte>();
 
                 NetworkEvent.Type cmd;
-                while ((cmd = networkDriver.PopEventForConnection(connections[index], out DataStreamReader stream)) !=
+                while (connections != null && (cmd = networkDriver.PopEventForConnection(connections[index], out DataStreamReader stream)) !=
                        NetworkEvent.Type.Empty)
                 {
 
                     if (cmd == NetworkEvent.Type.Data)
                     {
                         int streamMaxLength = stream.Length;
-                        while (networkDriver.IsCreated && stream.GetBytesRead() < streamMaxLength)
+                        while (networkDriver.IsCreated && connections != null && stream.GetBytesRead() < streamMaxLength)
                         {
                             byte nextByte = stream.ReadByte();
                             if (nextByte == SharedConfig.ESCAPE)
@@ -347,7 +363,6 @@ namespace Engine.Networking
                                         {
                                             byte[] bytes = queuedMsg.ToArray();
                                             queuedMsg.Clear();
-                                            Log.LogMsg("Received packet of byte length:" + bytes.Length);
                                             OnPacketReceived(connections[index], bytes);
                                         }
                                     }
@@ -360,9 +375,9 @@ namespace Engine.Networking
                         }
                     }
                     else if (cmd == NetworkEvent.Type.Disconnect)
-                    {
-                        connections[index] = default;                       
+                    {                 
                         OnClientDisconnected(connections[index]);
+                        connections.RemoveAt(index);
                         break;
                     }
                 }
@@ -382,15 +397,12 @@ namespace Engine.Networking
                 OnFailedConnect();
                 return;
             }
-
-            DataStreamReader stream;
-
             //Queued Packet buffer
             List<byte> queuedMsg = new List<byte>();
 
             NetworkEvent.Type cmd;
 
-            while (networkDriver.IsCreated && (cmd = connections[0].PopEvent(networkDriver, out stream)) !=
+            while (networkDriver.IsCreated && connections != null && connections[0] != null && (cmd = connections[0].PopEvent(networkDriver, out DataStreamReader stream)) !=
                    NetworkEvent.Type.Empty)
             {
                 if (cmd == NetworkEvent.Type.Connect)
@@ -468,21 +480,37 @@ namespace Engine.Networking
             {
                 foreach (NetworkConnection connection in connections)
                 {
-                    connection.Disconnect(networkDriver);
+                    networkDriver.Disconnect(connection);
                 }
 
                 connections = null;
             }
 
-            if (clientConnecting || connected)
-            {
+            if (clientConnecting || connected || networkDriver.IsCreated)
+            {                
                 networkDriver.Dispose();
-                networkDriver = default;
             }
 
             //Clear variables
             connected = false;
+            clientConnecting = false;
 
+        }
+
+
+        /*
+         * Public Functions
+         */
+
+        /// <summary>
+        /// Get packet instance by type
+        /// </summary>
+        /// <typeparam name="T">The packet type</typeparam>
+        /// <returns></returns>
+        public T GetPacket<T>() where T : Packet
+        {
+            Type type = typeof(T);
+            return (T) packetInstances[type];
         }
 
         /// <summary>
@@ -532,7 +560,7 @@ namespace Engine.Networking
             NetworkPipeline pipeline = packet.packetReliabilityScheme == ReliabilityScheme.RELIABLE ? this.reliablePipeline : this.unreliablePipeline;
 
             //Create writer for sending the data
-            DataStreamWriter writer = networkDriver.BeginSend(pipeline, c);
+            DataStreamWriter writer = networkDriver.BeginSend(pipeline, c);           
 
             //Write packetID
             WriteEscapedBytes(ref writer, ByteConverter.getBytes<int>(packet.packetId));
@@ -547,6 +575,7 @@ namespace Engine.Networking
             //Send writer
             networkDriver.EndSend(writer);
 
+           
         }
 
         /// <summary>

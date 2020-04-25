@@ -6,7 +6,7 @@ items:
   parent: Engine.Factory
   children:
   - Engine.Factory.Manager.Init
-  - Engine.Factory.Manager.LoadGameTask
+  - Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
   - Engine.Factory.Manager.Process
   - Engine.Factory.Manager.Shutdown
   langs:
@@ -23,7 +23,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Manager
     path: ../Assets/Engine/Factory/Manager.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - Engine.Factory
   namespace: Engine.Factory
@@ -85,7 +85,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/Factory/Manager.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - Engine.Factory
   namespace: Engine.Factory
@@ -119,7 +119,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/Factory/Manager.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - Engine.Factory
   namespace: Engine.Factory
@@ -153,7 +153,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/Factory/Manager.cs
-    startLine: 22
+    startLine: 23
   assemblies:
   - Engine.Factory
   namespace: Engine.Factory
@@ -169,16 +169,16 @@ items:
   modifiers.vb:
   - Public
   - MustOverride
-- uid: Engine.Factory.Manager.LoadGameTask
-  commentId: M:Engine.Factory.Manager.LoadGameTask
-  id: LoadGameTask
+- uid: Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
+  commentId: M:Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
+  id: LoadGameTask(Engine.Loading.ClientLoadData)
   parent: Engine.Factory.Manager
   langs:
   - csharp
   - vb
-  name: LoadGameTask()
-  nameWithType: Manager.LoadGameTask()
-  fullName: Engine.Factory.Manager.LoadGameTask()
+  name: LoadGameTask(ClientLoadData)
+  nameWithType: Manager.LoadGameTask(ClientLoadData)
+  fullName: Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
   type: Method
   source:
     remote:
@@ -187,17 +187,20 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: LoadGameTask
     path: ../Assets/Engine/Factory/Manager.cs
-    startLine: 27
+    startLine: 28
   assemblies:
   - Engine.Factory
   namespace: Engine.Factory
   summary: "\nVirtual void that is called when the game is loaded.\n"
   example: []
   syntax:
-    content: public virtual Task LoadGameTask()
+    content: public virtual Task LoadGameTask(ClientLoadData loadData)
+    parameters:
+    - id: loadData
+      type: Engine.Loading.ClientLoadData
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Public Overridable Function LoadGameTask As Task
+    content.vb: Public Overridable Function LoadGameTask(loadData As ClientLoadData) As Task
   overload: Engine.Factory.Manager.LoadGameTask*
   modifiers.csharp:
   - public
@@ -523,6 +526,12 @@ references:
   name: LoadGameTask
   nameWithType: Manager.LoadGameTask
   fullName: Engine.Factory.Manager.LoadGameTask
+- uid: Engine.Loading.ClientLoadData
+  commentId: T:Engine.Loading.ClientLoadData
+  parent: Engine.Loading
+  name: ClientLoadData
+  nameWithType: ClientLoadData
+  fullName: Engine.Loading.ClientLoadData
 - uid: System.Threading.Tasks.Task
   commentId: T:System.Threading.Tasks.Task
   parent: System.Threading.Tasks
@@ -530,6 +539,11 @@ references:
   name: Task
   nameWithType: Task
   fullName: System.Threading.Tasks.Task
+- uid: Engine.Loading
+  commentId: N:Engine.Loading
+  name: Engine.Loading
+  nameWithType: Engine.Loading
+  fullName: Engine.Loading
 - uid: System.Threading.Tasks
   commentId: N:System.Threading.Tasks
   isExternal: true

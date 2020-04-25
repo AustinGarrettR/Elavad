@@ -20,7 +20,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: GlobalCoreBase
     path: ../Assets/Engine/GlobalCoreBase.cs
-    startLine: 9
+    startLine: 10
   assemblies:
   - Engine
   namespace: Engine
@@ -166,7 +166,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: OnDestroy
     path: ../Assets/Engine/GlobalCoreBase.cs
-    startLine: 56
+    startLine: 57
   assemblies:
   - Engine
   namespace: Engine

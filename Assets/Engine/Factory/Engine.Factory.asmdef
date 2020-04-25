@@ -1,6 +1,8 @@
 {
     "name": "Engine.Factory",
-    "references": [],
+    "references": [
+        "GUID:cc314c3eb04e48048a3d287bd64db7b4"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

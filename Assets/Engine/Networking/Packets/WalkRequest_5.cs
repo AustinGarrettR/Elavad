@@ -11,6 +11,11 @@ namespace Engine.Networking
     public class WalkRequest_5 : Packet
     {
         /// <summary>
+        /// Internal constructor
+        /// </summary>
+        internal WalkRequest_5() { }
+
+        /// <summary>
         /// The x coordinate
         /// </summary>
         public float x;

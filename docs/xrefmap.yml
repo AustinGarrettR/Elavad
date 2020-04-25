@@ -299,6 +299,12 @@ references:
   isSpec: "True"
   fullName: Engine.Account.ServerLoginManager.Init
   nameWithType: ServerLoginManager.Init
+- uid: Engine.Account.ServerLoginManager.NotifyClientLoggedIn
+  name: NotifyClientLoggedIn
+  href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_NotifyClientLoggedIn
+  commentId: E:Engine.Account.ServerLoginManager.NotifyClientLoggedIn
+  fullName: Engine.Account.ServerLoginManager.NotifyClientLoggedIn
+  nameWithType: ServerLoginManager.NotifyClientLoggedIn
 - uid: Engine.Account.ServerLoginManager.NotifyClientLoggedInAndLoaded
   name: NotifyClientLoggedInAndLoaded
   href: api/Engine.Account.ServerLoginManager.html#Engine_Account_ServerLoginManager_NotifyClientLoggedInAndLoaded
@@ -311,6 +317,12 @@ references:
   commentId: E:Engine.Account.ServerLoginManager.NotifyClientLoggedOut
   fullName: Engine.Account.ServerLoginManager.NotifyClientLoggedOut
   nameWithType: ServerLoginManager.NotifyClientLoggedOut
+- uid: Engine.Account.ServerLoginManager.NotifyOnLogin
+  name: ServerLoginManager.NotifyOnLogin
+  href: api/Engine.Account.ServerLoginManager.NotifyOnLogin.html
+  commentId: T:Engine.Account.ServerLoginManager.NotifyOnLogin
+  fullName: Engine.Account.ServerLoginManager.NotifyOnLogin
+  nameWithType: ServerLoginManager.NotifyOnLogin
 - uid: Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded
   name: ServerLoginManager.NotifyOnLoginAndLoaded
   href: api/Engine.Account.ServerLoginManager.NotifyOnLoginAndLoaded.html
@@ -740,12 +752,12 @@ references:
   isSpec: "True"
   fullName: Engine.CameraSystem.ClientCameraManager.Init
   nameWithType: ClientCameraManager.Init
-- uid: Engine.CameraSystem.ClientCameraManager.LoadGameTask
-  name: LoadGameTask()
-  href: api/Engine.CameraSystem.ClientCameraManager.html#Engine_CameraSystem_ClientCameraManager_LoadGameTask
-  commentId: M:Engine.CameraSystem.ClientCameraManager.LoadGameTask
-  fullName: Engine.CameraSystem.ClientCameraManager.LoadGameTask()
-  nameWithType: ClientCameraManager.LoadGameTask()
+- uid: Engine.CameraSystem.ClientCameraManager.LoadGameTask(Engine.Loading.ClientLoadData)
+  name: LoadGameTask(ClientLoadData)
+  href: api/Engine.CameraSystem.ClientCameraManager.html#Engine_CameraSystem_ClientCameraManager_LoadGameTask_Engine_Loading_ClientLoadData_
+  commentId: M:Engine.CameraSystem.ClientCameraManager.LoadGameTask(Engine.Loading.ClientLoadData)
+  fullName: Engine.CameraSystem.ClientCameraManager.LoadGameTask(Engine.Loading.ClientLoadData)
+  nameWithType: ClientCameraManager.LoadGameTask(ClientLoadData)
 - uid: Engine.CameraSystem.ClientCameraManager.LoadGameTask*
   name: LoadGameTask
   href: api/Engine.CameraSystem.ClientCameraManager.html#Engine_CameraSystem_ClientCameraManager_LoadGameTask_
@@ -1122,12 +1134,12 @@ references:
   isSpec: "True"
   fullName: Engine.Factory.Manager.Init
   nameWithType: Manager.Init
-- uid: Engine.Factory.Manager.LoadGameTask
-  name: LoadGameTask()
-  href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_LoadGameTask
-  commentId: M:Engine.Factory.Manager.LoadGameTask
-  fullName: Engine.Factory.Manager.LoadGameTask()
-  nameWithType: Manager.LoadGameTask()
+- uid: Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
+  name: LoadGameTask(ClientLoadData)
+  href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_LoadGameTask_Engine_Loading_ClientLoadData_
+  commentId: M:Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
+  fullName: Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
+  nameWithType: Manager.LoadGameTask(ClientLoadData)
 - uid: Engine.Factory.Manager.LoadGameTask*
   name: LoadGameTask
   href: api/Engine.Factory.Manager.html#Engine_Factory_Manager_LoadGameTask_
@@ -1231,6 +1243,30 @@ references:
   isSpec: "True"
   fullName: Engine.Input.ClientInputManager.Shutdown
   nameWithType: ClientInputManager.Shutdown
+- uid: Engine.Loading
+  name: Engine.Loading
+  href: api/Engine.Loading.html
+  commentId: N:Engine.Loading
+  fullName: Engine.Loading
+  nameWithType: Engine.Loading
+- uid: Engine.Loading.ClientLoadData
+  name: ClientLoadData
+  href: api/Engine.Loading.ClientLoadData.html
+  commentId: T:Engine.Loading.ClientLoadData
+  fullName: Engine.Loading.ClientLoadData
+  nameWithType: ClientLoadData
+- uid: Engine.Loading.ClientLoadData.startPosition
+  name: startPosition
+  href: api/Engine.Loading.ClientLoadData.html#Engine_Loading_ClientLoadData_startPosition
+  commentId: F:Engine.Loading.ClientLoadData.startPosition
+  fullName: Engine.Loading.ClientLoadData.startPosition
+  nameWithType: ClientLoadData.startPosition
+- uid: Engine.Loading.ClientLoadData.startRotation
+  name: startRotation
+  href: api/Engine.Loading.ClientLoadData.html#Engine_Loading_ClientLoadData_startRotation
+  commentId: F:Engine.Loading.ClientLoadData.startRotation
+  fullName: Engine.Loading.ClientLoadData.startRotation
+  nameWithType: ClientLoadData.startRotation
 - uid: Engine.Logging
   name: Engine.Logging
   href: api/Engine.Logging.html
@@ -1402,6 +1438,22 @@ references:
   isSpec: "True"
   fullName: Engine.Networking.ConnectionManager.Disconnect
   nameWithType: ConnectionManager.Disconnect
+- uid: Engine.Networking.ConnectionManager.GetPacket*
+  name: GetPacket
+  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_GetPacket_
+  commentId: Overload:Engine.Networking.ConnectionManager.GetPacket
+  isSpec: "True"
+  fullName: Engine.Networking.ConnectionManager.GetPacket
+  nameWithType: ConnectionManager.GetPacket
+- uid: Engine.Networking.ConnectionManager.GetPacket``1
+  name: GetPacket<T>()
+  href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_GetPacket__1
+  commentId: M:Engine.Networking.ConnectionManager.GetPacket``1
+  name.vb: GetPacket(Of T)()
+  fullName: Engine.Networking.ConnectionManager.GetPacket<T>()
+  fullName.vb: Engine.Networking.ConnectionManager.GetPacket(Of T)()
+  nameWithType: ConnectionManager.GetPacket<T>()
+  nameWithType.vb: ConnectionManager.GetPacket(Of T)()
 - uid: Engine.Networking.ConnectionManager.Init
   name: Init()
   href: api/Engine.Networking.ConnectionManager.html#Engine_Networking_ConnectionManager_Init
@@ -1747,6 +1799,48 @@ references:
   isSpec: "True"
   fullName: Engine.Networking.LoginResponse_2.readPacket
   nameWithType: LoginResponse_2.readPacket
+- uid: Engine.Networking.LoginResponse_2.rotationW
+  name: rotationW
+  href: api/Engine.Networking.LoginResponse_2.html#Engine_Networking_LoginResponse_2_rotationW
+  commentId: F:Engine.Networking.LoginResponse_2.rotationW
+  fullName: Engine.Networking.LoginResponse_2.rotationW
+  nameWithType: LoginResponse_2.rotationW
+- uid: Engine.Networking.LoginResponse_2.rotationX
+  name: rotationX
+  href: api/Engine.Networking.LoginResponse_2.html#Engine_Networking_LoginResponse_2_rotationX
+  commentId: F:Engine.Networking.LoginResponse_2.rotationX
+  fullName: Engine.Networking.LoginResponse_2.rotationX
+  nameWithType: LoginResponse_2.rotationX
+- uid: Engine.Networking.LoginResponse_2.rotationY
+  name: rotationY
+  href: api/Engine.Networking.LoginResponse_2.html#Engine_Networking_LoginResponse_2_rotationY
+  commentId: F:Engine.Networking.LoginResponse_2.rotationY
+  fullName: Engine.Networking.LoginResponse_2.rotationY
+  nameWithType: LoginResponse_2.rotationY
+- uid: Engine.Networking.LoginResponse_2.rotationZ
+  name: rotationZ
+  href: api/Engine.Networking.LoginResponse_2.html#Engine_Networking_LoginResponse_2_rotationZ
+  commentId: F:Engine.Networking.LoginResponse_2.rotationZ
+  fullName: Engine.Networking.LoginResponse_2.rotationZ
+  nameWithType: LoginResponse_2.rotationZ
+- uid: Engine.Networking.LoginResponse_2.x
+  name: x
+  href: api/Engine.Networking.LoginResponse_2.html#Engine_Networking_LoginResponse_2_x
+  commentId: F:Engine.Networking.LoginResponse_2.x
+  fullName: Engine.Networking.LoginResponse_2.x
+  nameWithType: LoginResponse_2.x
+- uid: Engine.Networking.LoginResponse_2.y
+  name: y
+  href: api/Engine.Networking.LoginResponse_2.html#Engine_Networking_LoginResponse_2_y
+  commentId: F:Engine.Networking.LoginResponse_2.y
+  fullName: Engine.Networking.LoginResponse_2.y
+  nameWithType: LoginResponse_2.y
+- uid: Engine.Networking.LoginResponse_2.z
+  name: z
+  href: api/Engine.Networking.LoginResponse_2.html#Engine_Networking_LoginResponse_2_z
+  commentId: F:Engine.Networking.LoginResponse_2.z
+  fullName: Engine.Networking.LoginResponse_2.z
+  nameWithType: LoginResponse_2.z
 - uid: Engine.Networking.Packet
   name: Packet
   href: api/Engine.Networking.Packet.html
@@ -1955,6 +2049,12 @@ references:
   commentId: T:Engine.Networking.UpdateMyPlayerTransform_3
   fullName: Engine.Networking.UpdateMyPlayerTransform_3
   nameWithType: UpdateMyPlayerTransform_3
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.angularSpeed
+  name: angularSpeed
+  href: api/Engine.Networking.UpdateMyPlayerTransform_3.html#Engine_Networking_UpdateMyPlayerTransform_3_angularSpeed
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.angularSpeed
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.angularSpeed
+  nameWithType: UpdateMyPlayerTransform_3.angularSpeed
 - uid: Engine.Networking.UpdateMyPlayerTransform_3.getBytes
   name: getBytes()
   href: api/Engine.Networking.UpdateMyPlayerTransform_3.html#Engine_Networking_UpdateMyPlayerTransform_3_getBytes
@@ -1968,6 +2068,18 @@ references:
   isSpec: "True"
   fullName: Engine.Networking.UpdateMyPlayerTransform_3.getBytes
   nameWithType: UpdateMyPlayerTransform_3.getBytes
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.instantUpdate
+  name: instantUpdate
+  href: api/Engine.Networking.UpdateMyPlayerTransform_3.html#Engine_Networking_UpdateMyPlayerTransform_3_instantUpdate
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.instantUpdate
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.instantUpdate
+  nameWithType: UpdateMyPlayerTransform_3.instantUpdate
+- uid: Engine.Networking.UpdateMyPlayerTransform_3.movementSpeed
+  name: movementSpeed
+  href: api/Engine.Networking.UpdateMyPlayerTransform_3.html#Engine_Networking_UpdateMyPlayerTransform_3_movementSpeed
+  commentId: F:Engine.Networking.UpdateMyPlayerTransform_3.movementSpeed
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3.movementSpeed
+  nameWithType: UpdateMyPlayerTransform_3.movementSpeed
 - uid: Engine.Networking.UpdateMyPlayerTransform_3.readPacket(System.Byte[])
   name: readPacket(Byte[])
   href: api/Engine.Networking.UpdateMyPlayerTransform_3.html#Engine_Networking_UpdateMyPlayerTransform_3_readPacket_System_Byte___
@@ -2413,12 +2525,12 @@ references:
   isSpec: "True"
   fullName: Engine.Player.ClientPlayerManager.Init
   nameWithType: ClientPlayerManager.Init
-- uid: Engine.Player.ClientPlayerManager.LoadGameTask
-  name: LoadGameTask()
-  href: api/Engine.Player.ClientPlayerManager.html#Engine_Player_ClientPlayerManager_LoadGameTask
-  commentId: M:Engine.Player.ClientPlayerManager.LoadGameTask
-  fullName: Engine.Player.ClientPlayerManager.LoadGameTask()
-  nameWithType: ClientPlayerManager.LoadGameTask()
+- uid: Engine.Player.ClientPlayerManager.LoadGameTask(Engine.Loading.ClientLoadData)
+  name: LoadGameTask(ClientLoadData)
+  href: api/Engine.Player.ClientPlayerManager.html#Engine_Player_ClientPlayerManager_LoadGameTask_Engine_Loading_ClientLoadData_
+  commentId: M:Engine.Player.ClientPlayerManager.LoadGameTask(Engine.Loading.ClientLoadData)
+  fullName: Engine.Player.ClientPlayerManager.LoadGameTask(Engine.Loading.ClientLoadData)
+  nameWithType: ClientPlayerManager.LoadGameTask(ClientLoadData)
 - uid: Engine.Player.ClientPlayerManager.LoadGameTask*
   name: LoadGameTask
   href: api/Engine.Player.ClientPlayerManager.html#Engine_Player_ClientPlayerManager_LoadGameTask_
@@ -2820,12 +2932,12 @@ references:
   isSpec: "True"
   fullName: Engine.World.ClientWorldManager.Init
   nameWithType: ClientWorldManager.Init
-- uid: Engine.World.ClientWorldManager.LoadGameTask
-  name: LoadGameTask()
-  href: api/Engine.World.ClientWorldManager.html#Engine_World_ClientWorldManager_LoadGameTask
-  commentId: M:Engine.World.ClientWorldManager.LoadGameTask
-  fullName: Engine.World.ClientWorldManager.LoadGameTask()
-  nameWithType: ClientWorldManager.LoadGameTask()
+- uid: Engine.World.ClientWorldManager.LoadGameTask(Engine.Loading.ClientLoadData)
+  name: LoadGameTask(ClientLoadData)
+  href: api/Engine.World.ClientWorldManager.html#Engine_World_ClientWorldManager_LoadGameTask_Engine_Loading_ClientLoadData_
+  commentId: M:Engine.World.ClientWorldManager.LoadGameTask(Engine.Loading.ClientLoadData)
+  fullName: Engine.World.ClientWorldManager.LoadGameTask(Engine.Loading.ClientLoadData)
+  nameWithType: ClientWorldManager.LoadGameTask(ClientLoadData)
 - uid: Engine.World.ClientWorldManager.LoadGameTask*
   name: LoadGameTask
   href: api/Engine.World.ClientWorldManager.html#Engine_World_ClientWorldManager_LoadGameTask_
