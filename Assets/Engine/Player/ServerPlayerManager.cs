@@ -9,6 +9,7 @@ using Engine.Asset;
 using Engine.Networking;
 using Engine.Utility;
 using Engine.Configuration;
+using UnityEngine.UI;
 
 namespace Engine.Player
 {
@@ -182,7 +183,11 @@ namespace Engine.Player
         {
             GameObject playerObject = GameObject.Instantiate(serverAssetManager.GetPlayerPrefab());
             playerObject.name = "Player_" + player.getConnection().InternalId;
-            playerObject.transform.position = new Vector3(125, 0, 125);
+            playerObject.transform.position = new Vector3(125, 270, 125);
+
+            if(NavMesh.SamplePosition(playerObject.transform.position, out NavMeshHit hit, 500f, 1 << NavMesh.GetAreaFromName("Walkable"))) {
+                playerObject.transform.position = hit.position;
+            }
 
             player.SetPlayerGameObject(playerObject);
 
@@ -191,6 +196,7 @@ namespace Engine.Player
             agent.acceleration = 1000;
             agent.angularSpeed = 360;
             agent.stoppingDistance = 0.1f;
+            agent.baseOffset = -0.15f;
             agent.autoBraking = false;
             agent.obstacleAvoidanceType = ObstacleAvoidanceType.NoObstacleAvoidance;
             player.SetPlayerAgent(agent);
