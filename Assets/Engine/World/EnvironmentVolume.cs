@@ -23,9 +23,19 @@ namespace Engine.World
         public Cubemap sky;
 
         /// <summary>
-        /// The ambient light for the volume
+        /// The color of the sky tint
         /// </summary>
-        public Color ambientLight;
+        public Color skyTint = new Color(0.5f, 0.5f, 0.5f);
+
+        /// <summary>
+        /// The ambient light for shadows
+        /// </summary>
+        public Color shadowColor = new Color(0.5f, 0.5f, 0.5f);
+
+        /// <summary>
+        /// The ambient light for highlights
+        /// </summary>
+        public Color highlightColor = new Color(0.5f, 0.5f, 0.5f);
 
         /// <summary>
         /// The color of the fog for the volume

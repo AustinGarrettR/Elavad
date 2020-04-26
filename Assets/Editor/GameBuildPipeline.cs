@@ -65,7 +65,7 @@ namespace Editor
                 scenesToBuild.Add(SharedConfig.SERVER_SCENE_PATH);
 
                 //Development build for server
-                buildPlayerOptions.options = BuildOptions.Development;
+                buildPlayerOptions.options = BuildOptions.Development | BuildOptions.BuildScriptsOnly;
             }
 
             //Add world scenes

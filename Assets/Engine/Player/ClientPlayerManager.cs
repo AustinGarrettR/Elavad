@@ -10,6 +10,7 @@ using Engine.Configuration;
 using System;
 using Engine.Loading;
 using System.Collections.Generic;
+using UnityEngine.AI;
 
 namespace Engine.Player
 {
@@ -146,10 +147,14 @@ namespace Engine.Player
 
             if (sendWalk)
             {
+                int layerMask =~ LayerMask.GetMask(SharedConfig.PLAYERS_LAYER_NAME, SharedConfig.VOLUMES_LAYER_NAME);
                 //Find point
-                if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, 250f))
+                if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out RaycastHit hit, 250f, layerMask))
                 {
-                    SendWalkRequest(hit.point);
+                    if (NavMesh.SamplePosition(hit.point, out NavMeshHit navHit, 5f, 1 << NavMesh.GetAreaFromName("Walkable")))
+                    {
+                        SendWalkRequest(navHit.position);
+                    }
                 }
             }
         }

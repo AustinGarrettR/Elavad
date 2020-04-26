@@ -182,7 +182,7 @@ namespace Engine.Player
         {
             GameObject playerObject = GameObject.Instantiate(serverAssetManager.GetPlayerPrefab());
             playerObject.name = "Player_" + player.getConnection().InternalId;
-            playerObject.transform.position = new Vector3(135, 0, 125);
+            playerObject.transform.position = new Vector3(125, 0, 125);
 
             player.SetPlayerGameObject(playerObject);
 

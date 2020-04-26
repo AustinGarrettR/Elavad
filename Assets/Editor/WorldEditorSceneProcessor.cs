@@ -89,11 +89,13 @@ namespace Editor
         /// </summary>
         private static void SetDefaultSkybox()
         {
+            RenderSettings.ambientLight = Color.gray;
             RenderSettings.skybox.SetTexture("_Tex1", AssetDatabase.LoadAssetAtPath<Cubemap>("Assets/Settings/Editor Skybox.png"));
             RenderSettings.skybox.SetFloat("_Opacity1", 1);
             RenderSettings.skybox.SetFloat("_Opacity2", 0);
             RenderSettings.skybox.SetFloat("_Opacity3", 0);
             RenderSettings.skybox.SetFloat("_Opacity4", 0);
+            RenderSettings.skybox.SetColor("_Tint", Color.gray);
         }
 
         /// <summary>

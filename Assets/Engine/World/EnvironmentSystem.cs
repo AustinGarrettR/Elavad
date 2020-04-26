@@ -4,6 +4,8 @@ using Engine.Utility;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 
 namespace Engine.World
@@ -28,8 +30,14 @@ namespace Engine.World
         private long lastUpdate;
         private Queue<EnvironmentVolume> queue = new Queue<EnvironmentVolume>();
 
-        private Color previousAmbientColor;
-        private Color targetAmbientColor;
+        private Color previousSkyTint;
+        private Color targetSkyTint;
+
+        private Color previousShadowColor;
+        private Color targetShadowColor;
+
+        private Color previousHighlightColor;
+        private Color targetHighlightColor;
 
         private Color previousFogColor;
         private Color targetFogColor;
@@ -47,6 +55,8 @@ namespace Engine.World
 
         private GameObject focusTarget;
 
+        private SplitToning splitToning;
+
         /*
          * Constructor
          */
@@ -56,6 +66,16 @@ namespace Engine.World
         /// </summary>
         internal EnvironmentSystem()
         {
+            //Get split toning from volume component
+            try
+            {
+                GameObject.FindObjectOfType<Volume>().profile.TryGet<SplitToning>(out splitToning);
+            } catch 
+            {
+                Log.LogError("Unable to find split toning on global volume component.");
+                return;
+            }
+
             //Ensure skybox is set to a skybox material
             if(RenderSettings.skybox == null)
             {
@@ -80,8 +100,7 @@ namespace Engine.World
             //Assign sun object
             sun = GameObject.FindGameObjectWithTag("Sun").GetComponent<Light>();            
 
-            //Clear out any data left in the material
-            UpdateSkyOpacities();
+            
         }
 
         /*
@@ -162,8 +181,11 @@ namespace Engine.World
                 environmentInterpolationValue = 1;
 
             //Set ambient data      
-            RenderSettings.ambientLight = Color.Lerp(previousAmbientColor, targetAmbientColor, environmentInterpolationValue);
+            splitToning.shadows.value = Color.Lerp(previousShadowColor, targetShadowColor, environmentInterpolationValue);
+            splitToning.highlights.value = Color.Lerp(previousHighlightColor, targetHighlightColor, environmentInterpolationValue);
             RenderSettings.fogColor = Color.Lerp(previousFogColor, targetFogColor, environmentInterpolationValue);
+
+            RenderSettings.skybox.SetColor("_Tint", Color.Lerp(previousSkyTint, targetSkyTint, environmentInterpolationValue));
 
             //Set sun data
             sun.color = Color.Lerp(previousSunColor, targetSunColor, environmentInterpolationValue);
@@ -243,23 +265,29 @@ namespace Engine.World
                 //Set new sky immeditely to maximum
                 skyAlpha[currentSky] = 1;
 
-                previousAmbientColor = volume.ambientLight;
+                previousShadowColor = volume.shadowColor;
+                previousHighlightColor = volume.highlightColor;
                 previousFogColor = volume.fogColor;
-                previousSunColor = sun.color;
-                previousSunIntensity = sun.intensity;
-                previousSunRotation = sun.transform.rotation.eulerAngles;
+                previousSkyTint = volume.skyTint;
+                previousSunColor = volume.sunColor;
+                previousSunIntensity = volume.sunIntensity;
+                previousSunRotation = volume.sunRotation;
             }
             else
             {
-                previousAmbientColor = RenderSettings.ambientLight;
+                previousShadowColor = splitToning.shadows.value;
+                previousHighlightColor = splitToning.highlights.value;
                 previousFogColor = RenderSettings.fogColor;
+                previousSkyTint = RenderSettings.skybox.GetColor("_Tint");
                 previousSunColor = sun.color;
                 previousSunIntensity = sun.intensity;
                 previousSunRotation = sun.transform.rotation.eulerAngles;
             }
 
             skies[currentSky] = volume.sky;
-            targetAmbientColor = volume.ambientLight;
+            targetSkyTint = volume.skyTint;
+            targetShadowColor = volume.shadowColor;
+            targetHighlightColor = volume.highlightColor;
             targetFogColor = volume.fogColor;
             targetSunColor = volume.sunColor;
             targetSunIntensity = volume.sunIntensity;
