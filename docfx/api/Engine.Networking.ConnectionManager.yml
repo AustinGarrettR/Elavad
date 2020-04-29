@@ -45,6 +45,7 @@ items:
     content: 'public class ConnectionManager : Manager'
     content.vb: >-
       Public Class ConnectionManager
+
           Inherits Manager
   inheritance:
   - System.Object
@@ -501,6 +502,7 @@ items:
   syntax:
     content: >-
       public T GetPacket<T>()
+
           where T : Packet
     typeParameters:
     - id: T

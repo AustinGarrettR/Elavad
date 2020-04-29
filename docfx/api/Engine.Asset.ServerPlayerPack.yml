@@ -35,6 +35,7 @@ items:
       <CreateAssetMenu(fileName:="Server_Player_Pack", menuName:="Data Packs/Server_Player_Pack", order:=1)>
 
       Public Class ServerPlayerPack
+
           Inherits ScriptableObject
   inheritance:
   - System.Object

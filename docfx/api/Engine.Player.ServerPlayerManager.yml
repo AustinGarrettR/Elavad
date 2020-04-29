@@ -23,7 +23,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: ServerPlayerManager
     path: ../Assets/Engine/Player/ServerPlayerManager.cs
-    startLine: 14
+    startLine: 15
   assemblies:
   - Engine.Player
   namespace: Engine.Player
@@ -31,6 +31,7 @@ items:
     content: 'public class ServerPlayerManager : Manager'
     content.vb: >-
       Public Class ServerPlayerManager
+
           Inherits Manager
   inheritance:
   - System.Object
@@ -68,7 +69,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: .ctor
     path: ../Assets/Engine/Player/ServerPlayerManager.cs
-    startLine: 26
+    startLine: 27
   assemblies:
   - Engine.Player
   namespace: Engine.Player
@@ -110,7 +111,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Init
     path: ../Assets/Engine/Player/ServerPlayerManager.cs
-    startLine: 40
+    startLine: 41
   assemblies:
   - Engine.Player
   namespace: Engine.Player
@@ -145,7 +146,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Process
     path: ../Assets/Engine/Player/ServerPlayerManager.cs
-    startLine: 53
+    startLine: 54
   assemblies:
   - Engine.Player
   namespace: Engine.Player
@@ -180,7 +181,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
     path: ../Assets/Engine/Player/ServerPlayerManager.cs
-    startLine: 61
+    startLine: 62
   assemblies:
   - Engine.Player
   namespace: Engine.Player

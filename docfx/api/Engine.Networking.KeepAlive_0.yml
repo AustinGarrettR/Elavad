@@ -40,6 +40,7 @@ items:
       <Packet(0, "Keep Alive", "Server", ReliabilityScheme.RELIABLE, "Pings to keep the connection alive.")>
 
       Public Class KeepAlive_0
+
           Inherits Packet
   inheritance:
   - System.Object

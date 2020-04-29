@@ -43,6 +43,7 @@ items:
       <Packet(5, "Walk Request", "Server", ReliabilityScheme.RELIABLE, "Walk request to the server.")>
 
       Public Class WalkRequest_5
+
           Inherits Packet
   inheritance:
   - System.Object

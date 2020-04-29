@@ -5,11 +5,13 @@ items:
   id: EnvironmentVolume
   parent: Engine.World
   children:
-  - Engine.World.EnvironmentVolume.ambientLight
   - Engine.World.EnvironmentVolume.fogColor
+  - Engine.World.EnvironmentVolume.highlightColor
   - Engine.World.EnvironmentVolume.isTargetInsideVolume
   - Engine.World.EnvironmentVolume.SetTarget(UnityEngine.GameObject)
+  - Engine.World.EnvironmentVolume.shadowColor
   - Engine.World.EnvironmentVolume.sky
+  - Engine.World.EnvironmentVolume.skyTint
   - Engine.World.EnvironmentVolume.Start
   - Engine.World.EnvironmentVolume.SubscribeToVolumeEnteredEvent(Engine.World.EnvironmentVolume.volumeEnteredDelegate)
   - Engine.World.EnvironmentVolume.sunColor
@@ -45,6 +47,7 @@ items:
       <RequireComponent(GetType(BoxCollider))>
 
       Public Class EnvironmentVolume
+
           Inherits MonoBehaviour
   inheritance:
   - System.Object
@@ -197,35 +200,101 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: Engine.World.EnvironmentVolume.ambientLight
-  commentId: F:Engine.World.EnvironmentVolume.ambientLight
-  id: ambientLight
+- uid: Engine.World.EnvironmentVolume.skyTint
+  commentId: F:Engine.World.EnvironmentVolume.skyTint
+  id: skyTint
   parent: Engine.World.EnvironmentVolume
   langs:
   - csharp
   - vb
-  name: ambientLight
-  nameWithType: EnvironmentVolume.ambientLight
-  fullName: Engine.World.EnvironmentVolume.ambientLight
+  name: skyTint
+  nameWithType: EnvironmentVolume.skyTint
+  fullName: Engine.World.EnvironmentVolume.skyTint
   type: Field
   source:
     remote:
       path: Assets/Engine/World/EnvironmentVolume.cs
       branch: master
       repo: https://github.com/AustinGarrettR/Elavad
-    id: ambientLight
+    id: skyTint
     path: ../Assets/Engine/World/EnvironmentVolume.cs
     startLine: 27
   assemblies:
   - Engine.World
   namespace: Engine.World
-  summary: "\nThe ambient light for the volume\n"
+  summary: "\nThe color of the sky tint\n"
   example: []
   syntax:
-    content: public Color ambientLight
+    content: public Color skyTint
     return:
       type: UnityEngine.Color
-    content.vb: Public ambientLight As Color
+    content.vb: Public skyTint As Color
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.World.EnvironmentVolume.shadowColor
+  commentId: F:Engine.World.EnvironmentVolume.shadowColor
+  id: shadowColor
+  parent: Engine.World.EnvironmentVolume
+  langs:
+  - csharp
+  - vb
+  name: shadowColor
+  nameWithType: EnvironmentVolume.shadowColor
+  fullName: Engine.World.EnvironmentVolume.shadowColor
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/World/EnvironmentVolume.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: shadowColor
+    path: ../Assets/Engine/World/EnvironmentVolume.cs
+    startLine: 32
+  assemblies:
+  - Engine.World
+  namespace: Engine.World
+  summary: "\nThe ambient light for shadows\n"
+  example: []
+  syntax:
+    content: public Color shadowColor
+    return:
+      type: UnityEngine.Color
+    content.vb: Public shadowColor As Color
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Engine.World.EnvironmentVolume.highlightColor
+  commentId: F:Engine.World.EnvironmentVolume.highlightColor
+  id: highlightColor
+  parent: Engine.World.EnvironmentVolume
+  langs:
+  - csharp
+  - vb
+  name: highlightColor
+  nameWithType: EnvironmentVolume.highlightColor
+  fullName: Engine.World.EnvironmentVolume.highlightColor
+  type: Field
+  source:
+    remote:
+      path: Assets/Engine/World/EnvironmentVolume.cs
+      branch: master
+      repo: https://github.com/AustinGarrettR/Elavad
+    id: highlightColor
+    path: ../Assets/Engine/World/EnvironmentVolume.cs
+    startLine: 37
+  assemblies:
+  - Engine.World
+  namespace: Engine.World
+  summary: "\nThe ambient light for highlights\n"
+  example: []
+  syntax:
+    content: public Color highlightColor
+    return:
+      type: UnityEngine.Color
+    content.vb: Public highlightColor As Color
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -248,7 +317,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: fogColor
     path: ../Assets/Engine/World/EnvironmentVolume.cs
-    startLine: 32
+    startLine: 42
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -281,7 +350,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: sunColor
     path: ../Assets/Engine/World/EnvironmentVolume.cs
-    startLine: 37
+    startLine: 47
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -314,7 +383,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: sunIntensity
     path: ../Assets/Engine/World/EnvironmentVolume.cs
-    startLine: 42
+    startLine: 52
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -347,7 +416,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: sunRotation
     path: ../Assets/Engine/World/EnvironmentVolume.cs
-    startLine: 47
+    startLine: 57
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -380,7 +449,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Start
     path: ../Assets/Engine/World/EnvironmentVolume.cs
-    startLine: 90
+    startLine: 100
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -412,7 +481,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: Update
     path: ../Assets/Engine/World/EnvironmentVolume.cs
-    startLine: 100
+    startLine: 110
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -444,7 +513,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: SubscribeToVolumeEnteredEvent
     path: ../Assets/Engine/World/EnvironmentVolume.cs
-    startLine: 130
+    startLine: 140
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -480,7 +549,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: SetTarget
     path: ../Assets/Engine/World/EnvironmentVolume.cs
-    startLine: 144
+    startLine: 154
   assemblies:
   - Engine.World
   namespace: Engine.World
@@ -516,7 +585,7 @@ items:
       repo: https://github.com/AustinGarrettR/Elavad
     id: isTargetInsideVolume
     path: ../Assets/Engine/World/EnvironmentVolume.cs
-    startLine: 153
+    startLine: 163
   assemblies:
   - Engine.World
   namespace: Engine.World

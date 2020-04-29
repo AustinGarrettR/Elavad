@@ -50,6 +50,7 @@ items:
       <Packet(3, "Update MyPlayer Transform", "Client", ReliabilityScheme.UNRELIABLE, "Updates the main client player transform")>
 
       Public Class UpdateMyPlayerTransform_3
+
           Inherits Packet
   inheritance:
   - System.Object

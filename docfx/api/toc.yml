@@ -11,17 +11,6 @@
   items:
   - uid: Content.UI.Login_Screen_UIController
     name: Login_Screen_UIController
-- uid: Editor
-  name: Editor
-  items:
-  - uid: Editor.BuildSceneEditor
-    name: BuildSceneEditor
-  - uid: Editor.GameBuildPipeline
-    name: GameBuildPipeline
-  - uid: Editor.PacketInfoEditor
-    name: PacketInfoEditor
-  - uid: Editor.WorldEditorSceneProcessor
-    name: WorldEditorSceneProcessor
 - uid: Engine
   name: Engine
   items:
@@ -97,6 +86,17 @@
     name: Dispatcher
   - uid: Engine.Dispatch.DispatchManager
     name: DispatchManager
+- uid: Engine.Editor
+  name: Engine.Editor
+  items:
+  - uid: Engine.Editor.BuildSceneEditor
+    name: BuildSceneEditor
+  - uid: Engine.Editor.GameBuildPipeline
+    name: GameBuildPipeline
+  - uid: Engine.Editor.PacketInfoEditor
+    name: PacketInfoEditor
+  - uid: Engine.Editor.WorldEditorSceneProcessor
+    name: WorldEditorSceneProcessor
 - uid: Engine.Factory
   name: Engine.Factory
   items:

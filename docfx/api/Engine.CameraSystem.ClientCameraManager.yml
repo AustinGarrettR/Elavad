@@ -36,6 +36,7 @@ items:
     content: 'public class ClientCameraManager : Manager'
     content.vb: >-
       Public Class ClientCameraManager
+
           Inherits Manager
   inheritance:
   - System.Object

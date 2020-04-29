@@ -41,6 +41,7 @@ items:
       <Packet(8, "Remove Other Player", "Client", ReliabilityScheme.RELIABLE, "Removes other player to client")>
 
       Public Class RemoveOtherPlayer_8
+
           Inherits Packet
   inheritance:
   - System.Object

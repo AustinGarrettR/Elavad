@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: Engine.Editor
+  commentId: N:Engine.Editor
+  id: Engine.Editor
+  children:
+  - Engine.Editor.BuildSceneEditor
+  - Engine.Editor.GameBuildPipeline
+  - Engine.Editor.PacketInfoEditor
+  - Engine.Editor.WorldEditorSceneProcessor
+  langs:
+  - csharp
+  - vb
+  name: Engine.Editor
+  nameWithType: Engine.Editor
+  fullName: Engine.Editor
+  type: Namespace
+  assemblies:
+  - Engine.Editor
+references:
+- uid: Engine.Editor.BuildSceneEditor
+  commentId: T:Engine.Editor.BuildSceneEditor
+  name: BuildSceneEditor
+  nameWithType: BuildSceneEditor
+  fullName: Engine.Editor.BuildSceneEditor
+- uid: Engine.Editor.GameBuildPipeline
+  commentId: T:Engine.Editor.GameBuildPipeline
+  name: GameBuildPipeline
+  nameWithType: GameBuildPipeline
+  fullName: Engine.Editor.GameBuildPipeline
+- uid: Engine.Editor.PacketInfoEditor
+  commentId: T:Engine.Editor.PacketInfoEditor
+  name: PacketInfoEditor
+  nameWithType: PacketInfoEditor
+  fullName: Engine.Editor.PacketInfoEditor
+- uid: Engine.Editor.WorldEditorSceneProcessor
+  commentId: T:Engine.Editor.WorldEditorSceneProcessor
+  name: WorldEditorSceneProcessor
+  nameWithType: WorldEditorSceneProcessor
+  fullName: Engine.Editor.WorldEditorSceneProcessor

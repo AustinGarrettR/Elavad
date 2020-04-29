@@ -33,6 +33,7 @@ items:
     content: 'public class APIManager : Manager'
     content.vb: >-
       Public Class APIManager
+
           Inherits Manager
   inheritance:
   - System.Object

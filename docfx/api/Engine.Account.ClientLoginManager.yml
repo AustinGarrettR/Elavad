@@ -35,6 +35,7 @@ items:
     content: 'public class ClientLoginManager : Manager'
     content.vb: >-
       Public Class ClientLoginManager
+
           Inherits Manager
   inheritance:
   - System.Object

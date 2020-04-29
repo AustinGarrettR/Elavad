@@ -33,6 +33,7 @@ items:
     content: 'public class ServerAssetManager : Manager'
     content.vb: >-
       Public Class ServerAssetManager
+
           Inherits Manager
   inheritance:
   - System.Object

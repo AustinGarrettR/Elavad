@@ -70,101 +70,6 @@ references:
   isSpec: "True"
   fullName: Content.UI.Login_Screen_UIController.onPanelLoaded
   nameWithType: Login_Screen_UIController.onPanelLoaded
-- uid: Editor
-  name: Editor
-  href: api/Editor.html
-  commentId: N:Editor
-  fullName: Editor
-  nameWithType: Editor
-- uid: Editor.BuildSceneEditor
-  name: BuildSceneEditor
-  href: api/Editor.BuildSceneEditor.html
-  commentId: T:Editor.BuildSceneEditor
-  fullName: Editor.BuildSceneEditor
-  nameWithType: BuildSceneEditor
-- uid: Editor.GameBuildPipeline
-  name: GameBuildPipeline
-  href: api/Editor.GameBuildPipeline.html
-  commentId: T:Editor.GameBuildPipeline
-  fullName: Editor.GameBuildPipeline
-  nameWithType: GameBuildPipeline
-- uid: Editor.GameBuildPipeline.BuildWindows32Client
-  name: BuildWindows32Client()
-  href: api/Editor.GameBuildPipeline.html#Editor_GameBuildPipeline_BuildWindows32Client
-  commentId: M:Editor.GameBuildPipeline.BuildWindows32Client
-  fullName: Editor.GameBuildPipeline.BuildWindows32Client()
-  nameWithType: GameBuildPipeline.BuildWindows32Client()
-- uid: Editor.GameBuildPipeline.BuildWindows32Client*
-  name: BuildWindows32Client
-  href: api/Editor.GameBuildPipeline.html#Editor_GameBuildPipeline_BuildWindows32Client_
-  commentId: Overload:Editor.GameBuildPipeline.BuildWindows32Client
-  isSpec: "True"
-  fullName: Editor.GameBuildPipeline.BuildWindows32Client
-  nameWithType: GameBuildPipeline.BuildWindows32Client
-- uid: Editor.GameBuildPipeline.BuildWindows32Server
-  name: BuildWindows32Server()
-  href: api/Editor.GameBuildPipeline.html#Editor_GameBuildPipeline_BuildWindows32Server
-  commentId: M:Editor.GameBuildPipeline.BuildWindows32Server
-  fullName: Editor.GameBuildPipeline.BuildWindows32Server()
-  nameWithType: GameBuildPipeline.BuildWindows32Server()
-- uid: Editor.GameBuildPipeline.BuildWindows32Server*
-  name: BuildWindows32Server
-  href: api/Editor.GameBuildPipeline.html#Editor_GameBuildPipeline_BuildWindows32Server_
-  commentId: Overload:Editor.GameBuildPipeline.BuildWindows32Server
-  isSpec: "True"
-  fullName: Editor.GameBuildPipeline.BuildWindows32Server
-  nameWithType: GameBuildPipeline.BuildWindows32Server
-- uid: Editor.GameBuildPipeline.BuildWindows64Client
-  name: BuildWindows64Client()
-  href: api/Editor.GameBuildPipeline.html#Editor_GameBuildPipeline_BuildWindows64Client
-  commentId: M:Editor.GameBuildPipeline.BuildWindows64Client
-  fullName: Editor.GameBuildPipeline.BuildWindows64Client()
-  nameWithType: GameBuildPipeline.BuildWindows64Client()
-- uid: Editor.GameBuildPipeline.BuildWindows64Client*
-  name: BuildWindows64Client
-  href: api/Editor.GameBuildPipeline.html#Editor_GameBuildPipeline_BuildWindows64Client_
-  commentId: Overload:Editor.GameBuildPipeline.BuildWindows64Client
-  isSpec: "True"
-  fullName: Editor.GameBuildPipeline.BuildWindows64Client
-  nameWithType: GameBuildPipeline.BuildWindows64Client
-- uid: Editor.GameBuildPipeline.BuildWindows64Server
-  name: BuildWindows64Server()
-  href: api/Editor.GameBuildPipeline.html#Editor_GameBuildPipeline_BuildWindows64Server
-  commentId: M:Editor.GameBuildPipeline.BuildWindows64Server
-  fullName: Editor.GameBuildPipeline.BuildWindows64Server()
-  nameWithType: GameBuildPipeline.BuildWindows64Server()
-- uid: Editor.GameBuildPipeline.BuildWindows64Server*
-  name: BuildWindows64Server
-  href: api/Editor.GameBuildPipeline.html#Editor_GameBuildPipeline_BuildWindows64Server_
-  commentId: Overload:Editor.GameBuildPipeline.BuildWindows64Server
-  isSpec: "True"
-  fullName: Editor.GameBuildPipeline.BuildWindows64Server
-  nameWithType: GameBuildPipeline.BuildWindows64Server
-- uid: Editor.PacketInfoEditor
-  name: PacketInfoEditor
-  href: api/Editor.PacketInfoEditor.html
-  commentId: T:Editor.PacketInfoEditor
-  fullName: Editor.PacketInfoEditor
-  nameWithType: PacketInfoEditor
-- uid: Editor.PacketInfoEditor.ShowWindow
-  name: ShowWindow()
-  href: api/Editor.PacketInfoEditor.html#Editor_PacketInfoEditor_ShowWindow
-  commentId: M:Editor.PacketInfoEditor.ShowWindow
-  fullName: Editor.PacketInfoEditor.ShowWindow()
-  nameWithType: PacketInfoEditor.ShowWindow()
-- uid: Editor.PacketInfoEditor.ShowWindow*
-  name: ShowWindow
-  href: api/Editor.PacketInfoEditor.html#Editor_PacketInfoEditor_ShowWindow_
-  commentId: Overload:Editor.PacketInfoEditor.ShowWindow
-  isSpec: "True"
-  fullName: Editor.PacketInfoEditor.ShowWindow
-  nameWithType: PacketInfoEditor.ShowWindow
-- uid: Editor.WorldEditorSceneProcessor
-  name: WorldEditorSceneProcessor
-  href: api/Editor.WorldEditorSceneProcessor.html
-  commentId: T:Editor.WorldEditorSceneProcessor
-  fullName: Editor.WorldEditorSceneProcessor
-  nameWithType: WorldEditorSceneProcessor
 - uid: Engine
   name: Engine
   href: api/Engine.html
@@ -1133,6 +1038,101 @@ references:
   isSpec: "True"
   fullName: Engine.Dispatch.DispatchManager.Shutdown
   nameWithType: DispatchManager.Shutdown
+- uid: Engine.Editor
+  name: Engine.Editor
+  href: api/Engine.Editor.html
+  commentId: N:Engine.Editor
+  fullName: Engine.Editor
+  nameWithType: Engine.Editor
+- uid: Engine.Editor.BuildSceneEditor
+  name: BuildSceneEditor
+  href: api/Engine.Editor.BuildSceneEditor.html
+  commentId: T:Engine.Editor.BuildSceneEditor
+  fullName: Engine.Editor.BuildSceneEditor
+  nameWithType: BuildSceneEditor
+- uid: Engine.Editor.GameBuildPipeline
+  name: GameBuildPipeline
+  href: api/Engine.Editor.GameBuildPipeline.html
+  commentId: T:Engine.Editor.GameBuildPipeline
+  fullName: Engine.Editor.GameBuildPipeline
+  nameWithType: GameBuildPipeline
+- uid: Engine.Editor.GameBuildPipeline.BuildWindows32Client
+  name: BuildWindows32Client()
+  href: api/Engine.Editor.GameBuildPipeline.html#Engine_Editor_GameBuildPipeline_BuildWindows32Client
+  commentId: M:Engine.Editor.GameBuildPipeline.BuildWindows32Client
+  fullName: Engine.Editor.GameBuildPipeline.BuildWindows32Client()
+  nameWithType: GameBuildPipeline.BuildWindows32Client()
+- uid: Engine.Editor.GameBuildPipeline.BuildWindows32Client*
+  name: BuildWindows32Client
+  href: api/Engine.Editor.GameBuildPipeline.html#Engine_Editor_GameBuildPipeline_BuildWindows32Client_
+  commentId: Overload:Engine.Editor.GameBuildPipeline.BuildWindows32Client
+  isSpec: "True"
+  fullName: Engine.Editor.GameBuildPipeline.BuildWindows32Client
+  nameWithType: GameBuildPipeline.BuildWindows32Client
+- uid: Engine.Editor.GameBuildPipeline.BuildWindows32Server
+  name: BuildWindows32Server()
+  href: api/Engine.Editor.GameBuildPipeline.html#Engine_Editor_GameBuildPipeline_BuildWindows32Server
+  commentId: M:Engine.Editor.GameBuildPipeline.BuildWindows32Server
+  fullName: Engine.Editor.GameBuildPipeline.BuildWindows32Server()
+  nameWithType: GameBuildPipeline.BuildWindows32Server()
+- uid: Engine.Editor.GameBuildPipeline.BuildWindows32Server*
+  name: BuildWindows32Server
+  href: api/Engine.Editor.GameBuildPipeline.html#Engine_Editor_GameBuildPipeline_BuildWindows32Server_
+  commentId: Overload:Engine.Editor.GameBuildPipeline.BuildWindows32Server
+  isSpec: "True"
+  fullName: Engine.Editor.GameBuildPipeline.BuildWindows32Server
+  nameWithType: GameBuildPipeline.BuildWindows32Server
+- uid: Engine.Editor.GameBuildPipeline.BuildWindows64Client
+  name: BuildWindows64Client()
+  href: api/Engine.Editor.GameBuildPipeline.html#Engine_Editor_GameBuildPipeline_BuildWindows64Client
+  commentId: M:Engine.Editor.GameBuildPipeline.BuildWindows64Client
+  fullName: Engine.Editor.GameBuildPipeline.BuildWindows64Client()
+  nameWithType: GameBuildPipeline.BuildWindows64Client()
+- uid: Engine.Editor.GameBuildPipeline.BuildWindows64Client*
+  name: BuildWindows64Client
+  href: api/Engine.Editor.GameBuildPipeline.html#Engine_Editor_GameBuildPipeline_BuildWindows64Client_
+  commentId: Overload:Engine.Editor.GameBuildPipeline.BuildWindows64Client
+  isSpec: "True"
+  fullName: Engine.Editor.GameBuildPipeline.BuildWindows64Client
+  nameWithType: GameBuildPipeline.BuildWindows64Client
+- uid: Engine.Editor.GameBuildPipeline.BuildWindows64Server
+  name: BuildWindows64Server()
+  href: api/Engine.Editor.GameBuildPipeline.html#Engine_Editor_GameBuildPipeline_BuildWindows64Server
+  commentId: M:Engine.Editor.GameBuildPipeline.BuildWindows64Server
+  fullName: Engine.Editor.GameBuildPipeline.BuildWindows64Server()
+  nameWithType: GameBuildPipeline.BuildWindows64Server()
+- uid: Engine.Editor.GameBuildPipeline.BuildWindows64Server*
+  name: BuildWindows64Server
+  href: api/Engine.Editor.GameBuildPipeline.html#Engine_Editor_GameBuildPipeline_BuildWindows64Server_
+  commentId: Overload:Engine.Editor.GameBuildPipeline.BuildWindows64Server
+  isSpec: "True"
+  fullName: Engine.Editor.GameBuildPipeline.BuildWindows64Server
+  nameWithType: GameBuildPipeline.BuildWindows64Server
+- uid: Engine.Editor.PacketInfoEditor
+  name: PacketInfoEditor
+  href: api/Engine.Editor.PacketInfoEditor.html
+  commentId: T:Engine.Editor.PacketInfoEditor
+  fullName: Engine.Editor.PacketInfoEditor
+  nameWithType: PacketInfoEditor
+- uid: Engine.Editor.PacketInfoEditor.ShowWindow
+  name: ShowWindow()
+  href: api/Engine.Editor.PacketInfoEditor.html#Engine_Editor_PacketInfoEditor_ShowWindow
+  commentId: M:Engine.Editor.PacketInfoEditor.ShowWindow
+  fullName: Engine.Editor.PacketInfoEditor.ShowWindow()
+  nameWithType: PacketInfoEditor.ShowWindow()
+- uid: Engine.Editor.PacketInfoEditor.ShowWindow*
+  name: ShowWindow
+  href: api/Engine.Editor.PacketInfoEditor.html#Engine_Editor_PacketInfoEditor_ShowWindow_
+  commentId: Overload:Engine.Editor.PacketInfoEditor.ShowWindow
+  isSpec: "True"
+  fullName: Engine.Editor.PacketInfoEditor.ShowWindow
+  nameWithType: PacketInfoEditor.ShowWindow
+- uid: Engine.Editor.WorldEditorSceneProcessor
+  name: WorldEditorSceneProcessor
+  href: api/Engine.Editor.WorldEditorSceneProcessor.html
+  commentId: T:Engine.Editor.WorldEditorSceneProcessor
+  fullName: Engine.Editor.WorldEditorSceneProcessor
+  nameWithType: WorldEditorSceneProcessor
 - uid: Engine.Factory
   name: Engine.Factory
   href: api/Engine.Factory.html
@@ -3232,18 +3232,18 @@ references:
   commentId: T:Engine.World.EnvironmentVolume
   fullName: Engine.World.EnvironmentVolume
   nameWithType: EnvironmentVolume
-- uid: Engine.World.EnvironmentVolume.ambientLight
-  name: ambientLight
-  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_ambientLight
-  commentId: F:Engine.World.EnvironmentVolume.ambientLight
-  fullName: Engine.World.EnvironmentVolume.ambientLight
-  nameWithType: EnvironmentVolume.ambientLight
 - uid: Engine.World.EnvironmentVolume.fogColor
   name: fogColor
   href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_fogColor
   commentId: F:Engine.World.EnvironmentVolume.fogColor
   fullName: Engine.World.EnvironmentVolume.fogColor
   nameWithType: EnvironmentVolume.fogColor
+- uid: Engine.World.EnvironmentVolume.highlightColor
+  name: highlightColor
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_highlightColor
+  commentId: F:Engine.World.EnvironmentVolume.highlightColor
+  fullName: Engine.World.EnvironmentVolume.highlightColor
+  nameWithType: EnvironmentVolume.highlightColor
 - uid: Engine.World.EnvironmentVolume.isTargetInsideVolume
   name: isTargetInsideVolume()
   href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_isTargetInsideVolume
@@ -3270,12 +3270,24 @@ references:
   isSpec: "True"
   fullName: Engine.World.EnvironmentVolume.SetTarget
   nameWithType: EnvironmentVolume.SetTarget
+- uid: Engine.World.EnvironmentVolume.shadowColor
+  name: shadowColor
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_shadowColor
+  commentId: F:Engine.World.EnvironmentVolume.shadowColor
+  fullName: Engine.World.EnvironmentVolume.shadowColor
+  nameWithType: EnvironmentVolume.shadowColor
 - uid: Engine.World.EnvironmentVolume.sky
   name: sky
   href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_sky
   commentId: F:Engine.World.EnvironmentVolume.sky
   fullName: Engine.World.EnvironmentVolume.sky
   nameWithType: EnvironmentVolume.sky
+- uid: Engine.World.EnvironmentVolume.skyTint
+  name: skyTint
+  href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_skyTint
+  commentId: F:Engine.World.EnvironmentVolume.skyTint
+  fullName: Engine.World.EnvironmentVolume.skyTint
+  nameWithType: EnvironmentVolume.skyTint
 - uid: Engine.World.EnvironmentVolume.Start
   name: Start()
   href: api/Engine.World.EnvironmentVolume.html#Engine_World_EnvironmentVolume_Start

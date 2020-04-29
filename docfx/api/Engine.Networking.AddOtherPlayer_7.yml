@@ -48,6 +48,7 @@ items:
       <Packet(7, "Add Other Player", "Client", ReliabilityScheme.RELIABLE, "Adds other player to client")>
 
       Public Class AddOtherPlayer_7
+
           Inherits Packet
   inheritance:
   - System.Object

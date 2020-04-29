@@ -532,7 +532,7 @@ MonoBehaviour:
     m_Value: -0.65
   contrast:
     m_OverrideState: 1
-    m_Value: 17.2
+    m_Value: 12
     min: -100
     max: 100
   colorFilter:
@@ -543,12 +543,12 @@ MonoBehaviour:
     showEyeDropper: 1
   hueShift:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: -5
     min: -180
     max: 180
   saturation:
     m_OverrideState: 1
-    m_Value: 25
+    m_Value: 15
     min: -100
     max: 100
 --- !u!114 &6537901679630704607

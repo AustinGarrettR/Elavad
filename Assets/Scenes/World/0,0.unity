@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000010, guid: 24dff1b335cb9194ca60ae9bec4d5951,
+  m_LightingDataAsset: {fileID: 112000010, guid: 80745a2f06ceb3f409965478a9bdd2cf,
     type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
@@ -123,7 +123,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: edf3daa62e138e9479d9967ab351d3e6, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 510831a270ba6cc4baa06ef68173bfea, type: 2}
 --- !u!1 &661763320
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,6 +200,7 @@ GameObject:
   - component: {fileID: 824431472}
   - component: {fileID: 824431474}
   - component: {fileID: 824431473}
+  - component: {fileID: 824431475}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -214,7 +215,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824431471}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -231,7 +232,7 @@ TerrainCollider:
   m_Material: {fileID: 0}
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: 92ce70b8a3d6602428c1c781ff04ecf6, type: 2}
-  m_EnableTreeColliders: 1
+  m_EnableTreeColliders: 0
 --- !u!218 &824431474
 Terrain:
   m_ObjectHideFlags: 0
@@ -249,14 +250,14 @@ Terrain:
   m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
-  m_SplatMapDistance: 1000
+  m_SplatMapDistance: 20
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
   m_DrawHeightmap: 1
   m_DrawInstanced: 1
   m_DrawTreesAndFoliage: 1
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
+  m_MaterialTemplate: {fileID: 0}
   m_BakeLightProbesForTrees: 0
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
@@ -265,6 +266,46 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &824431475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824431471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6525fd4a9fb974b7f878dee70144de99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  templateMaterial: {fileID: 2100000, guid: f55ea6e591c33204185e6ae724c89214, type: 2}
+  blendMat: {fileID: 2100000, guid: f3cb463156f30a04f8b9171e17c17ce4, type: 2}
+  blendMatInstance: {fileID: 1832095195}
+  keywordSO: {fileID: 11400000, guid: f9d9edd983131874ab7222836bc45e6b, type: 2}
+  perPixelNormal: {fileID: 0}
+  terrainDesc: {fileID: 2800000, guid: 9824898a1108f7e42a1db81b6051771d, type: 3}
+  descriptorFormat: 1
+  streamTexture: {fileID: 0}
+  tintMapOverride: {fileID: 0}
+  globalNormalOverride: {fileID: 0}
+  globalSAOMOverride: {fileID: 0}
+  globalEmisOverride: {fileID: 0}
+  geoTextureOverride: {fileID: 0}
+  advDetailControl: {fileID: 0}
+  propData: {fileID: 11400000, guid: bd62a3d85db0f794b8b6b8606768e3f2, type: 2}
+  addPass: {fileID: 0}
+  terrain: {fileID: 824431474}
+  customControl0: {fileID: 0}
+  customControl1: {fileID: 0}
+  customControl2: {fileID: 0}
+  customControl3: {fileID: 0}
+  customControl4: {fileID: 0}
+  customControl5: {fileID: 0}
+  customControl6: {fileID: 0}
+  customControl7: {fileID: 0}
+  reenabled: 1
+  sTerrainDirty: 1
+  importSplatMaps: []
 --- !u!1 &1030929125
 GameObject:
   m_ObjectHideFlags: 0
@@ -297,3 +338,207 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!21 &1832095195
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MicroSplat_TerrainObjectBlend
+  m_Shader: {fileID: 4800000, guid: 0942f3262330bda4fb700cda8b71bfa7, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Control0:
+        m_Texture: {fileID: -6940891649211346771, guid: 92ce70b8a3d6602428c1c781ff04ecf6,
+          type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Control1:
+        m_Texture: {fileID: -3752253826335641020, guid: 92ce70b8a3d6602428c1c781ff04ecf6,
+          type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Control2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Control3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Control4:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Control5:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Control6:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Control7:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNoise:
+        m_Texture: {fileID: 2800000, guid: c3e57cb2426d34f64af1fc986aa89fcf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Diffuse:
+        m_Texture: {fileID: 18700000, guid: 5507414e9dc93b44b84baa891d598fb4, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DistanceNoise:
+        m_Texture: {fileID: 2800000, guid: c3e57cb2426d34f64af1fc986aa89fcf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GeoCurve:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GeoNormal:
+        m_Texture: {fileID: 2800000, guid: 192aaea3237044f608d663c9884e0c70, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GeoSlopeTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GeoTex:
+        m_Texture: {fileID: 2800000, guid: 64fbad08fccab654794deab072008193, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GlitterWind:
+        m_Texture: {fileID: 2800000, guid: 5c17d279ce2734171a1575aed76f85b8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalOriginal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalSAO:
+        m_Texture: {fileID: 18700000, guid: 301e3659a57fd7f438da345a629f66ed, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PerPixelNormal:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PerTexProps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SmoothAO:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SnowDiff:
+        m_Texture: {fileID: 2800000, guid: b822881b9ef3441f29c88bb6e0ef60cd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SnowNormal:
+        m_Texture: {fileID: 2800000, guid: cc22f06eaf78d43f782ee617776c1640, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SnowNormalNoise:
+        m_Texture: {fileID: 2800000, guid: 3364d9aca19e4401dbdb0a9bcfcd70bc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StreamControl:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StreamNormal:
+        m_Texture: {fileID: 2800000, guid: 04426e150438d48e19ee055632fedf02, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainDesc:
+        m_Texture: {fileID: 2800000, guid: 9824898a1108f7e42a1db81b6051771d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainHolesTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainNormalmapTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Contrast: 0.277
+    - _DistanceResampleAlbedoStrength: 0.592
+    - _DistanceResampleNormalStrength: 1
+    - _GeoHeightContrast: 0.408
+    - _GeoNormalStrength: 1.039
+    - _GlitterGraininess: 0.5
+    - _GlitterShininess: 30
+    - _GlitterStrength: 1
+    - _GlitterThreshold: 1
+    - _GlitterViewDep: 0.5
+    - _GlobalPorosity: 0.4
+    - _SSSDistance: 1
+    - _SSSPower: 4
+    - _SSSScale: 4
+    - _SnowAmount: 1
+    - _SnowParticulateStrength: 1
+    - _SnowParticulateStretch: 0.3
+    - _SnowStochasticContrast: 0.3
+    - _SnowStochasticScale: 1
+    - _StreamBlend: 40
+    - _StreamMax: 1
+    - _TBNoiseScale: 1
+    - _TriplanarContrast: 2.46
+    - _WindParticulateRotation: 0
+    - _WindParticulateStrength: 2.02
+    - _WindParticulateStretch: 0.3
+    m_Colors:
+    - _DetailNoiseScaleStrengthFade: {r: 3, g: 0.5, b: 20, a: 0}
+    - _DistanceNoiseScaleStrengthFade: {r: 0.25, g: 0.5, b: 100, a: 250}
+    - _GeoCurveParams: {r: 512, g: 0, b: 0, a: 0}
+    - _GeoParams: {r: 0.816, g: 0.0038051752, b: 0, a: 0}
+    - _GeoRange: {r: 0, g: 0, b: 0, a: 0}
+    - _GlitterDistFade: {r: 10, g: 100, b: 1, a: 1}
+    - _GlitterUVScale: {r: 300, g: 300, b: 0, a: 0}
+    - _ParallaxParams: {r: 0.0194, g: 20, b: 45, a: 0}
+    - _ResampleDistanceParams: {r: 0.25, g: 50, b: 300, a: 0}
+    - _SnowHeightAngleRange: {r: 250, g: 250, b: 0.5635102, a: 1}
+    - _SnowNormalNoiseScaleStrength: {r: 0.1, g: 0.5, b: 0, a: 0}
+    - _SnowParams: {r: 0, g: 0, b: 0.3, a: 0.117}
+    - _SnowParticulateAngleMask: {r: -1, g: -1, b: 1, a: 1}
+    - _SnowParticulateColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SnowParticulateHeightMask: {r: 0, g: 0, b: 99999, a: 99999}
+    - _SnowParticulateParams: {r: 1, g: 1, b: 1, a: 0.25}
+    - _SnowParticulateShadow: {r: 0.01, g: 1, b: 0, a: 0}
+    - _SnowParticulateShadowColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SnowSSSTint: {r: 1, g: 1, b: 1, a: 0.5}
+    - _SnowUVScales: {r: 50, g: 50, b: 0, a: 0}
+    - _SnowUpVector: {r: 0, g: 1, b: 0, a: 0}
+    - _StreamFlowParams: {r: 0.4, g: 0.5, b: 0.3, a: 0.2}
+    - _StreamNormalFoam: {r: 0.35, g: 12, b: 0, a: 0}
+    - _StreamUVScales: {r: 70, g: 70, b: 70, a: 70}
+    - _TerrainBlendParams: {r: 1, g: 0.4, b: 0, a: 0}
+    - _TerrainBounds: {r: 0, g: 0, b: 250, a: 250}
+    - _TessData1: {r: 8, g: 0.111, b: 4, a: 0}
+    - _TessData2: {r: 20, g: 45, b: 0.32, a: 0.25}
+    - _TriplanarUVScale: {r: 4, g: 4, b: 0, a: 0}
+    - _UVScale: {r: 125, g: 125, b: 0, a: 0}
+    - _WindEmissive: {r: 0, g: 0, b: 0, a: 0}
+    - _WindParticulateAngleMask: {r: -1, g: -1, b: 1, a: 1}
+    - _WindParticulateColor: {r: 1, g: 1, b: 1, a: 1}
+    - _WindParticulateHeightMask: {r: 0, g: 0, b: 99999, a: 99999}
+    - _WindParticulateParams: {r: 1, g: 1.76, b: 1, a: 0.25}
+    - _WindParticulateShadow: {r: 0.01, g: 1, b: 0, a: 0}
+    - _WindParticulateShadowColor: {r: 0, g: 0, b: 0, a: 1}
+    - _WindParticulateUpMask: {r: -1, g: -1, b: 1, a: 1}
+  m_BuildTextureStacks: []
