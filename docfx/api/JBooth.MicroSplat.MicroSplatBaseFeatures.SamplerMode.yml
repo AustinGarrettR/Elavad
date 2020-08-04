@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode
+  id: MicroSplatBaseFeatures.SamplerMode
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode.Default
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode.GradientSampler
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode.LODSampler
+  langs:
+  - csharp
+  - vb
+  name: MicroSplatBaseFeatures.SamplerMode
+  nameWithType: MicroSplatBaseFeatures.SamplerMode
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode
+  type: Enum
+  source:
+    id: SamplerMode
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 236
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum SamplerMode
+    content.vb: Public Enum SamplerMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode.Default
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode.Default
+  id: Default
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: MicroSplatBaseFeatures.SamplerMode.Default
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode.Default
+  type: Field
+  source:
+    id: Default
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 238
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Default = 0
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode.LODSampler
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode.LODSampler
+  id: LODSampler
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode
+  langs:
+  - csharp
+  - vb
+  name: LODSampler
+  nameWithType: MicroSplatBaseFeatures.SamplerMode.LODSampler
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode.LODSampler
+  type: Field
+  source:
+    id: LODSampler
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 239
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: LODSampler = 1
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode.GradientSampler
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode.GradientSampler
+  id: GradientSampler
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode
+  langs:
+  - csharp
+  - vb
+  name: GradientSampler
+  nameWithType: MicroSplatBaseFeatures.SamplerMode.GradientSampler
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode.GradientSampler
+  type: Field
+  source:
+    id: GradientSampler
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 240
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: GradientSampler = 2
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode
+  parent: JBooth.MicroSplat
+  name: MicroSplatBaseFeatures.SamplerMode
+  nameWithType: MicroSplatBaseFeatures.SamplerMode
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode

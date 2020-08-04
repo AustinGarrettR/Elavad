@@ -1,0 +1,593 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  id: MicroSplatBaseFeatures.DebugOutput
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Albedo
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.AO
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchClusterCount
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchOtherCount
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchTotal
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchTriplanarCount
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchWeightCount
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Emission
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.FinalNormalTangent
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Height
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Metallic
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.MicroShadows
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.None
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Normal
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.SampleCount
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Smoothness
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Specular
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.WorldNormal
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.WorldNormalVertex
+  langs:
+  - csharp
+  - vb
+  name: MicroSplatBaseFeatures.DebugOutput
+  nameWithType: MicroSplatBaseFeatures.DebugOutput
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  type: Enum
+  source:
+    id: DebugOutput
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 184
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum DebugOutput
+    content.vb: Public Enum DebugOutput
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.None
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.None
+  id: None
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.None
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.None
+  type: Field
+  source:
+    id: None
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 186
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: None = 0
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Albedo
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Albedo
+  id: Albedo
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: Albedo
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.Albedo
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Albedo
+  type: Field
+  source:
+    id: Albedo
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 187
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Albedo = 1
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Height
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Height
+  id: Height
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.Height
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Height
+  type: Field
+  source:
+    id: Height
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 188
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Height = 2
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Normal
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Normal
+  id: Normal
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.Normal
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Normal
+  type: Field
+  source:
+    id: Normal
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 189
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Normal = 3
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Metallic
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Metallic
+  id: Metallic
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: Metallic
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.Metallic
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Metallic
+  type: Field
+  source:
+    id: Metallic
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 190
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Metallic = 4
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Smoothness
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Smoothness
+  id: Smoothness
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: Smoothness
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.Smoothness
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Smoothness
+  type: Field
+  source:
+    id: Smoothness
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 191
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Smoothness = 5
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.AO
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.AO
+  id: AO
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: AO
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.AO
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.AO
+  type: Field
+  source:
+    id: AO
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 192
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: AO = 6
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Emission
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Emission
+  id: Emission
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: Emission
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.Emission
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Emission
+  type: Field
+  source:
+    id: Emission
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 193
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Emission = 7
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Specular
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Specular
+  id: Specular
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: Specular
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.Specular
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.Specular
+  type: Field
+  source:
+    id: Specular
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 194
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Specular = 8
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.MicroShadows
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.MicroShadows
+  id: MicroShadows
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: MicroShadows
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.MicroShadows
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.MicroShadows
+  type: Field
+  source:
+    id: MicroShadows
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 195
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: MicroShadows = 9
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.WorldNormal
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.WorldNormal
+  id: WorldNormal
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: WorldNormal
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.WorldNormal
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.WorldNormal
+  type: Field
+  source:
+    id: WorldNormal
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 196
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: WorldNormal = 10
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.WorldNormalVertex
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.WorldNormalVertex
+  id: WorldNormalVertex
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: WorldNormalVertex
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.WorldNormalVertex
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.WorldNormalVertex
+  type: Field
+  source:
+    id: WorldNormalVertex
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 197
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: WorldNormalVertex = 11
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.FinalNormalTangent
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.FinalNormalTangent
+  id: FinalNormalTangent
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: FinalNormalTangent
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.FinalNormalTangent
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.FinalNormalTangent
+  type: Field
+  source:
+    id: FinalNormalTangent
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 198
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: FinalNormalTangent = 12
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchWeightCount
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchWeightCount
+  id: BranchWeightCount
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: BranchWeightCount
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.BranchWeightCount
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchWeightCount
+  type: Field
+  source:
+    id: BranchWeightCount
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 199
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: BranchWeightCount = 13
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchTriplanarCount
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchTriplanarCount
+  id: BranchTriplanarCount
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: BranchTriplanarCount
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.BranchTriplanarCount
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchTriplanarCount
+  type: Field
+  source:
+    id: BranchTriplanarCount
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 200
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: BranchTriplanarCount = 14
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchClusterCount
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchClusterCount
+  id: BranchClusterCount
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: BranchClusterCount
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.BranchClusterCount
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchClusterCount
+  type: Field
+  source:
+    id: BranchClusterCount
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 201
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: BranchClusterCount = 15
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchOtherCount
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchOtherCount
+  id: BranchOtherCount
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: BranchOtherCount
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.BranchOtherCount
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchOtherCount
+  type: Field
+  source:
+    id: BranchOtherCount
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 202
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: BranchOtherCount = 16
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchTotal
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchTotal
+  id: BranchTotal
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: BranchTotal
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.BranchTotal
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.BranchTotal
+  type: Field
+  source:
+    id: BranchTotal
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 203
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: BranchTotal = 17
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.SampleCount
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.SampleCount
+  id: SampleCount
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  langs:
+  - csharp
+  - vb
+  name: SampleCount
+  nameWithType: MicroSplatBaseFeatures.DebugOutput.SampleCount
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput.SampleCount
+  type: Field
+  source:
+    id: SampleCount
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 204
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: SampleCount = 18
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+  parent: JBooth.MicroSplat
+  name: MicroSplatBaseFeatures.DebugOutput
+  nameWithType: MicroSplatBaseFeatures.DebugOutput
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput

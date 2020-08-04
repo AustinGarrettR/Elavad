@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.FeatureDescriptor.V2Cannel
+  commentId: T:JBooth.MicroSplat.FeatureDescriptor.V2Cannel
+  id: FeatureDescriptor.V2Cannel
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.FeatureDescriptor.V2Cannel.BA
+  - JBooth.MicroSplat.FeatureDescriptor.V2Cannel.RG
+  langs:
+  - csharp
+  - vb
+  name: FeatureDescriptor.V2Cannel
+  nameWithType: FeatureDescriptor.V2Cannel
+  fullName: JBooth.MicroSplat.FeatureDescriptor.V2Cannel
+  type: Enum
+  source:
+    id: V2Cannel
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 248
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum V2Cannel
+    content.vb: Public Enum V2Cannel
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.FeatureDescriptor.V2Cannel.RG
+  commentId: F:JBooth.MicroSplat.FeatureDescriptor.V2Cannel.RG
+  id: RG
+  parent: JBooth.MicroSplat.FeatureDescriptor.V2Cannel
+  langs:
+  - csharp
+  - vb
+  name: RG
+  nameWithType: FeatureDescriptor.V2Cannel.RG
+  fullName: JBooth.MicroSplat.FeatureDescriptor.V2Cannel.RG
+  type: Field
+  source:
+    id: RG
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 250
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: RG = 0
+    return:
+      type: JBooth.MicroSplat.FeatureDescriptor.V2Cannel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.FeatureDescriptor.V2Cannel.BA
+  commentId: F:JBooth.MicroSplat.FeatureDescriptor.V2Cannel.BA
+  id: BA
+  parent: JBooth.MicroSplat.FeatureDescriptor.V2Cannel
+  langs:
+  - csharp
+  - vb
+  name: BA
+  nameWithType: FeatureDescriptor.V2Cannel.BA
+  fullName: JBooth.MicroSplat.FeatureDescriptor.V2Cannel.BA
+  type: Field
+  source:
+    id: BA
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 251
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: BA = 1
+    return:
+      type: JBooth.MicroSplat.FeatureDescriptor.V2Cannel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.FeatureDescriptor.V2Cannel
+  commentId: T:JBooth.MicroSplat.FeatureDescriptor.V2Cannel
+  parent: JBooth.MicroSplat
+  name: FeatureDescriptor.V2Cannel
+  nameWithType: FeatureDescriptor.V2Cannel
+  fullName: JBooth.MicroSplat.FeatureDescriptor.V2Cannel

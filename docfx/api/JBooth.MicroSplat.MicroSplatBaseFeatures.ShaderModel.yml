@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel
+  id: MicroSplatBaseFeatures.ShaderModel
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel.Automatic
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel.Force46
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel.Force50
+  langs:
+  - csharp
+  - vb
+  name: MicroSplatBaseFeatures.ShaderModel
+  nameWithType: MicroSplatBaseFeatures.ShaderModel
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel
+  type: Enum
+  source:
+    id: ShaderModel
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 229
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum ShaderModel
+    content.vb: Public Enum ShaderModel
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel.Automatic
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel.Automatic
+  id: Automatic
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel
+  langs:
+  - csharp
+  - vb
+  name: Automatic
+  nameWithType: MicroSplatBaseFeatures.ShaderModel.Automatic
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel.Automatic
+  type: Field
+  source:
+    id: Automatic
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 231
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Automatic = 0
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel.Force46
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel.Force46
+  id: Force46
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel
+  langs:
+  - csharp
+  - vb
+  name: Force46
+  nameWithType: MicroSplatBaseFeatures.ShaderModel.Force46
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel.Force46
+  type: Field
+  source:
+    id: Force46
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 232
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Force46 = 1
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel.Force50
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel.Force50
+  id: Force50
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel
+  langs:
+  - csharp
+  - vb
+  name: Force50
+  nameWithType: MicroSplatBaseFeatures.ShaderModel.Force50
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel.Force50
+  type: Field
+  source:
+    id: Force50
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 233
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Force50 = 2
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel
+  parent: JBooth.MicroSplat
+  name: MicroSplatBaseFeatures.ShaderModel
+  nameWithType: MicroSplatBaseFeatures.ShaderModel
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel

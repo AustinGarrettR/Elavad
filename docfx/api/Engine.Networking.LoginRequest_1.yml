@@ -17,12 +17,8 @@ items:
   fullName: Engine.Networking.LoginRequest_1
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/LoginRequest_1.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: LoginRequest_1
-    path: ../Assets/Engine/Networking/Packets/LoginRequest_1.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\LoginRequest_1.cs
     startLine: 8
   assemblies:
   - Engine.Networking
@@ -42,7 +38,6 @@ items:
       <Packet(1, "Login Request", "Server", ReliabilityScheme.RELIABLE, "Login request to the server.")>
 
       Public Class LoginRequest_1
-
           Inherits Packet
   inheritance:
   - System.Object
@@ -95,12 +90,8 @@ items:
   fullName: Engine.Networking.LoginRequest_1.email
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/LoginRequest_1.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: email
-    path: ../Assets/Engine/Networking/Packets/LoginRequest_1.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\LoginRequest_1.cs
     startLine: 21
   assemblies:
   - Engine.Networking
@@ -128,12 +119,8 @@ items:
   fullName: Engine.Networking.LoginRequest_1.password
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/LoginRequest_1.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: password
-    path: ../Assets/Engine/Networking/Packets/LoginRequest_1.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\LoginRequest_1.cs
     startLine: 26
   assemblies:
   - Engine.Networking
@@ -161,12 +148,8 @@ items:
   fullName: Engine.Networking.LoginRequest_1.getBytes()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/LoginRequest_1.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: getBytes
-    path: ../Assets/Engine/Networking/Packets/LoginRequest_1.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\LoginRequest_1.cs
     startLine: 32
   assemblies:
   - Engine.Networking
@@ -199,12 +182,8 @@ items:
   fullName: Engine.Networking.LoginRequest_1.readPacket(System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/LoginRequest_1.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: readPacket
-    path: ../Assets/Engine/Networking/Packets/LoginRequest_1.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\LoginRequest_1.cs
     startLine: 44
   assemblies:
   - Engine.Networking

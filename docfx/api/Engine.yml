@@ -17,22 +17,22 @@ items:
   assemblies:
   - Engine
 references:
-- uid: Engine.ClientCore
-  commentId: T:Engine.ClientCore
-  name: ClientCore
-  nameWithType: ClientCore
-  fullName: Engine.ClientCore
+- uid: Engine.ServerCore
+  commentId: T:Engine.ServerCore
+  name: ServerCore
+  nameWithType: ServerCore
+  fullName: Engine.ServerCore
 - uid: Engine.GlobalCoreBase
   commentId: T:Engine.GlobalCoreBase
   parent: Engine
   name: GlobalCoreBase
   nameWithType: GlobalCoreBase
   fullName: Engine.GlobalCoreBase
-- uid: Engine.ServerCore
-  commentId: T:Engine.ServerCore
-  name: ServerCore
-  nameWithType: ServerCore
-  fullName: Engine.ServerCore
+- uid: Engine.ClientCore
+  commentId: T:Engine.ClientCore
+  name: ClientCore
+  nameWithType: ClientCore
+  fullName: Engine.ClientCore
 - uid: Engine
   commentId: N:Engine
   name: Engine

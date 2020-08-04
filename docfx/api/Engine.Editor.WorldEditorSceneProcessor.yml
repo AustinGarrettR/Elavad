@@ -13,12 +13,8 @@ items:
   fullName: Engine.Editor.WorldEditorSceneProcessor
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Editor/WorldEditorSceneProcessor.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: WorldEditorSceneProcessor
-    path: ../Assets/Engine/Editor/WorldEditorSceneProcessor.cs
+    path: B:\Games\Elavad\Assets\Engine\Editor\WorldEditorSceneProcessor.cs
     startLine: 15
   assemblies:
   - Engine.Editor

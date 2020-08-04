@@ -1,0 +1,274 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  id: TextureArrayConfig.TextureSize
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.TextureArrayConfig.TextureSize.k1024
+  - JBooth.MicroSplat.TextureArrayConfig.TextureSize.k128
+  - JBooth.MicroSplat.TextureArrayConfig.TextureSize.k2048
+  - JBooth.MicroSplat.TextureArrayConfig.TextureSize.k256
+  - JBooth.MicroSplat.TextureArrayConfig.TextureSize.k32
+  - JBooth.MicroSplat.TextureArrayConfig.TextureSize.k4096
+  - JBooth.MicroSplat.TextureArrayConfig.TextureSize.k512
+  - JBooth.MicroSplat.TextureArrayConfig.TextureSize.k64
+  langs:
+  - csharp
+  - vb
+  name: TextureArrayConfig.TextureSize
+  nameWithType: TextureArrayConfig.TextureSize
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  type: Enum
+  source:
+    id: TextureSize
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum TextureSize
+    content.vb: Public Enum TextureSize
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureSize.k4096
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureSize.k4096
+  id: k4096
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  langs:
+  - csharp
+  - vb
+  name: k4096
+  nameWithType: TextureArrayConfig.TextureSize.k4096
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureSize.k4096
+  type: Field
+  source:
+    id: k4096
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: k4096 = 4096
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureSize.k2048
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureSize.k2048
+  id: k2048
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  langs:
+  - csharp
+  - vb
+  name: k2048
+  nameWithType: TextureArrayConfig.TextureSize.k2048
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureSize.k2048
+  type: Field
+  source:
+    id: k2048
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 48
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: k2048 = 2048
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureSize.k1024
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureSize.k1024
+  id: k1024
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  langs:
+  - csharp
+  - vb
+  name: k1024
+  nameWithType: TextureArrayConfig.TextureSize.k1024
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureSize.k1024
+  type: Field
+  source:
+    id: k1024
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 49
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: k1024 = 1024
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureSize.k512
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureSize.k512
+  id: k512
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  langs:
+  - csharp
+  - vb
+  name: k512
+  nameWithType: TextureArrayConfig.TextureSize.k512
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureSize.k512
+  type: Field
+  source:
+    id: k512
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: k512 = 512
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureSize.k256
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureSize.k256
+  id: k256
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  langs:
+  - csharp
+  - vb
+  name: k256
+  nameWithType: TextureArrayConfig.TextureSize.k256
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureSize.k256
+  type: Field
+  source:
+    id: k256
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 51
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: k256 = 256
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureSize.k128
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureSize.k128
+  id: k128
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  langs:
+  - csharp
+  - vb
+  name: k128
+  nameWithType: TextureArrayConfig.TextureSize.k128
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureSize.k128
+  type: Field
+  source:
+    id: k128
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: k128 = 128
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureSize.k64
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureSize.k64
+  id: k64
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  langs:
+  - csharp
+  - vb
+  name: k64
+  nameWithType: TextureArrayConfig.TextureSize.k64
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureSize.k64
+  type: Field
+  source:
+    id: k64
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 53
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: k64 = 64
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureSize.k32
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureSize.k32
+  id: k32
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  langs:
+  - csharp
+  - vb
+  name: k32
+  nameWithType: TextureArrayConfig.TextureSize.k32
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureSize.k32
+  type: Field
+  source:
+    id: k32
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: k32 = 32
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.TextureSize
+  nameWithType: TextureArrayConfig.TextureSize
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureSize

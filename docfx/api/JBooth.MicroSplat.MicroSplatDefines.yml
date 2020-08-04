@@ -1,0 +1,1024 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.MicroSplatDefines
+  commentId: T:JBooth.MicroSplat.MicroSplatDefines
+  id: MicroSplatDefines
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.MicroSplatDefines.HasDefine(System.String)
+  - JBooth.MicroSplat.MicroSplatDefines.InitDefine(System.String)
+  - JBooth.MicroSplat.MicroSplatDefines.link_alphahole
+  - JBooth.MicroSplat.MicroSplatDefines.link_antitile
+  - JBooth.MicroSplat.MicroSplatDefines.link_digger
+  - JBooth.MicroSplat.MicroSplatDefines.link_globalTexture
+  - JBooth.MicroSplat.MicroSplatDefines.link_lowpoly
+  - JBooth.MicroSplat.MicroSplatDefines.link_meshterrain
+  - JBooth.MicroSplat.MicroSplatDefines.link_meshworkflow
+  - JBooth.MicroSplat.MicroSplatDefines.link_polaris
+  - JBooth.MicroSplat.MicroSplatDefines.link_proctex
+  - JBooth.MicroSplat.MicroSplatDefines.link_scatter
+  - JBooth.MicroSplat.MicroSplatDefines.link_snow
+  - JBooth.MicroSplat.MicroSplatDefines.link_streams
+  - JBooth.MicroSplat.MicroSplatDefines.link_terrainblend
+  - JBooth.MicroSplat.MicroSplatDefines.link_tessellation
+  - JBooth.MicroSplat.MicroSplatDefines.link_textureclusters
+  - JBooth.MicroSplat.MicroSplatDefines.link_trax
+  - JBooth.MicroSplat.MicroSplatDefines.link_triplanar
+  - JBooth.MicroSplat.MicroSplatDefines.link_windglitter
+  - JBooth.MicroSplat.MicroSplatDefines.OnPostprocessScene
+  langs:
+  - csharp
+  - vb
+  name: MicroSplatDefines
+  nameWithType: MicroSplatDefines
+  fullName: JBooth.MicroSplat.MicroSplatDefines
+  type: Class
+  source:
+    id: MicroSplatDefines
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [InitializeOnLoad]
+
+      public class MicroSplatDefines
+    content.vb: >-
+      <InitializeOnLoad>
+
+      Public Class MicroSplatDefines
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: UnityEditor.InitializeOnLoadAttribute
+    ctor: UnityEditor.InitializeOnLoadAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JBooth.MicroSplat.MicroSplatDefines.HasDefine(System.String)
+  commentId: M:JBooth.MicroSplat.MicroSplatDefines.HasDefine(System.String)
+  id: HasDefine(System.String)
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: HasDefine(String)
+  nameWithType: MicroSplatDefines.HasDefine(String)
+  fullName: JBooth.MicroSplat.MicroSplatDefines.HasDefine(System.String)
+  type: Method
+  source:
+    id: HasDefine
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static bool HasDefine(string def)
+    parameters:
+    - id: def
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function HasDefine(def As String) As Boolean
+  overload: JBooth.MicroSplat.MicroSplatDefines.HasDefine*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.InitDefine(System.String)
+  commentId: M:JBooth.MicroSplat.MicroSplatDefines.InitDefine(System.String)
+  id: InitDefine(System.String)
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: InitDefine(String)
+  nameWithType: MicroSplatDefines.InitDefine(String)
+  fullName: JBooth.MicroSplat.MicroSplatDefines.InitDefine(System.String)
+  type: Method
+  source:
+    id: InitDefine
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 29
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static void InitDefine(string def)
+    parameters:
+    - id: def
+      type: System.String
+    content.vb: Public Shared Sub InitDefine(def As String)
+  overload: JBooth.MicroSplat.MicroSplatDefines.InitDefine*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.OnPostprocessScene
+  commentId: M:JBooth.MicroSplat.MicroSplatDefines.OnPostprocessScene
+  id: OnPostprocessScene
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: OnPostprocessScene()
+  nameWithType: MicroSplatDefines.OnPostprocessScene()
+  fullName: JBooth.MicroSplat.MicroSplatDefines.OnPostprocessScene()
+  type: Method
+  source:
+    id: OnPostprocessScene
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 51
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [PostProcessScene(0)]
+
+      public static void OnPostprocessScene()
+    content.vb: >-
+      <PostProcessScene(0)>
+
+      Public Shared Sub OnPostprocessScene
+  overload: JBooth.MicroSplat.MicroSplatDefines.OnPostprocessScene*
+  attributes:
+  - type: UnityEditor.Callbacks.PostProcessSceneAttribute
+    ctor: UnityEditor.Callbacks.PostProcessSceneAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 0
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.link_globalTexture
+  commentId: F:JBooth.MicroSplat.MicroSplatDefines.link_globalTexture
+  id: link_globalTexture
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: link_globalTexture
+  nameWithType: MicroSplatDefines.link_globalTexture
+  fullName: JBooth.MicroSplat.MicroSplatDefines.link_globalTexture
+  type: Field
+  source:
+    id: link_globalTexture
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 57
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string link_globalTexture
+    return:
+      type: System.String
+    content.vb: Public Shared link_globalTexture As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.link_snow
+  commentId: F:JBooth.MicroSplat.MicroSplatDefines.link_snow
+  id: link_snow
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: link_snow
+  nameWithType: MicroSplatDefines.link_snow
+  fullName: JBooth.MicroSplat.MicroSplatDefines.link_snow
+  type: Field
+  source:
+    id: link_snow
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 58
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string link_snow
+    return:
+      type: System.String
+    content.vb: Public Shared link_snow As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.link_tessellation
+  commentId: F:JBooth.MicroSplat.MicroSplatDefines.link_tessellation
+  id: link_tessellation
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: link_tessellation
+  nameWithType: MicroSplatDefines.link_tessellation
+  fullName: JBooth.MicroSplat.MicroSplatDefines.link_tessellation
+  type: Field
+  source:
+    id: link_tessellation
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string link_tessellation
+    return:
+      type: System.String
+    content.vb: Public Shared link_tessellation As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.link_antitile
+  commentId: F:JBooth.MicroSplat.MicroSplatDefines.link_antitile
+  id: link_antitile
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: link_antitile
+  nameWithType: MicroSplatDefines.link_antitile
+  fullName: JBooth.MicroSplat.MicroSplatDefines.link_antitile
+  type: Field
+  source:
+    id: link_antitile
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 60
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string link_antitile
+    return:
+      type: System.String
+    content.vb: Public Shared link_antitile As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.link_terrainblend
+  commentId: F:JBooth.MicroSplat.MicroSplatDefines.link_terrainblend
+  id: link_terrainblend
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: link_terrainblend
+  nameWithType: MicroSplatDefines.link_terrainblend
+  fullName: JBooth.MicroSplat.MicroSplatDefines.link_terrainblend
+  type: Field
+  source:
+    id: link_terrainblend
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 61
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string link_terrainblend
+    return:
+      type: System.String
+    content.vb: Public Shared link_terrainblend As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.link_streams
+  commentId: F:JBooth.MicroSplat.MicroSplatDefines.link_streams
+  id: link_streams
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: link_streams
+  nameWithType: MicroSplatDefines.link_streams
+  fullName: JBooth.MicroSplat.MicroSplatDefines.link_streams
+  type: Field
+  source:
+    id: link_streams
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string link_streams
+    return:
+      type: System.String
+    content.vb: Public Shared link_streams As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.link_alphahole
+  commentId: F:JBooth.MicroSplat.MicroSplatDefines.link_alphahole
+  id: link_alphahole
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: link_alphahole
+  nameWithType: MicroSplatDefines.link_alphahole
+  fullName: JBooth.MicroSplat.MicroSplatDefines.link_alphahole
+  type: Field
+  source:
+    id: link_alphahole
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 63
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string link_alphahole
+    return:
+      type: System.String
+    content.vb: Public Shared link_alphahole As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.link_triplanar
+  commentId: F:JBooth.MicroSplat.MicroSplatDefines.link_triplanar
+  id: link_triplanar
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: link_triplanar
+  nameWithType: MicroSplatDefines.link_triplanar
+  fullName: JBooth.MicroSplat.MicroSplatDefines.link_triplanar
+  type: Field
+  source:
+    id: link_triplanar
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 64
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string link_triplanar
+    return:
+      type: System.String
+    content.vb: Public Shared link_triplanar As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.link_textureclusters
+  commentId: F:JBooth.MicroSplat.MicroSplatDefines.link_textureclusters
+  id: link_textureclusters
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: link_textureclusters
+  nameWithType: MicroSplatDefines.link_textureclusters
+  fullName: JBooth.MicroSplat.MicroSplatDefines.link_textureclusters
+  type: Field
+  source:
+    id: link_textureclusters
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 65
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string link_textureclusters
+    return:
+      type: System.String
+    content.vb: Public Shared link_textureclusters As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.link_windglitter
+  commentId: F:JBooth.MicroSplat.MicroSplatDefines.link_windglitter
+  id: link_windglitter
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: link_windglitter
+  nameWithType: MicroSplatDefines.link_windglitter
+  fullName: JBooth.MicroSplat.MicroSplatDefines.link_windglitter
+  type: Field
+  source:
+    id: link_windglitter
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 66
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string link_windglitter
+    return:
+      type: System.String
+    content.vb: Public Shared link_windglitter As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.link_proctex
+  commentId: F:JBooth.MicroSplat.MicroSplatDefines.link_proctex
+  id: link_proctex
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: link_proctex
+  nameWithType: MicroSplatDefines.link_proctex
+  fullName: JBooth.MicroSplat.MicroSplatDefines.link_proctex
+  type: Field
+  source:
+    id: link_proctex
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 67
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string link_proctex
+    return:
+      type: System.String
+    content.vb: Public Shared link_proctex As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.link_lowpoly
+  commentId: F:JBooth.MicroSplat.MicroSplatDefines.link_lowpoly
+  id: link_lowpoly
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: link_lowpoly
+  nameWithType: MicroSplatDefines.link_lowpoly
+  fullName: JBooth.MicroSplat.MicroSplatDefines.link_lowpoly
+  type: Field
+  source:
+    id: link_lowpoly
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 68
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string link_lowpoly
+    return:
+      type: System.String
+    content.vb: Public Shared link_lowpoly As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.link_meshterrain
+  commentId: F:JBooth.MicroSplat.MicroSplatDefines.link_meshterrain
+  id: link_meshterrain
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: link_meshterrain
+  nameWithType: MicroSplatDefines.link_meshterrain
+  fullName: JBooth.MicroSplat.MicroSplatDefines.link_meshterrain
+  type: Field
+  source:
+    id: link_meshterrain
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 69
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string link_meshterrain
+    return:
+      type: System.String
+    content.vb: Public Shared link_meshterrain As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.link_meshworkflow
+  commentId: F:JBooth.MicroSplat.MicroSplatDefines.link_meshworkflow
+  id: link_meshworkflow
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: link_meshworkflow
+  nameWithType: MicroSplatDefines.link_meshworkflow
+  fullName: JBooth.MicroSplat.MicroSplatDefines.link_meshworkflow
+  type: Field
+  source:
+    id: link_meshworkflow
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 70
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string link_meshworkflow
+    return:
+      type: System.String
+    content.vb: Public Shared link_meshworkflow As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.link_digger
+  commentId: F:JBooth.MicroSplat.MicroSplatDefines.link_digger
+  id: link_digger
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: link_digger
+  nameWithType: MicroSplatDefines.link_digger
+  fullName: JBooth.MicroSplat.MicroSplatDefines.link_digger
+  type: Field
+  source:
+    id: link_digger
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 71
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string link_digger
+    return:
+      type: System.String
+    content.vb: Public Shared link_digger As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.link_trax
+  commentId: F:JBooth.MicroSplat.MicroSplatDefines.link_trax
+  id: link_trax
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: link_trax
+  nameWithType: MicroSplatDefines.link_trax
+  fullName: JBooth.MicroSplat.MicroSplatDefines.link_trax
+  type: Field
+  source:
+    id: link_trax
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 72
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string link_trax
+    return:
+      type: System.String
+    content.vb: Public Shared link_trax As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.link_polaris
+  commentId: F:JBooth.MicroSplat.MicroSplatDefines.link_polaris
+  id: link_polaris
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: link_polaris
+  nameWithType: MicroSplatDefines.link_polaris
+  fullName: JBooth.MicroSplat.MicroSplatDefines.link_polaris
+  type: Field
+  source:
+    id: link_polaris
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 73
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string link_polaris
+    return:
+      type: System.String
+    content.vb: Public Shared link_polaris As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatDefines.link_scatter
+  commentId: F:JBooth.MicroSplat.MicroSplatDefines.link_scatter
+  id: link_scatter
+  parent: JBooth.MicroSplat.MicroSplatDefines
+  langs:
+  - csharp
+  - vb
+  name: link_scatter
+  nameWithType: MicroSplatDefines.link_scatter
+  fullName: JBooth.MicroSplat.MicroSplatDefines.link_scatter
+  type: Field
+  source:
+    id: link_scatter
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatDefines.cs
+    startLine: 74
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string link_scatter
+    return:
+      type: System.String
+    content.vb: Public Shared link_scatter As String
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: JBooth.MicroSplat.MicroSplatDefines.HasDefine*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatDefines.HasDefine
+  name: HasDefine
+  nameWithType: MicroSplatDefines.HasDefine
+  fullName: JBooth.MicroSplat.MicroSplatDefines.HasDefine
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: JBooth.MicroSplat.MicroSplatDefines.InitDefine*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatDefines.InitDefine
+  name: InitDefine
+  nameWithType: MicroSplatDefines.InitDefine
+  fullName: JBooth.MicroSplat.MicroSplatDefines.InitDefine
+- uid: JBooth.MicroSplat.MicroSplatDefines.OnPostprocessScene*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatDefines.OnPostprocessScene
+  name: OnPostprocessScene
+  nameWithType: MicroSplatDefines.OnPostprocessScene
+  fullName: JBooth.MicroSplat.MicroSplatDefines.OnPostprocessScene

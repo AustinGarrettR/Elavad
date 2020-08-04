@@ -15,12 +15,8 @@ items:
   fullName: Engine.Player.ServerPlayer
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Player/ServerPlayer.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ServerPlayer
-    path: ../Assets/Engine/Player/ServerPlayer.cs
+    path: B:\Games\Elavad\Assets\Engine\Player\ServerPlayer.cs
     startLine: 10
   assemblies:
   - Engine.Player
@@ -58,12 +54,8 @@ items:
   fullName: Engine.Player.ServerPlayer.GetPlayerGameObject()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Player/ServerPlayer.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: GetPlayerGameObject
-    path: ../Assets/Engine/Player/ServerPlayer.cs
+    path: B:\Games\Elavad\Assets\Engine\Player\ServerPlayer.cs
     startLine: 103
   assemblies:
   - Engine.Player
@@ -93,12 +85,8 @@ items:
   fullName: Engine.Player.ServerPlayer.GetPlayerAgent()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Player/ServerPlayer.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: GetPlayerAgent
-    path: ../Assets/Engine/Player/ServerPlayer.cs
+    path: B:\Games\Elavad\Assets\Engine\Player\ServerPlayer.cs
     startLine: 112
   assemblies:
   - Engine.Player

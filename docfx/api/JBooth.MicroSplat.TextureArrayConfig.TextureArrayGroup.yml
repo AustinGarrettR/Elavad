@@ -1,0 +1,578 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup
+  id: TextureArrayConfig.TextureArrayGroup
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.antiTileSettings
+  - JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.diffuseSettings
+  - JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.emissiveSettings
+  - JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.normalSettings
+  - JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.smoothSettings
+  - JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.specularSettings
+  - JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.traxDiffuseSettings
+  - JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.traxNormalSettings
+  langs:
+  - csharp
+  - vb
+  name: TextureArrayConfig.TextureArrayGroup
+  nameWithType: TextureArrayConfig.TextureArrayGroup
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup
+  type: Class
+  source:
+    id: TextureArrayGroup
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 228
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class TextureArrayGroup
+    content.vb: >-
+      <Serializable>
+
+      Public Class TextureArrayGroup
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.diffuseSettings
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.diffuseSettings
+  id: diffuseSettings
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup
+  langs:
+  - csharp
+  - vb
+  name: diffuseSettings
+  nameWithType: TextureArrayConfig.TextureArrayGroup.diffuseSettings
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.diffuseSettings
+  type: Field
+  source:
+    id: diffuseSettings
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 231
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureArraySettings diffuseSettings
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+    content.vb: Public diffuseSettings As TextureArrayConfig.TextureArraySettings
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.normalSettings
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.normalSettings
+  id: normalSettings
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup
+  langs:
+  - csharp
+  - vb
+  name: normalSettings
+  nameWithType: TextureArrayConfig.TextureArrayGroup.normalSettings
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.normalSettings
+  type: Field
+  source:
+    id: normalSettings
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 232
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureArraySettings normalSettings
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+    content.vb: Public normalSettings As TextureArrayConfig.TextureArraySettings
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.smoothSettings
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.smoothSettings
+  id: smoothSettings
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup
+  langs:
+  - csharp
+  - vb
+  name: smoothSettings
+  nameWithType: TextureArrayConfig.TextureArrayGroup.smoothSettings
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.smoothSettings
+  type: Field
+  source:
+    id: smoothSettings
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 233
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureArraySettings smoothSettings
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+    content.vb: Public smoothSettings As TextureArrayConfig.TextureArraySettings
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.antiTileSettings
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.antiTileSettings
+  id: antiTileSettings
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup
+  langs:
+  - csharp
+  - vb
+  name: antiTileSettings
+  nameWithType: TextureArrayConfig.TextureArrayGroup.antiTileSettings
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.antiTileSettings
+  type: Field
+  source:
+    id: antiTileSettings
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 234
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureArraySettings antiTileSettings
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+    content.vb: Public antiTileSettings As TextureArrayConfig.TextureArraySettings
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.emissiveSettings
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.emissiveSettings
+  id: emissiveSettings
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup
+  langs:
+  - csharp
+  - vb
+  name: emissiveSettings
+  nameWithType: TextureArrayConfig.TextureArrayGroup.emissiveSettings
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.emissiveSettings
+  type: Field
+  source:
+    id: emissiveSettings
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 235
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureArraySettings emissiveSettings
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+    content.vb: Public emissiveSettings As TextureArrayConfig.TextureArraySettings
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.specularSettings
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.specularSettings
+  id: specularSettings
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup
+  langs:
+  - csharp
+  - vb
+  name: specularSettings
+  nameWithType: TextureArrayConfig.TextureArrayGroup.specularSettings
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.specularSettings
+  type: Field
+  source:
+    id: specularSettings
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 236
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureArraySettings specularSettings
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+    content.vb: Public specularSettings As TextureArrayConfig.TextureArraySettings
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.traxDiffuseSettings
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.traxDiffuseSettings
+  id: traxDiffuseSettings
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup
+  langs:
+  - csharp
+  - vb
+  name: traxDiffuseSettings
+  nameWithType: TextureArrayConfig.TextureArrayGroup.traxDiffuseSettings
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.traxDiffuseSettings
+  type: Field
+  source:
+    id: traxDiffuseSettings
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 237
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureArraySettings traxDiffuseSettings
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+    content.vb: Public traxDiffuseSettings As TextureArrayConfig.TextureArraySettings
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.traxNormalSettings
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.traxNormalSettings
+  id: traxNormalSettings
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup
+  langs:
+  - csharp
+  - vb
+  name: traxNormalSettings
+  nameWithType: TextureArrayConfig.TextureArrayGroup.traxNormalSettings
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup.traxNormalSettings
+  type: Field
+  source:
+    id: traxNormalSettings
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 238
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureArraySettings traxNormalSettings
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+    content.vb: Public traxNormalSettings As TextureArrayConfig.TextureArraySettings
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.TextureArraySettings
+  nameWithType: TextureArrayConfig.TextureArraySettings
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings

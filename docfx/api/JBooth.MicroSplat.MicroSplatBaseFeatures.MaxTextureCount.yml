@@ -1,0 +1,274 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  id: MicroSplatBaseFeatures.MaxTextureCount
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Eight
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Four
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Sixteen
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.ThirtyTwo
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Twelve
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Twenty
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.TwentyEight
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.TwentyFour
+  langs:
+  - csharp
+  - vb
+  name: MicroSplatBaseFeatures.MaxTextureCount
+  nameWithType: MicroSplatBaseFeatures.MaxTextureCount
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  type: Enum
+  source:
+    id: MaxTextureCount
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 125
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum MaxTextureCount
+    content.vb: Public Enum MaxTextureCount
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Four
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Four
+  id: Four
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  langs:
+  - csharp
+  - vb
+  name: Four
+  nameWithType: MicroSplatBaseFeatures.MaxTextureCount.Four
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Four
+  type: Field
+  source:
+    id: Four
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 127
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Four = 4
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Eight
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Eight
+  id: Eight
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  langs:
+  - csharp
+  - vb
+  name: Eight
+  nameWithType: MicroSplatBaseFeatures.MaxTextureCount.Eight
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Eight
+  type: Field
+  source:
+    id: Eight
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 128
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Eight = 8
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Twelve
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Twelve
+  id: Twelve
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  langs:
+  - csharp
+  - vb
+  name: Twelve
+  nameWithType: MicroSplatBaseFeatures.MaxTextureCount.Twelve
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Twelve
+  type: Field
+  source:
+    id: Twelve
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 129
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Twelve = 12
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Sixteen
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Sixteen
+  id: Sixteen
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  langs:
+  - csharp
+  - vb
+  name: Sixteen
+  nameWithType: MicroSplatBaseFeatures.MaxTextureCount.Sixteen
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Sixteen
+  type: Field
+  source:
+    id: Sixteen
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 130
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Sixteen = 16
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Twenty
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Twenty
+  id: Twenty
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  langs:
+  - csharp
+  - vb
+  name: Twenty
+  nameWithType: MicroSplatBaseFeatures.MaxTextureCount.Twenty
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.Twenty
+  type: Field
+  source:
+    id: Twenty
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 131
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Twenty = 20
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.TwentyFour
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.TwentyFour
+  id: TwentyFour
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  langs:
+  - csharp
+  - vb
+  name: TwentyFour
+  nameWithType: MicroSplatBaseFeatures.MaxTextureCount.TwentyFour
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.TwentyFour
+  type: Field
+  source:
+    id: TwentyFour
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 132
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: TwentyFour = 24
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.TwentyEight
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.TwentyEight
+  id: TwentyEight
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  langs:
+  - csharp
+  - vb
+  name: TwentyEight
+  nameWithType: MicroSplatBaseFeatures.MaxTextureCount.TwentyEight
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.TwentyEight
+  type: Field
+  source:
+    id: TwentyEight
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 133
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: TwentyEight = 28
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.ThirtyTwo
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.ThirtyTwo
+  id: ThirtyTwo
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  langs:
+  - csharp
+  - vb
+  name: ThirtyTwo
+  nameWithType: MicroSplatBaseFeatures.MaxTextureCount.ThirtyTwo
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount.ThirtyTwo
+  type: Field
+  source:
+    id: ThirtyTwo
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 134
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: ThirtyTwo = 32
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+  parent: JBooth.MicroSplat
+  name: MicroSplatBaseFeatures.MaxTextureCount
+  nameWithType: MicroSplatBaseFeatures.MaxTextureCount
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount

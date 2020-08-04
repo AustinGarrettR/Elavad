@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.TextureArrayConfig.PackingMode
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.PackingMode
+  id: TextureArrayConfig.PackingMode
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.TextureArrayConfig.PackingMode.Fastest
+  - JBooth.MicroSplat.TextureArrayConfig.PackingMode.Quality
+  langs:
+  - csharp
+  - vb
+  name: TextureArrayConfig.PackingMode
+  nameWithType: TextureArrayConfig.PackingMode
+  fullName: JBooth.MicroSplat.TextureArrayConfig.PackingMode
+  type: Enum
+  source:
+    id: PackingMode
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 81
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum PackingMode
+    content.vb: Public Enum PackingMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.TextureArrayConfig.PackingMode.Fastest
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.PackingMode.Fastest
+  id: Fastest
+  parent: JBooth.MicroSplat.TextureArrayConfig.PackingMode
+  langs:
+  - csharp
+  - vb
+  name: Fastest
+  nameWithType: TextureArrayConfig.PackingMode.Fastest
+  fullName: JBooth.MicroSplat.TextureArrayConfig.PackingMode.Fastest
+  type: Field
+  source:
+    id: Fastest
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 83
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Fastest = 0
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.PackingMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.PackingMode.Quality
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.PackingMode.Quality
+  id: Quality
+  parent: JBooth.MicroSplat.TextureArrayConfig.PackingMode
+  langs:
+  - csharp
+  - vb
+  name: Quality
+  nameWithType: TextureArrayConfig.PackingMode.Quality
+  fullName: JBooth.MicroSplat.TextureArrayConfig.PackingMode.Quality
+  type: Field
+  source:
+    id: Quality
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 84
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Quality = 1
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.PackingMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.TextureArrayConfig.PackingMode
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.PackingMode
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.PackingMode
+  nameWithType: TextureArrayConfig.PackingMode
+  fullName: JBooth.MicroSplat.TextureArrayConfig.PackingMode

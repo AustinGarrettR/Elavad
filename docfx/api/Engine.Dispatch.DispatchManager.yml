@@ -16,12 +16,8 @@ items:
   fullName: Engine.Dispatch.DispatchManager
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Dispatch/DispatchManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: DispatchManager
-    path: ../Assets/Engine/Dispatch/DispatchManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Dispatch\DispatchManager.cs
     startLine: 7
   assemblies:
   - Engine.Dispatch
@@ -32,7 +28,6 @@ items:
     content: 'public class DispatchManager : Manager'
     content.vb: >-
       Public Class DispatchManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -64,12 +59,8 @@ items:
   fullName: Engine.Dispatch.DispatchManager.Init()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Dispatch/DispatchManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Init
-    path: ../Assets/Engine/Dispatch/DispatchManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Dispatch\DispatchManager.cs
     startLine: 17
   assemblies:
   - Engine.Dispatch
@@ -99,12 +90,8 @@ items:
   fullName: Engine.Dispatch.DispatchManager.Shutdown()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Dispatch/DispatchManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
-    path: ../Assets/Engine/Dispatch/DispatchManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Dispatch\DispatchManager.cs
     startLine: 25
   assemblies:
   - Engine.Dispatch
@@ -134,12 +121,8 @@ items:
   fullName: Engine.Dispatch.DispatchManager.Process()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Dispatch/DispatchManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Process
-    path: ../Assets/Engine/Dispatch/DispatchManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Dispatch\DispatchManager.cs
     startLine: 33
   assemblies:
   - Engine.Dispatch

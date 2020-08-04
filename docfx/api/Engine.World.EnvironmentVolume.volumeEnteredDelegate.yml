@@ -13,12 +13,8 @@ items:
   fullName: Engine.World.EnvironmentVolume.volumeEnteredDelegate
   type: Delegate
   source:
-    remote:
-      path: Assets/Engine/World/EnvironmentVolume.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: volumeEnteredDelegate
-    path: ../Assets/Engine/World/EnvironmentVolume.cs
+    path: B:\Games\Elavad\Assets\Engine\World\EnvironmentVolume.cs
     startLine: 90
   assemblies:
   - Engine.World

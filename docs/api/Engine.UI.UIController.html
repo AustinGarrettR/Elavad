@@ -399,18 +399,13 @@
   <h6><strong>Assembly</strong>: Engine.UI.dll</h6>
   <h5 id="Engine_UI_UIController_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[RequireComponent(typeof(PanelRenderer))]
+    <pre><code class="lang-csharp hljs">[RequireComponent(typeof(UIDocument))]
 public abstract class UIController : MonoBehaviour</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_UI_UIController_getElement__1_System_String_.md&amp;value=---%0Auid%3A%20Engine.UI.UIController.getElement%60%601(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/UI/UIController.cs/#L71">View Source</a>
-  </span>
+  
+  
   <a id="Engine_UI_UIController_getElement_" data-uid="Engine.UI.UIController.getElement*"></a>
   <h4 id="Engine_UI_UIController_getElement__1_System_String_" data-uid="Engine.UI.UIController.getElement``1(System.String)">getElement&lt;U&gt;(String)</h4>
   <div class="markdown level1 summary"><p>Select an element from the tree</p>
@@ -419,7 +414,6 @@ public abstract class UIController : MonoBehaviour</code></pre>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public U getElement&lt;U&gt;(string name)
-
     where U : VisualElement</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -471,44 +465,8 @@ public abstract class UIController : MonoBehaviour</code></pre>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_UI_UIController_GetPanelRenderer.md&amp;value=---%0Auid%3A%20Engine.UI.UIController.GetPanelRenderer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/UI/UIController.cs/#L46">View Source</a>
-  </span>
-  <a id="Engine_UI_UIController_GetPanelRenderer_" data-uid="Engine.UI.UIController.GetPanelRenderer*"></a>
-  <h4 id="Engine_UI_UIController_GetPanelRenderer" data-uid="Engine.UI.UIController.GetPanelRenderer">GetPanelRenderer()</h4>
-  <div class="markdown level1 summary"><p>Returns the panel renderer</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PanelRenderer GetPanelRenderer()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Unity.UIElements.Runtime.PanelRenderer</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_UI_UIController_getPlaceholderTextFieldRealValue_UnityEngine_UIElements_TextField_.md&amp;value=---%0Auid%3A%20Engine.UI.UIController.getPlaceholderTextFieldRealValue(UnityEngine.UIElements.TextField)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/UI/UIController.cs/#L117">View Source</a>
-  </span>
+  
+  
   <a id="Engine_UI_UIController_getPlaceholderTextFieldRealValue_" data-uid="Engine.UI.UIController.getPlaceholderTextFieldRealValue*"></a>
   <h4 id="Engine_UI_UIController_getPlaceholderTextFieldRealValue_UnityEngine_UIElements_TextField_" data-uid="Engine.UI.UIController.getPlaceholderTextFieldRealValue(UnityEngine.UIElements.TextField)">getPlaceholderTextFieldRealValue(TextField)</h4>
   <div class="markdown level1 summary"><p>Returns the input value after placeholder processing</p>
@@ -551,29 +509,45 @@ public abstract class UIController : MonoBehaviour</code></pre>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_UI_UIController_onPanelLoaded.md&amp;value=---%0Auid%3A%20Engine.UI.UIController.onPanelLoaded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/UI/UIController.cs/#L54">View Source</a>
-  </span>
-  <a id="Engine_UI_UIController_onPanelLoaded_" data-uid="Engine.UI.UIController.onPanelLoaded*"></a>
-  <h4 id="Engine_UI_UIController_onPanelLoaded" data-uid="Engine.UI.UIController.onPanelLoaded">onPanelLoaded()</h4>
+  
+  
+  <a id="Engine_UI_UIController_GetUIDocument_" data-uid="Engine.UI.UIController.GetUIDocument*"></a>
+  <h4 id="Engine_UI_UIController_GetUIDocument" data-uid="Engine.UI.UIController.GetUIDocument">GetUIDocument()</h4>
+  <div class="markdown level1 summary"><p>Returns the panel renderer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIDocument GetUIDocument()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEngine.UIElements.UIDocument</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Engine_UI_UIController_onUIDocumentLoaded_" data-uid="Engine.UI.UIController.onUIDocumentLoaded*"></a>
+  <h4 id="Engine_UI_UIController_onUIDocumentLoaded" data-uid="Engine.UI.UIController.onUIDocumentLoaded">onUIDocumentLoaded()</h4>
   <div class="markdown level1 summary"><p>Called when the panel is done loading</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract void onPanelLoaded()</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract void onUIDocumentLoaded()</code></pre>
   </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_UI_UIController_RegisterFirstLetterUpperCaseFormat_UnityEngine_UIElements_TextField_.md&amp;value=---%0Auid%3A%20Engine.UI.UIController.RegisterFirstLetterUpperCaseFormat(UnityEngine.UIElements.TextField)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/UI/UIController.cs/#L84">View Source</a>
-  </span>
+  
+  
   <a id="Engine_UI_UIController_RegisterFirstLetterUpperCaseFormat_" data-uid="Engine.UI.UIController.RegisterFirstLetterUpperCaseFormat*"></a>
   <h4 id="Engine_UI_UIController_RegisterFirstLetterUpperCaseFormat_UnityEngine_UIElements_TextField_" data-uid="Engine.UI.UIController.RegisterFirstLetterUpperCaseFormat(UnityEngine.UIElements.TextField)">RegisterFirstLetterUpperCaseFormat(TextField)</h4>
   <div class="markdown level1 summary"><p>Register text field to always have an uppercase letter for string</p>
@@ -601,13 +575,8 @@ public abstract class UIController : MonoBehaviour</code></pre>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_UI_UIController_RegisterPlaceholderTextField_UnityEngine_UIElements_TextField_.md&amp;value=---%0Auid%3A%20Engine.UI.UIController.RegisterPlaceholderTextField(UnityEngine.UIElements.TextField)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/UI/UIController.cs/#L102">View Source</a>
-  </span>
+  
+  
   <a id="Engine_UI_UIController_RegisterPlaceholderTextField_" data-uid="Engine.UI.UIController.RegisterPlaceholderTextField*"></a>
   <h4 id="Engine_UI_UIController_RegisterPlaceholderTextField_UnityEngine_UIElements_TextField_" data-uid="Engine.UI.UIController.RegisterPlaceholderTextField(UnityEngine.UIElements.TextField)">RegisterPlaceholderTextField(TextField)</h4>
   <div class="markdown level1 summary"><p>Register text field to use placeholders (Requires tooltip field to be set to the placeholder text)</p>
@@ -635,13 +604,8 @@ public abstract class UIController : MonoBehaviour</code></pre>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_UI_UIController_RegisterPlaceholderWithPasswordFormat_UnityEngine_UIElements_TextField_.md&amp;value=---%0Auid%3A%20Engine.UI.UIController.RegisterPlaceholderWithPasswordFormat(UnityEngine.UIElements.TextField)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/UI/UIController.cs/#L93">View Source</a>
-  </span>
+  
+  
   <a id="Engine_UI_UIController_RegisterPlaceholderWithPasswordFormat_" data-uid="Engine.UI.UIController.RegisterPlaceholderWithPasswordFormat*"></a>
   <h4 id="Engine_UI_UIController_RegisterPlaceholderWithPasswordFormat_UnityEngine_UIElements_TextField_" data-uid="Engine.UI.UIController.RegisterPlaceholderWithPasswordFormat(UnityEngine.UIElements.TextField)">RegisterPlaceholderWithPasswordFormat(TextField)</h4>
   <div class="markdown level1 summary"><p>Register text field as a password (with support of placeholders)</p>
@@ -669,21 +633,16 @@ public abstract class UIController : MonoBehaviour</code></pre>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_UI_UIController_setPanelVisibility_System_Boolean_.md&amp;value=---%0Auid%3A%20Engine.UI.UIController.setPanelVisibility(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/UI/UIController.cs/#L60">View Source</a>
-  </span>
-  <a id="Engine_UI_UIController_setPanelVisibility_" data-uid="Engine.UI.UIController.setPanelVisibility*"></a>
-  <h4 id="Engine_UI_UIController_setPanelVisibility_System_Boolean_" data-uid="Engine.UI.UIController.setPanelVisibility(System.Boolean)">setPanelVisibility(Boolean)</h4>
+  
+  
+  <a id="Engine_UI_UIController_SetDocumentVisibility_" data-uid="Engine.UI.UIController.SetDocumentVisibility*"></a>
+  <h4 id="Engine_UI_UIController_SetDocumentVisibility_System_Boolean_" data-uid="Engine.UI.UIController.SetDocumentVisibility(System.Boolean)">SetDocumentVisibility(Boolean)</h4>
   <div class="markdown level1 summary"><p>Show/Hide panel</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void setPanelVisibility(bool visible)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetDocumentVisibility(bool visible)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -710,12 +669,6 @@ public abstract class UIController : MonoBehaviour</code></pre>
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
-                  <li>
-                    <a href="https://github.com/AustinGarrettR/Elavad/new/master/apiSpec/new?filename=Engine_UI_UIController.md&amp;value=---%0Auid%3A%20Engine.UI.UIController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/AustinGarrettR/Elavad/blob/master/Assets/Engine/UI/UIController.cs/#L14" class="contribution-link">View Source</a>
-                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

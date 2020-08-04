@@ -20,12 +20,8 @@ items:
   fullName: Engine.CameraSystem.ClientCameraManager
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Camera/ClientCameraManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ClientCameraManager
-    path: ../Assets/Engine/Camera/ClientCameraManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Camera\ClientCameraManager.cs
     startLine: 15
   assemblies:
   - Engine.Camera
@@ -36,7 +32,6 @@ items:
     content: 'public class ClientCameraManager : Manager'
     content.vb: >-
       Public Class ClientCameraManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -67,12 +62,8 @@ items:
   fullName: Engine.CameraSystem.ClientCameraManager.ClientCameraManager(Engine.Player.ClientPlayerManager)
   type: Constructor
   source:
-    remote:
-      path: Assets/Engine/Camera/ClientCameraManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: .ctor
-    path: ../Assets/Engine/Camera/ClientCameraManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Camera\ClientCameraManager.cs
     startLine: 25
   assemblies:
   - Engine.Camera
@@ -103,12 +94,8 @@ items:
   fullName: Engine.CameraSystem.ClientCameraManager.Init()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Camera/ClientCameraManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Init
-    path: ../Assets/Engine/Camera/ClientCameraManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Camera\ClientCameraManager.cs
     startLine: 37
   assemblies:
   - Engine.Camera
@@ -138,12 +125,8 @@ items:
   fullName: Engine.CameraSystem.ClientCameraManager.Process()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Camera/ClientCameraManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Process
-    path: ../Assets/Engine/Camera/ClientCameraManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Camera\ClientCameraManager.cs
     startLine: 55
   assemblies:
   - Engine.Camera
@@ -173,12 +156,8 @@ items:
   fullName: Engine.CameraSystem.ClientCameraManager.LoadGameTask(Engine.Loading.ClientLoadData)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Camera/ClientCameraManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: LoadGameTask
-    path: ../Assets/Engine/Camera/ClientCameraManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Camera\ClientCameraManager.cs
     startLine: 68
   assemblies:
   - Engine.Camera
@@ -214,12 +193,8 @@ items:
   fullName: Engine.CameraSystem.ClientCameraManager.Shutdown()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Camera/ClientCameraManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
-    path: ../Assets/Engine/Camera/ClientCameraManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Camera\ClientCameraManager.cs
     startLine: 84
   assemblies:
   - Engine.Camera
@@ -249,12 +224,8 @@ items:
   fullName: Engine.CameraSystem.ClientCameraManager.SetRotateAroundTarget(UnityEngine.GameObject)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Camera/ClientCameraManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: SetRotateAroundTarget
-    path: ../Assets/Engine/Camera/ClientCameraManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Camera\ClientCameraManager.cs
     startLine: 97
   assemblies:
   - Engine.Camera
@@ -285,12 +256,8 @@ items:
   fullName: Engine.CameraSystem.ClientCameraManager.SetRotateAroundTargetToPlayer()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Camera/ClientCameraManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: SetRotateAroundTargetToPlayer
-    path: ../Assets/Engine/Camera/ClientCameraManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Camera\ClientCameraManager.cs
     startLine: 112
   assemblies:
   - Engine.Camera

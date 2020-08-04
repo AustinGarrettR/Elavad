@@ -1,0 +1,547 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+  id: TextureArrayConfig.TextureArraySettings
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.#ctor(JBooth.MicroSplat.TextureArrayConfig.TextureSize,JBooth.MicroSplat.TextureArrayConfig.Compression,UnityEngine.FilterMode,System.Int32)
+  - JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.Aniso
+  - JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.compression
+  - JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.filterMode
+  - JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.textureSize
+  langs:
+  - csharp
+  - vb
+  name: TextureArrayConfig.TextureArraySettings
+  nameWithType: TextureArrayConfig.TextureArraySettings
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+  type: Class
+  source:
+    id: TextureArraySettings
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 57
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class TextureArraySettings
+    content.vb: >-
+      <Serializable>
+
+      Public Class TextureArraySettings
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.#ctor(JBooth.MicroSplat.TextureArrayConfig.TextureSize,JBooth.MicroSplat.TextureArrayConfig.Compression,UnityEngine.FilterMode,System.Int32)
+  commentId: M:JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.#ctor(JBooth.MicroSplat.TextureArrayConfig.TextureSize,JBooth.MicroSplat.TextureArrayConfig.Compression,UnityEngine.FilterMode,System.Int32)
+  id: '#ctor(JBooth.MicroSplat.TextureArrayConfig.TextureSize,JBooth.MicroSplat.TextureArrayConfig.Compression,UnityEngine.FilterMode,System.Int32)'
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+  langs:
+  - csharp
+  - vb
+  name: TextureArraySettings(TextureArrayConfig.TextureSize, TextureArrayConfig.Compression, FilterMode, Int32)
+  nameWithType: TextureArrayConfig.TextureArraySettings.TextureArraySettings(TextureArrayConfig.TextureSize, TextureArrayConfig.Compression, FilterMode, Int32)
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.TextureArraySettings(JBooth.MicroSplat.TextureArrayConfig.TextureSize, JBooth.MicroSplat.TextureArrayConfig.Compression, UnityEngine.FilterMode, System.Int32)
+  type: Constructor
+  source:
+    id: .ctor
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 60
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArraySettings(TextureArrayConfig.TextureSize s, TextureArrayConfig.Compression c, FilterMode f, int a = 1)
+    parameters:
+    - id: s
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+    - id: c
+      type: JBooth.MicroSplat.TextureArrayConfig.Compression
+    - id: f
+      type: UnityEngine.FilterMode
+    - id: a
+      type: System.Int32
+    content.vb: Public Sub New(s As TextureArrayConfig.TextureSize, c As TextureArrayConfig.Compression, f As FilterMode, a As Integer = 1)
+  overload: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.textureSize
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.textureSize
+  id: textureSize
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+  langs:
+  - csharp
+  - vb
+  name: textureSize
+  nameWithType: TextureArrayConfig.TextureArraySettings.textureSize
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.textureSize
+  type: Field
+  source:
+    id: textureSize
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 68
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureSize textureSize
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+    content.vb: Public textureSize As TextureArrayConfig.TextureSize
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.compression
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.compression
+  id: compression
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+  langs:
+  - csharp
+  - vb
+  name: compression
+  nameWithType: TextureArrayConfig.TextureArraySettings.compression
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.compression
+  type: Field
+  source:
+    id: compression
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 69
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.Compression compression
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.Compression
+    content.vb: Public compression As TextureArrayConfig.Compression
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.filterMode
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.filterMode
+  id: filterMode
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+  langs:
+  - csharp
+  - vb
+  name: filterMode
+  nameWithType: TextureArrayConfig.TextureArraySettings.filterMode
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.filterMode
+  type: Field
+  source:
+    id: filterMode
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 70
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public FilterMode filterMode
+    return:
+      type: UnityEngine.FilterMode
+    content.vb: Public filterMode As FilterMode
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.Aniso
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.Aniso
+  id: Aniso
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+  langs:
+  - csharp
+  - vb
+  name: Aniso
+  nameWithType: TextureArrayConfig.TextureArraySettings.Aniso
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.Aniso
+  type: Field
+  source:
+    id: Aniso
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 72
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [Range(0F, 16F)]
+
+      public int Aniso
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Range(0F, 16F)>
+
+      Public Aniso As Integer
+  attributes:
+  - type: UnityEngine.RangeAttribute
+    ctor: UnityEngine.RangeAttribute.#ctor(System.Single,System.Single)
+    arguments:
+    - type: System.Single
+      value: 0
+    - type: System.Single
+      value: 16
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.#ctor*
+  commentId: Overload:JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.#ctor
+  name: TextureArraySettings
+  nameWithType: TextureArrayConfig.TextureArraySettings.TextureArraySettings
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings.TextureArraySettings
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.TextureSize
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.TextureSize
+  nameWithType: TextureArrayConfig.TextureSize
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+- uid: JBooth.MicroSplat.TextureArrayConfig.Compression
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.Compression
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.Compression
+  nameWithType: TextureArrayConfig.Compression
+  fullName: JBooth.MicroSplat.TextureArrayConfig.Compression
+- uid: UnityEngine.FilterMode
+  commentId: T:UnityEngine.FilterMode
+  parent: UnityEngine
+  isExternal: true
+  name: FilterMode
+  nameWithType: FilterMode
+  fullName: UnityEngine.FilterMode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

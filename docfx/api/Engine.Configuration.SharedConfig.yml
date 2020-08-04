@@ -34,12 +34,8 @@ items:
   fullName: Engine.Configuration.SharedConfig
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: SharedConfig
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 5
   assemblies:
   - Engine.Configuration
@@ -77,12 +73,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.ESCAPE
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ESCAPE
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 15
   assemblies:
   - Engine.Configuration
@@ -114,12 +106,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.DELIMITER
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: DELIMITER
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 20
   assemblies:
   - Engine.Configuration
@@ -151,12 +139,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.PORT
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: PORT
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 25
   assemblies:
   - Engine.Configuration
@@ -188,12 +172,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.MAX_BUFFER_SIZE
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: MAX_BUFFER_SIZE
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 30
   assemblies:
   - Engine.Configuration
@@ -225,12 +205,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: KEEP_ALIVE_PACKET_INTERVAL_IN_MILLISECONDS
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 35
   assemblies:
   - Engine.Configuration
@@ -262,12 +238,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 40
   assemblies:
   - Engine.Configuration
@@ -299,12 +271,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: NEARBY_PLAYERS_TRANSFORM_UPDATE_INTERVAL_IN_MILLISECONDS
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 45
   assemblies:
   - Engine.Configuration
@@ -336,12 +304,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.NEARBY_PLAYERS_DISTANCE
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: NEARBY_PLAYERS_DISTANCE
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 50
   assemblies:
   - Engine.Configuration
@@ -373,12 +337,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: NEARBY_PLAYERS_CHECK_INTERVAL_IN_MILLISECONDS
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 55
   assemblies:
   - Engine.Configuration
@@ -410,12 +370,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.MAX_USERNAME_LENGTH
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: MAX_USERNAME_LENGTH
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 64
   assemblies:
   - Engine.Configuration
@@ -447,12 +403,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.MAX_PASSWORD_LENGTH
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: MAX_PASSWORD_LENGTH
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 69
   assemblies:
   - Engine.Configuration
@@ -484,12 +436,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.WORLD_CHUNK_SIZE
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: WORLD_CHUNK_SIZE
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 78
   assemblies:
   - Engine.Configuration
@@ -521,12 +469,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.WORLD_CHUNK_MAX_HEIGHT
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: WORLD_CHUNK_MAX_HEIGHT
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 83
   assemblies:
   - Engine.Configuration
@@ -558,12 +502,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.CHUNK_LOAD_VIEW_DISTANCE
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: CHUNK_LOAD_VIEW_DISTANCE
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 88
   assemblies:
   - Engine.Configuration
@@ -595,12 +535,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.CHUNK_UNLOAD_VIEW_DISTANCE
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: CHUNK_UNLOAD_VIEW_DISTANCE
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 93
   assemblies:
   - Engine.Configuration
@@ -632,12 +568,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.CLIENT_SCENE_PATH
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: CLIENT_SCENE_PATH
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 102
   assemblies:
   - Engine.Configuration
@@ -669,12 +601,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.SERVER_SCENE_PATH
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: SERVER_SCENE_PATH
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 107
   assemblies:
   - Engine.Configuration
@@ -706,12 +634,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.LOGIN_SCENE_PATH
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: LOGIN_SCENE_PATH
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 112
   assemblies:
   - Engine.Configuration
@@ -743,12 +667,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.WORLD_SCENES_FOLDER
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: WORLD_SCENES_FOLDER
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 117
   assemblies:
   - Engine.Configuration
@@ -780,12 +700,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.PLAYERS_LAYER_NAME
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: PLAYERS_LAYER_NAME
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 126
   assemblies:
   - Engine.Configuration
@@ -817,12 +733,8 @@ items:
   fullName: Engine.Configuration.SharedConfig.VOLUMES_LAYER_NAME
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/SharedConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: VOLUMES_LAYER_NAME
-    path: ../Assets/Engine/Configuration/SharedConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\SharedConfig.cs
     startLine: 131
   assemblies:
   - Engine.Configuration

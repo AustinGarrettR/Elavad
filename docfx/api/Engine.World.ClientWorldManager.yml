@@ -18,12 +18,8 @@ items:
   fullName: Engine.World.ClientWorldManager
   type: Class
   source:
-    remote:
-      path: Assets/Engine/World/ClientWorldManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ClientWorldManager
-    path: ../Assets/Engine/World/ClientWorldManager.cs
+    path: B:\Games\Elavad\Assets\Engine\World\ClientWorldManager.cs
     startLine: 15
   assemblies:
   - Engine.World
@@ -34,7 +30,6 @@ items:
     content: 'public class ClientWorldManager : Manager'
     content.vb: >-
       Public Class ClientWorldManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -65,12 +60,8 @@ items:
   fullName: Engine.World.ClientWorldManager.ClientWorldManager(Engine.Player.ClientPlayerManager)
   type: Constructor
   source:
-    remote:
-      path: Assets/Engine/World/ClientWorldManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: .ctor
-    path: ../Assets/Engine/World/ClientWorldManager.cs
+    path: B:\Games\Elavad\Assets\Engine\World\ClientWorldManager.cs
     startLine: 25
   assemblies:
   - Engine.World
@@ -101,12 +92,8 @@ items:
   fullName: Engine.World.ClientWorldManager.Init()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/World/ClientWorldManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Init
-    path: ../Assets/Engine/World/ClientWorldManager.cs
+    path: B:\Games\Elavad\Assets\Engine\World\ClientWorldManager.cs
     startLine: 38
   assemblies:
   - Engine.World
@@ -136,12 +123,8 @@ items:
   fullName: Engine.World.ClientWorldManager.Shutdown()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/World/ClientWorldManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
-    path: ../Assets/Engine/World/ClientWorldManager.cs
+    path: B:\Games\Elavad\Assets\Engine\World\ClientWorldManager.cs
     startLine: 49
   assemblies:
   - Engine.World
@@ -171,12 +154,8 @@ items:
   fullName: Engine.World.ClientWorldManager.Process()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/World/ClientWorldManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Process
-    path: ../Assets/Engine/World/ClientWorldManager.cs
+    path: B:\Games\Elavad\Assets\Engine\World\ClientWorldManager.cs
     startLine: 57
   assemblies:
   - Engine.World
@@ -206,12 +185,8 @@ items:
   fullName: Engine.World.ClientWorldManager.LoadGameTask(Engine.Loading.ClientLoadData)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/World/ClientWorldManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: LoadGameTask
-    path: ../Assets/Engine/World/ClientWorldManager.cs
+    path: B:\Games\Elavad\Assets\Engine\World\ClientWorldManager.cs
     startLine: 69
   assemblies:
   - Engine.World

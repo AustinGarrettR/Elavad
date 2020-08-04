@@ -18,6 +18,11 @@ items:
   assemblies:
   - Engine.API
 references:
+- uid: Engine.API.APIManager
+  commentId: T:Engine.API.APIManager
+  name: APIManager
+  nameWithType: APIManager
+  fullName: Engine.API.APIManager
 - uid: Engine.API.API
   commentId: T:Engine.API.API
   name: API
@@ -33,8 +38,3 @@ references:
   name: API.Server
   nameWithType: API.Server
   fullName: Engine.API.API.Server
-- uid: Engine.API.APIManager
-  commentId: T:Engine.API.APIManager
-  name: APIManager
-  nameWithType: APIManager
-  fullName: Engine.API.APIManager

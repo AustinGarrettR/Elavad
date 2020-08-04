@@ -34,24 +34,26 @@ items:
   assemblies:
   - Engine.Networking
 references:
-- uid: Engine.Networking.Packet
-  commentId: T:Engine.Networking.Packet
-  parent: Engine.Networking
-  name: Packet
-  nameWithType: Packet
-  fullName: Engine.Networking.Packet
-- uid: Engine.Networking.PacketAttribute
-  commentId: T:Engine.Networking.PacketAttribute
-  parent: Engine.Networking
-  name: PacketAttribute
-  nameWithType: PacketAttribute
-  fullName: Engine.Networking.PacketAttribute
-- uid: Engine.Networking.ReliabilityScheme
-  commentId: T:Engine.Networking.ReliabilityScheme
-  parent: Engine.Networking
-  name: ReliabilityScheme
-  nameWithType: ReliabilityScheme
-  fullName: Engine.Networking.ReliabilityScheme
+- uid: Engine.Networking.WalkRequest_5
+  commentId: T:Engine.Networking.WalkRequest_5
+  name: WalkRequest_5
+  nameWithType: WalkRequest_5
+  fullName: Engine.Networking.WalkRequest_5
+- uid: Engine.Networking.UpdateMyPlayerTransform_3
+  commentId: T:Engine.Networking.UpdateMyPlayerTransform_3
+  name: UpdateMyPlayerTransform_3
+  nameWithType: UpdateMyPlayerTransform_3
+  fullName: Engine.Networking.UpdateMyPlayerTransform_3
+- uid: Engine.Networking.LoginRequest_1
+  commentId: T:Engine.Networking.LoginRequest_1
+  name: LoginRequest_1
+  nameWithType: LoginRequest_1
+  fullName: Engine.Networking.LoginRequest_1
+- uid: Engine.Networking.RemoveOtherPlayer_8
+  commentId: T:Engine.Networking.RemoveOtherPlayer_8
+  name: RemoveOtherPlayer_8
+  nameWithType: RemoveOtherPlayer_8
+  fullName: Engine.Networking.RemoveOtherPlayer_8
 - uid: Engine.Networking.ConnectionManager
   commentId: T:Engine.Networking.ConnectionManager
   parent: Engine.Networking
@@ -100,52 +102,50 @@ references:
   name: ConnectionManager.ListenerType
   nameWithType: ConnectionManager.ListenerType
   fullName: Engine.Networking.ConnectionManager.ListenerType
-- uid: Engine.Networking.AddOtherPlayer_7
-  commentId: T:Engine.Networking.AddOtherPlayer_7
-  name: AddOtherPlayer_7
-  nameWithType: AddOtherPlayer_7
-  fullName: Engine.Networking.AddOtherPlayer_7
 - uid: Engine.Networking.FinishedLoading_4
   commentId: T:Engine.Networking.FinishedLoading_4
   name: FinishedLoading_4
   nameWithType: FinishedLoading_4
   fullName: Engine.Networking.FinishedLoading_4
+- uid: Engine.Networking.Packet
+  commentId: T:Engine.Networking.Packet
+  parent: Engine.Networking
+  name: Packet
+  nameWithType: Packet
+  fullName: Engine.Networking.Packet
+- uid: Engine.Networking.AddOtherPlayer_7
+  commentId: T:Engine.Networking.AddOtherPlayer_7
+  name: AddOtherPlayer_7
+  nameWithType: AddOtherPlayer_7
+  fullName: Engine.Networking.AddOtherPlayer_7
 - uid: Engine.Networking.KeepAlive_0
   commentId: T:Engine.Networking.KeepAlive_0
   name: KeepAlive_0
   nameWithType: KeepAlive_0
   fullName: Engine.Networking.KeepAlive_0
-- uid: Engine.Networking.LoginRequest_1
-  commentId: T:Engine.Networking.LoginRequest_1
-  name: LoginRequest_1
-  nameWithType: LoginRequest_1
-  fullName: Engine.Networking.LoginRequest_1
+- uid: Engine.Networking.UpdateOtherPlayerTransform_6
+  commentId: T:Engine.Networking.UpdateOtherPlayerTransform_6
+  name: UpdateOtherPlayerTransform_6
+  nameWithType: UpdateOtherPlayerTransform_6
+  fullName: Engine.Networking.UpdateOtherPlayerTransform_6
+- uid: Engine.Networking.ReliabilityScheme
+  commentId: T:Engine.Networking.ReliabilityScheme
+  parent: Engine.Networking
+  name: ReliabilityScheme
+  nameWithType: ReliabilityScheme
+  fullName: Engine.Networking.ReliabilityScheme
+- uid: Engine.Networking.PacketAttribute
+  commentId: T:Engine.Networking.PacketAttribute
+  parent: Engine.Networking
+  name: PacketAttribute
+  nameWithType: PacketAttribute
+  fullName: Engine.Networking.PacketAttribute
 - uid: Engine.Networking.LoginResponse_2
   commentId: T:Engine.Networking.LoginResponse_2
   parent: Engine.Networking
   name: LoginResponse_2
   nameWithType: LoginResponse_2
   fullName: Engine.Networking.LoginResponse_2
-- uid: Engine.Networking.RemoveOtherPlayer_8
-  commentId: T:Engine.Networking.RemoveOtherPlayer_8
-  name: RemoveOtherPlayer_8
-  nameWithType: RemoveOtherPlayer_8
-  fullName: Engine.Networking.RemoveOtherPlayer_8
-- uid: Engine.Networking.UpdateMyPlayerTransform_3
-  commentId: T:Engine.Networking.UpdateMyPlayerTransform_3
-  name: UpdateMyPlayerTransform_3
-  nameWithType: UpdateMyPlayerTransform_3
-  fullName: Engine.Networking.UpdateMyPlayerTransform_3
-- uid: Engine.Networking.UpdateOtherPlayerTransform_6
-  commentId: T:Engine.Networking.UpdateOtherPlayerTransform_6
-  name: UpdateOtherPlayerTransform_6
-  nameWithType: UpdateOtherPlayerTransform_6
-  fullName: Engine.Networking.UpdateOtherPlayerTransform_6
-- uid: Engine.Networking.WalkRequest_5
-  commentId: T:Engine.Networking.WalkRequest_5
-  name: WalkRequest_5
-  nameWithType: WalkRequest_5
-  fullName: Engine.Networking.WalkRequest_5
 - uid: Engine.Networking
   commentId: N:Engine.Networking
   name: Engine.Networking

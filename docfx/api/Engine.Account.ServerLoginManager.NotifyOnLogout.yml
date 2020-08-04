@@ -13,12 +13,8 @@ items:
   fullName: Engine.Account.ServerLoginManager.NotifyOnLogout
   type: Delegate
   source:
-    remote:
-      path: Assets/Engine/Account/ServerLoginManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyOnLogout
-    path: ../Assets/Engine/Account/ServerLoginManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Account\ServerLoginManager.cs
     startLine: 86
   assemblies:
   - Engine.Account

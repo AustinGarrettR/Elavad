@@ -25,12 +25,8 @@ items:
   fullName: Engine.Networking.UpdateMyPlayerTransform_3
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: UpdateMyPlayerTransform_3
-    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\UpdateMyPlayerTransform_3.cs
     startLine: 8
   assemblies:
   - Engine.Networking
@@ -50,7 +46,6 @@ items:
       <Packet(3, "Update MyPlayer Transform", "Client", ReliabilityScheme.UNRELIABLE, "Updates the main client player transform")>
 
       Public Class UpdateMyPlayerTransform_3
-
           Inherits Packet
   inheritance:
   - System.Object
@@ -103,12 +98,8 @@ items:
   fullName: Engine.Networking.UpdateMyPlayerTransform_3.x
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: x
-    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\UpdateMyPlayerTransform_3.cs
     startLine: 21
   assemblies:
   - Engine.Networking
@@ -136,12 +127,8 @@ items:
   fullName: Engine.Networking.UpdateMyPlayerTransform_3.y
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: y
-    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\UpdateMyPlayerTransform_3.cs
     startLine: 26
   assemblies:
   - Engine.Networking
@@ -169,12 +156,8 @@ items:
   fullName: Engine.Networking.UpdateMyPlayerTransform_3.z
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: z
-    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\UpdateMyPlayerTransform_3.cs
     startLine: 31
   assemblies:
   - Engine.Networking
@@ -202,12 +185,8 @@ items:
   fullName: Engine.Networking.UpdateMyPlayerTransform_3.rotationX
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: rotationX
-    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\UpdateMyPlayerTransform_3.cs
     startLine: 36
   assemblies:
   - Engine.Networking
@@ -235,12 +214,8 @@ items:
   fullName: Engine.Networking.UpdateMyPlayerTransform_3.rotationY
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: rotationY
-    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\UpdateMyPlayerTransform_3.cs
     startLine: 41
   assemblies:
   - Engine.Networking
@@ -268,12 +243,8 @@ items:
   fullName: Engine.Networking.UpdateMyPlayerTransform_3.rotationZ
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: rotationZ
-    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\UpdateMyPlayerTransform_3.cs
     startLine: 46
   assemblies:
   - Engine.Networking
@@ -301,12 +272,8 @@ items:
   fullName: Engine.Networking.UpdateMyPlayerTransform_3.rotationW
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: rotationW
-    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\UpdateMyPlayerTransform_3.cs
     startLine: 51
   assemblies:
   - Engine.Networking
@@ -334,12 +301,8 @@ items:
   fullName: Engine.Networking.UpdateMyPlayerTransform_3.movementSpeed
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: movementSpeed
-    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\UpdateMyPlayerTransform_3.cs
     startLine: 56
   assemblies:
   - Engine.Networking
@@ -367,12 +330,8 @@ items:
   fullName: Engine.Networking.UpdateMyPlayerTransform_3.angularSpeed
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: angularSpeed
-    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\UpdateMyPlayerTransform_3.cs
     startLine: 61
   assemblies:
   - Engine.Networking
@@ -400,12 +359,8 @@ items:
   fullName: Engine.Networking.UpdateMyPlayerTransform_3.instantUpdate
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: instantUpdate
-    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\UpdateMyPlayerTransform_3.cs
     startLine: 66
   assemblies:
   - Engine.Networking
@@ -433,12 +388,8 @@ items:
   fullName: Engine.Networking.UpdateMyPlayerTransform_3.getBytes()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: getBytes
-    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\UpdateMyPlayerTransform_3.cs
     startLine: 72
   assemblies:
   - Engine.Networking
@@ -471,12 +422,8 @@ items:
   fullName: Engine.Networking.UpdateMyPlayerTransform_3.readPacket(System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: readPacket
-    path: ../Assets/Engine/Networking/Packets/UpdateMyPlayerTransform_3.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\UpdateMyPlayerTransform_3.cs
     startLine: 92
   assemblies:
   - Engine.Networking

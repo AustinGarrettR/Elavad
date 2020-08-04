@@ -14,12 +14,8 @@ items:
   fullName: Engine.Dispatch.Dispatcher
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Dispatch/Dispatcher.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Dispatcher
-    path: ../Assets/Engine/Dispatch/Dispatcher.cs
+    path: B:\Games\Elavad\Assets\Engine\Dispatch\Dispatcher.cs
     startLine: 9
   assemblies:
   - Engine.Dispatch
@@ -58,12 +54,8 @@ items:
   fullName: Engine.Dispatch.Dispatcher.Invoke(System.Action)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Dispatch/Dispatcher.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Invoke
-    path: ../Assets/Engine/Dispatch/Dispatcher.cs
+    path: B:\Games\Elavad\Assets\Engine\Dispatch\Dispatcher.cs
     startLine: 26
   assemblies:
   - Engine.Dispatch

@@ -15,12 +15,8 @@ items:
   fullName: Engine.Networking.FinishedLoading_4
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/FinishedLoading_4.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: FinishedLoading_4
-    path: ../Assets/Engine/Networking/Packets/FinishedLoading_4.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\FinishedLoading_4.cs
     startLine: 8
   assemblies:
   - Engine.Networking
@@ -40,7 +36,6 @@ items:
       <Packet(4, "Finished Loading", "Server", ReliabilityScheme.RELIABLE, "Informs the server the client finished loading")>
 
       Public Class FinishedLoading_4
-
           Inherits Packet
   inheritance:
   - System.Object
@@ -93,12 +88,8 @@ items:
   fullName: Engine.Networking.FinishedLoading_4.getBytes()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/FinishedLoading_4.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: getBytes
-    path: ../Assets/Engine/Networking/Packets/FinishedLoading_4.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\FinishedLoading_4.cs
     startLine: 21
   assemblies:
   - Engine.Networking
@@ -131,12 +122,8 @@ items:
   fullName: Engine.Networking.FinishedLoading_4.readPacket(System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/FinishedLoading_4.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: readPacket
-    path: ../Assets/Engine/Networking/Packets/FinishedLoading_4.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\FinishedLoading_4.cs
     startLine: 32
   assemblies:
   - Engine.Networking

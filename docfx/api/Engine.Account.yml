@@ -19,11 +19,6 @@ items:
   assemblies:
   - Engine.Account
 references:
-- uid: Engine.Account.ClientLoginManager
-  commentId: T:Engine.Account.ClientLoginManager
-  name: ClientLoginManager
-  nameWithType: ClientLoginManager
-  fullName: Engine.Account.ClientLoginManager
 - uid: Engine.Account.ServerLoginManager
   commentId: T:Engine.Account.ServerLoginManager
   parent: Engine.Account
@@ -48,6 +43,11 @@ references:
   name: ServerLoginManager.NotifyOnLogout
   nameWithType: ServerLoginManager.NotifyOnLogout
   fullName: Engine.Account.ServerLoginManager.NotifyOnLogout
+- uid: Engine.Account.ClientLoginManager
+  commentId: T:Engine.Account.ClientLoginManager
+  name: ClientLoginManager
+  nameWithType: ClientLoginManager
+  fullName: Engine.Account.ClientLoginManager
 - uid: Engine.Account
   commentId: N:Engine.Account
   name: Engine.Account

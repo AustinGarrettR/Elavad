@@ -211,3 +211,82 @@
     name: EnvironmentVolume.volumeEnteredDelegate
   - uid: Engine.World.ServerWorldManager
     name: ServerWorldManager
+- uid: JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  items:
+  - uid: JBooth.MicroSplat.FeatureDescriptor
+    name: FeatureDescriptor
+  - uid: JBooth.MicroSplat.FeatureDescriptor.Channel
+    name: FeatureDescriptor.Channel
+  - uid: JBooth.MicroSplat.FeatureDescriptor.V2Cannel
+    name: FeatureDescriptor.V2Cannel
+  - uid: JBooth.MicroSplat.GlitterLight
+    name: GlitterLight
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter
+    name: IRenderLoopAdapter
+  - uid: JBooth.MicroSplat.MicroSplatBaseFeatures
+    name: MicroSplatBaseFeatures
+  - uid: JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode
+    name: MicroSplatBaseFeatures.BlendMode
+  - uid: JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples
+    name: MicroSplatBaseFeatures.BranchSamples
+  - uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DebugOutput
+    name: MicroSplatBaseFeatures.DebugOutput
+  - uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+    name: MicroSplatBaseFeatures.DefineFeature
+  - uid: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode
+    name: MicroSplatBaseFeatures.LightingMode
+  - uid: JBooth.MicroSplat.MicroSplatBaseFeatures.MaxTextureCount
+    name: MicroSplatBaseFeatures.MaxTextureCount
+  - uid: JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode
+    name: MicroSplatBaseFeatures.PerformanceMode
+  - uid: JBooth.MicroSplat.MicroSplatBaseFeatures.SamplerMode
+    name: MicroSplatBaseFeatures.SamplerMode
+  - uid: JBooth.MicroSplat.MicroSplatBaseFeatures.ShaderModel
+    name: MicroSplatBaseFeatures.ShaderModel
+  - uid: JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode
+    name: MicroSplatBaseFeatures.UVMode
+  - uid: JBooth.MicroSplat.MicroSplatDefines
+    name: MicroSplatDefines
+  - uid: JBooth.MicroSplat.MicroSplatRuntimeUtil
+    name: MicroSplatRuntimeUtil
+  - uid: JBooth.MicroSplat.MicroSplatUtilities
+    name: MicroSplatUtilities
+  - uid: JBooth.MicroSplat.MicroSplatUtilities.PipelineType
+    name: MicroSplatUtilities.PipelineType
+  - uid: JBooth.MicroSplat.MicroSplatUtilities.TextureArrayPreviewCache
+    name: MicroSplatUtilities.TextureArrayPreviewCache
+  - uid: JBooth.MicroSplat.SurfaceShaderRenderLoopAdapter
+    name: SurfaceShaderRenderLoopAdapter
+  - uid: JBooth.MicroSplat.TextureArrayConfig
+    name: TextureArrayConfig
+  - uid: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+    name: TextureArrayConfig.AllTextureChannel
+  - uid: JBooth.MicroSplat.TextureArrayConfig.ClusterMode
+    name: TextureArrayConfig.ClusterMode
+  - uid: JBooth.MicroSplat.TextureArrayConfig.Compression
+    name: TextureArrayConfig.Compression
+  - uid: JBooth.MicroSplat.TextureArrayConfig.PackingMode
+    name: TextureArrayConfig.PackingMode
+  - uid: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow
+    name: TextureArrayConfig.PBRWorkflow
+  - uid: JBooth.MicroSplat.TextureArrayConfig.PlatformTextureOverride
+    name: TextureArrayConfig.PlatformTextureOverride
+  - uid: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize
+    name: TextureArrayConfig.SourceTextureSize
+  - uid: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup
+    name: TextureArrayConfig.TextureArrayGroup
+  - uid: JBooth.MicroSplat.TextureArrayConfig.TextureArraySettings
+    name: TextureArrayConfig.TextureArraySettings
+  - uid: JBooth.MicroSplat.TextureArrayConfig.TextureChannel
+    name: TextureArrayConfig.TextureChannel
+  - uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+    name: TextureArrayConfig.TextureEntry
+  - uid: JBooth.MicroSplat.TextureArrayConfig.TextureMode
+    name: TextureArrayConfig.TextureMode
+  - uid: JBooth.MicroSplat.TextureArrayConfig.TextureSize
+    name: TextureArrayConfig.TextureSize
+  - uid: JBooth.MicroSplat.TextureArrayConfigEditor
+    name: TextureArrayConfigEditor
+  - uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+    name: UnityLDRenderLoopAdapter

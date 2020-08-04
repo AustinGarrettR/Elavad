@@ -18,12 +18,8 @@ items:
   fullName: Engine.Logging.LogManager
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Logging/LogManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: LogManager
-    path: ../Assets/Engine/Logging/LogManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Logging\LogManager.cs
     startLine: 8
   assemblies:
   - Engine.Logging
@@ -34,7 +30,6 @@ items:
     content: 'public class LogManager : Manager'
     content.vb: >-
       Public Class LogManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -66,12 +61,8 @@ items:
   fullName: Engine.Logging.LogManager.Init()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Logging/LogManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Init
-    path: ../Assets/Engine/Logging/LogManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Logging\LogManager.cs
     startLine: 18
   assemblies:
   - Engine.Logging
@@ -101,12 +92,8 @@ items:
   fullName: Engine.Logging.LogManager.Process()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Logging/LogManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Process
-    path: ../Assets/Engine/Logging/LogManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Logging\LogManager.cs
     startLine: 26
   assemblies:
   - Engine.Logging
@@ -136,12 +123,8 @@ items:
   fullName: Engine.Logging.LogManager.Shutdown()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Logging/LogManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
-    path: ../Assets/Engine/Logging/LogManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Logging\LogManager.cs
     startLine: 34
   assemblies:
   - Engine.Logging
@@ -171,12 +154,8 @@ items:
   fullName: Engine.Logging.LogManager.getLogLevel()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Logging/LogManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: getLogLevel
-    path: ../Assets/Engine/Logging/LogManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Logging\LogManager.cs
     startLine: 56
   assemblies:
   - Engine.Logging
@@ -206,12 +185,8 @@ items:
   fullName: Engine.Logging.LogManager.SetLogLevel(Engine.Logging.LogLevel)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Logging/LogManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: SetLogLevel
-    path: ../Assets/Engine/Logging/LogManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Logging\LogManager.cs
     startLine: 65
   assemblies:
   - Engine.Logging

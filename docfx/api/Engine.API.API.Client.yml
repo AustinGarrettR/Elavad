@@ -14,12 +14,8 @@ items:
   fullName: Engine.API.API.Client
   type: Class
   source:
-    remote:
-      path: Assets/Engine/API/Client/Login.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Client
-    path: ../Assets/Engine/API/Client/Login.cs
+    path: B:\Games\Elavad\Assets\Engine\API\Client\Login.cs
     startLine: 9
   assemblies:
   - Engine.API
@@ -58,12 +54,8 @@ items:
   fullName: Engine.API.API.Client.AttemptLogin(System.String, System.String, System.Boolean, System.Action<System.Boolean, UnityEngine.Color, System.String>, System.Action<System.Single>)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/API/Client/Login.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: AttemptLogin
-    path: ../Assets/Engine/API/Client/Login.cs
+    path: B:\Games\Elavad\Assets\Engine\API\Client\Login.cs
     startLine: 19
   assemblies:
   - Engine.API

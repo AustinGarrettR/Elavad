@@ -16,12 +16,8 @@ items:
   fullName: Engine.Networking.RemoveOtherPlayer_8
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/RemoveOtherPlayer_8.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: RemoveOtherPlayer_8
-    path: ../Assets/Engine/Networking/Packets/RemoveOtherPlayer_8.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\RemoveOtherPlayer_8.cs
     startLine: 8
   assemblies:
   - Engine.Networking
@@ -41,7 +37,6 @@ items:
       <Packet(8, "Remove Other Player", "Client", ReliabilityScheme.RELIABLE, "Removes other player to client")>
 
       Public Class RemoveOtherPlayer_8
-
           Inherits Packet
   inheritance:
   - System.Object
@@ -94,12 +89,8 @@ items:
   fullName: Engine.Networking.RemoveOtherPlayer_8.uniqueId
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/RemoveOtherPlayer_8.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: uniqueId
-    path: ../Assets/Engine/Networking/Packets/RemoveOtherPlayer_8.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\RemoveOtherPlayer_8.cs
     startLine: 21
   assemblies:
   - Engine.Networking
@@ -127,12 +118,8 @@ items:
   fullName: Engine.Networking.RemoveOtherPlayer_8.getBytes()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/RemoveOtherPlayer_8.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: getBytes
-    path: ../Assets/Engine/Networking/Packets/RemoveOtherPlayer_8.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\RemoveOtherPlayer_8.cs
     startLine: 27
   assemblies:
   - Engine.Networking
@@ -165,12 +152,8 @@ items:
   fullName: Engine.Networking.RemoveOtherPlayer_8.readPacket(System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/RemoveOtherPlayer_8.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: readPacket
-    path: ../Assets/Engine/Networking/Packets/RemoveOtherPlayer_8.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\RemoveOtherPlayer_8.cs
     startLine: 38
   assemblies:
   - Engine.Networking

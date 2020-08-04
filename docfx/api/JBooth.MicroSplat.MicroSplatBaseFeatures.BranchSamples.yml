@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples
+  id: MicroSplatBaseFeatures.BranchSamples
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples.Aggressive
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples.None
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples.Regular
+  langs:
+  - csharp
+  - vb
+  name: MicroSplatBaseFeatures.BranchSamples
+  nameWithType: MicroSplatBaseFeatures.BranchSamples
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples
+  type: Enum
+  source:
+    id: BranchSamples
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 154
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum BranchSamples
+    content.vb: Public Enum BranchSamples
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples.None
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples.None
+  id: None
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: MicroSplatBaseFeatures.BranchSamples.None
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples.None
+  type: Field
+  source:
+    id: None
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 156
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: None = 0
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples.Regular
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples.Regular
+  id: Regular
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples
+  langs:
+  - csharp
+  - vb
+  name: Regular
+  nameWithType: MicroSplatBaseFeatures.BranchSamples.Regular
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples.Regular
+  type: Field
+  source:
+    id: Regular
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 157
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Regular = 1
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples.Aggressive
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples.Aggressive
+  id: Aggressive
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples
+  langs:
+  - csharp
+  - vb
+  name: Aggressive
+  nameWithType: MicroSplatBaseFeatures.BranchSamples.Aggressive
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples.Aggressive
+  type: Field
+  source:
+    id: Aggressive
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 158
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Aggressive = 2
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples
+  parent: JBooth.MicroSplat
+  name: MicroSplatBaseFeatures.BranchSamples
+  nameWithType: MicroSplatBaseFeatures.BranchSamples
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.BranchSamples

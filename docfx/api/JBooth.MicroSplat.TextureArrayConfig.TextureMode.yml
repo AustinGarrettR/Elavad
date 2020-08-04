@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureMode
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.TextureMode
+  id: TextureArrayConfig.TextureMode
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.TextureArrayConfig.TextureMode.Basic
+  - JBooth.MicroSplat.TextureArrayConfig.TextureMode.PBR
+  langs:
+  - csharp
+  - vb
+  name: TextureArrayConfig.TextureMode
+  nameWithType: TextureArrayConfig.TextureMode
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureMode
+  type: Enum
+  source:
+    id: TextureMode
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 95
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum TextureMode
+    content.vb: Public Enum TextureMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureMode.Basic
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureMode.Basic
+  id: Basic
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureMode
+  langs:
+  - csharp
+  - vb
+  name: Basic
+  nameWithType: TextureArrayConfig.TextureMode.Basic
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureMode.Basic
+  type: Field
+  source:
+    id: Basic
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 97
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Basic = 0
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureMode.PBR
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureMode.PBR
+  id: PBR
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureMode
+  langs:
+  - csharp
+  - vb
+  name: PBR
+  nameWithType: TextureArrayConfig.TextureMode.PBR
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureMode.PBR
+  type: Field
+  source:
+    id: PBR
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 98
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: PBR = 1
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureMode
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.TextureMode
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.TextureMode
+  nameWithType: TextureArrayConfig.TextureMode
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureMode

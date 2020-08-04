@@ -1,0 +1,3881 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.TextureArrayConfig
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig
+  id: TextureArrayConfig
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.TextureArrayConfig.allTextureChannelAO
+  - JBooth.MicroSplat.TextureArrayConfig.allTextureChannelHeight
+  - JBooth.MicroSplat.TextureArrayConfig.allTextureChannelSmoothness
+  - JBooth.MicroSplat.TextureArrayConfig.antiTileArray
+  - JBooth.MicroSplat.TextureArrayConfig.clusterMode
+  - JBooth.MicroSplat.TextureArrayConfig.defaultTextureSettings
+  - JBooth.MicroSplat.TextureArrayConfig.diffuseArray
+  - JBooth.MicroSplat.TextureArrayConfig.diffuseArray2
+  - JBooth.MicroSplat.TextureArrayConfig.diffuseArray3
+  - JBooth.MicroSplat.TextureArrayConfig.diffuseIsLinear
+  - JBooth.MicroSplat.TextureArrayConfig.emisArray
+  - JBooth.MicroSplat.TextureArrayConfig.emisArray2
+  - JBooth.MicroSplat.TextureArrayConfig.emisArray3
+  - JBooth.MicroSplat.TextureArrayConfig.emisMetalArray
+  - JBooth.MicroSplat.TextureArrayConfig.FindConfig(UnityEngine.Texture2DArray)
+  - JBooth.MicroSplat.TextureArrayConfig.hash
+  - JBooth.MicroSplat.TextureArrayConfig.IsScatter
+  - JBooth.MicroSplat.TextureArrayConfig.normalSAOArray
+  - JBooth.MicroSplat.TextureArrayConfig.normalSAOArray2
+  - JBooth.MicroSplat.TextureArrayConfig.normalSAOArray3
+  - JBooth.MicroSplat.TextureArrayConfig.packingMode
+  - JBooth.MicroSplat.TextureArrayConfig.pbrWorkflow
+  - JBooth.MicroSplat.TextureArrayConfig.platformOverrides
+  - JBooth.MicroSplat.TextureArrayConfig.smoothAOArray
+  - JBooth.MicroSplat.TextureArrayConfig.smoothAOArray2
+  - JBooth.MicroSplat.TextureArrayConfig.smoothAOArray3
+  - JBooth.MicroSplat.TextureArrayConfig.sourceTextures
+  - JBooth.MicroSplat.TextureArrayConfig.sourceTextures2
+  - JBooth.MicroSplat.TextureArrayConfig.sourceTextures3
+  - JBooth.MicroSplat.TextureArrayConfig.sourceTextureSize
+  - JBooth.MicroSplat.TextureArrayConfig.specularArray
+  - JBooth.MicroSplat.TextureArrayConfig.specularArray2
+  - JBooth.MicroSplat.TextureArrayConfig.specularArray3
+  - JBooth.MicroSplat.TextureArrayConfig.textureMode
+  - JBooth.MicroSplat.TextureArrayConfig.traxArray
+  langs:
+  - csharp
+  - vb
+  name: TextureArrayConfig
+  nameWithType: TextureArrayConfig
+  fullName: JBooth.MicroSplat.TextureArrayConfig
+  type: Class
+  source:
+    id: TextureArrayConfig
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 11
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [CreateAssetMenu(menuName = "MicroSplat/Texture Array Config", order = 1)]
+
+      [ExecuteInEditMode]
+
+      public class TextureArrayConfig : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(menuName:="MicroSplat/Texture Array Config", order:=1)>
+
+      <ExecuteInEditMode>
+
+      Public Class TextureArrayConfig
+          Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  inheritedMembers:
+  - UnityEngine.ScriptableObject.SetDirty
+  - UnityEngine.ScriptableObject.CreateInstance(System.String)
+  - UnityEngine.ScriptableObject.CreateInstance(System.Type)
+  - UnityEngine.ScriptableObject.CreateInstance``1
+  - UnityEngine.Object.GetInstanceID
+  - UnityEngine.Object.GetHashCode
+  - UnityEngine.Object.Equals(System.Object)
+  - UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+  - UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  - UnityEngine.Object.Instantiate(UnityEngine.Object)
+  - UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform)
+  - UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
+  - UnityEngine.Object.Instantiate``1({T})
+  - UnityEngine.Object.Instantiate``1({T},UnityEngine.Vector3,UnityEngine.Quaternion)
+  - UnityEngine.Object.Instantiate``1({T},UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  - UnityEngine.Object.Instantiate``1({T},UnityEngine.Transform)
+  - UnityEngine.Object.Instantiate``1({T},UnityEngine.Transform,System.Boolean)
+  - UnityEngine.Object.Destroy(UnityEngine.Object,System.Single)
+  - UnityEngine.Object.Destroy(UnityEngine.Object)
+  - UnityEngine.Object.DestroyImmediate(UnityEngine.Object,System.Boolean)
+  - UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
+  - UnityEngine.Object.FindObjectsOfType(System.Type)
+  - UnityEngine.Object.FindObjectsOfType(System.Type,System.Boolean)
+  - UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
+  - UnityEngine.Object.DestroyObject(UnityEngine.Object,System.Single)
+  - UnityEngine.Object.DestroyObject(UnityEngine.Object)
+  - UnityEngine.Object.FindSceneObjectsOfType(System.Type)
+  - UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
+  - UnityEngine.Object.FindObjectsOfType``1
+  - UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
+  - UnityEngine.Object.FindObjectOfType``1
+  - UnityEngine.Object.FindObjectOfType``1(System.Boolean)
+  - UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
+  - UnityEngine.Object.FindObjectOfType(System.Type)
+  - UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
+  - UnityEngine.Object.ToString
+  - UnityEngine.Object.name
+  - UnityEngine.Object.hideFlags
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: menuName
+      type: System.String
+      value: MicroSplat/Texture Array Config
+    - name: order
+      type: System.Int32
+      value: 1
+  - type: UnityEngine.ExecuteInEditMode
+    ctor: UnityEngine.ExecuteInEditMode.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JBooth.MicroSplat.TextureArrayConfig.diffuseIsLinear
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.diffuseIsLinear
+  id: diffuseIsLinear
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: diffuseIsLinear
+  nameWithType: TextureArrayConfig.diffuseIsLinear
+  fullName: JBooth.MicroSplat.TextureArrayConfig.diffuseIsLinear
+  type: Field
+  source:
+    id: diffuseIsLinear
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 111
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public bool diffuseIsLinear
+    return:
+      type: System.Boolean
+    content.vb: Public diffuseIsLinear As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.IsScatter
+  commentId: M:JBooth.MicroSplat.TextureArrayConfig.IsScatter
+  id: IsScatter
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: IsScatter()
+  nameWithType: TextureArrayConfig.IsScatter()
+  fullName: JBooth.MicroSplat.TextureArrayConfig.IsScatter()
+  type: Method
+  source:
+    id: IsScatter
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 113
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public bool IsScatter()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsScatter As Boolean
+  overload: JBooth.MicroSplat.TextureArrayConfig.IsScatter*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.antiTileArray
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.antiTileArray
+  id: antiTileArray
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: antiTileArray
+  nameWithType: TextureArrayConfig.antiTileArray
+  fullName: JBooth.MicroSplat.TextureArrayConfig.antiTileArray
+  type: Field
+  source:
+    id: antiTileArray
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 123
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public bool antiTileArray
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <HideInInspector>
+
+      Public antiTileArray As Boolean
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.emisMetalArray
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.emisMetalArray
+  id: emisMetalArray
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: emisMetalArray
+  nameWithType: TextureArrayConfig.emisMetalArray
+  fullName: JBooth.MicroSplat.TextureArrayConfig.emisMetalArray
+  type: Field
+  source:
+    id: emisMetalArray
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 126
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public bool emisMetalArray
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <HideInInspector>
+
+      Public emisMetalArray As Boolean
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.traxArray
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.traxArray
+  id: traxArray
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: traxArray
+  nameWithType: TextureArrayConfig.traxArray
+  fullName: JBooth.MicroSplat.TextureArrayConfig.traxArray
+  type: Field
+  source:
+    id: traxArray
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 128
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public bool traxArray
+    return:
+      type: System.Boolean
+    content.vb: Public traxArray As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.textureMode
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.textureMode
+  id: textureMode
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: textureMode
+  nameWithType: TextureArrayConfig.textureMode
+  fullName: JBooth.MicroSplat.TextureArrayConfig.textureMode
+  type: Field
+  source:
+    id: textureMode
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 131
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public TextureArrayConfig.TextureMode textureMode
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureMode
+    content.vb: >-
+      <HideInInspector>
+
+      Public textureMode As TextureArrayConfig.TextureMode
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.clusterMode
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.clusterMode
+  id: clusterMode
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: clusterMode
+  nameWithType: TextureArrayConfig.clusterMode
+  fullName: JBooth.MicroSplat.TextureArrayConfig.clusterMode
+  type: Field
+  source:
+    id: clusterMode
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 134
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public TextureArrayConfig.ClusterMode clusterMode
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.ClusterMode
+    content.vb: >-
+      <HideInInspector>
+
+      Public clusterMode As TextureArrayConfig.ClusterMode
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.packingMode
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.packingMode
+  id: packingMode
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: packingMode
+  nameWithType: TextureArrayConfig.packingMode
+  fullName: JBooth.MicroSplat.TextureArrayConfig.packingMode
+  type: Field
+  source:
+    id: packingMode
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 137
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public TextureArrayConfig.PackingMode packingMode
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.PackingMode
+    content.vb: >-
+      <HideInInspector>
+
+      Public packingMode As TextureArrayConfig.PackingMode
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.pbrWorkflow
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.pbrWorkflow
+  id: pbrWorkflow
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: pbrWorkflow
+  nameWithType: TextureArrayConfig.pbrWorkflow
+  fullName: JBooth.MicroSplat.TextureArrayConfig.pbrWorkflow
+  type: Field
+  source:
+    id: pbrWorkflow
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 140
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public TextureArrayConfig.PBRWorkflow pbrWorkflow
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow
+    content.vb: >-
+      <HideInInspector>
+
+      Public pbrWorkflow As TextureArrayConfig.PBRWorkflow
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.hash
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.hash
+  id: hash
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: hash
+  nameWithType: TextureArrayConfig.hash
+  fullName: JBooth.MicroSplat.TextureArrayConfig.hash
+  type: Field
+  source:
+    id: hash
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 143
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public int hash
+    return:
+      type: System.Int32
+    content.vb: >-
+      <HideInInspector>
+
+      Public hash As Integer
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.FindConfig(UnityEngine.Texture2DArray)
+  commentId: M:JBooth.MicroSplat.TextureArrayConfig.FindConfig(UnityEngine.Texture2DArray)
+  id: FindConfig(UnityEngine.Texture2DArray)
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: FindConfig(Texture2DArray)
+  nameWithType: TextureArrayConfig.FindConfig(Texture2DArray)
+  fullName: JBooth.MicroSplat.TextureArrayConfig.FindConfig(UnityEngine.Texture2DArray)
+  type: Method
+  source:
+    id: FindConfig
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 175
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static TextureArrayConfig FindConfig(Texture2DArray diffuse)
+    parameters:
+    - id: diffuse
+      type: UnityEngine.Texture2DArray
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig
+    content.vb: Public Shared Function FindConfig(diffuse As Texture2DArray) As TextureArrayConfig
+  overload: JBooth.MicroSplat.TextureArrayConfig.FindConfig*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.TextureArrayConfig.diffuseArray
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.diffuseArray
+  id: diffuseArray
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: diffuseArray
+  nameWithType: TextureArrayConfig.diffuseArray
+  fullName: JBooth.MicroSplat.TextureArrayConfig.diffuseArray
+  type: Field
+  source:
+    id: diffuseArray
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 195
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Texture2DArray diffuseArray
+    return:
+      type: UnityEngine.Texture2DArray
+    content.vb: >-
+      <HideInInspector>
+
+      Public diffuseArray As Texture2DArray
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.normalSAOArray
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.normalSAOArray
+  id: normalSAOArray
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: normalSAOArray
+  nameWithType: TextureArrayConfig.normalSAOArray
+  fullName: JBooth.MicroSplat.TextureArrayConfig.normalSAOArray
+  type: Field
+  source:
+    id: normalSAOArray
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 197
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Texture2DArray normalSAOArray
+    return:
+      type: UnityEngine.Texture2DArray
+    content.vb: >-
+      <HideInInspector>
+
+      Public normalSAOArray As Texture2DArray
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.smoothAOArray
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.smoothAOArray
+  id: smoothAOArray
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: smoothAOArray
+  nameWithType: TextureArrayConfig.smoothAOArray
+  fullName: JBooth.MicroSplat.TextureArrayConfig.smoothAOArray
+  type: Field
+  source:
+    id: smoothAOArray
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 199
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Texture2DArray smoothAOArray
+    return:
+      type: UnityEngine.Texture2DArray
+    content.vb: >-
+      <HideInInspector>
+
+      Public smoothAOArray As Texture2DArray
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.specularArray
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.specularArray
+  id: specularArray
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: specularArray
+  nameWithType: TextureArrayConfig.specularArray
+  fullName: JBooth.MicroSplat.TextureArrayConfig.specularArray
+  type: Field
+  source:
+    id: specularArray
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 201
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Texture2DArray specularArray
+    return:
+      type: UnityEngine.Texture2DArray
+    content.vb: >-
+      <HideInInspector>
+
+      Public specularArray As Texture2DArray
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.diffuseArray2
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.diffuseArray2
+  id: diffuseArray2
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: diffuseArray2
+  nameWithType: TextureArrayConfig.diffuseArray2
+  fullName: JBooth.MicroSplat.TextureArrayConfig.diffuseArray2
+  type: Field
+  source:
+    id: diffuseArray2
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 204
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Texture2DArray diffuseArray2
+    return:
+      type: UnityEngine.Texture2DArray
+    content.vb: >-
+      <HideInInspector>
+
+      Public diffuseArray2 As Texture2DArray
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.normalSAOArray2
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.normalSAOArray2
+  id: normalSAOArray2
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: normalSAOArray2
+  nameWithType: TextureArrayConfig.normalSAOArray2
+  fullName: JBooth.MicroSplat.TextureArrayConfig.normalSAOArray2
+  type: Field
+  source:
+    id: normalSAOArray2
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 206
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Texture2DArray normalSAOArray2
+    return:
+      type: UnityEngine.Texture2DArray
+    content.vb: >-
+      <HideInInspector>
+
+      Public normalSAOArray2 As Texture2DArray
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.smoothAOArray2
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.smoothAOArray2
+  id: smoothAOArray2
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: smoothAOArray2
+  nameWithType: TextureArrayConfig.smoothAOArray2
+  fullName: JBooth.MicroSplat.TextureArrayConfig.smoothAOArray2
+  type: Field
+  source:
+    id: smoothAOArray2
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 208
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Texture2DArray smoothAOArray2
+    return:
+      type: UnityEngine.Texture2DArray
+    content.vb: >-
+      <HideInInspector>
+
+      Public smoothAOArray2 As Texture2DArray
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.specularArray2
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.specularArray2
+  id: specularArray2
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: specularArray2
+  nameWithType: TextureArrayConfig.specularArray2
+  fullName: JBooth.MicroSplat.TextureArrayConfig.specularArray2
+  type: Field
+  source:
+    id: specularArray2
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 210
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Texture2DArray specularArray2
+    return:
+      type: UnityEngine.Texture2DArray
+    content.vb: >-
+      <HideInInspector>
+
+      Public specularArray2 As Texture2DArray
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.diffuseArray3
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.diffuseArray3
+  id: diffuseArray3
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: diffuseArray3
+  nameWithType: TextureArrayConfig.diffuseArray3
+  fullName: JBooth.MicroSplat.TextureArrayConfig.diffuseArray3
+  type: Field
+  source:
+    id: diffuseArray3
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 213
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Texture2DArray diffuseArray3
+    return:
+      type: UnityEngine.Texture2DArray
+    content.vb: >-
+      <HideInInspector>
+
+      Public diffuseArray3 As Texture2DArray
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.normalSAOArray3
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.normalSAOArray3
+  id: normalSAOArray3
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: normalSAOArray3
+  nameWithType: TextureArrayConfig.normalSAOArray3
+  fullName: JBooth.MicroSplat.TextureArrayConfig.normalSAOArray3
+  type: Field
+  source:
+    id: normalSAOArray3
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 215
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Texture2DArray normalSAOArray3
+    return:
+      type: UnityEngine.Texture2DArray
+    content.vb: >-
+      <HideInInspector>
+
+      Public normalSAOArray3 As Texture2DArray
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.smoothAOArray3
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.smoothAOArray3
+  id: smoothAOArray3
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: smoothAOArray3
+  nameWithType: TextureArrayConfig.smoothAOArray3
+  fullName: JBooth.MicroSplat.TextureArrayConfig.smoothAOArray3
+  type: Field
+  source:
+    id: smoothAOArray3
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 217
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Texture2DArray smoothAOArray3
+    return:
+      type: UnityEngine.Texture2DArray
+    content.vb: >-
+      <HideInInspector>
+
+      Public smoothAOArray3 As Texture2DArray
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.specularArray3
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.specularArray3
+  id: specularArray3
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: specularArray3
+  nameWithType: TextureArrayConfig.specularArray3
+  fullName: JBooth.MicroSplat.TextureArrayConfig.specularArray3
+  type: Field
+  source:
+    id: specularArray3
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 219
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Texture2DArray specularArray3
+    return:
+      type: UnityEngine.Texture2DArray
+    content.vb: >-
+      <HideInInspector>
+
+      Public specularArray3 As Texture2DArray
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.emisArray
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.emisArray
+  id: emisArray
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: emisArray
+  nameWithType: TextureArrayConfig.emisArray
+  fullName: JBooth.MicroSplat.TextureArrayConfig.emisArray
+  type: Field
+  source:
+    id: emisArray
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 222
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Texture2DArray emisArray
+    return:
+      type: UnityEngine.Texture2DArray
+    content.vb: >-
+      <HideInInspector>
+
+      Public emisArray As Texture2DArray
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.emisArray2
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.emisArray2
+  id: emisArray2
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: emisArray2
+  nameWithType: TextureArrayConfig.emisArray2
+  fullName: JBooth.MicroSplat.TextureArrayConfig.emisArray2
+  type: Field
+  source:
+    id: emisArray2
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 224
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Texture2DArray emisArray2
+    return:
+      type: UnityEngine.Texture2DArray
+    content.vb: >-
+      <HideInInspector>
+
+      Public emisArray2 As Texture2DArray
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.emisArray3
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.emisArray3
+  id: emisArray3
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: emisArray3
+  nameWithType: TextureArrayConfig.emisArray3
+  fullName: JBooth.MicroSplat.TextureArrayConfig.emisArray3
+  type: Field
+  source:
+    id: emisArray3
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 226
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public Texture2DArray emisArray3
+    return:
+      type: UnityEngine.Texture2DArray
+    content.vb: >-
+      <HideInInspector>
+
+      Public emisArray3 As Texture2DArray
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.defaultTextureSettings
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.defaultTextureSettings
+  id: defaultTextureSettings
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: defaultTextureSettings
+  nameWithType: TextureArrayConfig.defaultTextureSettings
+  fullName: JBooth.MicroSplat.TextureArrayConfig.defaultTextureSettings
+  type: Field
+  source:
+    id: defaultTextureSettings
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 253
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureArrayGroup defaultTextureSettings
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup
+    content.vb: Public defaultTextureSettings As TextureArrayConfig.TextureArrayGroup
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.platformOverrides
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.platformOverrides
+  id: platformOverrides
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: platformOverrides
+  nameWithType: TextureArrayConfig.platformOverrides
+  fullName: JBooth.MicroSplat.TextureArrayConfig.platformOverrides
+  type: Field
+  source:
+    id: platformOverrides
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 254
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public List<TextureArrayConfig.PlatformTextureOverride> platformOverrides
+    return:
+      type: System.Collections.Generic.List{JBooth.MicroSplat.TextureArrayConfig.PlatformTextureOverride}
+    content.vb: Public platformOverrides As List(Of TextureArrayConfig.PlatformTextureOverride)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.sourceTextureSize
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.sourceTextureSize
+  id: sourceTextureSize
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: sourceTextureSize
+  nameWithType: TextureArrayConfig.sourceTextureSize
+  fullName: JBooth.MicroSplat.TextureArrayConfig.sourceTextureSize
+  type: Field
+  source:
+    id: sourceTextureSize
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 256
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.SourceTextureSize sourceTextureSize
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize
+    content.vb: Public sourceTextureSize As TextureArrayConfig.SourceTextureSize
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.allTextureChannelHeight
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.allTextureChannelHeight
+  id: allTextureChannelHeight
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: allTextureChannelHeight
+  nameWithType: TextureArrayConfig.allTextureChannelHeight
+  fullName: JBooth.MicroSplat.TextureArrayConfig.allTextureChannelHeight
+  type: Field
+  source:
+    id: allTextureChannelHeight
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 259
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public TextureArrayConfig.AllTextureChannel allTextureChannelHeight
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+    content.vb: >-
+      <HideInInspector>
+
+      Public allTextureChannelHeight As TextureArrayConfig.AllTextureChannel
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.allTextureChannelSmoothness
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.allTextureChannelSmoothness
+  id: allTextureChannelSmoothness
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: allTextureChannelSmoothness
+  nameWithType: TextureArrayConfig.allTextureChannelSmoothness
+  fullName: JBooth.MicroSplat.TextureArrayConfig.allTextureChannelSmoothness
+  type: Field
+  source:
+    id: allTextureChannelSmoothness
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 261
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public TextureArrayConfig.AllTextureChannel allTextureChannelSmoothness
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+    content.vb: >-
+      <HideInInspector>
+
+      Public allTextureChannelSmoothness As TextureArrayConfig.AllTextureChannel
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.allTextureChannelAO
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.allTextureChannelAO
+  id: allTextureChannelAO
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: allTextureChannelAO
+  nameWithType: TextureArrayConfig.allTextureChannelAO
+  fullName: JBooth.MicroSplat.TextureArrayConfig.allTextureChannelAO
+  type: Field
+  source:
+    id: allTextureChannelAO
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 263
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public TextureArrayConfig.AllTextureChannel allTextureChannelAO
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+    content.vb: >-
+      <HideInInspector>
+
+      Public allTextureChannelAO As TextureArrayConfig.AllTextureChannel
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.sourceTextures
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.sourceTextures
+  id: sourceTextures
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: sourceTextures
+  nameWithType: TextureArrayConfig.sourceTextures
+  fullName: JBooth.MicroSplat.TextureArrayConfig.sourceTextures
+  type: Field
+  source:
+    id: sourceTextures
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 373
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public List<TextureArrayConfig.TextureEntry> sourceTextures
+    return:
+      type: System.Collections.Generic.List{JBooth.MicroSplat.TextureArrayConfig.TextureEntry}
+    content.vb: >-
+      <HideInInspector>
+
+      Public sourceTextures As List(Of TextureArrayConfig.TextureEntry)
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.sourceTextures2
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.sourceTextures2
+  id: sourceTextures2
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: sourceTextures2
+  nameWithType: TextureArrayConfig.sourceTextures2
+  fullName: JBooth.MicroSplat.TextureArrayConfig.sourceTextures2
+  type: Field
+  source:
+    id: sourceTextures2
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 375
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public List<TextureArrayConfig.TextureEntry> sourceTextures2
+    return:
+      type: System.Collections.Generic.List{JBooth.MicroSplat.TextureArrayConfig.TextureEntry}
+    content.vb: >-
+      <HideInInspector>
+
+      Public sourceTextures2 As List(Of TextureArrayConfig.TextureEntry)
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.sourceTextures3
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.sourceTextures3
+  id: sourceTextures3
+  parent: JBooth.MicroSplat.TextureArrayConfig
+  langs:
+  - csharp
+  - vb
+  name: sourceTextures3
+  nameWithType: TextureArrayConfig.sourceTextures3
+  fullName: JBooth.MicroSplat.TextureArrayConfig.sourceTextures3
+  type: Field
+  source:
+    id: sourceTextures3
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 377
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [HideInInspector]
+
+      public List<TextureArrayConfig.TextureEntry> sourceTextures3
+    return:
+      type: System.Collections.Generic.List{JBooth.MicroSplat.TextureArrayConfig.TextureEntry}
+    content.vb: >-
+      <HideInInspector>
+
+      Public sourceTextures3 As List(Of TextureArrayConfig.TextureEntry)
+  attributes:
+  - type: UnityEngine.HideInInspector
+    ctor: UnityEngine.HideInInspector.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEngine.ScriptableObject.SetDirty
+  commentId: M:UnityEngine.ScriptableObject.SetDirty
+  parent: UnityEngine.ScriptableObject
+  isExternal: true
+  name: SetDirty()
+  nameWithType: ScriptableObject.SetDirty()
+  fullName: UnityEngine.ScriptableObject.SetDirty()
+  spec.csharp:
+  - uid: UnityEngine.ScriptableObject.SetDirty
+    name: SetDirty
+    nameWithType: ScriptableObject.SetDirty
+    fullName: UnityEngine.ScriptableObject.SetDirty
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.ScriptableObject.SetDirty
+    name: SetDirty
+    nameWithType: ScriptableObject.SetDirty
+    fullName: UnityEngine.ScriptableObject.SetDirty
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.ScriptableObject.CreateInstance(System.String)
+  commentId: M:UnityEngine.ScriptableObject.CreateInstance(System.String)
+  parent: UnityEngine.ScriptableObject
+  isExternal: true
+  name: CreateInstance(String)
+  nameWithType: ScriptableObject.CreateInstance(String)
+  fullName: UnityEngine.ScriptableObject.CreateInstance(System.String)
+  spec.csharp:
+  - uid: UnityEngine.ScriptableObject.CreateInstance(System.String)
+    name: CreateInstance
+    nameWithType: ScriptableObject.CreateInstance
+    fullName: UnityEngine.ScriptableObject.CreateInstance
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.ScriptableObject.CreateInstance(System.String)
+    name: CreateInstance
+    nameWithType: ScriptableObject.CreateInstance
+    fullName: UnityEngine.ScriptableObject.CreateInstance
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.ScriptableObject.CreateInstance(System.Type)
+  commentId: M:UnityEngine.ScriptableObject.CreateInstance(System.Type)
+  parent: UnityEngine.ScriptableObject
+  isExternal: true
+  name: CreateInstance(Type)
+  nameWithType: ScriptableObject.CreateInstance(Type)
+  fullName: UnityEngine.ScriptableObject.CreateInstance(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.ScriptableObject.CreateInstance(System.Type)
+    name: CreateInstance
+    nameWithType: ScriptableObject.CreateInstance
+    fullName: UnityEngine.ScriptableObject.CreateInstance
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.ScriptableObject.CreateInstance(System.Type)
+    name: CreateInstance
+    nameWithType: ScriptableObject.CreateInstance
+    fullName: UnityEngine.ScriptableObject.CreateInstance
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.ScriptableObject.CreateInstance``1
+  commentId: M:UnityEngine.ScriptableObject.CreateInstance``1
+  parent: UnityEngine.ScriptableObject
+  isExternal: true
+  name: CreateInstance<T>()
+  nameWithType: ScriptableObject.CreateInstance<T>()
+  fullName: UnityEngine.ScriptableObject.CreateInstance<T>()
+  nameWithType.vb: ScriptableObject.CreateInstance(Of T)()
+  fullName.vb: UnityEngine.ScriptableObject.CreateInstance(Of T)()
+  name.vb: CreateInstance(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.ScriptableObject.CreateInstance``1
+    name: CreateInstance<T>
+    nameWithType: ScriptableObject.CreateInstance<T>
+    fullName: UnityEngine.ScriptableObject.CreateInstance<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.ScriptableObject.CreateInstance``1
+    name: CreateInstance(Of T)
+    nameWithType: ScriptableObject.CreateInstance(Of T)
+    fullName: UnityEngine.ScriptableObject.CreateInstance(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.GetInstanceID
+  commentId: M:UnityEngine.Object.GetInstanceID
+  parent: UnityEngine.Object
+  isExternal: true
+  name: GetInstanceID()
+  nameWithType: Object.GetInstanceID()
+  fullName: UnityEngine.Object.GetInstanceID()
+  spec.csharp:
+  - uid: UnityEngine.Object.GetInstanceID
+    name: GetInstanceID
+    nameWithType: Object.GetInstanceID
+    fullName: UnityEngine.Object.GetInstanceID
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.GetInstanceID
+    name: GetInstanceID
+    nameWithType: Object.GetInstanceID
+    fullName: UnityEngine.Object.GetInstanceID
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.GetHashCode
+  commentId: M:UnityEngine.Object.GetHashCode
+  parent: UnityEngine.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: UnityEngine.Object.GetHashCode()
+  spec.csharp:
+  - uid: UnityEngine.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: UnityEngine.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: UnityEngine.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.Equals(System.Object)
+  commentId: M:UnityEngine.Object.Equals(System.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: UnityEngine.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: UnityEngine.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: UnityEngine.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Instantiate(Object, Vector3, Quaternion)
+  nameWithType: Object.Instantiate(Object, Vector3, Quaternion)
+  fullName: UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Instantiate
+    nameWithType: Object.Instantiate
+    fullName: UnityEngine.Object.Instantiate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Instantiate
+    nameWithType: Object.Instantiate
+    fullName: UnityEngine.Object.Instantiate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Instantiate(Object, Vector3, Quaternion, Transform)
+  nameWithType: Object.Instantiate(Object, Vector3, Quaternion, Transform)
+  fullName: UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+    name: Instantiate
+    nameWithType: Object.Instantiate
+    fullName: UnityEngine.Object.Instantiate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+    name: Instantiate
+    nameWithType: Object.Instantiate
+    fullName: UnityEngine.Object.Instantiate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.Instantiate(UnityEngine.Object)
+  commentId: M:UnityEngine.Object.Instantiate(UnityEngine.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Instantiate(Object)
+  nameWithType: Object.Instantiate(Object)
+  fullName: UnityEngine.Object.Instantiate(UnityEngine.Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object)
+    name: Instantiate
+    nameWithType: Object.Instantiate
+    fullName: UnityEngine.Object.Instantiate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object)
+    name: Instantiate
+    nameWithType: Object.Instantiate
+    fullName: UnityEngine.Object.Instantiate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Instantiate(Object, Transform)
+  nameWithType: Object.Instantiate(Object, Transform)
+  fullName: UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform)
+    name: Instantiate
+    nameWithType: Object.Instantiate
+    fullName: UnityEngine.Object.Instantiate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform)
+    name: Instantiate
+    nameWithType: Object.Instantiate
+    fullName: UnityEngine.Object.Instantiate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
+  commentId: M:UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Instantiate(Object, Transform, Boolean)
+  nameWithType: Object.Instantiate(Object, Transform, Boolean)
+  fullName: UnityEngine.Object.Instantiate(UnityEngine.Object, UnityEngine.Transform, System.Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
+    name: Instantiate
+    nameWithType: Object.Instantiate
+    fullName: UnityEngine.Object.Instantiate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate(UnityEngine.Object,UnityEngine.Transform,System.Boolean)
+    name: Instantiate
+    nameWithType: Object.Instantiate
+    fullName: UnityEngine.Object.Instantiate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.Instantiate``1({T})
+  commentId: M:UnityEngine.Object.Instantiate``1(``0)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.Instantiate``1(``0)
+  name: Instantiate<T>(T)
+  nameWithType: Object.Instantiate<T>(T)
+  fullName: UnityEngine.Object.Instantiate<T>(T)
+  nameWithType.vb: Object.Instantiate(Of T)(T)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T)
+  name.vb: Instantiate(Of T)(T)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0)
+    name: Instantiate<T>
+    nameWithType: Object.Instantiate<T>
+    fullName: UnityEngine.Object.Instantiate<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0)
+    name: Instantiate(Of T)
+    nameWithType: Object.Instantiate(Of T)
+    fullName: UnityEngine.Object.Instantiate(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.Instantiate``1({T},UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  name: Instantiate<T>(T, Vector3, Quaternion)
+  nameWithType: Object.Instantiate<T>(T, Vector3, Quaternion)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Vector3, Quaternion)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  name.vb: Instantiate(Of T)(T, Vector3, Quaternion)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Instantiate<T>
+    nameWithType: Object.Instantiate<T>
+    fullName: UnityEngine.Object.Instantiate<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Instantiate(Of T)
+    nameWithType: Object.Instantiate(Of T)
+    fullName: UnityEngine.Object.Instantiate(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.Instantiate``1({T},UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  name: Instantiate<T>(T, Vector3, Quaternion, Transform)
+  nameWithType: Object.Instantiate<T>(T, Vector3, Quaternion, Transform)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Vector3, Quaternion, Transform)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  name.vb: Instantiate(Of T)(T, Vector3, Quaternion, Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+    name: Instantiate<T>
+    nameWithType: Object.Instantiate<T>
+    fullName: UnityEngine.Object.Instantiate<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+    name: Instantiate(Of T)
+    nameWithType: Object.Instantiate(Of T)
+    fullName: UnityEngine.Object.Instantiate(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.Instantiate``1({T},UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+  name: Instantiate<T>(T, Transform)
+  nameWithType: Object.Instantiate<T>(T, Transform)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Transform)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Transform)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Transform)
+  name.vb: Instantiate(Of T)(T, Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+    name: Instantiate<T>
+    nameWithType: Object.Instantiate<T>
+    fullName: UnityEngine.Object.Instantiate<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+    name: Instantiate(Of T)
+    nameWithType: Object.Instantiate(Of T)
+    fullName: UnityEngine.Object.Instantiate(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.Instantiate``1({T},UnityEngine.Transform,System.Boolean)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+  parent: UnityEngine.Object
+  definition: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+  name: Instantiate<T>(T, Transform, Boolean)
+  nameWithType: Object.Instantiate<T>(T, Transform, Boolean)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Transform, System.Boolean)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Transform, Boolean)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Transform, System.Boolean)
+  name.vb: Instantiate(Of T)(T, Transform, Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+    name: Instantiate<T>
+    nameWithType: Object.Instantiate<T>
+    fullName: UnityEngine.Object.Instantiate<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+    name: Instantiate(Of T)
+    nameWithType: Object.Instantiate(Of T)
+    fullName: UnityEngine.Object.Instantiate(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.Destroy(UnityEngine.Object,System.Single)
+  commentId: M:UnityEngine.Object.Destroy(UnityEngine.Object,System.Single)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Destroy(Object, Single)
+  nameWithType: Object.Destroy(Object, Single)
+  fullName: UnityEngine.Object.Destroy(UnityEngine.Object, System.Single)
+  spec.csharp:
+  - uid: UnityEngine.Object.Destroy(UnityEngine.Object,System.Single)
+    name: Destroy
+    nameWithType: Object.Destroy
+    fullName: UnityEngine.Object.Destroy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.Destroy(UnityEngine.Object,System.Single)
+    name: Destroy
+    nameWithType: Object.Destroy
+    fullName: UnityEngine.Object.Destroy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.Destroy(UnityEngine.Object)
+  commentId: M:UnityEngine.Object.Destroy(UnityEngine.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: Destroy(Object)
+  nameWithType: Object.Destroy(Object)
+  fullName: UnityEngine.Object.Destroy(UnityEngine.Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.Destroy(UnityEngine.Object)
+    name: Destroy
+    nameWithType: Object.Destroy
+    fullName: UnityEngine.Object.Destroy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.Destroy(UnityEngine.Object)
+    name: Destroy
+    nameWithType: Object.Destroy
+    fullName: UnityEngine.Object.Destroy
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.DestroyImmediate(UnityEngine.Object,System.Boolean)
+  commentId: M:UnityEngine.Object.DestroyImmediate(UnityEngine.Object,System.Boolean)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: DestroyImmediate(Object, Boolean)
+  nameWithType: Object.DestroyImmediate(Object, Boolean)
+  fullName: UnityEngine.Object.DestroyImmediate(UnityEngine.Object, System.Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.DestroyImmediate(UnityEngine.Object,System.Boolean)
+    name: DestroyImmediate
+    nameWithType: Object.DestroyImmediate
+    fullName: UnityEngine.Object.DestroyImmediate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.DestroyImmediate(UnityEngine.Object,System.Boolean)
+    name: DestroyImmediate
+    nameWithType: Object.DestroyImmediate
+    fullName: UnityEngine.Object.DestroyImmediate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
+  commentId: M:UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: DestroyImmediate(Object)
+  nameWithType: Object.DestroyImmediate(Object)
+  fullName: UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
+    name: DestroyImmediate
+    nameWithType: Object.DestroyImmediate
+    fullName: UnityEngine.Object.DestroyImmediate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.DestroyImmediate(UnityEngine.Object)
+    name: DestroyImmediate
+    nameWithType: Object.DestroyImmediate
+    fullName: UnityEngine.Object.DestroyImmediate
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.FindObjectsOfType(System.Type)
+  commentId: M:UnityEngine.Object.FindObjectsOfType(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectsOfType(Type)
+  nameWithType: Object.FindObjectsOfType(Type)
+  fullName: UnityEngine.Object.FindObjectsOfType(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsOfType(System.Type)
+    name: FindObjectsOfType
+    nameWithType: Object.FindObjectsOfType
+    fullName: UnityEngine.Object.FindObjectsOfType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsOfType(System.Type)
+    name: FindObjectsOfType
+    nameWithType: Object.FindObjectsOfType
+    fullName: UnityEngine.Object.FindObjectsOfType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.FindObjectsOfType(System.Type,System.Boolean)
+  commentId: M:UnityEngine.Object.FindObjectsOfType(System.Type,System.Boolean)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectsOfType(Type, Boolean)
+  nameWithType: Object.FindObjectsOfType(Type, Boolean)
+  fullName: UnityEngine.Object.FindObjectsOfType(System.Type, System.Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsOfType(System.Type,System.Boolean)
+    name: FindObjectsOfType
+    nameWithType: Object.FindObjectsOfType
+    fullName: UnityEngine.Object.FindObjectsOfType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsOfType(System.Type,System.Boolean)
+    name: FindObjectsOfType
+    nameWithType: Object.FindObjectsOfType
+    fullName: UnityEngine.Object.FindObjectsOfType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
+  commentId: M:UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: DontDestroyOnLoad(Object)
+  nameWithType: Object.DontDestroyOnLoad(Object)
+  fullName: UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
+    name: DontDestroyOnLoad
+    nameWithType: Object.DontDestroyOnLoad
+    fullName: UnityEngine.Object.DontDestroyOnLoad
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.DontDestroyOnLoad(UnityEngine.Object)
+    name: DontDestroyOnLoad
+    nameWithType: Object.DontDestroyOnLoad
+    fullName: UnityEngine.Object.DontDestroyOnLoad
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.DestroyObject(UnityEngine.Object,System.Single)
+  commentId: M:UnityEngine.Object.DestroyObject(UnityEngine.Object,System.Single)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: DestroyObject(Object, Single)
+  nameWithType: Object.DestroyObject(Object, Single)
+  fullName: UnityEngine.Object.DestroyObject(UnityEngine.Object, System.Single)
+  spec.csharp:
+  - uid: UnityEngine.Object.DestroyObject(UnityEngine.Object,System.Single)
+    name: DestroyObject
+    nameWithType: Object.DestroyObject
+    fullName: UnityEngine.Object.DestroyObject
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.DestroyObject(UnityEngine.Object,System.Single)
+    name: DestroyObject
+    nameWithType: Object.DestroyObject
+    fullName: UnityEngine.Object.DestroyObject
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.DestroyObject(UnityEngine.Object)
+  commentId: M:UnityEngine.Object.DestroyObject(UnityEngine.Object)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: DestroyObject(Object)
+  nameWithType: Object.DestroyObject(Object)
+  fullName: UnityEngine.Object.DestroyObject(UnityEngine.Object)
+  spec.csharp:
+  - uid: UnityEngine.Object.DestroyObject(UnityEngine.Object)
+    name: DestroyObject
+    nameWithType: Object.DestroyObject
+    fullName: UnityEngine.Object.DestroyObject
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.DestroyObject(UnityEngine.Object)
+    name: DestroyObject
+    nameWithType: Object.DestroyObject
+    fullName: UnityEngine.Object.DestroyObject
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: UnityEngine.Object
+    name: Object
+    nameWithType: Object
+    fullName: UnityEngine.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.FindSceneObjectsOfType(System.Type)
+  commentId: M:UnityEngine.Object.FindSceneObjectsOfType(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindSceneObjectsOfType(Type)
+  nameWithType: Object.FindSceneObjectsOfType(Type)
+  fullName: UnityEngine.Object.FindSceneObjectsOfType(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindSceneObjectsOfType(System.Type)
+    name: FindSceneObjectsOfType
+    nameWithType: Object.FindSceneObjectsOfType
+    fullName: UnityEngine.Object.FindSceneObjectsOfType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindSceneObjectsOfType(System.Type)
+    name: FindSceneObjectsOfType
+    nameWithType: Object.FindSceneObjectsOfType
+    fullName: UnityEngine.Object.FindSceneObjectsOfType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
+  commentId: M:UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectsOfTypeIncludingAssets(Type)
+  nameWithType: Object.FindObjectsOfTypeIncludingAssets(Type)
+  fullName: UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
+    name: FindObjectsOfTypeIncludingAssets
+    nameWithType: Object.FindObjectsOfTypeIncludingAssets
+    fullName: UnityEngine.Object.FindObjectsOfTypeIncludingAssets
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsOfTypeIncludingAssets(System.Type)
+    name: FindObjectsOfTypeIncludingAssets
+    nameWithType: Object.FindObjectsOfTypeIncludingAssets
+    fullName: UnityEngine.Object.FindObjectsOfTypeIncludingAssets
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.FindObjectsOfType``1
+  commentId: M:UnityEngine.Object.FindObjectsOfType``1
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectsOfType<T>()
+  nameWithType: Object.FindObjectsOfType<T>()
+  fullName: UnityEngine.Object.FindObjectsOfType<T>()
+  nameWithType.vb: Object.FindObjectsOfType(Of T)()
+  fullName.vb: UnityEngine.Object.FindObjectsOfType(Of T)()
+  name.vb: FindObjectsOfType(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsOfType``1
+    name: FindObjectsOfType<T>
+    nameWithType: Object.FindObjectsOfType<T>
+    fullName: UnityEngine.Object.FindObjectsOfType<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsOfType``1
+    name: FindObjectsOfType(Of T)
+    nameWithType: Object.FindObjectsOfType(Of T)
+    fullName: UnityEngine.Object.FindObjectsOfType(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
+  commentId: M:UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectsOfType<T>(Boolean)
+  nameWithType: Object.FindObjectsOfType<T>(Boolean)
+  fullName: UnityEngine.Object.FindObjectsOfType<T>(System.Boolean)
+  nameWithType.vb: Object.FindObjectsOfType(Of T)(Boolean)
+  fullName.vb: UnityEngine.Object.FindObjectsOfType(Of T)(System.Boolean)
+  name.vb: FindObjectsOfType(Of T)(Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
+    name: FindObjectsOfType<T>
+    nameWithType: Object.FindObjectsOfType<T>
+    fullName: UnityEngine.Object.FindObjectsOfType<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsOfType``1(System.Boolean)
+    name: FindObjectsOfType(Of T)
+    nameWithType: Object.FindObjectsOfType(Of T)
+    fullName: UnityEngine.Object.FindObjectsOfType(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.FindObjectOfType``1
+  commentId: M:UnityEngine.Object.FindObjectOfType``1
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectOfType<T>()
+  nameWithType: Object.FindObjectOfType<T>()
+  fullName: UnityEngine.Object.FindObjectOfType<T>()
+  nameWithType.vb: Object.FindObjectOfType(Of T)()
+  fullName.vb: UnityEngine.Object.FindObjectOfType(Of T)()
+  name.vb: FindObjectOfType(Of T)()
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectOfType``1
+    name: FindObjectOfType<T>
+    nameWithType: Object.FindObjectOfType<T>
+    fullName: UnityEngine.Object.FindObjectOfType<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectOfType``1
+    name: FindObjectOfType(Of T)
+    nameWithType: Object.FindObjectOfType(Of T)
+    fullName: UnityEngine.Object.FindObjectOfType(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.FindObjectOfType``1(System.Boolean)
+  commentId: M:UnityEngine.Object.FindObjectOfType``1(System.Boolean)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectOfType<T>(Boolean)
+  nameWithType: Object.FindObjectOfType<T>(Boolean)
+  fullName: UnityEngine.Object.FindObjectOfType<T>(System.Boolean)
+  nameWithType.vb: Object.FindObjectOfType(Of T)(Boolean)
+  fullName.vb: UnityEngine.Object.FindObjectOfType(Of T)(System.Boolean)
+  name.vb: FindObjectOfType(Of T)(Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectOfType``1(System.Boolean)
+    name: FindObjectOfType<T>
+    nameWithType: Object.FindObjectOfType<T>
+    fullName: UnityEngine.Object.FindObjectOfType<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectOfType``1(System.Boolean)
+    name: FindObjectOfType(Of T)
+    nameWithType: Object.FindObjectOfType(Of T)
+    fullName: UnityEngine.Object.FindObjectOfType(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
+  commentId: M:UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectsOfTypeAll(Type)
+  nameWithType: Object.FindObjectsOfTypeAll(Type)
+  fullName: UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
+    name: FindObjectsOfTypeAll
+    nameWithType: Object.FindObjectsOfTypeAll
+    fullName: UnityEngine.Object.FindObjectsOfTypeAll
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectsOfTypeAll(System.Type)
+    name: FindObjectsOfTypeAll
+    nameWithType: Object.FindObjectsOfTypeAll
+    fullName: UnityEngine.Object.FindObjectsOfTypeAll
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.FindObjectOfType(System.Type)
+  commentId: M:UnityEngine.Object.FindObjectOfType(System.Type)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectOfType(Type)
+  nameWithType: Object.FindObjectOfType(Type)
+  fullName: UnityEngine.Object.FindObjectOfType(System.Type)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectOfType(System.Type)
+    name: FindObjectOfType
+    nameWithType: Object.FindObjectOfType
+    fullName: UnityEngine.Object.FindObjectOfType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectOfType(System.Type)
+    name: FindObjectOfType
+    nameWithType: Object.FindObjectOfType
+    fullName: UnityEngine.Object.FindObjectOfType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
+  commentId: M:UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
+  parent: UnityEngine.Object
+  isExternal: true
+  name: FindObjectOfType(Type, Boolean)
+  nameWithType: Object.FindObjectOfType(Type, Boolean)
+  fullName: UnityEngine.Object.FindObjectOfType(System.Type, System.Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
+    name: FindObjectOfType
+    nameWithType: Object.FindObjectOfType
+    fullName: UnityEngine.Object.FindObjectOfType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.FindObjectOfType(System.Type,System.Boolean)
+    name: FindObjectOfType
+    nameWithType: Object.FindObjectOfType
+    fullName: UnityEngine.Object.FindObjectOfType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Type
+    name: Type
+    nameWithType: Type
+    fullName: System.Type
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.ToString
+  commentId: M:UnityEngine.Object.ToString
+  parent: UnityEngine.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: UnityEngine.Object.ToString()
+  spec.csharp:
+  - uid: UnityEngine.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: UnityEngine.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: UnityEngine.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.name
+  commentId: P:UnityEngine.Object.name
+  parent: UnityEngine.Object
+  isExternal: true
+  name: name
+  nameWithType: Object.name
+  fullName: UnityEngine.Object.name
+- uid: UnityEngine.Object.hideFlags
+  commentId: P:UnityEngine.Object.hideFlags
+  parent: UnityEngine.Object
+  isExternal: true
+  name: hideFlags
+  nameWithType: Object.hideFlags
+  fullName: UnityEngine.Object.hideFlags
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Object.Instantiate``1(``0)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0)
+  isExternal: true
+  name: Instantiate<T>(T)
+  nameWithType: Object.Instantiate<T>(T)
+  fullName: UnityEngine.Object.Instantiate<T>(T)
+  nameWithType.vb: Object.Instantiate(Of T)(T)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T)
+  name.vb: Instantiate(Of T)(T)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0)
+    name: Instantiate<T>
+    nameWithType: Object.Instantiate<T>
+    fullName: UnityEngine.Object.Instantiate<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0)
+    name: Instantiate(Of T)
+    nameWithType: Object.Instantiate(Of T)
+    fullName: UnityEngine.Object.Instantiate(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+  isExternal: true
+  name: Instantiate<T>(T, Vector3, Quaternion)
+  nameWithType: Object.Instantiate<T>(T, Vector3, Quaternion)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Vector3, Quaternion)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion)
+  name.vb: Instantiate(Of T)(T, Vector3, Quaternion)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Instantiate<T>
+    nameWithType: Object.Instantiate<T>
+    fullName: UnityEngine.Object.Instantiate<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion)
+    name: Instantiate(Of T)
+    nameWithType: Object.Instantiate(Of T)
+    fullName: UnityEngine.Object.Instantiate(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+  isExternal: true
+  name: Instantiate<T>(T, Vector3, Quaternion, Transform)
+  nameWithType: Object.Instantiate<T>(T, Vector3, Quaternion, Transform)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Vector3, Quaternion, Transform)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Vector3, UnityEngine.Quaternion, UnityEngine.Transform)
+  name.vb: Instantiate(Of T)(T, Vector3, Quaternion, Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+    name: Instantiate<T>
+    nameWithType: Object.Instantiate<T>
+    fullName: UnityEngine.Object.Instantiate<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
+    name: Instantiate(Of T)
+    nameWithType: Object.Instantiate(Of T)
+    fullName: UnityEngine.Object.Instantiate(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Vector3
+    name: Vector3
+    nameWithType: Vector3
+    fullName: UnityEngine.Vector3
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Quaternion
+    name: Quaternion
+    nameWithType: Quaternion
+    fullName: UnityEngine.Quaternion
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+  isExternal: true
+  name: Instantiate<T>(T, Transform)
+  nameWithType: Object.Instantiate<T>(T, Transform)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Transform)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Transform)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Transform)
+  name.vb: Instantiate(Of T)(T, Transform)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+    name: Instantiate<T>
+    nameWithType: Object.Instantiate<T>
+    fullName: UnityEngine.Object.Instantiate<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform)
+    name: Instantiate(Of T)
+    nameWithType: Object.Instantiate(Of T)
+    fullName: UnityEngine.Object.Instantiate(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+  commentId: M:UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+  isExternal: true
+  name: Instantiate<T>(T, Transform, Boolean)
+  nameWithType: Object.Instantiate<T>(T, Transform, Boolean)
+  fullName: UnityEngine.Object.Instantiate<T>(T, UnityEngine.Transform, System.Boolean)
+  nameWithType.vb: Object.Instantiate(Of T)(T, Transform, Boolean)
+  fullName.vb: UnityEngine.Object.Instantiate(Of T)(T, UnityEngine.Transform, System.Boolean)
+  name.vb: Instantiate(Of T)(T, Transform, Boolean)
+  spec.csharp:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+    name: Instantiate<T>
+    nameWithType: Object.Instantiate<T>
+    fullName: UnityEngine.Object.Instantiate<T>
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEngine.Object.Instantiate``1(``0,UnityEngine.Transform,System.Boolean)
+    name: Instantiate(Of T)
+    nameWithType: Object.Instantiate(Of T)
+    fullName: UnityEngine.Object.Instantiate(Of T)
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: UnityEngine.Transform
+    name: Transform
+    nameWithType: Transform
+    fullName: UnityEngine.Transform
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: JBooth.MicroSplat.TextureArrayConfig.IsScatter*
+  commentId: Overload:JBooth.MicroSplat.TextureArrayConfig.IsScatter
+  name: IsScatter
+  nameWithType: TextureArrayConfig.IsScatter
+  fullName: JBooth.MicroSplat.TextureArrayConfig.IsScatter
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureMode
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.TextureMode
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.TextureMode
+  nameWithType: TextureArrayConfig.TextureMode
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureMode
+- uid: JBooth.MicroSplat.TextureArrayConfig.ClusterMode
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.ClusterMode
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.ClusterMode
+  nameWithType: TextureArrayConfig.ClusterMode
+  fullName: JBooth.MicroSplat.TextureArrayConfig.ClusterMode
+- uid: JBooth.MicroSplat.TextureArrayConfig.PackingMode
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.PackingMode
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.PackingMode
+  nameWithType: TextureArrayConfig.PackingMode
+  fullName: JBooth.MicroSplat.TextureArrayConfig.PackingMode
+- uid: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.PBRWorkflow
+  nameWithType: TextureArrayConfig.PBRWorkflow
+  fullName: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: JBooth.MicroSplat.TextureArrayConfig.FindConfig*
+  commentId: Overload:JBooth.MicroSplat.TextureArrayConfig.FindConfig
+  name: FindConfig
+  nameWithType: TextureArrayConfig.FindConfig
+  fullName: JBooth.MicroSplat.TextureArrayConfig.FindConfig
+- uid: UnityEngine.Texture2DArray
+  commentId: T:UnityEngine.Texture2DArray
+  parent: UnityEngine
+  isExternal: true
+  name: Texture2DArray
+  nameWithType: Texture2DArray
+  fullName: UnityEngine.Texture2DArray
+- uid: JBooth.MicroSplat.TextureArrayConfig
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig
+  nameWithType: TextureArrayConfig
+  fullName: JBooth.MicroSplat.TextureArrayConfig
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.TextureArrayGroup
+  nameWithType: TextureArrayConfig.TextureArrayGroup
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureArrayGroup
+- uid: System.Collections.Generic.List{JBooth.MicroSplat.TextureArrayConfig.PlatformTextureOverride}
+  commentId: T:System.Collections.Generic.List{JBooth.MicroSplat.TextureArrayConfig.PlatformTextureOverride}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<TextureArrayConfig.PlatformTextureOverride>
+  nameWithType: List<TextureArrayConfig.PlatformTextureOverride>
+  fullName: System.Collections.Generic.List<JBooth.MicroSplat.TextureArrayConfig.PlatformTextureOverride>
+  nameWithType.vb: List(Of TextureArrayConfig.PlatformTextureOverride)
+  fullName.vb: System.Collections.Generic.List(Of JBooth.MicroSplat.TextureArrayConfig.PlatformTextureOverride)
+  name.vb: List(Of TextureArrayConfig.PlatformTextureOverride)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JBooth.MicroSplat.TextureArrayConfig.PlatformTextureOverride
+    name: TextureArrayConfig.PlatformTextureOverride
+    nameWithType: TextureArrayConfig.PlatformTextureOverride
+    fullName: JBooth.MicroSplat.TextureArrayConfig.PlatformTextureOverride
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JBooth.MicroSplat.TextureArrayConfig.PlatformTextureOverride
+    name: TextureArrayConfig.PlatformTextureOverride
+    nameWithType: TextureArrayConfig.PlatformTextureOverride
+    fullName: JBooth.MicroSplat.TextureArrayConfig.PlatformTextureOverride
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.SourceTextureSize
+  nameWithType: TextureArrayConfig.SourceTextureSize
+  fullName: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize
+- uid: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.AllTextureChannel
+  nameWithType: TextureArrayConfig.AllTextureChannel
+  fullName: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+- uid: System.Collections.Generic.List{JBooth.MicroSplat.TextureArrayConfig.TextureEntry}
+  commentId: T:System.Collections.Generic.List{JBooth.MicroSplat.TextureArrayConfig.TextureEntry}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<TextureArrayConfig.TextureEntry>
+  nameWithType: List<TextureArrayConfig.TextureEntry>
+  fullName: System.Collections.Generic.List<JBooth.MicroSplat.TextureArrayConfig.TextureEntry>
+  nameWithType.vb: List(Of TextureArrayConfig.TextureEntry)
+  fullName.vb: System.Collections.Generic.List(Of JBooth.MicroSplat.TextureArrayConfig.TextureEntry)
+  name.vb: List(Of TextureArrayConfig.TextureEntry)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+    name: TextureArrayConfig.TextureEntry
+    nameWithType: TextureArrayConfig.TextureEntry
+    fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    nameWithType: List
+    fullName: System.Collections.Generic.List
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+    name: TextureArrayConfig.TextureEntry
+    nameWithType: TextureArrayConfig.TextureEntry
+    fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -26,12 +26,8 @@ items:
   fullName: Engine.World.EnvironmentVolume
   type: Class
   source:
-    remote:
-      path: Assets/Engine/World/EnvironmentVolume.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: EnvironmentVolume
-    path: ../Assets/Engine/World/EnvironmentVolume.cs
+    path: B:\Games\Elavad\Assets\Engine\World\EnvironmentVolume.cs
     startLine: 12
   assemblies:
   - Engine.World
@@ -47,7 +43,6 @@ items:
       <RequireComponent(GetType(BoxCollider))>
 
       Public Class EnvironmentVolume
-
           Inherits MonoBehaviour
   inheritance:
   - System.Object
@@ -179,12 +174,8 @@ items:
   fullName: Engine.World.EnvironmentVolume.sky
   type: Field
   source:
-    remote:
-      path: Assets/Engine/World/EnvironmentVolume.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: sky
-    path: ../Assets/Engine/World/EnvironmentVolume.cs
+    path: B:\Games\Elavad\Assets\Engine\World\EnvironmentVolume.cs
     startLine: 22
   assemblies:
   - Engine.World
@@ -212,12 +203,8 @@ items:
   fullName: Engine.World.EnvironmentVolume.skyTint
   type: Field
   source:
-    remote:
-      path: Assets/Engine/World/EnvironmentVolume.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: skyTint
-    path: ../Assets/Engine/World/EnvironmentVolume.cs
+    path: B:\Games\Elavad\Assets\Engine\World\EnvironmentVolume.cs
     startLine: 27
   assemblies:
   - Engine.World
@@ -245,12 +232,8 @@ items:
   fullName: Engine.World.EnvironmentVolume.shadowColor
   type: Field
   source:
-    remote:
-      path: Assets/Engine/World/EnvironmentVolume.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: shadowColor
-    path: ../Assets/Engine/World/EnvironmentVolume.cs
+    path: B:\Games\Elavad\Assets\Engine\World\EnvironmentVolume.cs
     startLine: 32
   assemblies:
   - Engine.World
@@ -278,12 +261,8 @@ items:
   fullName: Engine.World.EnvironmentVolume.highlightColor
   type: Field
   source:
-    remote:
-      path: Assets/Engine/World/EnvironmentVolume.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: highlightColor
-    path: ../Assets/Engine/World/EnvironmentVolume.cs
+    path: B:\Games\Elavad\Assets\Engine\World\EnvironmentVolume.cs
     startLine: 37
   assemblies:
   - Engine.World
@@ -311,12 +290,8 @@ items:
   fullName: Engine.World.EnvironmentVolume.fogColor
   type: Field
   source:
-    remote:
-      path: Assets/Engine/World/EnvironmentVolume.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: fogColor
-    path: ../Assets/Engine/World/EnvironmentVolume.cs
+    path: B:\Games\Elavad\Assets\Engine\World\EnvironmentVolume.cs
     startLine: 42
   assemblies:
   - Engine.World
@@ -344,12 +319,8 @@ items:
   fullName: Engine.World.EnvironmentVolume.sunColor
   type: Field
   source:
-    remote:
-      path: Assets/Engine/World/EnvironmentVolume.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: sunColor
-    path: ../Assets/Engine/World/EnvironmentVolume.cs
+    path: B:\Games\Elavad\Assets\Engine\World\EnvironmentVolume.cs
     startLine: 47
   assemblies:
   - Engine.World
@@ -377,12 +348,8 @@ items:
   fullName: Engine.World.EnvironmentVolume.sunIntensity
   type: Field
   source:
-    remote:
-      path: Assets/Engine/World/EnvironmentVolume.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: sunIntensity
-    path: ../Assets/Engine/World/EnvironmentVolume.cs
+    path: B:\Games\Elavad\Assets\Engine\World\EnvironmentVolume.cs
     startLine: 52
   assemblies:
   - Engine.World
@@ -410,12 +377,8 @@ items:
   fullName: Engine.World.EnvironmentVolume.sunRotation
   type: Field
   source:
-    remote:
-      path: Assets/Engine/World/EnvironmentVolume.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: sunRotation
-    path: ../Assets/Engine/World/EnvironmentVolume.cs
+    path: B:\Games\Elavad\Assets\Engine\World\EnvironmentVolume.cs
     startLine: 57
   assemblies:
   - Engine.World
@@ -443,12 +406,8 @@ items:
   fullName: Engine.World.EnvironmentVolume.Start()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/World/EnvironmentVolume.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Start
-    path: ../Assets/Engine/World/EnvironmentVolume.cs
+    path: B:\Games\Elavad\Assets\Engine\World\EnvironmentVolume.cs
     startLine: 100
   assemblies:
   - Engine.World
@@ -475,12 +434,8 @@ items:
   fullName: Engine.World.EnvironmentVolume.Update()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/World/EnvironmentVolume.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Update
-    path: ../Assets/Engine/World/EnvironmentVolume.cs
+    path: B:\Games\Elavad\Assets\Engine\World\EnvironmentVolume.cs
     startLine: 110
   assemblies:
   - Engine.World
@@ -507,12 +462,8 @@ items:
   fullName: Engine.World.EnvironmentVolume.SubscribeToVolumeEnteredEvent(Engine.World.EnvironmentVolume.volumeEnteredDelegate)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/World/EnvironmentVolume.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: SubscribeToVolumeEnteredEvent
-    path: ../Assets/Engine/World/EnvironmentVolume.cs
+    path: B:\Games\Elavad\Assets\Engine\World\EnvironmentVolume.cs
     startLine: 140
   assemblies:
   - Engine.World
@@ -543,12 +494,8 @@ items:
   fullName: Engine.World.EnvironmentVolume.SetTarget(UnityEngine.GameObject)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/World/EnvironmentVolume.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: SetTarget
-    path: ../Assets/Engine/World/EnvironmentVolume.cs
+    path: B:\Games\Elavad\Assets\Engine\World\EnvironmentVolume.cs
     startLine: 154
   assemblies:
   - Engine.World
@@ -579,12 +526,8 @@ items:
   fullName: Engine.World.EnvironmentVolume.isTargetInsideVolume()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/World/EnvironmentVolume.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: isTargetInsideVolume
-    path: ../Assets/Engine/World/EnvironmentVolume.cs
+    path: B:\Games\Elavad\Assets\Engine\World\EnvironmentVolume.cs
     startLine: 163
   assemblies:
   - Engine.World

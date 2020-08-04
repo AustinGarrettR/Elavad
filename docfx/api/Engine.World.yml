@@ -19,16 +19,21 @@ items:
   assemblies:
   - Engine.World
 references:
-- uid: Engine.World.ClientWorldManager
-  commentId: T:Engine.World.ClientWorldManager
-  name: ClientWorldManager
-  nameWithType: ClientWorldManager
-  fullName: Engine.World.ClientWorldManager
+- uid: Engine.World.ServerWorldManager
+  commentId: T:Engine.World.ServerWorldManager
+  name: ServerWorldManager
+  nameWithType: ServerWorldManager
+  fullName: Engine.World.ServerWorldManager
 - uid: Engine.World.EnvironmentSystem
   commentId: T:Engine.World.EnvironmentSystem
   name: EnvironmentSystem
   nameWithType: EnvironmentSystem
   fullName: Engine.World.EnvironmentSystem
+- uid: Engine.World.ClientWorldManager
+  commentId: T:Engine.World.ClientWorldManager
+  name: ClientWorldManager
+  nameWithType: ClientWorldManager
+  fullName: Engine.World.ClientWorldManager
 - uid: Engine.World.EnvironmentVolume
   commentId: T:Engine.World.EnvironmentVolume
   parent: Engine.World
@@ -41,11 +46,6 @@ references:
   name: EnvironmentVolume.volumeEnteredDelegate
   nameWithType: EnvironmentVolume.volumeEnteredDelegate
   fullName: Engine.World.EnvironmentVolume.volumeEnteredDelegate
-- uid: Engine.World.ServerWorldManager
-  commentId: T:Engine.World.ServerWorldManager
-  name: ServerWorldManager
-  nameWithType: ServerWorldManager
-  fullName: Engine.World.ServerWorldManager
 - uid: Engine.World
   commentId: N:Engine.World
   name: Engine.World

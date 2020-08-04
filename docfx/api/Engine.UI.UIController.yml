@@ -6,13 +6,13 @@ items:
   parent: Engine.UI
   children:
   - Engine.UI.UIController.getElement``1(System.String)
-  - Engine.UI.UIController.GetPanelRenderer
   - Engine.UI.UIController.getPlaceholderTextFieldRealValue(UnityEngine.UIElements.TextField)
-  - Engine.UI.UIController.onPanelLoaded
+  - Engine.UI.UIController.GetUIDocument
+  - Engine.UI.UIController.onUIDocumentLoaded
   - Engine.UI.UIController.RegisterFirstLetterUpperCaseFormat(UnityEngine.UIElements.TextField)
   - Engine.UI.UIController.RegisterPlaceholderTextField(UnityEngine.UIElements.TextField)
   - Engine.UI.UIController.RegisterPlaceholderWithPasswordFormat(UnityEngine.UIElements.TextField)
-  - Engine.UI.UIController.setPanelVisibility(System.Boolean)
+  - Engine.UI.UIController.SetDocumentVisibility(System.Boolean)
   langs:
   - csharp
   - vb
@@ -21,13 +21,9 @@ items:
   fullName: Engine.UI.UIController
   type: Class
   source:
-    remote:
-      path: Assets/Engine/UI/UIController.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: UIController
-    path: ../Assets/Engine/UI/UIController.cs
-    startLine: 13
+    path: B:\Games\Elavad\Assets\Engine\UI\UIController.cs
+    startLine: 12
   assemblies:
   - Engine.UI
   namespace: Engine.UI
@@ -35,14 +31,13 @@ items:
   example: []
   syntax:
     content: >-
-      [RequireComponent(typeof(PanelRenderer))]
+      [RequireComponent(typeof(UIDocument))]
 
       public abstract class UIController : MonoBehaviour
     content.vb: >-
-      <RequireComponent(GetType(PanelRenderer))>
+      <RequireComponent(GetType(UIDocument))>
 
       Public MustInherit Class UIController
-
           Inherits MonoBehaviour
   inheritance:
   - System.Object
@@ -157,7 +152,7 @@ items:
     ctor: UnityEngine.RequireComponent.#ctor(System.Type)
     arguments:
     - type: System.Type
-      value: Unity.UIElements.Runtime.PanelRenderer
+      value: UnityEngine.UIElements.UIDocument
   modifiers.csharp:
   - public
   - abstract
@@ -166,24 +161,20 @@ items:
   - Public
   - MustInherit
   - Class
-- uid: Engine.UI.UIController.GetPanelRenderer
-  commentId: M:Engine.UI.UIController.GetPanelRenderer
-  id: GetPanelRenderer
+- uid: Engine.UI.UIController.GetUIDocument
+  commentId: M:Engine.UI.UIController.GetUIDocument
+  id: GetUIDocument
   parent: Engine.UI.UIController
   langs:
   - csharp
   - vb
-  name: GetPanelRenderer()
-  nameWithType: UIController.GetPanelRenderer()
-  fullName: Engine.UI.UIController.GetPanelRenderer()
+  name: GetUIDocument()
+  nameWithType: UIController.GetUIDocument()
+  fullName: Engine.UI.UIController.GetUIDocument()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/UI/UIController.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
-    id: GetPanelRenderer
-    path: ../Assets/Engine/UI/UIController.cs
+    id: GetUIDocument
+    path: B:\Games\Elavad\Assets\Engine\UI\UIController.cs
     startLine: 45
   assemblies:
   - Engine.UI
@@ -191,34 +182,30 @@ items:
   summary: "\nReturns the panel renderer\n"
   example: []
   syntax:
-    content: public PanelRenderer GetPanelRenderer()
+    content: public UIDocument GetUIDocument()
     return:
-      type: Unity.UIElements.Runtime.PanelRenderer
+      type: UnityEngine.UIElements.UIDocument
       description: ''
-    content.vb: Public Function GetPanelRenderer As PanelRenderer
-  overload: Engine.UI.UIController.GetPanelRenderer*
+    content.vb: Public Function GetUIDocument As UIDocument
+  overload: Engine.UI.UIController.GetUIDocument*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Engine.UI.UIController.onPanelLoaded
-  commentId: M:Engine.UI.UIController.onPanelLoaded
-  id: onPanelLoaded
+- uid: Engine.UI.UIController.onUIDocumentLoaded
+  commentId: M:Engine.UI.UIController.onUIDocumentLoaded
+  id: onUIDocumentLoaded
   parent: Engine.UI.UIController
   langs:
   - csharp
   - vb
-  name: onPanelLoaded()
-  nameWithType: UIController.onPanelLoaded()
-  fullName: Engine.UI.UIController.onPanelLoaded()
+  name: onUIDocumentLoaded()
+  nameWithType: UIController.onUIDocumentLoaded()
+  fullName: Engine.UI.UIController.onUIDocumentLoaded()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/UI/UIController.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
-    id: onPanelLoaded
-    path: ../Assets/Engine/UI/UIController.cs
+    id: onUIDocumentLoaded
+    path: B:\Games\Elavad\Assets\Engine\UI\UIController.cs
     startLine: 53
   assemblies:
   - Engine.UI
@@ -226,33 +213,29 @@ items:
   summary: "\nCalled when the panel is done loading\n"
   example: []
   syntax:
-    content: public abstract void onPanelLoaded()
-    content.vb: Public MustOverride Sub onPanelLoaded
-  overload: Engine.UI.UIController.onPanelLoaded*
+    content: public abstract void onUIDocumentLoaded()
+    content.vb: Public MustOverride Sub onUIDocumentLoaded
+  overload: Engine.UI.UIController.onUIDocumentLoaded*
   modifiers.csharp:
   - public
   - abstract
   modifiers.vb:
   - Public
   - MustOverride
-- uid: Engine.UI.UIController.setPanelVisibility(System.Boolean)
-  commentId: M:Engine.UI.UIController.setPanelVisibility(System.Boolean)
-  id: setPanelVisibility(System.Boolean)
+- uid: Engine.UI.UIController.SetDocumentVisibility(System.Boolean)
+  commentId: M:Engine.UI.UIController.SetDocumentVisibility(System.Boolean)
+  id: SetDocumentVisibility(System.Boolean)
   parent: Engine.UI.UIController
   langs:
   - csharp
   - vb
-  name: setPanelVisibility(Boolean)
-  nameWithType: UIController.setPanelVisibility(Boolean)
-  fullName: Engine.UI.UIController.setPanelVisibility(System.Boolean)
+  name: SetDocumentVisibility(Boolean)
+  nameWithType: UIController.SetDocumentVisibility(Boolean)
+  fullName: Engine.UI.UIController.SetDocumentVisibility(System.Boolean)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/UI/UIController.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
-    id: setPanelVisibility
-    path: ../Assets/Engine/UI/UIController.cs
+    id: SetDocumentVisibility
+    path: B:\Games\Elavad\Assets\Engine\UI\UIController.cs
     startLine: 59
   assemblies:
   - Engine.UI
@@ -260,13 +243,13 @@ items:
   summary: "\nShow/Hide panel\n"
   example: []
   syntax:
-    content: public void setPanelVisibility(bool visible)
+    content: public void SetDocumentVisibility(bool visible)
     parameters:
     - id: visible
       type: System.Boolean
       description: If the panel should be made visible
-    content.vb: Public Sub setPanelVisibility(visible As Boolean)
-  overload: Engine.UI.UIController.setPanelVisibility*
+    content.vb: Public Sub SetDocumentVisibility(visible As Boolean)
+  overload: Engine.UI.UIController.SetDocumentVisibility*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -283,12 +266,8 @@ items:
   fullName: Engine.UI.UIController.getElement<U>(System.String)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/UI/UIController.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: getElement
-    path: ../Assets/Engine/UI/UIController.cs
+    path: B:\Games\Elavad\Assets\Engine\UI\UIController.cs
     startLine: 70
   assemblies:
   - Engine.UI
@@ -298,7 +277,6 @@ items:
   syntax:
     content: >-
       public U getElement<U>(string name)
-
           where U : VisualElement
     parameters:
     - id: name
@@ -331,13 +309,9 @@ items:
   fullName: Engine.UI.UIController.RegisterFirstLetterUpperCaseFormat(UnityEngine.UIElements.TextField)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/UI/UIController.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: RegisterFirstLetterUpperCaseFormat
-    path: ../Assets/Engine/UI/UIController.cs
-    startLine: 83
+    path: B:\Games\Elavad\Assets\Engine\UI\UIController.cs
+    startLine: 85
   assemblies:
   - Engine.UI
   namespace: Engine.UI
@@ -367,13 +341,9 @@ items:
   fullName: Engine.UI.UIController.RegisterPlaceholderWithPasswordFormat(UnityEngine.UIElements.TextField)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/UI/UIController.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: RegisterPlaceholderWithPasswordFormat
-    path: ../Assets/Engine/UI/UIController.cs
-    startLine: 92
+    path: B:\Games\Elavad\Assets\Engine\UI\UIController.cs
+    startLine: 94
   assemblies:
   - Engine.UI
   namespace: Engine.UI
@@ -403,13 +373,9 @@ items:
   fullName: Engine.UI.UIController.RegisterPlaceholderTextField(UnityEngine.UIElements.TextField)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/UI/UIController.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: RegisterPlaceholderTextField
-    path: ../Assets/Engine/UI/UIController.cs
-    startLine: 101
+    path: B:\Games\Elavad\Assets\Engine\UI\UIController.cs
+    startLine: 103
   assemblies:
   - Engine.UI
   namespace: Engine.UI
@@ -439,13 +405,9 @@ items:
   fullName: Engine.UI.UIController.getPlaceholderTextFieldRealValue(UnityEngine.UIElements.TextField)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/UI/UIController.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: getPlaceholderTextFieldRealValue
-    path: ../Assets/Engine/UI/UIController.cs
-    startLine: 116
+    path: B:\Games\Elavad\Assets\Engine\UI\UIController.cs
+    startLine: 118
   assemblies:
   - Engine.UI
   namespace: Engine.UI
@@ -5628,34 +5590,34 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.UI.UIController.GetPanelRenderer*
-  commentId: Overload:Engine.UI.UIController.GetPanelRenderer
-  name: GetPanelRenderer
-  nameWithType: UIController.GetPanelRenderer
-  fullName: Engine.UI.UIController.GetPanelRenderer
-- uid: Unity.UIElements.Runtime.PanelRenderer
-  commentId: T:Unity.UIElements.Runtime.PanelRenderer
-  parent: Unity.UIElements.Runtime
+- uid: Engine.UI.UIController.GetUIDocument*
+  commentId: Overload:Engine.UI.UIController.GetUIDocument
+  name: GetUIDocument
+  nameWithType: UIController.GetUIDocument
+  fullName: Engine.UI.UIController.GetUIDocument
+- uid: UnityEngine.UIElements.UIDocument
+  commentId: T:UnityEngine.UIElements.UIDocument
+  parent: UnityEngine.UIElements
   isExternal: true
-  name: PanelRenderer
-  nameWithType: PanelRenderer
-  fullName: Unity.UIElements.Runtime.PanelRenderer
-- uid: Unity.UIElements.Runtime
-  commentId: N:Unity.UIElements.Runtime
+  name: UIDocument
+  nameWithType: UIDocument
+  fullName: UnityEngine.UIElements.UIDocument
+- uid: UnityEngine.UIElements
+  commentId: N:UnityEngine.UIElements
   isExternal: true
-  name: Unity.UIElements.Runtime
-  nameWithType: Unity.UIElements.Runtime
-  fullName: Unity.UIElements.Runtime
-- uid: Engine.UI.UIController.onPanelLoaded*
-  commentId: Overload:Engine.UI.UIController.onPanelLoaded
-  name: onPanelLoaded
-  nameWithType: UIController.onPanelLoaded
-  fullName: Engine.UI.UIController.onPanelLoaded
-- uid: Engine.UI.UIController.setPanelVisibility*
-  commentId: Overload:Engine.UI.UIController.setPanelVisibility
-  name: setPanelVisibility
-  nameWithType: UIController.setPanelVisibility
-  fullName: Engine.UI.UIController.setPanelVisibility
+  name: UnityEngine.UIElements
+  nameWithType: UnityEngine.UIElements
+  fullName: UnityEngine.UIElements
+- uid: Engine.UI.UIController.onUIDocumentLoaded*
+  commentId: Overload:Engine.UI.UIController.onUIDocumentLoaded
+  name: onUIDocumentLoaded
+  nameWithType: UIController.onUIDocumentLoaded
+  fullName: Engine.UI.UIController.onUIDocumentLoaded
+- uid: Engine.UI.UIController.SetDocumentVisibility*
+  commentId: Overload:Engine.UI.UIController.SetDocumentVisibility
+  name: SetDocumentVisibility
+  nameWithType: UIController.SetDocumentVisibility
+  fullName: Engine.UI.UIController.SetDocumentVisibility
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -5698,12 +5660,6 @@ references:
   name: TextField
   nameWithType: TextField
   fullName: UnityEngine.UIElements.TextField
-- uid: UnityEngine.UIElements
-  commentId: N:UnityEngine.UIElements
-  isExternal: true
-  name: UnityEngine.UIElements
-  nameWithType: UnityEngine.UIElements
-  fullName: UnityEngine.UIElements
 - uid: Engine.UI.UIController.RegisterPlaceholderWithPasswordFormat*
   commentId: Overload:Engine.UI.UIController.RegisterPlaceholderWithPasswordFormat
   name: RegisterPlaceholderWithPasswordFormat

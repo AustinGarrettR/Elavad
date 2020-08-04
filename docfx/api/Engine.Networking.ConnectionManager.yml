@@ -29,12 +29,8 @@ items:
   fullName: Engine.Networking.ConnectionManager
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ConnectionManager
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
     startLine: 19
   assemblies:
   - Engine.Networking
@@ -45,7 +41,6 @@ items:
     content: 'public class ConnectionManager : Manager'
     content.vb: >-
       Public Class ConnectionManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -77,12 +72,8 @@ items:
   fullName: Engine.Networking.ConnectionManager.ConnectionManager(Engine.Networking.ConnectionManager.ListenerType)
   type: Constructor
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: .ctor
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
     startLine: 30
   assemblies:
   - Engine.Networking
@@ -113,12 +104,8 @@ items:
   fullName: Engine.Networking.ConnectionManager.Init()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Init
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
     startLine: 42
   assemblies:
   - Engine.Networking
@@ -148,12 +135,8 @@ items:
   fullName: Engine.Networking.ConnectionManager.Process()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Process
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
     startLine: 52
   assemblies:
   - Engine.Networking
@@ -183,13 +166,9 @@ items:
   fullName: Engine.Networking.ConnectionManager.Shutdown()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 67
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
+    startLine: 69
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -218,13 +197,9 @@ items:
   fullName: Engine.Networking.ConnectionManager.isServer
   type: Property
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: isServer
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 96
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
+    startLine: 98
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -257,13 +232,9 @@ items:
   fullName: Engine.Networking.ConnectionManager.NotifyClientDisconnected
   type: Event
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyClientDisconnected
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 162
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
+    startLine: 164
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -290,13 +261,9 @@ items:
   fullName: Engine.Networking.ConnectionManager.NotifyClientConnected
   type: Event
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyClientConnected
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 167
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
+    startLine: 169
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -323,13 +290,9 @@ items:
   fullName: Engine.Networking.ConnectionManager.NotifyPacketReceived
   type: Event
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyPacketReceived
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 172
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
+    startLine: 174
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -356,13 +319,9 @@ items:
   fullName: Engine.Networking.ConnectionManager.NotifyFailedConnect
   type: Event
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyFailedConnect
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 177
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
+    startLine: 179
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -389,13 +348,9 @@ items:
   fullName: Engine.Networking.ConnectionManager.NotifyOnDisconnectedFromServer
   type: Event
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyOnDisconnectedFromServer
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 182
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
+    startLine: 184
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -422,13 +377,9 @@ items:
   fullName: Engine.Networking.ConnectionManager.NotifyOnConnectedToServer
   type: Event
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyOnConnectedToServer
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 187
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
+    startLine: 189
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -455,13 +406,9 @@ items:
   fullName: Engine.Networking.ConnectionManager.Start()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Start
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 223
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
+    startLine: 225
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -487,12 +434,8 @@ items:
   fullName: Engine.Networking.ConnectionManager.GetPacket<T>()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: GetPacket
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
     startLine: 501
   assemblies:
   - Engine.Networking
@@ -502,7 +445,6 @@ items:
   syntax:
     content: >-
       public T GetPacket<T>()
-
           where T : Packet
     typeParameters:
     - id: T
@@ -531,12 +473,8 @@ items:
   fullName: Engine.Networking.ConnectionManager.SendPacketToServer(Engine.Networking.Packet)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: SendPacketToServer
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
     startLine: 518
   assemblies:
   - Engine.Networking
@@ -567,12 +505,8 @@ items:
   fullName: Engine.Networking.ConnectionManager.SendPacketToClient(Unity.Networking.Transport.NetworkConnection, Engine.Networking.Packet)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: SendPacketToClient
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
     startLine: 534
   assemblies:
   - Engine.Networking
@@ -606,13 +540,9 @@ items:
   fullName: Engine.Networking.ConnectionManager.Disconnect()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Disconnect
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 602
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
+    startLine: 603
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking

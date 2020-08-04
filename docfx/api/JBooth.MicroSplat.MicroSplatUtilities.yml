@@ -1,0 +1,1184 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.MicroSplatUtilities
+  commentId: T:JBooth.MicroSplat.MicroSplatUtilities
+  id: MicroSplatUtilities
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.MicroSplatUtilities.boxStyle
+  - JBooth.MicroSplat.MicroSplatUtilities.Checkout(System.String)
+  - JBooth.MicroSplat.MicroSplatUtilities.ClearPreviewCache
+  - JBooth.MicroSplat.MicroSplatUtilities.DetectPipeline
+  - JBooth.MicroSplat.MicroSplatUtilities.DrawRollup(System.String,System.Boolean,System.Boolean)
+  - JBooth.MicroSplat.MicroSplatUtilities.DrawSeparator
+  - JBooth.MicroSplat.MicroSplatUtilities.DrawTextureField(MicroSplatObject,UnityEngine.GUIContent,UnityEngine.Texture2D@,System.String,System.String,System.String,System.String,System.Boolean)
+  - JBooth.MicroSplat.MicroSplatUtilities.DrawTextureSelector(System.Int32,UnityEngine.Texture2DArray,System.Boolean)
+  - JBooth.MicroSplat.MicroSplatUtilities.EnforceDefaultTexture(UnityEditor.MaterialProperty,System.String)
+  - JBooth.MicroSplat.MicroSplatUtilities.FindOrCreateKeywords(UnityEngine.Material)
+  - JBooth.MicroSplat.MicroSplatUtilities.FixUnityEditorLinearBug(UnityEngine.Texture2D@,System.Int32,System.Int32)
+  - JBooth.MicroSplat.MicroSplatUtilities.GetAutoTexture(System.String)
+  - JBooth.MicroSplat.MicroSplatUtilities.MakeAbsolutePath(System.String)
+  - JBooth.MicroSplat.MicroSplatUtilities.MakeRelativePath(System.String)
+  - JBooth.MicroSplat.MicroSplatUtilities.RelativePathFromAsset(UnityEngine.Object)
+  - JBooth.MicroSplat.MicroSplatUtilities.SelectionGrid(System.Int32,UnityEngine.Texture2D[],System.Int32)
+  - JBooth.MicroSplat.MicroSplatUtilities.SelectionGrid(System.Int32,UnityEngine.Texture2DArray,System.Int32)
+  - JBooth.MicroSplat.MicroSplatUtilities.WarnLinear(UnityEngine.Texture2D)
+  langs:
+  - csharp
+  - vb
+  name: MicroSplatUtilities
+  nameWithType: MicroSplatUtilities
+  fullName: JBooth.MicroSplat.MicroSplatUtilities
+  type: Class
+  source:
+    id: MicroSplatUtilities
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public class MicroSplatUtilities
+    content.vb: Public Class MicroSplatUtilities
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JBooth.MicroSplat.MicroSplatUtilities.DetectPipeline
+  commentId: M:JBooth.MicroSplat.MicroSplatUtilities.DetectPipeline
+  id: DetectPipeline
+  parent: JBooth.MicroSplat.MicroSplatUtilities
+  langs:
+  - csharp
+  - vb
+  name: DetectPipeline()
+  nameWithType: MicroSplatUtilities.DetectPipeline()
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.DetectPipeline()
+  type: Method
+  source:
+    id: DetectPipeline
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  summary: "\nReturns the type of renderpipeline that is currently running\n"
+  example: []
+  syntax:
+    content: public static MicroSplatUtilities.PipelineType DetectPipeline()
+    return:
+      type: JBooth.MicroSplat.MicroSplatUtilities.PipelineType
+      description: ''
+    content.vb: Public Shared Function DetectPipeline As MicroSplatUtilities.PipelineType
+  overload: JBooth.MicroSplat.MicroSplatUtilities.DetectPipeline*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatUtilities.FindOrCreateKeywords(UnityEngine.Material)
+  commentId: M:JBooth.MicroSplat.MicroSplatUtilities.FindOrCreateKeywords(UnityEngine.Material)
+  id: FindOrCreateKeywords(UnityEngine.Material)
+  parent: JBooth.MicroSplat.MicroSplatUtilities
+  langs:
+  - csharp
+  - vb
+  name: FindOrCreateKeywords(Material)
+  nameWithType: MicroSplatUtilities.FindOrCreateKeywords(Material)
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.FindOrCreateKeywords(UnityEngine.Material)
+  type: Method
+  source:
+    id: FindOrCreateKeywords
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 56
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static MicroSplatKeywords FindOrCreateKeywords(Material mat)
+    parameters:
+    - id: mat
+      type: UnityEngine.Material
+    return:
+      type: MicroSplatKeywords
+    content.vb: Public Shared Function FindOrCreateKeywords(mat As Material) As MicroSplatKeywords
+  overload: JBooth.MicroSplat.MicroSplatUtilities.FindOrCreateKeywords*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatUtilities.Checkout(System.String)
+  commentId: M:JBooth.MicroSplat.MicroSplatUtilities.Checkout(System.String)
+  id: Checkout(System.String)
+  parent: JBooth.MicroSplat.MicroSplatUtilities
+  langs:
+  - csharp
+  - vb
+  name: Checkout(String)
+  nameWithType: MicroSplatUtilities.Checkout(String)
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.Checkout(System.String)
+  type: Method
+  source:
+    id: Checkout
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 86
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static void Checkout(string path)
+    parameters:
+    - id: path
+      type: System.String
+    content.vb: Public Shared Sub Checkout(path As String)
+  overload: JBooth.MicroSplat.MicroSplatUtilities.Checkout*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatUtilities.MakeRelativePath(System.String)
+  commentId: M:JBooth.MicroSplat.MicroSplatUtilities.MakeRelativePath(System.String)
+  id: MakeRelativePath(System.String)
+  parent: JBooth.MicroSplat.MicroSplatUtilities
+  langs:
+  - csharp
+  - vb
+  name: MakeRelativePath(String)
+  nameWithType: MicroSplatUtilities.MakeRelativePath(String)
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.MakeRelativePath(System.String)
+  type: Method
+  source:
+    id: MakeRelativePath
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 112
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string MakeRelativePath(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function MakeRelativePath(path As String) As String
+  overload: JBooth.MicroSplat.MicroSplatUtilities.MakeRelativePath*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatUtilities.MakeAbsolutePath(System.String)
+  commentId: M:JBooth.MicroSplat.MicroSplatUtilities.MakeAbsolutePath(System.String)
+  id: MakeAbsolutePath(System.String)
+  parent: JBooth.MicroSplat.MicroSplatUtilities
+  langs:
+  - csharp
+  - vb
+  name: MakeAbsolutePath(String)
+  nameWithType: MicroSplatUtilities.MakeAbsolutePath(String)
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.MakeAbsolutePath(System.String)
+  type: Method
+  source:
+    id: MakeAbsolutePath
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 120
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string MakeAbsolutePath(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function MakeAbsolutePath(path As String) As String
+  overload: JBooth.MicroSplat.MicroSplatUtilities.MakeAbsolutePath*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatUtilities.EnforceDefaultTexture(UnityEditor.MaterialProperty,System.String)
+  commentId: M:JBooth.MicroSplat.MicroSplatUtilities.EnforceDefaultTexture(UnityEditor.MaterialProperty,System.String)
+  id: EnforceDefaultTexture(UnityEditor.MaterialProperty,System.String)
+  parent: JBooth.MicroSplat.MicroSplatUtilities
+  langs:
+  - csharp
+  - vb
+  name: EnforceDefaultTexture(MaterialProperty, String)
+  nameWithType: MicroSplatUtilities.EnforceDefaultTexture(MaterialProperty, String)
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.EnforceDefaultTexture(UnityEditor.MaterialProperty, System.String)
+  type: Method
+  source:
+    id: EnforceDefaultTexture
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 135
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static void EnforceDefaultTexture(MaterialProperty texProp, string autoTextureName)
+    parameters:
+    - id: texProp
+      type: UnityEditor.MaterialProperty
+    - id: autoTextureName
+      type: System.String
+    content.vb: Public Shared Sub EnforceDefaultTexture(texProp As MaterialProperty, autoTextureName As String)
+  overload: JBooth.MicroSplat.MicroSplatUtilities.EnforceDefaultTexture*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatUtilities.GetAutoTexture(System.String)
+  commentId: M:JBooth.MicroSplat.MicroSplatUtilities.GetAutoTexture(System.String)
+  id: GetAutoTexture(System.String)
+  parent: JBooth.MicroSplat.MicroSplatUtilities
+  langs:
+  - csharp
+  - vb
+  name: GetAutoTexture(String)
+  nameWithType: MicroSplatUtilities.GetAutoTexture(String)
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.GetAutoTexture(System.String)
+  type: Method
+  source:
+    id: GetAutoTexture
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 147
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static Texture2D GetAutoTexture(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public Shared Function GetAutoTexture(name As String) As Texture2D
+  overload: JBooth.MicroSplat.MicroSplatUtilities.GetAutoTexture*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatUtilities.DrawTextureField(MicroSplatObject,UnityEngine.GUIContent,UnityEngine.Texture2D@,System.String,System.String,System.String,System.String,System.Boolean)
+  commentId: M:JBooth.MicroSplat.MicroSplatUtilities.DrawTextureField(MicroSplatObject,UnityEngine.GUIContent,UnityEngine.Texture2D@,System.String,System.String,System.String,System.String,System.Boolean)
+  id: DrawTextureField(MicroSplatObject,UnityEngine.GUIContent,UnityEngine.Texture2D@,System.String,System.String,System.String,System.String,System.Boolean)
+  parent: JBooth.MicroSplat.MicroSplatUtilities
+  langs:
+  - csharp
+  - vb
+  name: DrawTextureField(MicroSplatObject, GUIContent, ref Texture2D, String, String, String, String, Boolean)
+  nameWithType: MicroSplatUtilities.DrawTextureField(MicroSplatObject, GUIContent, ref Texture2D, String, String, String, String, Boolean)
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.DrawTextureField(MicroSplatObject, UnityEngine.GUIContent, ref UnityEngine.Texture2D, System.String, System.String, System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    id: DrawTextureField
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 167
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static void DrawTextureField(MicroSplatObject t, GUIContent content, ref Texture2D tex, string keyword, string keyword2 = null, string keyword3 = null, string keyword4 = null, bool allKeywordsRequired = true)
+    parameters:
+    - id: t
+      type: MicroSplatObject
+    - id: content
+      type: UnityEngine.GUIContent
+    - id: tex
+      type: UnityEngine.Texture2D
+    - id: keyword
+      type: System.String
+    - id: keyword2
+      type: System.String
+    - id: keyword3
+      type: System.String
+    - id: keyword4
+      type: System.String
+    - id: allKeywordsRequired
+      type: System.Boolean
+    content.vb: Public Shared Sub DrawTextureField(t As MicroSplatObject, content As GUIContent, ByRef tex As Texture2D, keyword As String, keyword2 As String = Nothing, keyword3 As String = Nothing, keyword4 As String = Nothing, allKeywordsRequired As Boolean = True)
+  overload: JBooth.MicroSplat.MicroSplatUtilities.DrawTextureField*
+  nameWithType.vb: MicroSplatUtilities.DrawTextureField(MicroSplatObject, GUIContent, ByRef Texture2D, String, String, String, String, Boolean)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: JBooth.MicroSplat.MicroSplatUtilities.DrawTextureField(MicroSplatObject, UnityEngine.GUIContent, ByRef UnityEngine.Texture2D, System.String, System.String, System.String, System.String, System.Boolean)
+  name.vb: DrawTextureField(MicroSplatObject, GUIContent, ByRef Texture2D, String, String, String, String, Boolean)
+- uid: JBooth.MicroSplat.MicroSplatUtilities.DrawRollup(System.String,System.Boolean,System.Boolean)
+  commentId: M:JBooth.MicroSplat.MicroSplatUtilities.DrawRollup(System.String,System.Boolean,System.Boolean)
+  id: DrawRollup(System.String,System.Boolean,System.Boolean)
+  parent: JBooth.MicroSplat.MicroSplatUtilities
+  langs:
+  - csharp
+  - vb
+  name: DrawRollup(String, Boolean, Boolean)
+  nameWithType: MicroSplatUtilities.DrawRollup(String, Boolean, Boolean)
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.DrawRollup(System.String, System.Boolean, System.Boolean)
+  type: Method
+  source:
+    id: DrawRollup
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 229
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static bool DrawRollup(string text, bool defaultState = true, bool inset = false)
+    parameters:
+    - id: text
+      type: System.String
+    - id: defaultState
+      type: System.Boolean
+    - id: inset
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function DrawRollup(text As String, defaultState As Boolean = True, inset As Boolean = False) As Boolean
+  overload: JBooth.MicroSplat.MicroSplatUtilities.DrawRollup*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatUtilities.DrawSeparator
+  commentId: M:JBooth.MicroSplat.MicroSplatUtilities.DrawSeparator
+  id: DrawSeparator
+  parent: JBooth.MicroSplat.MicroSplatUtilities
+  langs:
+  - csharp
+  - vb
+  name: DrawSeparator()
+  nameWithType: MicroSplatUtilities.DrawSeparator()
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.DrawSeparator()
+  type: Method
+  source:
+    id: DrawSeparator
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 268
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static void DrawSeparator()
+    content.vb: Public Shared Sub DrawSeparator
+  overload: JBooth.MicroSplat.MicroSplatUtilities.DrawSeparator*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatUtilities.ClearPreviewCache
+  commentId: M:JBooth.MicroSplat.MicroSplatUtilities.ClearPreviewCache
+  id: ClearPreviewCache
+  parent: JBooth.MicroSplat.MicroSplatUtilities
+  langs:
+  - csharp
+  - vb
+  name: ClearPreviewCache()
+  nameWithType: MicroSplatUtilities.ClearPreviewCache()
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.ClearPreviewCache()
+  type: Method
+  source:
+    id: ClearPreviewCache
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 287
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static void ClearPreviewCache()
+    content.vb: Public Shared Sub ClearPreviewCache
+  overload: JBooth.MicroSplat.MicroSplatUtilities.ClearPreviewCache*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatUtilities.FixUnityEditorLinearBug(UnityEngine.Texture2D@,System.Int32,System.Int32)
+  commentId: M:JBooth.MicroSplat.MicroSplatUtilities.FixUnityEditorLinearBug(UnityEngine.Texture2D@,System.Int32,System.Int32)
+  id: FixUnityEditorLinearBug(UnityEngine.Texture2D@,System.Int32,System.Int32)
+  parent: JBooth.MicroSplat.MicroSplatUtilities
+  langs:
+  - csharp
+  - vb
+  name: FixUnityEditorLinearBug(ref Texture2D, Int32, Int32)
+  nameWithType: MicroSplatUtilities.FixUnityEditorLinearBug(ref Texture2D, Int32, Int32)
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.FixUnityEditorLinearBug(ref UnityEngine.Texture2D, System.Int32, System.Int32)
+  type: Method
+  source:
+    id: FixUnityEditorLinearBug
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 309
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static void FixUnityEditorLinearBug(ref Texture2D tex, int width = 128, int height = 128)
+    parameters:
+    - id: tex
+      type: UnityEngine.Texture2D
+    - id: width
+      type: System.Int32
+    - id: height
+      type: System.Int32
+    content.vb: Public Shared Sub FixUnityEditorLinearBug(ByRef tex As Texture2D, width As Integer = 128, height As Integer = 128)
+  overload: JBooth.MicroSplat.MicroSplatUtilities.FixUnityEditorLinearBug*
+  nameWithType.vb: MicroSplatUtilities.FixUnityEditorLinearBug(ByRef Texture2D, Int32, Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: JBooth.MicroSplat.MicroSplatUtilities.FixUnityEditorLinearBug(ByRef UnityEngine.Texture2D, System.Int32, System.Int32)
+  name.vb: FixUnityEditorLinearBug(ByRef Texture2D, Int32, Int32)
+- uid: JBooth.MicroSplat.MicroSplatUtilities.DrawTextureSelector(System.Int32,UnityEngine.Texture2DArray,System.Boolean)
+  commentId: M:JBooth.MicroSplat.MicroSplatUtilities.DrawTextureSelector(System.Int32,UnityEngine.Texture2DArray,System.Boolean)
+  id: DrawTextureSelector(System.Int32,UnityEngine.Texture2DArray,System.Boolean)
+  parent: JBooth.MicroSplat.MicroSplatUtilities
+  langs:
+  - csharp
+  - vb
+  name: DrawTextureSelector(Int32, Texture2DArray, Boolean)
+  nameWithType: MicroSplatUtilities.DrawTextureSelector(Int32, Texture2DArray, Boolean)
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.DrawTextureSelector(System.Int32, UnityEngine.Texture2DArray, System.Boolean)
+  type: Method
+  source:
+    id: DrawTextureSelector
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 326
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static int DrawTextureSelector(int textureIndex, Texture2DArray ta, bool compact = false)
+    parameters:
+    - id: textureIndex
+      type: System.Int32
+    - id: ta
+      type: UnityEngine.Texture2DArray
+    - id: compact
+      type: System.Boolean
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function DrawTextureSelector(textureIndex As Integer, ta As Texture2DArray, compact As Boolean = False) As Integer
+  overload: JBooth.MicroSplat.MicroSplatUtilities.DrawTextureSelector*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatUtilities.WarnLinear(UnityEngine.Texture2D)
+  commentId: M:JBooth.MicroSplat.MicroSplatUtilities.WarnLinear(UnityEngine.Texture2D)
+  id: WarnLinear(UnityEngine.Texture2D)
+  parent: JBooth.MicroSplat.MicroSplatUtilities
+  langs:
+  - csharp
+  - vb
+  name: WarnLinear(Texture2D)
+  nameWithType: MicroSplatUtilities.WarnLinear(Texture2D)
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.WarnLinear(UnityEngine.Texture2D)
+  type: Method
+  source:
+    id: WarnLinear
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 448
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static void WarnLinear(Texture2D tex)
+    parameters:
+    - id: tex
+      type: UnityEngine.Texture2D
+    content.vb: Public Shared Sub WarnLinear(tex As Texture2D)
+  overload: JBooth.MicroSplat.MicroSplatUtilities.WarnLinear*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatUtilities.RelativePathFromAsset(UnityEngine.Object)
+  commentId: M:JBooth.MicroSplat.MicroSplatUtilities.RelativePathFromAsset(UnityEngine.Object)
+  id: RelativePathFromAsset(UnityEngine.Object)
+  parent: JBooth.MicroSplat.MicroSplatUtilities
+  langs:
+  - csharp
+  - vb
+  name: RelativePathFromAsset(Object)
+  nameWithType: MicroSplatUtilities.RelativePathFromAsset(Object)
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.RelativePathFromAsset(UnityEngine.Object)
+  type: Method
+  source:
+    id: RelativePathFromAsset
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 471
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static string RelativePathFromAsset(Object o)
+    parameters:
+    - id: o
+      type: UnityEngine.Object
+    return:
+      type: System.String
+    content.vb: Public Shared Function RelativePathFromAsset(o As Object) As String
+  overload: JBooth.MicroSplat.MicroSplatUtilities.RelativePathFromAsset*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatUtilities.SelectionGrid(System.Int32,UnityEngine.Texture2D[],System.Int32)
+  commentId: M:JBooth.MicroSplat.MicroSplatUtilities.SelectionGrid(System.Int32,UnityEngine.Texture2D[],System.Int32)
+  id: SelectionGrid(System.Int32,UnityEngine.Texture2D[],System.Int32)
+  parent: JBooth.MicroSplat.MicroSplatUtilities
+  langs:
+  - csharp
+  - vb
+  name: SelectionGrid(Int32, Texture2D[], Int32)
+  nameWithType: MicroSplatUtilities.SelectionGrid(Int32, Texture2D[], Int32)
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.SelectionGrid(System.Int32, UnityEngine.Texture2D[], System.Int32)
+  type: Method
+  source:
+    id: SelectionGrid
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 631
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static int SelectionGrid(int index, Texture2D[] contents, int elemSize)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: contents
+      type: UnityEngine.Texture2D[]
+    - id: elemSize
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function SelectionGrid(index As Integer, contents As Texture2D(), elemSize As Integer) As Integer
+  overload: JBooth.MicroSplat.MicroSplatUtilities.SelectionGrid*
+  nameWithType.vb: MicroSplatUtilities.SelectionGrid(Int32, Texture2D(), Int32)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: JBooth.MicroSplat.MicroSplatUtilities.SelectionGrid(System.Int32, UnityEngine.Texture2D(), System.Int32)
+  name.vb: SelectionGrid(Int32, Texture2D(), Int32)
+- uid: JBooth.MicroSplat.MicroSplatUtilities.SelectionGrid(System.Int32,UnityEngine.Texture2DArray,System.Int32)
+  commentId: M:JBooth.MicroSplat.MicroSplatUtilities.SelectionGrid(System.Int32,UnityEngine.Texture2DArray,System.Int32)
+  id: SelectionGrid(System.Int32,UnityEngine.Texture2DArray,System.Int32)
+  parent: JBooth.MicroSplat.MicroSplatUtilities
+  langs:
+  - csharp
+  - vb
+  name: SelectionGrid(Int32, Texture2DArray, Int32)
+  nameWithType: MicroSplatUtilities.SelectionGrid(Int32, Texture2DArray, Int32)
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.SelectionGrid(System.Int32, UnityEngine.Texture2DArray, System.Int32)
+  type: Method
+  source:
+    id: SelectionGrid
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 684
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static int SelectionGrid(int index, Texture2DArray contents, int elemSize)
+    parameters:
+    - id: index
+      type: System.Int32
+    - id: contents
+      type: UnityEngine.Texture2DArray
+    - id: elemSize
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function SelectionGrid(index As Integer, contents As Texture2DArray, elemSize As Integer) As Integer
+  overload: JBooth.MicroSplat.MicroSplatUtilities.SelectionGrid*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatUtilities.boxStyle
+  commentId: P:JBooth.MicroSplat.MicroSplatUtilities.boxStyle
+  id: boxStyle
+  parent: JBooth.MicroSplat.MicroSplatUtilities
+  langs:
+  - csharp
+  - vb
+  name: boxStyle
+  nameWithType: MicroSplatUtilities.boxStyle
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.boxStyle
+  type: Property
+  source:
+    id: boxStyle
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 757
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static GUIStyle boxStyle { get; }
+    parameters: []
+    return:
+      type: UnityEngine.GUIStyle
+    content.vb: Public Shared ReadOnly Property boxStyle As GUIStyle
+  overload: JBooth.MicroSplat.MicroSplatUtilities.boxStyle*
+  modifiers.csharp:
+  - public
+  - static
+  - get
+  modifiers.vb:
+  - Public
+  - Shared
+  - ReadOnly
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: JBooth.MicroSplat.MicroSplatUtilities.DetectPipeline*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatUtilities.DetectPipeline
+  name: DetectPipeline
+  nameWithType: MicroSplatUtilities.DetectPipeline
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.DetectPipeline
+- uid: JBooth.MicroSplat.MicroSplatUtilities.PipelineType
+  commentId: T:JBooth.MicroSplat.MicroSplatUtilities.PipelineType
+  parent: JBooth.MicroSplat
+  name: MicroSplatUtilities.PipelineType
+  nameWithType: MicroSplatUtilities.PipelineType
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.PipelineType
+- uid: JBooth.MicroSplat.MicroSplatUtilities.FindOrCreateKeywords*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatUtilities.FindOrCreateKeywords
+  name: FindOrCreateKeywords
+  nameWithType: MicroSplatUtilities.FindOrCreateKeywords
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.FindOrCreateKeywords
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: MicroSplatKeywords
+  commentId: T:MicroSplatKeywords
+  name: MicroSplatKeywords
+  nameWithType: MicroSplatKeywords
+  fullName: MicroSplatKeywords
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: JBooth.MicroSplat.MicroSplatUtilities.Checkout*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatUtilities.Checkout
+  name: Checkout
+  nameWithType: MicroSplatUtilities.Checkout
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.Checkout
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: JBooth.MicroSplat.MicroSplatUtilities.MakeRelativePath*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatUtilities.MakeRelativePath
+  name: MakeRelativePath
+  nameWithType: MicroSplatUtilities.MakeRelativePath
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.MakeRelativePath
+- uid: JBooth.MicroSplat.MicroSplatUtilities.MakeAbsolutePath*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatUtilities.MakeAbsolutePath
+  name: MakeAbsolutePath
+  nameWithType: MicroSplatUtilities.MakeAbsolutePath
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.MakeAbsolutePath
+- uid: JBooth.MicroSplat.MicroSplatUtilities.EnforceDefaultTexture*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatUtilities.EnforceDefaultTexture
+  name: EnforceDefaultTexture
+  nameWithType: MicroSplatUtilities.EnforceDefaultTexture
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.EnforceDefaultTexture
+- uid: UnityEditor.MaterialProperty
+  commentId: T:UnityEditor.MaterialProperty
+  parent: UnityEditor
+  isExternal: true
+  name: MaterialProperty
+  nameWithType: MaterialProperty
+  fullName: UnityEditor.MaterialProperty
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: JBooth.MicroSplat.MicroSplatUtilities.GetAutoTexture*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatUtilities.GetAutoTexture
+  name: GetAutoTexture
+  nameWithType: MicroSplatUtilities.GetAutoTexture
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.GetAutoTexture
+- uid: UnityEngine.Texture2D
+  commentId: T:UnityEngine.Texture2D
+  parent: UnityEngine
+  isExternal: true
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: UnityEngine.Texture2D
+- uid: JBooth.MicroSplat.MicroSplatUtilities.DrawTextureField*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatUtilities.DrawTextureField
+  name: DrawTextureField
+  nameWithType: MicroSplatUtilities.DrawTextureField
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.DrawTextureField
+- uid: MicroSplatObject
+  commentId: T:MicroSplatObject
+  name: MicroSplatObject
+  nameWithType: MicroSplatObject
+  fullName: MicroSplatObject
+- uid: UnityEngine.GUIContent
+  commentId: T:UnityEngine.GUIContent
+  parent: UnityEngine
+  isExternal: true
+  name: GUIContent
+  nameWithType: GUIContent
+  fullName: UnityEngine.GUIContent
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: JBooth.MicroSplat.MicroSplatUtilities.DrawRollup*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatUtilities.DrawRollup
+  name: DrawRollup
+  nameWithType: MicroSplatUtilities.DrawRollup
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.DrawRollup
+- uid: JBooth.MicroSplat.MicroSplatUtilities.DrawSeparator*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatUtilities.DrawSeparator
+  name: DrawSeparator
+  nameWithType: MicroSplatUtilities.DrawSeparator
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.DrawSeparator
+- uid: JBooth.MicroSplat.MicroSplatUtilities.ClearPreviewCache*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatUtilities.ClearPreviewCache
+  name: ClearPreviewCache
+  nameWithType: MicroSplatUtilities.ClearPreviewCache
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.ClearPreviewCache
+- uid: JBooth.MicroSplat.MicroSplatUtilities.FixUnityEditorLinearBug*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatUtilities.FixUnityEditorLinearBug
+  name: FixUnityEditorLinearBug
+  nameWithType: MicroSplatUtilities.FixUnityEditorLinearBug
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.FixUnityEditorLinearBug
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: JBooth.MicroSplat.MicroSplatUtilities.DrawTextureSelector*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatUtilities.DrawTextureSelector
+  name: DrawTextureSelector
+  nameWithType: MicroSplatUtilities.DrawTextureSelector
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.DrawTextureSelector
+- uid: UnityEngine.Texture2DArray
+  commentId: T:UnityEngine.Texture2DArray
+  parent: UnityEngine
+  isExternal: true
+  name: Texture2DArray
+  nameWithType: Texture2DArray
+  fullName: UnityEngine.Texture2DArray
+- uid: JBooth.MicroSplat.MicroSplatUtilities.WarnLinear*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatUtilities.WarnLinear
+  name: WarnLinear
+  nameWithType: MicroSplatUtilities.WarnLinear
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.WarnLinear
+- uid: JBooth.MicroSplat.MicroSplatUtilities.RelativePathFromAsset*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatUtilities.RelativePathFromAsset
+  name: RelativePathFromAsset
+  nameWithType: MicroSplatUtilities.RelativePathFromAsset
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.RelativePathFromAsset
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: JBooth.MicroSplat.MicroSplatUtilities.SelectionGrid*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatUtilities.SelectionGrid
+  name: SelectionGrid
+  nameWithType: MicroSplatUtilities.SelectionGrid
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.SelectionGrid
+- uid: UnityEngine.Texture2D[]
+  isExternal: true
+  name: Texture2D[]
+  nameWithType: Texture2D[]
+  fullName: UnityEngine.Texture2D[]
+  nameWithType.vb: Texture2D()
+  fullName.vb: UnityEngine.Texture2D()
+  name.vb: Texture2D()
+  spec.csharp:
+  - uid: UnityEngine.Texture2D
+    name: Texture2D
+    nameWithType: Texture2D
+    fullName: UnityEngine.Texture2D
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: UnityEngine.Texture2D
+    name: Texture2D
+    nameWithType: Texture2D
+    fullName: UnityEngine.Texture2D
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: JBooth.MicroSplat.MicroSplatUtilities.boxStyle*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatUtilities.boxStyle
+  name: boxStyle
+  nameWithType: MicroSplatUtilities.boxStyle
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.boxStyle
+- uid: UnityEngine.GUIStyle
+  commentId: T:UnityEngine.GUIStyle
+  parent: UnityEngine
+  isExternal: true
+  name: GUIStyle
+  nameWithType: GUIStyle
+  fullName: UnityEngine.GUIStyle

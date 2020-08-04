@@ -1,0 +1,1240 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  id: TextureArrayConfig.TextureEntry
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.ao
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.aoChannel
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.detailChannel
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.detailNoise
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.diffuse
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.distanceChannel
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.distanceNoise
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.emis
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.HasTextures(JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow)
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.height
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.heightChannel
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.isRoughness
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.metal
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.metalChannel
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.noiseNormal
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.normal
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.Reset
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.smoothness
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.smoothnessChannel
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.specular
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.substance
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxAO
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxAOChannel
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxDiffuse
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxHeight
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxHeightChannel
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxIsRoughness
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxNormal
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxSmoothness
+  - JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxSmoothnessChannel
+  langs:
+  - csharp
+  - vb
+  name: TextureArrayConfig.TextureEntry
+  nameWithType: TextureArrayConfig.TextureEntry
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  type: Class
+  source:
+    id: TextureEntry
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 265
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class TextureEntry
+    content.vb: >-
+      <Serializable>
+
+      Public Class TextureEntry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.substance
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.substance
+  id: substance
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: substance
+  nameWithType: TextureArrayConfig.TextureEntry.substance
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.substance
+  type: Field
+  source:
+    id: substance
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 269
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public ProceduralMaterial substance
+    return:
+      type: UnityEngine.ProceduralMaterial
+    content.vb: Public substance As ProceduralMaterial
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.diffuse
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.diffuse
+  id: diffuse
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: diffuse
+  nameWithType: TextureArrayConfig.TextureEntry.diffuse
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.diffuse
+  type: Field
+  source:
+    id: diffuse
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 274
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public Texture2D diffuse
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public diffuse As Texture2D
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.height
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.height
+  id: height
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: height
+  nameWithType: TextureArrayConfig.TextureEntry.height
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.height
+  type: Field
+  source:
+    id: height
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 275
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public Texture2D height
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public height As Texture2D
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.heightChannel
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.heightChannel
+  id: heightChannel
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: heightChannel
+  nameWithType: TextureArrayConfig.TextureEntry.heightChannel
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.heightChannel
+  type: Field
+  source:
+    id: heightChannel
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 276
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureChannel heightChannel
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureChannel
+    content.vb: Public heightChannel As TextureArrayConfig.TextureChannel
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.normal
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.normal
+  id: normal
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: normal
+  nameWithType: TextureArrayConfig.TextureEntry.normal
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.normal
+  type: Field
+  source:
+    id: normal
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 277
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public Texture2D normal
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public normal As Texture2D
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.smoothness
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.smoothness
+  id: smoothness
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: smoothness
+  nameWithType: TextureArrayConfig.TextureEntry.smoothness
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.smoothness
+  type: Field
+  source:
+    id: smoothness
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 278
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public Texture2D smoothness
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public smoothness As Texture2D
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.smoothnessChannel
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.smoothnessChannel
+  id: smoothnessChannel
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: smoothnessChannel
+  nameWithType: TextureArrayConfig.TextureEntry.smoothnessChannel
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.smoothnessChannel
+  type: Field
+  source:
+    id: smoothnessChannel
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 279
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureChannel smoothnessChannel
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureChannel
+    content.vb: Public smoothnessChannel As TextureArrayConfig.TextureChannel
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.isRoughness
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.isRoughness
+  id: isRoughness
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: isRoughness
+  nameWithType: TextureArrayConfig.TextureEntry.isRoughness
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.isRoughness
+  type: Field
+  source:
+    id: isRoughness
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 280
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public bool isRoughness
+    return:
+      type: System.Boolean
+    content.vb: Public isRoughness As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.ao
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.ao
+  id: ao
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: ao
+  nameWithType: TextureArrayConfig.TextureEntry.ao
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.ao
+  type: Field
+  source:
+    id: ao
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 281
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public Texture2D ao
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public ao As Texture2D
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.aoChannel
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.aoChannel
+  id: aoChannel
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: aoChannel
+  nameWithType: TextureArrayConfig.TextureEntry.aoChannel
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.aoChannel
+  type: Field
+  source:
+    id: aoChannel
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 282
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureChannel aoChannel
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureChannel
+    content.vb: Public aoChannel As TextureArrayConfig.TextureChannel
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.emis
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.emis
+  id: emis
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: emis
+  nameWithType: TextureArrayConfig.TextureEntry.emis
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.emis
+  type: Field
+  source:
+    id: emis
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 284
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public Texture2D emis
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public emis As Texture2D
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.metal
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.metal
+  id: metal
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: metal
+  nameWithType: TextureArrayConfig.TextureEntry.metal
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.metal
+  type: Field
+  source:
+    id: metal
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 285
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public Texture2D metal
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public metal As Texture2D
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.metalChannel
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.metalChannel
+  id: metalChannel
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: metalChannel
+  nameWithType: TextureArrayConfig.TextureEntry.metalChannel
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.metalChannel
+  type: Field
+  source:
+    id: metalChannel
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 286
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureChannel metalChannel
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureChannel
+    content.vb: Public metalChannel As TextureArrayConfig.TextureChannel
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.specular
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.specular
+  id: specular
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: specular
+  nameWithType: TextureArrayConfig.TextureEntry.specular
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.specular
+  type: Field
+  source:
+    id: specular
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 288
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public Texture2D specular
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public specular As Texture2D
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.noiseNormal
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.noiseNormal
+  id: noiseNormal
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: noiseNormal
+  nameWithType: TextureArrayConfig.TextureEntry.noiseNormal
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.noiseNormal
+  type: Field
+  source:
+    id: noiseNormal
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 291
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public Texture2D noiseNormal
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public noiseNormal As Texture2D
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.detailNoise
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.detailNoise
+  id: detailNoise
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: detailNoise
+  nameWithType: TextureArrayConfig.TextureEntry.detailNoise
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.detailNoise
+  type: Field
+  source:
+    id: detailNoise
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 292
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public Texture2D detailNoise
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public detailNoise As Texture2D
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.detailChannel
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.detailChannel
+  id: detailChannel
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: detailChannel
+  nameWithType: TextureArrayConfig.TextureEntry.detailChannel
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.detailChannel
+  type: Field
+  source:
+    id: detailChannel
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 293
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureChannel detailChannel
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureChannel
+    content.vb: Public detailChannel As TextureArrayConfig.TextureChannel
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.distanceNoise
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.distanceNoise
+  id: distanceNoise
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: distanceNoise
+  nameWithType: TextureArrayConfig.TextureEntry.distanceNoise
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.distanceNoise
+  type: Field
+  source:
+    id: distanceNoise
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 294
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public Texture2D distanceNoise
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public distanceNoise As Texture2D
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.distanceChannel
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.distanceChannel
+  id: distanceChannel
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: distanceChannel
+  nameWithType: TextureArrayConfig.TextureEntry.distanceChannel
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.distanceChannel
+  type: Field
+  source:
+    id: distanceChannel
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 295
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureChannel distanceChannel
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureChannel
+    content.vb: Public distanceChannel As TextureArrayConfig.TextureChannel
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxDiffuse
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxDiffuse
+  id: traxDiffuse
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: traxDiffuse
+  nameWithType: TextureArrayConfig.TextureEntry.traxDiffuse
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxDiffuse
+  type: Field
+  source:
+    id: traxDiffuse
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 297
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public Texture2D traxDiffuse
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public traxDiffuse As Texture2D
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxHeight
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxHeight
+  id: traxHeight
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: traxHeight
+  nameWithType: TextureArrayConfig.TextureEntry.traxHeight
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxHeight
+  type: Field
+  source:
+    id: traxHeight
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 298
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public Texture2D traxHeight
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public traxHeight As Texture2D
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxHeightChannel
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxHeightChannel
+  id: traxHeightChannel
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: traxHeightChannel
+  nameWithType: TextureArrayConfig.TextureEntry.traxHeightChannel
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxHeightChannel
+  type: Field
+  source:
+    id: traxHeightChannel
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 299
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureChannel traxHeightChannel
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureChannel
+    content.vb: Public traxHeightChannel As TextureArrayConfig.TextureChannel
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxNormal
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxNormal
+  id: traxNormal
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: traxNormal
+  nameWithType: TextureArrayConfig.TextureEntry.traxNormal
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxNormal
+  type: Field
+  source:
+    id: traxNormal
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 300
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public Texture2D traxNormal
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public traxNormal As Texture2D
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxSmoothness
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxSmoothness
+  id: traxSmoothness
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: traxSmoothness
+  nameWithType: TextureArrayConfig.TextureEntry.traxSmoothness
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxSmoothness
+  type: Field
+  source:
+    id: traxSmoothness
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 301
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public Texture2D traxSmoothness
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public traxSmoothness As Texture2D
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxSmoothnessChannel
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxSmoothnessChannel
+  id: traxSmoothnessChannel
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: traxSmoothnessChannel
+  nameWithType: TextureArrayConfig.TextureEntry.traxSmoothnessChannel
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxSmoothnessChannel
+  type: Field
+  source:
+    id: traxSmoothnessChannel
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 302
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureChannel traxSmoothnessChannel
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureChannel
+    content.vb: Public traxSmoothnessChannel As TextureArrayConfig.TextureChannel
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxIsRoughness
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxIsRoughness
+  id: traxIsRoughness
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: traxIsRoughness
+  nameWithType: TextureArrayConfig.TextureEntry.traxIsRoughness
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxIsRoughness
+  type: Field
+  source:
+    id: traxIsRoughness
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 303
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public bool traxIsRoughness
+    return:
+      type: System.Boolean
+    content.vb: Public traxIsRoughness As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxAO
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxAO
+  id: traxAO
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: traxAO
+  nameWithType: TextureArrayConfig.TextureEntry.traxAO
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxAO
+  type: Field
+  source:
+    id: traxAO
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 304
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public Texture2D traxAO
+    return:
+      type: UnityEngine.Texture2D
+    content.vb: Public traxAO As Texture2D
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxAOChannel
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxAOChannel
+  id: traxAOChannel
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: traxAOChannel
+  nameWithType: TextureArrayConfig.TextureEntry.traxAOChannel
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.traxAOChannel
+  type: Field
+  source:
+    id: traxAOChannel
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 305
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public TextureArrayConfig.TextureChannel traxAOChannel
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.TextureChannel
+    content.vb: Public traxAOChannel As TextureArrayConfig.TextureChannel
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.Reset
+  commentId: M:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.Reset
+  id: Reset
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: Reset()
+  nameWithType: TextureArrayConfig.TextureEntry.Reset()
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.Reset()
+  type: Method
+  source:
+    id: Reset
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 307
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public void Reset()
+    content.vb: Public Sub Reset
+  overload: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.Reset*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.HasTextures(JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow)
+  commentId: M:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.HasTextures(JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow)
+  id: HasTextures(JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow)
+  parent: JBooth.MicroSplat.TextureArrayConfig.TextureEntry
+  langs:
+  - csharp
+  - vb
+  name: HasTextures(TextureArrayConfig.PBRWorkflow)
+  nameWithType: TextureArrayConfig.TextureEntry.HasTextures(TextureArrayConfig.PBRWorkflow)
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.HasTextures(JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow)
+  type: Method
+  source:
+    id: HasTextures
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 340
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public bool HasTextures(TextureArrayConfig.PBRWorkflow wf)
+    parameters:
+    - id: wf
+      type: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasTextures(wf As TextureArrayConfig.PBRWorkflow) As Boolean
+  overload: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.HasTextures*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.ProceduralMaterial
+  commentId: T:UnityEngine.ProceduralMaterial
+  parent: UnityEngine
+  isExternal: true
+  name: ProceduralMaterial
+  nameWithType: ProceduralMaterial
+  fullName: UnityEngine.ProceduralMaterial
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Texture2D
+  commentId: T:UnityEngine.Texture2D
+  parent: UnityEngine
+  isExternal: true
+  name: Texture2D
+  nameWithType: Texture2D
+  fullName: UnityEngine.Texture2D
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureChannel
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.TextureChannel
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.TextureChannel
+  nameWithType: TextureArrayConfig.TextureChannel
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureChannel
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.Reset*
+  commentId: Overload:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.Reset
+  name: Reset
+  nameWithType: TextureArrayConfig.TextureEntry.Reset
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.Reset
+- uid: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.HasTextures*
+  commentId: Overload:JBooth.MicroSplat.TextureArrayConfig.TextureEntry.HasTextures
+  name: HasTextures
+  nameWithType: TextureArrayConfig.TextureEntry.HasTextures
+  fullName: JBooth.MicroSplat.TextureArrayConfig.TextureEntry.HasTextures
+- uid: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.PBRWorkflow
+  nameWithType: TextureArrayConfig.PBRWorkflow
+  fullName: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow

@@ -24,12 +24,8 @@ items:
   fullName: Engine.Networking.LoginResponse_2
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: LoginResponse_2
-    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\LoginResponse_2.cs
     startLine: 8
   assemblies:
   - Engine.Networking
@@ -49,7 +45,6 @@ items:
       <Packet(2, "Login Response", "Client", ReliabilityScheme.RELIABLE, "Responds to login request.")>
 
       Public Class LoginResponse_2
-
           Inherits Packet
   inheritance:
   - System.Object
@@ -102,12 +97,8 @@ items:
   fullName: Engine.Networking.LoginResponse_2.accept
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: accept
-    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\LoginResponse_2.cs
     startLine: 21
   assemblies:
   - Engine.Networking
@@ -135,12 +126,8 @@ items:
   fullName: Engine.Networking.LoginResponse_2.errorResponse
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: errorResponse
-    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\LoginResponse_2.cs
     startLine: 26
   assemblies:
   - Engine.Networking
@@ -168,12 +155,8 @@ items:
   fullName: Engine.Networking.LoginResponse_2.x
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: x
-    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\LoginResponse_2.cs
     startLine: 31
   assemblies:
   - Engine.Networking
@@ -201,12 +184,8 @@ items:
   fullName: Engine.Networking.LoginResponse_2.y
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: y
-    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\LoginResponse_2.cs
     startLine: 36
   assemblies:
   - Engine.Networking
@@ -234,12 +213,8 @@ items:
   fullName: Engine.Networking.LoginResponse_2.z
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: z
-    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\LoginResponse_2.cs
     startLine: 41
   assemblies:
   - Engine.Networking
@@ -267,12 +242,8 @@ items:
   fullName: Engine.Networking.LoginResponse_2.rotationX
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: rotationX
-    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\LoginResponse_2.cs
     startLine: 46
   assemblies:
   - Engine.Networking
@@ -300,12 +271,8 @@ items:
   fullName: Engine.Networking.LoginResponse_2.rotationY
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: rotationY
-    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\LoginResponse_2.cs
     startLine: 51
   assemblies:
   - Engine.Networking
@@ -333,12 +300,8 @@ items:
   fullName: Engine.Networking.LoginResponse_2.rotationZ
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: rotationZ
-    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\LoginResponse_2.cs
     startLine: 56
   assemblies:
   - Engine.Networking
@@ -366,12 +329,8 @@ items:
   fullName: Engine.Networking.LoginResponse_2.rotationW
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: rotationW
-    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\LoginResponse_2.cs
     startLine: 61
   assemblies:
   - Engine.Networking
@@ -399,12 +358,8 @@ items:
   fullName: Engine.Networking.LoginResponse_2.getBytes()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: getBytes
-    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\LoginResponse_2.cs
     startLine: 67
   assemblies:
   - Engine.Networking
@@ -437,12 +392,8 @@ items:
   fullName: Engine.Networking.LoginResponse_2.readPacket(System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/LoginResponse_2.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: readPacket
-    path: ../Assets/Engine/Networking/Packets/LoginResponse_2.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\LoginResponse_2.cs
     startLine: 86
   assemblies:
   - Engine.Networking

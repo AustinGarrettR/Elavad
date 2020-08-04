@@ -13,12 +13,8 @@ items:
   fullName: Engine.API.API.Server
   type: Class
   source:
-    remote:
-      path: Assets/Engine/API/API.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Server
-    path: ../Assets/Engine/API/API.cs
+    path: B:\Games\Elavad\Assets\Engine\API\API.cs
     startLine: 47
   assemblies:
   - Engine.API

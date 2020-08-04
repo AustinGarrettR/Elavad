@@ -13,12 +13,8 @@ items:
   fullName: Engine.ServerCore
   type: Class
   source:
-    remote:
-      path: Assets/Engine/ServerCore.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ServerCore
-    path: ../Assets/Engine/ServerCore.cs
+    path: B:\Games\Elavad\Assets\Engine\ServerCore.cs
     startLine: 13
   assemblies:
   - Engine
@@ -29,7 +25,6 @@ items:
     content: 'public class ServerCore : GlobalCoreBase'
     content.vb: >-
       Public Class ServerCore
-
           Inherits GlobalCoreBase
   inheritance:
   - System.Object

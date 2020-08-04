@@ -14,12 +14,8 @@ items:
   fullName: Engine.Asset.ClientPlayerPack
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Asset/ClientPlayerPack.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ClientPlayerPack
-    path: ../Assets/Engine/Asset/ClientPlayerPack.cs
+    path: B:\Games\Elavad\Assets\Engine\Asset\ClientPlayerPack.cs
     startLine: 7
   assemblies:
   - Engine.Asset
@@ -35,7 +31,6 @@ items:
       <CreateAssetMenu(fileName:="Client_Player_Pack", menuName:="Data Packs/Client_Player_Pack", order:=1)>
 
       Public Class ClientPlayerPack
-
           Inherits ScriptableObject
   inheritance:
   - System.Object
@@ -116,12 +111,8 @@ items:
   fullName: Engine.Asset.ClientPlayerPack.playerPrefab
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Asset/ClientPlayerPack.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: playerPrefab
-    path: ../Assets/Engine/Asset/ClientPlayerPack.cs
+    path: B:\Games\Elavad\Assets\Engine\Asset\ClientPlayerPack.cs
     startLine: 13
   assemblies:
   - Engine.Asset

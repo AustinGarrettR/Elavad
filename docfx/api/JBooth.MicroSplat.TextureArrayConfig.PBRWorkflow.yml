@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow
+  id: TextureArrayConfig.PBRWorkflow
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow.Metallic
+  - JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow.Specular
+  langs:
+  - csharp
+  - vb
+  name: TextureArrayConfig.PBRWorkflow
+  nameWithType: TextureArrayConfig.PBRWorkflow
+  fullName: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow
+  type: Enum
+  source:
+    id: PBRWorkflow
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 75
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum PBRWorkflow
+    content.vb: Public Enum PBRWorkflow
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow.Metallic
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow.Metallic
+  id: Metallic
+  parent: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow
+  langs:
+  - csharp
+  - vb
+  name: Metallic
+  nameWithType: TextureArrayConfig.PBRWorkflow.Metallic
+  fullName: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow.Metallic
+  type: Field
+  source:
+    id: Metallic
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 77
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Metallic = 0
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow.Specular
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow.Specular
+  id: Specular
+  parent: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow
+  langs:
+  - csharp
+  - vb
+  name: Specular
+  nameWithType: TextureArrayConfig.PBRWorkflow.Specular
+  fullName: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow.Specular
+  type: Field
+  source:
+    id: Specular
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 78
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Specular = 1
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.PBRWorkflow
+  nameWithType: TextureArrayConfig.PBRWorkflow
+  fullName: JBooth.MicroSplat.TextureArrayConfig.PBRWorkflow

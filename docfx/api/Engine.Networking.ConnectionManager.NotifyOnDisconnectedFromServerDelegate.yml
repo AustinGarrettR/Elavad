@@ -13,13 +13,9 @@ items:
   fullName: Engine.Networking.ConnectionManager.NotifyOnDisconnectedFromServerDelegate
   type: Delegate
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyOnDisconnectedFromServerDelegate
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 152
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
+    startLine: 154
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking

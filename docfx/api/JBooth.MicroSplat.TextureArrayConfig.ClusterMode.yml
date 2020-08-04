@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.TextureArrayConfig.ClusterMode
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.ClusterMode
+  id: TextureArrayConfig.ClusterMode
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.TextureArrayConfig.ClusterMode.None
+  - JBooth.MicroSplat.TextureArrayConfig.ClusterMode.ThreeVariations
+  - JBooth.MicroSplat.TextureArrayConfig.ClusterMode.TwoVariations
+  langs:
+  - csharp
+  - vb
+  name: TextureArrayConfig.ClusterMode
+  nameWithType: TextureArrayConfig.ClusterMode
+  fullName: JBooth.MicroSplat.TextureArrayConfig.ClusterMode
+  type: Enum
+  source:
+    id: ClusterMode
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 104
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum ClusterMode
+    content.vb: Public Enum ClusterMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.TextureArrayConfig.ClusterMode.None
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.ClusterMode.None
+  id: None
+  parent: JBooth.MicroSplat.TextureArrayConfig.ClusterMode
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: TextureArrayConfig.ClusterMode.None
+  fullName: JBooth.MicroSplat.TextureArrayConfig.ClusterMode.None
+  type: Field
+  source:
+    id: None
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 106
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: None = 0
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.ClusterMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.ClusterMode.TwoVariations
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.ClusterMode.TwoVariations
+  id: TwoVariations
+  parent: JBooth.MicroSplat.TextureArrayConfig.ClusterMode
+  langs:
+  - csharp
+  - vb
+  name: TwoVariations
+  nameWithType: TextureArrayConfig.ClusterMode.TwoVariations
+  fullName: JBooth.MicroSplat.TextureArrayConfig.ClusterMode.TwoVariations
+  type: Field
+  source:
+    id: TwoVariations
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 107
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: TwoVariations = 1
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.ClusterMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.ClusterMode.ThreeVariations
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.ClusterMode.ThreeVariations
+  id: ThreeVariations
+  parent: JBooth.MicroSplat.TextureArrayConfig.ClusterMode
+  langs:
+  - csharp
+  - vb
+  name: ThreeVariations
+  nameWithType: TextureArrayConfig.ClusterMode.ThreeVariations
+  fullName: JBooth.MicroSplat.TextureArrayConfig.ClusterMode.ThreeVariations
+  type: Field
+  source:
+    id: ThreeVariations
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 108
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: ThreeVariations = 2
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.ClusterMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.TextureArrayConfig.ClusterMode
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.ClusterMode
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.ClusterMode
+  nameWithType: TextureArrayConfig.ClusterMode
+  fullName: JBooth.MicroSplat.TextureArrayConfig.ClusterMode

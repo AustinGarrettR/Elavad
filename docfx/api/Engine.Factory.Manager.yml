@@ -17,12 +17,8 @@ items:
   fullName: Engine.Factory.Manager
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Factory/Manager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Manager
-    path: ../Assets/Engine/Factory/Manager.cs
+    path: B:\Games\Elavad\Assets\Engine\Factory\Manager.cs
     startLine: 8
   assemblies:
   - Engine.Factory
@@ -79,12 +75,8 @@ items:
   fullName: Engine.Factory.Manager.Init()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Factory/Manager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Init
-    path: ../Assets/Engine/Factory/Manager.cs
+    path: B:\Games\Elavad\Assets\Engine\Factory\Manager.cs
     startLine: 13
   assemblies:
   - Engine.Factory
@@ -113,12 +105,8 @@ items:
   fullName: Engine.Factory.Manager.Process()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Factory/Manager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Process
-    path: ../Assets/Engine/Factory/Manager.cs
+    path: B:\Games\Elavad\Assets\Engine\Factory\Manager.cs
     startLine: 18
   assemblies:
   - Engine.Factory
@@ -147,12 +135,8 @@ items:
   fullName: Engine.Factory.Manager.Shutdown()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Factory/Manager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
-    path: ../Assets/Engine/Factory/Manager.cs
+    path: B:\Games\Elavad\Assets\Engine\Factory\Manager.cs
     startLine: 23
   assemblies:
   - Engine.Factory
@@ -181,12 +165,8 @@ items:
   fullName: Engine.Factory.Manager.LoadGameTask(Engine.Loading.ClientLoadData)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Factory/Manager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: LoadGameTask
-    path: ../Assets/Engine/Factory/Manager.cs
+    path: B:\Games\Elavad\Assets\Engine\Factory\Manager.cs
     startLine: 28
   assemblies:
   - Engine.Factory

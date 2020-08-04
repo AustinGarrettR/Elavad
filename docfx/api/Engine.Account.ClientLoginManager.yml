@@ -19,12 +19,8 @@ items:
   fullName: Engine.Account.ClientLoginManager
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Account/ClientLoginManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ClientLoginManager
-    path: ../Assets/Engine/Account/ClientLoginManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Account\ClientLoginManager.cs
     startLine: 18
   assemblies:
   - Engine.Account
@@ -35,7 +31,6 @@ items:
     content: 'public class ClientLoginManager : Manager'
     content.vb: >-
       Public Class ClientLoginManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -67,12 +62,8 @@ items:
   fullName: Engine.Account.ClientLoginManager.ClientLoginManager(Engine.Networking.ConnectionManager, System.Collections.Generic.List<Engine.Factory.Manager>)
   type: Constructor
   source:
-    remote:
-      path: Assets/Engine/Account/ClientLoginManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: .ctor
-    path: ../Assets/Engine/Account/ClientLoginManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Account\ClientLoginManager.cs
     startLine: 30
   assemblies:
   - Engine.Account
@@ -109,12 +100,8 @@ items:
   fullName: Engine.Account.ClientLoginManager.Init()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Account/ClientLoginManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Init
-    path: ../Assets/Engine/Account/ClientLoginManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Account\ClientLoginManager.cs
     startLine: 43
   assemblies:
   - Engine.Account
@@ -144,12 +131,8 @@ items:
   fullName: Engine.Account.ClientLoginManager.Shutdown()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Account/ClientLoginManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
-    path: ../Assets/Engine/Account/ClientLoginManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Account\ClientLoginManager.cs
     startLine: 58
   assemblies:
   - Engine.Account
@@ -179,12 +162,8 @@ items:
   fullName: Engine.Account.ClientLoginManager.Process()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Account/ClientLoginManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Process
-    path: ../Assets/Engine/Account/ClientLoginManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Account\ClientLoginManager.cs
     startLine: 66
   assemblies:
   - Engine.Account
@@ -214,12 +193,8 @@ items:
   fullName: Engine.Account.ClientLoginManager.AttemptLogin(System.String, System.String, System.Boolean, System.Action<System.Boolean, UnityEngine.Color, System.String>, System.Action<System.Single>)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Account/ClientLoginManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: AttemptLogin
-    path: ../Assets/Engine/Account/ClientLoginManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Account\ClientLoginManager.cs
     startLine: 83
   assemblies:
   - Engine.Account
@@ -265,12 +240,8 @@ items:
   fullName: Engine.Account.ClientLoginManager.IsPlayerLoggedIn()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Account/ClientLoginManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: IsPlayerLoggedIn
-    path: ../Assets/Engine/Account/ClientLoginManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Account\ClientLoginManager.cs
     startLine: 330
   assemblies:
   - Engine.Account

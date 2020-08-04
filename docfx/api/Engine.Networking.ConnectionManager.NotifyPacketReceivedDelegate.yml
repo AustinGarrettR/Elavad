@@ -13,13 +13,9 @@ items:
   fullName: Engine.Networking.ConnectionManager.NotifyPacketReceivedDelegate
   type: Delegate
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyPacketReceivedDelegate
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 142
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
+    startLine: 144
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking

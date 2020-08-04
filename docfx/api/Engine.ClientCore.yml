@@ -13,12 +13,8 @@ items:
   fullName: Engine.ClientCore
   type: Class
   source:
-    remote:
-      path: Assets/Engine/ClientCore.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ClientCore
-    path: ../Assets/Engine/ClientCore.cs
+    path: B:\Games\Elavad\Assets\Engine\ClientCore.cs
     startLine: 17
   assemblies:
   - Engine
@@ -29,7 +25,6 @@ items:
     content: 'public class ClientCore : GlobalCoreBase'
     content.vb: >-
       Public Class ClientCore
-
           Inherits GlobalCoreBase
   inheritance:
   - System.Object

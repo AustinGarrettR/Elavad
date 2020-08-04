@@ -20,12 +20,8 @@ items:
   fullName: Engine.Account.ServerLoginManager
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Account/ServerLoginManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ServerLoginManager
-    path: ../Assets/Engine/Account/ServerLoginManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Account\ServerLoginManager.cs
     startLine: 10
   assemblies:
   - Engine.Account
@@ -36,7 +32,6 @@ items:
     content: 'public class ServerLoginManager : Manager'
     content.vb: >-
       Public Class ServerLoginManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -68,12 +63,8 @@ items:
   fullName: Engine.Account.ServerLoginManager.ServerLoginManager(Engine.Networking.ConnectionManager)
   type: Constructor
   source:
-    remote:
-      path: Assets/Engine/Account/ServerLoginManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: .ctor
-    path: ../Assets/Engine/Account/ServerLoginManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Account\ServerLoginManager.cs
     startLine: 20
   assemblies:
   - Engine.Account
@@ -104,12 +95,8 @@ items:
   fullName: Engine.Account.ServerLoginManager.Init()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Account/ServerLoginManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Init
-    path: ../Assets/Engine/Account/ServerLoginManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Account\ServerLoginManager.cs
     startLine: 33
   assemblies:
   - Engine.Account
@@ -139,12 +126,8 @@ items:
   fullName: Engine.Account.ServerLoginManager.Shutdown()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Account/ServerLoginManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
-    path: ../Assets/Engine/Account/ServerLoginManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Account\ServerLoginManager.cs
     startLine: 43
   assemblies:
   - Engine.Account
@@ -174,12 +157,8 @@ items:
   fullName: Engine.Account.ServerLoginManager.Process()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Account/ServerLoginManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Process
-    path: ../Assets/Engine/Account/ServerLoginManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Account\ServerLoginManager.cs
     startLine: 51
   assemblies:
   - Engine.Account
@@ -209,12 +188,8 @@ items:
   fullName: Engine.Account.ServerLoginManager.NotifyClientLoggedInAndLoaded
   type: Event
   source:
-    remote:
-      path: Assets/Engine/Account/ServerLoginManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyClientLoggedInAndLoaded
-    path: ../Assets/Engine/Account/ServerLoginManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Account\ServerLoginManager.cs
     startLine: 69
   assemblies:
   - Engine.Account
@@ -242,12 +217,8 @@ items:
   fullName: Engine.Account.ServerLoginManager.NotifyClientLoggedIn
   type: Event
   source:
-    remote:
-      path: Assets/Engine/Account/ServerLoginManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyClientLoggedIn
-    path: ../Assets/Engine/Account/ServerLoginManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Account\ServerLoginManager.cs
     startLine: 80
   assemblies:
   - Engine.Account
@@ -275,12 +246,8 @@ items:
   fullName: Engine.Account.ServerLoginManager.NotifyClientLoggedOut
   type: Event
   source:
-    remote:
-      path: Assets/Engine/Account/ServerLoginManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyClientLoggedOut
-    path: ../Assets/Engine/Account/ServerLoginManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Account\ServerLoginManager.cs
     startLine: 91
   assemblies:
   - Engine.Account

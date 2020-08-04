@@ -19,12 +19,8 @@ items:
   fullName: Engine.Networking.PacketAttribute
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Networking/Interfaces/PacketAttribute.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: PacketAttribute
-    path: ../Assets/Engine/Networking/Interfaces/PacketAttribute.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Interfaces\PacketAttribute.cs
     startLine: 7
   assemblies:
   - Engine.Networking
@@ -40,9 +36,7 @@ items:
       <AttributeUsage(AttributeTargets.Class Or AttributeTargets.Interface, AllowMultiple:=False, Inherited:=True)>
 
       Public Class PacketAttribute
-
           Inherits Attribute
-
           Implements _Attribute
   inheritance:
   - System.Object
@@ -127,12 +121,8 @@ items:
   fullName: Engine.Networking.PacketAttribute.PacketAttribute(System.Int32, System.String, System.String, Engine.Networking.ReliabilityScheme, System.String)
   type: Constructor
   source:
-    remote:
-      path: Assets/Engine/Networking/Interfaces/PacketAttribute.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: .ctor
-    path: ../Assets/Engine/Networking/Interfaces/PacketAttribute.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Interfaces\PacketAttribute.cs
     startLine: 25
   assemblies:
   - Engine.Networking
@@ -175,12 +165,8 @@ items:
   fullName: Engine.Networking.PacketAttribute.PacketId
   type: Property
   source:
-    remote:
-      path: Assets/Engine/Networking/Interfaces/PacketAttribute.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: PacketId
-    path: ../Assets/Engine/Networking/Interfaces/PacketAttribute.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Interfaces\PacketAttribute.cs
     startLine: 37
   assemblies:
   - Engine.Networking
@@ -214,12 +200,8 @@ items:
   fullName: Engine.Networking.PacketAttribute.Name
   type: Property
   source:
-    remote:
-      path: Assets/Engine/Networking/Interfaces/PacketAttribute.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Name
-    path: ../Assets/Engine/Networking/Interfaces/PacketAttribute.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Interfaces\PacketAttribute.cs
     startLine: 45
   assemblies:
   - Engine.Networking
@@ -253,12 +235,8 @@ items:
   fullName: Engine.Networking.PacketAttribute.Target
   type: Property
   source:
-    remote:
-      path: Assets/Engine/Networking/Interfaces/PacketAttribute.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Target
-    path: ../Assets/Engine/Networking/Interfaces/PacketAttribute.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Interfaces\PacketAttribute.cs
     startLine: 53
   assemblies:
   - Engine.Networking
@@ -292,12 +270,8 @@ items:
   fullName: Engine.Networking.PacketAttribute.ReliabilityScheme
   type: Property
   source:
-    remote:
-      path: Assets/Engine/Networking/Interfaces/PacketAttribute.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ReliabilityScheme
-    path: ../Assets/Engine/Networking/Interfaces/PacketAttribute.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Interfaces\PacketAttribute.cs
     startLine: 61
   assemblies:
   - Engine.Networking
@@ -331,12 +305,8 @@ items:
   fullName: Engine.Networking.PacketAttribute.Description
   type: Property
   source:
-    remote:
-      path: Assets/Engine/Networking/Interfaces/PacketAttribute.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Description
-    path: ../Assets/Engine/Networking/Interfaces/PacketAttribute.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Interfaces\PacketAttribute.cs
     startLine: 70
   assemblies:
   - Engine.Networking

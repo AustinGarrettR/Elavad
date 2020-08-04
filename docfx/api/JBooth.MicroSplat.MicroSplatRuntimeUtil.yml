@@ -1,0 +1,440 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.MicroSplatRuntimeUtil
+  commentId: T:JBooth.MicroSplat.MicroSplatRuntimeUtil
+  id: MicroSplatRuntimeUtil
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.MicroSplatRuntimeUtil.UnityUVScaleToUVScale(UnityEngine.Vector2,UnityEngine.Terrain)
+  - JBooth.MicroSplat.MicroSplatRuntimeUtil.UVScaleToUnityUVScale(UnityEngine.Vector2,UnityEngine.Terrain)
+  langs:
+  - csharp
+  - vb
+  name: MicroSplatRuntimeUtil
+  nameWithType: MicroSplatRuntimeUtil
+  fullName: JBooth.MicroSplat.MicroSplatRuntimeUtil
+  type: Class
+  source:
+    id: MicroSplatRuntimeUtil
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\MicroSplatRuntimeUtil.cs
+    startLine: 10
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public class MicroSplatRuntimeUtil
+    content.vb: Public Class MicroSplatRuntimeUtil
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JBooth.MicroSplat.MicroSplatRuntimeUtil.UnityUVScaleToUVScale(UnityEngine.Vector2,UnityEngine.Terrain)
+  commentId: M:JBooth.MicroSplat.MicroSplatRuntimeUtil.UnityUVScaleToUVScale(UnityEngine.Vector2,UnityEngine.Terrain)
+  id: UnityUVScaleToUVScale(UnityEngine.Vector2,UnityEngine.Terrain)
+  parent: JBooth.MicroSplat.MicroSplatRuntimeUtil
+  langs:
+  - csharp
+  - vb
+  name: UnityUVScaleToUVScale(Vector2, Terrain)
+  nameWithType: MicroSplatRuntimeUtil.UnityUVScaleToUVScale(Vector2, Terrain)
+  fullName: JBooth.MicroSplat.MicroSplatRuntimeUtil.UnityUVScaleToUVScale(UnityEngine.Vector2, UnityEngine.Terrain)
+  type: Method
+  source:
+    id: UnityUVScaleToUVScale
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\MicroSplatRuntimeUtil.cs
+    startLine: 13
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static Vector2 UnityUVScaleToUVScale(Vector2 uv, Terrain t)
+    parameters:
+    - id: uv
+      type: UnityEngine.Vector2
+    - id: t
+      type: UnityEngine.Terrain
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Shared Function UnityUVScaleToUVScale(uv As Vector2, t As Terrain) As Vector2
+  overload: JBooth.MicroSplat.MicroSplatRuntimeUtil.UnityUVScaleToUVScale*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.MicroSplatRuntimeUtil.UVScaleToUnityUVScale(UnityEngine.Vector2,UnityEngine.Terrain)
+  commentId: M:JBooth.MicroSplat.MicroSplatRuntimeUtil.UVScaleToUnityUVScale(UnityEngine.Vector2,UnityEngine.Terrain)
+  id: UVScaleToUnityUVScale(UnityEngine.Vector2,UnityEngine.Terrain)
+  parent: JBooth.MicroSplat.MicroSplatRuntimeUtil
+  langs:
+  - csharp
+  - vb
+  name: UVScaleToUnityUVScale(Vector2, Terrain)
+  nameWithType: MicroSplatRuntimeUtil.UVScaleToUnityUVScale(Vector2, Terrain)
+  fullName: JBooth.MicroSplat.MicroSplatRuntimeUtil.UVScaleToUnityUVScale(UnityEngine.Vector2, UnityEngine.Terrain)
+  type: Method
+  source:
+    id: UVScaleToUnityUVScale
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\MicroSplatRuntimeUtil.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public static Vector2 UVScaleToUnityUVScale(Vector2 uv, Terrain t)
+    parameters:
+    - id: uv
+      type: UnityEngine.Vector2
+    - id: t
+      type: UnityEngine.Terrain
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Shared Function UVScaleToUnityUVScale(uv As Vector2, t As Terrain) As Vector2
+  overload: JBooth.MicroSplat.MicroSplatRuntimeUtil.UVScaleToUnityUVScale*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: JBooth.MicroSplat.MicroSplatRuntimeUtil.UnityUVScaleToUVScale*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatRuntimeUtil.UnityUVScaleToUVScale
+  name: UnityUVScaleToUVScale
+  nameWithType: MicroSplatRuntimeUtil.UnityUVScaleToUVScale
+  fullName: JBooth.MicroSplat.MicroSplatRuntimeUtil.UnityUVScaleToUVScale
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine.Terrain
+  commentId: T:UnityEngine.Terrain
+  parent: UnityEngine
+  isExternal: true
+  name: Terrain
+  nameWithType: Terrain
+  fullName: UnityEngine.Terrain
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: JBooth.MicroSplat.MicroSplatRuntimeUtil.UVScaleToUnityUVScale*
+  commentId: Overload:JBooth.MicroSplat.MicroSplatRuntimeUtil.UVScaleToUnityUVScale
+  name: UVScaleToUnityUVScale
+  nameWithType: MicroSplatRuntimeUtil.UVScaleToUnityUVScale
+  fullName: JBooth.MicroSplat.MicroSplatRuntimeUtil.UVScaleToUnityUVScale

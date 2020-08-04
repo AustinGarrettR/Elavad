@@ -13,12 +13,8 @@ items:
   fullName: Engine.API.API
   type: Class
   source:
-    remote:
-      path: Assets/Engine/API/Client/Login.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: API
-    path: ../Assets/Engine/API/Client/Login.cs
+    path: B:\Games\Elavad\Assets\Engine\API\Client\Login.cs
     startLine: 7
   assemblies:
   - Engine.API

@@ -14,12 +14,8 @@ items:
   fullName: Content.ServerContentHandler
   type: Class
   source:
-    remote:
-      path: Assets/Content/ServerContentHandler.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ServerContentHandler
-    path: ../Assets/Content/ServerContentHandler.cs
+    path: B:\Games\Elavad\Assets\Content\ServerContentHandler.cs
     startLine: 5
   assemblies:
   - Content
@@ -57,12 +53,8 @@ items:
   fullName: Content.ServerContentHandler.ServerContentHandler()
   type: Constructor
   source:
-    remote:
-      path: Assets/Content/ServerContentHandler.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: .ctor
-    path: ../Assets/Content/ServerContentHandler.cs
+    path: B:\Games\Elavad\Assets\Content\ServerContentHandler.cs
     startLine: 10
   assemblies:
   - Content

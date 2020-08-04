@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize
+  id: TextureArrayConfig.SourceTextureSize
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize.k256
+  - JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize.k32
+  - JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize.Unchanged
+  langs:
+  - csharp
+  - vb
+  name: TextureArrayConfig.SourceTextureSize
+  nameWithType: TextureArrayConfig.SourceTextureSize
+  fullName: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize
+  type: Enum
+  source:
+    id: SourceTextureSize
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 87
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum SourceTextureSize
+    content.vb: Public Enum SourceTextureSize
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize.Unchanged
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize.Unchanged
+  id: Unchanged
+  parent: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize
+  langs:
+  - csharp
+  - vb
+  name: Unchanged
+  nameWithType: TextureArrayConfig.SourceTextureSize.Unchanged
+  fullName: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize.Unchanged
+  type: Field
+  source:
+    id: Unchanged
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 89
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Unchanged = 0
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize.k32
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize.k32
+  id: k32
+  parent: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize
+  langs:
+  - csharp
+  - vb
+  name: k32
+  nameWithType: TextureArrayConfig.SourceTextureSize.k32
+  fullName: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize.k32
+  type: Field
+  source:
+    id: k32
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 90
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: k32 = 32
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize.k256
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize.k256
+  id: k256
+  parent: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize
+  langs:
+  - csharp
+  - vb
+  name: k256
+  nameWithType: TextureArrayConfig.SourceTextureSize.k256
+  fullName: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize.k256
+  type: Field
+  source:
+    id: k256
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 91
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: k256 = 256
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.SourceTextureSize
+  nameWithType: TextureArrayConfig.SourceTextureSize
+  fullName: JBooth.MicroSplat.TextureArrayConfig.SourceTextureSize

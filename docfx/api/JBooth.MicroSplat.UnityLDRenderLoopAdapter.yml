@@ -1,0 +1,2435 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  commentId: T:JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  id: UnityLDRenderLoopAdapter
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetDisplayName
+  - JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetNumPasses
+  - JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetPassType(System.Int32)
+  - JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetRenderLoopKeyword
+  - JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetVersion
+  - JBooth.MicroSplat.UnityLDRenderLoopAdapter.Init(System.String[])
+  - JBooth.MicroSplat.UnityLDRenderLoopAdapter.OnPostprocessScene
+  - JBooth.MicroSplat.UnityLDRenderLoopAdapter.PostProcessShader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean)
+  - JBooth.MicroSplat.UnityLDRenderLoopAdapter.UseReplaceMethods
+  - JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteFragmentFunction(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  - JBooth.MicroSplat.UnityLDRenderLoopAdapter.WritePassHeader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  - JBooth.MicroSplat.UnityLDRenderLoopAdapter.WritePerMaterialCBuffer(System.String[],System.Text.StringBuilder,System.Boolean)
+  - JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteProperties(System.String[],System.Text.StringBuilder,System.Boolean)
+  - JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteShaderFooter(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean,System.String)
+  - JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteShaderHeader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean)
+  - JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteSharedCode(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  - JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteTerrainBody(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  - JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteVertexFunction(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: UnityLDRenderLoopAdapter
+  nameWithType: UnityLDRenderLoopAdapter
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  type: Class
+  source:
+    id: UnityLDRenderLoopAdapter
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 8
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [InitializeOnLoad]
+
+      public class UnityLDRenderLoopAdapter : IRenderLoopAdapter
+    content.vb: >-
+      <InitializeOnLoad>
+
+      Public Class UnityLDRenderLoopAdapter
+          Implements IRenderLoopAdapter
+  inheritance:
+  - System.Object
+  implements:
+  - JBooth.MicroSplat.IRenderLoopAdapter
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: UnityEditor.InitializeOnLoadAttribute
+    ctor: UnityEditor.InitializeOnLoadAttribute.#ctor
+    arguments: []
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.OnPostprocessScene
+  commentId: M:JBooth.MicroSplat.UnityLDRenderLoopAdapter.OnPostprocessScene
+  id: OnPostprocessScene
+  parent: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  langs:
+  - csharp
+  - vb
+  name: OnPostprocessScene()
+  nameWithType: UnityLDRenderLoopAdapter.OnPostprocessScene()
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.OnPostprocessScene()
+  type: Method
+  source:
+    id: OnPostprocessScene
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: >-
+      [PostProcessScene(0)]
+
+      public static void OnPostprocessScene()
+    content.vb: >-
+      <PostProcessScene(0)>
+
+      Public Shared Sub OnPostprocessScene
+  overload: JBooth.MicroSplat.UnityLDRenderLoopAdapter.OnPostprocessScene*
+  attributes:
+  - type: UnityEditor.Callbacks.PostProcessSceneAttribute
+    ctor: UnityEditor.Callbacks.PostProcessSceneAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 0
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetDisplayName
+  commentId: M:JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetDisplayName
+  id: GetDisplayName
+  parent: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  langs:
+  - csharp
+  - vb
+  name: GetDisplayName()
+  nameWithType: UnityLDRenderLoopAdapter.GetDisplayName()
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetDisplayName()
+  type: Method
+  source:
+    id: GetDisplayName
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public string GetDisplayName()
+    return:
+      type: System.String
+    content.vb: Public Function GetDisplayName As String
+  overload: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetDisplayName*
+  implements:
+  - JBooth.MicroSplat.IRenderLoopAdapter.GetDisplayName
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetRenderLoopKeyword
+  commentId: M:JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetRenderLoopKeyword
+  id: GetRenderLoopKeyword
+  parent: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  langs:
+  - csharp
+  - vb
+  name: GetRenderLoopKeyword()
+  nameWithType: UnityLDRenderLoopAdapter.GetRenderLoopKeyword()
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetRenderLoopKeyword()
+  type: Method
+  source:
+    id: GetRenderLoopKeyword
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public string GetRenderLoopKeyword()
+    return:
+      type: System.String
+    content.vb: Public Function GetRenderLoopKeyword As String
+  overload: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetRenderLoopKeyword*
+  implements:
+  - JBooth.MicroSplat.IRenderLoopAdapter.GetRenderLoopKeyword
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetNumPasses
+  commentId: M:JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetNumPasses
+  id: GetNumPasses
+  parent: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  langs:
+  - csharp
+  - vb
+  name: GetNumPasses()
+  nameWithType: UnityLDRenderLoopAdapter.GetNumPasses()
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetNumPasses()
+  type: Method
+  source:
+    id: GetNumPasses
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 48
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public int GetNumPasses()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetNumPasses As Integer
+  overload: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetNumPasses*
+  implements:
+  - JBooth.MicroSplat.IRenderLoopAdapter.GetNumPasses
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteShaderHeader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean)
+  commentId: M:JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteShaderHeader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean)
+  id: WriteShaderHeader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean)
+  parent: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  langs:
+  - csharp
+  - vb
+  name: WriteShaderHeader(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean)
+  nameWithType: UnityLDRenderLoopAdapter.WriteShaderHeader(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean)
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteShaderHeader(System.String[], System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Boolean)
+  type: Method
+  source:
+    id: WriteShaderHeader
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public void WriteShaderHeader(string[] features, StringBuilder sb, MicroSplatShaderGUI.MicroSplatCompiler compiler, bool blend)
+    parameters:
+    - id: features
+      type: System.String[]
+    - id: sb
+      type: System.Text.StringBuilder
+    - id: compiler
+      type: MicroSplatShaderGUI.MicroSplatCompiler
+    - id: blend
+      type: System.Boolean
+    content.vb: Public Sub WriteShaderHeader(features As String(), sb As StringBuilder, compiler As MicroSplatShaderGUI.MicroSplatCompiler, blend As Boolean)
+  overload: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteShaderHeader*
+  implements:
+  - JBooth.MicroSplat.IRenderLoopAdapter.WriteShaderHeader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean)
+  nameWithType.vb: UnityLDRenderLoopAdapter.WriteShaderHeader(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteShaderHeader(System.String(), System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Boolean)
+  name.vb: WriteShaderHeader(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean)
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.UseReplaceMethods
+  commentId: M:JBooth.MicroSplat.UnityLDRenderLoopAdapter.UseReplaceMethods
+  id: UseReplaceMethods
+  parent: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  langs:
+  - csharp
+  - vb
+  name: UseReplaceMethods()
+  nameWithType: UnityLDRenderLoopAdapter.UseReplaceMethods()
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.UseReplaceMethods()
+  type: Method
+  source:
+    id: UseReplaceMethods
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 95
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public bool UseReplaceMethods()
+    return:
+      type: System.Boolean
+    content.vb: Public Function UseReplaceMethods As Boolean
+  overload: JBooth.MicroSplat.UnityLDRenderLoopAdapter.UseReplaceMethods*
+  implements:
+  - JBooth.MicroSplat.IRenderLoopAdapter.UseReplaceMethods
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WritePassHeader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  commentId: M:JBooth.MicroSplat.UnityLDRenderLoopAdapter.WritePassHeader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  id: WritePassHeader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  parent: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  langs:
+  - csharp
+  - vb
+  name: WritePassHeader(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  nameWithType: UnityLDRenderLoopAdapter.WritePassHeader(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WritePassHeader(System.String[], System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  type: Method
+  source:
+    id: WritePassHeader
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 100
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public void WritePassHeader(string[] features, StringBuilder sb, MicroSplatShaderGUI.MicroSplatCompiler compiler, int pass, bool blend)
+    parameters:
+    - id: features
+      type: System.String[]
+    - id: sb
+      type: System.Text.StringBuilder
+    - id: compiler
+      type: MicroSplatShaderGUI.MicroSplatCompiler
+    - id: pass
+      type: System.Int32
+    - id: blend
+      type: System.Boolean
+    content.vb: Public Sub WritePassHeader(features As String(), sb As StringBuilder, compiler As MicroSplatShaderGUI.MicroSplatCompiler, pass As Integer, blend As Boolean)
+  overload: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WritePassHeader*
+  implements:
+  - JBooth.MicroSplat.IRenderLoopAdapter.WritePassHeader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  nameWithType.vb: UnityLDRenderLoopAdapter.WritePassHeader(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WritePassHeader(System.String(), System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  name.vb: WritePassHeader(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteVertexFunction(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  commentId: M:JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteVertexFunction(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  id: WriteVertexFunction(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  parent: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  langs:
+  - csharp
+  - vb
+  name: WriteVertexFunction(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  nameWithType: UnityLDRenderLoopAdapter.WriteVertexFunction(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteVertexFunction(System.String[], System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  type: Method
+  source:
+    id: WriteVertexFunction
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 106
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public void WriteVertexFunction(string[] features, StringBuilder sb, MicroSplatShaderGUI.MicroSplatCompiler compiler, int pass, bool blend)
+    parameters:
+    - id: features
+      type: System.String[]
+    - id: sb
+      type: System.Text.StringBuilder
+    - id: compiler
+      type: MicroSplatShaderGUI.MicroSplatCompiler
+    - id: pass
+      type: System.Int32
+    - id: blend
+      type: System.Boolean
+    content.vb: Public Sub WriteVertexFunction(features As String(), sb As StringBuilder, compiler As MicroSplatShaderGUI.MicroSplatCompiler, pass As Integer, blend As Boolean)
+  overload: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteVertexFunction*
+  implements:
+  - JBooth.MicroSplat.IRenderLoopAdapter.WriteVertexFunction(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  nameWithType.vb: UnityLDRenderLoopAdapter.WriteVertexFunction(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteVertexFunction(System.String(), System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  name.vb: WriteVertexFunction(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteFragmentFunction(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  commentId: M:JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteFragmentFunction(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  id: WriteFragmentFunction(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  parent: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  langs:
+  - csharp
+  - vb
+  name: WriteFragmentFunction(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  nameWithType: UnityLDRenderLoopAdapter.WriteFragmentFunction(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteFragmentFunction(System.String[], System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  type: Method
+  source:
+    id: WriteFragmentFunction
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 111
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public void WriteFragmentFunction(string[] features, StringBuilder sb, MicroSplatShaderGUI.MicroSplatCompiler compiler, int pass, bool blend)
+    parameters:
+    - id: features
+      type: System.String[]
+    - id: sb
+      type: System.Text.StringBuilder
+    - id: compiler
+      type: MicroSplatShaderGUI.MicroSplatCompiler
+    - id: pass
+      type: System.Int32
+    - id: blend
+      type: System.Boolean
+    content.vb: Public Sub WriteFragmentFunction(features As String(), sb As StringBuilder, compiler As MicroSplatShaderGUI.MicroSplatCompiler, pass As Integer, blend As Boolean)
+  overload: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteFragmentFunction*
+  implements:
+  - JBooth.MicroSplat.IRenderLoopAdapter.WriteFragmentFunction(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  nameWithType.vb: UnityLDRenderLoopAdapter.WriteFragmentFunction(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteFragmentFunction(System.String(), System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  name.vb: WriteFragmentFunction(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WritePerMaterialCBuffer(System.String[],System.Text.StringBuilder,System.Boolean)
+  commentId: M:JBooth.MicroSplat.UnityLDRenderLoopAdapter.WritePerMaterialCBuffer(System.String[],System.Text.StringBuilder,System.Boolean)
+  id: WritePerMaterialCBuffer(System.String[],System.Text.StringBuilder,System.Boolean)
+  parent: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  langs:
+  - csharp
+  - vb
+  name: WritePerMaterialCBuffer(String[], StringBuilder, Boolean)
+  nameWithType: UnityLDRenderLoopAdapter.WritePerMaterialCBuffer(String[], StringBuilder, Boolean)
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WritePerMaterialCBuffer(System.String[], System.Text.StringBuilder, System.Boolean)
+  type: Method
+  source:
+    id: WritePerMaterialCBuffer
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 117
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public void WritePerMaterialCBuffer(string[] features, StringBuilder sb, bool blend)
+    parameters:
+    - id: features
+      type: System.String[]
+    - id: sb
+      type: System.Text.StringBuilder
+    - id: blend
+      type: System.Boolean
+    content.vb: Public Sub WritePerMaterialCBuffer(features As String(), sb As StringBuilder, blend As Boolean)
+  overload: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WritePerMaterialCBuffer*
+  implements:
+  - JBooth.MicroSplat.IRenderLoopAdapter.WritePerMaterialCBuffer(System.String[],System.Text.StringBuilder,System.Boolean)
+  nameWithType.vb: UnityLDRenderLoopAdapter.WritePerMaterialCBuffer(String(), StringBuilder, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WritePerMaterialCBuffer(System.String(), System.Text.StringBuilder, System.Boolean)
+  name.vb: WritePerMaterialCBuffer(String(), StringBuilder, Boolean)
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteShaderFooter(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean,System.String)
+  commentId: M:JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteShaderFooter(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean,System.String)
+  id: WriteShaderFooter(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean,System.String)
+  parent: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  langs:
+  - csharp
+  - vb
+  name: WriteShaderFooter(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean, String)
+  nameWithType: UnityLDRenderLoopAdapter.WriteShaderFooter(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean, String)
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteShaderFooter(System.String[], System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Boolean, System.String)
+  type: Method
+  source:
+    id: WriteShaderFooter
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 122
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public void WriteShaderFooter(string[] features, StringBuilder sb, MicroSplatShaderGUI.MicroSplatCompiler compiler, bool blend, string baseName)
+    parameters:
+    - id: features
+      type: System.String[]
+    - id: sb
+      type: System.Text.StringBuilder
+    - id: compiler
+      type: MicroSplatShaderGUI.MicroSplatCompiler
+    - id: blend
+      type: System.Boolean
+    - id: baseName
+      type: System.String
+    content.vb: Public Sub WriteShaderFooter(features As String(), sb As StringBuilder, compiler As MicroSplatShaderGUI.MicroSplatCompiler, blend As Boolean, baseName As String)
+  overload: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteShaderFooter*
+  implements:
+  - JBooth.MicroSplat.IRenderLoopAdapter.WriteShaderFooter(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean,System.String)
+  nameWithType.vb: UnityLDRenderLoopAdapter.WriteShaderFooter(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean, String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteShaderFooter(System.String(), System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Boolean, System.String)
+  name.vb: WriteShaderFooter(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean, String)
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.Init(System.String[])
+  commentId: M:JBooth.MicroSplat.UnityLDRenderLoopAdapter.Init(System.String[])
+  id: Init(System.String[])
+  parent: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  langs:
+  - csharp
+  - vb
+  name: Init(String[])
+  nameWithType: UnityLDRenderLoopAdapter.Init(String[])
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.Init(System.String[])
+  type: Method
+  source:
+    id: Init
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 143
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public void Init(string[] paths)
+    parameters:
+    - id: paths
+      type: System.String[]
+    content.vb: Public Sub Init(paths As String())
+  overload: JBooth.MicroSplat.UnityLDRenderLoopAdapter.Init*
+  implements:
+  - JBooth.MicroSplat.IRenderLoopAdapter.Init(System.String[])
+  nameWithType.vb: UnityLDRenderLoopAdapter.Init(String())
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JBooth.MicroSplat.UnityLDRenderLoopAdapter.Init(System.String())
+  name.vb: Init(String())
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteProperties(System.String[],System.Text.StringBuilder,System.Boolean)
+  commentId: M:JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteProperties(System.String[],System.Text.StringBuilder,System.Boolean)
+  id: WriteProperties(System.String[],System.Text.StringBuilder,System.Boolean)
+  parent: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  langs:
+  - csharp
+  - vb
+  name: WriteProperties(String[], StringBuilder, Boolean)
+  nameWithType: UnityLDRenderLoopAdapter.WriteProperties(String[], StringBuilder, Boolean)
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteProperties(System.String[], System.Text.StringBuilder, System.Boolean)
+  type: Method
+  source:
+    id: WriteProperties
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 230
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public void WriteProperties(string[] features, StringBuilder sb, bool blend)
+    parameters:
+    - id: features
+      type: System.String[]
+    - id: sb
+      type: System.Text.StringBuilder
+    - id: blend
+      type: System.Boolean
+    content.vb: Public Sub WriteProperties(features As String(), sb As StringBuilder, blend As Boolean)
+  overload: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteProperties*
+  implements:
+  - JBooth.MicroSplat.IRenderLoopAdapter.WriteProperties(System.String[],System.Text.StringBuilder,System.Boolean)
+  nameWithType.vb: UnityLDRenderLoopAdapter.WriteProperties(String(), StringBuilder, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteProperties(System.String(), System.Text.StringBuilder, System.Boolean)
+  name.vb: WriteProperties(String(), StringBuilder, Boolean)
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.PostProcessShader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean)
+  commentId: M:JBooth.MicroSplat.UnityLDRenderLoopAdapter.PostProcessShader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean)
+  id: PostProcessShader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean)
+  parent: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  langs:
+  - csharp
+  - vb
+  name: PostProcessShader(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean)
+  nameWithType: UnityLDRenderLoopAdapter.PostProcessShader(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean)
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.PostProcessShader(System.String[], System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Boolean)
+  type: Method
+  source:
+    id: PostProcessShader
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 235
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public void PostProcessShader(string[] features, StringBuilder sb, MicroSplatShaderGUI.MicroSplatCompiler compiler, bool blend)
+    parameters:
+    - id: features
+      type: System.String[]
+    - id: sb
+      type: System.Text.StringBuilder
+    - id: compiler
+      type: MicroSplatShaderGUI.MicroSplatCompiler
+    - id: blend
+      type: System.Boolean
+    content.vb: Public Sub PostProcessShader(features As String(), sb As StringBuilder, compiler As MicroSplatShaderGUI.MicroSplatCompiler, blend As Boolean)
+  overload: JBooth.MicroSplat.UnityLDRenderLoopAdapter.PostProcessShader*
+  implements:
+  - JBooth.MicroSplat.IRenderLoopAdapter.PostProcessShader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean)
+  nameWithType.vb: UnityLDRenderLoopAdapter.PostProcessShader(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JBooth.MicroSplat.UnityLDRenderLoopAdapter.PostProcessShader(System.String(), System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Boolean)
+  name.vb: PostProcessShader(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean)
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteSharedCode(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  commentId: M:JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteSharedCode(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  id: WriteSharedCode(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  parent: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  langs:
+  - csharp
+  - vb
+  name: WriteSharedCode(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  nameWithType: UnityLDRenderLoopAdapter.WriteSharedCode(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteSharedCode(System.String[], System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  type: Method
+  source:
+    id: WriteSharedCode
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 314
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public void WriteSharedCode(string[] features, StringBuilder sb, MicroSplatShaderGUI.MicroSplatCompiler compiler, int pass, bool blend)
+    parameters:
+    - id: features
+      type: System.String[]
+    - id: sb
+      type: System.Text.StringBuilder
+    - id: compiler
+      type: MicroSplatShaderGUI.MicroSplatCompiler
+    - id: pass
+      type: System.Int32
+    - id: blend
+      type: System.Boolean
+    content.vb: Public Sub WriteSharedCode(features As String(), sb As StringBuilder, compiler As MicroSplatShaderGUI.MicroSplatCompiler, pass As Integer, blend As Boolean)
+  overload: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteSharedCode*
+  implements:
+  - JBooth.MicroSplat.IRenderLoopAdapter.WriteSharedCode(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  nameWithType.vb: UnityLDRenderLoopAdapter.WriteSharedCode(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteSharedCode(System.String(), System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  name.vb: WriteSharedCode(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteTerrainBody(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  commentId: M:JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteTerrainBody(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  id: WriteTerrainBody(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  parent: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  langs:
+  - csharp
+  - vb
+  name: WriteTerrainBody(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  nameWithType: UnityLDRenderLoopAdapter.WriteTerrainBody(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteTerrainBody(System.String[], System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  type: Method
+  source:
+    id: WriteTerrainBody
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 326
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public void WriteTerrainBody(string[] features, StringBuilder sb, MicroSplatShaderGUI.MicroSplatCompiler compiler, int pass, bool blend)
+    parameters:
+    - id: features
+      type: System.String[]
+    - id: sb
+      type: System.Text.StringBuilder
+    - id: compiler
+      type: MicroSplatShaderGUI.MicroSplatCompiler
+    - id: pass
+      type: System.Int32
+    - id: blend
+      type: System.Boolean
+    content.vb: Public Sub WriteTerrainBody(features As String(), sb As StringBuilder, compiler As MicroSplatShaderGUI.MicroSplatCompiler, pass As Integer, blend As Boolean)
+  overload: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteTerrainBody*
+  implements:
+  - JBooth.MicroSplat.IRenderLoopAdapter.WriteTerrainBody(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  nameWithType.vb: UnityLDRenderLoopAdapter.WriteTerrainBody(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteTerrainBody(System.String(), System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  name.vb: WriteTerrainBody(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetPassType(System.Int32)
+  commentId: M:JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetPassType(System.Int32)
+  id: GetPassType(System.Int32)
+  parent: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  langs:
+  - csharp
+  - vb
+  name: GetPassType(Int32)
+  nameWithType: UnityLDRenderLoopAdapter.GetPassType(Int32)
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetPassType(System.Int32)
+  type: Method
+  source:
+    id: GetPassType
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 332
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public MicroSplatShaderGUI.PassType GetPassType(int i)
+    parameters:
+    - id: i
+      type: System.Int32
+    return:
+      type: MicroSplatShaderGUI.PassType
+    content.vb: Public Function GetPassType(i As Integer) As MicroSplatShaderGUI.PassType
+  overload: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetPassType*
+  implements:
+  - JBooth.MicroSplat.IRenderLoopAdapter.GetPassType(System.Int32)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetVersion
+  commentId: M:JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetVersion
+  id: GetVersion
+  parent: JBooth.MicroSplat.UnityLDRenderLoopAdapter
+  langs:
+  - csharp
+  - vb
+  name: GetVersion()
+  nameWithType: UnityLDRenderLoopAdapter.GetVersion()
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetVersion()
+  type: Method
+  source:
+    id: GetVersion
+    path: B:\Games\Elavad\Assets\MicroSplat\CoreLD\Scripts\Editor\UnityLDRenderLoopAdapter.cs
+    startLine: 337
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public string GetVersion()
+    return:
+      type: System.String
+    content.vb: Public Function GetVersion As String
+  overload: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetVersion*
+  implements:
+  - JBooth.MicroSplat.IRenderLoopAdapter.GetVersion
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: JBooth.MicroSplat.IRenderLoopAdapter
+  commentId: T:JBooth.MicroSplat.IRenderLoopAdapter
+  parent: JBooth.MicroSplat
+  name: IRenderLoopAdapter
+  nameWithType: IRenderLoopAdapter
+  fullName: JBooth.MicroSplat.IRenderLoopAdapter
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.OnPostprocessScene*
+  commentId: Overload:JBooth.MicroSplat.UnityLDRenderLoopAdapter.OnPostprocessScene
+  name: OnPostprocessScene
+  nameWithType: UnityLDRenderLoopAdapter.OnPostprocessScene
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.OnPostprocessScene
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetDisplayName*
+  commentId: Overload:JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetDisplayName
+  name: GetDisplayName
+  nameWithType: UnityLDRenderLoopAdapter.GetDisplayName
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetDisplayName
+- uid: JBooth.MicroSplat.IRenderLoopAdapter.GetDisplayName
+  commentId: M:JBooth.MicroSplat.IRenderLoopAdapter.GetDisplayName
+  parent: JBooth.MicroSplat.IRenderLoopAdapter
+  name: GetDisplayName()
+  nameWithType: IRenderLoopAdapter.GetDisplayName()
+  fullName: JBooth.MicroSplat.IRenderLoopAdapter.GetDisplayName()
+  spec.csharp:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.GetDisplayName
+    name: GetDisplayName
+    nameWithType: IRenderLoopAdapter.GetDisplayName
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.GetDisplayName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.GetDisplayName
+    name: GetDisplayName
+    nameWithType: IRenderLoopAdapter.GetDisplayName
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.GetDisplayName
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetRenderLoopKeyword*
+  commentId: Overload:JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetRenderLoopKeyword
+  name: GetRenderLoopKeyword
+  nameWithType: UnityLDRenderLoopAdapter.GetRenderLoopKeyword
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetRenderLoopKeyword
+- uid: JBooth.MicroSplat.IRenderLoopAdapter.GetRenderLoopKeyword
+  commentId: M:JBooth.MicroSplat.IRenderLoopAdapter.GetRenderLoopKeyword
+  parent: JBooth.MicroSplat.IRenderLoopAdapter
+  name: GetRenderLoopKeyword()
+  nameWithType: IRenderLoopAdapter.GetRenderLoopKeyword()
+  fullName: JBooth.MicroSplat.IRenderLoopAdapter.GetRenderLoopKeyword()
+  spec.csharp:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.GetRenderLoopKeyword
+    name: GetRenderLoopKeyword
+    nameWithType: IRenderLoopAdapter.GetRenderLoopKeyword
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.GetRenderLoopKeyword
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.GetRenderLoopKeyword
+    name: GetRenderLoopKeyword
+    nameWithType: IRenderLoopAdapter.GetRenderLoopKeyword
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.GetRenderLoopKeyword
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetNumPasses*
+  commentId: Overload:JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetNumPasses
+  name: GetNumPasses
+  nameWithType: UnityLDRenderLoopAdapter.GetNumPasses
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetNumPasses
+- uid: JBooth.MicroSplat.IRenderLoopAdapter.GetNumPasses
+  commentId: M:JBooth.MicroSplat.IRenderLoopAdapter.GetNumPasses
+  parent: JBooth.MicroSplat.IRenderLoopAdapter
+  name: GetNumPasses()
+  nameWithType: IRenderLoopAdapter.GetNumPasses()
+  fullName: JBooth.MicroSplat.IRenderLoopAdapter.GetNumPasses()
+  spec.csharp:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.GetNumPasses
+    name: GetNumPasses
+    nameWithType: IRenderLoopAdapter.GetNumPasses
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.GetNumPasses
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.GetNumPasses
+    name: GetNumPasses
+    nameWithType: IRenderLoopAdapter.GetNumPasses
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.GetNumPasses
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteShaderHeader*
+  commentId: Overload:JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteShaderHeader
+  name: WriteShaderHeader
+  nameWithType: UnityLDRenderLoopAdapter.WriteShaderHeader
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteShaderHeader
+- uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteShaderHeader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean)
+  commentId: M:JBooth.MicroSplat.IRenderLoopAdapter.WriteShaderHeader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean)
+  parent: JBooth.MicroSplat.IRenderLoopAdapter
+  isExternal: true
+  name: WriteShaderHeader(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean)
+  nameWithType: IRenderLoopAdapter.WriteShaderHeader(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean)
+  fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteShaderHeader(System.String[], System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Boolean)
+  nameWithType.vb: IRenderLoopAdapter.WriteShaderHeader(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean)
+  fullName.vb: JBooth.MicroSplat.IRenderLoopAdapter.WriteShaderHeader(System.String(), System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Boolean)
+  name.vb: WriteShaderHeader(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean)
+  spec.csharp:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteShaderHeader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean)
+    name: WriteShaderHeader
+    nameWithType: IRenderLoopAdapter.WriteShaderHeader
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteShaderHeader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MicroSplatShaderGUI.MicroSplatCompiler
+    name: MicroSplatShaderGUI.MicroSplatCompiler
+    nameWithType: MicroSplatShaderGUI.MicroSplatCompiler
+    fullName: MicroSplatShaderGUI.MicroSplatCompiler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteShaderHeader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean)
+    name: WriteShaderHeader
+    nameWithType: IRenderLoopAdapter.WriteShaderHeader
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteShaderHeader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MicroSplatShaderGUI.MicroSplatCompiler
+    name: MicroSplatShaderGUI.MicroSplatCompiler
+    nameWithType: MicroSplatShaderGUI.MicroSplatCompiler
+    fullName: MicroSplatShaderGUI.MicroSplatCompiler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: MicroSplatShaderGUI.MicroSplatCompiler
+  commentId: T:MicroSplatShaderGUI.MicroSplatCompiler
+  name: MicroSplatShaderGUI.MicroSplatCompiler
+  nameWithType: MicroSplatShaderGUI.MicroSplatCompiler
+  fullName: MicroSplatShaderGUI.MicroSplatCompiler
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.UseReplaceMethods*
+  commentId: Overload:JBooth.MicroSplat.UnityLDRenderLoopAdapter.UseReplaceMethods
+  name: UseReplaceMethods
+  nameWithType: UnityLDRenderLoopAdapter.UseReplaceMethods
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.UseReplaceMethods
+- uid: JBooth.MicroSplat.IRenderLoopAdapter.UseReplaceMethods
+  commentId: M:JBooth.MicroSplat.IRenderLoopAdapter.UseReplaceMethods
+  parent: JBooth.MicroSplat.IRenderLoopAdapter
+  name: UseReplaceMethods()
+  nameWithType: IRenderLoopAdapter.UseReplaceMethods()
+  fullName: JBooth.MicroSplat.IRenderLoopAdapter.UseReplaceMethods()
+  spec.csharp:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.UseReplaceMethods
+    name: UseReplaceMethods
+    nameWithType: IRenderLoopAdapter.UseReplaceMethods
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.UseReplaceMethods
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.UseReplaceMethods
+    name: UseReplaceMethods
+    nameWithType: IRenderLoopAdapter.UseReplaceMethods
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.UseReplaceMethods
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WritePassHeader*
+  commentId: Overload:JBooth.MicroSplat.UnityLDRenderLoopAdapter.WritePassHeader
+  name: WritePassHeader
+  nameWithType: UnityLDRenderLoopAdapter.WritePassHeader
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WritePassHeader
+- uid: JBooth.MicroSplat.IRenderLoopAdapter.WritePassHeader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  commentId: M:JBooth.MicroSplat.IRenderLoopAdapter.WritePassHeader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  parent: JBooth.MicroSplat.IRenderLoopAdapter
+  isExternal: true
+  name: WritePassHeader(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  nameWithType: IRenderLoopAdapter.WritePassHeader(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  fullName: JBooth.MicroSplat.IRenderLoopAdapter.WritePassHeader(System.String[], System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  nameWithType.vb: IRenderLoopAdapter.WritePassHeader(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  fullName.vb: JBooth.MicroSplat.IRenderLoopAdapter.WritePassHeader(System.String(), System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  name.vb: WritePassHeader(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  spec.csharp:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.WritePassHeader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+    name: WritePassHeader
+    nameWithType: IRenderLoopAdapter.WritePassHeader
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.WritePassHeader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MicroSplatShaderGUI.MicroSplatCompiler
+    name: MicroSplatShaderGUI.MicroSplatCompiler
+    nameWithType: MicroSplatShaderGUI.MicroSplatCompiler
+    fullName: MicroSplatShaderGUI.MicroSplatCompiler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.WritePassHeader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+    name: WritePassHeader
+    nameWithType: IRenderLoopAdapter.WritePassHeader
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.WritePassHeader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MicroSplatShaderGUI.MicroSplatCompiler
+    name: MicroSplatShaderGUI.MicroSplatCompiler
+    nameWithType: MicroSplatShaderGUI.MicroSplatCompiler
+    fullName: MicroSplatShaderGUI.MicroSplatCompiler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteVertexFunction*
+  commentId: Overload:JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteVertexFunction
+  name: WriteVertexFunction
+  nameWithType: UnityLDRenderLoopAdapter.WriteVertexFunction
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteVertexFunction
+- uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteVertexFunction(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  commentId: M:JBooth.MicroSplat.IRenderLoopAdapter.WriteVertexFunction(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  parent: JBooth.MicroSplat.IRenderLoopAdapter
+  isExternal: true
+  name: WriteVertexFunction(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  nameWithType: IRenderLoopAdapter.WriteVertexFunction(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteVertexFunction(System.String[], System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  nameWithType.vb: IRenderLoopAdapter.WriteVertexFunction(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  fullName.vb: JBooth.MicroSplat.IRenderLoopAdapter.WriteVertexFunction(System.String(), System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  name.vb: WriteVertexFunction(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  spec.csharp:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteVertexFunction(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+    name: WriteVertexFunction
+    nameWithType: IRenderLoopAdapter.WriteVertexFunction
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteVertexFunction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MicroSplatShaderGUI.MicroSplatCompiler
+    name: MicroSplatShaderGUI.MicroSplatCompiler
+    nameWithType: MicroSplatShaderGUI.MicroSplatCompiler
+    fullName: MicroSplatShaderGUI.MicroSplatCompiler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteVertexFunction(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+    name: WriteVertexFunction
+    nameWithType: IRenderLoopAdapter.WriteVertexFunction
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteVertexFunction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MicroSplatShaderGUI.MicroSplatCompiler
+    name: MicroSplatShaderGUI.MicroSplatCompiler
+    nameWithType: MicroSplatShaderGUI.MicroSplatCompiler
+    fullName: MicroSplatShaderGUI.MicroSplatCompiler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteFragmentFunction*
+  commentId: Overload:JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteFragmentFunction
+  name: WriteFragmentFunction
+  nameWithType: UnityLDRenderLoopAdapter.WriteFragmentFunction
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteFragmentFunction
+- uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteFragmentFunction(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  commentId: M:JBooth.MicroSplat.IRenderLoopAdapter.WriteFragmentFunction(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  parent: JBooth.MicroSplat.IRenderLoopAdapter
+  isExternal: true
+  name: WriteFragmentFunction(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  nameWithType: IRenderLoopAdapter.WriteFragmentFunction(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteFragmentFunction(System.String[], System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  nameWithType.vb: IRenderLoopAdapter.WriteFragmentFunction(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  fullName.vb: JBooth.MicroSplat.IRenderLoopAdapter.WriteFragmentFunction(System.String(), System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  name.vb: WriteFragmentFunction(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  spec.csharp:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteFragmentFunction(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+    name: WriteFragmentFunction
+    nameWithType: IRenderLoopAdapter.WriteFragmentFunction
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteFragmentFunction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MicroSplatShaderGUI.MicroSplatCompiler
+    name: MicroSplatShaderGUI.MicroSplatCompiler
+    nameWithType: MicroSplatShaderGUI.MicroSplatCompiler
+    fullName: MicroSplatShaderGUI.MicroSplatCompiler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteFragmentFunction(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+    name: WriteFragmentFunction
+    nameWithType: IRenderLoopAdapter.WriteFragmentFunction
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteFragmentFunction
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MicroSplatShaderGUI.MicroSplatCompiler
+    name: MicroSplatShaderGUI.MicroSplatCompiler
+    nameWithType: MicroSplatShaderGUI.MicroSplatCompiler
+    fullName: MicroSplatShaderGUI.MicroSplatCompiler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WritePerMaterialCBuffer*
+  commentId: Overload:JBooth.MicroSplat.UnityLDRenderLoopAdapter.WritePerMaterialCBuffer
+  name: WritePerMaterialCBuffer
+  nameWithType: UnityLDRenderLoopAdapter.WritePerMaterialCBuffer
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WritePerMaterialCBuffer
+- uid: JBooth.MicroSplat.IRenderLoopAdapter.WritePerMaterialCBuffer(System.String[],System.Text.StringBuilder,System.Boolean)
+  commentId: M:JBooth.MicroSplat.IRenderLoopAdapter.WritePerMaterialCBuffer(System.String[],System.Text.StringBuilder,System.Boolean)
+  parent: JBooth.MicroSplat.IRenderLoopAdapter
+  isExternal: true
+  name: WritePerMaterialCBuffer(String[], StringBuilder, Boolean)
+  nameWithType: IRenderLoopAdapter.WritePerMaterialCBuffer(String[], StringBuilder, Boolean)
+  fullName: JBooth.MicroSplat.IRenderLoopAdapter.WritePerMaterialCBuffer(System.String[], System.Text.StringBuilder, System.Boolean)
+  nameWithType.vb: IRenderLoopAdapter.WritePerMaterialCBuffer(String(), StringBuilder, Boolean)
+  fullName.vb: JBooth.MicroSplat.IRenderLoopAdapter.WritePerMaterialCBuffer(System.String(), System.Text.StringBuilder, System.Boolean)
+  name.vb: WritePerMaterialCBuffer(String(), StringBuilder, Boolean)
+  spec.csharp:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.WritePerMaterialCBuffer(System.String[],System.Text.StringBuilder,System.Boolean)
+    name: WritePerMaterialCBuffer
+    nameWithType: IRenderLoopAdapter.WritePerMaterialCBuffer
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.WritePerMaterialCBuffer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.WritePerMaterialCBuffer(System.String[],System.Text.StringBuilder,System.Boolean)
+    name: WritePerMaterialCBuffer
+    nameWithType: IRenderLoopAdapter.WritePerMaterialCBuffer
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.WritePerMaterialCBuffer
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteShaderFooter*
+  commentId: Overload:JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteShaderFooter
+  name: WriteShaderFooter
+  nameWithType: UnityLDRenderLoopAdapter.WriteShaderFooter
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteShaderFooter
+- uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteShaderFooter(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean,System.String)
+  commentId: M:JBooth.MicroSplat.IRenderLoopAdapter.WriteShaderFooter(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean,System.String)
+  parent: JBooth.MicroSplat.IRenderLoopAdapter
+  isExternal: true
+  name: WriteShaderFooter(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean, String)
+  nameWithType: IRenderLoopAdapter.WriteShaderFooter(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean, String)
+  fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteShaderFooter(System.String[], System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Boolean, System.String)
+  nameWithType.vb: IRenderLoopAdapter.WriteShaderFooter(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean, String)
+  fullName.vb: JBooth.MicroSplat.IRenderLoopAdapter.WriteShaderFooter(System.String(), System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Boolean, System.String)
+  name.vb: WriteShaderFooter(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean, String)
+  spec.csharp:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteShaderFooter(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean,System.String)
+    name: WriteShaderFooter
+    nameWithType: IRenderLoopAdapter.WriteShaderFooter
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteShaderFooter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MicroSplatShaderGUI.MicroSplatCompiler
+    name: MicroSplatShaderGUI.MicroSplatCompiler
+    nameWithType: MicroSplatShaderGUI.MicroSplatCompiler
+    fullName: MicroSplatShaderGUI.MicroSplatCompiler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteShaderFooter(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean,System.String)
+    name: WriteShaderFooter
+    nameWithType: IRenderLoopAdapter.WriteShaderFooter
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteShaderFooter
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MicroSplatShaderGUI.MicroSplatCompiler
+    name: MicroSplatShaderGUI.MicroSplatCompiler
+    nameWithType: MicroSplatShaderGUI.MicroSplatCompiler
+    fullName: MicroSplatShaderGUI.MicroSplatCompiler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.Init*
+  commentId: Overload:JBooth.MicroSplat.UnityLDRenderLoopAdapter.Init
+  name: Init
+  nameWithType: UnityLDRenderLoopAdapter.Init
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.Init
+- uid: JBooth.MicroSplat.IRenderLoopAdapter.Init(System.String[])
+  commentId: M:JBooth.MicroSplat.IRenderLoopAdapter.Init(System.String[])
+  parent: JBooth.MicroSplat.IRenderLoopAdapter
+  isExternal: true
+  name: Init(String[])
+  nameWithType: IRenderLoopAdapter.Init(String[])
+  fullName: JBooth.MicroSplat.IRenderLoopAdapter.Init(System.String[])
+  nameWithType.vb: IRenderLoopAdapter.Init(String())
+  fullName.vb: JBooth.MicroSplat.IRenderLoopAdapter.Init(System.String())
+  name.vb: Init(String())
+  spec.csharp:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.Init(System.String[])
+    name: Init
+    nameWithType: IRenderLoopAdapter.Init
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.Init(System.String[])
+    name: Init
+    nameWithType: IRenderLoopAdapter.Init
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.Init
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteProperties*
+  commentId: Overload:JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteProperties
+  name: WriteProperties
+  nameWithType: UnityLDRenderLoopAdapter.WriteProperties
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteProperties
+- uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteProperties(System.String[],System.Text.StringBuilder,System.Boolean)
+  commentId: M:JBooth.MicroSplat.IRenderLoopAdapter.WriteProperties(System.String[],System.Text.StringBuilder,System.Boolean)
+  parent: JBooth.MicroSplat.IRenderLoopAdapter
+  isExternal: true
+  name: WriteProperties(String[], StringBuilder, Boolean)
+  nameWithType: IRenderLoopAdapter.WriteProperties(String[], StringBuilder, Boolean)
+  fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteProperties(System.String[], System.Text.StringBuilder, System.Boolean)
+  nameWithType.vb: IRenderLoopAdapter.WriteProperties(String(), StringBuilder, Boolean)
+  fullName.vb: JBooth.MicroSplat.IRenderLoopAdapter.WriteProperties(System.String(), System.Text.StringBuilder, System.Boolean)
+  name.vb: WriteProperties(String(), StringBuilder, Boolean)
+  spec.csharp:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteProperties(System.String[],System.Text.StringBuilder,System.Boolean)
+    name: WriteProperties
+    nameWithType: IRenderLoopAdapter.WriteProperties
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteProperties
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteProperties(System.String[],System.Text.StringBuilder,System.Boolean)
+    name: WriteProperties
+    nameWithType: IRenderLoopAdapter.WriteProperties
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteProperties
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.PostProcessShader*
+  commentId: Overload:JBooth.MicroSplat.UnityLDRenderLoopAdapter.PostProcessShader
+  name: PostProcessShader
+  nameWithType: UnityLDRenderLoopAdapter.PostProcessShader
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.PostProcessShader
+- uid: JBooth.MicroSplat.IRenderLoopAdapter.PostProcessShader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean)
+  commentId: M:JBooth.MicroSplat.IRenderLoopAdapter.PostProcessShader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean)
+  parent: JBooth.MicroSplat.IRenderLoopAdapter
+  isExternal: true
+  name: PostProcessShader(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean)
+  nameWithType: IRenderLoopAdapter.PostProcessShader(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean)
+  fullName: JBooth.MicroSplat.IRenderLoopAdapter.PostProcessShader(System.String[], System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Boolean)
+  nameWithType.vb: IRenderLoopAdapter.PostProcessShader(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean)
+  fullName.vb: JBooth.MicroSplat.IRenderLoopAdapter.PostProcessShader(System.String(), System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Boolean)
+  name.vb: PostProcessShader(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Boolean)
+  spec.csharp:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.PostProcessShader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean)
+    name: PostProcessShader
+    nameWithType: IRenderLoopAdapter.PostProcessShader
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.PostProcessShader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MicroSplatShaderGUI.MicroSplatCompiler
+    name: MicroSplatShaderGUI.MicroSplatCompiler
+    nameWithType: MicroSplatShaderGUI.MicroSplatCompiler
+    fullName: MicroSplatShaderGUI.MicroSplatCompiler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.PostProcessShader(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Boolean)
+    name: PostProcessShader
+    nameWithType: IRenderLoopAdapter.PostProcessShader
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.PostProcessShader
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MicroSplatShaderGUI.MicroSplatCompiler
+    name: MicroSplatShaderGUI.MicroSplatCompiler
+    nameWithType: MicroSplatShaderGUI.MicroSplatCompiler
+    fullName: MicroSplatShaderGUI.MicroSplatCompiler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteSharedCode*
+  commentId: Overload:JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteSharedCode
+  name: WriteSharedCode
+  nameWithType: UnityLDRenderLoopAdapter.WriteSharedCode
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteSharedCode
+- uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteSharedCode(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  commentId: M:JBooth.MicroSplat.IRenderLoopAdapter.WriteSharedCode(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  parent: JBooth.MicroSplat.IRenderLoopAdapter
+  isExternal: true
+  name: WriteSharedCode(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  nameWithType: IRenderLoopAdapter.WriteSharedCode(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteSharedCode(System.String[], System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  nameWithType.vb: IRenderLoopAdapter.WriteSharedCode(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  fullName.vb: JBooth.MicroSplat.IRenderLoopAdapter.WriteSharedCode(System.String(), System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  name.vb: WriteSharedCode(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  spec.csharp:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteSharedCode(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+    name: WriteSharedCode
+    nameWithType: IRenderLoopAdapter.WriteSharedCode
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteSharedCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MicroSplatShaderGUI.MicroSplatCompiler
+    name: MicroSplatShaderGUI.MicroSplatCompiler
+    nameWithType: MicroSplatShaderGUI.MicroSplatCompiler
+    fullName: MicroSplatShaderGUI.MicroSplatCompiler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteSharedCode(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+    name: WriteSharedCode
+    nameWithType: IRenderLoopAdapter.WriteSharedCode
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteSharedCode
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MicroSplatShaderGUI.MicroSplatCompiler
+    name: MicroSplatShaderGUI.MicroSplatCompiler
+    nameWithType: MicroSplatShaderGUI.MicroSplatCompiler
+    fullName: MicroSplatShaderGUI.MicroSplatCompiler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteTerrainBody*
+  commentId: Overload:JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteTerrainBody
+  name: WriteTerrainBody
+  nameWithType: UnityLDRenderLoopAdapter.WriteTerrainBody
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.WriteTerrainBody
+- uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteTerrainBody(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  commentId: M:JBooth.MicroSplat.IRenderLoopAdapter.WriteTerrainBody(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+  parent: JBooth.MicroSplat.IRenderLoopAdapter
+  isExternal: true
+  name: WriteTerrainBody(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  nameWithType: IRenderLoopAdapter.WriteTerrainBody(String[], StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteTerrainBody(System.String[], System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  nameWithType.vb: IRenderLoopAdapter.WriteTerrainBody(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  fullName.vb: JBooth.MicroSplat.IRenderLoopAdapter.WriteTerrainBody(System.String(), System.Text.StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, System.Int32, System.Boolean)
+  name.vb: WriteTerrainBody(String(), StringBuilder, MicroSplatShaderGUI.MicroSplatCompiler, Int32, Boolean)
+  spec.csharp:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteTerrainBody(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+    name: WriteTerrainBody
+    nameWithType: IRenderLoopAdapter.WriteTerrainBody
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteTerrainBody
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MicroSplatShaderGUI.MicroSplatCompiler
+    name: MicroSplatShaderGUI.MicroSplatCompiler
+    nameWithType: MicroSplatShaderGUI.MicroSplatCompiler
+    fullName: MicroSplatShaderGUI.MicroSplatCompiler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.WriteTerrainBody(System.String[],System.Text.StringBuilder,MicroSplatShaderGUI.MicroSplatCompiler,System.Int32,System.Boolean)
+    name: WriteTerrainBody
+    nameWithType: IRenderLoopAdapter.WriteTerrainBody
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.WriteTerrainBody
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Text.StringBuilder
+    name: StringBuilder
+    nameWithType: StringBuilder
+    fullName: System.Text.StringBuilder
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: MicroSplatShaderGUI.MicroSplatCompiler
+    name: MicroSplatShaderGUI.MicroSplatCompiler
+    nameWithType: MicroSplatShaderGUI.MicroSplatCompiler
+    fullName: MicroSplatShaderGUI.MicroSplatCompiler
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetPassType*
+  commentId: Overload:JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetPassType
+  name: GetPassType
+  nameWithType: UnityLDRenderLoopAdapter.GetPassType
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetPassType
+- uid: JBooth.MicroSplat.IRenderLoopAdapter.GetPassType(System.Int32)
+  commentId: M:JBooth.MicroSplat.IRenderLoopAdapter.GetPassType(System.Int32)
+  parent: JBooth.MicroSplat.IRenderLoopAdapter
+  isExternal: true
+  name: GetPassType(Int32)
+  nameWithType: IRenderLoopAdapter.GetPassType(Int32)
+  fullName: JBooth.MicroSplat.IRenderLoopAdapter.GetPassType(System.Int32)
+  spec.csharp:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.GetPassType(System.Int32)
+    name: GetPassType
+    nameWithType: IRenderLoopAdapter.GetPassType
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.GetPassType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.GetPassType(System.Int32)
+    name: GetPassType
+    nameWithType: IRenderLoopAdapter.GetPassType
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.GetPassType
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Int32
+    name: Int32
+    nameWithType: Int32
+    fullName: System.Int32
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MicroSplatShaderGUI.PassType
+  commentId: T:MicroSplatShaderGUI.PassType
+  name: MicroSplatShaderGUI.PassType
+  nameWithType: MicroSplatShaderGUI.PassType
+  fullName: MicroSplatShaderGUI.PassType
+- uid: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetVersion*
+  commentId: Overload:JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetVersion
+  name: GetVersion
+  nameWithType: UnityLDRenderLoopAdapter.GetVersion
+  fullName: JBooth.MicroSplat.UnityLDRenderLoopAdapter.GetVersion
+- uid: JBooth.MicroSplat.IRenderLoopAdapter.GetVersion
+  commentId: M:JBooth.MicroSplat.IRenderLoopAdapter.GetVersion
+  parent: JBooth.MicroSplat.IRenderLoopAdapter
+  name: GetVersion()
+  nameWithType: IRenderLoopAdapter.GetVersion()
+  fullName: JBooth.MicroSplat.IRenderLoopAdapter.GetVersion()
+  spec.csharp:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.GetVersion
+    name: GetVersion
+    nameWithType: IRenderLoopAdapter.GetVersion
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.GetVersion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: JBooth.MicroSplat.IRenderLoopAdapter.GetVersion
+    name: GetVersion
+    nameWithType: IRenderLoopAdapter.GetVersion
+    fullName: JBooth.MicroSplat.IRenderLoopAdapter.GetVersion
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )

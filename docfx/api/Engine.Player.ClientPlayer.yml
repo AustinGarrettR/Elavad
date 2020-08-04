@@ -14,12 +14,8 @@ items:
   fullName: Engine.Player.ClientPlayer
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Player/ClientPlayer.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ClientPlayer
-    path: ../Assets/Engine/Player/ClientPlayer.cs
+    path: B:\Games\Elavad\Assets\Engine\Player\ClientPlayer.cs
     startLine: 7
   assemblies:
   - Engine.Player
@@ -57,12 +53,8 @@ items:
   fullName: Engine.Player.ClientPlayer.GetPlayerObject()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Player/ClientPlayer.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: GetPlayerObject
-    path: ../Assets/Engine/Player/ClientPlayer.cs
+    path: B:\Games\Elavad\Assets\Engine\Player\ClientPlayer.cs
     startLine: 84
   assemblies:
   - Engine.Player

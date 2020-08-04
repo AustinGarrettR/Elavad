@@ -15,12 +15,8 @@ items:
   fullName: Engine.Utility.TimeHandler
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Utility/TimeHandler.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: TimeHandler
-    path: ../Assets/Engine/Utility/TimeHandler.cs
+    path: B:\Games\Elavad\Assets\Engine\Utility\TimeHandler.cs
     startLine: 7
   assemblies:
   - Engine.Utility
@@ -58,12 +54,8 @@ items:
   fullName: Engine.Utility.TimeHandler.getTimeInMilliseconds()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Utility/TimeHandler.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: getTimeInMilliseconds
-    path: ../Assets/Engine/Utility/TimeHandler.cs
+    path: B:\Games\Elavad\Assets\Engine\Utility\TimeHandler.cs
     startLine: 13
   assemblies:
   - Engine.Utility
@@ -95,12 +87,8 @@ items:
   fullName: Engine.Utility.TimeHandler.getMinute()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Utility/TimeHandler.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: getMinute
-    path: ../Assets/Engine/Utility/TimeHandler.cs
+    path: B:\Games\Elavad\Assets\Engine\Utility\TimeHandler.cs
     startLine: 22
   assemblies:
   - Engine.Utility

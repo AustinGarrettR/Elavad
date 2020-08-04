@@ -18,12 +18,8 @@ items:
   fullName: Engine.Asset.ClientAssetManager
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Asset/ClientAssetManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ClientAssetManager
-    path: ../Assets/Engine/Asset/ClientAssetManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Asset\ClientAssetManager.cs
     startLine: 10
   assemblies:
   - Engine.Asset
@@ -34,7 +30,6 @@ items:
     content: 'public class ClientAssetManager : Manager'
     content.vb: >-
       Public Class ClientAssetManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -66,12 +61,8 @@ items:
   fullName: Engine.Asset.ClientAssetManager.Init()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Asset/ClientAssetManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Init
-    path: ../Assets/Engine/Asset/ClientAssetManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Asset\ClientAssetManager.cs
     startLine: 19
   assemblies:
   - Engine.Asset
@@ -101,12 +92,8 @@ items:
   fullName: Engine.Asset.ClientAssetManager.Shutdown()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Asset/ClientAssetManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
-    path: ../Assets/Engine/Asset/ClientAssetManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Asset\ClientAssetManager.cs
     startLine: 33
   assemblies:
   - Engine.Asset
@@ -136,12 +123,8 @@ items:
   fullName: Engine.Asset.ClientAssetManager.Process()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Asset/ClientAssetManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Process
-    path: ../Assets/Engine/Asset/ClientAssetManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Asset\ClientAssetManager.cs
     startLine: 41
   assemblies:
   - Engine.Asset
@@ -171,12 +154,8 @@ items:
   fullName: Engine.Asset.ClientAssetManager.GetUIPanel(System.String)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Asset/ClientAssetManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: GetUIPanel
-    path: ../Assets/Engine/Asset/ClientAssetManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Asset\ClientAssetManager.cs
     startLine: 55
   assemblies:
   - Engine.Asset
@@ -210,12 +189,8 @@ items:
   fullName: Engine.Asset.ClientAssetManager.GetPlayerPrefab()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Asset/ClientAssetManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: GetPlayerPrefab
-    path: ../Assets/Engine/Asset/ClientAssetManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Asset\ClientAssetManager.cs
     startLine: 83
   assemblies:
   - Engine.Asset

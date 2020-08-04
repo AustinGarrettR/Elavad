@@ -19,12 +19,8 @@ items:
   fullName: Engine.Player.ClientPlayerManager
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Player/ClientPlayerManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ClientPlayerManager
-    path: ../Assets/Engine/Player/ClientPlayerManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Player\ClientPlayerManager.cs
     startLine: 19
   assemblies:
   - Engine.Player
@@ -35,7 +31,6 @@ items:
     content: 'public class ClientPlayerManager : Manager'
     content.vb: >-
       Public Class ClientPlayerManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -66,12 +61,8 @@ items:
   fullName: Engine.Player.ClientPlayerManager.ClientPlayerManager(Engine.Asset.ClientAssetManager, Engine.Networking.ConnectionManager)
   type: Constructor
   source:
-    remote:
-      path: Assets/Engine/Player/ClientPlayerManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: .ctor
-    path: ../Assets/Engine/Player/ClientPlayerManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Player\ClientPlayerManager.cs
     startLine: 30
   assemblies:
   - Engine.Player
@@ -104,12 +95,8 @@ items:
   fullName: Engine.Player.ClientPlayerManager.Init()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Player/ClientPlayerManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Init
-    path: ../Assets/Engine/Player/ClientPlayerManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Player\ClientPlayerManager.cs
     startLine: 44
   assemblies:
   - Engine.Player
@@ -139,12 +126,8 @@ items:
   fullName: Engine.Player.ClientPlayerManager.LoadGameTask(Engine.Loading.ClientLoadData)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Player/ClientPlayerManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: LoadGameTask
-    path: ../Assets/Engine/Player/ClientPlayerManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Player\ClientPlayerManager.cs
     startLine: 54
   assemblies:
   - Engine.Player
@@ -180,12 +163,8 @@ items:
   fullName: Engine.Player.ClientPlayerManager.Process()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Player/ClientPlayerManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Process
-    path: ../Assets/Engine/Player/ClientPlayerManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Player\ClientPlayerManager.cs
     startLine: 66
   assemblies:
   - Engine.Player
@@ -215,12 +194,8 @@ items:
   fullName: Engine.Player.ClientPlayerManager.Shutdown()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Player/ClientPlayerManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
-    path: ../Assets/Engine/Player/ClientPlayerManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Player\ClientPlayerManager.cs
     startLine: 79
   assemblies:
   - Engine.Player
@@ -250,12 +225,8 @@ items:
   fullName: Engine.Player.ClientPlayerManager.GetMyPlayer()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Player/ClientPlayerManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: GetMyPlayer
-    path: ../Assets/Engine/Player/ClientPlayerManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Player\ClientPlayerManager.cs
     startLine: 88
   assemblies:
   - Engine.Player

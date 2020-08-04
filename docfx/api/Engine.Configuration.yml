@@ -17,11 +17,6 @@ items:
   assemblies:
   - Engine.Configuration
 references:
-- uid: Engine.Configuration.ClientConfig
-  commentId: T:Engine.Configuration.ClientConfig
-  name: ClientConfig
-  nameWithType: ClientConfig
-  fullName: Engine.Configuration.ClientConfig
 - uid: Engine.Configuration.ServerConfig
   commentId: T:Engine.Configuration.ServerConfig
   name: ServerConfig
@@ -32,3 +27,8 @@ references:
   name: SharedConfig
   nameWithType: SharedConfig
   fullName: Engine.Configuration.SharedConfig
+- uid: Engine.Configuration.ClientConfig
+  commentId: T:Engine.Configuration.ClientConfig
+  name: ClientConfig
+  nameWithType: ClientConfig
+  fullName: Engine.Configuration.ClientConfig

@@ -29,28 +29,16 @@ references:
   name: ClientAssetManager
   nameWithType: ClientAssetManager
   fullName: Engine.Asset.ClientAssetManager
+- uid: Engine.Asset.SharedAssetPack
+  commentId: T:Engine.Asset.SharedAssetPack
+  name: SharedAssetPack
+  nameWithType: SharedAssetPack
+  fullName: Engine.Asset.SharedAssetPack
 - uid: Engine.Asset.ClientAssetPack
   commentId: T:Engine.Asset.ClientAssetPack
   name: ClientAssetPack
   nameWithType: ClientAssetPack
   fullName: Engine.Asset.ClientAssetPack
-- uid: Engine.Asset.ClientPlayerPack
-  commentId: T:Engine.Asset.ClientPlayerPack
-  parent: Engine.Asset
-  name: ClientPlayerPack
-  nameWithType: ClientPlayerPack
-  fullName: Engine.Asset.ClientPlayerPack
-- uid: Engine.Asset.ServerAssetManager
-  commentId: T:Engine.Asset.ServerAssetManager
-  parent: Engine.Asset
-  name: ServerAssetManager
-  nameWithType: ServerAssetManager
-  fullName: Engine.Asset.ServerAssetManager
-- uid: Engine.Asset.ServerAssetPack
-  commentId: T:Engine.Asset.ServerAssetPack
-  name: ServerAssetPack
-  nameWithType: ServerAssetPack
-  fullName: Engine.Asset.ServerAssetPack
 - uid: Engine.Asset.ServerPlayerPack
   commentId: T:Engine.Asset.ServerPlayerPack
   parent: Engine.Asset
@@ -62,11 +50,23 @@ references:
   name: SharedAssetManager
   nameWithType: SharedAssetManager
   fullName: Engine.Asset.SharedAssetManager
-- uid: Engine.Asset.SharedAssetPack
-  commentId: T:Engine.Asset.SharedAssetPack
-  name: SharedAssetPack
-  nameWithType: SharedAssetPack
-  fullName: Engine.Asset.SharedAssetPack
+- uid: Engine.Asset.ServerAssetManager
+  commentId: T:Engine.Asset.ServerAssetManager
+  parent: Engine.Asset
+  name: ServerAssetManager
+  nameWithType: ServerAssetManager
+  fullName: Engine.Asset.ServerAssetManager
+- uid: Engine.Asset.ClientPlayerPack
+  commentId: T:Engine.Asset.ClientPlayerPack
+  parent: Engine.Asset
+  name: ClientPlayerPack
+  nameWithType: ClientPlayerPack
+  fullName: Engine.Asset.ClientPlayerPack
+- uid: Engine.Asset.ServerAssetPack
+  commentId: T:Engine.Asset.ServerAssetPack
+  name: ServerAssetPack
+  nameWithType: ServerAssetPack
+  fullName: Engine.Asset.ServerAssetPack
 - uid: Engine.Asset.UIPack
   commentId: T:Engine.Asset.UIPack
   parent: Engine.Asset

@@ -14,12 +14,8 @@ items:
   fullName: Engine.Editor.PacketInfoEditor
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Editor/PacketInfoEditor.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: PacketInfoEditor
-    path: ../Assets/Engine/Editor/PacketInfoEditor.cs
+    path: B:\Games\Elavad\Assets\Engine\Editor\PacketInfoEditor.cs
     startLine: 14
   assemblies:
   - Engine.Editor
@@ -30,7 +26,6 @@ items:
     content: 'public class PacketInfoEditor : EditorWindow'
     content.vb: >-
       Public Class PacketInfoEditor
-
           Inherits EditorWindow
   inheritance:
   - System.Object
@@ -78,6 +73,7 @@ items:
   - UnityEditor.EditorWindow.GetWindowWithRect``1(UnityEngine.Rect,System.Boolean)
   - UnityEditor.EditorWindow.GetWindowWithRect``1(UnityEngine.Rect,System.Boolean,System.String)
   - UnityEditor.EditorWindow.GetWindowWithRect``1(UnityEngine.Rect,System.Boolean,System.String,System.Boolean)
+  - UnityEditor.EditorWindow.SaveChanges
   - UnityEditor.EditorWindow.Close
   - UnityEditor.EditorWindow.Repaint
   - UnityEditor.EditorWindow.SendEvent(UnityEngine.Event)
@@ -92,6 +88,8 @@ items:
   - UnityEditor.EditorWindow.docked
   - UnityEditor.EditorWindow.focusedWindow
   - UnityEditor.EditorWindow.mouseOverWindow
+  - UnityEditor.EditorWindow.hasUnsavedChanges
+  - UnityEditor.EditorWindow.saveChangesMessage
   - UnityEditor.EditorWindow.minSize
   - UnityEditor.EditorWindow.maxSize
   - UnityEditor.EditorWindow.title
@@ -159,12 +157,8 @@ items:
   fullName: Engine.Editor.PacketInfoEditor.ShowWindow()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Editor/PacketInfoEditor.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ShowWindow
-    path: ../Assets/Engine/Editor/PacketInfoEditor.cs
+    path: B:\Games\Elavad\Assets\Engine\Editor\PacketInfoEditor.cs
     startLine: 21
   assemblies:
   - Engine.Editor
@@ -2256,6 +2250,37 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: UnityEditor.EditorWindow.SaveChanges
+  commentId: M:UnityEditor.EditorWindow.SaveChanges
+  parent: UnityEditor.EditorWindow
+  isExternal: true
+  name: SaveChanges()
+  nameWithType: EditorWindow.SaveChanges()
+  fullName: UnityEditor.EditorWindow.SaveChanges()
+  spec.csharp:
+  - uid: UnityEditor.EditorWindow.SaveChanges
+    name: SaveChanges
+    nameWithType: EditorWindow.SaveChanges
+    fullName: UnityEditor.EditorWindow.SaveChanges
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: UnityEditor.EditorWindow.SaveChanges
+    name: SaveChanges
+    nameWithType: EditorWindow.SaveChanges
+    fullName: UnityEditor.EditorWindow.SaveChanges
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
 - uid: UnityEditor.EditorWindow.Close
   commentId: M:UnityEditor.EditorWindow.Close
   parent: UnityEditor.EditorWindow
@@ -2460,6 +2485,20 @@ references:
   name: mouseOverWindow
   nameWithType: EditorWindow.mouseOverWindow
   fullName: UnityEditor.EditorWindow.mouseOverWindow
+- uid: UnityEditor.EditorWindow.hasUnsavedChanges
+  commentId: P:UnityEditor.EditorWindow.hasUnsavedChanges
+  parent: UnityEditor.EditorWindow
+  isExternal: true
+  name: hasUnsavedChanges
+  nameWithType: EditorWindow.hasUnsavedChanges
+  fullName: UnityEditor.EditorWindow.hasUnsavedChanges
+- uid: UnityEditor.EditorWindow.saveChangesMessage
+  commentId: P:UnityEditor.EditorWindow.saveChangesMessage
+  parent: UnityEditor.EditorWindow
+  isExternal: true
+  name: saveChangesMessage
+  nameWithType: EditorWindow.saveChangesMessage
+  fullName: UnityEditor.EditorWindow.saveChangesMessage
 - uid: UnityEditor.EditorWindow.minSize
   commentId: P:UnityEditor.EditorWindow.minSize
   parent: UnityEditor.EditorWindow

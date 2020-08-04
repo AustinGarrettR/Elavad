@@ -1,0 +1,187 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+  id: TextureArrayConfig.AllTextureChannel
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.A
+  - JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.B
+  - JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.Custom
+  - JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.G
+  - JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.R
+  langs:
+  - csharp
+  - vb
+  name: TextureArrayConfig.AllTextureChannel
+  nameWithType: TextureArrayConfig.AllTextureChannel
+  fullName: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+  type: Enum
+  source:
+    id: AllTextureChannel
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 16
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum AllTextureChannel
+    content.vb: Public Enum AllTextureChannel
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.R
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.R
+  id: R
+  parent: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+  langs:
+  - csharp
+  - vb
+  name: R
+  nameWithType: TextureArrayConfig.AllTextureChannel.R
+  fullName: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.R
+  type: Field
+  source:
+    id: R
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: R = 0
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.G
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.G
+  id: G
+  parent: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+  langs:
+  - csharp
+  - vb
+  name: G
+  nameWithType: TextureArrayConfig.AllTextureChannel.G
+  fullName: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.G
+  type: Field
+  source:
+    id: G
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: G = 1
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.B
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.B
+  id: B
+  parent: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+  langs:
+  - csharp
+  - vb
+  name: B
+  nameWithType: TextureArrayConfig.AllTextureChannel.B
+  fullName: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.B
+  type: Field
+  source:
+    id: B
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: B = 2
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.A
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.A
+  id: A
+  parent: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+  langs:
+  - csharp
+  - vb
+  name: A
+  nameWithType: TextureArrayConfig.AllTextureChannel.A
+  fullName: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.A
+  type: Field
+  source:
+    id: A
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 21
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: A = 3
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.Custom
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.Custom
+  id: Custom
+  parent: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+  langs:
+  - csharp
+  - vb
+  name: Custom
+  nameWithType: TextureArrayConfig.AllTextureChannel.Custom
+  fullName: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel.Custom
+  type: Field
+  source:
+    id: Custom
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Custom = 4
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.AllTextureChannel
+  nameWithType: TextureArrayConfig.AllTextureChannel
+  fullName: JBooth.MicroSplat.TextureArrayConfig.AllTextureChannel

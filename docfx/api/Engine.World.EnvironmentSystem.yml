@@ -13,12 +13,8 @@ items:
   fullName: Engine.World.EnvironmentSystem
   type: Class
   source:
-    remote:
-      path: Assets/Engine/World/EnvironmentSystem.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: EnvironmentSystem
-    path: ../Assets/Engine/World/EnvironmentSystem.cs
+    path: B:\Games\Elavad\Assets\Engine\World\EnvironmentSystem.cs
     startLine: 15
   assemblies:
   - Engine.World

@@ -15,12 +15,8 @@ items:
   fullName: Engine.Networking.KeepAlive_0
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/KeepAlive_0.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: KeepAlive_0
-    path: ../Assets/Engine/Networking/Packets/KeepAlive_0.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\KeepAlive_0.cs
     startLine: 7
   assemblies:
   - Engine.Networking
@@ -40,7 +36,6 @@ items:
       <Packet(0, "Keep Alive", "Server", ReliabilityScheme.RELIABLE, "Pings to keep the connection alive.")>
 
       Public Class KeepAlive_0
-
           Inherits Packet
   inheritance:
   - System.Object
@@ -93,12 +88,8 @@ items:
   fullName: Engine.Networking.KeepAlive_0.getBytes()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/KeepAlive_0.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: getBytes
-    path: ../Assets/Engine/Networking/Packets/KeepAlive_0.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\KeepAlive_0.cs
     startLine: 21
   assemblies:
   - Engine.Networking
@@ -131,12 +122,8 @@ items:
   fullName: Engine.Networking.KeepAlive_0.readPacket(System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Packets/KeepAlive_0.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: readPacket
-    path: ../Assets/Engine/Networking/Packets/KeepAlive_0.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Packets\KeepAlive_0.cs
     startLine: 32
   assemblies:
   - Engine.Networking

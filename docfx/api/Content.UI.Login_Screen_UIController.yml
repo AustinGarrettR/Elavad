@@ -5,7 +5,7 @@ items:
   id: Login_Screen_UIController
   parent: Content.UI
   children:
-  - Content.UI.Login_Screen_UIController.onPanelLoaded
+  - Content.UI.Login_Screen_UIController.onUIDocumentLoaded
   langs:
   - csharp
   - vb
@@ -14,13 +14,9 @@ items:
   fullName: Content.UI.Login_Screen_UIController
   type: Class
   source:
-    remote:
-      path: Assets/Content/UI/Login Screen/Login_Screen_UIController.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Login_Screen_UIController
-    path: ../Assets/Content/UI/Login Screen/Login_Screen_UIController.cs
-    startLine: 12
+    path: B:\Games\Elavad\Assets\Content\UI\Login Screen\Login_Screen_UIController.cs
+    startLine: 11
   assemblies:
   - Content.UI
   namespace: Content.UI
@@ -30,7 +26,6 @@ items:
     content: 'public class Login_Screen_UIController : UIController'
     content.vb: >-
       Public Class Login_Screen_UIController
-
           Inherits UIController
   inheritance:
   - System.Object
@@ -40,8 +35,8 @@ items:
   - UnityEngine.MonoBehaviour
   - Engine.UI.UIController
   inheritedMembers:
-  - Engine.UI.UIController.GetPanelRenderer
-  - Engine.UI.UIController.setPanelVisibility(System.Boolean)
+  - Engine.UI.UIController.GetUIDocument
+  - Engine.UI.UIController.SetDocumentVisibility(System.Boolean)
   - Engine.UI.UIController.getElement``1(System.String)
   - Engine.UI.UIController.RegisterFirstLetterUpperCaseFormat(UnityEngine.UIElements.TextField)
   - Engine.UI.UIController.RegisterPlaceholderWithPasswordFormat(UnityEngine.UIElements.TextField)
@@ -152,35 +147,31 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Content.UI.Login_Screen_UIController.onPanelLoaded
-  commentId: M:Content.UI.Login_Screen_UIController.onPanelLoaded
-  id: onPanelLoaded
+- uid: Content.UI.Login_Screen_UIController.onUIDocumentLoaded
+  commentId: M:Content.UI.Login_Screen_UIController.onUIDocumentLoaded
+  id: onUIDocumentLoaded
   parent: Content.UI.Login_Screen_UIController
   langs:
   - csharp
   - vb
-  name: onPanelLoaded()
-  nameWithType: Login_Screen_UIController.onPanelLoaded()
-  fullName: Content.UI.Login_Screen_UIController.onPanelLoaded()
+  name: onUIDocumentLoaded()
+  nameWithType: Login_Screen_UIController.onUIDocumentLoaded()
+  fullName: Content.UI.Login_Screen_UIController.onUIDocumentLoaded()
   type: Method
   source:
-    remote:
-      path: Assets/Content/UI/Login Screen/Login_Screen_UIController.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
-    id: onPanelLoaded
-    path: ../Assets/Content/UI/Login Screen/Login_Screen_UIController.cs
-    startLine: 34
+    id: onUIDocumentLoaded
+    path: B:\Games\Elavad\Assets\Content\UI\Login Screen\Login_Screen_UIController.cs
+    startLine: 33
   assemblies:
   - Content.UI
   namespace: Content.UI
   summary: "\nCalled when the panel finished loading the UXML\n"
   example: []
   syntax:
-    content: public override void onPanelLoaded()
-    content.vb: Public Overrides Sub onPanelLoaded
-  overridden: Engine.UI.UIController.onPanelLoaded
-  overload: Content.UI.Login_Screen_UIController.onPanelLoaded*
+    content: public override void onUIDocumentLoaded()
+    content.vb: Public Overrides Sub onUIDocumentLoaded
+  overridden: Engine.UI.UIController.onUIDocumentLoaded
+  overload: Content.UI.Login_Screen_UIController.onUIDocumentLoaded*
   modifiers.csharp:
   - public
   - override
@@ -234,17 +225,17 @@ references:
   name: UIController
   nameWithType: UIController
   fullName: Engine.UI.UIController
-- uid: Engine.UI.UIController.GetPanelRenderer
-  commentId: M:Engine.UI.UIController.GetPanelRenderer
+- uid: Engine.UI.UIController.GetUIDocument
+  commentId: M:Engine.UI.UIController.GetUIDocument
   parent: Engine.UI.UIController
-  name: GetPanelRenderer()
-  nameWithType: UIController.GetPanelRenderer()
-  fullName: Engine.UI.UIController.GetPanelRenderer()
+  name: GetUIDocument()
+  nameWithType: UIController.GetUIDocument()
+  fullName: Engine.UI.UIController.GetUIDocument()
   spec.csharp:
-  - uid: Engine.UI.UIController.GetPanelRenderer
-    name: GetPanelRenderer
-    nameWithType: UIController.GetPanelRenderer
-    fullName: Engine.UI.UIController.GetPanelRenderer
+  - uid: Engine.UI.UIController.GetUIDocument
+    name: GetUIDocument
+    nameWithType: UIController.GetUIDocument
+    fullName: Engine.UI.UIController.GetUIDocument
   - name: (
     nameWithType: (
     fullName: (
@@ -252,28 +243,28 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.UI.UIController.GetPanelRenderer
-    name: GetPanelRenderer
-    nameWithType: UIController.GetPanelRenderer
-    fullName: Engine.UI.UIController.GetPanelRenderer
+  - uid: Engine.UI.UIController.GetUIDocument
+    name: GetUIDocument
+    nameWithType: UIController.GetUIDocument
+    fullName: Engine.UI.UIController.GetUIDocument
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.UI.UIController.setPanelVisibility(System.Boolean)
-  commentId: M:Engine.UI.UIController.setPanelVisibility(System.Boolean)
+- uid: Engine.UI.UIController.SetDocumentVisibility(System.Boolean)
+  commentId: M:Engine.UI.UIController.SetDocumentVisibility(System.Boolean)
   parent: Engine.UI.UIController
   isExternal: true
-  name: setPanelVisibility(Boolean)
-  nameWithType: UIController.setPanelVisibility(Boolean)
-  fullName: Engine.UI.UIController.setPanelVisibility(System.Boolean)
+  name: SetDocumentVisibility(Boolean)
+  nameWithType: UIController.SetDocumentVisibility(Boolean)
+  fullName: Engine.UI.UIController.SetDocumentVisibility(System.Boolean)
   spec.csharp:
-  - uid: Engine.UI.UIController.setPanelVisibility(System.Boolean)
-    name: setPanelVisibility
-    nameWithType: UIController.setPanelVisibility
-    fullName: Engine.UI.UIController.setPanelVisibility
+  - uid: Engine.UI.UIController.SetDocumentVisibility(System.Boolean)
+    name: SetDocumentVisibility
+    nameWithType: UIController.SetDocumentVisibility
+    fullName: Engine.UI.UIController.SetDocumentVisibility
   - name: (
     nameWithType: (
     fullName: (
@@ -286,10 +277,10 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.UI.UIController.setPanelVisibility(System.Boolean)
-    name: setPanelVisibility
-    nameWithType: UIController.setPanelVisibility
-    fullName: Engine.UI.UIController.setPanelVisibility
+  - uid: Engine.UI.UIController.SetDocumentVisibility(System.Boolean)
+    name: SetDocumentVisibility
+    nameWithType: UIController.SetDocumentVisibility
+    fullName: Engine.UI.UIController.SetDocumentVisibility
   - name: (
     nameWithType: (
     fullName: (
@@ -5625,17 +5616,17 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Engine.UI.UIController.onPanelLoaded
-  commentId: M:Engine.UI.UIController.onPanelLoaded
+- uid: Engine.UI.UIController.onUIDocumentLoaded
+  commentId: M:Engine.UI.UIController.onUIDocumentLoaded
   parent: Engine.UI.UIController
-  name: onPanelLoaded()
-  nameWithType: UIController.onPanelLoaded()
-  fullName: Engine.UI.UIController.onPanelLoaded()
+  name: onUIDocumentLoaded()
+  nameWithType: UIController.onUIDocumentLoaded()
+  fullName: Engine.UI.UIController.onUIDocumentLoaded()
   spec.csharp:
-  - uid: Engine.UI.UIController.onPanelLoaded
-    name: onPanelLoaded
-    nameWithType: UIController.onPanelLoaded
-    fullName: Engine.UI.UIController.onPanelLoaded
+  - uid: Engine.UI.UIController.onUIDocumentLoaded
+    name: onUIDocumentLoaded
+    nameWithType: UIController.onUIDocumentLoaded
+    fullName: Engine.UI.UIController.onUIDocumentLoaded
   - name: (
     nameWithType: (
     fullName: (
@@ -5643,18 +5634,18 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Engine.UI.UIController.onPanelLoaded
-    name: onPanelLoaded
-    nameWithType: UIController.onPanelLoaded
-    fullName: Engine.UI.UIController.onPanelLoaded
+  - uid: Engine.UI.UIController.onUIDocumentLoaded
+    name: onUIDocumentLoaded
+    nameWithType: UIController.onUIDocumentLoaded
+    fullName: Engine.UI.UIController.onUIDocumentLoaded
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
-- uid: Content.UI.Login_Screen_UIController.onPanelLoaded*
-  commentId: Overload:Content.UI.Login_Screen_UIController.onPanelLoaded
-  name: onPanelLoaded
-  nameWithType: Login_Screen_UIController.onPanelLoaded
-  fullName: Content.UI.Login_Screen_UIController.onPanelLoaded
+- uid: Content.UI.Login_Screen_UIController.onUIDocumentLoaded*
+  commentId: Overload:Content.UI.Login_Screen_UIController.onUIDocumentLoaded
+  name: onUIDocumentLoaded
+  nameWithType: Login_Screen_UIController.onUIDocumentLoaded
+  fullName: Content.UI.Login_Screen_UIController.onUIDocumentLoaded

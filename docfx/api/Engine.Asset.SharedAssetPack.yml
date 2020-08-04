@@ -13,12 +13,8 @@ items:
   fullName: Engine.Asset.SharedAssetPack
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Asset/SharedAssetPack.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: SharedAssetPack
-    path: ../Assets/Engine/Asset/SharedAssetPack.cs
+    path: B:\Games\Elavad\Assets\Engine\Asset\SharedAssetPack.cs
     startLine: 7
   assemblies:
   - Engine.Asset
@@ -34,7 +30,6 @@ items:
       <CreateAssetMenu(fileName:="SharedAssetPack", menuName:="Data Packs/SharedAssetPack", order:=1)>
 
       Public Class SharedAssetPack
-
           Inherits ScriptableObject
   inheritance:
   - System.Object

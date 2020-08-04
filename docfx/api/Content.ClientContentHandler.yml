@@ -14,12 +14,8 @@ items:
   fullName: Content.ClientContentHandler
   type: Class
   source:
-    remote:
-      path: Assets/Content/ClientContentHandler.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ClientContentHandler
-    path: ../Assets/Content/ClientContentHandler.cs
+    path: B:\Games\Elavad\Assets\Content\ClientContentHandler.cs
     startLine: 5
   assemblies:
   - Content
@@ -57,12 +53,8 @@ items:
   fullName: Content.ClientContentHandler.ClientContentHandler()
   type: Constructor
   source:
-    remote:
-      path: Assets/Content/ClientContentHandler.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: .ctor
-    path: ../Assets/Content/ClientContentHandler.cs
+    path: B:\Games\Elavad\Assets\Content\ClientContentHandler.cs
     startLine: 10
   assemblies:
   - Content

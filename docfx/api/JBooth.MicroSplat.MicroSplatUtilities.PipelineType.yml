@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.MicroSplatUtilities.PipelineType
+  commentId: T:JBooth.MicroSplat.MicroSplatUtilities.PipelineType
+  id: MicroSplatUtilities.PipelineType
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.MicroSplatUtilities.PipelineType.BuiltInPipeline
+  - JBooth.MicroSplat.MicroSplatUtilities.PipelineType.HDPipeline
+  - JBooth.MicroSplat.MicroSplatUtilities.PipelineType.UniversalPipeline
+  - JBooth.MicroSplat.MicroSplatUtilities.PipelineType.Unsupported
+  langs:
+  - csharp
+  - vb
+  name: MicroSplatUtilities.PipelineType
+  nameWithType: MicroSplatUtilities.PipelineType
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.PipelineType
+  type: Enum
+  source:
+    id: PipelineType
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 15
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum PipelineType
+    content.vb: Public Enum PipelineType
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.MicroSplatUtilities.PipelineType.Unsupported
+  commentId: F:JBooth.MicroSplat.MicroSplatUtilities.PipelineType.Unsupported
+  id: Unsupported
+  parent: JBooth.MicroSplat.MicroSplatUtilities.PipelineType
+  langs:
+  - csharp
+  - vb
+  name: Unsupported
+  nameWithType: MicroSplatUtilities.PipelineType.Unsupported
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.PipelineType.Unsupported
+  type: Field
+  source:
+    id: Unsupported
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 17
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Unsupported = 0
+    return:
+      type: JBooth.MicroSplat.MicroSplatUtilities.PipelineType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatUtilities.PipelineType.BuiltInPipeline
+  commentId: F:JBooth.MicroSplat.MicroSplatUtilities.PipelineType.BuiltInPipeline
+  id: BuiltInPipeline
+  parent: JBooth.MicroSplat.MicroSplatUtilities.PipelineType
+  langs:
+  - csharp
+  - vb
+  name: BuiltInPipeline
+  nameWithType: MicroSplatUtilities.PipelineType.BuiltInPipeline
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.PipelineType.BuiltInPipeline
+  type: Field
+  source:
+    id: BuiltInPipeline
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: BuiltInPipeline = 1
+    return:
+      type: JBooth.MicroSplat.MicroSplatUtilities.PipelineType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatUtilities.PipelineType.UniversalPipeline
+  commentId: F:JBooth.MicroSplat.MicroSplatUtilities.PipelineType.UniversalPipeline
+  id: UniversalPipeline
+  parent: JBooth.MicroSplat.MicroSplatUtilities.PipelineType
+  langs:
+  - csharp
+  - vb
+  name: UniversalPipeline
+  nameWithType: MicroSplatUtilities.PipelineType.UniversalPipeline
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.PipelineType.UniversalPipeline
+  type: Field
+  source:
+    id: UniversalPipeline
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 19
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: UniversalPipeline = 2
+    return:
+      type: JBooth.MicroSplat.MicroSplatUtilities.PipelineType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatUtilities.PipelineType.HDPipeline
+  commentId: F:JBooth.MicroSplat.MicroSplatUtilities.PipelineType.HDPipeline
+  id: HDPipeline
+  parent: JBooth.MicroSplat.MicroSplatUtilities.PipelineType
+  langs:
+  - csharp
+  - vb
+  name: HDPipeline
+  nameWithType: MicroSplatUtilities.PipelineType.HDPipeline
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.PipelineType.HDPipeline
+  type: Field
+  source:
+    id: HDPipeline
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatUtilities.cs
+    startLine: 20
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: HDPipeline = 3
+    return:
+      type: JBooth.MicroSplat.MicroSplatUtilities.PipelineType
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.MicroSplatUtilities.PipelineType
+  commentId: T:JBooth.MicroSplat.MicroSplatUtilities.PipelineType
+  parent: JBooth.MicroSplat
+  name: MicroSplatUtilities.PipelineType
+  nameWithType: MicroSplatUtilities.PipelineType
+  fullName: JBooth.MicroSplat.MicroSplatUtilities.PipelineType

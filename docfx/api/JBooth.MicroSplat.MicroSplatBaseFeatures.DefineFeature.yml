@@ -1,0 +1,2710 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  id: MicroSplatBaseFeatures.DefineFeature
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BDRF1
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BDRF2
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BDRF3
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BDRFLAMBERT
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BRANCHSAMPLES
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BRANCHSAMPLESAGR
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._CONTROLNOISEUV
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._CUSTOMSPLATTEXTURES
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_CLUSTER
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_OTHER
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_TOTAL
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_TRIPLANAR
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_WEIGHT
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_FINALNORMALTANGENT
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_ALBEDO
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_AO
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_EMISSION
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_HEIGHT
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_METAL
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_MICROSHADOWS
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_NORMAL
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SMOOTHNESS
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPECULAR
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT0
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT0A
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT1
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT1A
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT2
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT2A
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT3
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT3A
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT4
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT4A
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT5
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT5A
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT6
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT6A
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT7
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT7A
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_PROCLAYERS
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_SAMPLECOUNT
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_TRAXBUFFER
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_WORLDNORMAL
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_WORLDNORMALVERTEX
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DISABLEHEIGHTBLENDING
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._FORCEMODEL46
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._FORCEMODEL50
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX12TEXTURES
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX16TEXTURES
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX20TEXTURES
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX24TEXTURES
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX28TEXTURES
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX2LAYER
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX32TEXTURES
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX3LAYER
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX4TEXTURES
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX8TEXTURES
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROMESH
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROMESHTERRAIN
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROPOLARISMESH
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROSPLAT
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROVERTEXMESH
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._NONOMALMAP
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._NORMALIZEWEIGHTS
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._ORIGINSHIFT
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PACKINGHQ
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERPIXNORMAL
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXAOSTR
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXBRIGHTNESS
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXCOLORINTENSITY
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXCONTRAST
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXCURVEWEIGHT
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXFUZZYSHADE
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXHEIGHTCONTRAST
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXHEIGHTOFFSET
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXINTERPCONTRAST
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXMETALLIC
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXMICROSHADOWS
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXNORMSTR
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXSATURATION
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXSMOOTHSTR
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXSSS
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXTINT
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXUVROTATION
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXUVSCALEOFFSET
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._SPECULARFROMMETALLIC
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._USEEMISSIVEMETAL
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._USEGRADMIP
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._USELODMIP
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._USESPECULARWORKFLOW
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._WORLDUV
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature.kNumFeatures
+  langs:
+  - csharp
+  - vb
+  name: MicroSplatBaseFeatures.DefineFeature
+  nameWithType: MicroSplatBaseFeatures.DefineFeature
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  type: Enum
+  source:
+    id: DefineFeature
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 28
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum DefineFeature
+    content.vb: Public Enum DefineFeature
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROSPLAT
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROSPLAT
+  id: _MICROSPLAT
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _MICROSPLAT
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._MICROSPLAT
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROSPLAT
+  type: Field
+  source:
+    id: _MICROSPLAT
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 30
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _MICROSPLAT = 0
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX3LAYER
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX3LAYER
+  id: _MAX3LAYER
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _MAX3LAYER
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._MAX3LAYER
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX3LAYER
+  type: Field
+  source:
+    id: _MAX3LAYER
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 31
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _MAX3LAYER = 1
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX2LAYER
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX2LAYER
+  id: _MAX2LAYER
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _MAX2LAYER
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._MAX2LAYER
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX2LAYER
+  type: Field
+  source:
+    id: _MAX2LAYER
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _MAX2LAYER = 2
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX4TEXTURES
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX4TEXTURES
+  id: _MAX4TEXTURES
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _MAX4TEXTURES
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._MAX4TEXTURES
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX4TEXTURES
+  type: Field
+  source:
+    id: _MAX4TEXTURES
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 33
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _MAX4TEXTURES = 3
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX8TEXTURES
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX8TEXTURES
+  id: _MAX8TEXTURES
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _MAX8TEXTURES
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._MAX8TEXTURES
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX8TEXTURES
+  type: Field
+  source:
+    id: _MAX8TEXTURES
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _MAX8TEXTURES = 4
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX12TEXTURES
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX12TEXTURES
+  id: _MAX12TEXTURES
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _MAX12TEXTURES
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._MAX12TEXTURES
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX12TEXTURES
+  type: Field
+  source:
+    id: _MAX12TEXTURES
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 35
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _MAX12TEXTURES = 5
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX16TEXTURES
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX16TEXTURES
+  id: _MAX16TEXTURES
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _MAX16TEXTURES
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._MAX16TEXTURES
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX16TEXTURES
+  type: Field
+  source:
+    id: _MAX16TEXTURES
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _MAX16TEXTURES = 6
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX20TEXTURES
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX20TEXTURES
+  id: _MAX20TEXTURES
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _MAX20TEXTURES
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._MAX20TEXTURES
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX20TEXTURES
+  type: Field
+  source:
+    id: _MAX20TEXTURES
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _MAX20TEXTURES = 7
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX24TEXTURES
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX24TEXTURES
+  id: _MAX24TEXTURES
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _MAX24TEXTURES
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._MAX24TEXTURES
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX24TEXTURES
+  type: Field
+  source:
+    id: _MAX24TEXTURES
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _MAX24TEXTURES = 8
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX28TEXTURES
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX28TEXTURES
+  id: _MAX28TEXTURES
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _MAX28TEXTURES
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._MAX28TEXTURES
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX28TEXTURES
+  type: Field
+  source:
+    id: _MAX28TEXTURES
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _MAX28TEXTURES = 9
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX32TEXTURES
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX32TEXTURES
+  id: _MAX32TEXTURES
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _MAX32TEXTURES
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._MAX32TEXTURES
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MAX32TEXTURES
+  type: Field
+  source:
+    id: _MAX32TEXTURES
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _MAX32TEXTURES = 10
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXTINT
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXTINT
+  id: _PERTEXTINT
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERTEXTINT
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERTEXTINT
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXTINT
+  type: Field
+  source:
+    id: _PERTEXTINT
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERTEXTINT = 11
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXBRIGHTNESS
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXBRIGHTNESS
+  id: _PERTEXBRIGHTNESS
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERTEXBRIGHTNESS
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERTEXBRIGHTNESS
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXBRIGHTNESS
+  type: Field
+  source:
+    id: _PERTEXBRIGHTNESS
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERTEXBRIGHTNESS = 12
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXCOLORINTENSITY
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXCOLORINTENSITY
+  id: _PERTEXCOLORINTENSITY
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERTEXCOLORINTENSITY
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERTEXCOLORINTENSITY
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXCOLORINTENSITY
+  type: Field
+  source:
+    id: _PERTEXCOLORINTENSITY
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERTEXCOLORINTENSITY = 13
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXCONTRAST
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXCONTRAST
+  id: _PERTEXCONTRAST
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERTEXCONTRAST
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERTEXCONTRAST
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXCONTRAST
+  type: Field
+  source:
+    id: _PERTEXCONTRAST
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 44
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERTEXCONTRAST = 14
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXSATURATION
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXSATURATION
+  id: _PERTEXSATURATION
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERTEXSATURATION
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERTEXSATURATION
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXSATURATION
+  type: Field
+  source:
+    id: _PERTEXSATURATION
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 45
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERTEXSATURATION = 15
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXAOSTR
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXAOSTR
+  id: _PERTEXAOSTR
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERTEXAOSTR
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERTEXAOSTR
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXAOSTR
+  type: Field
+  source:
+    id: _PERTEXAOSTR
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 46
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERTEXAOSTR = 16
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXNORMSTR
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXNORMSTR
+  id: _PERTEXNORMSTR
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERTEXNORMSTR
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERTEXNORMSTR
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXNORMSTR
+  type: Field
+  source:
+    id: _PERTEXNORMSTR
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 47
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERTEXNORMSTR = 17
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXSMOOTHSTR
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXSMOOTHSTR
+  id: _PERTEXSMOOTHSTR
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERTEXSMOOTHSTR
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERTEXSMOOTHSTR
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXSMOOTHSTR
+  type: Field
+  source:
+    id: _PERTEXSMOOTHSTR
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 48
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERTEXSMOOTHSTR = 18
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXMETALLIC
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXMETALLIC
+  id: _PERTEXMETALLIC
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERTEXMETALLIC
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERTEXMETALLIC
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXMETALLIC
+  type: Field
+  source:
+    id: _PERTEXMETALLIC
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 49
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERTEXMETALLIC = 19
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXUVSCALEOFFSET
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXUVSCALEOFFSET
+  id: _PERTEXUVSCALEOFFSET
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERTEXUVSCALEOFFSET
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERTEXUVSCALEOFFSET
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXUVSCALEOFFSET
+  type: Field
+  source:
+    id: _PERTEXUVSCALEOFFSET
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 50
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERTEXUVSCALEOFFSET = 20
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXINTERPCONTRAST
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXINTERPCONTRAST
+  id: _PERTEXINTERPCONTRAST
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERTEXINTERPCONTRAST
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERTEXINTERPCONTRAST
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXINTERPCONTRAST
+  type: Field
+  source:
+    id: _PERTEXINTERPCONTRAST
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 51
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERTEXINTERPCONTRAST = 21
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXHEIGHTOFFSET
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXHEIGHTOFFSET
+  id: _PERTEXHEIGHTOFFSET
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERTEXHEIGHTOFFSET
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERTEXHEIGHTOFFSET
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXHEIGHTOFFSET
+  type: Field
+  source:
+    id: _PERTEXHEIGHTOFFSET
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 52
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERTEXHEIGHTOFFSET = 22
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXHEIGHTCONTRAST
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXHEIGHTCONTRAST
+  id: _PERTEXHEIGHTCONTRAST
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERTEXHEIGHTCONTRAST
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERTEXHEIGHTCONTRAST
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXHEIGHTCONTRAST
+  type: Field
+  source:
+    id: _PERTEXHEIGHTCONTRAST
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 53
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERTEXHEIGHTCONTRAST = 23
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXUVROTATION
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXUVROTATION
+  id: _PERTEXUVROTATION
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERTEXUVROTATION
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERTEXUVROTATION
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXUVROTATION
+  type: Field
+  source:
+    id: _PERTEXUVROTATION
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 54
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERTEXUVROTATION = 24
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXFUZZYSHADE
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXFUZZYSHADE
+  id: _PERTEXFUZZYSHADE
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERTEXFUZZYSHADE
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERTEXFUZZYSHADE
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXFUZZYSHADE
+  type: Field
+  source:
+    id: _PERTEXFUZZYSHADE
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 55
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERTEXFUZZYSHADE = 25
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXSSS
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXSSS
+  id: _PERTEXSSS
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERTEXSSS
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERTEXSSS
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXSSS
+  type: Field
+  source:
+    id: _PERTEXSSS
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 56
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERTEXSSS = 26
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXMICROSHADOWS
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXMICROSHADOWS
+  id: _PERTEXMICROSHADOWS
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERTEXMICROSHADOWS
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERTEXMICROSHADOWS
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXMICROSHADOWS
+  type: Field
+  source:
+    id: _PERTEXMICROSHADOWS
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 57
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERTEXMICROSHADOWS = 27
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXCURVEWEIGHT
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXCURVEWEIGHT
+  id: _PERTEXCURVEWEIGHT
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERTEXCURVEWEIGHT
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERTEXCURVEWEIGHT
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERTEXCURVEWEIGHT
+  type: Field
+  source:
+    id: _PERTEXCURVEWEIGHT
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 58
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERTEXCURVEWEIGHT = 28
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._CONTROLNOISEUV
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._CONTROLNOISEUV
+  id: _CONTROLNOISEUV
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _CONTROLNOISEUV
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._CONTROLNOISEUV
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._CONTROLNOISEUV
+  type: Field
+  source:
+    id: _CONTROLNOISEUV
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 59
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _CONTROLNOISEUV = 29
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._NORMALIZEWEIGHTS
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._NORMALIZEWEIGHTS
+  id: _NORMALIZEWEIGHTS
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _NORMALIZEWEIGHTS
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._NORMALIZEWEIGHTS
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._NORMALIZEWEIGHTS
+  type: Field
+  source:
+    id: _NORMALIZEWEIGHTS
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 60
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _NORMALIZEWEIGHTS = 30
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BDRF1
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BDRF1
+  id: _BDRF1
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _BDRF1
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._BDRF1
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BDRF1
+  type: Field
+  source:
+    id: _BDRF1
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 61
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _BDRF1 = 31
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BDRF2
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BDRF2
+  id: _BDRF2
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _BDRF2
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._BDRF2
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BDRF2
+  type: Field
+  source:
+    id: _BDRF2
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 62
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _BDRF2 = 32
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BDRF3
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BDRF3
+  id: _BDRF3
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _BDRF3
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._BDRF3
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BDRF3
+  type: Field
+  source:
+    id: _BDRF3
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 63
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _BDRF3 = 33
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BDRFLAMBERT
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BDRFLAMBERT
+  id: _BDRFLAMBERT
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _BDRFLAMBERT
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._BDRFLAMBERT
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BDRFLAMBERT
+  type: Field
+  source:
+    id: _BDRFLAMBERT
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 64
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _BDRFLAMBERT = 34
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._SPECULARFROMMETALLIC
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._SPECULARFROMMETALLIC
+  id: _SPECULARFROMMETALLIC
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _SPECULARFROMMETALLIC
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._SPECULARFROMMETALLIC
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._SPECULARFROMMETALLIC
+  type: Field
+  source:
+    id: _SPECULARFROMMETALLIC
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 65
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _SPECULARFROMMETALLIC = 35
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._USELODMIP
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._USELODMIP
+  id: _USELODMIP
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _USELODMIP
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._USELODMIP
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._USELODMIP
+  type: Field
+  source:
+    id: _USELODMIP
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 66
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _USELODMIP = 36
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._USEGRADMIP
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._USEGRADMIP
+  id: _USEGRADMIP
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _USEGRADMIP
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._USEGRADMIP
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._USEGRADMIP
+  type: Field
+  source:
+    id: _USEGRADMIP
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 67
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _USEGRADMIP = 37
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DISABLEHEIGHTBLENDING
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DISABLEHEIGHTBLENDING
+  id: _DISABLEHEIGHTBLENDING
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DISABLEHEIGHTBLENDING
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DISABLEHEIGHTBLENDING
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DISABLEHEIGHTBLENDING
+  type: Field
+  source:
+    id: _DISABLEHEIGHTBLENDING
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 68
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DISABLEHEIGHTBLENDING = 38
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._WORLDUV
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._WORLDUV
+  id: _WORLDUV
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _WORLDUV
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._WORLDUV
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._WORLDUV
+  type: Field
+  source:
+    id: _WORLDUV
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 69
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _WORLDUV = 39
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._USEEMISSIVEMETAL
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._USEEMISSIVEMETAL
+  id: _USEEMISSIVEMETAL
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _USEEMISSIVEMETAL
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._USEEMISSIVEMETAL
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._USEEMISSIVEMETAL
+  type: Field
+  source:
+    id: _USEEMISSIVEMETAL
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 70
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _USEEMISSIVEMETAL = 40
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._FORCEMODEL46
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._FORCEMODEL46
+  id: _FORCEMODEL46
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _FORCEMODEL46
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._FORCEMODEL46
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._FORCEMODEL46
+  type: Field
+  source:
+    id: _FORCEMODEL46
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 71
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _FORCEMODEL46 = 41
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._FORCEMODEL50
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._FORCEMODEL50
+  id: _FORCEMODEL50
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _FORCEMODEL50
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._FORCEMODEL50
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._FORCEMODEL50
+  type: Field
+  source:
+    id: _FORCEMODEL50
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 72
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _FORCEMODEL50 = 42
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PACKINGHQ
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PACKINGHQ
+  id: _PACKINGHQ
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PACKINGHQ
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PACKINGHQ
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PACKINGHQ
+  type: Field
+  source:
+    id: _PACKINGHQ
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 73
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PACKINGHQ = 43
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._USESPECULARWORKFLOW
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._USESPECULARWORKFLOW
+  id: _USESPECULARWORKFLOW
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _USESPECULARWORKFLOW
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._USESPECULARWORKFLOW
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._USESPECULARWORKFLOW
+  type: Field
+  source:
+    id: _USESPECULARWORKFLOW
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 74
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _USESPECULARWORKFLOW = 44
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERPIXNORMAL
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERPIXNORMAL
+  id: _PERPIXNORMAL
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _PERPIXNORMAL
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._PERPIXNORMAL
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._PERPIXNORMAL
+  type: Field
+  source:
+    id: _PERPIXNORMAL
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 75
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _PERPIXNORMAL = 45
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._NONOMALMAP
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._NONOMALMAP
+  id: _NONOMALMAP
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _NONOMALMAP
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._NONOMALMAP
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._NONOMALMAP
+  type: Field
+  source:
+    id: _NONOMALMAP
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 76
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _NONOMALMAP = 46
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROMESH
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROMESH
+  id: _MICROMESH
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _MICROMESH
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._MICROMESH
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROMESH
+  type: Field
+  source:
+    id: _MICROMESH
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 77
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _MICROMESH = 47
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROMESHTERRAIN
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROMESHTERRAIN
+  id: _MICROMESHTERRAIN
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _MICROMESHTERRAIN
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._MICROMESHTERRAIN
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROMESHTERRAIN
+  type: Field
+  source:
+    id: _MICROMESHTERRAIN
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 78
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _MICROMESHTERRAIN = 48
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROVERTEXMESH
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROVERTEXMESH
+  id: _MICROVERTEXMESH
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _MICROVERTEXMESH
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._MICROVERTEXMESH
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROVERTEXMESH
+  type: Field
+  source:
+    id: _MICROVERTEXMESH
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 79
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _MICROVERTEXMESH = 49
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROPOLARISMESH
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROPOLARISMESH
+  id: _MICROPOLARISMESH
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _MICROPOLARISMESH
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._MICROPOLARISMESH
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._MICROPOLARISMESH
+  type: Field
+  source:
+    id: _MICROPOLARISMESH
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 80
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _MICROPOLARISMESH = 50
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._ORIGINSHIFT
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._ORIGINSHIFT
+  id: _ORIGINSHIFT
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _ORIGINSHIFT
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._ORIGINSHIFT
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._ORIGINSHIFT
+  type: Field
+  source:
+    id: _ORIGINSHIFT
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 81
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _ORIGINSHIFT = 51
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BRANCHSAMPLES
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BRANCHSAMPLES
+  id: _BRANCHSAMPLES
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _BRANCHSAMPLES
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._BRANCHSAMPLES
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BRANCHSAMPLES
+  type: Field
+  source:
+    id: _BRANCHSAMPLES
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 82
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _BRANCHSAMPLES = 52
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BRANCHSAMPLESAGR
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BRANCHSAMPLESAGR
+  id: _BRANCHSAMPLESAGR
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _BRANCHSAMPLESAGR
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._BRANCHSAMPLESAGR
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._BRANCHSAMPLESAGR
+  type: Field
+  source:
+    id: _BRANCHSAMPLESAGR
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 83
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _BRANCHSAMPLESAGR = 53
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_ALBEDO
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_ALBEDO
+  id: _DEBUG_OUTPUT_ALBEDO
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_ALBEDO
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_ALBEDO
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_ALBEDO
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_ALBEDO
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 84
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_ALBEDO = 54
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_HEIGHT
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_HEIGHT
+  id: _DEBUG_OUTPUT_HEIGHT
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_HEIGHT
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_HEIGHT
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_HEIGHT
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_HEIGHT
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 85
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_HEIGHT = 55
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_NORMAL
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_NORMAL
+  id: _DEBUG_OUTPUT_NORMAL
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_NORMAL
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_NORMAL
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_NORMAL
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_NORMAL
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 86
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_NORMAL = 56
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_METAL
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_METAL
+  id: _DEBUG_OUTPUT_METAL
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_METAL
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_METAL
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_METAL
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_METAL
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 87
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_METAL = 57
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SMOOTHNESS
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SMOOTHNESS
+  id: _DEBUG_OUTPUT_SMOOTHNESS
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_SMOOTHNESS
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SMOOTHNESS
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SMOOTHNESS
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_SMOOTHNESS
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 88
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_SMOOTHNESS = 58
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_AO
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_AO
+  id: _DEBUG_OUTPUT_AO
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_AO
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_AO
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_AO
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_AO
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 89
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_AO = 59
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_EMISSION
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_EMISSION
+  id: _DEBUG_OUTPUT_EMISSION
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_EMISSION
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_EMISSION
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_EMISSION
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_EMISSION
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 90
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_EMISSION = 60
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPECULAR
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPECULAR
+  id: _DEBUG_OUTPUT_SPECULAR
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_SPECULAR
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPECULAR
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPECULAR
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_SPECULAR
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 91
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_SPECULAR = 61
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_MICROSHADOWS
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_MICROSHADOWS
+  id: _DEBUG_OUTPUT_MICROSHADOWS
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_MICROSHADOWS
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_MICROSHADOWS
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_MICROSHADOWS
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_MICROSHADOWS
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 92
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_MICROSHADOWS = 62
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT0
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT0
+  id: _DEBUG_OUTPUT_SPLAT0
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_SPLAT0
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT0
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT0
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_SPLAT0
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 93
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_SPLAT0 = 63
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT1
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT1
+  id: _DEBUG_OUTPUT_SPLAT1
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_SPLAT1
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT1
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT1
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_SPLAT1
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 94
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_SPLAT1 = 64
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT2
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT2
+  id: _DEBUG_OUTPUT_SPLAT2
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_SPLAT2
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT2
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT2
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_SPLAT2
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 95
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_SPLAT2 = 65
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT3
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT3
+  id: _DEBUG_OUTPUT_SPLAT3
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_SPLAT3
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT3
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT3
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_SPLAT3
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 96
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_SPLAT3 = 66
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT4
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT4
+  id: _DEBUG_OUTPUT_SPLAT4
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_SPLAT4
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT4
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT4
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_SPLAT4
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 97
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_SPLAT4 = 67
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT5
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT5
+  id: _DEBUG_OUTPUT_SPLAT5
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_SPLAT5
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT5
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT5
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_SPLAT5
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 98
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_SPLAT5 = 68
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT6
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT6
+  id: _DEBUG_OUTPUT_SPLAT6
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_SPLAT6
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT6
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT6
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_SPLAT6
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 99
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_SPLAT6 = 69
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT7
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT7
+  id: _DEBUG_OUTPUT_SPLAT7
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_SPLAT7
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT7
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT7
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_SPLAT7
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 100
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_SPLAT7 = 70
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT0A
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT0A
+  id: _DEBUG_OUTPUT_SPLAT0A
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_SPLAT0A
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT0A
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT0A
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_SPLAT0A
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 101
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_SPLAT0A = 71
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT1A
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT1A
+  id: _DEBUG_OUTPUT_SPLAT1A
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_SPLAT1A
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT1A
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT1A
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_SPLAT1A
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 102
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_SPLAT1A = 72
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT2A
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT2A
+  id: _DEBUG_OUTPUT_SPLAT2A
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_SPLAT2A
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT2A
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT2A
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_SPLAT2A
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 103
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_SPLAT2A = 73
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT3A
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT3A
+  id: _DEBUG_OUTPUT_SPLAT3A
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_SPLAT3A
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT3A
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT3A
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_SPLAT3A
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 104
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_SPLAT3A = 74
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT4A
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT4A
+  id: _DEBUG_OUTPUT_SPLAT4A
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_SPLAT4A
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT4A
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT4A
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_SPLAT4A
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 105
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_SPLAT4A = 75
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT5A
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT5A
+  id: _DEBUG_OUTPUT_SPLAT5A
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_SPLAT5A
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT5A
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT5A
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_SPLAT5A
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 106
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_SPLAT5A = 76
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT6A
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT6A
+  id: _DEBUG_OUTPUT_SPLAT6A
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_SPLAT6A
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT6A
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT6A
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_SPLAT6A
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 107
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_SPLAT6A = 77
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT7A
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT7A
+  id: _DEBUG_OUTPUT_SPLAT7A
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_OUTPUT_SPLAT7A
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT7A
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_OUTPUT_SPLAT7A
+  type: Field
+  source:
+    id: _DEBUG_OUTPUT_SPLAT7A
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 108
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_OUTPUT_SPLAT7A = 78
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_WEIGHT
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_WEIGHT
+  id: _DEBUG_BRANCHCOUNT_WEIGHT
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_BRANCHCOUNT_WEIGHT
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_WEIGHT
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_WEIGHT
+  type: Field
+  source:
+    id: _DEBUG_BRANCHCOUNT_WEIGHT
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 109
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_BRANCHCOUNT_WEIGHT = 79
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_TRIPLANAR
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_TRIPLANAR
+  id: _DEBUG_BRANCHCOUNT_TRIPLANAR
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_BRANCHCOUNT_TRIPLANAR
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_TRIPLANAR
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_TRIPLANAR
+  type: Field
+  source:
+    id: _DEBUG_BRANCHCOUNT_TRIPLANAR
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 110
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_BRANCHCOUNT_TRIPLANAR = 80
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_CLUSTER
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_CLUSTER
+  id: _DEBUG_BRANCHCOUNT_CLUSTER
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_BRANCHCOUNT_CLUSTER
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_CLUSTER
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_CLUSTER
+  type: Field
+  source:
+    id: _DEBUG_BRANCHCOUNT_CLUSTER
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 111
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_BRANCHCOUNT_CLUSTER = 81
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_OTHER
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_OTHER
+  id: _DEBUG_BRANCHCOUNT_OTHER
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_BRANCHCOUNT_OTHER
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_OTHER
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_OTHER
+  type: Field
+  source:
+    id: _DEBUG_BRANCHCOUNT_OTHER
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 112
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_BRANCHCOUNT_OTHER = 82
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_TOTAL
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_TOTAL
+  id: _DEBUG_BRANCHCOUNT_TOTAL
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_BRANCHCOUNT_TOTAL
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_TOTAL
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_BRANCHCOUNT_TOTAL
+  type: Field
+  source:
+    id: _DEBUG_BRANCHCOUNT_TOTAL
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 113
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_BRANCHCOUNT_TOTAL = 83
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_SAMPLECOUNT
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_SAMPLECOUNT
+  id: _DEBUG_SAMPLECOUNT
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_SAMPLECOUNT
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_SAMPLECOUNT
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_SAMPLECOUNT
+  type: Field
+  source:
+    id: _DEBUG_SAMPLECOUNT
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 114
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_SAMPLECOUNT = 84
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_TRAXBUFFER
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_TRAXBUFFER
+  id: _DEBUG_TRAXBUFFER
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_TRAXBUFFER
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_TRAXBUFFER
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_TRAXBUFFER
+  type: Field
+  source:
+    id: _DEBUG_TRAXBUFFER
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 115
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_TRAXBUFFER = 85
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_PROCLAYERS
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_PROCLAYERS
+  id: _DEBUG_PROCLAYERS
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_PROCLAYERS
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_PROCLAYERS
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_PROCLAYERS
+  type: Field
+  source:
+    id: _DEBUG_PROCLAYERS
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 116
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_PROCLAYERS = 86
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_WORLDNORMALVERTEX
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_WORLDNORMALVERTEX
+  id: _DEBUG_WORLDNORMALVERTEX
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_WORLDNORMALVERTEX
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_WORLDNORMALVERTEX
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_WORLDNORMALVERTEX
+  type: Field
+  source:
+    id: _DEBUG_WORLDNORMALVERTEX
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 117
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_WORLDNORMALVERTEX = 87
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_WORLDNORMAL
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_WORLDNORMAL
+  id: _DEBUG_WORLDNORMAL
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_WORLDNORMAL
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_WORLDNORMAL
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_WORLDNORMAL
+  type: Field
+  source:
+    id: _DEBUG_WORLDNORMAL
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 118
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_WORLDNORMAL = 88
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_FINALNORMALTANGENT
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_FINALNORMALTANGENT
+  id: _DEBUG_FINALNORMALTANGENT
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _DEBUG_FINALNORMALTANGENT
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._DEBUG_FINALNORMALTANGENT
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._DEBUG_FINALNORMALTANGENT
+  type: Field
+  source:
+    id: _DEBUG_FINALNORMALTANGENT
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 119
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _DEBUG_FINALNORMALTANGENT = 89
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._CUSTOMSPLATTEXTURES
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._CUSTOMSPLATTEXTURES
+  id: _CUSTOMSPLATTEXTURES
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: _CUSTOMSPLATTEXTURES
+  nameWithType: MicroSplatBaseFeatures.DefineFeature._CUSTOMSPLATTEXTURES
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature._CUSTOMSPLATTEXTURES
+  type: Field
+  source:
+    id: _CUSTOMSPLATTEXTURES
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 120
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: _CUSTOMSPLATTEXTURES = 90
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature.kNumFeatures
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature.kNumFeatures
+  id: kNumFeatures
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  langs:
+  - csharp
+  - vb
+  name: kNumFeatures
+  nameWithType: MicroSplatBaseFeatures.DefineFeature.kNumFeatures
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature.kNumFeatures
+  type: Field
+  source:
+    id: kNumFeatures
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 121
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: kNumFeatures = 91
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature
+  parent: JBooth.MicroSplat
+  name: MicroSplatBaseFeatures.DefineFeature
+  nameWithType: MicroSplatBaseFeatures.DefineFeature
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.DefineFeature

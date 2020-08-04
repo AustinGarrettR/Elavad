@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode
+  id: MicroSplatBaseFeatures.PerformanceMode
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode.Balanced
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode.BestQuality
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode.Fastest
+  langs:
+  - csharp
+  - vb
+  name: MicroSplatBaseFeatures.PerformanceMode
+  nameWithType: MicroSplatBaseFeatures.PerformanceMode
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode
+  type: Enum
+  source:
+    id: PerformanceMode
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 161
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum PerformanceMode
+    content.vb: Public Enum PerformanceMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode.BestQuality
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode.BestQuality
+  id: BestQuality
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode
+  langs:
+  - csharp
+  - vb
+  name: BestQuality
+  nameWithType: MicroSplatBaseFeatures.PerformanceMode.BestQuality
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode.BestQuality
+  type: Field
+  source:
+    id: BestQuality
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 163
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: BestQuality = 0
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode.Balanced
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode.Balanced
+  id: Balanced
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode
+  langs:
+  - csharp
+  - vb
+  name: Balanced
+  nameWithType: MicroSplatBaseFeatures.PerformanceMode.Balanced
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode.Balanced
+  type: Field
+  source:
+    id: Balanced
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 164
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Balanced = 1
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode.Fastest
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode.Fastest
+  id: Fastest
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode
+  langs:
+  - csharp
+  - vb
+  name: Fastest
+  nameWithType: MicroSplatBaseFeatures.PerformanceMode.Fastest
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode.Fastest
+  type: Field
+  source:
+    id: Fastest
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 165
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Fastest = 2
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode
+  parent: JBooth.MicroSplat
+  name: MicroSplatBaseFeatures.PerformanceMode
+  nameWithType: MicroSplatBaseFeatures.PerformanceMode
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.PerformanceMode

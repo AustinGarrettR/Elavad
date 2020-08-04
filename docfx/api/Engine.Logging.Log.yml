@@ -15,12 +15,8 @@ items:
   fullName: Engine.Logging.Log
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Logging/Log.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Log
-    path: ../Assets/Engine/Logging/Log.cs
+    path: B:\Games\Elavad\Assets\Engine\Logging\Log.cs
     startLine: 5
   assemblies:
   - Engine.Logging
@@ -59,12 +55,8 @@ items:
   fullName: Engine.Logging.Log.LogMsg(System.String)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Logging/Log.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: LogMsg
-    path: ../Assets/Engine/Logging/Log.cs
+    path: B:\Games\Elavad\Assets\Engine\Logging\Log.cs
     startLine: 36
   assemblies:
   - Engine.Logging
@@ -97,12 +89,8 @@ items:
   fullName: Engine.Logging.Log.LogError(System.String)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Logging/Log.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: LogError
-    path: ../Assets/Engine/Logging/Log.cs
+    path: B:\Games\Elavad\Assets\Engine\Logging\Log.cs
     startLine: 43
   assemblies:
   - Engine.Logging

@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode
+  id: MicroSplatBaseFeatures.UVMode
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode.UV
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode.WorldSpace
+  langs:
+  - csharp
+  - vb
+  name: MicroSplatBaseFeatures.UVMode
+  nameWithType: MicroSplatBaseFeatures.UVMode
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode
+  type: Enum
+  source:
+    id: UVMode
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 168
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum UVMode
+    content.vb: Public Enum UVMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode.UV
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode.UV
+  id: UV
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode
+  langs:
+  - csharp
+  - vb
+  name: UV
+  nameWithType: MicroSplatBaseFeatures.UVMode.UV
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode.UV
+  type: Field
+  source:
+    id: UV
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 170
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: UV = 0
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode.WorldSpace
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode.WorldSpace
+  id: WorldSpace
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode
+  langs:
+  - csharp
+  - vb
+  name: WorldSpace
+  nameWithType: MicroSplatBaseFeatures.UVMode.WorldSpace
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode.WorldSpace
+  type: Field
+  source:
+    id: WorldSpace
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 171
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: WorldSpace = 1
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode
+  parent: JBooth.MicroSplat
+  name: MicroSplatBaseFeatures.UVMode
+  nameWithType: MicroSplatBaseFeatures.UVMode
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.UVMode

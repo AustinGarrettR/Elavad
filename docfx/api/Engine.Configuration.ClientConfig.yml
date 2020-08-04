@@ -28,12 +28,8 @@ items:
   fullName: Engine.Configuration.ClientConfig
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Configuration/ClientConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ClientConfig
-    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\ClientConfig.cs
     startLine: 5
   assemblies:
   - Engine.Configuration
@@ -71,12 +67,8 @@ items:
   fullName: Engine.Configuration.ClientConfig.ENVIRONMENT_TRANSITION_SPEED
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/ClientConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ENVIRONMENT_TRANSITION_SPEED
-    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\ClientConfig.cs
     startLine: 14
   assemblies:
   - Engine.Configuration
@@ -108,12 +100,8 @@ items:
   fullName: Engine.Configuration.ClientConfig.CAMERA_Y_OFFSET
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/ClientConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: CAMERA_Y_OFFSET
-    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\ClientConfig.cs
     startLine: 23
   assemblies:
   - Engine.Configuration
@@ -145,12 +133,8 @@ items:
   fullName: Engine.Configuration.ClientConfig.CAMERA_DISTANCE_MINIMUM
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/ClientConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: CAMERA_DISTANCE_MINIMUM
-    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\ClientConfig.cs
     startLine: 28
   assemblies:
   - Engine.Configuration
@@ -182,12 +166,8 @@ items:
   fullName: Engine.Configuration.ClientConfig.CAMERA_DISTANCE_MAXIMUM
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/ClientConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: CAMERA_DISTANCE_MAXIMUM
-    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\ClientConfig.cs
     startLine: 33
   assemblies:
   - Engine.Configuration
@@ -219,12 +199,8 @@ items:
   fullName: Engine.Configuration.ClientConfig.CAMERA_Y_AXIS_MINIMUM
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/ClientConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: CAMERA_Y_AXIS_MINIMUM
-    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\ClientConfig.cs
     startLine: 38
   assemblies:
   - Engine.Configuration
@@ -256,12 +232,8 @@ items:
   fullName: Engine.Configuration.ClientConfig.CAMERA_Y_AXIS_MAXIMUM
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/ClientConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: CAMERA_Y_AXIS_MAXIMUM
-    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\ClientConfig.cs
     startLine: 43
   assemblies:
   - Engine.Configuration
@@ -293,12 +265,8 @@ items:
   fullName: Engine.Configuration.ClientConfig.MOUSE_HOLD_MOVEMENT_TIME_IN_MILLISECONDS
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/ClientConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: MOUSE_HOLD_MOVEMENT_TIME_IN_MILLISECONDS
-    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\ClientConfig.cs
     startLine: 52
   assemblies:
   - Engine.Configuration
@@ -330,12 +298,8 @@ items:
   fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION_SPEED
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/ClientConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: CAMERA_DEFAULT_X_AXIS_ROTATION_SPEED
-    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\ClientConfig.cs
     startLine: 61
   assemblies:
   - Engine.Configuration
@@ -367,12 +331,8 @@ items:
   fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_Y_AXIS_ROTATION_SPEED
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/ClientConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: CAMERA_DEFAULT_Y_AXIS_ROTATION_SPEED
-    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\ClientConfig.cs
     startLine: 66
   assemblies:
   - Engine.Configuration
@@ -404,12 +364,8 @@ items:
   fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_X_AXIS_ROTATION
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/ClientConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: CAMERA_DEFAULT_X_AXIS_ROTATION
-    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\ClientConfig.cs
     startLine: 71
   assemblies:
   - Engine.Configuration
@@ -441,12 +397,8 @@ items:
   fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_Y_AXIS_ROTATION
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/ClientConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: CAMERA_DEFAULT_Y_AXIS_ROTATION
-    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\ClientConfig.cs
     startLine: 76
   assemblies:
   - Engine.Configuration
@@ -478,12 +430,8 @@ items:
   fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_DISTANCE
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/ClientConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: CAMERA_DEFAULT_DISTANCE
-    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\ClientConfig.cs
     startLine: 81
   assemblies:
   - Engine.Configuration
@@ -515,12 +463,8 @@ items:
   fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_ZOOM_WHEN_INTERCEPTED
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/ClientConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: CAMERA_DEFAULT_ZOOM_WHEN_INTERCEPTED
-    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\ClientConfig.cs
     startLine: 86
   assemblies:
   - Engine.Configuration
@@ -552,12 +496,8 @@ items:
   fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/ClientConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: CAMERA_DEFAULT_SMOOTH_ZOOM_SPEED
-    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\ClientConfig.cs
     startLine: 91
   assemblies:
   - Engine.Configuration
@@ -589,12 +529,8 @@ items:
   fullName: Engine.Configuration.ClientConfig.CAMERA_DEFAULT_SMOOTH_POSITION_SPEED
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Configuration/ClientConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: CAMERA_DEFAULT_SMOOTH_POSITION_SPEED
-    path: ../Assets/Engine/Configuration/ClientConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\ClientConfig.cs
     startLine: 96
   assemblies:
   - Engine.Configuration

@@ -13,13 +13,9 @@ items:
   fullName: Engine.Networking.ConnectionManager.NotifyOnConnectedToServerDelegate
   type: Delegate
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: NotifyOnConnectedToServerDelegate
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 157
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
+    startLine: 159
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking

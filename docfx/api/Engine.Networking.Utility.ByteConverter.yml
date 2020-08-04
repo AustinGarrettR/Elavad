@@ -20,12 +20,8 @@ items:
   fullName: Engine.Networking.Utility.ByteConverter
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Networking/Utilities/ByteConverter.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ByteConverter
-    path: ../Assets/Engine/Networking/Utilities/ByteConverter.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Utilities\ByteConverter.cs
     startLine: 8
   assemblies:
   - Engine.Networking
@@ -63,12 +59,8 @@ items:
   fullName: Engine.Networking.Utility.ByteConverter.getBytes<T>(System.Object)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Utilities/ByteConverter.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: getBytes
-    path: ../Assets/Engine/Networking/Utilities/ByteConverter.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Utilities\ByteConverter.cs
     startLine: 16
   assemblies:
   - Engine.Networking
@@ -110,12 +102,8 @@ items:
   fullName: Engine.Networking.Utility.ByteConverter.getString(System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Utilities/ByteConverter.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: getString
-    path: ../Assets/Engine/Networking/Utilities/ByteConverter.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Utilities\ByteConverter.cs
     startLine: 67
   assemblies:
   - Engine.Networking
@@ -154,12 +142,8 @@ items:
   fullName: Engine.Networking.Utility.ByteConverter.getInt(System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Utilities/ByteConverter.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: getInt
-    path: ../Assets/Engine/Networking/Utilities/ByteConverter.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Utilities\ByteConverter.cs
     startLine: 77
   assemblies:
   - Engine.Networking
@@ -198,12 +182,8 @@ items:
   fullName: Engine.Networking.Utility.ByteConverter.getLong(System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Utilities/ByteConverter.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: getLong
-    path: ../Assets/Engine/Networking/Utilities/ByteConverter.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Utilities\ByteConverter.cs
     startLine: 87
   assemblies:
   - Engine.Networking
@@ -242,12 +222,8 @@ items:
   fullName: Engine.Networking.Utility.ByteConverter.getShort(System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Utilities/ByteConverter.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: getShort
-    path: ../Assets/Engine/Networking/Utilities/ByteConverter.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Utilities\ByteConverter.cs
     startLine: 97
   assemblies:
   - Engine.Networking
@@ -286,12 +262,8 @@ items:
   fullName: Engine.Networking.Utility.ByteConverter.getFloat(System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Utilities/ByteConverter.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: getFloat
-    path: ../Assets/Engine/Networking/Utilities/ByteConverter.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Utilities\ByteConverter.cs
     startLine: 107
   assemblies:
   - Engine.Networking
@@ -330,12 +302,8 @@ items:
   fullName: Engine.Networking.Utility.ByteConverter.getBool(System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Utilities/ByteConverter.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: getBool
-    path: ../Assets/Engine/Networking/Utilities/ByteConverter.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Utilities\ByteConverter.cs
     startLine: 117
   assemblies:
   - Engine.Networking

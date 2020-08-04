@@ -16,12 +16,8 @@ items:
   fullName: Engine.Asset.SharedAssetManager
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Asset/SharedAssetManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: SharedAssetManager
-    path: ../Assets/Engine/Asset/SharedAssetManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Asset\SharedAssetManager.cs
     startLine: 9
   assemblies:
   - Engine.Asset
@@ -32,7 +28,6 @@ items:
     content: 'public class SharedAssetManager : Manager'
     content.vb: >-
       Public Class SharedAssetManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -64,12 +59,8 @@ items:
   fullName: Engine.Asset.SharedAssetManager.Init()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Asset/SharedAssetManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Init
-    path: ../Assets/Engine/Asset/SharedAssetManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Asset\SharedAssetManager.cs
     startLine: 19
   assemblies:
   - Engine.Asset
@@ -99,12 +90,8 @@ items:
   fullName: Engine.Asset.SharedAssetManager.Shutdown()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Asset/SharedAssetManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
-    path: ../Assets/Engine/Asset/SharedAssetManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Asset\SharedAssetManager.cs
     startLine: 33
   assemblies:
   - Engine.Asset
@@ -134,12 +121,8 @@ items:
   fullName: Engine.Asset.SharedAssetManager.Process()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Asset/SharedAssetManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Process
-    path: ../Assets/Engine/Asset/SharedAssetManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Asset\SharedAssetManager.cs
     startLine: 41
   assemblies:
   - Engine.Asset

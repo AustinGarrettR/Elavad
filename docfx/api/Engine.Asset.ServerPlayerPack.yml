@@ -14,12 +14,8 @@ items:
   fullName: Engine.Asset.ServerPlayerPack
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Asset/ServerPlayerPack.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ServerPlayerPack
-    path: ../Assets/Engine/Asset/ServerPlayerPack.cs
+    path: B:\Games\Elavad\Assets\Engine\Asset\ServerPlayerPack.cs
     startLine: 7
   assemblies:
   - Engine.Asset
@@ -35,7 +31,6 @@ items:
       <CreateAssetMenu(fileName:="Server_Player_Pack", menuName:="Data Packs/Server_Player_Pack", order:=1)>
 
       Public Class ServerPlayerPack
-
           Inherits ScriptableObject
   inheritance:
   - System.Object
@@ -116,12 +111,8 @@ items:
   fullName: Engine.Asset.ServerPlayerPack.playerPrefab
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Asset/ServerPlayerPack.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: playerPrefab
-    path: ../Assets/Engine/Asset/ServerPlayerPack.cs
+    path: B:\Games\Elavad\Assets\Engine\Asset\ServerPlayerPack.cs
     startLine: 13
   assemblies:
   - Engine.Asset

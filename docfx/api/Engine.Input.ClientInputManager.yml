@@ -16,12 +16,8 @@ items:
   fullName: Engine.Input.ClientInputManager
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Input/ClientInputManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ClientInputManager
-    path: ../Assets/Engine/Input/ClientInputManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Input\ClientInputManager.cs
     startLine: 10
   assemblies:
   - Engine.Input
@@ -32,7 +28,6 @@ items:
     content: 'public class ClientInputManager : Manager'
     content.vb: >-
       Public Class ClientInputManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -64,12 +59,8 @@ items:
   fullName: Engine.Input.ClientInputManager.Init()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Input/ClientInputManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Init
-    path: ../Assets/Engine/Input/ClientInputManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Input\ClientInputManager.cs
     startLine: 19
   assemblies:
   - Engine.Input
@@ -99,12 +90,8 @@ items:
   fullName: Engine.Input.ClientInputManager.Shutdown()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Input/ClientInputManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
-    path: ../Assets/Engine/Input/ClientInputManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Input\ClientInputManager.cs
     startLine: 27
   assemblies:
   - Engine.Input
@@ -134,12 +121,8 @@ items:
   fullName: Engine.Input.ClientInputManager.Process()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Input/ClientInputManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Process
-    path: ../Assets/Engine/Input/ClientInputManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Input\ClientInputManager.cs
     startLine: 35
   assemblies:
   - Engine.Input

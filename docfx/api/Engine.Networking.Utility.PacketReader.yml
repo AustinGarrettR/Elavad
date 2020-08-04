@@ -20,12 +20,8 @@ items:
   fullName: Engine.Networking.Utility.PacketReader
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Networking/Utilities/PacketReader.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: PacketReader
-    path: ../Assets/Engine/Networking/Utilities/PacketReader.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Utilities\PacketReader.cs
     startLine: 8
   assemblies:
   - Engine.Networking
@@ -63,12 +59,8 @@ items:
   fullName: Engine.Networking.Utility.PacketReader.ReadInt(ref System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Utilities/PacketReader.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ReadInt
-    path: ../Assets/Engine/Networking/Utilities/PacketReader.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Utilities\PacketReader.cs
     startLine: 16
   assemblies:
   - Engine.Networking
@@ -107,12 +99,8 @@ items:
   fullName: Engine.Networking.Utility.PacketReader.ReadShort(ref System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Utilities/PacketReader.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ReadShort
-    path: ../Assets/Engine/Networking/Utilities/PacketReader.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Utilities\PacketReader.cs
     startLine: 34
   assemblies:
   - Engine.Networking
@@ -151,12 +139,8 @@ items:
   fullName: Engine.Networking.Utility.PacketReader.ReadBool(ref System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Utilities/PacketReader.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ReadBool
-    path: ../Assets/Engine/Networking/Utilities/PacketReader.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Utilities\PacketReader.cs
     startLine: 52
   assemblies:
   - Engine.Networking
@@ -195,12 +179,8 @@ items:
   fullName: Engine.Networking.Utility.PacketReader.ReadLong(ref System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Utilities/PacketReader.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ReadLong
-    path: ../Assets/Engine/Networking/Utilities/PacketReader.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Utilities\PacketReader.cs
     startLine: 70
   assemblies:
   - Engine.Networking
@@ -239,12 +219,8 @@ items:
   fullName: Engine.Networking.Utility.PacketReader.ReadFloat(ref System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Utilities/PacketReader.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ReadFloat
-    path: ../Assets/Engine/Networking/Utilities/PacketReader.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Utilities\PacketReader.cs
     startLine: 88
   assemblies:
   - Engine.Networking
@@ -283,12 +259,8 @@ items:
   fullName: Engine.Networking.Utility.PacketReader.ReadString(ref System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Utilities/PacketReader.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ReadString
-    path: ../Assets/Engine/Networking/Utilities/PacketReader.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Utilities\PacketReader.cs
     startLine: 106
   assemblies:
   - Engine.Networking
@@ -327,12 +299,8 @@ items:
   fullName: Engine.Networking.Utility.PacketReader.ReadByteArray(ref System.Byte[])
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Utilities/PacketReader.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ReadByteArray
-    path: ../Assets/Engine/Networking/Utilities/PacketReader.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Utilities\PacketReader.cs
     startLine: 125
   assemblies:
   - Engine.Networking

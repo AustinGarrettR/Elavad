@@ -15,12 +15,8 @@ items:
   fullName: Engine.Loading.ClientLoadData
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Loading/ClientLoadData.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ClientLoadData
-    path: ../Assets/Engine/Loading/ClientLoadData.cs
+    path: B:\Games\Elavad\Assets\Engine\Loading\ClientLoadData.cs
     startLine: 7
   assemblies:
   - Engine.Loading
@@ -58,12 +54,8 @@ items:
   fullName: Engine.Loading.ClientLoadData.startPosition
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Loading/ClientLoadData.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: startPosition
-    path: ../Assets/Engine/Loading/ClientLoadData.cs
+    path: B:\Games\Elavad\Assets\Engine\Loading\ClientLoadData.cs
     startLine: 12
   assemblies:
   - Engine.Loading
@@ -91,12 +83,8 @@ items:
   fullName: Engine.Loading.ClientLoadData.startRotation
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Loading/ClientLoadData.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: startRotation
-    path: ../Assets/Engine/Loading/ClientLoadData.cs
+    path: B:\Games\Elavad\Assets\Engine\Loading\ClientLoadData.cs
     startLine: 17
   assemblies:
   - Engine.Loading

@@ -1,0 +1,245 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.TextureArrayConfig.Compression
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.Compression
+  id: TextureArrayConfig.Compression
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.TextureArrayConfig.Compression.AutomaticCompressed
+  - JBooth.MicroSplat.TextureArrayConfig.Compression.ForceASTC
+  - JBooth.MicroSplat.TextureArrayConfig.Compression.ForceCrunch
+  - JBooth.MicroSplat.TextureArrayConfig.Compression.ForceDXT
+  - JBooth.MicroSplat.TextureArrayConfig.Compression.ForceETC2
+  - JBooth.MicroSplat.TextureArrayConfig.Compression.ForcePVR
+  - JBooth.MicroSplat.TextureArrayConfig.Compression.Uncompressed
+  langs:
+  - csharp
+  - vb
+  name: TextureArrayConfig.Compression
+  nameWithType: TextureArrayConfig.Compression
+  fullName: JBooth.MicroSplat.TextureArrayConfig.Compression
+  type: Enum
+  source:
+    id: Compression
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum Compression
+    content.vb: Public Enum Compression
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.TextureArrayConfig.Compression.AutomaticCompressed
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.Compression.AutomaticCompressed
+  id: AutomaticCompressed
+  parent: JBooth.MicroSplat.TextureArrayConfig.Compression
+  langs:
+  - csharp
+  - vb
+  name: AutomaticCompressed
+  nameWithType: TextureArrayConfig.Compression.AutomaticCompressed
+  fullName: JBooth.MicroSplat.TextureArrayConfig.Compression.AutomaticCompressed
+  type: Field
+  source:
+    id: AutomaticCompressed
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 36
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: AutomaticCompressed = 0
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.Compression
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.Compression.ForceDXT
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.Compression.ForceDXT
+  id: ForceDXT
+  parent: JBooth.MicroSplat.TextureArrayConfig.Compression
+  langs:
+  - csharp
+  - vb
+  name: ForceDXT
+  nameWithType: TextureArrayConfig.Compression.ForceDXT
+  fullName: JBooth.MicroSplat.TextureArrayConfig.Compression.ForceDXT
+  type: Field
+  source:
+    id: ForceDXT
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 37
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: ForceDXT = 1
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.Compression
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.Compression.ForcePVR
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.Compression.ForcePVR
+  id: ForcePVR
+  parent: JBooth.MicroSplat.TextureArrayConfig.Compression
+  langs:
+  - csharp
+  - vb
+  name: ForcePVR
+  nameWithType: TextureArrayConfig.Compression.ForcePVR
+  fullName: JBooth.MicroSplat.TextureArrayConfig.Compression.ForcePVR
+  type: Field
+  source:
+    id: ForcePVR
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 38
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: ForcePVR = 2
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.Compression
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.Compression.ForceETC2
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.Compression.ForceETC2
+  id: ForceETC2
+  parent: JBooth.MicroSplat.TextureArrayConfig.Compression
+  langs:
+  - csharp
+  - vb
+  name: ForceETC2
+  nameWithType: TextureArrayConfig.Compression.ForceETC2
+  fullName: JBooth.MicroSplat.TextureArrayConfig.Compression.ForceETC2
+  type: Field
+  source:
+    id: ForceETC2
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 39
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: ForceETC2 = 3
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.Compression
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.Compression.ForceASTC
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.Compression.ForceASTC
+  id: ForceASTC
+  parent: JBooth.MicroSplat.TextureArrayConfig.Compression
+  langs:
+  - csharp
+  - vb
+  name: ForceASTC
+  nameWithType: TextureArrayConfig.Compression.ForceASTC
+  fullName: JBooth.MicroSplat.TextureArrayConfig.Compression.ForceASTC
+  type: Field
+  source:
+    id: ForceASTC
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 40
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: ForceASTC = 4
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.Compression
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.Compression.ForceCrunch
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.Compression.ForceCrunch
+  id: ForceCrunch
+  parent: JBooth.MicroSplat.TextureArrayConfig.Compression
+  langs:
+  - csharp
+  - vb
+  name: ForceCrunch
+  nameWithType: TextureArrayConfig.Compression.ForceCrunch
+  fullName: JBooth.MicroSplat.TextureArrayConfig.Compression.ForceCrunch
+  type: Field
+  source:
+    id: ForceCrunch
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 41
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: ForceCrunch = 5
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.Compression
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.TextureArrayConfig.Compression.Uncompressed
+  commentId: F:JBooth.MicroSplat.TextureArrayConfig.Compression.Uncompressed
+  id: Uncompressed
+  parent: JBooth.MicroSplat.TextureArrayConfig.Compression
+  langs:
+  - csharp
+  - vb
+  name: Uncompressed
+  nameWithType: TextureArrayConfig.Compression.Uncompressed
+  fullName: JBooth.MicroSplat.TextureArrayConfig.Compression.Uncompressed
+  type: Field
+  source:
+    id: Uncompressed
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\TextureArrayConfig.cs
+    startLine: 42
+  assemblies:
+  - Assembly-CSharp
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Uncompressed = 6
+    return:
+      type: JBooth.MicroSplat.TextureArrayConfig.Compression
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.TextureArrayConfig.Compression
+  commentId: T:JBooth.MicroSplat.TextureArrayConfig.Compression
+  parent: JBooth.MicroSplat
+  name: TextureArrayConfig.Compression
+  nameWithType: TextureArrayConfig.Compression
+  fullName: JBooth.MicroSplat.TextureArrayConfig.Compression

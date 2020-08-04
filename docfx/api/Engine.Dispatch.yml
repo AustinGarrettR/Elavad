@@ -16,13 +16,13 @@ items:
   assemblies:
   - Engine.Dispatch
 references:
-- uid: Engine.Dispatch.DispatchManager
-  commentId: T:Engine.Dispatch.DispatchManager
-  name: DispatchManager
-  nameWithType: DispatchManager
-  fullName: Engine.Dispatch.DispatchManager
 - uid: Engine.Dispatch.Dispatcher
   commentId: T:Engine.Dispatch.Dispatcher
   name: Dispatcher
   nameWithType: Dispatcher
   fullName: Engine.Dispatch.Dispatcher
+- uid: Engine.Dispatch.DispatchManager
+  commentId: T:Engine.Dispatch.DispatchManager
+  name: DispatchManager
+  nameWithType: DispatchManager
+  fullName: Engine.Dispatch.DispatchManager

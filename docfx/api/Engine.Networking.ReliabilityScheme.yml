@@ -15,12 +15,8 @@ items:
   fullName: Engine.Networking.ReliabilityScheme
   type: Enum
   source:
-    remote:
-      path: Assets/Engine/Networking/Interfaces/ReliabilityScheme.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ReliabilityScheme
-    path: ../Assets/Engine/Networking/Interfaces/ReliabilityScheme.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Interfaces\ReliabilityScheme.cs
     startLine: 5
   assemblies:
   - Engine.Networking
@@ -48,12 +44,8 @@ items:
   fullName: Engine.Networking.ReliabilityScheme.UNRELIABLE
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Interfaces/ReliabilityScheme.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: UNRELIABLE
-    path: ../Assets/Engine/Networking/Interfaces/ReliabilityScheme.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Interfaces\ReliabilityScheme.cs
     startLine: 10
   assemblies:
   - Engine.Networking
@@ -82,12 +74,8 @@ items:
   fullName: Engine.Networking.ReliabilityScheme.RELIABLE
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Interfaces/ReliabilityScheme.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: RELIABLE
-    path: ../Assets/Engine/Networking/Interfaces/ReliabilityScheme.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Interfaces\ReliabilityScheme.cs
     startLine: 15
   assemblies:
   - Engine.Networking

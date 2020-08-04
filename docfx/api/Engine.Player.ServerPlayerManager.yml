@@ -17,12 +17,8 @@ items:
   fullName: Engine.Player.ServerPlayerManager
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Player/ServerPlayerManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ServerPlayerManager
-    path: ../Assets/Engine/Player/ServerPlayerManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Player\ServerPlayerManager.cs
     startLine: 15
   assemblies:
   - Engine.Player
@@ -31,7 +27,6 @@ items:
     content: 'public class ServerPlayerManager : Manager'
     content.vb: >-
       Public Class ServerPlayerManager
-
           Inherits Manager
   inheritance:
   - System.Object
@@ -63,12 +58,8 @@ items:
   fullName: Engine.Player.ServerPlayerManager.ServerPlayerManager(Engine.Account.ServerLoginManager, Engine.Asset.ServerAssetManager, Engine.Networking.ConnectionManager)
   type: Constructor
   source:
-    remote:
-      path: Assets/Engine/Player/ServerPlayerManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: .ctor
-    path: ../Assets/Engine/Player/ServerPlayerManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Player\ServerPlayerManager.cs
     startLine: 27
   assemblies:
   - Engine.Player
@@ -105,12 +96,8 @@ items:
   fullName: Engine.Player.ServerPlayerManager.Init()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Player/ServerPlayerManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Init
-    path: ../Assets/Engine/Player/ServerPlayerManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Player\ServerPlayerManager.cs
     startLine: 41
   assemblies:
   - Engine.Player
@@ -140,12 +127,8 @@ items:
   fullName: Engine.Player.ServerPlayerManager.Process()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Player/ServerPlayerManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Process
-    path: ../Assets/Engine/Player/ServerPlayerManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Player\ServerPlayerManager.cs
     startLine: 54
   assemblies:
   - Engine.Player
@@ -175,12 +158,8 @@ items:
   fullName: Engine.Player.ServerPlayerManager.Shutdown()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Player/ServerPlayerManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Shutdown
-    path: ../Assets/Engine/Player/ServerPlayerManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Player\ServerPlayerManager.cs
     startLine: 62
   assemblies:
   - Engine.Player

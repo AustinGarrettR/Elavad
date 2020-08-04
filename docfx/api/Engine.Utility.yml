@@ -16,13 +16,13 @@ items:
   assemblies:
   - Engine.Utility
 references:
-- uid: Engine.Utility.StringFormatter
-  commentId: T:Engine.Utility.StringFormatter
-  name: StringFormatter
-  nameWithType: StringFormatter
-  fullName: Engine.Utility.StringFormatter
 - uid: Engine.Utility.TimeHandler
   commentId: T:Engine.Utility.TimeHandler
   name: TimeHandler
   nameWithType: TimeHandler
   fullName: Engine.Utility.TimeHandler
+- uid: Engine.Utility.StringFormatter
+  commentId: T:Engine.Utility.StringFormatter
+  name: StringFormatter
+  nameWithType: StringFormatter
+  fullName: Engine.Utility.StringFormatter

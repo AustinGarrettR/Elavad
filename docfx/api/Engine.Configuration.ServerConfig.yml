@@ -13,12 +13,8 @@ items:
   fullName: Engine.Configuration.ServerConfig
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Configuration/ServerConfig.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ServerConfig
-    path: ../Assets/Engine/Configuration/ServerConfig.cs
+    path: B:\Games\Elavad\Assets\Engine\Configuration\ServerConfig.cs
     startLine: 5
   assemblies:
   - Engine.Configuration

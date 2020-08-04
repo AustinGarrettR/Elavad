@@ -1,0 +1,216 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode
+  id: MicroSplatBaseFeatures.LightingMode
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.Automatic
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.BlinnPhong
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.Lambert
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.Simplified
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.StandardShader
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.StandardShaderNoSheen
+  langs:
+  - csharp
+  - vb
+  name: MicroSplatBaseFeatures.LightingMode
+  nameWithType: MicroSplatBaseFeatures.LightingMode
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode
+  type: Enum
+  source:
+    id: LightingMode
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 174
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum LightingMode
+    content.vb: Public Enum LightingMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.Automatic
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.Automatic
+  id: Automatic
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode
+  langs:
+  - csharp
+  - vb
+  name: Automatic
+  nameWithType: MicroSplatBaseFeatures.LightingMode.Automatic
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.Automatic
+  type: Field
+  source:
+    id: Automatic
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 176
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Automatic = 0
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.StandardShader
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.StandardShader
+  id: StandardShader
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode
+  langs:
+  - csharp
+  - vb
+  name: StandardShader
+  nameWithType: MicroSplatBaseFeatures.LightingMode.StandardShader
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.StandardShader
+  type: Field
+  source:
+    id: StandardShader
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 177
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: StandardShader = 1
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.Simplified
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.Simplified
+  id: Simplified
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode
+  langs:
+  - csharp
+  - vb
+  name: Simplified
+  nameWithType: MicroSplatBaseFeatures.LightingMode.Simplified
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.Simplified
+  type: Field
+  source:
+    id: Simplified
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 178
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Simplified = 2
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.BlinnPhong
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.BlinnPhong
+  id: BlinnPhong
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode
+  langs:
+  - csharp
+  - vb
+  name: BlinnPhong
+  nameWithType: MicroSplatBaseFeatures.LightingMode.BlinnPhong
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.BlinnPhong
+  type: Field
+  source:
+    id: BlinnPhong
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 179
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: BlinnPhong = 3
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.Lambert
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.Lambert
+  id: Lambert
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode
+  langs:
+  - csharp
+  - vb
+  name: Lambert
+  nameWithType: MicroSplatBaseFeatures.LightingMode.Lambert
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.Lambert
+  type: Field
+  source:
+    id: Lambert
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 180
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: Lambert = 4
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.StandardShaderNoSheen
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.StandardShaderNoSheen
+  id: StandardShaderNoSheen
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode
+  langs:
+  - csharp
+  - vb
+  name: StandardShaderNoSheen
+  nameWithType: MicroSplatBaseFeatures.LightingMode.StandardShaderNoSheen
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode.StandardShaderNoSheen
+  type: Field
+  source:
+    id: StandardShaderNoSheen
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 181
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: StandardShaderNoSheen = 5
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode
+  parent: JBooth.MicroSplat
+  name: MicroSplatBaseFeatures.LightingMode
+  nameWithType: MicroSplatBaseFeatures.LightingMode
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.LightingMode

@@ -17,12 +17,8 @@ items:
   fullName: Engine.Editor.GameBuildPipeline
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Editor/GameBuildPipeline.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: GameBuildPipeline
-    path: ../Assets/Engine/Editor/GameBuildPipeline.cs
+    path: B:\Games\Elavad\Assets\Engine\Editor\GameBuildPipeline.cs
     startLine: 9
   assemblies:
   - Engine.Editor
@@ -31,7 +27,6 @@ items:
     content: 'public class GameBuildPipeline : MonoBehaviour'
     content.vb: >-
       Public Class GameBuildPipeline
-
           Inherits MonoBehaviour
   inheritance:
   - System.Object
@@ -157,12 +152,8 @@ items:
   fullName: Engine.Editor.GameBuildPipeline.BuildWindows64Client()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Editor/GameBuildPipeline.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: BuildWindows64Client
-    path: ../Assets/Engine/Editor/GameBuildPipeline.cs
+    path: B:\Games\Elavad\Assets\Engine\Editor\GameBuildPipeline.cs
     startLine: 15
   assemblies:
   - Engine.Editor
@@ -201,12 +192,8 @@ items:
   fullName: Engine.Editor.GameBuildPipeline.BuildWindows64Server()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Editor/GameBuildPipeline.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: BuildWindows64Server
-    path: ../Assets/Engine/Editor/GameBuildPipeline.cs
+    path: B:\Games\Elavad\Assets\Engine\Editor\GameBuildPipeline.cs
     startLine: 21
   assemblies:
   - Engine.Editor
@@ -245,12 +232,8 @@ items:
   fullName: Engine.Editor.GameBuildPipeline.BuildWindows32Client()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Editor/GameBuildPipeline.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: BuildWindows32Client
-    path: ../Assets/Engine/Editor/GameBuildPipeline.cs
+    path: B:\Games\Elavad\Assets\Engine\Editor\GameBuildPipeline.cs
     startLine: 27
   assemblies:
   - Engine.Editor
@@ -289,12 +272,8 @@ items:
   fullName: Engine.Editor.GameBuildPipeline.BuildWindows32Server()
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Editor/GameBuildPipeline.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: BuildWindows32Server
-    path: ../Assets/Engine/Editor/GameBuildPipeline.cs
+    path: B:\Games\Elavad\Assets\Engine\Editor\GameBuildPipeline.cs
     startLine: 33
   assemblies:
   - Engine.Editor

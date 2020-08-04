@@ -18,6 +18,16 @@ items:
   assemblies:
   - Engine.Player
 references:
+- uid: Engine.Player.ServerPlayerManager
+  commentId: T:Engine.Player.ServerPlayerManager
+  name: ServerPlayerManager
+  nameWithType: ServerPlayerManager
+  fullName: Engine.Player.ServerPlayerManager
+- uid: Engine.Player.ServerPlayer
+  commentId: T:Engine.Player.ServerPlayer
+  name: ServerPlayer
+  nameWithType: ServerPlayer
+  fullName: Engine.Player.ServerPlayer
 - uid: Engine.Player.ClientPlayer
   commentId: T:Engine.Player.ClientPlayer
   parent: Engine.Player
@@ -30,16 +40,6 @@ references:
   name: ClientPlayerManager
   nameWithType: ClientPlayerManager
   fullName: Engine.Player.ClientPlayerManager
-- uid: Engine.Player.ServerPlayer
-  commentId: T:Engine.Player.ServerPlayer
-  name: ServerPlayer
-  nameWithType: ServerPlayer
-  fullName: Engine.Player.ServerPlayer
-- uid: Engine.Player.ServerPlayerManager
-  commentId: T:Engine.Player.ServerPlayerManager
-  name: ServerPlayerManager
-  nameWithType: ServerPlayerManager
-  fullName: Engine.Player.ServerPlayerManager
 - uid: Engine.Player
   commentId: N:Engine.Player
   name: Engine.Player

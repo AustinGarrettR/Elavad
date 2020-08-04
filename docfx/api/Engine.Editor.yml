@@ -18,11 +18,6 @@ items:
   assemblies:
   - Engine.Editor
 references:
-- uid: Engine.Editor.BuildSceneEditor
-  commentId: T:Engine.Editor.BuildSceneEditor
-  name: BuildSceneEditor
-  nameWithType: BuildSceneEditor
-  fullName: Engine.Editor.BuildSceneEditor
 - uid: Engine.Editor.GameBuildPipeline
   commentId: T:Engine.Editor.GameBuildPipeline
   name: GameBuildPipeline
@@ -38,3 +33,8 @@ references:
   name: WorldEditorSceneProcessor
   nameWithType: WorldEditorSceneProcessor
   fullName: Engine.Editor.WorldEditorSceneProcessor
+- uid: Engine.Editor.BuildSceneEditor
+  commentId: T:Engine.Editor.BuildSceneEditor
+  name: BuildSceneEditor
+  nameWithType: BuildSceneEditor
+  fullName: Engine.Editor.BuildSceneEditor

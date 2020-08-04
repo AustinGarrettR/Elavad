@@ -15,13 +15,9 @@ items:
   fullName: Engine.Networking.ConnectionManager.ListenerType
   type: Enum
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ListenerType
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 202
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
+    startLine: 204
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -48,13 +44,9 @@ items:
   fullName: Engine.Networking.ConnectionManager.ListenerType.SERVER
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: SERVER
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 207
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
+    startLine: 209
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking
@@ -82,13 +74,9 @@ items:
   fullName: Engine.Networking.ConnectionManager.ListenerType.CLIENT
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Networking/Managers/ConnectionManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: CLIENT
-    path: ../Assets/Engine/Networking/Managers/ConnectionManager.cs
-    startLine: 212
+    path: B:\Games\Elavad\Assets\Engine\Networking\Managers\ConnectionManager.cs
+    startLine: 214
   assemblies:
   - Engine.Networking
   namespace: Engine.Networking

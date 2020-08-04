@@ -1,0 +1,2066 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.FeatureDescriptor
+  commentId: T:JBooth.MicroSplat.FeatureDescriptor
+  id: FeatureDescriptor
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.FeatureDescriptor.CompileSortOrder
+  - JBooth.MicroSplat.FeatureDescriptor.ComputeSampleCounts(System.String[],System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+  - JBooth.MicroSplat.FeatureDescriptor.DisplaySortOrder
+  - JBooth.MicroSplat.FeatureDescriptor.DrawFeatureGUI(MicroSplatKeywords)
+  - JBooth.MicroSplat.FeatureDescriptor.DrawGlobalToggle(System.String,MicroSplatKeywords)
+  - JBooth.MicroSplat.FeatureDescriptor.DrawPerTexColor(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,UnityEngine.GUIContent,System.Boolean)
+  - JBooth.MicroSplat.FeatureDescriptor.DrawPerTexColorNoToggle(System.Int32,System.Int32,MicroSplatPropData,UnityEngine.GUIContent)
+  - JBooth.MicroSplat.FeatureDescriptor.DrawPerTexFloatSlider(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,System.Single,System.Single,System.Boolean)
+  - JBooth.MicroSplat.FeatureDescriptor.DrawPerTexFloatSliderNoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,System.Single,System.Single)
+  - JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUp(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,UnityEngine.GUIContent[])
+  - JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUpNoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,UnityEngine.GUIContent[])
+  - JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUpNoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,UnityEngine.GUIContent[],System.Single[])
+  - JBooth.MicroSplat.FeatureDescriptor.DrawPerTextureGUI(System.Int32,MicroSplatKeywords,UnityEngine.Material,MicroSplatPropData)
+  - JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.V2Cannel,UnityEngine.GUIContent)
+  - JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2NoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.V2Cannel,UnityEngine.GUIContent)
+  - JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2Vector2(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,UnityEngine.GUIContent,UnityEngine.GUIContent)
+  - JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2Vector2NoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,UnityEngine.GUIContent,UnityEngine.GUIContent)
+  - JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector3(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,UnityEngine.GUIContent)
+  - JBooth.MicroSplat.FeatureDescriptor.DrawShaderGUI(MicroSplatShaderGUI,MicroSplatKeywords,UnityEngine.Material,UnityEditor.MaterialEditor,UnityEditor.MaterialProperty[])
+  - JBooth.MicroSplat.FeatureDescriptor.GetVersion
+  - JBooth.MicroSplat.FeatureDescriptor.InitCompiler(System.String[])
+  - JBooth.MicroSplat.FeatureDescriptor.InitPropData(System.Int32,MicroSplatPropData,UnityEngine.Color)
+  - JBooth.MicroSplat.FeatureDescriptor.ModuleName
+  - JBooth.MicroSplat.FeatureDescriptor.noPerTexToggleWidth
+  - JBooth.MicroSplat.FeatureDescriptor.OnPostGeneration(System.Text.StringBuilder,System.String[],System.String,System.String,System.Boolean)
+  - JBooth.MicroSplat.FeatureDescriptor.Pack
+  - JBooth.MicroSplat.FeatureDescriptor.Pack(MicroSplatKeywords)
+  - JBooth.MicroSplat.FeatureDescriptor.RequiresShaderModel46
+  - JBooth.MicroSplat.FeatureDescriptor.Unpack(System.String[])
+  - JBooth.MicroSplat.FeatureDescriptor.WriteAfterVetrexFunctions(System.Text.StringBuilder)
+  - JBooth.MicroSplat.FeatureDescriptor.WriteFunctions(System.Text.StringBuilder)
+  - JBooth.MicroSplat.FeatureDescriptor.WritePerMaterialCBuffer(System.String[],System.Text.StringBuilder)
+  - JBooth.MicroSplat.FeatureDescriptor.WriteProperties(System.String[],System.Text.StringBuilder)
+  - JBooth.MicroSplat.FeatureDescriptor.WriteSharedFunctions(System.Text.StringBuilder)
+  langs:
+  - csharp
+  - vb
+  name: FeatureDescriptor
+  nameWithType: FeatureDescriptor
+  fullName: JBooth.MicroSplat.FeatureDescriptor
+  type: Class
+  source:
+    id: FeatureDescriptor
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 12
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public abstract class FeatureDescriptor
+    content.vb: Public MustInherit Class FeatureDescriptor
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - JBooth.MicroSplat.MicroSplatBaseFeatures
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - abstract
+  - class
+  modifiers.vb:
+  - Public
+  - MustInherit
+  - Class
+- uid: JBooth.MicroSplat.FeatureDescriptor.GetVersion
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.GetVersion
+  id: GetVersion
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: GetVersion()
+  nameWithType: FeatureDescriptor.GetVersion()
+  fullName: JBooth.MicroSplat.FeatureDescriptor.GetVersion()
+  type: Method
+  source:
+    id: GetVersion
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 18
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  summary: "\nAll versions must match for module to be active\n"
+  example: []
+  syntax:
+    content: public abstract string GetVersion()
+    return:
+      type: System.String
+      description: The version.
+    content.vb: Public MustOverride Function GetVersion As String
+  overload: JBooth.MicroSplat.FeatureDescriptor.GetVersion*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: JBooth.MicroSplat.FeatureDescriptor.CompileSortOrder
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.CompileSortOrder
+  id: CompileSortOrder
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: CompileSortOrder()
+  nameWithType: FeatureDescriptor.CompileSortOrder()
+  fullName: JBooth.MicroSplat.FeatureDescriptor.CompileSortOrder()
+  type: Method
+  source:
+    id: CompileSortOrder
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 22
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public virtual int CompileSortOrder()
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Function CompileSortOrder As Integer
+  overload: JBooth.MicroSplat.FeatureDescriptor.CompileSortOrder*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: JBooth.MicroSplat.FeatureDescriptor.DisplaySortOrder
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.DisplaySortOrder
+  id: DisplaySortOrder
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: DisplaySortOrder()
+  nameWithType: FeatureDescriptor.DisplaySortOrder()
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DisplaySortOrder()
+  type: Method
+  source:
+    id: DisplaySortOrder
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 27
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public virtual int DisplaySortOrder()
+    return:
+      type: System.Int32
+    content.vb: Public Overridable Function DisplaySortOrder As Integer
+  overload: JBooth.MicroSplat.FeatureDescriptor.DisplaySortOrder*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: JBooth.MicroSplat.FeatureDescriptor.ModuleName
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.ModuleName
+  id: ModuleName
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: ModuleName()
+  nameWithType: FeatureDescriptor.ModuleName()
+  fullName: JBooth.MicroSplat.FeatureDescriptor.ModuleName()
+  type: Method
+  source:
+    id: ModuleName
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 32
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public abstract string ModuleName()
+    return:
+      type: System.String
+    content.vb: Public MustOverride Function ModuleName As String
+  overload: JBooth.MicroSplat.FeatureDescriptor.ModuleName*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: JBooth.MicroSplat.FeatureDescriptor.OnPostGeneration(System.Text.StringBuilder,System.String[],System.String,System.String,System.Boolean)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.OnPostGeneration(System.Text.StringBuilder,System.String[],System.String,System.String,System.Boolean)
+  id: OnPostGeneration(System.Text.StringBuilder,System.String[],System.String,System.String,System.Boolean)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: OnPostGeneration(StringBuilder, String[], String, String, Boolean)
+  nameWithType: FeatureDescriptor.OnPostGeneration(StringBuilder, String[], String, String, Boolean)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.OnPostGeneration(System.Text.StringBuilder, System.String[], System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    id: OnPostGeneration
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 34
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public virtual void OnPostGeneration(StringBuilder sb, string[] features, string name, string baseName = null, bool blendable = false)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+    - id: features
+      type: System.String[]
+    - id: name
+      type: System.String
+    - id: baseName
+      type: System.String
+    - id: blendable
+      type: System.Boolean
+    content.vb: Public Overridable Sub OnPostGeneration(sb As StringBuilder, features As String(), name As String, baseName As String = Nothing, blendable As Boolean = False)
+  overload: JBooth.MicroSplat.FeatureDescriptor.OnPostGeneration*
+  nameWithType.vb: FeatureDescriptor.OnPostGeneration(StringBuilder, String(), String, String, Boolean)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: JBooth.MicroSplat.FeatureDescriptor.OnPostGeneration(System.Text.StringBuilder, System.String(), System.String, System.String, System.Boolean)
+  name.vb: OnPostGeneration(StringBuilder, String(), String, String, Boolean)
+- uid: JBooth.MicroSplat.FeatureDescriptor.RequiresShaderModel46
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.RequiresShaderModel46
+  id: RequiresShaderModel46
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: RequiresShaderModel46()
+  nameWithType: FeatureDescriptor.RequiresShaderModel46()
+  fullName: JBooth.MicroSplat.FeatureDescriptor.RequiresShaderModel46()
+  type: Method
+  source:
+    id: RequiresShaderModel46
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 43
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  summary: "\nRequireses the shader model46.\n"
+  example: []
+  syntax:
+    content: public virtual bool RequiresShaderModel46()
+    return:
+      type: System.Boolean
+      description: <code>true</code>, if shader model46 was requiresed, <code>false</code> otherwise.
+    content.vb: Public Overridable Function RequiresShaderModel46 As Boolean
+  overload: JBooth.MicroSplat.FeatureDescriptor.RequiresShaderModel46*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawFeatureGUI(MicroSplatKeywords)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.DrawFeatureGUI(MicroSplatKeywords)
+  id: DrawFeatureGUI(MicroSplatKeywords)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: DrawFeatureGUI(MicroSplatKeywords)
+  nameWithType: FeatureDescriptor.DrawFeatureGUI(MicroSplatKeywords)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawFeatureGUI(MicroSplatKeywords)
+  type: Method
+  source:
+    id: DrawFeatureGUI
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 49
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  summary: "\nDrawGUI for shader compiler feature options\n"
+  example: []
+  syntax:
+    content: public abstract void DrawFeatureGUI(MicroSplatKeywords keywords)
+    parameters:
+    - id: keywords
+      type: MicroSplatKeywords
+    content.vb: Public MustOverride Sub DrawFeatureGUI(keywords As MicroSplatKeywords)
+  overload: JBooth.MicroSplat.FeatureDescriptor.DrawFeatureGUI*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawShaderGUI(MicroSplatShaderGUI,MicroSplatKeywords,UnityEngine.Material,UnityEditor.MaterialEditor,UnityEditor.MaterialProperty[])
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.DrawShaderGUI(MicroSplatShaderGUI,MicroSplatKeywords,UnityEngine.Material,UnityEditor.MaterialEditor,UnityEditor.MaterialProperty[])
+  id: DrawShaderGUI(MicroSplatShaderGUI,MicroSplatKeywords,UnityEngine.Material,UnityEditor.MaterialEditor,UnityEditor.MaterialProperty[])
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: DrawShaderGUI(MicroSplatShaderGUI, MicroSplatKeywords, Material, MaterialEditor, MaterialProperty[])
+  nameWithType: FeatureDescriptor.DrawShaderGUI(MicroSplatShaderGUI, MicroSplatKeywords, Material, MaterialEditor, MaterialProperty[])
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawShaderGUI(MicroSplatShaderGUI, MicroSplatKeywords, UnityEngine.Material, UnityEditor.MaterialEditor, UnityEditor.MaterialProperty[])
+  type: Method
+  source:
+    id: DrawShaderGUI
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 58
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  summary: "\nDraw the editor for the shaders options\n"
+  example: []
+  syntax:
+    content: public abstract void DrawShaderGUI(MicroSplatShaderGUI shaderGUI, MicroSplatKeywords keywords, Material mat, MaterialEditor materialEditor, MaterialProperty[] props)
+    parameters:
+    - id: shaderGUI
+      type: MicroSplatShaderGUI
+      description: Shader GU.
+    - id: keywords
+      type: MicroSplatKeywords
+    - id: mat
+      type: UnityEngine.Material
+      description: Mat.
+    - id: materialEditor
+      type: UnityEditor.MaterialEditor
+      description: Material editor.
+    - id: props
+      type: UnityEditor.MaterialProperty[]
+      description: Properties.
+    content.vb: Public MustOverride Sub DrawShaderGUI(shaderGUI As MicroSplatShaderGUI, keywords As MicroSplatKeywords, mat As Material, materialEditor As MaterialEditor, props As MaterialProperty())
+  overload: JBooth.MicroSplat.FeatureDescriptor.DrawShaderGUI*
+  nameWithType.vb: FeatureDescriptor.DrawShaderGUI(MicroSplatShaderGUI, MicroSplatKeywords, Material, MaterialEditor, MaterialProperty())
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: JBooth.MicroSplat.FeatureDescriptor.DrawShaderGUI(MicroSplatShaderGUI, MicroSplatKeywords, UnityEngine.Material, UnityEditor.MaterialEditor, UnityEditor.MaterialProperty())
+  name.vb: DrawShaderGUI(MicroSplatShaderGUI, MicroSplatKeywords, Material, MaterialEditor, MaterialProperty())
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTextureGUI(System.Int32,MicroSplatKeywords,UnityEngine.Material,MicroSplatPropData)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.DrawPerTextureGUI(System.Int32,MicroSplatKeywords,UnityEngine.Material,MicroSplatPropData)
+  id: DrawPerTextureGUI(System.Int32,MicroSplatKeywords,UnityEngine.Material,MicroSplatPropData)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: DrawPerTextureGUI(Int32, MicroSplatKeywords, Material, MicroSplatPropData)
+  nameWithType: FeatureDescriptor.DrawPerTextureGUI(Int32, MicroSplatKeywords, Material, MicroSplatPropData)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTextureGUI(System.Int32, MicroSplatKeywords, UnityEngine.Material, MicroSplatPropData)
+  type: Method
+  source:
+    id: DrawPerTextureGUI
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 69
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  summary: "\nGot per texture properties? Draw the GUI for them here..\n"
+  example: []
+  syntax:
+    content: public virtual void DrawPerTextureGUI(int index, MicroSplatKeywords keywords, Material mat, MicroSplatPropData propData)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: Index.
+    - id: keywords
+      type: MicroSplatKeywords
+    - id: mat
+      type: UnityEngine.Material
+      description: Mat.
+    - id: propData
+      type: MicroSplatPropData
+    content.vb: Public Overridable Sub DrawPerTextureGUI(index As Integer, keywords As MicroSplatKeywords, mat As Material, propData As MicroSplatPropData)
+  overload: JBooth.MicroSplat.FeatureDescriptor.DrawPerTextureGUI*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: JBooth.MicroSplat.FeatureDescriptor.Unpack(System.String[])
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.Unpack(System.String[])
+  id: Unpack(System.String[])
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: Unpack(String[])
+  nameWithType: FeatureDescriptor.Unpack(String[])
+  fullName: JBooth.MicroSplat.FeatureDescriptor.Unpack(System.String[])
+  type: Method
+  source:
+    id: Unpack
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 77
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  summary: "\nUnpack your keywords from the material\n"
+  example: []
+  syntax:
+    content: public abstract void Unpack(string[] keywords)
+    parameters:
+    - id: keywords
+      type: System.String[]
+      description: Keywords.
+    content.vb: Public MustOverride Sub Unpack(keywords As String())
+  overload: JBooth.MicroSplat.FeatureDescriptor.Unpack*
+  nameWithType.vb: FeatureDescriptor.Unpack(String())
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: JBooth.MicroSplat.FeatureDescriptor.Unpack(System.String())
+  name.vb: Unpack(String())
+- uid: JBooth.MicroSplat.FeatureDescriptor.Pack
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.Pack
+  id: Pack
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: Pack()
+  nameWithType: FeatureDescriptor.Pack()
+  fullName: JBooth.MicroSplat.FeatureDescriptor.Pack()
+  type: Method
+  source:
+    id: Pack
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 82
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  summary: "\npack keywords to a string[]\n"
+  example: []
+  syntax:
+    content: public abstract string[] Pack()
+    return:
+      type: System.String[]
+    content.vb: Public MustOverride Function Pack As String()
+  overload: JBooth.MicroSplat.FeatureDescriptor.Pack*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: JBooth.MicroSplat.FeatureDescriptor.InitCompiler(System.String[])
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.InitCompiler(System.String[])
+  id: InitCompiler(System.String[])
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: InitCompiler(String[])
+  nameWithType: FeatureDescriptor.InitCompiler(String[])
+  fullName: JBooth.MicroSplat.FeatureDescriptor.InitCompiler(System.String[])
+  type: Method
+  source:
+    id: InitCompiler
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 88
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  summary: "\nInit yourself\n"
+  example: []
+  syntax:
+    content: public abstract void InitCompiler(string[] paths)
+    parameters:
+    - id: paths
+      type: System.String[]
+      description: Paths.
+    content.vb: Public MustOverride Sub InitCompiler(paths As String())
+  overload: JBooth.MicroSplat.FeatureDescriptor.InitCompiler*
+  nameWithType.vb: FeatureDescriptor.InitCompiler(String())
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: JBooth.MicroSplat.FeatureDescriptor.InitCompiler(System.String())
+  name.vb: InitCompiler(String())
+- uid: JBooth.MicroSplat.FeatureDescriptor.WriteProperties(System.String[],System.Text.StringBuilder)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.WriteProperties(System.String[],System.Text.StringBuilder)
+  id: WriteProperties(System.String[],System.Text.StringBuilder)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: WriteProperties(String[], StringBuilder)
+  nameWithType: FeatureDescriptor.WriteProperties(String[], StringBuilder)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.WriteProperties(System.String[], System.Text.StringBuilder)
+  type: Method
+  source:
+    id: WriteProperties
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 95
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  summary: "\nwrite property definitions to the shader\n"
+  example: []
+  syntax:
+    content: public abstract void WriteProperties(string[] features, StringBuilder sb)
+    parameters:
+    - id: features
+      type: System.String[]
+      description: Features.
+    - id: sb
+      type: System.Text.StringBuilder
+      description: Sb.
+    content.vb: Public MustOverride Sub WriteProperties(features As String(), sb As StringBuilder)
+  overload: JBooth.MicroSplat.FeatureDescriptor.WriteProperties*
+  nameWithType.vb: FeatureDescriptor.WriteProperties(String(), StringBuilder)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: JBooth.MicroSplat.FeatureDescriptor.WriteProperties(System.String(), System.Text.StringBuilder)
+  name.vb: WriteProperties(String(), StringBuilder)
+- uid: JBooth.MicroSplat.FeatureDescriptor.WritePerMaterialCBuffer(System.String[],System.Text.StringBuilder)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.WritePerMaterialCBuffer(System.String[],System.Text.StringBuilder)
+  id: WritePerMaterialCBuffer(System.String[],System.Text.StringBuilder)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: WritePerMaterialCBuffer(String[], StringBuilder)
+  nameWithType: FeatureDescriptor.WritePerMaterialCBuffer(String[], StringBuilder)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.WritePerMaterialCBuffer(System.String[], System.Text.StringBuilder)
+  type: Method
+  source:
+    id: WritePerMaterialCBuffer
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 103
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  summary: "\nHDRP/LWRP benifit from declaring variables in CBuffers for instancing\n"
+  example: []
+  syntax:
+    content: public virtual void WritePerMaterialCBuffer(string[] features, StringBuilder sb)
+    parameters:
+    - id: features
+      type: System.String[]
+      description: Features.
+    - id: sb
+      type: System.Text.StringBuilder
+      description: Sb.
+    content.vb: Public Overridable Sub WritePerMaterialCBuffer(features As String(), sb As StringBuilder)
+  overload: JBooth.MicroSplat.FeatureDescriptor.WritePerMaterialCBuffer*
+  nameWithType.vb: FeatureDescriptor.WritePerMaterialCBuffer(String(), StringBuilder)
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+  fullName.vb: JBooth.MicroSplat.FeatureDescriptor.WritePerMaterialCBuffer(System.String(), System.Text.StringBuilder)
+  name.vb: WritePerMaterialCBuffer(String(), StringBuilder)
+- uid: JBooth.MicroSplat.FeatureDescriptor.WriteSharedFunctions(System.Text.StringBuilder)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.WriteSharedFunctions(System.Text.StringBuilder)
+  id: WriteSharedFunctions(System.Text.StringBuilder)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: WriteSharedFunctions(StringBuilder)
+  nameWithType: FeatureDescriptor.WriteSharedFunctions(StringBuilder)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.WriteSharedFunctions(System.Text.StringBuilder)
+  type: Method
+  source:
+    id: WriteSharedFunctions
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 110
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  summary: "\nWrite any functions which might be used by other modules, basically, a prepass so that something can rely on\ncode included by another module\n"
+  example: []
+  syntax:
+    content: public virtual void WriteSharedFunctions(StringBuilder sb)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: Sb.
+    content.vb: Public Overridable Sub WriteSharedFunctions(sb As StringBuilder)
+  overload: JBooth.MicroSplat.FeatureDescriptor.WriteSharedFunctions*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: JBooth.MicroSplat.FeatureDescriptor.WriteAfterVetrexFunctions(System.Text.StringBuilder)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.WriteAfterVetrexFunctions(System.Text.StringBuilder)
+  id: WriteAfterVetrexFunctions(System.Text.StringBuilder)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: WriteAfterVetrexFunctions(StringBuilder)
+  nameWithType: FeatureDescriptor.WriteAfterVetrexFunctions(StringBuilder)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.WriteAfterVetrexFunctions(System.Text.StringBuilder)
+  type: Method
+  source:
+    id: WriteAfterVetrexFunctions
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 116
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  summary: "\nSome things, like tessellation in LWRP, require being able to call the vertex function\n"
+  example: []
+  syntax:
+    content: public virtual void WriteAfterVetrexFunctions(StringBuilder sb)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: Sb.
+    content.vb: Public Overridable Sub WriteAfterVetrexFunctions(sb As StringBuilder)
+  overload: JBooth.MicroSplat.FeatureDescriptor.WriteAfterVetrexFunctions*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: JBooth.MicroSplat.FeatureDescriptor.WriteFunctions(System.Text.StringBuilder)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.WriteFunctions(System.Text.StringBuilder)
+  id: WriteFunctions(System.Text.StringBuilder)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: WriteFunctions(StringBuilder)
+  nameWithType: FeatureDescriptor.WriteFunctions(StringBuilder)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.WriteFunctions(System.Text.StringBuilder)
+  type: Method
+  source:
+    id: WriteFunctions
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 122
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  summary: "\nWrite the core functions you use to the shader\n"
+  example: []
+  syntax:
+    content: public abstract void WriteFunctions(StringBuilder sb)
+    parameters:
+    - id: sb
+      type: System.Text.StringBuilder
+      description: Sb.
+    content.vb: Public MustOverride Sub WriteFunctions(sb As StringBuilder)
+  overload: JBooth.MicroSplat.FeatureDescriptor.WriteFunctions*
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+- uid: JBooth.MicroSplat.FeatureDescriptor.ComputeSampleCounts(System.String[],System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.ComputeSampleCounts(System.String[],System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+  id: ComputeSampleCounts(System.String[],System.Int32@,System.Int32@,System.Int32@,System.Int32@,System.Int32@)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: ComputeSampleCounts(String[], ref Int32, ref Int32, ref Int32, ref Int32, ref Int32)
+  nameWithType: FeatureDescriptor.ComputeSampleCounts(String[], ref Int32, ref Int32, ref Int32, ref Int32, ref Int32)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.ComputeSampleCounts(System.String[], ref System.Int32, ref System.Int32, ref System.Int32, ref System.Int32, ref System.Int32)
+  type: Method
+  source:
+    id: ComputeSampleCounts
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 133
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public abstract void ComputeSampleCounts(string[] features, ref int arraySampleCount, ref int textureSampleCount, ref int maxSamples, ref int tessellationSamples, ref int depTexReadLevel)
+    parameters:
+    - id: features
+      type: System.String[]
+    - id: arraySampleCount
+      type: System.Int32
+    - id: textureSampleCount
+      type: System.Int32
+    - id: maxSamples
+      type: System.Int32
+    - id: tessellationSamples
+      type: System.Int32
+    - id: depTexReadLevel
+      type: System.Int32
+    content.vb: Public MustOverride Sub ComputeSampleCounts(features As String(), ByRef arraySampleCount As Integer, ByRef textureSampleCount As Integer, ByRef maxSamples As Integer, ByRef tessellationSamples As Integer, ByRef depTexReadLevel As Integer)
+  overload: JBooth.MicroSplat.FeatureDescriptor.ComputeSampleCounts*
+  nameWithType.vb: FeatureDescriptor.ComputeSampleCounts(String(), ByRef Int32, ByRef Int32, ByRef Int32, ByRef Int32, ByRef Int32)
+  modifiers.csharp:
+  - public
+  - abstract
+  modifiers.vb:
+  - Public
+  - MustOverride
+  fullName.vb: JBooth.MicroSplat.FeatureDescriptor.ComputeSampleCounts(System.String(), ByRef System.Int32, ByRef System.Int32, ByRef System.Int32, ByRef System.Int32, ByRef System.Int32)
+  name.vb: ComputeSampleCounts(String(), ByRef Int32, ByRef Int32, ByRef Int32, ByRef Int32, ByRef Int32)
+- uid: JBooth.MicroSplat.FeatureDescriptor.Pack(MicroSplatKeywords)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.Pack(MicroSplatKeywords)
+  id: Pack(MicroSplatKeywords)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: Pack(MicroSplatKeywords)
+  nameWithType: FeatureDescriptor.Pack(MicroSplatKeywords)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.Pack(MicroSplatKeywords)
+  type: Method
+  source:
+    id: Pack
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 137
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public void Pack(MicroSplatKeywords keywords)
+    parameters:
+    - id: keywords
+      type: MicroSplatKeywords
+    content.vb: Public Sub Pack(keywords As MicroSplatKeywords)
+  overload: JBooth.MicroSplat.FeatureDescriptor.Pack*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: JBooth.MicroSplat.FeatureDescriptor.noPerTexToggleWidth
+  commentId: F:JBooth.MicroSplat.FeatureDescriptor.noPerTexToggleWidth
+  id: noPerTexToggleWidth
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: noPerTexToggleWidth
+  nameWithType: FeatureDescriptor.noPerTexToggleWidth
+  fullName: JBooth.MicroSplat.FeatureDescriptor.noPerTexToggleWidth
+  type: Field
+  source:
+    id: noPerTexToggleWidth
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 156
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: protected static int noPerTexToggleWidth
+    return:
+      type: System.Int32
+    content.vb: Protected Shared noPerTexToggleWidth As Integer
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+- uid: JBooth.MicroSplat.FeatureDescriptor.InitPropData(System.Int32,MicroSplatPropData,UnityEngine.Color)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.InitPropData(System.Int32,MicroSplatPropData,UnityEngine.Color)
+  id: InitPropData(System.Int32,MicroSplatPropData,UnityEngine.Color)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: InitPropData(Int32, MicroSplatPropData, Color)
+  nameWithType: FeatureDescriptor.InitPropData(Int32, MicroSplatPropData, Color)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.InitPropData(System.Int32, MicroSplatPropData, UnityEngine.Color)
+  type: Method
+  source:
+    id: InitPropData
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 181
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: protected static void InitPropData(int pixel, MicroSplatPropData propData, Color defaultValues)
+    parameters:
+    - id: pixel
+      type: System.Int32
+    - id: propData
+      type: MicroSplatPropData
+    - id: defaultValues
+      type: UnityEngine.Color
+    content.vb: Protected Shared Sub InitPropData(pixel As Integer, propData As MicroSplatPropData, defaultValues As Color)
+  overload: JBooth.MicroSplat.FeatureDescriptor.InitPropData*
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexFloatSlider(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,System.Single,System.Single,System.Boolean)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexFloatSlider(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,System.Single,System.Single,System.Boolean)
+  id: DrawPerTexFloatSlider(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,System.Single,System.Single,System.Boolean)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: DrawPerTexFloatSlider(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.Channel, GUIContent, Single, Single, Boolean)
+  nameWithType: FeatureDescriptor.DrawPerTexFloatSlider(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.Channel, GUIContent, Single, Single, Boolean)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexFloatSlider(System.Int32, System.Int32, System.String, MicroSplatKeywords, MicroSplatPropData, JBooth.MicroSplat.FeatureDescriptor.Channel, UnityEngine.GUIContent, System.Single, System.Single, System.Boolean)
+  type: Method
+  source:
+    id: DrawPerTexFloatSlider
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 198
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: protected static bool DrawPerTexFloatSlider(int curIdx, int pixel, string keyword, MicroSplatKeywords keywords, MicroSplatPropData propData, FeatureDescriptor.Channel channel, GUIContent label, float min = 0F, float max = 0F, bool showHeader = true)
+    parameters:
+    - id: curIdx
+      type: System.Int32
+    - id: pixel
+      type: System.Int32
+    - id: keyword
+      type: System.String
+    - id: keywords
+      type: MicroSplatKeywords
+    - id: propData
+      type: MicroSplatPropData
+    - id: channel
+      type: JBooth.MicroSplat.FeatureDescriptor.Channel
+    - id: label
+      type: UnityEngine.GUIContent
+    - id: min
+      type: System.Single
+    - id: max
+      type: System.Single
+    - id: showHeader
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Protected Shared Function DrawPerTexFloatSlider(curIdx As Integer, pixel As Integer, keyword As String, keywords As MicroSplatKeywords, propData As MicroSplatPropData, channel As FeatureDescriptor.Channel, label As GUIContent, min As Single = 0F, max As Single = 0F, showHeader As Boolean = True) As Boolean
+  overload: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexFloatSlider*
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.V2Cannel,UnityEngine.GUIContent)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.V2Cannel,UnityEngine.GUIContent)
+  id: DrawPerTexVector2(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.V2Cannel,UnityEngine.GUIContent)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: DrawPerTexVector2(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.V2Cannel, GUIContent)
+  nameWithType: FeatureDescriptor.DrawPerTexVector2(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.V2Cannel, GUIContent)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2(System.Int32, System.Int32, System.String, MicroSplatKeywords, MicroSplatPropData, JBooth.MicroSplat.FeatureDescriptor.V2Cannel, UnityEngine.GUIContent)
+  type: Method
+  source:
+    id: DrawPerTexVector2
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 254
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: protected static bool DrawPerTexVector2(int curIdx, int pixel, string keyword, MicroSplatKeywords keywords, MicroSplatPropData propData, FeatureDescriptor.V2Cannel channel, GUIContent label)
+    parameters:
+    - id: curIdx
+      type: System.Int32
+    - id: pixel
+      type: System.Int32
+    - id: keyword
+      type: System.String
+    - id: keywords
+      type: MicroSplatKeywords
+    - id: propData
+      type: MicroSplatPropData
+    - id: channel
+      type: JBooth.MicroSplat.FeatureDescriptor.V2Cannel
+    - id: label
+      type: UnityEngine.GUIContent
+    return:
+      type: System.Boolean
+    content.vb: Protected Shared Function DrawPerTexVector2(curIdx As Integer, pixel As Integer, keyword As String, keywords As MicroSplatKeywords, propData As MicroSplatPropData, channel As FeatureDescriptor.V2Cannel, label As GUIContent) As Boolean
+  overload: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2*
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector3(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,UnityEngine.GUIContent)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector3(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,UnityEngine.GUIContent)
+  id: DrawPerTexVector3(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,UnityEngine.GUIContent)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: DrawPerTexVector3(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, GUIContent)
+  nameWithType: FeatureDescriptor.DrawPerTexVector3(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, GUIContent)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector3(System.Int32, System.Int32, System.String, MicroSplatKeywords, MicroSplatPropData, UnityEngine.GUIContent)
+  type: Method
+  source:
+    id: DrawPerTexVector3
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 313
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: protected static bool DrawPerTexVector3(int curIdx, int pixel, string keyword, MicroSplatKeywords keywords, MicroSplatPropData propData, GUIContent label)
+    parameters:
+    - id: curIdx
+      type: System.Int32
+    - id: pixel
+      type: System.Int32
+    - id: keyword
+      type: System.String
+    - id: keywords
+      type: MicroSplatKeywords
+    - id: propData
+      type: MicroSplatPropData
+    - id: label
+      type: UnityEngine.GUIContent
+    return:
+      type: System.Boolean
+    content.vb: Protected Shared Function DrawPerTexVector3(curIdx As Integer, pixel As Integer, keyword As String, keywords As MicroSplatKeywords, propData As MicroSplatPropData, label As GUIContent) As Boolean
+  overload: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector3*
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2Vector2(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,UnityEngine.GUIContent,UnityEngine.GUIContent)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2Vector2(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,UnityEngine.GUIContent,UnityEngine.GUIContent)
+  id: DrawPerTexVector2Vector2(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,UnityEngine.GUIContent,UnityEngine.GUIContent)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: DrawPerTexVector2Vector2(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, GUIContent, GUIContent)
+  nameWithType: FeatureDescriptor.DrawPerTexVector2Vector2(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, GUIContent, GUIContent)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2Vector2(System.Int32, System.Int32, System.String, MicroSplatKeywords, MicroSplatPropData, UnityEngine.GUIContent, UnityEngine.GUIContent)
+  type: Method
+  source:
+    id: DrawPerTexVector2Vector2
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 351
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: protected static bool DrawPerTexVector2Vector2(int curIdx, int pixel, string keyword, MicroSplatKeywords keywords, MicroSplatPropData propData, GUIContent label, GUIContent label2)
+    parameters:
+    - id: curIdx
+      type: System.Int32
+    - id: pixel
+      type: System.Int32
+    - id: keyword
+      type: System.String
+    - id: keywords
+      type: MicroSplatKeywords
+    - id: propData
+      type: MicroSplatPropData
+    - id: label
+      type: UnityEngine.GUIContent
+    - id: label2
+      type: UnityEngine.GUIContent
+    return:
+      type: System.Boolean
+    content.vb: Protected Shared Function DrawPerTexVector2Vector2(curIdx As Integer, pixel As Integer, keyword As String, keywords As MicroSplatKeywords, propData As MicroSplatPropData, label As GUIContent, label2 As GUIContent) As Boolean
+  overload: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2Vector2*
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexColor(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,UnityEngine.GUIContent,System.Boolean)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexColor(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,UnityEngine.GUIContent,System.Boolean)
+  id: DrawPerTexColor(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,UnityEngine.GUIContent,System.Boolean)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: DrawPerTexColor(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, GUIContent, Boolean)
+  nameWithType: FeatureDescriptor.DrawPerTexColor(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, GUIContent, Boolean)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexColor(System.Int32, System.Int32, System.String, MicroSplatKeywords, MicroSplatPropData, UnityEngine.GUIContent, System.Boolean)
+  type: Method
+  source:
+    id: DrawPerTexColor
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 394
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: protected bool DrawPerTexColor(int curIdx, int pixel, string keyword, MicroSplatKeywords keywords, MicroSplatPropData propData, GUIContent label, bool hasAlpha)
+    parameters:
+    - id: curIdx
+      type: System.Int32
+    - id: pixel
+      type: System.Int32
+    - id: keyword
+      type: System.String
+    - id: keywords
+      type: MicroSplatKeywords
+    - id: propData
+      type: MicroSplatPropData
+    - id: label
+      type: UnityEngine.GUIContent
+    - id: hasAlpha
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Protected Function DrawPerTexColor(curIdx As Integer, pixel As Integer, keyword As String, keywords As MicroSplatKeywords, propData As MicroSplatPropData, label As GUIContent, hasAlpha As Boolean) As Boolean
+  overload: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexColor*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUp(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,UnityEngine.GUIContent[])
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUp(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,UnityEngine.GUIContent[])
+  id: DrawPerTexPopUp(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,UnityEngine.GUIContent[])
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: DrawPerTexPopUp(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.Channel, GUIContent, GUIContent[])
+  nameWithType: FeatureDescriptor.DrawPerTexPopUp(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.Channel, GUIContent, GUIContent[])
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUp(System.Int32, System.Int32, System.String, MicroSplatKeywords, MicroSplatPropData, JBooth.MicroSplat.FeatureDescriptor.Channel, UnityEngine.GUIContent, UnityEngine.GUIContent[])
+  type: Method
+  source:
+    id: DrawPerTexPopUp
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 430
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: protected static bool DrawPerTexPopUp(int curIdx, int pixel, string keyword, MicroSplatKeywords keywords, MicroSplatPropData propData, FeatureDescriptor.Channel channel, GUIContent label, GUIContent[] options)
+    parameters:
+    - id: curIdx
+      type: System.Int32
+    - id: pixel
+      type: System.Int32
+    - id: keyword
+      type: System.String
+    - id: keywords
+      type: MicroSplatKeywords
+    - id: propData
+      type: MicroSplatPropData
+    - id: channel
+      type: JBooth.MicroSplat.FeatureDescriptor.Channel
+    - id: label
+      type: UnityEngine.GUIContent
+    - id: options
+      type: UnityEngine.GUIContent[]
+    return:
+      type: System.Boolean
+    content.vb: Protected Shared Function DrawPerTexPopUp(curIdx As Integer, pixel As Integer, keyword As String, keywords As MicroSplatKeywords, propData As MicroSplatPropData, channel As FeatureDescriptor.Channel, label As GUIContent, options As GUIContent()) As Boolean
+  overload: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUp*
+  nameWithType.vb: FeatureDescriptor.DrawPerTexPopUp(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.Channel, GUIContent, GUIContent())
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+  fullName.vb: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUp(System.Int32, System.Int32, System.String, MicroSplatKeywords, MicroSplatPropData, JBooth.MicroSplat.FeatureDescriptor.Channel, UnityEngine.GUIContent, UnityEngine.GUIContent())
+  name.vb: DrawPerTexPopUp(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.Channel, GUIContent, GUIContent())
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUpNoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,UnityEngine.GUIContent[])
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUpNoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,UnityEngine.GUIContent[])
+  id: DrawPerTexPopUpNoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,UnityEngine.GUIContent[])
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: DrawPerTexPopUpNoToggle(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.Channel, GUIContent, GUIContent[])
+  nameWithType: FeatureDescriptor.DrawPerTexPopUpNoToggle(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.Channel, GUIContent, GUIContent[])
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUpNoToggle(System.Int32, System.Int32, System.String, MicroSplatKeywords, MicroSplatPropData, JBooth.MicroSplat.FeatureDescriptor.Channel, UnityEngine.GUIContent, UnityEngine.GUIContent[])
+  type: Method
+  source:
+    id: DrawPerTexPopUpNoToggle
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 464
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: protected static void DrawPerTexPopUpNoToggle(int curIdx, int pixel, string keyword, MicroSplatKeywords keywords, MicroSplatPropData propData, FeatureDescriptor.Channel channel, GUIContent label, GUIContent[] options)
+    parameters:
+    - id: curIdx
+      type: System.Int32
+    - id: pixel
+      type: System.Int32
+    - id: keyword
+      type: System.String
+    - id: keywords
+      type: MicroSplatKeywords
+    - id: propData
+      type: MicroSplatPropData
+    - id: channel
+      type: JBooth.MicroSplat.FeatureDescriptor.Channel
+    - id: label
+      type: UnityEngine.GUIContent
+    - id: options
+      type: UnityEngine.GUIContent[]
+    content.vb: Protected Shared Sub DrawPerTexPopUpNoToggle(curIdx As Integer, pixel As Integer, keyword As String, keywords As MicroSplatKeywords, propData As MicroSplatPropData, channel As FeatureDescriptor.Channel, label As GUIContent, options As GUIContent())
+  overload: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUpNoToggle*
+  nameWithType.vb: FeatureDescriptor.DrawPerTexPopUpNoToggle(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.Channel, GUIContent, GUIContent())
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+  fullName.vb: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUpNoToggle(System.Int32, System.Int32, System.String, MicroSplatKeywords, MicroSplatPropData, JBooth.MicroSplat.FeatureDescriptor.Channel, UnityEngine.GUIContent, UnityEngine.GUIContent())
+  name.vb: DrawPerTexPopUpNoToggle(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.Channel, GUIContent, GUIContent())
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2NoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.V2Cannel,UnityEngine.GUIContent)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2NoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.V2Cannel,UnityEngine.GUIContent)
+  id: DrawPerTexVector2NoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.V2Cannel,UnityEngine.GUIContent)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: DrawPerTexVector2NoToggle(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.V2Cannel, GUIContent)
+  nameWithType: FeatureDescriptor.DrawPerTexVector2NoToggle(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.V2Cannel, GUIContent)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2NoToggle(System.Int32, System.Int32, System.String, MicroSplatKeywords, MicroSplatPropData, JBooth.MicroSplat.FeatureDescriptor.V2Cannel, UnityEngine.GUIContent)
+  type: Method
+  source:
+    id: DrawPerTexVector2NoToggle
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 473
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: protected static void DrawPerTexVector2NoToggle(int curIdx, int pixel, string keyword, MicroSplatKeywords keywords, MicroSplatPropData propData, FeatureDescriptor.V2Cannel channel, GUIContent label)
+    parameters:
+    - id: curIdx
+      type: System.Int32
+    - id: pixel
+      type: System.Int32
+    - id: keyword
+      type: System.String
+    - id: keywords
+      type: MicroSplatKeywords
+    - id: propData
+      type: MicroSplatPropData
+    - id: channel
+      type: JBooth.MicroSplat.FeatureDescriptor.V2Cannel
+    - id: label
+      type: UnityEngine.GUIContent
+    content.vb: Protected Shared Sub DrawPerTexVector2NoToggle(curIdx As Integer, pixel As Integer, keyword As String, keywords As MicroSplatKeywords, propData As MicroSplatPropData, channel As FeatureDescriptor.V2Cannel, label As GUIContent)
+  overload: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2NoToggle*
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2Vector2NoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,UnityEngine.GUIContent,UnityEngine.GUIContent)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2Vector2NoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,UnityEngine.GUIContent,UnityEngine.GUIContent)
+  id: DrawPerTexVector2Vector2NoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,UnityEngine.GUIContent,UnityEngine.GUIContent)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: DrawPerTexVector2Vector2NoToggle(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, GUIContent, GUIContent)
+  nameWithType: FeatureDescriptor.DrawPerTexVector2Vector2NoToggle(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, GUIContent, GUIContent)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2Vector2NoToggle(System.Int32, System.Int32, System.String, MicroSplatKeywords, MicroSplatPropData, UnityEngine.GUIContent, UnityEngine.GUIContent)
+  type: Method
+  source:
+    id: DrawPerTexVector2Vector2NoToggle
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 480
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: protected static void DrawPerTexVector2Vector2NoToggle(int curIdx, int pixel, string keyword, MicroSplatKeywords keywords, MicroSplatPropData propData, GUIContent label, GUIContent label2)
+    parameters:
+    - id: curIdx
+      type: System.Int32
+    - id: pixel
+      type: System.Int32
+    - id: keyword
+      type: System.String
+    - id: keywords
+      type: MicroSplatKeywords
+    - id: propData
+      type: MicroSplatPropData
+    - id: label
+      type: UnityEngine.GUIContent
+    - id: label2
+      type: UnityEngine.GUIContent
+    content.vb: Protected Shared Sub DrawPerTexVector2Vector2NoToggle(curIdx As Integer, pixel As Integer, keyword As String, keywords As MicroSplatKeywords, propData As MicroSplatPropData, label As GUIContent, label2 As GUIContent)
+  overload: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2Vector2NoToggle*
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexFloatSliderNoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,System.Single,System.Single)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexFloatSliderNoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,System.Single,System.Single)
+  id: DrawPerTexFloatSliderNoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,System.Single,System.Single)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: DrawPerTexFloatSliderNoToggle(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.Channel, GUIContent, Single, Single)
+  nameWithType: FeatureDescriptor.DrawPerTexFloatSliderNoToggle(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.Channel, GUIContent, Single, Single)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexFloatSliderNoToggle(System.Int32, System.Int32, System.String, MicroSplatKeywords, MicroSplatPropData, JBooth.MicroSplat.FeatureDescriptor.Channel, UnityEngine.GUIContent, System.Single, System.Single)
+  type: Method
+  source:
+    id: DrawPerTexFloatSliderNoToggle
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 487
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: protected static void DrawPerTexFloatSliderNoToggle(int curIdx, int pixel, string keyword, MicroSplatKeywords keywords, MicroSplatPropData propData, FeatureDescriptor.Channel channel, GUIContent label, float min = 0F, float max = 0F)
+    parameters:
+    - id: curIdx
+      type: System.Int32
+    - id: pixel
+      type: System.Int32
+    - id: keyword
+      type: System.String
+    - id: keywords
+      type: MicroSplatKeywords
+    - id: propData
+      type: MicroSplatPropData
+    - id: channel
+      type: JBooth.MicroSplat.FeatureDescriptor.Channel
+    - id: label
+      type: UnityEngine.GUIContent
+    - id: min
+      type: System.Single
+    - id: max
+      type: System.Single
+    content.vb: Protected Shared Sub DrawPerTexFloatSliderNoToggle(curIdx As Integer, pixel As Integer, keyword As String, keywords As MicroSplatKeywords, propData As MicroSplatPropData, channel As FeatureDescriptor.Channel, label As GUIContent, min As Single = 0F, max As Single = 0F)
+  overload: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexFloatSliderNoToggle*
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexColorNoToggle(System.Int32,System.Int32,MicroSplatPropData,UnityEngine.GUIContent)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexColorNoToggle(System.Int32,System.Int32,MicroSplatPropData,UnityEngine.GUIContent)
+  id: DrawPerTexColorNoToggle(System.Int32,System.Int32,MicroSplatPropData,UnityEngine.GUIContent)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: DrawPerTexColorNoToggle(Int32, Int32, MicroSplatPropData, GUIContent)
+  nameWithType: FeatureDescriptor.DrawPerTexColorNoToggle(Int32, Int32, MicroSplatPropData, GUIContent)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexColorNoToggle(System.Int32, System.Int32, MicroSplatPropData, UnityEngine.GUIContent)
+  type: Method
+  source:
+    id: DrawPerTexColorNoToggle
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 494
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: protected static void DrawPerTexColorNoToggle(int curIdx, int pixel, MicroSplatPropData propData, GUIContent label)
+    parameters:
+    - id: curIdx
+      type: System.Int32
+    - id: pixel
+      type: System.Int32
+    - id: propData
+      type: MicroSplatPropData
+    - id: label
+      type: UnityEngine.GUIContent
+    content.vb: Protected Shared Sub DrawPerTexColorNoToggle(curIdx As Integer, pixel As Integer, propData As MicroSplatPropData, label As GUIContent)
+  overload: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexColorNoToggle*
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUpNoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,UnityEngine.GUIContent[],System.Single[])
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUpNoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,UnityEngine.GUIContent[],System.Single[])
+  id: DrawPerTexPopUpNoToggle(System.Int32,System.Int32,System.String,MicroSplatKeywords,MicroSplatPropData,JBooth.MicroSplat.FeatureDescriptor.Channel,UnityEngine.GUIContent,UnityEngine.GUIContent[],System.Single[])
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: DrawPerTexPopUpNoToggle(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.Channel, GUIContent, GUIContent[], Single[])
+  nameWithType: FeatureDescriptor.DrawPerTexPopUpNoToggle(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.Channel, GUIContent, GUIContent[], Single[])
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUpNoToggle(System.Int32, System.Int32, System.String, MicroSplatKeywords, MicroSplatPropData, JBooth.MicroSplat.FeatureDescriptor.Channel, UnityEngine.GUIContent, UnityEngine.GUIContent[], System.Single[])
+  type: Method
+  source:
+    id: DrawPerTexPopUpNoToggle
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 517
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: protected static void DrawPerTexPopUpNoToggle(int curIdx, int pixel, string keyword, MicroSplatKeywords keywords, MicroSplatPropData propData, FeatureDescriptor.Channel channel, GUIContent label, GUIContent[] options, float[] values)
+    parameters:
+    - id: curIdx
+      type: System.Int32
+    - id: pixel
+      type: System.Int32
+    - id: keyword
+      type: System.String
+    - id: keywords
+      type: MicroSplatKeywords
+    - id: propData
+      type: MicroSplatPropData
+    - id: channel
+      type: JBooth.MicroSplat.FeatureDescriptor.Channel
+    - id: label
+      type: UnityEngine.GUIContent
+    - id: options
+      type: UnityEngine.GUIContent[]
+    - id: values
+      type: System.Single[]
+    content.vb: Protected Shared Sub DrawPerTexPopUpNoToggle(curIdx As Integer, pixel As Integer, keyword As String, keywords As MicroSplatKeywords, propData As MicroSplatPropData, channel As FeatureDescriptor.Channel, label As GUIContent, options As GUIContent(), values As Single())
+  overload: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUpNoToggle*
+  nameWithType.vb: FeatureDescriptor.DrawPerTexPopUpNoToggle(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.Channel, GUIContent, GUIContent(), Single())
+  modifiers.csharp:
+  - protected
+  - static
+  modifiers.vb:
+  - Protected
+  - Shared
+  fullName.vb: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUpNoToggle(System.Int32, System.Int32, System.String, MicroSplatKeywords, MicroSplatPropData, JBooth.MicroSplat.FeatureDescriptor.Channel, UnityEngine.GUIContent, UnityEngine.GUIContent(), System.Single())
+  name.vb: DrawPerTexPopUpNoToggle(Int32, Int32, String, MicroSplatKeywords, MicroSplatPropData, FeatureDescriptor.Channel, GUIContent, GUIContent(), Single())
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawGlobalToggle(System.String,MicroSplatKeywords)
+  commentId: M:JBooth.MicroSplat.FeatureDescriptor.DrawGlobalToggle(System.String,MicroSplatKeywords)
+  id: DrawGlobalToggle(System.String,MicroSplatKeywords)
+  parent: JBooth.MicroSplat.FeatureDescriptor
+  langs:
+  - csharp
+  - vb
+  name: DrawGlobalToggle(String, MicroSplatKeywords)
+  nameWithType: FeatureDescriptor.DrawGlobalToggle(String, MicroSplatKeywords)
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawGlobalToggle(System.String, MicroSplatKeywords)
+  type: Method
+  source:
+    id: DrawGlobalToggle
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 527
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: protected bool DrawGlobalToggle(string keyword, MicroSplatKeywords keywords)
+    parameters:
+    - id: keyword
+      type: System.String
+    - id: keywords
+      type: MicroSplatKeywords
+    return:
+      type: System.Boolean
+    content.vb: Protected Function DrawGlobalToggle(keyword As String, keywords As MicroSplatKeywords) As Boolean
+  overload: JBooth.MicroSplat.FeatureDescriptor.DrawGlobalToggle*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: JBooth.MicroSplat.FeatureDescriptor.GetVersion*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.GetVersion
+  name: GetVersion
+  nameWithType: FeatureDescriptor.GetVersion
+  fullName: JBooth.MicroSplat.FeatureDescriptor.GetVersion
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: JBooth.MicroSplat.FeatureDescriptor.CompileSortOrder*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.CompileSortOrder
+  name: CompileSortOrder
+  nameWithType: FeatureDescriptor.CompileSortOrder
+  fullName: JBooth.MicroSplat.FeatureDescriptor.CompileSortOrder
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: JBooth.MicroSplat.FeatureDescriptor.DisplaySortOrder*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.DisplaySortOrder
+  name: DisplaySortOrder
+  nameWithType: FeatureDescriptor.DisplaySortOrder
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DisplaySortOrder
+- uid: JBooth.MicroSplat.FeatureDescriptor.ModuleName*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.ModuleName
+  name: ModuleName
+  nameWithType: FeatureDescriptor.ModuleName
+  fullName: JBooth.MicroSplat.FeatureDescriptor.ModuleName
+- uid: JBooth.MicroSplat.FeatureDescriptor.OnPostGeneration*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.OnPostGeneration
+  name: OnPostGeneration
+  nameWithType: FeatureDescriptor.OnPostGeneration
+  fullName: JBooth.MicroSplat.FeatureDescriptor.OnPostGeneration
+- uid: System.Text.StringBuilder
+  commentId: T:System.Text.StringBuilder
+  parent: System.Text
+  isExternal: true
+  name: StringBuilder
+  nameWithType: StringBuilder
+  fullName: System.Text.StringBuilder
+- uid: System.String[]
+  isExternal: true
+  name: String[]
+  nameWithType: String[]
+  fullName: System.String[]
+  nameWithType.vb: String()
+  fullName.vb: System.String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+- uid: JBooth.MicroSplat.FeatureDescriptor.RequiresShaderModel46*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.RequiresShaderModel46
+  name: RequiresShaderModel46
+  nameWithType: FeatureDescriptor.RequiresShaderModel46
+  fullName: JBooth.MicroSplat.FeatureDescriptor.RequiresShaderModel46
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawFeatureGUI*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.DrawFeatureGUI
+  name: DrawFeatureGUI
+  nameWithType: FeatureDescriptor.DrawFeatureGUI
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawFeatureGUI
+- uid: MicroSplatKeywords
+  commentId: T:MicroSplatKeywords
+  name: MicroSplatKeywords
+  nameWithType: MicroSplatKeywords
+  fullName: MicroSplatKeywords
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawShaderGUI*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.DrawShaderGUI
+  name: DrawShaderGUI
+  nameWithType: FeatureDescriptor.DrawShaderGUI
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawShaderGUI
+- uid: MicroSplatShaderGUI
+  commentId: T:MicroSplatShaderGUI
+  name: MicroSplatShaderGUI
+  nameWithType: MicroSplatShaderGUI
+  fullName: MicroSplatShaderGUI
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: UnityEditor.MaterialEditor
+  commentId: T:UnityEditor.MaterialEditor
+  parent: UnityEditor
+  isExternal: true
+  name: MaterialEditor
+  nameWithType: MaterialEditor
+  fullName: UnityEditor.MaterialEditor
+- uid: UnityEditor.MaterialProperty[]
+  isExternal: true
+  name: MaterialProperty[]
+  nameWithType: MaterialProperty[]
+  fullName: UnityEditor.MaterialProperty[]
+  nameWithType.vb: MaterialProperty()
+  fullName.vb: UnityEditor.MaterialProperty()
+  name.vb: MaterialProperty()
+  spec.csharp:
+  - uid: UnityEditor.MaterialProperty
+    name: MaterialProperty
+    nameWithType: MaterialProperty
+    fullName: UnityEditor.MaterialProperty
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: UnityEditor.MaterialProperty
+    name: MaterialProperty
+    nameWithType: MaterialProperty
+    fullName: UnityEditor.MaterialProperty
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTextureGUI*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.DrawPerTextureGUI
+  name: DrawPerTextureGUI
+  nameWithType: FeatureDescriptor.DrawPerTextureGUI
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTextureGUI
+- uid: MicroSplatPropData
+  commentId: T:MicroSplatPropData
+  name: MicroSplatPropData
+  nameWithType: MicroSplatPropData
+  fullName: MicroSplatPropData
+- uid: JBooth.MicroSplat.FeatureDescriptor.Unpack*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.Unpack
+  name: Unpack
+  nameWithType: FeatureDescriptor.Unpack
+  fullName: JBooth.MicroSplat.FeatureDescriptor.Unpack
+- uid: JBooth.MicroSplat.FeatureDescriptor.Pack*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.Pack
+  name: Pack
+  nameWithType: FeatureDescriptor.Pack
+  fullName: JBooth.MicroSplat.FeatureDescriptor.Pack
+- uid: JBooth.MicroSplat.FeatureDescriptor.InitCompiler*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.InitCompiler
+  name: InitCompiler
+  nameWithType: FeatureDescriptor.InitCompiler
+  fullName: JBooth.MicroSplat.FeatureDescriptor.InitCompiler
+- uid: JBooth.MicroSplat.FeatureDescriptor.WriteProperties*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.WriteProperties
+  name: WriteProperties
+  nameWithType: FeatureDescriptor.WriteProperties
+  fullName: JBooth.MicroSplat.FeatureDescriptor.WriteProperties
+- uid: JBooth.MicroSplat.FeatureDescriptor.WritePerMaterialCBuffer*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.WritePerMaterialCBuffer
+  name: WritePerMaterialCBuffer
+  nameWithType: FeatureDescriptor.WritePerMaterialCBuffer
+  fullName: JBooth.MicroSplat.FeatureDescriptor.WritePerMaterialCBuffer
+- uid: JBooth.MicroSplat.FeatureDescriptor.WriteSharedFunctions*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.WriteSharedFunctions
+  name: WriteSharedFunctions
+  nameWithType: FeatureDescriptor.WriteSharedFunctions
+  fullName: JBooth.MicroSplat.FeatureDescriptor.WriteSharedFunctions
+- uid: JBooth.MicroSplat.FeatureDescriptor.WriteAfterVetrexFunctions*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.WriteAfterVetrexFunctions
+  name: WriteAfterVetrexFunctions
+  nameWithType: FeatureDescriptor.WriteAfterVetrexFunctions
+  fullName: JBooth.MicroSplat.FeatureDescriptor.WriteAfterVetrexFunctions
+- uid: JBooth.MicroSplat.FeatureDescriptor.WriteFunctions*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.WriteFunctions
+  name: WriteFunctions
+  nameWithType: FeatureDescriptor.WriteFunctions
+  fullName: JBooth.MicroSplat.FeatureDescriptor.WriteFunctions
+- uid: JBooth.MicroSplat.FeatureDescriptor.ComputeSampleCounts*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.ComputeSampleCounts
+  name: ComputeSampleCounts
+  nameWithType: FeatureDescriptor.ComputeSampleCounts
+  fullName: JBooth.MicroSplat.FeatureDescriptor.ComputeSampleCounts
+- uid: JBooth.MicroSplat.FeatureDescriptor.InitPropData*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.InitPropData
+  name: InitPropData
+  nameWithType: FeatureDescriptor.InitPropData
+  fullName: JBooth.MicroSplat.FeatureDescriptor.InitPropData
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexFloatSlider*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexFloatSlider
+  name: DrawPerTexFloatSlider
+  nameWithType: FeatureDescriptor.DrawPerTexFloatSlider
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexFloatSlider
+- uid: JBooth.MicroSplat.FeatureDescriptor.Channel
+  commentId: T:JBooth.MicroSplat.FeatureDescriptor.Channel
+  parent: JBooth.MicroSplat
+  name: FeatureDescriptor.Channel
+  nameWithType: FeatureDescriptor.Channel
+  fullName: JBooth.MicroSplat.FeatureDescriptor.Channel
+- uid: UnityEngine.GUIContent
+  commentId: T:UnityEngine.GUIContent
+  parent: UnityEngine
+  isExternal: true
+  name: GUIContent
+  nameWithType: GUIContent
+  fullName: UnityEngine.GUIContent
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2
+  name: DrawPerTexVector2
+  nameWithType: FeatureDescriptor.DrawPerTexVector2
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2
+- uid: JBooth.MicroSplat.FeatureDescriptor.V2Cannel
+  commentId: T:JBooth.MicroSplat.FeatureDescriptor.V2Cannel
+  parent: JBooth.MicroSplat
+  name: FeatureDescriptor.V2Cannel
+  nameWithType: FeatureDescriptor.V2Cannel
+  fullName: JBooth.MicroSplat.FeatureDescriptor.V2Cannel
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector3*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector3
+  name: DrawPerTexVector3
+  nameWithType: FeatureDescriptor.DrawPerTexVector3
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector3
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2Vector2*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2Vector2
+  name: DrawPerTexVector2Vector2
+  nameWithType: FeatureDescriptor.DrawPerTexVector2Vector2
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2Vector2
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexColor*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexColor
+  name: DrawPerTexColor
+  nameWithType: FeatureDescriptor.DrawPerTexColor
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexColor
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUp*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUp
+  name: DrawPerTexPopUp
+  nameWithType: FeatureDescriptor.DrawPerTexPopUp
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUp
+- uid: UnityEngine.GUIContent[]
+  isExternal: true
+  name: GUIContent[]
+  nameWithType: GUIContent[]
+  fullName: UnityEngine.GUIContent[]
+  nameWithType.vb: GUIContent()
+  fullName.vb: UnityEngine.GUIContent()
+  name.vb: GUIContent()
+  spec.csharp:
+  - uid: UnityEngine.GUIContent
+    name: GUIContent
+    nameWithType: GUIContent
+    fullName: UnityEngine.GUIContent
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: UnityEngine.GUIContent
+    name: GUIContent
+    nameWithType: GUIContent
+    fullName: UnityEngine.GUIContent
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUpNoToggle*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUpNoToggle
+  name: DrawPerTexPopUpNoToggle
+  nameWithType: FeatureDescriptor.DrawPerTexPopUpNoToggle
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexPopUpNoToggle
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2NoToggle*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2NoToggle
+  name: DrawPerTexVector2NoToggle
+  nameWithType: FeatureDescriptor.DrawPerTexVector2NoToggle
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2NoToggle
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2Vector2NoToggle*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2Vector2NoToggle
+  name: DrawPerTexVector2Vector2NoToggle
+  nameWithType: FeatureDescriptor.DrawPerTexVector2Vector2NoToggle
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexVector2Vector2NoToggle
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexFloatSliderNoToggle*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexFloatSliderNoToggle
+  name: DrawPerTexFloatSliderNoToggle
+  nameWithType: FeatureDescriptor.DrawPerTexFloatSliderNoToggle
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexFloatSliderNoToggle
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexColorNoToggle*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.DrawPerTexColorNoToggle
+  name: DrawPerTexColorNoToggle
+  nameWithType: FeatureDescriptor.DrawPerTexColorNoToggle
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawPerTexColorNoToggle
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: JBooth.MicroSplat.FeatureDescriptor.DrawGlobalToggle*
+  commentId: Overload:JBooth.MicroSplat.FeatureDescriptor.DrawGlobalToggle
+  name: DrawGlobalToggle
+  nameWithType: FeatureDescriptor.DrawGlobalToggle
+  fullName: JBooth.MicroSplat.FeatureDescriptor.DrawGlobalToggle

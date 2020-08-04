@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.FeatureDescriptor.Channel
+  commentId: T:JBooth.MicroSplat.FeatureDescriptor.Channel
+  id: FeatureDescriptor.Channel
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.FeatureDescriptor.Channel.A
+  - JBooth.MicroSplat.FeatureDescriptor.Channel.B
+  - JBooth.MicroSplat.FeatureDescriptor.Channel.G
+  - JBooth.MicroSplat.FeatureDescriptor.Channel.R
+  langs:
+  - csharp
+  - vb
+  name: FeatureDescriptor.Channel
+  nameWithType: FeatureDescriptor.Channel
+  fullName: JBooth.MicroSplat.FeatureDescriptor.Channel
+  type: Enum
+  source:
+    id: Channel
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 147
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum Channel
+    content.vb: Public Enum Channel
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.FeatureDescriptor.Channel.R
+  commentId: F:JBooth.MicroSplat.FeatureDescriptor.Channel.R
+  id: R
+  parent: JBooth.MicroSplat.FeatureDescriptor.Channel
+  langs:
+  - csharp
+  - vb
+  name: R
+  nameWithType: FeatureDescriptor.Channel.R
+  fullName: JBooth.MicroSplat.FeatureDescriptor.Channel.R
+  type: Field
+  source:
+    id: R
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 149
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: R = 0
+    return:
+      type: JBooth.MicroSplat.FeatureDescriptor.Channel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.FeatureDescriptor.Channel.G
+  commentId: F:JBooth.MicroSplat.FeatureDescriptor.Channel.G
+  id: G
+  parent: JBooth.MicroSplat.FeatureDescriptor.Channel
+  langs:
+  - csharp
+  - vb
+  name: G
+  nameWithType: FeatureDescriptor.Channel.G
+  fullName: JBooth.MicroSplat.FeatureDescriptor.Channel.G
+  type: Field
+  source:
+    id: G
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 150
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: G = 1
+    return:
+      type: JBooth.MicroSplat.FeatureDescriptor.Channel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.FeatureDescriptor.Channel.B
+  commentId: F:JBooth.MicroSplat.FeatureDescriptor.Channel.B
+  id: B
+  parent: JBooth.MicroSplat.FeatureDescriptor.Channel
+  langs:
+  - csharp
+  - vb
+  name: B
+  nameWithType: FeatureDescriptor.Channel.B
+  fullName: JBooth.MicroSplat.FeatureDescriptor.Channel.B
+  type: Field
+  source:
+    id: B
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 151
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: B = 2
+    return:
+      type: JBooth.MicroSplat.FeatureDescriptor.Channel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.FeatureDescriptor.Channel.A
+  commentId: F:JBooth.MicroSplat.FeatureDescriptor.Channel.A
+  id: A
+  parent: JBooth.MicroSplat.FeatureDescriptor.Channel
+  langs:
+  - csharp
+  - vb
+  name: A
+  nameWithType: FeatureDescriptor.Channel.A
+  fullName: JBooth.MicroSplat.FeatureDescriptor.Channel.A
+  type: Field
+  source:
+    id: A
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\FeatureDescriptor.cs
+    startLine: 152
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: A = 3
+    return:
+      type: JBooth.MicroSplat.FeatureDescriptor.Channel
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.FeatureDescriptor.Channel
+  commentId: T:JBooth.MicroSplat.FeatureDescriptor.Channel
+  parent: JBooth.MicroSplat
+  name: FeatureDescriptor.Channel
+  nameWithType: FeatureDescriptor.Channel
+  fullName: JBooth.MicroSplat.FeatureDescriptor.Channel

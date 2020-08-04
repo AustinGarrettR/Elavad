@@ -16,12 +16,8 @@ items:
   fullName: Engine.Logging.LogLevel
   type: Enum
   source:
-    remote:
-      path: Assets/Engine/Logging/LogManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: LogLevel
-    path: ../Assets/Engine/Logging/LogManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Logging\LogManager.cs
     startLine: 103
   assemblies:
   - Engine.Logging
@@ -49,12 +45,8 @@ items:
   fullName: Engine.Logging.LogLevel.NONE
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Logging/LogManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: NONE
-    path: ../Assets/Engine/Logging/LogManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Logging\LogManager.cs
     startLine: 108
   assemblies:
   - Engine.Logging
@@ -83,12 +75,8 @@ items:
   fullName: Engine.Logging.LogLevel.ERRORS
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Logging/LogManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ERRORS
-    path: ../Assets/Engine/Logging/LogManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Logging\LogManager.cs
     startLine: 113
   assemblies:
   - Engine.Logging
@@ -117,12 +105,8 @@ items:
   fullName: Engine.Logging.LogLevel.ALL
   type: Field
   source:
-    remote:
-      path: Assets/Engine/Logging/LogManager.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: ALL
-    path: ../Assets/Engine/Logging/LogManager.cs
+    path: B:\Games\Elavad\Assets\Engine\Logging\LogManager.cs
     startLine: 118
   assemblies:
   - Engine.Logging

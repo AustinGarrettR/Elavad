@@ -14,12 +14,8 @@ items:
   fullName: Engine.Networking.Utility.PacketWriter
   type: Class
   source:
-    remote:
-      path: Assets/Engine/Networking/Utilities/PacketWriter.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: PacketWriter
-    path: ../Assets/Engine/Networking/Utilities/PacketWriter.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Utilities\PacketWriter.cs
     startLine: 8
   assemblies:
   - Engine.Networking
@@ -57,12 +53,8 @@ items:
   fullName: Engine.Networking.Utility.PacketWriter.Add<T>(ref System.Byte[], T)
   type: Method
   source:
-    remote:
-      path: Assets/Engine/Networking/Utilities/PacketWriter.cs
-      branch: master
-      repo: https://github.com/AustinGarrettR/Elavad
     id: Add
-    path: ../Assets/Engine/Networking/Utilities/PacketWriter.cs
+    path: B:\Games\Elavad\Assets\Engine\Networking\Utilities\PacketWriter.cs
     startLine: 17
   assemblies:
   - Engine.Networking

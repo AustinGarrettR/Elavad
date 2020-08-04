@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode
+  id: MicroSplatBaseFeatures.BlendMode
+  parent: JBooth.MicroSplat
+  children:
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode.HeightBlended
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode.NormalizedLinear
+  - JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode.UnityLinear
+  langs:
+  - csharp
+  - vb
+  name: MicroSplatBaseFeatures.BlendMode
+  nameWithType: MicroSplatBaseFeatures.BlendMode
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode
+  type: Enum
+  source:
+    id: BlendMode
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 243
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: public enum BlendMode
+    content.vb: Public Enum BlendMode
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode.HeightBlended
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode.HeightBlended
+  id: HeightBlended
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode
+  langs:
+  - csharp
+  - vb
+  name: HeightBlended
+  nameWithType: MicroSplatBaseFeatures.BlendMode.HeightBlended
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode.HeightBlended
+  type: Field
+  source:
+    id: HeightBlended
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 245
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: HeightBlended = 0
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode.UnityLinear
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode.UnityLinear
+  id: UnityLinear
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode
+  langs:
+  - csharp
+  - vb
+  name: UnityLinear
+  nameWithType: MicroSplatBaseFeatures.BlendMode.UnityLinear
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode.UnityLinear
+  type: Field
+  source:
+    id: UnityLinear
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 246
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: UnityLinear = 1
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode.NormalizedLinear
+  commentId: F:JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode.NormalizedLinear
+  id: NormalizedLinear
+  parent: JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode
+  langs:
+  - csharp
+  - vb
+  name: NormalizedLinear
+  nameWithType: MicroSplatBaseFeatures.BlendMode.NormalizedLinear
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode.NormalizedLinear
+  type: Field
+  source:
+    id: NormalizedLinear
+    path: B:\Games\Elavad\Assets\MicroSplat\Core\Scripts\Editor\MicroSplatBaseFeatures.cs
+    startLine: 247
+  assemblies:
+  - Assembly-CSharp-Editor
+  namespace: JBooth.MicroSplat
+  syntax:
+    content: NormalizedLinear = 2
+    return:
+      type: JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: JBooth.MicroSplat
+  commentId: N:JBooth.MicroSplat
+  name: JBooth.MicroSplat
+  nameWithType: JBooth.MicroSplat
+  fullName: JBooth.MicroSplat
+- uid: JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode
+  commentId: T:JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode
+  parent: JBooth.MicroSplat
+  name: MicroSplatBaseFeatures.BlendMode
+  nameWithType: MicroSplatBaseFeatures.BlendMode
+  fullName: JBooth.MicroSplat.MicroSplatBaseFeatures.BlendMode
