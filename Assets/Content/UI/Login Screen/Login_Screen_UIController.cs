@@ -1,7 +1,6 @@
 ﻿using Engine.UI;
 using Engine.API;
 using UnityEngine.UIElements;
-using Unity.UIElements.Runtime;
 using Engine.Logging;
 using UnityEngine;
 
@@ -23,7 +22,7 @@ namespace Content.UI
         private Toggle rememberMe;
         private Label statusMessage;
         private VisualElement statusPanel, background;
-        private UIElementsEventSystem eventSystem;
+        private EventSystem eventSystem;
 
         /*
          * Functions
@@ -32,7 +31,7 @@ namespace Content.UI
         /// <summary>
         /// Called when the panel finished loading the UXML
         /// </summary>
-        public override void onPanelLoaded()
+        public override void onUIDocumentLoaded()
         {
             //Load elements
             background = getElement<VisualElement>("Background");
@@ -46,7 +45,7 @@ namespace Content.UI
             statusPanel = getElement<VisualElement>("Status_Panel");
 
             //Load event system
-            eventSystem = gameObject.GetComponent<UIElementsEventSystem>();
+            eventSystem = gameObject.GetComponent<EventSystem>();
 
             //Delegate focus to children
             //(weird bug where selecting outer div-
@@ -111,7 +110,7 @@ namespace Content.UI
             statusPanel.visible = true;
             statusMessage.text = message;
             statusMessage.style.color = new StyleColor(color);
-            eventSystem.sendInputEvents = disableInteraction;
+            eventSystem.enabled = !disableInteraction;
         }
 
         /// <summary>

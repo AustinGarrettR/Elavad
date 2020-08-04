@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 4368276629270144949}
   - component: {fileID: 4494193943541117814}
   - component: {fileID: 7966041456573607374}
-  - component: {fileID: 4446002907012251405}
-  - component: {fileID: 8395946205978340359}
+  - component: {fileID: 436571917747348230}
   m_Layer: 0
   m_Name: LoginScreen
   m_TagString: Untagged
@@ -58,16 +57,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afe6c4600f907e64ca01409d01326a60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SendIMGUIEvents: 1
-  m_SendInputEvents: 0
-  m_SendNavigationEvents: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
---- !u!114 &4446002907012251405
+--- !u!114 &436571917747348230
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -76,34 +72,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 543084089636442458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3edfc36141f0f64f9e3444d411ce064, type: 3}
+  m_Script: {fileID: 11500000, guid: f21c074d86024caca2a0034ce4f53f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  constantPixelSizeScaler:
-    scaleFactor: 1.5
-  constantPhysicalSizeScaler:
-    referenceDpi: 96
-    fallbackDpi: 96
-  scaleWithScreenSizeScaler:
-    referenceResolution: {x: 1200, y: 800}
-    screenMatchMode: 0
-    match: 0
-  scaleMode: 0
---- !u!114 &8395946205978340359
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 543084089636442458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8302b9857102e44c8c26813e6008537, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uxml: {fileID: 9197481963319205126, guid: e5bbd4c315c428443a5a611706ea67f2, type: 3}
-  unityStyleSheet: {fileID: 11400000, guid: d610daef742b54fdda82fd41508f7f2e, type: 2}
-  stylesheets: []
-  targetTexture: {fileID: 0}
-  panelTransform: {fileID: 0}
-  m_EnableLiveUpdate: 0
+  m_PanelSettings: {fileID: 11400000, guid: 5321eb36f0f5b1949a2c8584826402f8, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: e5bbd4c315c428443a5a611706ea67f2,
+    type: 3}

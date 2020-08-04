@@ -20,7 +20,7 @@ MonoBehaviour:
   clusterMode: 0
   packingMode: 1
   pbrWorkflow: 0
-  hash: -922489856
+  hash: 2019789824
   diffuseArray: {fileID: 18700000, guid: 5507414e9dc93b44b84baa891d598fb4, type: 2}
   normalSAOArray: {fileID: 18700000, guid: 73030bf7ddbbde2419241ba6b956a568, type: 2}
   smoothAOArray: {fileID: 18700000, guid: 645f9ec1915bcb44f9b62a74762b38c3, type: 2}
@@ -82,7 +82,6 @@ MonoBehaviour:
   allTextureChannelHeight: 2
   allTextureChannelSmoothness: 3
   allTextureChannelAO: 1
-  allTextureChannelAlpha: 3
   sourceTextures:
   - diffuse: {fileID: 2800000, guid: 86b0cab70cd2d5646bff8a8be29dacda, type: 3}
     height: {fileID: 2800000, guid: de1bb1747ea1c5d409dc2f9ca02e2cb9, type: 3}
@@ -93,9 +92,6 @@ MonoBehaviour:
     isRoughness: 0
     ao: {fileID: 2800000, guid: de1bb1747ea1c5d409dc2f9ca02e2cb9, type: 3}
     aoChannel: 1
-    alpha: {fileID: 0}
-    alphaChannel: 1
-    normalizeAlpha: 0
     emis: {fileID: 0}
     metal: {fileID: 2800000, guid: de1bb1747ea1c5d409dc2f9ca02e2cb9, type: 3}
     metalChannel: 0
@@ -123,9 +119,6 @@ MonoBehaviour:
     isRoughness: 0
     ao: {fileID: 2800000, guid: bba514e6e08015d48852b3dd0041f54b, type: 3}
     aoChannel: 1
-    alpha: {fileID: 0}
-    alphaChannel: 1
-    normalizeAlpha: 0
     emis: {fileID: 0}
     metal: {fileID: 2800000, guid: bba514e6e08015d48852b3dd0041f54b, type: 3}
     metalChannel: 0
@@ -153,9 +146,6 @@ MonoBehaviour:
     isRoughness: 0
     ao: {fileID: 2800000, guid: 9273f25937a88cc4b80454a5bf0b37d4, type: 3}
     aoChannel: 1
-    alpha: {fileID: 0}
-    alphaChannel: 1
-    normalizeAlpha: 0
     emis: {fileID: 0}
     metal: {fileID: 2800000, guid: 9273f25937a88cc4b80454a5bf0b37d4, type: 3}
     metalChannel: 0
@@ -183,9 +173,6 @@ MonoBehaviour:
     isRoughness: 0
     ao: {fileID: 2800000, guid: a3f37cb9a8ac6f74dbec909cbb25d6e0, type: 3}
     aoChannel: 1
-    alpha: {fileID: 0}
-    alphaChannel: 1
-    normalizeAlpha: 0
     emis: {fileID: 0}
     metal: {fileID: 2800000, guid: a3f37cb9a8ac6f74dbec909cbb25d6e0, type: 3}
     metalChannel: 0
@@ -213,9 +200,6 @@ MonoBehaviour:
     isRoughness: 0
     ao: {fileID: 2800000, guid: 963d2fc8d7f55d340b3b4f46bc0a2904, type: 3}
     aoChannel: 1
-    alpha: {fileID: 0}
-    alphaChannel: 1
-    normalizeAlpha: 0
     emis: {fileID: 0}
     metal: {fileID: 2800000, guid: bba514e6e08015d48852b3dd0041f54b, type: 3}
     metalChannel: 0
@@ -244,9 +228,6 @@ MonoBehaviour:
     isRoughness: 0
     ao: {fileID: 0}
     aoChannel: 1
-    alpha: {fileID: 0}
-    alphaChannel: 1
-    normalizeAlpha: 0
     emis: {fileID: 0}
     metal: {fileID: 0}
     metalChannel: 1
@@ -274,9 +255,6 @@ MonoBehaviour:
     isRoughness: 0
     ao: {fileID: 0}
     aoChannel: 1
-    alpha: {fileID: 0}
-    alphaChannel: 1
-    normalizeAlpha: 0
     emis: {fileID: 0}
     metal: {fileID: 0}
     metalChannel: 1
@@ -304,9 +282,6 @@ MonoBehaviour:
     isRoughness: 0
     ao: {fileID: 0}
     aoChannel: 1
-    alpha: {fileID: 0}
-    alphaChannel: 1
-    normalizeAlpha: 0
     emis: {fileID: 0}
     metal: {fileID: 0}
     metalChannel: 1
@@ -334,9 +309,6 @@ MonoBehaviour:
     isRoughness: 0
     ao: {fileID: 0}
     aoChannel: 1
-    alpha: {fileID: 0}
-    alphaChannel: 1
-    normalizeAlpha: 0
     emis: {fileID: 0}
     metal: {fileID: 0}
     metalChannel: 1
@@ -364,9 +336,6 @@ MonoBehaviour:
     isRoughness: 0
     ao: {fileID: 0}
     aoChannel: 1
-    alpha: {fileID: 0}
-    alphaChannel: 1
-    normalizeAlpha: 0
     emis: {fileID: 0}
     metal: {fileID: 0}
     metalChannel: 1
@@ -395,9 +364,6 @@ MonoBehaviour:
     isRoughness: 0
     ao: {fileID: 0}
     aoChannel: 1
-    alpha: {fileID: 0}
-    alphaChannel: 1
-    normalizeAlpha: 0
     emis: {fileID: 0}
     metal: {fileID: 0}
     metalChannel: 1
@@ -425,9 +391,6 @@ MonoBehaviour:
     isRoughness: 0
     ao: {fileID: 0}
     aoChannel: 1
-    alpha: {fileID: 0}
-    alphaChannel: 1
-    normalizeAlpha: 0
     emis: {fileID: 0}
     metal: {fileID: 0}
     metalChannel: 1
@@ -455,9 +418,6 @@ MonoBehaviour:
     isRoughness: 0
     ao: {fileID: 0}
     aoChannel: 1
-    alpha: {fileID: 0}
-    alphaChannel: 1
-    normalizeAlpha: 0
     emis: {fileID: 0}
     metal: {fileID: 0}
     metalChannel: 1
@@ -485,9 +445,6 @@ MonoBehaviour:
     isRoughness: 0
     ao: {fileID: 0}
     aoChannel: 1
-    alpha: {fileID: 0}
-    alphaChannel: 1
-    normalizeAlpha: 0
     emis: {fileID: 0}
     metal: {fileID: 0}
     metalChannel: 1
@@ -515,9 +472,6 @@ MonoBehaviour:
     isRoughness: 0
     ao: {fileID: 0}
     aoChannel: 1
-    alpha: {fileID: 0}
-    alphaChannel: 1
-    normalizeAlpha: 0
     emis: {fileID: 0}
     metal: {fileID: 0}
     metalChannel: 1

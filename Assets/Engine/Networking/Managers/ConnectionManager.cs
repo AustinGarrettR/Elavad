@@ -55,9 +55,11 @@ namespace Engine.Networking
 
             if (isServer)
                 ServerUpdateLoop();
-            else if (clientConnecting)
+            else if (clientConnecting || connected)
             {
-                ClientUpdateLoop();
+                ClientUpdateLoop();                
+            } else if(connected)
+            {
                 KeepAlive();
             }
         }
@@ -233,7 +235,6 @@ namespace Engine.Networking
                 connectTimeoutMS = 5000,
                 disconnectTimeoutMS = 5000
             };
-
             networkDriver = NetworkDriver.Create(config);
 
             unreliablePipeline = networkDriver.CreatePipeline(typeof(UnreliableSequencedPipelineStage));
@@ -291,7 +292,6 @@ namespace Engine.Networking
         private void ServerUpdateLoop()
         {
             networkDriver.ScheduleUpdate().Complete();
-
             // Clean Up Connections
             for (int i = 0; i < connections.Count; i++)
             {
@@ -574,7 +574,8 @@ namespace Engine.Networking
             //Send writer
             networkDriver.EndSend(writer);
 
-           
+
+
         }
 
         /// <summary>
@@ -673,6 +674,8 @@ namespace Engine.Networking
         /// </summary>
         private void OnConnectedToServer()
         {
+            clientConnecting = false;
+            connected = true;
             NotifyOnConnectedToServer?.Invoke();
         }
     }

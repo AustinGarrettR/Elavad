@@ -3,13 +3,13 @@
 // Copyright (c) Jason Booth
 //
 // Auto-generated shader code, don't hand edit!
-//   Compiled with MicroSplat 3.3
-//   Unity : 2020.2.0a8
+//   Compiled with MicroSplat 3.4
+//   Unity : 2020.2.0a9
 //   Platform : WindowsEditor
 //   RenderLoop : Unity LD
 //////////////////////////////////////////////////////
 
-Shader "Hidden/MicroSplat/Terrain_Base-1962283193" {
+Shader "Hidden/MicroSplat/Terrain_Base507919372" {
    Properties {
       [HideInInspector] _Control0 ("Control0", 2D) = "red" {}
       [HideInInspector] _Control1 ("Control1", 2D) = "black" {}
@@ -28,6 +28,7 @@ Shader "Hidden/MicroSplat/Terrain_Base-1962283193" {
 
 
       [NoScaleOffset]_SmoothAO ("Smooth AO Array", 2DArray) = "black" {}
+
 
       // distance resampling
       // uv scale, near, fast
@@ -59,7 +60,12 @@ Shader "Hidden/MicroSplat/Terrain_Base-1962283193" {
       [NoScaleOffset]_NormalOriginal ("Normal(from original)", 2D) = "bump" {}
       _TBNoiseScale("Noise Scale", Float) = 1
 
+      _ParallaxParams("Parallax Height", Vector) = (0.08, 30, 30, 0)
 
+
+      _StochasticContrast("Contrast", Range(0.001, 0.999)) = 0.01
+      _StochasticScale("Scale", Range(0.25, 2)) = 1
+      [NoScaleOffset]_ClusterSmoothAOInv ("Smooth AO Array", 2DArray) = "black" {}
 
 
 
@@ -128,7 +134,6 @@ _TerrainNormalmapTexture("InstancedPerPixelNormal", 2D) = "bump" {}
       #define _MICROSPLAT 1
       #define _USEGRADMIP 1
       #define _PACKINGHQ 1
-      #define _MAX3LAYER 1
       #define _PERTEXUVSCALEOFFSET 1
       #define _PERTEXINTERPCONTRAST 1
       #define _BRANCHSAMPLES 1
@@ -136,13 +141,14 @@ _TerrainNormalmapTexture("InstancedPerPixelNormal", 2D) = "bump" {}
       #define _DISTANCERESAMPLE 1
       #define _DISTANCERESAMPLENORMAL 1
       #define _GEOMAP 1
-      #define _GEONORMAL 1
       #define _PERTEXGEOMAPHEIGHT 1
       #define _PERTEXGEOMAPHEIGHTSTRENGTH 1
       #define _GEOSLOPEFILTER 1
       #define _TERRAINBLENDING 1
-      #define _TBNOISEFBM 1
+      #define _TBNOISE 1
       #define _TBOBJECTNORMALBLEND 1
+      #define _PERTEXPARALLAX 1
+      #define _STOCHASTIC 1
       #define _MSRENDERLOOP_UNITYLD 1
       #define _MICROSPLATBASEMAP 1
 
@@ -187,6 +193,10 @@ _TerrainNormalmapTexture("InstancedPerPixelNormal", 2D) = "bump" {}
          float4x4 _PQSToLocal;
       #endif
 
+      #if _ORIGINSHIFT
+         float4x4 _GlobalOriginMTX;
+      #endif
+
       float4 _Control0_TexelSize;
       float4 _CustomControl0_TexelSize;
       float4 _PerPixelNormal_TexelSize;
@@ -226,7 +236,13 @@ _TerrainNormalmapTexture("InstancedPerPixelNormal", 2D) = "bump" {}
          half2 _NormalNoiseScaleStrength3;
          #endif
          
-         
+         #if _NOISEHEIGHT
+            half2 _NoiseHeightData; // scale, amp
+         #endif
+
+         #if _NOISEUV
+            half2 _NoiseUVData; // scale, amp
+         #endif
          
 
 
@@ -253,6 +269,17 @@ _TerrainNormalmapTexture("InstancedPerPixelNormal", 2D) = "bump" {}
       
       float _GlobalSpecularBlend;
 
+         half3 _ParallaxParams;
+
+         
+
+
+         half _StochasticContrast;
+         half _StochasticScale;
+
+
+
+
 
             CBUFFER_END
 
@@ -262,13 +289,9 @@ _TerrainNormalmapTexture("InstancedPerPixelNormal", 2D) = "bump" {}
                 float3 WorldSpaceNormal;
                 float3 WorldSpaceTangent;
                 float3 WorldSpaceBiTangent;
-                float3 WorldSpaceViewDirection;
                 float3 TangentSpaceViewDirection;
                 float3 WorldSpacePosition;
-                float4 VertexColor;
-                float4 ScreenPosition;
                 half4 uv0;
-                half4 uv1;
                 
                 #if _MICRODIGGERMESH || _MICROVERTEXMESH
             half4 w0 : TEXCOORD11;
@@ -338,11 +361,7 @@ _TerrainNormalmapTexture("InstancedPerPixelNormal", 2D) = "bump" {}
                 float3 WorldSpaceNormal : TEXCOORD4;
                 float3 WorldSpaceTangent : TEXCOORD5;
                 float3 WorldSpaceBiTangent : TEXCOORD6;
-                float3 WorldSpaceViewDirection : TEXCOORD7;
-                float4 VertexColor : COLOR;
-                float4 ScreenPosition : TEXCOORD8;
-                half4 uv0 : TEXCOORD9;
-                half4 uv1 : TEXCOORD10;
+                half4 uv0 : TEXCOORD8;
 
                 #if _MICRODIGGERMESH || _MICROVERTEXMESH
             half4 w0 : TEXCOORD11;
@@ -1728,6 +1747,310 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
 
 
 
+half4 StochasticSampleDiffuse(float3 uv, out half4 cw, MIPFROMATRAW mipLevel)
+{
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0));
+      MSBRANCHCLUSTER(data.b-0.5)
+      {
+         COUNTSAMPLE
+         return MICROSPLAT_SAMPLE(_Diffuse, uv, mipLevel);
+      }
+   #endif
+   half4 G1 = half4(0,0,0,0);
+   half4 G2 = half4(0,0,0,0);
+   half4 G3 = half4(0,0,0,0);
+
+   float contrast = _StochasticContrast;
+   #if _PERTEXCLUSTERCONTRAST
+      contrast = tex2Dlod(_PerTexProps, float4(uv.z/32, 10.5/32, 0, 0)).r;
+   #endif
+
+   // apply contrast early to help sample culling in albedo pass
+   // this changes our contrast curve to have a minimum, but I don't think
+   // blurry blends are desired with stochastic..
+   half3 mw = min(0.0, contrast - 0.45);
+   w = saturate(lerp(mw, 1, w));
+  
+   MSBRANCHCLUSTER(w.x)
+   {
+      G1 = MICROSPLAT_SAMPLE(_Diffuse, uv1, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(w.y)
+   {
+      G2 = MICROSPLAT_SAMPLE(_Diffuse, uv2, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(w.z)
+   {
+      G3 = MICROSPLAT_SAMPLE(_Diffuse, uv3, mipLevel);
+      COUNTSAMPLE
+   }   
+   
+   
+   
+   cw.xyz = BaryWeightBlend(w, G1.a, G2.a, G3.a, contrast);
+   cw.w = 1;
+   
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z;
+
+}
+
+half4 StochasticSampleDiffuseLOD(float3 uv, out half4 cw, MIPFROMATRAW mipLevel)
+{
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0)); 
+      MSBRANCHCLUSTER(data.b-0.5)
+      {
+         return UNITY_SAMPLE_TEX2DARRAY_LOD(_Diffuse, uv, mipLevel);
+      }
+   #endif
+
+   float contrast = _StochasticContrast;
+   #if _PERTEXCLUSTERCONTRAST
+      contrast = tex2Dlod(_PerTexProps, float4(uv.z/32, 10.5/32, 0, 0)).r;
+   #endif
+
+   // pre contrast for culling
+   half3 mw = min(0.0, contrast - 0.45);
+   w = saturate(lerp(mw, 1, w));
+   
+   half4 G1 = half4(0,0,0,0);
+   half4 G2 = half4(0,0,0,0);
+   half4 G3 = half4(0,0,0,0);
+
+   MSBRANCHCLUSTER(w.x)
+   {
+      G1 = UNITY_SAMPLE_TEX2DARRAY_LOD(_Diffuse, uv1, mipLevel);
+   }
+   MSBRANCHCLUSTER(w.y)
+   {
+      G2 = UNITY_SAMPLE_TEX2DARRAY_LOD(_Diffuse, uv2, mipLevel);
+   }
+   MSBRANCHCLUSTER(w.z)
+   {
+      G3 = UNITY_SAMPLE_TEX2DARRAY_LOD(_Diffuse, uv3, mipLevel);
+   }
+   
+   
+   
+   cw.xyz = BaryWeightBlend(w, G1.a, G2.a, G3.a, contrast);
+   cw.w = 1;
+   
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z;
+
+}
+
+half4 StochasticSampleNormal(float3 uv, half4 cw, MIPFROMATRAW mipLevel)
+{
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0)); 
+      MSBRANCHCLUSTER(data.b-0.5)
+      {
+         COUNTSAMPLE
+         return MICROSPLAT_SAMPLE(_NormalSAO, uv, mipLevel);
+      }
+   #endif
+   
+   half4 G1 = half4(0,0.5,1,0.5);
+   half4 G2 = half4(0,0.5,1,0.5);
+   half4 G3 = half4(0,0.5,1,0.5);
+
+   // So, when triplanar is on, the cw data gets stomped somehow, and we can't do stochastic on the normals. So
+   // we have to disabled that here and recompute the blend, which decorilates the texture from the albedo.
+   // So it doesn't look or perform as good, which is sad.. 
+
+   #if _TRIPLANAR
+      float contrast = _StochasticContrast;
+      #if _PERTEXCLUSTERCONTRAST
+         contrast = tex2Dlod(_PerTexProps, float4(uv.z/32, 10.5/32, 0, 0)).r;
+      #endif
+
+      // pre contrast for culling
+      half3 mw = min(0.0, contrast - 0.45);
+      w = saturate(lerp(mw, 1, w));
+
+      //MSBRANCHCLUSTER(cw.x)
+      {
+         G1 = MICROSPLAT_SAMPLE(_NormalSAO, uv1, mipLevel);
+         COUNTSAMPLE
+
+         #if _PACKINGHQ
+            G1.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv1, mipLevel).ga;
+            COUNTSAMPLE
+         #endif
+      }
+      //MSBRANCHCLUSTER(cw.y)
+      {
+         G2 = MICROSPLAT_SAMPLE(_NormalSAO, uv2, mipLevel);
+         COUNTSAMPLE
+
+         #if _PACKINGHQ
+            G2.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv2, mipLevel).ga;
+            COUNTSAMPLE
+         #endif
+      }
+      //MSBRANCHCLUSTER(cw.z)
+      {
+         G3 = MICROSPLAT_SAMPLE(_NormalSAO, uv3, mipLevel);
+         COUNTSAMPLE
+
+         #if _PACKINGHQ
+            G3.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv3, mipLevel).ga;
+            COUNTSAMPLE
+         #endif
+      }
+
+      cw.xyz = BaryWeightBlend(w, G1.a, G2.a, G3.a, contrast);
+      cw.w = 1;
+   #else
+   MSBRANCHCLUSTER(cw.x)
+   {
+      G1 = MICROSPLAT_SAMPLE(_NormalSAO, uv1, mipLevel);
+      COUNTSAMPLE
+
+      #if _PACKINGHQ
+         G1.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv1, mipLevel).ga;
+         COUNTSAMPLE
+      #endif
+   }
+   MSBRANCHCLUSTER(cw.y)
+   {
+      G2 = MICROSPLAT_SAMPLE(_NormalSAO, uv2, mipLevel);
+      COUNTSAMPLE
+
+      #if _PACKINGHQ
+         G2.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv2, mipLevel).ga;
+         COUNTSAMPLE
+      #endif
+   }
+   MSBRANCHCLUSTER(cw.z)
+   {
+      G3 = MICROSPLAT_SAMPLE(_NormalSAO, uv3, mipLevel);
+      COUNTSAMPLE
+
+      #if _PACKINGHQ
+         G3.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv3, mipLevel).ga;
+         COUNTSAMPLE
+      #endif
+   }
+   #endif
+
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z; 
+}
+
+
+half4 StochasticSampleEmis(float3 uv, half4 cw, MIPFROMATRAW mipLevel)
+{
+#if _USEEMISSIVEMETAL
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0)); 
+      MSBRANCHCLUSTER(data.b-0.5)
+      { 
+         COUNTSAMPLE
+         return MICROSPLAT_SAMPLE(_EmissiveMetal, uv, mipLevel);
+      }
+   #endif
+   
+   half4 G1 = half4(0,0,0,0);
+   half4 G2 = half4(0,0,0,0);
+   half4 G3 = half4(0,0,0,0);
+   MSBRANCHCLUSTER(cw.x)
+   {
+      G1 = MICROSPLAT_SAMPLE(_EmissiveMetal, uv1, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(cw.y)
+   {
+      G2 = MICROSPLAT_SAMPLE(_EmissiveMetal, uv2, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(cw.z)
+   {
+      G3 = MICROSPLAT_SAMPLE(_EmissiveMetal, uv3, mipLevel);
+      COUNTSAMPLE
+   }
+  
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z; 
+#endif
+return 0;
+}
+
+half4 StochasticSampleSpecular(float3 uv, half4 cw, MIPFROMATRAW mipLevel)
+{
+   #if _USESPECULARWORKFLOW
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0)); 
+      MSBRANCHCLUSTER(data.b-0.5)
+      {
+         COUNTSAMPLE
+         return MICROSPLAT_SAMPLE(_Specular, uv, mipLevel);
+      }
+   #endif
+   
+   half4 G1 = half4(0,0,0,0);
+   half4 G2 = half4(0,0,0,0);
+   half4 G3 = half4(0,0,0,0);
+   MSBRANCHCLUSTER(cw.x)
+   {
+      G1 = MICROSPLAT_SAMPLE(_Specular, uv1, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(cw.y)
+   {
+      G2 = MICROSPLAT_SAMPLE(_Specular, uv2, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(cw.z)
+   {
+      G3 = MICROSPLAT_SAMPLE(_Specular, uv3, mipLevel);
+      COUNTSAMPLE
+   }
+  
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z; 
+   #endif
+   return 0;
+}
+
+
+
+// ----------------------------------------------------------------------------
+
+#undef MICROSPLAT_SAMPLE_DIFFUSE
+#undef MICROSPLAT_SAMPLE_NORMAL
+#undef MICROSPLAT_SAMPLE_DIFFUSE_LOD
+#undef MICROSPLAT_SAMPLE_EMIS
+#undef MICROSPLAT_SAMPLE_SPECULAR
+
+#define MICROSPLAT_SAMPLE_DIFFUSE(u, cl, l) StochasticSampleDiffuse(u, cl, l)
+#define MICROSPLAT_SAMPLE_NORMAL(u, cl, l) StochasticSampleNormal(u, cl, l)
+#define MICROSPLAT_SAMPLE_DIFFUSE_LOD(u, cl, l) StochasticSampleDiffuseLOD(u, cl, l)
+#define MICROSPLAT_SAMPLE_EMIS(u, cl, l) StochasticSampleEmis(u, cl, l)
+#define MICROSPLAT_SAMPLE_SPECULAR(u, cl, l) StochasticSampleSpecular(u, cl, l)
+
+
+
          #if _DETAILNOISE
          UNITY_DECLARE_TEX2D_NOSAMPLER(_DetailNoise);
          #endif
@@ -1748,6 +2071,14 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
          UNITY_DECLARE_TEX2D_NOSAMPLER(_NormalNoise3);
          #endif
          
+         #if _NOISEHEIGHT
+         UNITY_DECLARE_TEX2D_NOSAMPLER(_NoiseHeight);
+         #endif
+
+         #if _NOISEUV
+         UNITY_DECLARE_TEX2D_NOSAMPLER(_NoiseUV);
+         #endif
+
          struct AntiTileTriplanarConfig
          {
             float3 pn;
@@ -1773,9 +2104,138 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
          #else
             #define AntiTileTriplanarSample(tex, uv, tc, scale) UNITY_SAMPLE_TEX2D_SAMPLER(tex, _Diffuse, uv * scale)
          #endif
+
+         #if _ANTITILETRIPLANAR
+            #define AntiTileTriplanarSampleLOD(tex, uv, tc, scale) (MICROSPLAT_SAMPLE_TEX2D_SAMPLER_LOD(tex, _Diffuse, tc.uv0 * scale, 0) * tc.pn.x + MICROSPLAT_SAMPLE_TEX2D_SAMPLER_LOD(tex, _Diffuse, tc.uv1 * scale, 0) * tc.pn.y + MICROSPLAT_SAMPLE_TEX2D_SAMPLER_LOD(tex, _Diffuse, tc.uv2 * scale) * tc.pn.z, 0)
+         #else
+            #define AntiTileTriplanarSampleLOD(tex, uv, tc, scale) MICROSPLAT_SAMPLE_TEX2D_SAMPLER_LOD(tex, _Diffuse, uv * scale, 0)
+         #endif
          
 
-         void DistanceResample(inout RawSamples o, Config config, TriplanarConfig tc, float camDist, float3 viewDir, half4 fxLevels, MIPFORMAT mipLevel, float3 worldPos, half4 weights)
+         
+         #if _NOISEHEIGHT
+         
+         void ApplyNoiseHeight(inout RawSamples s, float2 uv, Config config, float3 worldPos, float3 worldNormal)
+         {
+            float2 offset = float2(0.27, 0.17);
+
+            half freq0 = _NoiseHeightData.x;
+            half freq1 = _NoiseHeightData.x;
+            half freq2 = _NoiseHeightData.x;
+            half freq3 = _NoiseHeightData.x;
+
+            half amp0 = _NoiseHeightData.y;
+            half amp1 = _NoiseHeightData.y;
+            half amp2 = _NoiseHeightData.y;
+            half amp3 = _NoiseHeightData.y;
+
+            #if _PERTEXNOISEHEIGHTFREQ || _PERTEXNOISEHEIGHTAMP
+               SAMPLE_PER_TEX(pt, 22.5, config, half4(1, 0, 1, 0));
+
+               #if _PERTEXNOISEHEIGHTFREQ
+                  freq0 += pt0.r;
+                  freq1 += pt1.r;
+                  freq2 += pt2.r;
+                  freq3 += pt3.r;
+               #endif
+               #if _PERTEXNOISEHEIGHTAMP
+                  amp0 *= pt0.g;
+                  amp1 *= pt1.g;
+                  amp2 *= pt2.g;
+                  amp3 *= pt3.g;
+               #endif
+            #endif
+
+            AntiTileTriplanarConfig tc = (AntiTileTriplanarConfig)0;
+            UNITY_INITIALIZE_OUTPUT(AntiTileTriplanarConfig,tc);
+            
+            #if _ANTITILETRIPLANAR
+                PrepAntiTileTriplanarConfig(tc, worldPos, worldNormal);
+            #endif
+            
+
+            half noise0 = AntiTileTriplanarSample(_NoiseHeight, uv, tc, freq0 + config.uv0.z * offset).g - 0.5;
+            COUNTSAMPLE
+            half noise1 = AntiTileTriplanarSample(_NoiseHeight, uv, tc, freq1 + config.uv1.z * offset).g - 0.5;
+            COUNTSAMPLE
+            half noise2 = 0;
+            half noise3 = 0;
+           
+            #if !_MAXLAYER2
+               noise2 = AntiTileTriplanarSample(_NoiseHeight, uv, tc, freq2 + config.uv2.z * offset).g - 0.5;
+               COUNTSAMPLE
+            #endif
+            #if !_MAXLAYER2 && !_MAXLAYER3
+               noise3 = AntiTileTriplanarSample(_NoiseHeight, uv, tc, freq3 + config.uv3.z * offset).g - 0.5;
+               COUNTSAMPLE
+            #endif
+
+            s.albedo0.a = saturate(s.albedo0.a + noise0 * amp0);
+            s.albedo1.a = saturate(s.albedo1.a + noise1 * amp1);
+            s.albedo2.a = saturate(s.albedo2.a + noise2 * amp2);
+            s.albedo3.a = saturate(s.albedo3.a + noise3 * amp3);
+         }
+
+         void ApplyNoiseHeightLOD(inout half h0, inout half h1, inout half h2, inout half h3, float2 uv, Config config, float3 worldPos, float3 worldNormal)
+         {
+            float2 offset = float2(0.27, 0.17);
+
+            half freq0 = _NoiseHeightData.x;
+            half freq1 = _NoiseHeightData.x;
+            half freq2 = _NoiseHeightData.x;
+            half freq3 = _NoiseHeightData.x;
+
+            half amp0 = _NoiseHeightData.y;
+            half amp1 = _NoiseHeightData.y;
+            half amp2 = _NoiseHeightData.y;
+            half amp3 = _NoiseHeightData.y;
+
+            #if _PERTEXNOISEHEIGHTFREQ || _PERTEXNOISEHEIGHTAMP
+               SAMPLE_PER_TEX(pt, 22.5, config, half4(1, 0, 1, 0));
+
+               #if _PERTEXNOISEHEIGHTFREQ
+                  freq0 += pt0.r;
+                  freq1 += pt1.r;
+                  freq2 += pt2.r;
+                  freq3 += pt3.r;
+               #endif
+               #if _PERTEXNOISEHEIGHTAMP
+                  amp0 *= pt0.g;
+                  amp1 *= pt1.g;
+                  amp2 *= pt2.g;
+                  amp3 *= pt3.g;
+               #endif
+            #endif
+            
+            AntiTileTriplanarConfig tc = (AntiTileTriplanarConfig)0;
+            UNITY_INITIALIZE_OUTPUT(AntiTileTriplanarConfig,tc);
+            
+            #if _ANTITILETRIPLANAR
+                PrepAntiTileTriplanarConfig(tc, worldPos, worldNormal);
+            #endif
+            
+            
+            half noise0 = AntiTileTriplanarSampleLOD(_NoiseHeight, uv, tc, freq0 + config.uv0.z * offset).g;
+            half noise1 = AntiTileTriplanarSampleLOD(_NoiseHeight, uv, tc, freq1 + config.uv1.z * offset).g;
+            half noise2 = 0;
+            half noise3 = 0;
+           
+            #if !_MAXLAYER2
+               noise2 = AntiTileTriplanarSampleLOD(_NoiseHeight, uv, tc, freq2 + config.uv2.z * offset).g;
+            #endif
+            #if !_MAXLAYER2 && !_MAXLAYER3
+               noise3 = AntiTileTriplanarSampleLOD(_NoiseHeight, uv, tc, freq3 + config.uv3.z * offset).g;
+            #endif
+
+            h0 = saturate(h0 + noise0 * amp0);
+            h1 = saturate(h1 + noise1 * amp1);
+            h2 = saturate(h2 + noise2 * amp2);
+            h3 = saturate(h3 + noise3 * amp3);
+         }
+         #endif
+
+
+         void DistanceResample(inout RawSamples o, Config config, TriplanarConfig tc, float camDist, float3 viewDir, half4 fxLevels, MIPFORMAT mipLevel, float3 worldPos, half4 weights, float3 worldNormal)
          {
          #if _DISTANCERESAMPLE
 
@@ -2476,6 +2936,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                #endif
 
             #endif
+
          #endif // _DISTANCERESAMPLE
          }
 
@@ -2717,8 +3178,8 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
             #endif
 
          }
-
-
+         
+        
 
 
       UNITY_DECLARE_TEX2D_NOSAMPLER(_GeoTex);
@@ -3210,6 +3671,67 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
       }
       #endif
 
+         float2 MSParallaxOffset( half h, half height, half3 viewDir )
+         {
+            h = h * height - height/2.0;
+            float3 v = normalize(viewDir);
+            v.z += 0.42;
+            return h * (v.xy / v.z);
+         }
+
+         void DoParallax(Input i, half h, inout Config c, inout TriplanarConfig tc, inout RawSamples s, half4 weights, float camDist)
+         {
+            float fade = (1 - saturate((camDist - _ParallaxParams.y) / max(_ParallaxParams.z, 0.01)));
+            float2 offset = MSParallaxOffset(h, _ParallaxParams.x * fade, i.viewDir);
+
+
+            #if !_TRIPLANAR
+               #if _PERTEXPARALLAX
+               SAMPLE_PER_TEX(ptp, 6.5, c, 0.0);
+               c.uv0.xy += offset * ptp0.a;
+               c.uv1.xy += offset * ptp1.a;
+               c.uv2.xy += offset * ptp2.a;
+               c.uv3.xy += offset * ptp3.a;
+               #else
+               c.uv0.xy += offset;
+               c.uv1.xy += offset;
+               c.uv2.xy += offset;
+               c.uv3.xy += offset;
+               #endif
+            #else
+               #if _PERTEXPARALLAX
+               SAMPLE_PER_TEX(ptp, 6.5, c, 0.0);
+               tc.uv0[0].xy += offset * ptp0.a;
+               tc.uv0[1].xy += offset * ptp0.a;
+               tc.uv0[2].xy += offset * ptp0.a;
+               tc.uv1[0].xy += offset * ptp1.a;
+               tc.uv1[1].xy += offset * ptp1.a;
+               tc.uv1[2].xy += offset * ptp1.a;
+               tc.uv2[0].xy += offset * ptp2.a;
+               tc.uv2[1].xy += offset * ptp2.a;
+               tc.uv2[2].xy += offset * ptp2.a;
+               tc.uv3[0].xy += offset * ptp3.a;
+               tc.uv3[1].xy += offset * ptp3.a;
+               tc.uv3[2].xy += offset * ptp3.a;
+               #else
+               tc.uv0[0].xy += offset;
+               tc.uv0[1].xy += offset;
+               tc.uv0[2].xy += offset;
+               tc.uv1[0].xy += offset;
+               tc.uv1[1].xy += offset;
+               tc.uv1[2].xy += offset;
+               tc.uv2[0].xy += offset;
+               tc.uv2[1].xy += offset;
+               tc.uv2[2].xy += offset;
+               tc.uv3[0].xy += offset;
+               tc.uv3[1].xy += offset;
+               tc.uv3[2].xy += offset;
+               #endif
+            #endif
+
+         }
+
+
 
                     
             GraphVertexOutput vert (GraphVertexInput v)
@@ -3240,11 +3762,8 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 float3 WorldSpaceNormal = normalize(mul(v.normal,(float3x3)UNITY_MATRIX_I_M));
                 float3 WorldSpaceTangent = normalize(mul((float3x3)UNITY_MATRIX_M,v.tangent.xyz));
                 float3 WorldSpaceBiTangent = cross(WorldSpaceNormal, WorldSpaceTangent.xyz) * v.tangent.w;
-                float3 WorldSpaceViewDirection = _WorldSpaceCameraPos.xyz - mul(GetObjectToWorldMatrix(), float4(v.vertex.xyz, 1.0)).xyz;
-                float4 VertexColor = v.color;
-                float4 ScreenPosition = ComputeScreenPos(mul(GetWorldToHClipMatrix(), mul(GetObjectToWorldMatrix(), v.vertex)), _ProjectionParams.x);
+                
                 float4 uv0 = v.texcoord0;
-                float4 uv1 = v.texcoord1;
                 float3 ObjectSpacePosition = mul(UNITY_MATRIX_I_M,float4(WorldSpacePosition,1.0)).xyz;
                 
                 
@@ -3254,11 +3773,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 o.WorldSpaceNormal = WorldSpaceNormal;
                 o.WorldSpaceTangent = WorldSpaceTangent;
                 o.WorldSpaceBiTangent = WorldSpaceBiTangent;
-                o.WorldSpaceViewDirection = WorldSpaceViewDirection;
-                o.VertexColor = VertexColor;
-                o.ScreenPosition = ScreenPosition;
                 o.uv0 = uv0;
-                o.uv1 = uv1;
                 
 
                 VertexPositionInputs vertexInput = GetVertexPositionInputs(v.vertex.xyz);
@@ -4162,6 +4677,10 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
 
          SampleAlbedo(config, tc, samples, albedoLOD, weights);
 
+         #if _NOISEHEIGHT
+            ApplyNoiseHeight(samples, config.uv, config, i.worldPos, worldNormalVertex);
+         #endif
+         
          #if _STREAMS || (_PARALLAX && !_DISABLESPLATMAPS)
          half earlyHeight = BlendWeights(samples.albedo0.w, samples.albedo1.w, samples.albedo2.w, samples.albedo3.w, weights);
          #endif
@@ -4213,7 +4732,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
          #endif
 
          #if _DISTANCERESAMPLE && !_DISABLESPLATMAPS
-            DistanceResample(samples, config, tc, camDist, i.viewDir, fxLevels, albedoLOD, i.worldPos, heightWeights);
+            DistanceResample(samples, config, tc, camDist, i.viewDir, fxLevels, albedoLOD, i.worldPos, heightWeights, worldNormalVertex);
          #endif
 
          // PerTexture sampling goes here, passing the samples structure
@@ -4758,6 +5277,19 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
 
       MicroSplatLayer SurfImpl(Input i, float3 worldNormalVertex)
       {
+         // with DrawInstanced on, view dir is incorrect, so we compute it here. Thanks Obama..
+         #if !_DEBUG_USE_TOPOLOGY && UNITY_VERSION >= 201830 && !_TERRAINBLENDABLESHADER && !_MICROMESH && !_MICROMESHTERRAIN && !_MICROPOLARISMESH &&!_MICRODIGGERMESH && !_MICROVERTEXMESH && defined(UNITY_INSTANCING_ENABLED) && !defined(SHADER_API_D3D11_9X)
+            #if !_MSRENDERLOOP_SURFACESHADER
+               i.viewDir = normalize( mul(i.TBN, (_WorldSpaceCameraPos - i.worldPos)) );
+            #else
+               float3 t2w0 = WorldNormalVector(i, float3(1,0,0));
+               float3 t2w1 = WorldNormalVector(i, float3(0,1,0));
+               float3 t2w2 = WorldNormalVector(i, float3(0,0,1));
+               float3x3 t2w = float3x3(t2w0, t2w1, t2w2);
+               i.viewDir = normalize(mul( t2w, (_WorldSpaceCameraPos - i.worldPos)));
+            #endif
+         #endif
+
 
          #if _TERRAINBLENDABLESHADER && _TRIPLANAR
             worldNormalVertex = WorldNormalVector(i, float3(0,0,1));
@@ -4767,12 +5299,17 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
           
          #if _FORCELOCALSPACE
             #if _PLANETVECTORS
-                worldNormalVertex = mul(_PQSToLocal, worldNormalVertex);
+                worldNormalVertex = mul(_PQSToLocal, float4(worldNormalVertex, 1)).xyz;
                 i.worldPos = i.worldPos + mul(_PQSToLocal, float4(0,0,0,1)).xyz;
              #else
-                worldNormalVertex = mul(unity_WorldToObject, worldNormalVertex);
+                worldNormalVertex = mul(unity_WorldToObject, float4(worldNormalVertex, 1)).xyz;
                 i.worldPos = i.worldPos -  mul(unity_ObjectToWorld, float4(0,0,0,1)).xyz;
              #endif
+         #endif
+
+         #if _ORIGINSHIFT
+             worldNormalVertex = mul(_GlobalOriginMTX, float4(worldNormalVertex, 1)).xyz;
+             i.worldPos = i.worldPos + mul(_GlobalOriginMTX, float4(0,0,0,1)).xyz;
          #endif
 
          #if _DEBUG_USE_TOPOLOGY
@@ -4829,7 +5366,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                float3 up = float3(0,1,0);
                float3 procNormal = worldNormalVertex;
                float height = i.worldPos.y;
-               #if _PLANETNORMAL2 || _PLANETNORMAL || _GLOBALNORMAL
+               #if _PLANETNORMAL2 || _PLANETNORMAL
                   config.uv = origUV;
                   float2 pnorm = GetPlanetTangentNormal(i, config, camDist, worldNormalVertex);
                   procNormal.xy = pnorm;
@@ -5027,12 +5564,9 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 float3 WorldSpaceNormal = IN.WorldSpaceNormal;
                 float3 WorldSpaceTangent = IN.WorldSpaceTangent;
                 float3 WorldSpaceBiTangent = IN.WorldSpaceBiTangent;
-                float3 WorldSpaceViewDirection = IN.WorldSpaceViewDirection;
+                float3 WorldSpaceViewDirection = normalize(_WorldSpaceCameraPos.xyz - WorldSpacePosition);
                 float3x3 tangentSpaceTransform = float3x3(WorldSpaceTangent,WorldSpaceBiTangent,WorldSpaceNormal);
-                float4 VertexColor = IN.VertexColor;
-                float4 ScreenPosition = IN.ScreenPosition;
                 float4 uv0 = IN.uv0;
-                float4 uv1 = IN.uv1;
                 float3 TangentSpaceViewDirection = mul(WorldSpaceViewDirection,(float3x3)tangentSpaceTransform).xyz;
 
 
@@ -5051,13 +5585,9 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 surfaceInput.WorldSpaceNormal = WorldSpaceNormal;
                 surfaceInput.WorldSpaceTangent = WorldSpaceTangent;
                 surfaceInput.WorldSpaceBiTangent = WorldSpaceBiTangent;
-                surfaceInput.WorldSpaceViewDirection = WorldSpaceViewDirection;
                 surfaceInput.TangentSpaceViewDirection = TangentSpaceViewDirection;
                 surfaceInput.WorldSpacePosition = WorldSpacePosition;
-                surfaceInput.VertexColor = VertexColor;
-                surfaceInput.ScreenPosition = ScreenPosition;
                 surfaceInput.uv0 = uv0;
-                surfaceInput.uv1 = uv1;
 
                 ToSurfaceDescInput(IN, surfaceInput);
 
@@ -5096,7 +5626,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 InputData inputData;
                 inputData.positionWS = WorldSpacePosition;
                 inputData.normalWS = normalize(TransformTangentToWorld(Normal, half3x3(WorldSpaceTangent, WorldSpaceBiTangent, WorldSpaceNormal)));
-                inputData.viewDirectionWS = normalize(WorldSpaceViewDirection);
+                inputData.viewDirectionWS = (WorldSpaceViewDirection);
                 inputData.shadowCoord = IN.shadowCoord;
                 inputData.fogCoord = IN.fogFactorAndVertexLight.x;
                 inputData.vertexLighting = IN.fogFactorAndVertexLight.yzw;
@@ -5156,7 +5686,6 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
       #define _MICROSPLAT 1
       #define _USEGRADMIP 1
       #define _PACKINGHQ 1
-      #define _MAX3LAYER 1
       #define _PERTEXUVSCALEOFFSET 1
       #define _PERTEXINTERPCONTRAST 1
       #define _BRANCHSAMPLES 1
@@ -5164,13 +5693,14 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
       #define _DISTANCERESAMPLE 1
       #define _DISTANCERESAMPLENORMAL 1
       #define _GEOMAP 1
-      #define _GEONORMAL 1
       #define _PERTEXGEOMAPHEIGHT 1
       #define _PERTEXGEOMAPHEIGHTSTRENGTH 1
       #define _GEOSLOPEFILTER 1
       #define _TERRAINBLENDING 1
-      #define _TBNOISEFBM 1
+      #define _TBNOISE 1
       #define _TBOBJECTNORMALBLEND 1
+      #define _PERTEXPARALLAX 1
+      #define _STOCHASTIC 1
       #define _MSRENDERLOOP_UNITYLD 1
       #define _MICROSPLATBASEMAP 1
 
@@ -5212,6 +5742,10 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
          float4x4 _PQSToLocal;
       #endif
 
+      #if _ORIGINSHIFT
+         float4x4 _GlobalOriginMTX;
+      #endif
+
       float4 _Control0_TexelSize;
       float4 _CustomControl0_TexelSize;
       float4 _PerPixelNormal_TexelSize;
@@ -5251,7 +5785,13 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
          half2 _NormalNoiseScaleStrength3;
          #endif
          
-         
+         #if _NOISEHEIGHT
+            half2 _NoiseHeightData; // scale, amp
+         #endif
+
+         #if _NOISEUV
+            half2 _NoiseUVData; // scale, amp
+         #endif
          
 
 
@@ -5278,6 +5818,17 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
       
       float _GlobalSpecularBlend;
 
+         half3 _ParallaxParams;
+
+         
+
+
+         half _StochasticContrast;
+         half _StochasticScale;
+
+
+
+
 
             CBUFFER_END
             
@@ -5286,13 +5837,9 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 float3 WorldSpaceNormal;
                 float3 WorldSpaceTangent;
                 float3 WorldSpaceBiTangent;
-                float3 WorldSpaceViewDirection;
                 float3 TangentSpaceViewDirection;
                 float3 WorldSpacePosition;
-                float4 VertexColor;
-                float4 ScreenPosition;
                 half4 uv0;
-                half4 uv1;
             };
 
             
@@ -5327,11 +5874,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 float3 WorldSpaceNormal : TEXCOORD4;
                 float3 WorldSpaceTangent : TEXCOORD5;
                 float3 WorldSpaceBiTangent : TEXCOORD6;
-                float3 WorldSpaceViewDirection : TEXCOORD7;
-                float4 VertexColor : COLOR;
-                float4 ScreenPosition : TEXCOORD8;
                 half4 uv0 : TEXCOORD9;
-                half4 uv1 : TEXCOORD10;
 
                 UNITY_VERTEX_INPUT_INSTANCE_ID
             };
@@ -6689,6 +7232,310 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
 
 
 
+half4 StochasticSampleDiffuse(float3 uv, out half4 cw, MIPFROMATRAW mipLevel)
+{
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0));
+      MSBRANCHCLUSTER(data.b-0.5)
+      {
+         COUNTSAMPLE
+         return MICROSPLAT_SAMPLE(_Diffuse, uv, mipLevel);
+      }
+   #endif
+   half4 G1 = half4(0,0,0,0);
+   half4 G2 = half4(0,0,0,0);
+   half4 G3 = half4(0,0,0,0);
+
+   float contrast = _StochasticContrast;
+   #if _PERTEXCLUSTERCONTRAST
+      contrast = tex2Dlod(_PerTexProps, float4(uv.z/32, 10.5/32, 0, 0)).r;
+   #endif
+
+   // apply contrast early to help sample culling in albedo pass
+   // this changes our contrast curve to have a minimum, but I don't think
+   // blurry blends are desired with stochastic..
+   half3 mw = min(0.0, contrast - 0.45);
+   w = saturate(lerp(mw, 1, w));
+  
+   MSBRANCHCLUSTER(w.x)
+   {
+      G1 = MICROSPLAT_SAMPLE(_Diffuse, uv1, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(w.y)
+   {
+      G2 = MICROSPLAT_SAMPLE(_Diffuse, uv2, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(w.z)
+   {
+      G3 = MICROSPLAT_SAMPLE(_Diffuse, uv3, mipLevel);
+      COUNTSAMPLE
+   }   
+   
+   
+   
+   cw.xyz = BaryWeightBlend(w, G1.a, G2.a, G3.a, contrast);
+   cw.w = 1;
+   
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z;
+
+}
+
+half4 StochasticSampleDiffuseLOD(float3 uv, out half4 cw, MIPFROMATRAW mipLevel)
+{
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0)); 
+      MSBRANCHCLUSTER(data.b-0.5)
+      {
+         return UNITY_SAMPLE_TEX2DARRAY_LOD(_Diffuse, uv, mipLevel);
+      }
+   #endif
+
+   float contrast = _StochasticContrast;
+   #if _PERTEXCLUSTERCONTRAST
+      contrast = tex2Dlod(_PerTexProps, float4(uv.z/32, 10.5/32, 0, 0)).r;
+   #endif
+
+   // pre contrast for culling
+   half3 mw = min(0.0, contrast - 0.45);
+   w = saturate(lerp(mw, 1, w));
+   
+   half4 G1 = half4(0,0,0,0);
+   half4 G2 = half4(0,0,0,0);
+   half4 G3 = half4(0,0,0,0);
+
+   MSBRANCHCLUSTER(w.x)
+   {
+      G1 = UNITY_SAMPLE_TEX2DARRAY_LOD(_Diffuse, uv1, mipLevel);
+   }
+   MSBRANCHCLUSTER(w.y)
+   {
+      G2 = UNITY_SAMPLE_TEX2DARRAY_LOD(_Diffuse, uv2, mipLevel);
+   }
+   MSBRANCHCLUSTER(w.z)
+   {
+      G3 = UNITY_SAMPLE_TEX2DARRAY_LOD(_Diffuse, uv3, mipLevel);
+   }
+   
+   
+   
+   cw.xyz = BaryWeightBlend(w, G1.a, G2.a, G3.a, contrast);
+   cw.w = 1;
+   
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z;
+
+}
+
+half4 StochasticSampleNormal(float3 uv, half4 cw, MIPFROMATRAW mipLevel)
+{
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0)); 
+      MSBRANCHCLUSTER(data.b-0.5)
+      {
+         COUNTSAMPLE
+         return MICROSPLAT_SAMPLE(_NormalSAO, uv, mipLevel);
+      }
+   #endif
+   
+   half4 G1 = half4(0,0.5,1,0.5);
+   half4 G2 = half4(0,0.5,1,0.5);
+   half4 G3 = half4(0,0.5,1,0.5);
+
+   // So, when triplanar is on, the cw data gets stomped somehow, and we can't do stochastic on the normals. So
+   // we have to disabled that here and recompute the blend, which decorilates the texture from the albedo.
+   // So it doesn't look or perform as good, which is sad.. 
+
+   #if _TRIPLANAR
+      float contrast = _StochasticContrast;
+      #if _PERTEXCLUSTERCONTRAST
+         contrast = tex2Dlod(_PerTexProps, float4(uv.z/32, 10.5/32, 0, 0)).r;
+      #endif
+
+      // pre contrast for culling
+      half3 mw = min(0.0, contrast - 0.45);
+      w = saturate(lerp(mw, 1, w));
+
+      //MSBRANCHCLUSTER(cw.x)
+      {
+         G1 = MICROSPLAT_SAMPLE(_NormalSAO, uv1, mipLevel);
+         COUNTSAMPLE
+
+         #if _PACKINGHQ
+            G1.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv1, mipLevel).ga;
+            COUNTSAMPLE
+         #endif
+      }
+      //MSBRANCHCLUSTER(cw.y)
+      {
+         G2 = MICROSPLAT_SAMPLE(_NormalSAO, uv2, mipLevel);
+         COUNTSAMPLE
+
+         #if _PACKINGHQ
+            G2.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv2, mipLevel).ga;
+            COUNTSAMPLE
+         #endif
+      }
+      //MSBRANCHCLUSTER(cw.z)
+      {
+         G3 = MICROSPLAT_SAMPLE(_NormalSAO, uv3, mipLevel);
+         COUNTSAMPLE
+
+         #if _PACKINGHQ
+            G3.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv3, mipLevel).ga;
+            COUNTSAMPLE
+         #endif
+      }
+
+      cw.xyz = BaryWeightBlend(w, G1.a, G2.a, G3.a, contrast);
+      cw.w = 1;
+   #else
+   MSBRANCHCLUSTER(cw.x)
+   {
+      G1 = MICROSPLAT_SAMPLE(_NormalSAO, uv1, mipLevel);
+      COUNTSAMPLE
+
+      #if _PACKINGHQ
+         G1.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv1, mipLevel).ga;
+         COUNTSAMPLE
+      #endif
+   }
+   MSBRANCHCLUSTER(cw.y)
+   {
+      G2 = MICROSPLAT_SAMPLE(_NormalSAO, uv2, mipLevel);
+      COUNTSAMPLE
+
+      #if _PACKINGHQ
+         G2.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv2, mipLevel).ga;
+         COUNTSAMPLE
+      #endif
+   }
+   MSBRANCHCLUSTER(cw.z)
+   {
+      G3 = MICROSPLAT_SAMPLE(_NormalSAO, uv3, mipLevel);
+      COUNTSAMPLE
+
+      #if _PACKINGHQ
+         G3.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv3, mipLevel).ga;
+         COUNTSAMPLE
+      #endif
+   }
+   #endif
+
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z; 
+}
+
+
+half4 StochasticSampleEmis(float3 uv, half4 cw, MIPFROMATRAW mipLevel)
+{
+#if _USEEMISSIVEMETAL
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0)); 
+      MSBRANCHCLUSTER(data.b-0.5)
+      { 
+         COUNTSAMPLE
+         return MICROSPLAT_SAMPLE(_EmissiveMetal, uv, mipLevel);
+      }
+   #endif
+   
+   half4 G1 = half4(0,0,0,0);
+   half4 G2 = half4(0,0,0,0);
+   half4 G3 = half4(0,0,0,0);
+   MSBRANCHCLUSTER(cw.x)
+   {
+      G1 = MICROSPLAT_SAMPLE(_EmissiveMetal, uv1, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(cw.y)
+   {
+      G2 = MICROSPLAT_SAMPLE(_EmissiveMetal, uv2, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(cw.z)
+   {
+      G3 = MICROSPLAT_SAMPLE(_EmissiveMetal, uv3, mipLevel);
+      COUNTSAMPLE
+   }
+  
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z; 
+#endif
+return 0;
+}
+
+half4 StochasticSampleSpecular(float3 uv, half4 cw, MIPFROMATRAW mipLevel)
+{
+   #if _USESPECULARWORKFLOW
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0)); 
+      MSBRANCHCLUSTER(data.b-0.5)
+      {
+         COUNTSAMPLE
+         return MICROSPLAT_SAMPLE(_Specular, uv, mipLevel);
+      }
+   #endif
+   
+   half4 G1 = half4(0,0,0,0);
+   half4 G2 = half4(0,0,0,0);
+   half4 G3 = half4(0,0,0,0);
+   MSBRANCHCLUSTER(cw.x)
+   {
+      G1 = MICROSPLAT_SAMPLE(_Specular, uv1, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(cw.y)
+   {
+      G2 = MICROSPLAT_SAMPLE(_Specular, uv2, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(cw.z)
+   {
+      G3 = MICROSPLAT_SAMPLE(_Specular, uv3, mipLevel);
+      COUNTSAMPLE
+   }
+  
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z; 
+   #endif
+   return 0;
+}
+
+
+
+// ----------------------------------------------------------------------------
+
+#undef MICROSPLAT_SAMPLE_DIFFUSE
+#undef MICROSPLAT_SAMPLE_NORMAL
+#undef MICROSPLAT_SAMPLE_DIFFUSE_LOD
+#undef MICROSPLAT_SAMPLE_EMIS
+#undef MICROSPLAT_SAMPLE_SPECULAR
+
+#define MICROSPLAT_SAMPLE_DIFFUSE(u, cl, l) StochasticSampleDiffuse(u, cl, l)
+#define MICROSPLAT_SAMPLE_NORMAL(u, cl, l) StochasticSampleNormal(u, cl, l)
+#define MICROSPLAT_SAMPLE_DIFFUSE_LOD(u, cl, l) StochasticSampleDiffuseLOD(u, cl, l)
+#define MICROSPLAT_SAMPLE_EMIS(u, cl, l) StochasticSampleEmis(u, cl, l)
+#define MICROSPLAT_SAMPLE_SPECULAR(u, cl, l) StochasticSampleSpecular(u, cl, l)
+
+
+
          #if _DETAILNOISE
          UNITY_DECLARE_TEX2D_NOSAMPLER(_DetailNoise);
          #endif
@@ -6709,6 +7556,14 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
          UNITY_DECLARE_TEX2D_NOSAMPLER(_NormalNoise3);
          #endif
          
+         #if _NOISEHEIGHT
+         UNITY_DECLARE_TEX2D_NOSAMPLER(_NoiseHeight);
+         #endif
+
+         #if _NOISEUV
+         UNITY_DECLARE_TEX2D_NOSAMPLER(_NoiseUV);
+         #endif
+
          struct AntiTileTriplanarConfig
          {
             float3 pn;
@@ -6734,9 +7589,138 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
          #else
             #define AntiTileTriplanarSample(tex, uv, tc, scale) UNITY_SAMPLE_TEX2D_SAMPLER(tex, _Diffuse, uv * scale)
          #endif
+
+         #if _ANTITILETRIPLANAR
+            #define AntiTileTriplanarSampleLOD(tex, uv, tc, scale) (MICROSPLAT_SAMPLE_TEX2D_SAMPLER_LOD(tex, _Diffuse, tc.uv0 * scale, 0) * tc.pn.x + MICROSPLAT_SAMPLE_TEX2D_SAMPLER_LOD(tex, _Diffuse, tc.uv1 * scale, 0) * tc.pn.y + MICROSPLAT_SAMPLE_TEX2D_SAMPLER_LOD(tex, _Diffuse, tc.uv2 * scale) * tc.pn.z, 0)
+         #else
+            #define AntiTileTriplanarSampleLOD(tex, uv, tc, scale) MICROSPLAT_SAMPLE_TEX2D_SAMPLER_LOD(tex, _Diffuse, uv * scale, 0)
+         #endif
          
 
-         void DistanceResample(inout RawSamples o, Config config, TriplanarConfig tc, float camDist, float3 viewDir, half4 fxLevels, MIPFORMAT mipLevel, float3 worldPos, half4 weights)
+         
+         #if _NOISEHEIGHT
+         
+         void ApplyNoiseHeight(inout RawSamples s, float2 uv, Config config, float3 worldPos, float3 worldNormal)
+         {
+            float2 offset = float2(0.27, 0.17);
+
+            half freq0 = _NoiseHeightData.x;
+            half freq1 = _NoiseHeightData.x;
+            half freq2 = _NoiseHeightData.x;
+            half freq3 = _NoiseHeightData.x;
+
+            half amp0 = _NoiseHeightData.y;
+            half amp1 = _NoiseHeightData.y;
+            half amp2 = _NoiseHeightData.y;
+            half amp3 = _NoiseHeightData.y;
+
+            #if _PERTEXNOISEHEIGHTFREQ || _PERTEXNOISEHEIGHTAMP
+               SAMPLE_PER_TEX(pt, 22.5, config, half4(1, 0, 1, 0));
+
+               #if _PERTEXNOISEHEIGHTFREQ
+                  freq0 += pt0.r;
+                  freq1 += pt1.r;
+                  freq2 += pt2.r;
+                  freq3 += pt3.r;
+               #endif
+               #if _PERTEXNOISEHEIGHTAMP
+                  amp0 *= pt0.g;
+                  amp1 *= pt1.g;
+                  amp2 *= pt2.g;
+                  amp3 *= pt3.g;
+               #endif
+            #endif
+
+            AntiTileTriplanarConfig tc = (AntiTileTriplanarConfig)0;
+            UNITY_INITIALIZE_OUTPUT(AntiTileTriplanarConfig,tc);
+            
+            #if _ANTITILETRIPLANAR
+                PrepAntiTileTriplanarConfig(tc, worldPos, worldNormal);
+            #endif
+            
+
+            half noise0 = AntiTileTriplanarSample(_NoiseHeight, uv, tc, freq0 + config.uv0.z * offset).g - 0.5;
+            COUNTSAMPLE
+            half noise1 = AntiTileTriplanarSample(_NoiseHeight, uv, tc, freq1 + config.uv1.z * offset).g - 0.5;
+            COUNTSAMPLE
+            half noise2 = 0;
+            half noise3 = 0;
+           
+            #if !_MAXLAYER2
+               noise2 = AntiTileTriplanarSample(_NoiseHeight, uv, tc, freq2 + config.uv2.z * offset).g - 0.5;
+               COUNTSAMPLE
+            #endif
+            #if !_MAXLAYER2 && !_MAXLAYER3
+               noise3 = AntiTileTriplanarSample(_NoiseHeight, uv, tc, freq3 + config.uv3.z * offset).g - 0.5;
+               COUNTSAMPLE
+            #endif
+
+            s.albedo0.a = saturate(s.albedo0.a + noise0 * amp0);
+            s.albedo1.a = saturate(s.albedo1.a + noise1 * amp1);
+            s.albedo2.a = saturate(s.albedo2.a + noise2 * amp2);
+            s.albedo3.a = saturate(s.albedo3.a + noise3 * amp3);
+         }
+
+         void ApplyNoiseHeightLOD(inout half h0, inout half h1, inout half h2, inout half h3, float2 uv, Config config, float3 worldPos, float3 worldNormal)
+         {
+            float2 offset = float2(0.27, 0.17);
+
+            half freq0 = _NoiseHeightData.x;
+            half freq1 = _NoiseHeightData.x;
+            half freq2 = _NoiseHeightData.x;
+            half freq3 = _NoiseHeightData.x;
+
+            half amp0 = _NoiseHeightData.y;
+            half amp1 = _NoiseHeightData.y;
+            half amp2 = _NoiseHeightData.y;
+            half amp3 = _NoiseHeightData.y;
+
+            #if _PERTEXNOISEHEIGHTFREQ || _PERTEXNOISEHEIGHTAMP
+               SAMPLE_PER_TEX(pt, 22.5, config, half4(1, 0, 1, 0));
+
+               #if _PERTEXNOISEHEIGHTFREQ
+                  freq0 += pt0.r;
+                  freq1 += pt1.r;
+                  freq2 += pt2.r;
+                  freq3 += pt3.r;
+               #endif
+               #if _PERTEXNOISEHEIGHTAMP
+                  amp0 *= pt0.g;
+                  amp1 *= pt1.g;
+                  amp2 *= pt2.g;
+                  amp3 *= pt3.g;
+               #endif
+            #endif
+            
+            AntiTileTriplanarConfig tc = (AntiTileTriplanarConfig)0;
+            UNITY_INITIALIZE_OUTPUT(AntiTileTriplanarConfig,tc);
+            
+            #if _ANTITILETRIPLANAR
+                PrepAntiTileTriplanarConfig(tc, worldPos, worldNormal);
+            #endif
+            
+            
+            half noise0 = AntiTileTriplanarSampleLOD(_NoiseHeight, uv, tc, freq0 + config.uv0.z * offset).g;
+            half noise1 = AntiTileTriplanarSampleLOD(_NoiseHeight, uv, tc, freq1 + config.uv1.z * offset).g;
+            half noise2 = 0;
+            half noise3 = 0;
+           
+            #if !_MAXLAYER2
+               noise2 = AntiTileTriplanarSampleLOD(_NoiseHeight, uv, tc, freq2 + config.uv2.z * offset).g;
+            #endif
+            #if !_MAXLAYER2 && !_MAXLAYER3
+               noise3 = AntiTileTriplanarSampleLOD(_NoiseHeight, uv, tc, freq3 + config.uv3.z * offset).g;
+            #endif
+
+            h0 = saturate(h0 + noise0 * amp0);
+            h1 = saturate(h1 + noise1 * amp1);
+            h2 = saturate(h2 + noise2 * amp2);
+            h3 = saturate(h3 + noise3 * amp3);
+         }
+         #endif
+
+
+         void DistanceResample(inout RawSamples o, Config config, TriplanarConfig tc, float camDist, float3 viewDir, half4 fxLevels, MIPFORMAT mipLevel, float3 worldPos, half4 weights, float3 worldNormal)
          {
          #if _DISTANCERESAMPLE
 
@@ -7437,6 +8421,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                #endif
 
             #endif
+
          #endif // _DISTANCERESAMPLE
          }
 
@@ -7678,8 +8663,8 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
             #endif
 
          }
-
-
+         
+        
 
 
       UNITY_DECLARE_TEX2D_NOSAMPLER(_GeoTex);
@@ -8171,6 +9156,67 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
       }
       #endif
 
+         float2 MSParallaxOffset( half h, half height, half3 viewDir )
+         {
+            h = h * height - height/2.0;
+            float3 v = normalize(viewDir);
+            v.z += 0.42;
+            return h * (v.xy / v.z);
+         }
+
+         void DoParallax(Input i, half h, inout Config c, inout TriplanarConfig tc, inout RawSamples s, half4 weights, float camDist)
+         {
+            float fade = (1 - saturate((camDist - _ParallaxParams.y) / max(_ParallaxParams.z, 0.01)));
+            float2 offset = MSParallaxOffset(h, _ParallaxParams.x * fade, i.viewDir);
+
+
+            #if !_TRIPLANAR
+               #if _PERTEXPARALLAX
+               SAMPLE_PER_TEX(ptp, 6.5, c, 0.0);
+               c.uv0.xy += offset * ptp0.a;
+               c.uv1.xy += offset * ptp1.a;
+               c.uv2.xy += offset * ptp2.a;
+               c.uv3.xy += offset * ptp3.a;
+               #else
+               c.uv0.xy += offset;
+               c.uv1.xy += offset;
+               c.uv2.xy += offset;
+               c.uv3.xy += offset;
+               #endif
+            #else
+               #if _PERTEXPARALLAX
+               SAMPLE_PER_TEX(ptp, 6.5, c, 0.0);
+               tc.uv0[0].xy += offset * ptp0.a;
+               tc.uv0[1].xy += offset * ptp0.a;
+               tc.uv0[2].xy += offset * ptp0.a;
+               tc.uv1[0].xy += offset * ptp1.a;
+               tc.uv1[1].xy += offset * ptp1.a;
+               tc.uv1[2].xy += offset * ptp1.a;
+               tc.uv2[0].xy += offset * ptp2.a;
+               tc.uv2[1].xy += offset * ptp2.a;
+               tc.uv2[2].xy += offset * ptp2.a;
+               tc.uv3[0].xy += offset * ptp3.a;
+               tc.uv3[1].xy += offset * ptp3.a;
+               tc.uv3[2].xy += offset * ptp3.a;
+               #else
+               tc.uv0[0].xy += offset;
+               tc.uv0[1].xy += offset;
+               tc.uv0[2].xy += offset;
+               tc.uv1[0].xy += offset;
+               tc.uv1[1].xy += offset;
+               tc.uv1[2].xy += offset;
+               tc.uv2[0].xy += offset;
+               tc.uv2[1].xy += offset;
+               tc.uv2[2].xy += offset;
+               tc.uv3[0].xy += offset;
+               tc.uv3[1].xy += offset;
+               tc.uv3[2].xy += offset;
+               #endif
+            #endif
+
+         }
+
+
 
                     
             // x: global clip space bias, y: normal world space bias
@@ -8189,11 +9235,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 float3 WorldSpaceNormal = normalize(mul(v.normal,(float3x3)UNITY_MATRIX_I_M));
                 float3 WorldSpaceTangent = normalize(mul((float3x3)UNITY_MATRIX_M,v.tangent.xyz));
                 float3 WorldSpaceBiTangent = cross(WorldSpaceNormal, WorldSpaceTangent.xyz) * v.tangent.w;
-                float3 WorldSpaceViewDirection = _WorldSpaceCameraPos.xyz - mul(GetObjectToWorldMatrix(), float4(v.vertex.xyz, 1.0)).xyz;
-                float4 VertexColor = v.color;
-                float4 ScreenPosition = ComputeScreenPos(mul(GetWorldToHClipMatrix(), mul(GetObjectToWorldMatrix(), v.vertex)), _ProjectionParams.x);
                 float4 uv0 = v.texcoord0;
-                float4 uv1 = v.texcoord1;
                 float3 ObjectSpacePosition = mul(UNITY_MATRIX_I_M,float4(WorldSpacePosition,1.0)).xyz;
                 
 
@@ -8202,11 +9244,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 o.WorldSpaceNormal = WorldSpaceNormal;
                 o.WorldSpaceTangent = WorldSpaceTangent;
                 o.WorldSpaceBiTangent = WorldSpaceBiTangent;
-                o.WorldSpaceViewDirection = WorldSpaceViewDirection;
-                o.VertexColor = VertexColor;
-                o.ScreenPosition = ScreenPosition;
                 o.uv0 = uv0;
-                o.uv1 = uv1;
 
                 
                 float3 positionWS = TransformObjectToWorld(v.vertex.xyz);
@@ -9112,6 +10150,10 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
 
          SampleAlbedo(config, tc, samples, albedoLOD, weights);
 
+         #if _NOISEHEIGHT
+            ApplyNoiseHeight(samples, config.uv, config, i.worldPos, worldNormalVertex);
+         #endif
+         
          #if _STREAMS || (_PARALLAX && !_DISABLESPLATMAPS)
          half earlyHeight = BlendWeights(samples.albedo0.w, samples.albedo1.w, samples.albedo2.w, samples.albedo3.w, weights);
          #endif
@@ -9163,7 +10205,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
          #endif
 
          #if _DISTANCERESAMPLE && !_DISABLESPLATMAPS
-            DistanceResample(samples, config, tc, camDist, i.viewDir, fxLevels, albedoLOD, i.worldPos, heightWeights);
+            DistanceResample(samples, config, tc, camDist, i.viewDir, fxLevels, albedoLOD, i.worldPos, heightWeights, worldNormalVertex);
          #endif
 
          // PerTexture sampling goes here, passing the samples structure
@@ -9708,6 +10750,19 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
 
       MicroSplatLayer SurfImpl(Input i, float3 worldNormalVertex)
       {
+         // with DrawInstanced on, view dir is incorrect, so we compute it here. Thanks Obama..
+         #if !_DEBUG_USE_TOPOLOGY && UNITY_VERSION >= 201830 && !_TERRAINBLENDABLESHADER && !_MICROMESH && !_MICROMESHTERRAIN && !_MICROPOLARISMESH &&!_MICRODIGGERMESH && !_MICROVERTEXMESH && defined(UNITY_INSTANCING_ENABLED) && !defined(SHADER_API_D3D11_9X)
+            #if !_MSRENDERLOOP_SURFACESHADER
+               i.viewDir = normalize( mul(i.TBN, (_WorldSpaceCameraPos - i.worldPos)) );
+            #else
+               float3 t2w0 = WorldNormalVector(i, float3(1,0,0));
+               float3 t2w1 = WorldNormalVector(i, float3(0,1,0));
+               float3 t2w2 = WorldNormalVector(i, float3(0,0,1));
+               float3x3 t2w = float3x3(t2w0, t2w1, t2w2);
+               i.viewDir = normalize(mul( t2w, (_WorldSpaceCameraPos - i.worldPos)));
+            #endif
+         #endif
+
 
          #if _TERRAINBLENDABLESHADER && _TRIPLANAR
             worldNormalVertex = WorldNormalVector(i, float3(0,0,1));
@@ -9717,12 +10772,17 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
           
          #if _FORCELOCALSPACE
             #if _PLANETVECTORS
-                worldNormalVertex = mul(_PQSToLocal, worldNormalVertex);
+                worldNormalVertex = mul(_PQSToLocal, float4(worldNormalVertex, 1)).xyz;
                 i.worldPos = i.worldPos + mul(_PQSToLocal, float4(0,0,0,1)).xyz;
              #else
-                worldNormalVertex = mul(unity_WorldToObject, worldNormalVertex);
+                worldNormalVertex = mul(unity_WorldToObject, float4(worldNormalVertex, 1)).xyz;
                 i.worldPos = i.worldPos -  mul(unity_ObjectToWorld, float4(0,0,0,1)).xyz;
              #endif
+         #endif
+
+         #if _ORIGINSHIFT
+             worldNormalVertex = mul(_GlobalOriginMTX, float4(worldNormalVertex, 1)).xyz;
+             i.worldPos = i.worldPos + mul(_GlobalOriginMTX, float4(0,0,0,1)).xyz;
          #endif
 
          #if _DEBUG_USE_TOPOLOGY
@@ -9779,7 +10839,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                float3 up = float3(0,1,0);
                float3 procNormal = worldNormalVertex;
                float height = i.worldPos.y;
-               #if _PLANETNORMAL2 || _PLANETNORMAL || _GLOBALNORMAL
+               #if _PLANETNORMAL2 || _PLANETNORMAL
                   config.uv = origUV;
                   float2 pnorm = GetPlanetTangentNormal(i, config, camDist, worldNormalVertex);
                   procNormal.xy = pnorm;
@@ -9969,12 +11029,9 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 float3 WorldSpaceNormal = IN.WorldSpaceNormal;
                 float3 WorldSpaceTangent = IN.WorldSpaceTangent;
                 float3 WorldSpaceBiTangent = IN.WorldSpaceBiTangent;
-                float3 WorldSpaceViewDirection = IN.WorldSpaceViewDirection;
+                float3 WorldSpaceViewDirection = normalize(_WorldSpaceCameraPos.xyz - WorldSpacePosition);
                 float3x3 tangentSpaceTransform = float3x3(WorldSpaceTangent,WorldSpaceBiTangent,WorldSpaceNormal);
-                float4 VertexColor = IN.VertexColor;
-                float4 ScreenPosition = IN.ScreenPosition;
                 float4 uv0 = IN.uv0;
-                float4 uv1 = IN.uv1;
                 float3 TangentSpaceViewDirection = mul(WorldSpaceViewDirection,(float3x3)tangentSpaceTransform).xyz;
 
                 SurfaceDescriptionInputs surfaceInput = (SurfaceDescriptionInputs)0;
@@ -9983,13 +11040,9 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 surfaceInput.WorldSpaceNormal = WorldSpaceNormal;
                 surfaceInput.WorldSpaceTangent = WorldSpaceTangent;
                 surfaceInput.WorldSpaceBiTangent = WorldSpaceBiTangent;
-                surfaceInput.WorldSpaceViewDirection = WorldSpaceViewDirection;
                 surfaceInput.TangentSpaceViewDirection = TangentSpaceViewDirection;
                 surfaceInput.WorldSpacePosition = WorldSpacePosition;
-                surfaceInput.VertexColor = VertexColor;
-                surfaceInput.ScreenPosition = ScreenPosition;
                 surfaceInput.uv0 = uv0;
-                surfaceInput.uv1 = uv1;
 
                 SurfaceDescription surf = PopulateSurfaceData(surfaceInput);
                  WorldSpaceNormal = surfaceInput.WorldSpaceNormal;
@@ -10047,7 +11100,6 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
       #define _MICROSPLAT 1
       #define _USEGRADMIP 1
       #define _PACKINGHQ 1
-      #define _MAX3LAYER 1
       #define _PERTEXUVSCALEOFFSET 1
       #define _PERTEXINTERPCONTRAST 1
       #define _BRANCHSAMPLES 1
@@ -10055,13 +11107,14 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
       #define _DISTANCERESAMPLE 1
       #define _DISTANCERESAMPLENORMAL 1
       #define _GEOMAP 1
-      #define _GEONORMAL 1
       #define _PERTEXGEOMAPHEIGHT 1
       #define _PERTEXGEOMAPHEIGHTSTRENGTH 1
       #define _GEOSLOPEFILTER 1
       #define _TERRAINBLENDING 1
-      #define _TBNOISEFBM 1
+      #define _TBNOISE 1
       #define _TBOBJECTNORMALBLEND 1
+      #define _PERTEXPARALLAX 1
+      #define _STOCHASTIC 1
       #define _MSRENDERLOOP_UNITYLD 1
       #define _MICROSPLATBASEMAP 1
 
@@ -10103,6 +11156,10 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
          float4x4 _PQSToLocal;
       #endif
 
+      #if _ORIGINSHIFT
+         float4x4 _GlobalOriginMTX;
+      #endif
+
       float4 _Control0_TexelSize;
       float4 _CustomControl0_TexelSize;
       float4 _PerPixelNormal_TexelSize;
@@ -10142,7 +11199,13 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
          half2 _NormalNoiseScaleStrength3;
          #endif
          
-         
+         #if _NOISEHEIGHT
+            half2 _NoiseHeightData; // scale, amp
+         #endif
+
+         #if _NOISEUV
+            half2 _NoiseUVData; // scale, amp
+         #endif
          
 
 
@@ -10169,6 +11232,17 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
       
       float _GlobalSpecularBlend;
 
+         half3 _ParallaxParams;
+
+         
+
+
+         half _StochasticContrast;
+         half _StochasticScale;
+
+
+
+
 
             CBUFFER_END
             
@@ -10177,13 +11251,9 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 float3 WorldSpaceNormal;
                 float3 WorldSpaceTangent;
                 float3 WorldSpaceBiTangent;
-                float3 WorldSpaceViewDirection;
                 float3 TangentSpaceViewDirection;
                 float3 WorldSpacePosition;
-                float4 VertexColor;
-                float4 ScreenPosition;
                 half4 uv0;
-                half4 uv1;
             };
 
             
@@ -10217,11 +11287,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 float3 WorldSpaceNormal : TEXCOORD4;
                 float3 WorldSpaceTangent : TEXCOORD5;
                 float3 WorldSpaceBiTangent : TEXCOORD6;
-                float3 WorldSpaceViewDirection : TEXCOORD7;
-                float4 VertexColor : COLOR;
-                float4 ScreenPosition : TEXCOORD8;
                 half4 uv0 : TEXCOORD9;
-                half4 uv1 : TEXCOORD10;
 
                 UNITY_VERTEX_INPUT_INSTANCE_ID
                 UNITY_VERTEX_OUTPUT_STEREO
@@ -11580,6 +12646,310 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
 
 
 
+half4 StochasticSampleDiffuse(float3 uv, out half4 cw, MIPFROMATRAW mipLevel)
+{
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0));
+      MSBRANCHCLUSTER(data.b-0.5)
+      {
+         COUNTSAMPLE
+         return MICROSPLAT_SAMPLE(_Diffuse, uv, mipLevel);
+      }
+   #endif
+   half4 G1 = half4(0,0,0,0);
+   half4 G2 = half4(0,0,0,0);
+   half4 G3 = half4(0,0,0,0);
+
+   float contrast = _StochasticContrast;
+   #if _PERTEXCLUSTERCONTRAST
+      contrast = tex2Dlod(_PerTexProps, float4(uv.z/32, 10.5/32, 0, 0)).r;
+   #endif
+
+   // apply contrast early to help sample culling in albedo pass
+   // this changes our contrast curve to have a minimum, but I don't think
+   // blurry blends are desired with stochastic..
+   half3 mw = min(0.0, contrast - 0.45);
+   w = saturate(lerp(mw, 1, w));
+  
+   MSBRANCHCLUSTER(w.x)
+   {
+      G1 = MICROSPLAT_SAMPLE(_Diffuse, uv1, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(w.y)
+   {
+      G2 = MICROSPLAT_SAMPLE(_Diffuse, uv2, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(w.z)
+   {
+      G3 = MICROSPLAT_SAMPLE(_Diffuse, uv3, mipLevel);
+      COUNTSAMPLE
+   }   
+   
+   
+   
+   cw.xyz = BaryWeightBlend(w, G1.a, G2.a, G3.a, contrast);
+   cw.w = 1;
+   
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z;
+
+}
+
+half4 StochasticSampleDiffuseLOD(float3 uv, out half4 cw, MIPFROMATRAW mipLevel)
+{
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0)); 
+      MSBRANCHCLUSTER(data.b-0.5)
+      {
+         return UNITY_SAMPLE_TEX2DARRAY_LOD(_Diffuse, uv, mipLevel);
+      }
+   #endif
+
+   float contrast = _StochasticContrast;
+   #if _PERTEXCLUSTERCONTRAST
+      contrast = tex2Dlod(_PerTexProps, float4(uv.z/32, 10.5/32, 0, 0)).r;
+   #endif
+
+   // pre contrast for culling
+   half3 mw = min(0.0, contrast - 0.45);
+   w = saturate(lerp(mw, 1, w));
+   
+   half4 G1 = half4(0,0,0,0);
+   half4 G2 = half4(0,0,0,0);
+   half4 G3 = half4(0,0,0,0);
+
+   MSBRANCHCLUSTER(w.x)
+   {
+      G1 = UNITY_SAMPLE_TEX2DARRAY_LOD(_Diffuse, uv1, mipLevel);
+   }
+   MSBRANCHCLUSTER(w.y)
+   {
+      G2 = UNITY_SAMPLE_TEX2DARRAY_LOD(_Diffuse, uv2, mipLevel);
+   }
+   MSBRANCHCLUSTER(w.z)
+   {
+      G3 = UNITY_SAMPLE_TEX2DARRAY_LOD(_Diffuse, uv3, mipLevel);
+   }
+   
+   
+   
+   cw.xyz = BaryWeightBlend(w, G1.a, G2.a, G3.a, contrast);
+   cw.w = 1;
+   
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z;
+
+}
+
+half4 StochasticSampleNormal(float3 uv, half4 cw, MIPFROMATRAW mipLevel)
+{
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0)); 
+      MSBRANCHCLUSTER(data.b-0.5)
+      {
+         COUNTSAMPLE
+         return MICROSPLAT_SAMPLE(_NormalSAO, uv, mipLevel);
+      }
+   #endif
+   
+   half4 G1 = half4(0,0.5,1,0.5);
+   half4 G2 = half4(0,0.5,1,0.5);
+   half4 G3 = half4(0,0.5,1,0.5);
+
+   // So, when triplanar is on, the cw data gets stomped somehow, and we can't do stochastic on the normals. So
+   // we have to disabled that here and recompute the blend, which decorilates the texture from the albedo.
+   // So it doesn't look or perform as good, which is sad.. 
+
+   #if _TRIPLANAR
+      float contrast = _StochasticContrast;
+      #if _PERTEXCLUSTERCONTRAST
+         contrast = tex2Dlod(_PerTexProps, float4(uv.z/32, 10.5/32, 0, 0)).r;
+      #endif
+
+      // pre contrast for culling
+      half3 mw = min(0.0, contrast - 0.45);
+      w = saturate(lerp(mw, 1, w));
+
+      //MSBRANCHCLUSTER(cw.x)
+      {
+         G1 = MICROSPLAT_SAMPLE(_NormalSAO, uv1, mipLevel);
+         COUNTSAMPLE
+
+         #if _PACKINGHQ
+            G1.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv1, mipLevel).ga;
+            COUNTSAMPLE
+         #endif
+      }
+      //MSBRANCHCLUSTER(cw.y)
+      {
+         G2 = MICROSPLAT_SAMPLE(_NormalSAO, uv2, mipLevel);
+         COUNTSAMPLE
+
+         #if _PACKINGHQ
+            G2.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv2, mipLevel).ga;
+            COUNTSAMPLE
+         #endif
+      }
+      //MSBRANCHCLUSTER(cw.z)
+      {
+         G3 = MICROSPLAT_SAMPLE(_NormalSAO, uv3, mipLevel);
+         COUNTSAMPLE
+
+         #if _PACKINGHQ
+            G3.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv3, mipLevel).ga;
+            COUNTSAMPLE
+         #endif
+      }
+
+      cw.xyz = BaryWeightBlend(w, G1.a, G2.a, G3.a, contrast);
+      cw.w = 1;
+   #else
+   MSBRANCHCLUSTER(cw.x)
+   {
+      G1 = MICROSPLAT_SAMPLE(_NormalSAO, uv1, mipLevel);
+      COUNTSAMPLE
+
+      #if _PACKINGHQ
+         G1.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv1, mipLevel).ga;
+         COUNTSAMPLE
+      #endif
+   }
+   MSBRANCHCLUSTER(cw.y)
+   {
+      G2 = MICROSPLAT_SAMPLE(_NormalSAO, uv2, mipLevel);
+      COUNTSAMPLE
+
+      #if _PACKINGHQ
+         G2.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv2, mipLevel).ga;
+         COUNTSAMPLE
+      #endif
+   }
+   MSBRANCHCLUSTER(cw.z)
+   {
+      G3 = MICROSPLAT_SAMPLE(_NormalSAO, uv3, mipLevel);
+      COUNTSAMPLE
+
+      #if _PACKINGHQ
+         G3.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv3, mipLevel).ga;
+         COUNTSAMPLE
+      #endif
+   }
+   #endif
+
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z; 
+}
+
+
+half4 StochasticSampleEmis(float3 uv, half4 cw, MIPFROMATRAW mipLevel)
+{
+#if _USEEMISSIVEMETAL
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0)); 
+      MSBRANCHCLUSTER(data.b-0.5)
+      { 
+         COUNTSAMPLE
+         return MICROSPLAT_SAMPLE(_EmissiveMetal, uv, mipLevel);
+      }
+   #endif
+   
+   half4 G1 = half4(0,0,0,0);
+   half4 G2 = half4(0,0,0,0);
+   half4 G3 = half4(0,0,0,0);
+   MSBRANCHCLUSTER(cw.x)
+   {
+      G1 = MICROSPLAT_SAMPLE(_EmissiveMetal, uv1, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(cw.y)
+   {
+      G2 = MICROSPLAT_SAMPLE(_EmissiveMetal, uv2, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(cw.z)
+   {
+      G3 = MICROSPLAT_SAMPLE(_EmissiveMetal, uv3, mipLevel);
+      COUNTSAMPLE
+   }
+  
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z; 
+#endif
+return 0;
+}
+
+half4 StochasticSampleSpecular(float3 uv, half4 cw, MIPFROMATRAW mipLevel)
+{
+   #if _USESPECULARWORKFLOW
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0)); 
+      MSBRANCHCLUSTER(data.b-0.5)
+      {
+         COUNTSAMPLE
+         return MICROSPLAT_SAMPLE(_Specular, uv, mipLevel);
+      }
+   #endif
+   
+   half4 G1 = half4(0,0,0,0);
+   half4 G2 = half4(0,0,0,0);
+   half4 G3 = half4(0,0,0,0);
+   MSBRANCHCLUSTER(cw.x)
+   {
+      G1 = MICROSPLAT_SAMPLE(_Specular, uv1, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(cw.y)
+   {
+      G2 = MICROSPLAT_SAMPLE(_Specular, uv2, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(cw.z)
+   {
+      G3 = MICROSPLAT_SAMPLE(_Specular, uv3, mipLevel);
+      COUNTSAMPLE
+   }
+  
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z; 
+   #endif
+   return 0;
+}
+
+
+
+// ----------------------------------------------------------------------------
+
+#undef MICROSPLAT_SAMPLE_DIFFUSE
+#undef MICROSPLAT_SAMPLE_NORMAL
+#undef MICROSPLAT_SAMPLE_DIFFUSE_LOD
+#undef MICROSPLAT_SAMPLE_EMIS
+#undef MICROSPLAT_SAMPLE_SPECULAR
+
+#define MICROSPLAT_SAMPLE_DIFFUSE(u, cl, l) StochasticSampleDiffuse(u, cl, l)
+#define MICROSPLAT_SAMPLE_NORMAL(u, cl, l) StochasticSampleNormal(u, cl, l)
+#define MICROSPLAT_SAMPLE_DIFFUSE_LOD(u, cl, l) StochasticSampleDiffuseLOD(u, cl, l)
+#define MICROSPLAT_SAMPLE_EMIS(u, cl, l) StochasticSampleEmis(u, cl, l)
+#define MICROSPLAT_SAMPLE_SPECULAR(u, cl, l) StochasticSampleSpecular(u, cl, l)
+
+
+
          #if _DETAILNOISE
          UNITY_DECLARE_TEX2D_NOSAMPLER(_DetailNoise);
          #endif
@@ -11600,6 +12970,14 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
          UNITY_DECLARE_TEX2D_NOSAMPLER(_NormalNoise3);
          #endif
          
+         #if _NOISEHEIGHT
+         UNITY_DECLARE_TEX2D_NOSAMPLER(_NoiseHeight);
+         #endif
+
+         #if _NOISEUV
+         UNITY_DECLARE_TEX2D_NOSAMPLER(_NoiseUV);
+         #endif
+
          struct AntiTileTriplanarConfig
          {
             float3 pn;
@@ -11625,9 +13003,138 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
          #else
             #define AntiTileTriplanarSample(tex, uv, tc, scale) UNITY_SAMPLE_TEX2D_SAMPLER(tex, _Diffuse, uv * scale)
          #endif
+
+         #if _ANTITILETRIPLANAR
+            #define AntiTileTriplanarSampleLOD(tex, uv, tc, scale) (MICROSPLAT_SAMPLE_TEX2D_SAMPLER_LOD(tex, _Diffuse, tc.uv0 * scale, 0) * tc.pn.x + MICROSPLAT_SAMPLE_TEX2D_SAMPLER_LOD(tex, _Diffuse, tc.uv1 * scale, 0) * tc.pn.y + MICROSPLAT_SAMPLE_TEX2D_SAMPLER_LOD(tex, _Diffuse, tc.uv2 * scale) * tc.pn.z, 0)
+         #else
+            #define AntiTileTriplanarSampleLOD(tex, uv, tc, scale) MICROSPLAT_SAMPLE_TEX2D_SAMPLER_LOD(tex, _Diffuse, uv * scale, 0)
+         #endif
          
 
-         void DistanceResample(inout RawSamples o, Config config, TriplanarConfig tc, float camDist, float3 viewDir, half4 fxLevels, MIPFORMAT mipLevel, float3 worldPos, half4 weights)
+         
+         #if _NOISEHEIGHT
+         
+         void ApplyNoiseHeight(inout RawSamples s, float2 uv, Config config, float3 worldPos, float3 worldNormal)
+         {
+            float2 offset = float2(0.27, 0.17);
+
+            half freq0 = _NoiseHeightData.x;
+            half freq1 = _NoiseHeightData.x;
+            half freq2 = _NoiseHeightData.x;
+            half freq3 = _NoiseHeightData.x;
+
+            half amp0 = _NoiseHeightData.y;
+            half amp1 = _NoiseHeightData.y;
+            half amp2 = _NoiseHeightData.y;
+            half amp3 = _NoiseHeightData.y;
+
+            #if _PERTEXNOISEHEIGHTFREQ || _PERTEXNOISEHEIGHTAMP
+               SAMPLE_PER_TEX(pt, 22.5, config, half4(1, 0, 1, 0));
+
+               #if _PERTEXNOISEHEIGHTFREQ
+                  freq0 += pt0.r;
+                  freq1 += pt1.r;
+                  freq2 += pt2.r;
+                  freq3 += pt3.r;
+               #endif
+               #if _PERTEXNOISEHEIGHTAMP
+                  amp0 *= pt0.g;
+                  amp1 *= pt1.g;
+                  amp2 *= pt2.g;
+                  amp3 *= pt3.g;
+               #endif
+            #endif
+
+            AntiTileTriplanarConfig tc = (AntiTileTriplanarConfig)0;
+            UNITY_INITIALIZE_OUTPUT(AntiTileTriplanarConfig,tc);
+            
+            #if _ANTITILETRIPLANAR
+                PrepAntiTileTriplanarConfig(tc, worldPos, worldNormal);
+            #endif
+            
+
+            half noise0 = AntiTileTriplanarSample(_NoiseHeight, uv, tc, freq0 + config.uv0.z * offset).g - 0.5;
+            COUNTSAMPLE
+            half noise1 = AntiTileTriplanarSample(_NoiseHeight, uv, tc, freq1 + config.uv1.z * offset).g - 0.5;
+            COUNTSAMPLE
+            half noise2 = 0;
+            half noise3 = 0;
+           
+            #if !_MAXLAYER2
+               noise2 = AntiTileTriplanarSample(_NoiseHeight, uv, tc, freq2 + config.uv2.z * offset).g - 0.5;
+               COUNTSAMPLE
+            #endif
+            #if !_MAXLAYER2 && !_MAXLAYER3
+               noise3 = AntiTileTriplanarSample(_NoiseHeight, uv, tc, freq3 + config.uv3.z * offset).g - 0.5;
+               COUNTSAMPLE
+            #endif
+
+            s.albedo0.a = saturate(s.albedo0.a + noise0 * amp0);
+            s.albedo1.a = saturate(s.albedo1.a + noise1 * amp1);
+            s.albedo2.a = saturate(s.albedo2.a + noise2 * amp2);
+            s.albedo3.a = saturate(s.albedo3.a + noise3 * amp3);
+         }
+
+         void ApplyNoiseHeightLOD(inout half h0, inout half h1, inout half h2, inout half h3, float2 uv, Config config, float3 worldPos, float3 worldNormal)
+         {
+            float2 offset = float2(0.27, 0.17);
+
+            half freq0 = _NoiseHeightData.x;
+            half freq1 = _NoiseHeightData.x;
+            half freq2 = _NoiseHeightData.x;
+            half freq3 = _NoiseHeightData.x;
+
+            half amp0 = _NoiseHeightData.y;
+            half amp1 = _NoiseHeightData.y;
+            half amp2 = _NoiseHeightData.y;
+            half amp3 = _NoiseHeightData.y;
+
+            #if _PERTEXNOISEHEIGHTFREQ || _PERTEXNOISEHEIGHTAMP
+               SAMPLE_PER_TEX(pt, 22.5, config, half4(1, 0, 1, 0));
+
+               #if _PERTEXNOISEHEIGHTFREQ
+                  freq0 += pt0.r;
+                  freq1 += pt1.r;
+                  freq2 += pt2.r;
+                  freq3 += pt3.r;
+               #endif
+               #if _PERTEXNOISEHEIGHTAMP
+                  amp0 *= pt0.g;
+                  amp1 *= pt1.g;
+                  amp2 *= pt2.g;
+                  amp3 *= pt3.g;
+               #endif
+            #endif
+            
+            AntiTileTriplanarConfig tc = (AntiTileTriplanarConfig)0;
+            UNITY_INITIALIZE_OUTPUT(AntiTileTriplanarConfig,tc);
+            
+            #if _ANTITILETRIPLANAR
+                PrepAntiTileTriplanarConfig(tc, worldPos, worldNormal);
+            #endif
+            
+            
+            half noise0 = AntiTileTriplanarSampleLOD(_NoiseHeight, uv, tc, freq0 + config.uv0.z * offset).g;
+            half noise1 = AntiTileTriplanarSampleLOD(_NoiseHeight, uv, tc, freq1 + config.uv1.z * offset).g;
+            half noise2 = 0;
+            half noise3 = 0;
+           
+            #if !_MAXLAYER2
+               noise2 = AntiTileTriplanarSampleLOD(_NoiseHeight, uv, tc, freq2 + config.uv2.z * offset).g;
+            #endif
+            #if !_MAXLAYER2 && !_MAXLAYER3
+               noise3 = AntiTileTriplanarSampleLOD(_NoiseHeight, uv, tc, freq3 + config.uv3.z * offset).g;
+            #endif
+
+            h0 = saturate(h0 + noise0 * amp0);
+            h1 = saturate(h1 + noise1 * amp1);
+            h2 = saturate(h2 + noise2 * amp2);
+            h3 = saturate(h3 + noise3 * amp3);
+         }
+         #endif
+
+
+         void DistanceResample(inout RawSamples o, Config config, TriplanarConfig tc, float camDist, float3 viewDir, half4 fxLevels, MIPFORMAT mipLevel, float3 worldPos, half4 weights, float3 worldNormal)
          {
          #if _DISTANCERESAMPLE
 
@@ -12328,6 +13835,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                #endif
 
             #endif
+
          #endif // _DISTANCERESAMPLE
          }
 
@@ -12569,8 +14077,8 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
             #endif
 
          }
-
-
+         
+        
 
 
       UNITY_DECLARE_TEX2D_NOSAMPLER(_GeoTex);
@@ -13062,6 +14570,67 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
       }
       #endif
 
+         float2 MSParallaxOffset( half h, half height, half3 viewDir )
+         {
+            h = h * height - height/2.0;
+            float3 v = normalize(viewDir);
+            v.z += 0.42;
+            return h * (v.xy / v.z);
+         }
+
+         void DoParallax(Input i, half h, inout Config c, inout TriplanarConfig tc, inout RawSamples s, half4 weights, float camDist)
+         {
+            float fade = (1 - saturate((camDist - _ParallaxParams.y) / max(_ParallaxParams.z, 0.01)));
+            float2 offset = MSParallaxOffset(h, _ParallaxParams.x * fade, i.viewDir);
+
+
+            #if !_TRIPLANAR
+               #if _PERTEXPARALLAX
+               SAMPLE_PER_TEX(ptp, 6.5, c, 0.0);
+               c.uv0.xy += offset * ptp0.a;
+               c.uv1.xy += offset * ptp1.a;
+               c.uv2.xy += offset * ptp2.a;
+               c.uv3.xy += offset * ptp3.a;
+               #else
+               c.uv0.xy += offset;
+               c.uv1.xy += offset;
+               c.uv2.xy += offset;
+               c.uv3.xy += offset;
+               #endif
+            #else
+               #if _PERTEXPARALLAX
+               SAMPLE_PER_TEX(ptp, 6.5, c, 0.0);
+               tc.uv0[0].xy += offset * ptp0.a;
+               tc.uv0[1].xy += offset * ptp0.a;
+               tc.uv0[2].xy += offset * ptp0.a;
+               tc.uv1[0].xy += offset * ptp1.a;
+               tc.uv1[1].xy += offset * ptp1.a;
+               tc.uv1[2].xy += offset * ptp1.a;
+               tc.uv2[0].xy += offset * ptp2.a;
+               tc.uv2[1].xy += offset * ptp2.a;
+               tc.uv2[2].xy += offset * ptp2.a;
+               tc.uv3[0].xy += offset * ptp3.a;
+               tc.uv3[1].xy += offset * ptp3.a;
+               tc.uv3[2].xy += offset * ptp3.a;
+               #else
+               tc.uv0[0].xy += offset;
+               tc.uv0[1].xy += offset;
+               tc.uv0[2].xy += offset;
+               tc.uv1[0].xy += offset;
+               tc.uv1[1].xy += offset;
+               tc.uv1[2].xy += offset;
+               tc.uv2[0].xy += offset;
+               tc.uv2[1].xy += offset;
+               tc.uv2[2].xy += offset;
+               tc.uv3[0].xy += offset;
+               tc.uv3[1].xy += offset;
+               tc.uv3[2].xy += offset;
+               #endif
+            #endif
+
+         }
+
+
 
                     
             VertexOutput vert(GraphVertexInput v)
@@ -13078,11 +14647,8 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 float3 WorldSpaceNormal = normalize(mul(v.normal,(float3x3)UNITY_MATRIX_I_M));
                 float3 WorldSpaceTangent = normalize(mul((float3x3)UNITY_MATRIX_M,v.tangent.xyz));
                 float3 WorldSpaceBiTangent = cross(WorldSpaceNormal, WorldSpaceTangent.xyz) * v.tangent.w;
-                float3 WorldSpaceViewDirection = _WorldSpaceCameraPos.xyz - mul(GetObjectToWorldMatrix(), float4(v.vertex.xyz, 1.0)).xyz;
-                float4 VertexColor = v.color;
-                float4 ScreenPosition = ComputeScreenPos(mul(GetWorldToHClipMatrix(), mul(GetObjectToWorldMatrix(), v.vertex)), _ProjectionParams.x);
+                float3 WorldSpaceViewDirection = normalize(_WorldSpaceCameraPos.xyz - WorldSpacePosition);
                 float4 uv0 = v.texcoord0;
-                float4 uv1 = v.texcoord1;
                 float3 ObjectSpacePosition = mul(UNITY_MATRIX_I_M,float4(WorldSpacePosition,1.0)).xyz;
                 
 
@@ -13091,11 +14657,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 o.WorldSpaceNormal = WorldSpaceNormal;
                 o.WorldSpaceTangent = WorldSpaceTangent;
                 o.WorldSpaceBiTangent = WorldSpaceBiTangent;
-                o.WorldSpaceViewDirection = WorldSpaceViewDirection;
-                o.VertexColor = VertexColor;
-                o.ScreenPosition = ScreenPosition;
                 o.uv0 = uv0;
-                o.uv1 = uv1;
 
                 o.clipPos = TransformObjectToHClip(v.vertex.xyz);
                 return o;
@@ -13981,6 +15543,10 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
 
          SampleAlbedo(config, tc, samples, albedoLOD, weights);
 
+         #if _NOISEHEIGHT
+            ApplyNoiseHeight(samples, config.uv, config, i.worldPos, worldNormalVertex);
+         #endif
+         
          #if _STREAMS || (_PARALLAX && !_DISABLESPLATMAPS)
          half earlyHeight = BlendWeights(samples.albedo0.w, samples.albedo1.w, samples.albedo2.w, samples.albedo3.w, weights);
          #endif
@@ -14032,7 +15598,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
          #endif
 
          #if _DISTANCERESAMPLE && !_DISABLESPLATMAPS
-            DistanceResample(samples, config, tc, camDist, i.viewDir, fxLevels, albedoLOD, i.worldPos, heightWeights);
+            DistanceResample(samples, config, tc, camDist, i.viewDir, fxLevels, albedoLOD, i.worldPos, heightWeights, worldNormalVertex);
          #endif
 
          // PerTexture sampling goes here, passing the samples structure
@@ -14577,6 +16143,19 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
 
       MicroSplatLayer SurfImpl(Input i, float3 worldNormalVertex)
       {
+         // with DrawInstanced on, view dir is incorrect, so we compute it here. Thanks Obama..
+         #if !_DEBUG_USE_TOPOLOGY && UNITY_VERSION >= 201830 && !_TERRAINBLENDABLESHADER && !_MICROMESH && !_MICROMESHTERRAIN && !_MICROPOLARISMESH &&!_MICRODIGGERMESH && !_MICROVERTEXMESH && defined(UNITY_INSTANCING_ENABLED) && !defined(SHADER_API_D3D11_9X)
+            #if !_MSRENDERLOOP_SURFACESHADER
+               i.viewDir = normalize( mul(i.TBN, (_WorldSpaceCameraPos - i.worldPos)) );
+            #else
+               float3 t2w0 = WorldNormalVector(i, float3(1,0,0));
+               float3 t2w1 = WorldNormalVector(i, float3(0,1,0));
+               float3 t2w2 = WorldNormalVector(i, float3(0,0,1));
+               float3x3 t2w = float3x3(t2w0, t2w1, t2w2);
+               i.viewDir = normalize(mul( t2w, (_WorldSpaceCameraPos - i.worldPos)));
+            #endif
+         #endif
+
 
          #if _TERRAINBLENDABLESHADER && _TRIPLANAR
             worldNormalVertex = WorldNormalVector(i, float3(0,0,1));
@@ -14586,12 +16165,17 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
           
          #if _FORCELOCALSPACE
             #if _PLANETVECTORS
-                worldNormalVertex = mul(_PQSToLocal, worldNormalVertex);
+                worldNormalVertex = mul(_PQSToLocal, float4(worldNormalVertex, 1)).xyz;
                 i.worldPos = i.worldPos + mul(_PQSToLocal, float4(0,0,0,1)).xyz;
              #else
-                worldNormalVertex = mul(unity_WorldToObject, worldNormalVertex);
+                worldNormalVertex = mul(unity_WorldToObject, float4(worldNormalVertex, 1)).xyz;
                 i.worldPos = i.worldPos -  mul(unity_ObjectToWorld, float4(0,0,0,1)).xyz;
              #endif
+         #endif
+
+         #if _ORIGINSHIFT
+             worldNormalVertex = mul(_GlobalOriginMTX, float4(worldNormalVertex, 1)).xyz;
+             i.worldPos = i.worldPos + mul(_GlobalOriginMTX, float4(0,0,0,1)).xyz;
          #endif
 
          #if _DEBUG_USE_TOPOLOGY
@@ -14648,7 +16232,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                float3 up = float3(0,1,0);
                float3 procNormal = worldNormalVertex;
                float height = i.worldPos.y;
-               #if _PLANETNORMAL2 || _PLANETNORMAL || _GLOBALNORMAL
+               #if _PLANETNORMAL2 || _PLANETNORMAL
                   config.uv = origUV;
                   float2 pnorm = GetPlanetTangentNormal(i, config, camDist, worldNormalVertex);
                   procNormal.xy = pnorm;
@@ -14838,12 +16422,9 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 float3 WorldSpaceNormal = IN.WorldSpaceNormal;
                 float3 WorldSpaceTangent = IN.WorldSpaceTangent;
                 float3 WorldSpaceBiTangent = IN.WorldSpaceBiTangent;
-                float3 WorldSpaceViewDirection = IN.WorldSpaceViewDirection;
+                float3 WorldSpaceViewDirection = normalize(_WorldSpaceCameraPos.xyz - WorldSpacePosition);
                 float3x3 tangentSpaceTransform = float3x3(WorldSpaceTangent,WorldSpaceBiTangent,WorldSpaceNormal);
-                float4 VertexColor = IN.VertexColor;
-                float4 ScreenPosition = IN.ScreenPosition;
                 float4 uv0 = IN.uv0;
-                float4 uv1 = IN.uv1;
                 float3 TangentSpaceViewDirection = mul(WorldSpaceViewDirection,(float3x3)tangentSpaceTransform).xyz;
 
                 SurfaceDescriptionInputs surfaceInput = (SurfaceDescriptionInputs)0;
@@ -14852,13 +16433,9 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 surfaceInput.WorldSpaceNormal = WorldSpaceNormal;
                 surfaceInput.WorldSpaceTangent = WorldSpaceTangent;
                 surfaceInput.WorldSpaceBiTangent = WorldSpaceBiTangent;
-                surfaceInput.WorldSpaceViewDirection = WorldSpaceViewDirection;
                 surfaceInput.TangentSpaceViewDirection = TangentSpaceViewDirection;
                 surfaceInput.WorldSpacePosition = WorldSpacePosition;
-                surfaceInput.VertexColor = VertexColor;
-                surfaceInput.ScreenPosition = ScreenPosition;
                 surfaceInput.uv0 = uv0;
-                surfaceInput.uv1 = uv1;
 
                 SurfaceDescription surf = PopulateSurfaceData(surfaceInput);
                  WorldSpaceNormal = surfaceInput.WorldSpaceNormal;
@@ -14908,7 +16485,6 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
       #define _MICROSPLAT 1
       #define _USEGRADMIP 1
       #define _PACKINGHQ 1
-      #define _MAX3LAYER 1
       #define _PERTEXUVSCALEOFFSET 1
       #define _PERTEXINTERPCONTRAST 1
       #define _BRANCHSAMPLES 1
@@ -14916,13 +16492,14 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
       #define _DISTANCERESAMPLE 1
       #define _DISTANCERESAMPLENORMAL 1
       #define _GEOMAP 1
-      #define _GEONORMAL 1
       #define _PERTEXGEOMAPHEIGHT 1
       #define _PERTEXGEOMAPHEIGHTSTRENGTH 1
       #define _GEOSLOPEFILTER 1
       #define _TERRAINBLENDING 1
-      #define _TBNOISEFBM 1
+      #define _TBNOISE 1
       #define _TBOBJECTNORMALBLEND 1
+      #define _PERTEXPARALLAX 1
+      #define _STOCHASTIC 1
       #define _MSRENDERLOOP_UNITYLD 1
       #define _MICROSPLATBASEMAP 1
 
@@ -14965,6 +16542,10 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
          float4x4 _PQSToLocal;
       #endif
 
+      #if _ORIGINSHIFT
+         float4x4 _GlobalOriginMTX;
+      #endif
+
       float4 _Control0_TexelSize;
       float4 _CustomControl0_TexelSize;
       float4 _PerPixelNormal_TexelSize;
@@ -15004,7 +16585,13 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
          half2 _NormalNoiseScaleStrength3;
          #endif
          
-         
+         #if _NOISEHEIGHT
+            half2 _NoiseHeightData; // scale, amp
+         #endif
+
+         #if _NOISEUV
+            half2 _NoiseUVData; // scale, amp
+         #endif
          
 
 
@@ -15031,6 +16618,17 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
       
       float _GlobalSpecularBlend;
 
+         half3 _ParallaxParams;
+
+         
+
+
+         half _StochasticContrast;
+         half _StochasticScale;
+
+
+
+
 
             CBUFFER_END
             
@@ -15039,13 +16637,9 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 float3 WorldSpaceNormal;
                 float3 WorldSpaceTangent;
                 float3 WorldSpaceBiTangent;
-                float3 WorldSpaceViewDirection;
                 float3 TangentSpaceViewDirection;
                 float3 WorldSpacePosition;
-                float4 VertexColor;
-                float4 ScreenPosition;
                 half4 uv0;
-                half4 uv1;
 
                 #if _MICRODIGGERMESH || _MICROVERTEXMESH
             half4 w0 : TEXCOORD11;
@@ -15109,11 +16703,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 float3 WorldSpaceNormal : TEXCOORD4;
                 float3 WorldSpaceTangent : TEXCOORD5;
                 float3 WorldSpaceBiTangent : TEXCOORD6;
-                float3 WorldSpaceViewDirection : TEXCOORD7;
-                float4 VertexColor : COLOR;
-                float4 ScreenPosition : TEXCOORD8;
                 half4 uv0 : TEXCOORD9;
-                half4 uv1 : TEXCOORD10;
 
                 #if _MICRODIGGERMESH || _MICROVERTEXMESH
             half4 w0 : TEXCOORD11;
@@ -16500,6 +18090,310 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
 
 
 
+half4 StochasticSampleDiffuse(float3 uv, out half4 cw, MIPFROMATRAW mipLevel)
+{
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0));
+      MSBRANCHCLUSTER(data.b-0.5)
+      {
+         COUNTSAMPLE
+         return MICROSPLAT_SAMPLE(_Diffuse, uv, mipLevel);
+      }
+   #endif
+   half4 G1 = half4(0,0,0,0);
+   half4 G2 = half4(0,0,0,0);
+   half4 G3 = half4(0,0,0,0);
+
+   float contrast = _StochasticContrast;
+   #if _PERTEXCLUSTERCONTRAST
+      contrast = tex2Dlod(_PerTexProps, float4(uv.z/32, 10.5/32, 0, 0)).r;
+   #endif
+
+   // apply contrast early to help sample culling in albedo pass
+   // this changes our contrast curve to have a minimum, but I don't think
+   // blurry blends are desired with stochastic..
+   half3 mw = min(0.0, contrast - 0.45);
+   w = saturate(lerp(mw, 1, w));
+  
+   MSBRANCHCLUSTER(w.x)
+   {
+      G1 = MICROSPLAT_SAMPLE(_Diffuse, uv1, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(w.y)
+   {
+      G2 = MICROSPLAT_SAMPLE(_Diffuse, uv2, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(w.z)
+   {
+      G3 = MICROSPLAT_SAMPLE(_Diffuse, uv3, mipLevel);
+      COUNTSAMPLE
+   }   
+   
+   
+   
+   cw.xyz = BaryWeightBlend(w, G1.a, G2.a, G3.a, contrast);
+   cw.w = 1;
+   
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z;
+
+}
+
+half4 StochasticSampleDiffuseLOD(float3 uv, out half4 cw, MIPFROMATRAW mipLevel)
+{
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0)); 
+      MSBRANCHCLUSTER(data.b-0.5)
+      {
+         return UNITY_SAMPLE_TEX2DARRAY_LOD(_Diffuse, uv, mipLevel);
+      }
+   #endif
+
+   float contrast = _StochasticContrast;
+   #if _PERTEXCLUSTERCONTRAST
+      contrast = tex2Dlod(_PerTexProps, float4(uv.z/32, 10.5/32, 0, 0)).r;
+   #endif
+
+   // pre contrast for culling
+   half3 mw = min(0.0, contrast - 0.45);
+   w = saturate(lerp(mw, 1, w));
+   
+   half4 G1 = half4(0,0,0,0);
+   half4 G2 = half4(0,0,0,0);
+   half4 G3 = half4(0,0,0,0);
+
+   MSBRANCHCLUSTER(w.x)
+   {
+      G1 = UNITY_SAMPLE_TEX2DARRAY_LOD(_Diffuse, uv1, mipLevel);
+   }
+   MSBRANCHCLUSTER(w.y)
+   {
+      G2 = UNITY_SAMPLE_TEX2DARRAY_LOD(_Diffuse, uv2, mipLevel);
+   }
+   MSBRANCHCLUSTER(w.z)
+   {
+      G3 = UNITY_SAMPLE_TEX2DARRAY_LOD(_Diffuse, uv3, mipLevel);
+   }
+   
+   
+   
+   cw.xyz = BaryWeightBlend(w, G1.a, G2.a, G3.a, contrast);
+   cw.w = 1;
+   
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z;
+
+}
+
+half4 StochasticSampleNormal(float3 uv, half4 cw, MIPFROMATRAW mipLevel)
+{
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0)); 
+      MSBRANCHCLUSTER(data.b-0.5)
+      {
+         COUNTSAMPLE
+         return MICROSPLAT_SAMPLE(_NormalSAO, uv, mipLevel);
+      }
+   #endif
+   
+   half4 G1 = half4(0,0.5,1,0.5);
+   half4 G2 = half4(0,0.5,1,0.5);
+   half4 G3 = half4(0,0.5,1,0.5);
+
+   // So, when triplanar is on, the cw data gets stomped somehow, and we can't do stochastic on the normals. So
+   // we have to disabled that here and recompute the blend, which decorilates the texture from the albedo.
+   // So it doesn't look or perform as good, which is sad.. 
+
+   #if _TRIPLANAR
+      float contrast = _StochasticContrast;
+      #if _PERTEXCLUSTERCONTRAST
+         contrast = tex2Dlod(_PerTexProps, float4(uv.z/32, 10.5/32, 0, 0)).r;
+      #endif
+
+      // pre contrast for culling
+      half3 mw = min(0.0, contrast - 0.45);
+      w = saturate(lerp(mw, 1, w));
+
+      //MSBRANCHCLUSTER(cw.x)
+      {
+         G1 = MICROSPLAT_SAMPLE(_NormalSAO, uv1, mipLevel);
+         COUNTSAMPLE
+
+         #if _PACKINGHQ
+            G1.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv1, mipLevel).ga;
+            COUNTSAMPLE
+         #endif
+      }
+      //MSBRANCHCLUSTER(cw.y)
+      {
+         G2 = MICROSPLAT_SAMPLE(_NormalSAO, uv2, mipLevel);
+         COUNTSAMPLE
+
+         #if _PACKINGHQ
+            G2.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv2, mipLevel).ga;
+            COUNTSAMPLE
+         #endif
+      }
+      //MSBRANCHCLUSTER(cw.z)
+      {
+         G3 = MICROSPLAT_SAMPLE(_NormalSAO, uv3, mipLevel);
+         COUNTSAMPLE
+
+         #if _PACKINGHQ
+            G3.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv3, mipLevel).ga;
+            COUNTSAMPLE
+         #endif
+      }
+
+      cw.xyz = BaryWeightBlend(w, G1.a, G2.a, G3.a, contrast);
+      cw.w = 1;
+   #else
+   MSBRANCHCLUSTER(cw.x)
+   {
+      G1 = MICROSPLAT_SAMPLE(_NormalSAO, uv1, mipLevel);
+      COUNTSAMPLE
+
+      #if _PACKINGHQ
+         G1.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv1, mipLevel).ga;
+         COUNTSAMPLE
+      #endif
+   }
+   MSBRANCHCLUSTER(cw.y)
+   {
+      G2 = MICROSPLAT_SAMPLE(_NormalSAO, uv2, mipLevel);
+      COUNTSAMPLE
+
+      #if _PACKINGHQ
+         G2.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv2, mipLevel).ga;
+         COUNTSAMPLE
+      #endif
+   }
+   MSBRANCHCLUSTER(cw.z)
+   {
+      G3 = MICROSPLAT_SAMPLE(_NormalSAO, uv3, mipLevel);
+      COUNTSAMPLE
+
+      #if _PACKINGHQ
+         G3.rb = MICROSPLAT_SAMPLE(_SmoothAO, uv3, mipLevel).ga;
+         COUNTSAMPLE
+      #endif
+   }
+   #endif
+
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z; 
+}
+
+
+half4 StochasticSampleEmis(float3 uv, half4 cw, MIPFROMATRAW mipLevel)
+{
+#if _USEEMISSIVEMETAL
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0)); 
+      MSBRANCHCLUSTER(data.b-0.5)
+      { 
+         COUNTSAMPLE
+         return MICROSPLAT_SAMPLE(_EmissiveMetal, uv, mipLevel);
+      }
+   #endif
+   
+   half4 G1 = half4(0,0,0,0);
+   half4 G2 = half4(0,0,0,0);
+   half4 G3 = half4(0,0,0,0);
+   MSBRANCHCLUSTER(cw.x)
+   {
+      G1 = MICROSPLAT_SAMPLE(_EmissiveMetal, uv1, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(cw.y)
+   {
+      G2 = MICROSPLAT_SAMPLE(_EmissiveMetal, uv2, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(cw.z)
+   {
+      G3 = MICROSPLAT_SAMPLE(_EmissiveMetal, uv3, mipLevel);
+      COUNTSAMPLE
+   }
+  
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z; 
+#endif
+return 0;
+}
+
+half4 StochasticSampleSpecular(float3 uv, half4 cw, MIPFROMATRAW mipLevel)
+{
+   #if _USESPECULARWORKFLOW
+   float3 uv1, uv2, uv3;
+   half3 w;
+   PrepareStochasticUVs(_StochasticScale, uv, uv1, uv2, uv3, w);
+   
+   #if _PERTEXSTOCHASTIC
+      half4 data = tex2Dlod(_PerTexProps, float4(uv.z/32, 9.5/32, 0, 0)); 
+      MSBRANCHCLUSTER(data.b-0.5)
+      {
+         COUNTSAMPLE
+         return MICROSPLAT_SAMPLE(_Specular, uv, mipLevel);
+      }
+   #endif
+   
+   half4 G1 = half4(0,0,0,0);
+   half4 G2 = half4(0,0,0,0);
+   half4 G3 = half4(0,0,0,0);
+   MSBRANCHCLUSTER(cw.x)
+   {
+      G1 = MICROSPLAT_SAMPLE(_Specular, uv1, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(cw.y)
+   {
+      G2 = MICROSPLAT_SAMPLE(_Specular, uv2, mipLevel);
+      COUNTSAMPLE
+   }
+   MSBRANCHCLUSTER(cw.z)
+   {
+      G3 = MICROSPLAT_SAMPLE(_Specular, uv3, mipLevel);
+      COUNTSAMPLE
+   }
+  
+   return G1 * cw.x + G2 * cw.y + G3 * cw.z; 
+   #endif
+   return 0;
+}
+
+
+
+// ----------------------------------------------------------------------------
+
+#undef MICROSPLAT_SAMPLE_DIFFUSE
+#undef MICROSPLAT_SAMPLE_NORMAL
+#undef MICROSPLAT_SAMPLE_DIFFUSE_LOD
+#undef MICROSPLAT_SAMPLE_EMIS
+#undef MICROSPLAT_SAMPLE_SPECULAR
+
+#define MICROSPLAT_SAMPLE_DIFFUSE(u, cl, l) StochasticSampleDiffuse(u, cl, l)
+#define MICROSPLAT_SAMPLE_NORMAL(u, cl, l) StochasticSampleNormal(u, cl, l)
+#define MICROSPLAT_SAMPLE_DIFFUSE_LOD(u, cl, l) StochasticSampleDiffuseLOD(u, cl, l)
+#define MICROSPLAT_SAMPLE_EMIS(u, cl, l) StochasticSampleEmis(u, cl, l)
+#define MICROSPLAT_SAMPLE_SPECULAR(u, cl, l) StochasticSampleSpecular(u, cl, l)
+
+
+
          #if _DETAILNOISE
          UNITY_DECLARE_TEX2D_NOSAMPLER(_DetailNoise);
          #endif
@@ -16520,6 +18414,14 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
          UNITY_DECLARE_TEX2D_NOSAMPLER(_NormalNoise3);
          #endif
          
+         #if _NOISEHEIGHT
+         UNITY_DECLARE_TEX2D_NOSAMPLER(_NoiseHeight);
+         #endif
+
+         #if _NOISEUV
+         UNITY_DECLARE_TEX2D_NOSAMPLER(_NoiseUV);
+         #endif
+
          struct AntiTileTriplanarConfig
          {
             float3 pn;
@@ -16545,9 +18447,138 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
          #else
             #define AntiTileTriplanarSample(tex, uv, tc, scale) UNITY_SAMPLE_TEX2D_SAMPLER(tex, _Diffuse, uv * scale)
          #endif
+
+         #if _ANTITILETRIPLANAR
+            #define AntiTileTriplanarSampleLOD(tex, uv, tc, scale) (MICROSPLAT_SAMPLE_TEX2D_SAMPLER_LOD(tex, _Diffuse, tc.uv0 * scale, 0) * tc.pn.x + MICROSPLAT_SAMPLE_TEX2D_SAMPLER_LOD(tex, _Diffuse, tc.uv1 * scale, 0) * tc.pn.y + MICROSPLAT_SAMPLE_TEX2D_SAMPLER_LOD(tex, _Diffuse, tc.uv2 * scale) * tc.pn.z, 0)
+         #else
+            #define AntiTileTriplanarSampleLOD(tex, uv, tc, scale) MICROSPLAT_SAMPLE_TEX2D_SAMPLER_LOD(tex, _Diffuse, uv * scale, 0)
+         #endif
          
 
-         void DistanceResample(inout RawSamples o, Config config, TriplanarConfig tc, float camDist, float3 viewDir, half4 fxLevels, MIPFORMAT mipLevel, float3 worldPos, half4 weights)
+         
+         #if _NOISEHEIGHT
+         
+         void ApplyNoiseHeight(inout RawSamples s, float2 uv, Config config, float3 worldPos, float3 worldNormal)
+         {
+            float2 offset = float2(0.27, 0.17);
+
+            half freq0 = _NoiseHeightData.x;
+            half freq1 = _NoiseHeightData.x;
+            half freq2 = _NoiseHeightData.x;
+            half freq3 = _NoiseHeightData.x;
+
+            half amp0 = _NoiseHeightData.y;
+            half amp1 = _NoiseHeightData.y;
+            half amp2 = _NoiseHeightData.y;
+            half amp3 = _NoiseHeightData.y;
+
+            #if _PERTEXNOISEHEIGHTFREQ || _PERTEXNOISEHEIGHTAMP
+               SAMPLE_PER_TEX(pt, 22.5, config, half4(1, 0, 1, 0));
+
+               #if _PERTEXNOISEHEIGHTFREQ
+                  freq0 += pt0.r;
+                  freq1 += pt1.r;
+                  freq2 += pt2.r;
+                  freq3 += pt3.r;
+               #endif
+               #if _PERTEXNOISEHEIGHTAMP
+                  amp0 *= pt0.g;
+                  amp1 *= pt1.g;
+                  amp2 *= pt2.g;
+                  amp3 *= pt3.g;
+               #endif
+            #endif
+
+            AntiTileTriplanarConfig tc = (AntiTileTriplanarConfig)0;
+            UNITY_INITIALIZE_OUTPUT(AntiTileTriplanarConfig,tc);
+            
+            #if _ANTITILETRIPLANAR
+                PrepAntiTileTriplanarConfig(tc, worldPos, worldNormal);
+            #endif
+            
+
+            half noise0 = AntiTileTriplanarSample(_NoiseHeight, uv, tc, freq0 + config.uv0.z * offset).g - 0.5;
+            COUNTSAMPLE
+            half noise1 = AntiTileTriplanarSample(_NoiseHeight, uv, tc, freq1 + config.uv1.z * offset).g - 0.5;
+            COUNTSAMPLE
+            half noise2 = 0;
+            half noise3 = 0;
+           
+            #if !_MAXLAYER2
+               noise2 = AntiTileTriplanarSample(_NoiseHeight, uv, tc, freq2 + config.uv2.z * offset).g - 0.5;
+               COUNTSAMPLE
+            #endif
+            #if !_MAXLAYER2 && !_MAXLAYER3
+               noise3 = AntiTileTriplanarSample(_NoiseHeight, uv, tc, freq3 + config.uv3.z * offset).g - 0.5;
+               COUNTSAMPLE
+            #endif
+
+            s.albedo0.a = saturate(s.albedo0.a + noise0 * amp0);
+            s.albedo1.a = saturate(s.albedo1.a + noise1 * amp1);
+            s.albedo2.a = saturate(s.albedo2.a + noise2 * amp2);
+            s.albedo3.a = saturate(s.albedo3.a + noise3 * amp3);
+         }
+
+         void ApplyNoiseHeightLOD(inout half h0, inout half h1, inout half h2, inout half h3, float2 uv, Config config, float3 worldPos, float3 worldNormal)
+         {
+            float2 offset = float2(0.27, 0.17);
+
+            half freq0 = _NoiseHeightData.x;
+            half freq1 = _NoiseHeightData.x;
+            half freq2 = _NoiseHeightData.x;
+            half freq3 = _NoiseHeightData.x;
+
+            half amp0 = _NoiseHeightData.y;
+            half amp1 = _NoiseHeightData.y;
+            half amp2 = _NoiseHeightData.y;
+            half amp3 = _NoiseHeightData.y;
+
+            #if _PERTEXNOISEHEIGHTFREQ || _PERTEXNOISEHEIGHTAMP
+               SAMPLE_PER_TEX(pt, 22.5, config, half4(1, 0, 1, 0));
+
+               #if _PERTEXNOISEHEIGHTFREQ
+                  freq0 += pt0.r;
+                  freq1 += pt1.r;
+                  freq2 += pt2.r;
+                  freq3 += pt3.r;
+               #endif
+               #if _PERTEXNOISEHEIGHTAMP
+                  amp0 *= pt0.g;
+                  amp1 *= pt1.g;
+                  amp2 *= pt2.g;
+                  amp3 *= pt3.g;
+               #endif
+            #endif
+            
+            AntiTileTriplanarConfig tc = (AntiTileTriplanarConfig)0;
+            UNITY_INITIALIZE_OUTPUT(AntiTileTriplanarConfig,tc);
+            
+            #if _ANTITILETRIPLANAR
+                PrepAntiTileTriplanarConfig(tc, worldPos, worldNormal);
+            #endif
+            
+            
+            half noise0 = AntiTileTriplanarSampleLOD(_NoiseHeight, uv, tc, freq0 + config.uv0.z * offset).g;
+            half noise1 = AntiTileTriplanarSampleLOD(_NoiseHeight, uv, tc, freq1 + config.uv1.z * offset).g;
+            half noise2 = 0;
+            half noise3 = 0;
+           
+            #if !_MAXLAYER2
+               noise2 = AntiTileTriplanarSampleLOD(_NoiseHeight, uv, tc, freq2 + config.uv2.z * offset).g;
+            #endif
+            #if !_MAXLAYER2 && !_MAXLAYER3
+               noise3 = AntiTileTriplanarSampleLOD(_NoiseHeight, uv, tc, freq3 + config.uv3.z * offset).g;
+            #endif
+
+            h0 = saturate(h0 + noise0 * amp0);
+            h1 = saturate(h1 + noise1 * amp1);
+            h2 = saturate(h2 + noise2 * amp2);
+            h3 = saturate(h3 + noise3 * amp3);
+         }
+         #endif
+
+
+         void DistanceResample(inout RawSamples o, Config config, TriplanarConfig tc, float camDist, float3 viewDir, half4 fxLevels, MIPFORMAT mipLevel, float3 worldPos, half4 weights, float3 worldNormal)
          {
          #if _DISTANCERESAMPLE
 
@@ -17248,6 +19279,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                #endif
 
             #endif
+
          #endif // _DISTANCERESAMPLE
          }
 
@@ -17489,8 +19521,8 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
             #endif
 
          }
-
-
+         
+        
 
 
       UNITY_DECLARE_TEX2D_NOSAMPLER(_GeoTex);
@@ -17982,6 +20014,67 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
       }
       #endif
 
+         float2 MSParallaxOffset( half h, half height, half3 viewDir )
+         {
+            h = h * height - height/2.0;
+            float3 v = normalize(viewDir);
+            v.z += 0.42;
+            return h * (v.xy / v.z);
+         }
+
+         void DoParallax(Input i, half h, inout Config c, inout TriplanarConfig tc, inout RawSamples s, half4 weights, float camDist)
+         {
+            float fade = (1 - saturate((camDist - _ParallaxParams.y) / max(_ParallaxParams.z, 0.01)));
+            float2 offset = MSParallaxOffset(h, _ParallaxParams.x * fade, i.viewDir);
+
+
+            #if !_TRIPLANAR
+               #if _PERTEXPARALLAX
+               SAMPLE_PER_TEX(ptp, 6.5, c, 0.0);
+               c.uv0.xy += offset * ptp0.a;
+               c.uv1.xy += offset * ptp1.a;
+               c.uv2.xy += offset * ptp2.a;
+               c.uv3.xy += offset * ptp3.a;
+               #else
+               c.uv0.xy += offset;
+               c.uv1.xy += offset;
+               c.uv2.xy += offset;
+               c.uv3.xy += offset;
+               #endif
+            #else
+               #if _PERTEXPARALLAX
+               SAMPLE_PER_TEX(ptp, 6.5, c, 0.0);
+               tc.uv0[0].xy += offset * ptp0.a;
+               tc.uv0[1].xy += offset * ptp0.a;
+               tc.uv0[2].xy += offset * ptp0.a;
+               tc.uv1[0].xy += offset * ptp1.a;
+               tc.uv1[1].xy += offset * ptp1.a;
+               tc.uv1[2].xy += offset * ptp1.a;
+               tc.uv2[0].xy += offset * ptp2.a;
+               tc.uv2[1].xy += offset * ptp2.a;
+               tc.uv2[2].xy += offset * ptp2.a;
+               tc.uv3[0].xy += offset * ptp3.a;
+               tc.uv3[1].xy += offset * ptp3.a;
+               tc.uv3[2].xy += offset * ptp3.a;
+               #else
+               tc.uv0[0].xy += offset;
+               tc.uv0[1].xy += offset;
+               tc.uv0[2].xy += offset;
+               tc.uv1[0].xy += offset;
+               tc.uv1[1].xy += offset;
+               tc.uv1[2].xy += offset;
+               tc.uv2[0].xy += offset;
+               tc.uv2[1].xy += offset;
+               tc.uv2[2].xy += offset;
+               tc.uv3[0].xy += offset;
+               tc.uv3[1].xy += offset;
+               tc.uv3[2].xy += offset;
+               #endif
+            #endif
+
+         }
+
+
 
                     
             VertexOutput vert(GraphVertexInput v)
@@ -18011,11 +20104,8 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 float3 WorldSpaceNormal = normalize(mul(v.normal,(float3x3)UNITY_MATRIX_I_M));
                 float3 WorldSpaceTangent = normalize(mul((float3x3)UNITY_MATRIX_M,v.tangent.xyz));
                 float3 WorldSpaceBiTangent = cross(WorldSpaceNormal, WorldSpaceTangent.xyz) * v.tangent.w;
-                float3 WorldSpaceViewDirection = _WorldSpaceCameraPos.xyz - mul(GetObjectToWorldMatrix(), float4(v.vertex.xyz, 1.0)).xyz;
-                float4 VertexColor = v.color;
-                float4 ScreenPosition = ComputeScreenPos(mul(GetWorldToHClipMatrix(), mul(GetObjectToWorldMatrix(), v.vertex)), _ProjectionParams.x);
+                
                 float4 uv0 = v.texcoord0;
-                float4 uv1 = v.texcoord1;
                 float3 ObjectSpacePosition = mul(UNITY_MATRIX_I_M,float4(WorldSpacePosition,1.0)).xyz;
 
 
@@ -18024,14 +20114,10 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 o.WorldSpaceNormal = WorldSpaceNormal;
                 o.WorldSpaceTangent = WorldSpaceTangent;
                 o.WorldSpaceBiTangent = WorldSpaceBiTangent;
-                o.WorldSpaceViewDirection = WorldSpaceViewDirection;
-                o.VertexColor = VertexColor;
-                o.ScreenPosition = ScreenPosition;
                 o.uv0 = uv0;
-                o.uv1 = uv1;
                 
 
-                o.clipPos = MetaVertexPosition(v.vertex, uv1, uv1, unity_LightmapST, unity_DynamicLightmapST);
+                o.clipPos = MetaVertexPosition(v.vertex, v.texcoord1, v.texcoord1, unity_LightmapST, unity_DynamicLightmapST);
                 return o;
             }
             
@@ -18915,6 +21001,10 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
 
          SampleAlbedo(config, tc, samples, albedoLOD, weights);
 
+         #if _NOISEHEIGHT
+            ApplyNoiseHeight(samples, config.uv, config, i.worldPos, worldNormalVertex);
+         #endif
+         
          #if _STREAMS || (_PARALLAX && !_DISABLESPLATMAPS)
          half earlyHeight = BlendWeights(samples.albedo0.w, samples.albedo1.w, samples.albedo2.w, samples.albedo3.w, weights);
          #endif
@@ -18966,7 +21056,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
          #endif
 
          #if _DISTANCERESAMPLE && !_DISABLESPLATMAPS
-            DistanceResample(samples, config, tc, camDist, i.viewDir, fxLevels, albedoLOD, i.worldPos, heightWeights);
+            DistanceResample(samples, config, tc, camDist, i.viewDir, fxLevels, albedoLOD, i.worldPos, heightWeights, worldNormalVertex);
          #endif
 
          // PerTexture sampling goes here, passing the samples structure
@@ -19511,6 +21601,19 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
 
       MicroSplatLayer SurfImpl(Input i, float3 worldNormalVertex)
       {
+         // with DrawInstanced on, view dir is incorrect, so we compute it here. Thanks Obama..
+         #if !_DEBUG_USE_TOPOLOGY && UNITY_VERSION >= 201830 && !_TERRAINBLENDABLESHADER && !_MICROMESH && !_MICROMESHTERRAIN && !_MICROPOLARISMESH &&!_MICRODIGGERMESH && !_MICROVERTEXMESH && defined(UNITY_INSTANCING_ENABLED) && !defined(SHADER_API_D3D11_9X)
+            #if !_MSRENDERLOOP_SURFACESHADER
+               i.viewDir = normalize( mul(i.TBN, (_WorldSpaceCameraPos - i.worldPos)) );
+            #else
+               float3 t2w0 = WorldNormalVector(i, float3(1,0,0));
+               float3 t2w1 = WorldNormalVector(i, float3(0,1,0));
+               float3 t2w2 = WorldNormalVector(i, float3(0,0,1));
+               float3x3 t2w = float3x3(t2w0, t2w1, t2w2);
+               i.viewDir = normalize(mul( t2w, (_WorldSpaceCameraPos - i.worldPos)));
+            #endif
+         #endif
+
 
          #if _TERRAINBLENDABLESHADER && _TRIPLANAR
             worldNormalVertex = WorldNormalVector(i, float3(0,0,1));
@@ -19520,12 +21623,17 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
           
          #if _FORCELOCALSPACE
             #if _PLANETVECTORS
-                worldNormalVertex = mul(_PQSToLocal, worldNormalVertex);
+                worldNormalVertex = mul(_PQSToLocal, float4(worldNormalVertex, 1)).xyz;
                 i.worldPos = i.worldPos + mul(_PQSToLocal, float4(0,0,0,1)).xyz;
              #else
-                worldNormalVertex = mul(unity_WorldToObject, worldNormalVertex);
+                worldNormalVertex = mul(unity_WorldToObject, float4(worldNormalVertex, 1)).xyz;
                 i.worldPos = i.worldPos -  mul(unity_ObjectToWorld, float4(0,0,0,1)).xyz;
              #endif
+         #endif
+
+         #if _ORIGINSHIFT
+             worldNormalVertex = mul(_GlobalOriginMTX, float4(worldNormalVertex, 1)).xyz;
+             i.worldPos = i.worldPos + mul(_GlobalOriginMTX, float4(0,0,0,1)).xyz;
          #endif
 
          #if _DEBUG_USE_TOPOLOGY
@@ -19582,7 +21690,7 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                float3 up = float3(0,1,0);
                float3 procNormal = worldNormalVertex;
                float height = i.worldPos.y;
-               #if _PLANETNORMAL2 || _PLANETNORMAL || _GLOBALNORMAL
+               #if _PLANETNORMAL2 || _PLANETNORMAL
                   config.uv = origUV;
                   float2 pnorm = GetPlanetTangentNormal(i, config, camDist, worldNormalVertex);
                   procNormal.xy = pnorm;
@@ -19771,12 +21879,9 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 float3 WorldSpaceNormal = IN.WorldSpaceNormal;
                 float3 WorldSpaceTangent = IN.WorldSpaceTangent;
                 float3 WorldSpaceBiTangent = IN.WorldSpaceBiTangent;
-                float3 WorldSpaceViewDirection = IN.WorldSpaceViewDirection;
+                float3 WorldSpaceViewDirection = normalize(_WorldSpaceCameraPos.xyz - WorldSpacePosition);
                 float3x3 tangentSpaceTransform = float3x3(WorldSpaceTangent,WorldSpaceBiTangent,WorldSpaceNormal);
-                float4 VertexColor = IN.VertexColor;
-                float4 ScreenPosition = IN.ScreenPosition;
                 float4 uv0 = IN.uv0;
-                float4 uv1 = IN.uv1;
                 float3 TangentSpaceViewDirection = mul(WorldSpaceViewDirection,(float3x3)tangentSpaceTransform).xyz;
 
                 SurfaceDescriptionInputs surfaceInput = (SurfaceDescriptionInputs)0;
@@ -19785,13 +21890,10 @@ void PrepareStochasticUVs(float scale, float2 uv, out float2 uv1, out float2 uv2
                 surfaceInput.WorldSpaceNormal = WorldSpaceNormal;
                 surfaceInput.WorldSpaceTangent = WorldSpaceTangent;
                 surfaceInput.WorldSpaceBiTangent = WorldSpaceBiTangent;
-                surfaceInput.WorldSpaceViewDirection = WorldSpaceViewDirection;
                 surfaceInput.TangentSpaceViewDirection = TangentSpaceViewDirection;
                 surfaceInput.WorldSpacePosition = WorldSpacePosition;
-                surfaceInput.VertexColor = VertexColor;
-                surfaceInput.ScreenPosition = ScreenPosition;
+
                 surfaceInput.uv0 = uv0;
-                surfaceInput.uv1 = uv1;
 
                 ToSurfaceDescInput(IN, surfaceInput);
 

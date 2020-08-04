@@ -1,7 +1,6 @@
 ﻿using Engine.Logging;
 using System;
 using System.Collections.Generic;
-using Unity.UIElements.Runtime;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Engine.Utility;
@@ -11,31 +10,32 @@ namespace Engine.UI
     /// <summary>
     /// UI Panel base class
     /// </summary>
-    [RequireComponent(typeof(PanelRenderer))]
+    [RequireComponent(typeof(UIDocument))]
     public abstract class UIController : MonoBehaviour
     {
         /// <summary>
         /// Internal panel renderer
         /// </summary>
-        internal PanelRenderer panelRenderer;
+        internal UIDocument uiDocument;
 
         /// <summary>
         /// Called on awake
         /// </summary>
         private void Awake()
         {
-            panelRenderer = gameObject.GetComponent<PanelRenderer>();
-            panelRenderer.postUxmlReload = panelLoaded;
-            panelRenderer.RecreateUIFromUxml();
+            uiDocument = gameObject.GetComponent<UIDocument>();
+            uiDocumentLoaded();
+           // uiDocument.postUxmlReload = uiDocumentLoaded;
+           // uiDocument.RecreateUIFromUxml();
         }
 
         /// <summary>
         /// Intermediate method on panel loaded
         /// </summary>
         /// <returns></returns>
-        private IEnumerable<UnityEngine.Object> panelLoaded()
+        private IEnumerable<UnityEngine.Object> uiDocumentLoaded()
         {
-            onPanelLoaded();
+            onUIDocumentLoaded();
             return null;
         }
 
@@ -43,23 +43,23 @@ namespace Engine.UI
         /// Returns the panel renderer
         /// </summary>
         /// <returns></returns>
-        public PanelRenderer GetPanelRenderer()
+        public UIDocument GetUIDocument()
         {
-            return panelRenderer;
+            return uiDocument;
         }
 
         /// <summary>
         /// Called when the panel is done loading
         /// </summary>
-        public abstract void onPanelLoaded();
+        public abstract void onUIDocumentLoaded();
 
         /// <summary>
         /// Show/Hide panel
         /// </summary>
         /// <param name="visible">If the panel should be made visible</param>
-        public void setPanelVisibility(bool visible)
+        public void SetDocumentVisibility(bool visible)
         {
-            panelRenderer.visualTree.visible = visible;
+         //   uiDocument.visualTreeAsset.visible = visible;
         }
 
         /// <summary>
@@ -70,11 +70,13 @@ namespace Engine.UI
         /// <returns></returns>
         public U getElement<U>(String name) where U : VisualElement
         {
-            U element = panelRenderer.visualTree.Query<U>(name);
-            if (element == null)
-                Log.LogError("UI Controller called for element '" + name + "' which does not exist in '"+panelRenderer.uxml.name+"' UXML.");
+            
+              U element = uiDocument.rootVisualElement.Query<U>(name);
+              if (element == null)
+                  Log.LogError("UI Controller called for element '" + name + "' which does not exist in '"+uiDocument.visualTreeAsset.name+"' UXML.");
 
-            return element;
+              return element;
+            return null;
         }
 
         /// <summary>

@@ -97,8 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000004, guid: 80745a2f06ceb3f409965478a9bdd2cf,
-    type: 2}
+  m_LightingDataAsset: {fileID: 0}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -123,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 510831a270ba6cc4baa06ef68173bfea, type: 2}
+  m_NavMeshData: {fileID: 0}
 --- !u!1 &229044549
 GameObject:
   m_ObjectHideFlags: 0
@@ -202,7 +201,7 @@ Terrain:
   m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1
   m_HeightmapPixelError: 5
-  m_SplatMapDistance: 20
+  m_SplatMapDistance: 75
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
   m_DrawHeightmap: 1
@@ -252,12 +251,14 @@ MonoBehaviour:
   terrainDesc: {fileID: 0}
   descriptorFormat: 0
   streamTexture: {fileID: 0}
+  snowMaskOverride: {fileID: 0}
   tintMapOverride: {fileID: 0}
   globalNormalOverride: {fileID: 0}
   globalSAOMOverride: {fileID: 0}
   globalEmisOverride: {fileID: 0}
   geoTextureOverride: {fileID: 0}
   advDetailControl: {fileID: 0}
+  clipMap: {fileID: 0}
   propData: {fileID: 11400000, guid: bd62a3d85db0f794b8b6b8606768e3f2, type: 2}
   addPass: {fileID: 0}
   terrain: {fileID: 2061808725}

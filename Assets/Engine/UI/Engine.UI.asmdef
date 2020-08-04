@@ -1,11 +1,13 @@
 {
     "name": "Engine.UI",
+    "rootNamespace": "",
     "references": [
         "GUID:8b26b4ffcbc22dc4cbc2c215f4fe3def",
         "GUID:ab0bf26c474862745b86bd0d94851aea",
         "GUID:c5a46be53e364594ebc8f1e55c3d9dbf",
-        "GUID:fd7f2ed1f052e3d45afdb78e9c72d55e",
-        "GUID:86c0736bf0fe4c8498a9a7a81086452d"
+        "GUID:86c0736bf0fe4c8498a9a7a81086452d",
+        "GUID:8c09aa1e4b73db04094be9d510142dd2",
+        "GUID:5fbb2baaf1156684da2a9bdc3527d001"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
