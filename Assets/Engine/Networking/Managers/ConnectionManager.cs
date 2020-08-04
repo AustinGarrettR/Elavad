@@ -54,13 +54,19 @@ namespace Engine.Networking
         {
 
             if (isServer)
+            {
                 ServerUpdateLoop();
-            else if (clientConnecting || connected)
-            {
-                ClientUpdateLoop();                
-            } else if(connected)
-            {
-                KeepAlive();
+            } else {
+                
+                if (clientConnecting || connected)
+                {
+                    ClientUpdateLoop();
+                }
+
+                if (connected)
+                {
+                    KeepAlive();
+                }
             }
         }
 
